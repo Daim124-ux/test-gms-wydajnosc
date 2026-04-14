@@ -27,7 +27,7 @@ export default function ThresholdGrid() {
       </div>
 
       {/* Grid of details */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-12 mb-32">
+      <div className="relative z-30 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-12 mb-32">
         {features.map((f, idx) => (
           <motion.div
             key={idx}
