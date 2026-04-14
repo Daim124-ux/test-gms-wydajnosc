@@ -150,17 +150,19 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
         description="Dolna część wiaty została zaprojektowana z myślą o maksymalnej funkcjonalności i komforcie użytkowania. Stalowy próg z eleganckim materiałowym pochwytem zapewnia solidne zamknięcie, a neodymowe magnesy precyzyjnie utrzymują go w pozycji, zapobiegając przypadkowemu otwarciu. Specjalnie dopasowane zawiasy oraz dodatkowe gięcie elementu tworzą po otwarciu płynnie wyprofilowany podjazd, ułatwiający wprowadzenie roweru. To przemyślane rozwiązanie łączy trwałość z wygodą, odpowiadając na potrzeby wymagających użytkowników."
       />
 
-      <ThresholdGrid />
+      <div className="relative z-20 mt-[-70vh]">
+        <ThresholdGrid />
 
-      {/* Techniczna Karuzela - Miękkie przejście i synchronizacja pozycji */}
-      <section className="relative pb-32 overflow-hidden pt-0 mt-[-1px] bg-black">
-        <KaruzelaFunkcji
-          elementy={mockFunkcjeTechniczne}
-          showTitle={false}
-          bgClass="bg-transparent"
-          offsetClass="mt-0"
-        />
-      </section>
+        {/* Techniczna Karuzela - Miękkie przejście i synchronizacja pozycji */}
+        <section className="relative pb-32 overflow-hidden pt-0 mt-[-1px] bg-black">
+          <KaruzelaFunkcji
+            elementy={mockFunkcjeTechniczne}
+            showTitle={false}
+            bgClass="bg-transparent"
+            offsetClass="mt-0"
+          />
+        </section>
+      </div>
 
       {/* Sekcja: Aluminiowa Podłoga */}
       <AluminumFloor />
