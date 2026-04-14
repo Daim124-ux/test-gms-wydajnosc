@@ -23,7 +23,7 @@ export default function ThresholdGrid() {
         <div className="absolute top-0 left-[-10%] w-[60%] h-[60%] bg-blue-600/15 blur-[140px] rounded-full" />
         <div className="absolute top-1/4 right-[-10%] w-[60%] h-[60%] bg-blue-500/15 blur-[140px] rounded-full" />
         {/* Large glow centered behind 'Kolarska wytrzymałość' and the start of the paragraph */}
-        <div className="absolute bottom-[10%] left-1/2 -translate-x-1/2 w-[120%] h-[60%] bg-blue-600/30 blur-[160px] rounded-[100%] opacity-80" />
+        <div className="absolute bottom-[calc(10%+150px)] left-1/2 -translate-x-1/2 w-[120%] h-[60%] bg-blue-600/30 blur-[160px] rounded-[100%] opacity-80" />
       </div>
 
       {/* Grid of details */}
