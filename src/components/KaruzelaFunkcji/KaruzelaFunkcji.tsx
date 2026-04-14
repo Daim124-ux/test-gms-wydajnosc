@@ -10,7 +10,7 @@ interface ElementKaruzeli {
   obrazUrl?: string;
   videoUrl?: string;
   loop?: boolean;
-  pozycjaTekstu?: 'gora' | 'srodek' | 'dol' | 'prawa-srodek' | 'prawa-dol';
+  pozycjaTekstu?: 'gora' | 'srodek' | 'dol' | 'prawa-srodek' | 'prawa-dol' | 'dol-srodek';
   pozycjaObrazu?: string;
   rozmiarObrazu?: 'cover' | 'contain';
 }
