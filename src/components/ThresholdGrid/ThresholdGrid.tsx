@@ -14,7 +14,7 @@ const features = [
 
 export default function ThresholdGrid() {
   return (
-    <section className="relative bg-black pt-12 pb-0 flex flex-col items-center overflow-hidden">
+    <section className="relative bg-black pt-0 pb-0 flex flex-col items-center overflow-hidden">
       {/* TOP EDGE MASK - Seamless Transition */}
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent z-20 pointer-events-none" />
 
