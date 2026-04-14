@@ -132,7 +132,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 2.5, opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] as const }}
             className="absolute inset-0 flex items-center justify-center"
           >
             <div
@@ -173,7 +173,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                 x: wybranyKolor.nazwa.toLowerCase().includes('mat') ? -50 : 3
               }}
               exit={{ opacity: 0, x: 20, scale: 0 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
               style={{ writingMode: 'vertical-rl', WebkitTextStroke: '3px white' }}
               className="select-none flex flex-col items-center"
             >
