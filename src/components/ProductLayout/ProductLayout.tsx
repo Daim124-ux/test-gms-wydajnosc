@@ -111,7 +111,7 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
       <AppleStickyNav title={node.title} />
 
       <AppleHeroEntrance
-        videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.av1.hevc.mp4"
+        videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.frames.av1.hevc.webm"
       />
 
       <section className="bg-[#161617] pt-[56px] pb-24 px-6 overflow-hidden relative z-10">
