@@ -14,7 +14,7 @@ export interface KolorWiaty {
 interface ElementKolorystyki {
   id: string;
   tytul: string;
-  pozycjaTekstu?: 'gora' | 'srodek' | 'dol' | 'prawa-srodek' | 'prawa-dol';
+  pozycjaTekstu?: 'gora' | 'srodek' | 'dol' | 'prawa-srodek' | 'prawa-dol' | 'dol-srodek';
   pozycjaObrazu?: string;
   rozmiarObrazu?: 'cover' | 'contain';
   szerokosc?: 'pelna' | '45' | '55';
