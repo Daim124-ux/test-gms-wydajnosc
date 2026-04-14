@@ -3,7 +3,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-interface ElementKaruzeli {
+export interface ElementKaruzeli {
   id: string;
   tytul: string;
   opis?: string;
