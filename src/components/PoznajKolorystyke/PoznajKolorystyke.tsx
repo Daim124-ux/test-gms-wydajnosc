@@ -11,7 +11,7 @@ export interface KolorWiaty {
   folder: string; // nazwa folderu ze zdjęciami
 }
 
-interface ElementKolorystyki {
+export interface ElementKolorystyki {
   id: string;
   tytul: string;
   pozycjaTekstu?: 'gora' | 'srodek' | 'dol' | 'prawa-srodek' | 'prawa-dol';
