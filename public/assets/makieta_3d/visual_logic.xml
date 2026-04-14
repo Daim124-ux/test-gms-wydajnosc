@@ -1,0 +1,704 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="1120.8572540283203" scrolly="-99" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="9XWg~=$8hIcILv*}EV/_" x="103" y="99">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">FALSE</field>
+    </block>
+  </tab>
+  <tab name="Kolejnosc scen" type="CommonTab" active="true" scrollx="1524.662579415341" scrolly="125.62056919570699" scale="0.7219857701073252">
+    <block xmlns="https://developers.google.com/blockly/xml" type="stopAnimation" id="I9%d|mW]hdn(.EB(o56@" x="-2125" y="-39">
+      <value name="VALUE">
+        <shadow type="animationList" id="5#t,yEyae6bwM1q(r,8e">
+          <field name="FIELDNAME">Aktywna.Target</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="stopAnimation" id="lCW8WksgCCOW/s}F:H9F">
+          <value name="VALUE">
+            <shadow type="animationList" id="CyT6:^KTBxo%50j[p!S-">
+              <field name="FIELDNAME">Aktywna</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="eventHTMLElem" id="sU{_jv)%1hBDS[-sXhdj">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="hj;}L,?xhf{eX*UoSz+8">
+                  <field name="TEXT">przycisk_off_canvas</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="setTimeout" id="@qK+@Cn]r#g*qBPDe0lD">
+                  <value name="VALUE">
+                    <shadow type="math_number" id="H9WrC$=ljGspDf},Z#/z">
+                      <field name="NUM">0.2</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="playAnimationAdv" id="3DiMznM8mnYqWN3N1%9$">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                      <field name="REVERSED">FALSE</field>
+                      <field name="LOOP">LoopOnce</field>
+                      <value name="VALUE">
+                        <shadow type="animationList" id="%{WoKTLy9`AQ?_ZYEwA7">
+                          <field name="FIELDNAME">Aktywna.Target</field>
+                        </shadow>
+                        <block type="lists_create_with" id="BE*3DMRN/0L0{?3Vg{hy">
+                          <mutation items="2"></mutation>
+                          <value name="ADD0">
+                            <block type="animationList" id="M|qA=DwJIgpC]KA)ijr;">
+                              <field name="FIELDNAME">Aktywna</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="animationList" id="KD?wFDON;S2:jOp@cu4y">
+                              <field name="FIELDNAME">Aktywna.Target</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id=",3ET^uz;ztIf}Mh/ifNv">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="m=}^t69IPKlGqQT$b}Gl">
+                      <field name="TEXT">off_canvas_close</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="playAnimationAdv" id="eG^jqsT%jyVC?k,Oiby=">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+                      <field name="REVERSED">TRUE</field>
+                      <field name="LOOP">LoopOnce</field>
+                      <value name="VALUE">
+                        <shadow type="animationList" id="%{WoKTLy9`AQ?_ZYEwA7">
+                          <field name="FIELDNAME">Aktywna.Target</field>
+                        </shadow>
+                        <block type="lists_create_with" id="jP{x2Ar,AX~XZ?PKfQpO">
+                          <mutation items="2"></mutation>
+                          <value name="ADD0">
+                            <block type="animationList" id="F,dkzE[hz8}=iABuC%RW">
+                              <field name="FIELDNAME">Aktywna</field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="animationList" id="9Yf%bS@kPdjP4VjS6?T|">
+                              <field name="FIELDNAME">Aktywna.Target</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="FROM">
+                        <shadow type="math_number" id="0::G!h0TOC`A;@D_pfq(">
+                          <field name="NUM">0</field>
+                        </shadow>
+                      </value>
+                      <value name="TO">
+                        <shadow type="math_number" id="TQdbFu;v,HpIR.O-occq">
+                          <field name="NUM">99</field>
+                        </shadow>
+                      </value>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="pT/[G7}H)cADAXY8*7HK">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="stopAnimation" id="NPW+vaE*H!LIUwsn:sv-" x="-1909" y="414">
+      <value name="VALUE">
+        <shadow type="animationList" id="koSm+C=Fj7]@sG+/`z6?">
+          <field name="FIELDNAME">SM_Key</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="stopAnimation" id="`-gEc;!W*Jnm:-!vnwzL">
+          <value name="VALUE">
+            <shadow type="animationList" id="Y7b+TB2S_N`d%@C~4zAm">
+              <field name="FIELDNAME">Czesc-zamka1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="stopAnimation" id="@;~3kJ1tUH:ru*/++W}.">
+              <value name="VALUE">
+                <shadow type="animationList" id="gztBaBn2o+D`_CL=a7l~">
+                  <field name="FIELDNAME">Czesc-zamka2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="stopAnimation" id="P)#xDQ=K`F94u4n9:X`3">
+                  <value name="VALUE">
+                    <shadow type="animationList" id="u1i%[[N*yB6sP2;p?LeT">
+                      <field name="FIELDNAME">Czesc-zamka3</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="stopAnimation" id="KsJJ~~Ng_#!%+~wTQ3TC">
+                      <value name="VALUE">
+                        <shadow type="animationList" id="J#r9)XqPIfN3`[+F9b|.">
+                          <field name="FIELDNAME">Dummy006</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="stopAnimation" id="a36!bP~r8!{7#}oDrWg7">
+                          <value name="VALUE">
+                            <shadow type="animationList" id="FASd=a[gVCjev%jaz.K1">
+                              <field name="FIELDNAME">Dummy010</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="stopAnimation" id="b^u}0=dY*XU?@GIL%8~7">
+                              <value name="VALUE">
+                                <shadow type="animationList" id="8V8R(9BV_G{VRO!aySae">
+                                  <field name="FIELDNAME">Dummy015</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="stopAnimation" id="jbl$Aczi4-vKT0oWn3tp">
+                                  <value name="VALUE">
+                                    <shadow type="animationList" id="d@N_2sbbnP/v%q~[Ol8v">
+                                      <field name="FIELDNAME">Dummy017</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="stopAnimation" id="`(o]);S_uRdK,l~d__d6">
+                                      <value name="VALUE">
+                                        <shadow type="animationList" id="D3sMf#gcp~@4*U@22r51">
+                                          <field name="FIELDNAME">Klamka</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="stopAnimation" id="nn~SCe7.$sTVO-vRw`2G">
+                                          <value name="VALUE">
+                                            <shadow type="animationList" id="rPK8@1=+R.;}eRIY=-u@">
+                                              <field name="FIELDNAME">Klapa front</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="stopAnimation" id="|Csa%n@X:{`(;*u!sC+Z">
+                                              <value name="VALUE">
+                                                <shadow type="animationList" id="Y$}pnDhqdJbHHrc4F+f)">
+                                                  <field name="FIELDNAME">Klapa gorna</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="stopAnimation" id="*uOb%MmL!OzU6%z-+@,X">
+                                                  <value name="VALUE">
+                                                    <shadow type="animationList" id="1n)c:KO8s}Q1+8pbXU?N">
+                                                      <field name="FIELDNAME">Lewa rurka</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="stopAnimation" id="!l!WP,T^Bz])=Z@iTG~O">
+                                                      <value name="VALUE">
+                                                        <shadow type="animationList" id="Ta[X-NBFeVcmvQSUl]LP">
+                                                          <field name="FIELDNAME">Prawa rurka</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <next>
+                                                        <block type="stopAnimation" id="_y_]o.L|~o8GcqT_(+XO">
+                                                          <value name="VALUE">
+                                                            <shadow type="animationList" id=")ZP}cCQ[T6UY1wa2nZPE">
+                                                              <field name="FIELDNAME">Prog</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <next>
+                                                            <block type="stopAnimation" id="vHGbhc~nx?occfGT2_MJ">
+                                                              <value name="VALUE">
+                                                                <shadow type="animationList" id="^ud{R%){zDN77ZYFW1H%">
+                                                                  <field name="FIELDNAME">Ramie lewe</field>
+                                                                </shadow>
+                                                              </value>
+                                                              <next>
+                                                                <block type="stopAnimation" id="w)FOdG@m/9m)VbL}3]PZ">
+                                                                  <value name="VALUE">
+                                                                    <shadow type="animationList" id="Ap1~Xj!Un-32@OV=pcz|">
+                                                                      <field name="FIELDNAME">Ramie prawe</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                  <next>
+                                                                    <block type="stopAnimation" id="[3qm4ZV2h1qPTxg.zj$,">
+                                                                      <value name="VALUE">
+                                                                        <shadow type="animationList" id="M7U4^r=6~R8!c[%vkMlq">
+                                                                          <field name="FIELDNAME">Sprezyna lewa</field>
+                                                                        </shadow>
+                                                                      </value>
+                                                                      <next>
+                                                                        <block type="stopAnimation" id="O;eQ(tTslscePX7tC`N7">
+                                                                          <value name="VALUE">
+                                                                            <shadow type="animationList" id=",Wk=!}5bL;y.cYP1+R0V">
+                                                                              <field name="FIELDNAME">Sprezyna prawa</field>
+                                                                            </shadow>
+                                                                          </value>
+                                                                          <next>
+                                                                            <block type="stopAnimation" id="AP^U4UBAXU3pS;I~`1-q">
+                                                                              <value name="VALUE">
+                                                                                <shadow type="animationList" id="}8|?1;FVgl26+lZ(f~qs">
+                                                                                  <field name="FIELDNAME">Uchwyt sprzezyny lewy</field>
+                                                                                </shadow>
+                                                                              </value>
+                                                                              <next>
+                                                                                <block type="stopAnimation" id=":,t5^sP7-T`t-p{6vm7t">
+                                                                                  <value name="VALUE">
+                                                                                    <shadow type="animationList" id="N/Z4t!@`,ZB-oax-$SJr">
+                                                                                      <field name="FIELDNAME">Uchwyt sprzezyny prawy</field>
+                                                                                    </shadow>
+                                                                                  </value>
+                                                                                </block>
+                                                                              </next>
+                                                                            </block>
+                                                                          </next>
+                                                                        </block>
+                                                                      </next>
+                                                                    </block>
+                                                                  </next>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="Interakcje" type="CommonTab" active="false" scrollx="-59.87192266359921" scrolly="-297.73796919323195" scale="0.7959893115433262">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="~;11;vgp0Yg5qE}C)14D" x="150" y="190">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id=";d+-PX}bL!*t6bkFiJ#Y">
+          <field name="TEXT">ha-tab-title-9971</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="Zv$vpGyUP#*MFVdK~fQ4">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <field name="MOVEMENT_TYPE">SPHERICAL</field>
+          <value name="POSITION">
+            <block type="objectList" id="%vC/Q:zQ$ZKO-je-|?/F">
+              <field name="FIELDNAME">Front</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="[B1uSG-UUHGM1rzXshYb">
+              <field name="FIELDNAME">Front.Target</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="|pe60U8|Tn1W)ZRlL!a6">
+              <field name="NUM">3</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="[])Tn?BOBsiXk?^!o[W?">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id=";Uh7Sz`[{oA7GfCSwA%h">
+              <field name="TEXT">ha-tab-title-9972</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="tweenCameraExt" id="^ygx+^XH7tqOG@5@H.T6">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+              <field name="MOVEMENT_TYPE">SPHERICAL</field>
+              <value name="POSITION">
+                <block type="objectList" id="NA6w5(LvIB,JQE!UM*M@">
+                  <field name="FIELDNAME">Zawias foretpianowy</field>
+                </block>
+              </value>
+              <value name="LOOKAT">
+                <block type="objectList" id="}v.u|$xw6L3RhW@]N(0%">
+                  <field name="FIELDNAME">Zawias foretpianowy.Target</field>
+                </block>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="0ssjs~siXGm_v6_$f+YK">
+                  <field name="NUM">3</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="~rfZax2e-HU9mow9Y#b;">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="V^.FO0-?EEwxIvt7Etu|">
+                  <field name="TEXT">ha-tab-title-9973</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="N~0OLpWGI[:f?iDUK1jT">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="[o:Ew-}bDfaU[4.c;dqI">
+                      <field name="FIELDNAME">Wzmocnione naroża</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="8}ga;RkG;J1q4)36Ei3/">
+                      <field name="FIELDNAME">Wzmocnione naroża.Target</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="!N%(y/@j~(y}]pCVz2+{">
+                      <field name="NUM">3</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="UJmQEv`DO:9W$(inN(2e">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <shadow type="text" id="A{PhnLq;dr3.]MN.^es=">
+                      <field name="TEXT">ha-tab-title-9974</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="tweenCameraExt" id="(.E-9HD{qT=MLM_B5txT">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                      <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                      <value name="POSITION">
+                        <block type="objectList" id="AuJp[j3TfgOvvqJ%%{Pf">
+                          <field name="FIELDNAME">Zamykanie</field>
+                        </block>
+                      </value>
+                      <value name="LOOKAT">
+                        <block type="objectList" id="3QmR!-(FcWL*T4RQMPVB">
+                          <field name="FIELDNAME">Zamykanie.Target</field>
+                        </block>
+                      </value>
+                      <value name="DURATION">
+                        <shadow type="math_number" id="0lu1||0{6Y]-ehUCP66k">
+                          <field name="NUM">3</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setTimeout" id="h~{ZZk{Snpr-9j#Xr]qv">
+                          <value name="VALUE">
+                            <shadow type="math_number" id="jq?3-?,2OqdUa(mg:^Q|">
+                              <field name="NUM">3</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="show" id="F)%sEs{5If.xtcGL*`r(">
+                              <value name="VALUE">
+                                <shadow type="objectList" id="pN@E0/sa!oqjTI!lGjoh">
+                                  <field name="FIELDNAME">SM_Key</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="playAnimationAdv" id="r]lLlv1/H^Wcpf:4cv%B">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                                  <field name="REVERSED">FALSE</field>
+                                  <field name="LOOP">LoopOnce</field>
+                                  <value name="VALUE">
+                                    <shadow type="animationList" id="wlw7W0vy#ogREwf6a{}h">
+                                      <field name="FIELDNAME">SM_Key</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="FROM">
+                                    <shadow type="math_number" id="9G%@cl.8iIKw:85qR*@/">
+                                      <field name="NUM">0</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="TO">
+                                    <shadow type="math_number" id="`?)l}vn)_2@Bvys80qiJ">
+                                      <field name="NUM">30</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="SPEED">
+                                    <shadow type="math_number" id="JM4U%8Ddkbpvf!96J0Db">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="playAnimationAdv" id="cRK!npZ.HX}{ReygCC~G">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                                      <field name="REVERSED">FALSE</field>
+                                      <field name="LOOP">LoopOnce</field>
+                                      <value name="VALUE">
+                                        <shadow type="animationList" id="Off_:LJr932ha)UopQ3!">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="lists_create_with" id="085_*poom`QO]Cv,udef">
+                                          <mutation items="6"></mutation>
+                                          <value name="ADD0">
+                                            <block type="animationList" id="(T$h9JqwjAC{[)]9aBAV">
+                                              <field name="FIELDNAME">Klamka</field>
+                                            </block>
+                                          </value>
+                                          <value name="ADD1">
+                                            <block type="animationList" id="[=:H5c29C;r{VVG[_is7">
+                                              <field name="FIELDNAME">Czesc-zamka1</field>
+                                            </block>
+                                          </value>
+                                          <value name="ADD2">
+                                            <block type="animationList" id="Zx=m0aDa_EmTWUE;IAPu">
+                                              <field name="FIELDNAME">Czesc-zamka2</field>
+                                            </block>
+                                          </value>
+                                          <value name="ADD3">
+                                            <block type="animationList" id="*ihUR|2nCo_AtA}o3#k3">
+                                              <field name="FIELDNAME">Czesc-zamka3</field>
+                                            </block>
+                                          </value>
+                                          <value name="ADD4">
+                                            <block type="animationList" id="?bARV314|vsh+Q?7$LXp">
+                                              <field name="FIELDNAME">Lewa rurka</field>
+                                            </block>
+                                          </value>
+                                          <value name="ADD5">
+                                            <block type="animationList" id="/H/=}bd(^n76AxDX;)j%">
+                                              <field name="FIELDNAME">Prawa rurka</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </value>
+                                      <value name="FROM">
+                                        <shadow type="math_number" id="G8!UbqwSajFV.:HPZ.eb">
+                                          <field name="NUM">0</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="TO">
+                                        <shadow type="math_number" id="!$F-Xzo=N|S4H%[^nW/T">
+                                          <field name="NUM">30</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="SPEED">
+                                        <shadow type="math_number" id="xN])Sw{r-3q%.?02!2n[">
+                                          <field name="NUM">0.5</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO">
+                                        <block type="playAnimationAdv" id="TxOQM2l.5nj-42E@3n2k">
+                                          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                                          <field name="REVERSED">TRUE</field>
+                                          <field name="LOOP">LoopOnce</field>
+                                          <value name="VALUE">
+                                            <shadow type="animationList" id="Off_:LJr932ha)UopQ3!">
+                                              <field name="FIELDNAME">SM_Key</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="FROM">
+                                            <shadow type="math_number" id="azufFe.(LUNBcO3!xm=p">
+                                              <field name="NUM">0</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="TO">
+                                            <shadow type="math_number" id="mt$/;^fL}piC)`DbEwU%">
+                                              <field name="NUM">30</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="SPEED">
+                                            <shadow type="math_number" id="X^t:q?TJ+]91xqS1MCWQ">
+                                              <field name="NUM">1</field>
+                                            </shadow>
+                                          </value>
+                                          <statement name="DO">
+                                            <block type="playAnimationAdv" id="Po-8o(b7$vNIbxJ[#2j!">
+                                              <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                                              <field name="REVERSED">TRUE</field>
+                                              <field name="LOOP">LoopOnce</field>
+                                              <value name="VALUE">
+                                                <shadow type="animationList" id="Dsx$E@pM/rQH.2H_UJZf">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="lists_create_with" id="asLD~z9Q8jJRbqek{91F">
+                                                  <mutation items="6"></mutation>
+                                                  <value name="ADD0">
+                                                    <block type="animationList" id="|k(jS:BlMA]XsGI!$ooQ">
+                                                      <field name="FIELDNAME">Klamka</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD1">
+                                                    <block type="animationList" id="Y8|L79BQyv*u$Xmq:?m;">
+                                                      <field name="FIELDNAME">Czesc-zamka1</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD2">
+                                                    <block type="animationList" id=":)4ND88fURce#4Rpxi^}">
+                                                      <field name="FIELDNAME">Czesc-zamka2</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD3">
+                                                    <block type="animationList" id="c_:QJ3~)Ov?]o3{zx[aM">
+                                                      <field name="FIELDNAME">Czesc-zamka3</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD4">
+                                                    <block type="animationList" id="/yjrtH=1TOL+wH+56~x0">
+                                                      <field name="FIELDNAME">Lewa rurka</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ADD5">
+                                                    <block type="animationList" id="q5$RTYEKT;~/G9}X%B`/">
+                                                      <field name="FIELDNAME">Prawa rurka</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <value name="FROM">
+                                                <shadow type="math_number" id=":Bh$?h$OQaeL[:##Nfz5">
+                                                  <field name="NUM">0</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="TO">
+                                                <shadow type="math_number" id="cII[HUT[5=KIm$wsD_3^">
+                                                  <field name="NUM">30</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="SPEED">
+                                                <shadow type="math_number" id="*:hHuFL(n^RUV:3Qk(.)">
+                                                  <field name="NUM">0.5</field>
+                                                </shadow>
+                                              </value>
+                                              <statement name="DO">
+                                                <block type="hide" id="IH=6}`dFj).J9ywjB.C8">
+                                                  <value name="VALUE">
+                                                    <shadow type="objectList" id="!TQ`x2b@?gA,^PAI/1tW">
+                                                      <field name="FIELDNAME">SM_Key</field>
+                                                    </shadow>
+                                                  </value>
+                                                </block>
+                                              </statement>
+                                            </block>
+                                          </statement>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="lorRZbWwfoWN1(|o,;H^">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <shadow type="text" id="wM%h+tf[;q)G06bP}IU6">
+                          <field name="TEXT">ha-tab-title-9975</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="tweenCameraExt" id="pd$W/=)T?H.oPje{.a|x">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                          <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                          <value name="POSITION">
+                            <block type="objectList" id="!lC(!M+D=3`@=wxubOLO">
+                              <field name="FIELDNAME">Innowacyjny sys</field>
+                            </block>
+                          </value>
+                          <value name="LOOKAT">
+                            <block type="objectList" id="8r.-,vg{%O]QJK6-[~m}">
+                              <field name="FIELDNAME">Innowacyjny sys.Target</field>
+                            </block>
+                          </value>
+                          <value name="DURATION">
+                            <shadow type="math_number" id="^q[81/O=c1n[t]`b[!mI">
+                              <field name="NUM">3</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="eventHTMLElem" id="(qG3A}^n=q:${wU-IF][">
+                          <field name="EVENT">click</field>
+                          <field name="PARENT">TRUE</field>
+                          <value name="ID">
+                            <shadow type="text" id="Hse[faVskFtGGY[P}$NU">
+                              <field name="TEXT">ha-tab-title-9976</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="tweenCameraExt" id="`JzqbIa{@K]R?ixlw7{H">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                              <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                              <value name="POSITION">
+                                <block type="objectList" id="*2i=B$F;Gq$Tua%-Sz`0">
+                                  <field name="FIELDNAME">Uchwyt</field>
+                                </block>
+                              </value>
+                              <value name="LOOKAT">
+                                <block type="objectList" id="w4V}n0Y}nv8O5WsY/}:?">
+                                  <field name="FIELDNAME">Uchwyt.Target</field>
+                                </block>
+                              </value>
+                              <value name="DURATION">
+                                <shadow type="math_number" id="jRNH;SY@.nHBApDZq0^r">
+                                  <field name="NUM">3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="TY5{Jm^-C)f!QyO6_=.j" x="-367" y="292">
+      <value name="VALUE">
+        <shadow type="objectList" id="r$,S;+Ix0ixY_YJ(r+=u">
+          <field name="FIELDNAME">SM_Key</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1134" viewport-y="37" viewport-w="768" viewport-h="472.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
