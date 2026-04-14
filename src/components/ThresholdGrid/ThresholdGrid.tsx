@@ -51,13 +51,13 @@ export default function ThresholdGrid() {
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] as const }}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         viewport={{ once: true }}
         className="relative z-30 pb-24"
       >
-        <h3 
+        <h3
           className="text-[60px] md:text-[80px] font-[600] text-white tracking-tighter text-center mb-8"
-          style={{ 
+          style={{
             textShadow: '0 -35px 50px rgba(22, 96, 177, 0.99), 0 -10px 30px rgba(22, 96, 177, 0.99), 0 -5px 20px rgba(22, 96, 177, 0.99), 0 10px 30px rgba(22, 96, 177, 0.8), 0 30px 50px rgba(22, 96, 177, 0.7), 0 50px 70px rgba(22, 96, 177, 0.6), 0 70px 90px rgba(22, 96, 177, 0.5), 0 90px 120px rgba(22, 96, 177, 0.4)'
           }}
         >

@@ -11,10 +11,10 @@ export interface KolorWiaty {
   folder: string; // nazwa folderu ze zdjęciami
 }
 
-export interface ElementKolorystyki {
+interface ElementKolorystyki {
   id: string;
   tytul: string;
-  pozycjaTekstu?: 'gora' | 'srodek' | 'dol' | 'prawa-srodek' | 'prawa-dol' | 'dol-srodek';
+  pozycjaTekstu?: 'gora' | 'srodek' | 'dol' | 'prawa-srodek' | 'prawa-dol';
   pozycjaObrazu?: string;
   rozmiarObrazu?: 'cover' | 'contain';
   szerokosc?: 'pelna' | '45' | '55';
@@ -132,7 +132,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 2.5, opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] as const }}
+            transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
             className="absolute inset-0 flex items-center justify-center"
           >
             <div
@@ -173,7 +173,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                 x: wybranyKolor.nazwa.toLowerCase().includes('mat') ? -50 : 3
               }}
               exit={{ opacity: 0, x: 20, scale: 0 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
               style={{ writingMode: 'vertical-rl', WebkitTextStroke: '3px white' }}
               className="select-none flex flex-col items-center"
             >
@@ -210,8 +210,8 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                 key={element.id}
                 data-id={element.id}
                 className={`snap-start snap-always shrink-0 ${element.szerokosc === '45' ? 'w-[80vw] md:w-[32vw] xl:w-[27vw]' :
-                    element.szerokosc === '55' ? 'w-[85vw] md:w-[40vw] xl:w-[33vw]' :
-                      'w-[85vw] md:w-[60vw]'
+                  element.szerokosc === '55' ? 'w-[85vw] md:w-[40vw] xl:w-[33vw]' :
+                    'w-[85vw] md:w-[60vw]'
                   } h-[50vh] md:h-[70vh] relative rounded-[20px] karta-karuzeli animowana-ramka ${aktywnyId === element.id ? 'aktywna' : ''}`}
                 style={{
                   ['--glow-color' as any]: wybranyKolor.hex,

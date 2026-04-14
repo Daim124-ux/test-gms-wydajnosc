@@ -12,7 +12,7 @@ interface CinematicHeroProps {
 
 export default function CinematicHero({ title, imageUrl }: CinematicHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  
+
   // Parallax dla sekcji Hero
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -26,28 +26,28 @@ export default function CinematicHero({ title, imageUrl }: CinematicHeroProps) {
   // Dla głównego tytułu (pojawia się na wejście)
   const textVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] as const, delay: 0.2 } 
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }
     }
   };
 
   return (
-    <section 
+    <section
       ref={containerRef}
       className="relative w-full h-[100vh] sm:h-[90vh] overflow-hidden bg-black flex items-center justify-center pt-14"
     >
       {/* Tło kontener z obrazkiem */}
-      <motion.div 
+      <motion.div
         style={{ scale, opacity }}
         className="absolute inset-0 w-full h-full z-0 pointer-events-none"
       >
         {imageUrl && (
-          <Image 
-            src={imageUrl} 
-            alt={title} 
-            fill 
+          <Image
+            src={imageUrl}
+            alt={title}
+            fill
             className="object-cover opacity-80"
             priority
             sizes="100vw"
@@ -58,7 +58,7 @@ export default function CinematicHero({ title, imageUrl }: CinematicHeroProps) {
 
       {/* Kontent Hero - wycentrowany tekst premium */}
       <div className="relative z-10 flex flex-col items-center justify-center px-4 w-full text-center">
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
@@ -66,8 +66,8 @@ export default function CinematicHero({ title, imageUrl }: CinematicHeroProps) {
         >
           Całkowicie nowa kategoria
         </motion.p>
-        
-        <motion.h1 
+
+        <motion.h1
           variants={textVariants}
           initial="hidden"
           animate="visible"
@@ -77,10 +77,10 @@ export default function CinematicHero({ title, imageUrl }: CinematicHeroProps) {
         </motion.h1>
 
         <motion.p
-           initial={{ opacity: 0 }}
-           animate={{ opacity: 1 }}
-           transition={{ duration: 1, delay: 0.8 }}
-           className="mt-6 text-gray-300 text-lg sm:text-2xl max-w-2xl font-light"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="mt-6 text-gray-300 text-lg sm:text-2xl max-w-2xl font-light"
         >
           Lżejsze, mocniejsze, dopracowane w każdym milimetrze. Prawdziwa stal, której nie oprze się żaden wiatr.
         </motion.p>

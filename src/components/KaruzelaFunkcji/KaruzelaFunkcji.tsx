@@ -3,14 +3,14 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-export interface ElementKaruzeli {
+interface ElementKaruzeli {
   id: string;
   tytul: string;
   opis?: string;
   obrazUrl?: string;
   videoUrl?: string;
   loop?: boolean;
-  pozycjaTekstu?: 'gora' | 'srodek' | 'dol' | 'prawa-srodek' | 'prawa-dol' | 'dol-srodek';
+  pozycjaTekstu?: 'gora' | 'srodek' | 'dol' | 'prawa-srodek' | 'prawa-dol';
   pozycjaObrazu?: string;
   rozmiarObrazu?: 'cover' | 'contain';
 }
@@ -22,11 +22,11 @@ interface KaruzelaFunkcjiProps {
   offsetClass?: string;
 }
 
-export default function KaruzelaFunkcji({ 
-  elementy, 
-  showTitle = true, 
+export default function KaruzelaFunkcji({
+  elementy,
+  showTitle = true,
   bgClass = 'bg-[#161617]',
-  offsetClass = '-mt-[110px]' 
+  offsetClass = '-mt-[110px]'
 }: KaruzelaFunkcjiProps) {
   const kontenerScrollRef = useRef<HTMLDivElement>(null);
   const [aktywnyId, setAktywnyId] = useState<string>(elementy[0]?.id || '');
