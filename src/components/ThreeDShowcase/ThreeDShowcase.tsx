@@ -65,12 +65,13 @@ export default function ThreeDShowcase() {
   const handleOpen = () => {
     setIsModalOpen(true);
     setIsClosing(false);
+    // Wyzwalamy animację "Front" po stronie Verge3D w momencie otwarcia
+    (window as any).vergeViewer?.sendCommandToPuzzles('przycisk_off_canvas');
   };
 
   const handleVergeLoad = () => {
-    console.log('[ThreeDShowcase] Verge ready, triggering open animation');
-    // Wyzwalamy animację "Front" po stronie Verge3D
-    (window as any).vergeViewer?.sendCommandToPuzzles('przycisk_off_canvas');
+    console.log('[ThreeDShowcase] Verge ready');
+    // Nie wyzwalamy tutaj animacji, żeby nie startowała w tle podczas preloadu
   };
 
   const handleClose = () => {
@@ -78,11 +79,11 @@ export default function ThreeDShowcase() {
     // Wyzwalamy animację reverse w Verge3D
     (window as any).vergeViewer?.sendCommandToPuzzles('off_canvas_close');
     
-    // Czekamy na koniec animacji Verge3D przed zamknięciem modala Reactowego
+    // Czekamy na koniec animacji Verge3D i fade-outu przed zamknięciem modala Reactowego
     setTimeout(() => {
       setIsModalOpen(false);
       setIsClosing(false);
-    }, 1200);
+    }, 1000); // 1 sekunda zgodnie z prośbą
   };
 
   const handleTabClick = (tab: typeof tabs[0]) => {
@@ -97,16 +98,16 @@ export default function ThreeDShowcase() {
 
   const modalContent = (
     <div 
-      className={`fixed inset-0 z-[500] flex items-center justify-center bg-black overflow-hidden transition-all duration-700 ${
+      className={`fixed inset-0 z-[500] flex items-center justify-center bg-black overflow-hidden transition-all duration-1000 ${
         isModalOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}
     >
       {/* CLOSE BUTTON */}
       <button
         onClick={handleClose}
-        className="absolute top-8 right-8 z-[510] p-4 bg-white/5 hover:bg-white/10 backdrop-blur-xl rounded-full text-white/60 hover:text-white border border-white/10 transition-all duration-300 active:scale-90"
+        className="absolute top-8 right-8 z-[510] p-2.5 bg-white/20 hover:bg-white/30 backdrop-blur-xl rounded-full text-white border border-white/20 transition-all duration-300 active:scale-90 shadow-lg"
       >
-        <X size={24} />
+        <X size={18} />
       </button>
 
       {/* MAIN CONTENT AREA */}
@@ -217,7 +218,7 @@ export default function ThreeDShowcase() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         viewport={{ once: true }}
-        className="relative z-10 w-full max-w-4xl px-4 flex justify-center"
+        className="relative z-10 w-full max-w-4xl px-4 flex justify-center aspect-[1024/600] min-h-[300px] md:min-h-[500px]"
       >
         <ResponsiveAsset
           src="/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min.png"

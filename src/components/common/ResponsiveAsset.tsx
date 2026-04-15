@@ -117,8 +117,7 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
         fill
         priority={priority}
         className={`w-full h-full ${isContain ? 'object-contain' : 'object-cover'}`}
-        placeholder={imageData?.blur ? "blur" : "empty"}
-        blurDataURL={imageData?.blur}
+        placeholder="empty"
         sizes="(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 33vw"
       />
     </picture>
