@@ -46,13 +46,21 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
 
   if (isVideo) {
     const videoData = manifest?.videos?.[cleanSrc];
-    const baseName = src.replace(/\.[^/.]+$/, "");
+    const baseName = cleanSrc.replace(/\.[^/.]+$/, "");
     
-    // Konwencja nazw jeśli manifestu brak - zawsze serwujemy z S3/CloudFront
-    const mobileWebm = videoData?.variants.mobile.find((v: string) => v.endsWith('.webm')) || `${CLOUDFRONT_URL}/_optimized/${baseName}_mobile.webm`;
-    const mobileMp4 = videoData?.variants.mobile.find((v: string) => v.endsWith('.mp4')) || `${CLOUDFRONT_URL}/_optimized/${baseName}_mobile.mp4`;
-    const desktopWebm = videoData?.variants.desktop.find((v: string) => v.endsWith('.webm')) || `${CLOUDFRONT_URL}/_optimized/${baseName}_desktop.webm`;
-    const desktopMp4 = videoData?.variants.desktop.find((v: string) => v.endsWith('.mp4')) || `${CLOUDFRONT_URL}/_optimized/${baseName}_desktop.mp4`;
+    // Sprawdź czy to plik pominięty w optymalizacji (np. frames)
+    const isSkipped = cleanSrc.toLowerCase().includes('frames') || cleanSrc.toLowerCase().includes('hero') || cleanSrc.toLowerCase().includes('raw');
+    const mobileWebm = videoData?.variants.mobile.find((v: string) => v.endsWith('.webm')) || 
+      (isSkipped ? `${CLOUDFRONT_URL}/_optimized/${cleanSrc}` : `${CLOUDFRONT_URL}/_optimized/${baseName}_mobile.webm`);
+      
+    const mobileMp4 = videoData?.variants.mobile.find((v: string) => v.endsWith('.mp4')) || 
+      (isSkipped ? `${CLOUDFRONT_URL}/_optimized/${cleanSrc}` : `${CLOUDFRONT_URL}/_optimized/${baseName}_mobile.mp4`);
+      
+    const desktopWebm = videoData?.variants.desktop.find((v: string) => v.endsWith('.webm')) || 
+      (isSkipped ? `${CLOUDFRONT_URL}/_optimized/${cleanSrc}` : `${CLOUDFRONT_URL}/_optimized/${baseName}_desktop.webm`);
+      
+    const desktopMp4 = videoData?.variants.desktop.find((v: string) => v.endsWith('.mp4')) || 
+      (isSkipped ? `${CLOUDFRONT_URL}/_optimized/${cleanSrc}` : `${CLOUDFRONT_URL}/_optimized/${baseName}_desktop.mp4`);
 
     return (
       <video
@@ -86,7 +94,7 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
 
   // IMAGE LOGIC
   const imageData = manifest?.images?.[cleanSrc];
-  const baseName = src.replace(/\.[^/.]+$/, "");
+  const baseName = cleanSrc.replace(/\.[^/.]+$/, "");
 
   // Helpers do budowania srcset - fallback do CloudFront
   const getUrl = (size: string, format: string) => 
