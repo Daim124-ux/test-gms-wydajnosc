@@ -41,5 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 # optimized assets
-/public/_optimized/
+/public/_optimized/*
+!/public/_optimized/manifest.json
 /public/assets/

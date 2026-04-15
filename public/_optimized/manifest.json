@@ -1,0 +1,1650 @@
+{
+  "images": {
+    "assets/3d models/wiata_makieta/11723-normal.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAQG/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AtAbZMAAAAAA//9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/11723-normal_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/11723-normal_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/11723-normal_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/11723-normal_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/11723-normal_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/11723-normal_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/11723-normal.jpg"
+    },
+    "assets/3d models/wiata_makieta/Mapa naklejki na brame_alu.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACXElEQVR4nD3QbUvyABQGYP9LIEEiQukzidBVSkK+IAXN1SyXzmlTGNPIZVakbk5XfojGQrAh4jvui0uQIBALUfEnPWjR/fHAdXPOUYVCIZIkb25uOI57eXmpVCqyLA8Gg6+vr9lsNp/Pp9PpaDT6+Pjo9XqtVkuSJEEQHh8fWZZV4TgeiUQIgggvQ1HU9fV1NpsVRbFSqXQ6nUaj0el0SqUSz/NXV1eJROL+/p5l2Vwut8CBQACCIIfDYbfbIQhCEMTr9ZIkSVFUJpOhaTqdTkciEb/ff3BwgKLoz/wXn5yc7O3tra+vazQanU73bxmXy2W1Wk9PTx0Oh9frBUFwc3NzZWVla2sLQZDb29t8Pq8KhUIQBO3u7ur1eoPBAACAxWIxmUxHR0cgCMIwbDabnU4nAADb29tarRYEwePj41QqtcA4jiMIYrPZ9Hr92tra6uqqyWTa2dlBUXR/f//8/Nxqtdrt9o2NDaPRqFarAQDweDypVIrjuN+bYRh2u90ul+vw8BDH8Wg0yjBMMpnkeT4ej8diMRRFMQyDYfjs7IwkyUwm84svLi5wHEdR1OfzhcPhZDLJMMzr66soim9vb8VikWVZmqYvLy9JkozH43d3d7llVMFgkCCIWCz281We5wVBkCRJlmVFUd7f32VZbrfbtVpNkiRRFIvFIs/zHMctMIZhBEFQFJVIJB4eHgqFwh/u9XqKonS73WazWa1Wy+WyIAhPT0+FQiGfzy/WxjAsGo3SNM0wzPPzc7lcbrVaiqIMh8PxeDyZTL6/vz8/P/v9vizL9Xr9r4LjuP+/GDgWQ2KjeAAAAABJRU5ErkJggg==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Mapa naklejki na brame_alu_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Mapa naklejki na brame_alu_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Mapa naklejki na brame_alu_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Mapa naklejki na brame_alu_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Mapa naklejki na brame_alu_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Mapa naklejki na brame_alu_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/Mapa naklejki na brame_alu.png"
+    },
+    "assets/3d models/wiata_makieta/Naklejka.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUHAf/EACYQAAEDAwMCBwAAAAAAAAAAAAIAAQQDBREGEiITMSFSYXGRobH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AnGjLXp6TYxq3LY8jPLd3/E0iWHSlSuJkQ7G7j8enupOFUw8BLDLevU830gZ6miR495kU4BC8dn44QlLk5Pl3y6EH/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Naklejka_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Naklejka_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Naklejka_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Naklejka_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Naklejka_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/Naklejka_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/Naklejka.jpg"
+    },
+    "assets/3d models/wiata_makieta/albedo.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArUlEQVR4nHWRgQ6AIAhE+aoE0fr/v2oCJpe13Voo73AHiXaurYgWaVyHCpasnbXLFFfrtysahXi3BjzLxSeVcRvuhN3BYPmhg8eXplO2fBnB4cFLtL1qJ3/daWKeRLe0QuArpgqJUCafSPac0oxmAVvaqTXg/JZnN2lGi4eMVeU5AhjsFvbcvf+d9k4mnaInwDhzwD/k1+RUh31tSz4Nh69/mtcPcKEA9tI7tV83d2uxAN78B/4AAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/albedo_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/albedo_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/albedo_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/albedo_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/albedo_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/albedo_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/albedo.png"
+    },
+    "assets/3d models/wiata_makieta/media/android-chrome-192x192.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAE8klEQVR4nG2V31MTVxTHz967dzfRlz63Lz70oX1s/wJ1gFCiaUfGdhwR7Q8dKyAjKoq0pop2ahVbRB2tWEt+kB9oBEmkFJRgAkEJoohJKgZCEEnr75eomL2ncxedvrgzZ2Zn93u/9+zecz4HQFxWBChsALA0SWD+g4LJ8Q7k2T8Ck6sczJ42sHinwOKZBrPbDyZXJeQ5PtY1QivWiLXCQ79WegHWDwGUdEmwzL0QltreB5PLAp+37ZbKes6SmlCMWvufUGv/U1ITSkjll3zwRZsVTG6Lrl3mXAAlNkn3EQEVDQDFrQoUOt8Dk2sJrPBVkW+7bdQ6MEIPRB/Rn4ZytG6Q032DnB4YytGDw4/pD5ERoYEV57aAybUYCh3vwkov073gU5sRPnF9CGbPammN/yjZ0ReWj9yYlU/dnpOP3eS0boDTHb2c7gxyui/C5eOjXG66PSc0Qiut8TeC2bMKCls+gGU2A4DZvQjM3hJpbcBDvgtPsuZ4VmlPacye4PT7EJdK2zl85kER0toLnFpDnDkTXLmQ0oSW1IaTUqnfDUXeEjC7FgEUtiyGYl8D2RZMM1tCUwf+1ZRAitO6fmGG0lcdSKovI9l+GaUvO1A8o/sHuNI5xdXIA401J3JiLRT7joDJtRQg37laWhfwyPXRrNqX4erVB1w+PoLS+gCS9QGUD11DpW0ClfMTSA9eQ+kbP5INAZRP3OTq0EOuXslwuT76XFoXaIWCllKAPMdGsrm7nTWNvhJmin9S/C/xeUj3DaDSMYXq9WeoDj9DpT2FdG///LvaPlQupnRT1nQrRzZ3d0C+owwgz15Gqnv9zBbLKX2znJ0e5WTDRSSbu5Cdvo1KxwwqLWlkLWlU2u+hfGoMSUUXko2dyM6McTWU4cwe00h1bwDy7RXzhjV9fuaI55TAFJcPXeXSOpFdP7KzE8jsKaRVw0i3DCOzTSLzJpHuDaPQyIevcaUzzZkjrgkPyLeXC8NysuuKnzXHNdaa5HRPmIv/JB+7jkrPfWTu9P+GrjQqf82g3DiM0td+FAfHziU5s8VzwkMkJwwryM5ggP0e05jzjl4qpKxLfA6q15+i2v8YmTOth7hXo0+Qnb6FZNOfSK1hzlx3uHwmliM7gm8MHWWksqdDPjmaY/a4niHZdhmZI4GG8edoSM2hIZadD3F/J4vMFkOy9dJ8ho4El3+79YpUdreLAwZx1OLIaX30uTCUf4ly+mOEM9ffaLj7Ao0ZjsbZ1/EP1zdhzgTS/RGUf43qhrQ+mhWlJ0oQ9GIs9h0h24NpufFGTj45qjFbnCud09yQfInG+xyN917HLNc3US6mOWuOi8w0+egNjVTrhd2gN4neLkUe0XpuUhNK0p+jWdYyrinBDDdMvuTGDOfGGY56ZLj+TLxjznGNHoxmya7QpGjb+dZzLwK9oUVjF7lXSaX+RlLVG6aHR2aZNzmnRh5xw90X3DCtzcf4C64OPOTMk5wTGrI1GJZKA0ehyLNaB4wAjY4cgR6BoAK9r7dIAl97IyPyybHHrHUip3TOcBHMm8zJJ8Ye0T2REaGBYl8VFLiW6OgTCNTx9QaMApIW5wJY2vwasOet0qYeH60NJ2jd4FNaN/iE1oZi0qbuc7Dy/G4ocFlgiQCse6EOZwFpHbBvGwEFYgQIzLsqdewv90zDcs8UmN1t+lgQ4yH/7SPgP1HYEqJcB1EyAAAAAElFTkSuQmCC",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-192x192_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-192x192_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-192x192_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-192x192_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-192x192_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-192x192_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/media/android-chrome-192x192.png"
+    },
+    "assets/3d models/wiata_makieta/media/android-chrome-512x512.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAFP0lEQVR4nE2V209URxzHf2fmzNlFX3y2LzbxQX1oov+AIpflUrRKaGNFkLQYES+BeuGSuhGxjUppQGpKlFT27B25yS6oUFlgWUQXUAQWRZZ1FcEq2D64Au7Orzlnje0k32SSmXzynd9v5jsAysjIAMitBcg0CLCrg4DOuAbiDJtBZz4MKdYWSLMFIM0WhFRrG+jMxyBO3gIJ8hrY0UIgwSDAlloA0KsoAL0eIDcXQF8rwE7LaoiT14POugO+bj4t5Hc1kqLeCarvf6uIFPf6hPyuJvimWQ86yw7YLq+HFMsqyLALsFUfZcHWboCvTBIkyZ+BzhILu5sKhbxOA9V7Ruh57wL9+V6Ynh3gtPwup+fvh+kF76KyJuTdNsDuxgJING8DnbwWvpSZyoJUOQaSzBsh1bpX2OeoIad63GLVgznxytiyWPOQ07MeTopcqui5AS5eHo2IV8dXxOqROXKyp0/IbLsEKbY9oDNvAJ1ZC5BsWQcptkwhy2Gjpe4ZVu8LSa2BCJMnOf2xlwtZrRx22VGRkH2DU30fZ6ZJLt0IcHbNF6KlfdNClsMKybZMlQU68zZIb6oix11BVu+LaDx/RSRngNOz/QoMhRwHkhPdSE7cQSGnDYXsVqTnPFxqf8Y1ntcRVu8Lk+OuZ5DeVA0603aABNO3wn6HjVZ4Q1LvPNcMvubi5Qco5DqR5DpRrLiPUosfpWY/ihcHUfjegeRAO4q/P0TNvTdc6pnn9BdvSMhxNkCiKRsgTj5Ajna2ildHwwpMcsxwWuxSjoe03INS2zPUDP2DGu/fKLUEkJ7pj66V9KDUHuAKVKx79IEc62yDBGM+QJwhj5zsbmOG8YjUO8dZ3ShXHJCjt5DVjaPUNouSOYjMHESp9QWKV8aQHLmF5GAHsj/GuMb9ijN5IkxOuZwQbzgCEC8fIsU9Dib7IkpdxIpBLuxX3LmRXfcjkwNIC4ZUMUMAmX0aaZkblT1i5T0u3QxyZvSFSUnPJ2A+KelxKA1h16c5PdPPlTqJvw2h1PUSJUsQaeEw0oJhdS7dnkXx0hAK3zlQaRxr9HMmT0aBcSrQkE+KXE5WNx5hpiecnu7j5PAt5TioGX6Lmv5FZKagKmWu8S4iq3uEJO8mUr2bM8sTLl6bCJMilwPiDYeVpuQpBRVrRyNM9nFa1s/J8TvIjD7UTr1H7cwKaifeo3Y8hNrACmofv0NmmEBS+GfUoXGSi1cerZBjXa0QLx8ESDTtE3IcDWLF/fcKUPzVy+lPd5FZHqP26RLGzHOMmfuoVxy1T0LITJOovpoqrwqkld53Qo7TConmvcrFjoX0xmpyojsoVo+EVacGH5c6nnPt9DLGvOQY8+Kj5rjqWmoPclbvU5xFxJoHYXJSvdhVoLNsA0g2f648GyHbYSXFfdP0gjek1FJyzXPtzDKPmedchc5yxS3X+pe4xjXPmXkqIlYMhUhJn1/Idtog2b4Pkq3rAJKuKeGwAVKse4QsRzUp7O4TK4fnmG16ReNZ4NqpJa59Holqaimi8byJMNv0slg5Mkd+cLmFLGcNpNr3gs6yEZJNMQCb9AA7jQySjGsh0bwV0psK1PgqGxgRa8cWWYM/LHXMckWswf9BrB1boGUDwySv0wDpTYWQYI6FBONnkGiXYJP9Y8AqqmoH2GVf9V/AtuiFQ11NtNQ9QcsHF2j54Bta6h4jhzqvCxnNp9WAjTWsh2TT6mjAdgPo8X+pre8GyL0R/QISjGsg3rgFdNajkGJrgTT7U0izTUGqtVH9FuLkzdE9ZgJfXBQAcj99Af8Cl+cOQ2SwfqUAAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-512x512_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-512x512_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-512x512_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-512x512_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-512x512_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/android-chrome-512x512_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/media/android-chrome-512x512.png"
+    },
+    "assets/3d models/wiata_makieta/media/apple-touch-icon.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAFCUlEQVR4nG1V21NTRxj/dvfsSdAX+9q++OBD+2j7D1jlJihaqTqOGrVeqgZ1QCkiI2kBO/WCrajtoNg2F8jFchESvKASSAIoQRARUzEQ4iWx1ttLRCbZr7MHZjrT6Zn5zZzd832/3T37/X4fgHxWuwC29wPk1RH42sUg1zIPMqwLIauhAHIdLbDcOQnLnY8h1+GGrIZ9kGn9DJaaP4BtVqblyFzJoT0mE8D2WoDCHgLLHHMh3boAsu15ZG1LOTVeb6QHu0dZeeA1Kw+8oaXdIWq83kzWtphkDGRYF0CeYw6YOgFWm2a4oFMOXCpk2z6CLPvnkN9YRHZ1WJipZ5AdDb5kP/QnWWWfYFV9gh3tT7JjA6/Ytz2DMgZWNRVCln0RZFk/hJW/8xnClbY0WGr/BHKd68lG91la0uVXTg3FlPMj08qZu4JV9gpa4hX0oFewI31C+WVYKHX3p5WaoRgt6fKRje7TkONcB9n1H8MKix4gxz4fclwbicHjYmX+CW5+kFAvRQS3hgQ77BPE0CrgCxdKkM2tgpl8gteHhNoaETKWlfnDxOBxQI5zAyyzzwfIalgE+U2n6AFvlJtDKV3PXynVExGsMiCI4RKSr9xIizuRFt9EsqUNyaZWZN/3CrV9Uuh6X6S4OZSUuZDfVAPZDYsBMurXk81up3IimFC74kJ364VQfh5Cst2jQTnRj2rLOKrN46gcv41kmwfJjnZUau+irv9voeuOC6W6/x3Z4r4ImTYDQLp1J93b0arUDSclmeqeEKzUO7OTqh5U2yZRd+ct6gbeonopgqwiMPOtrAvV9oiQpLxuOEX3dbRBhnUXQLrFSL/pdHPLfaF2xwS/MCzojnake68hv3Af1banyO1R5A1RVFufID8/gnTPVaQ7LyP/bQR1/jjKXFrS6YF0awFAhqWAlnZ5uPWBUD2TqJy4hWRzG7KqAPLGceS2CLKiAWSFA8gtE8hdYWQVfi1GOXkb1StRlLn0UJcHMixGSWiUA25+IPgfYWTfBZBs9aBy9g6qN2KoOqL/EtqjqF57hsrpASRb3cgqZxc1zxKmWwrkkQvoQa+H/zoqeP1DZId9SI1XZ45z5w3qAq+Q10c1yHdd8DXyC/eQ7r6CzOQX3D4mZC4t8brl75OEu+QPVc4Np7TaqwgIeuAmclsI9WPvUB+ZRv1oYgby/WECuWUU6f4bcoeC20JCOTeclBcLS6w7QV61vHKlOvhOEio/BqUikNv/RP2jKUyLC0yLzeK50Bbh9SFkR3pR+SmoEbLqYEKWnixBWdiLIb+xhhZ3RpWaoaRSOyyLVaiXHwt9+D2mPROY9mQWMYH68BSq7VGpEqGcu5dSzgylaLE3CqsaT2ki0eSS49xANrkdtNQXZseCCV4/JlTvc6GfeC/S4kJopBJxoc2p3rjgDWOCHR9I0EP+CbLJ45Ly1WSsCVoKO8exjhjcp2lRp49VD8a4Mzyt63kp9I+mhP5JagaPpoSc467wNDs5GKP7vX5i8JyFHOd6zWCk0WiWI61HWlCmputCzb4qegeV2pFX/GI4qV5+KiT4xfGkUjvyUn4juzss8GVTkWZ50vqkBUor1AilORa6CORZ58ASs2awsKbZRHZ3NLEyX4hV9b1hVX2vWZlvlBg7GmFNc7kWk25ZACscczVzliat+eH/tYCllnmQafsUsu37INfRBsudUa0NyHaQbS+ATOtCrU3I2P+0gH8AlhgTowCbr4IAAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/apple-touch-icon_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/apple-touch-icon_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/apple-touch-icon_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/apple-touch-icon_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/apple-touch-icon_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/apple-touch-icon_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/media/apple-touch-icon.png"
+    },
+    "assets/3d models/wiata_makieta/media/enter_AR_button.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAACbpAAAm6QHEPyK/AAAB30lEQVR4nM3U2YtPYRgH8M/YImMZSzJDJGUfS1kSiSRyYU1GKSmhZErKPpKklMiFstRkK0VGxq6skQszFFIy4q9wq/PrO/o1F5MLTd56O+d93ud8n+X7fQ5dtCqyO7sr310HWIkRmIBRGIhuueuBwRiDSZiI8fGrQs+OYL1Qi/U4iE2YmSBFFv0xB5txGA04gF1Yiynx/bOGog6N+IAb2ILRARyGjbiMN7iP22iObRumlveliHAErfiFrziNeSm3BvV4iS+4iTMBfo9rCVgC643lya64bMOnZLkBA1CNnXiOF9iPlTiRip7EVgIcju24h8dowgM8xV6MDWB9wN4lux24mPOtlF1icQaOpzeNKf0s3ua5MGy2l/wjwM15PgpBc9ulsio9+JYsLyRicb4bxmvLAL/jc3rZhitYgUEF4Mg4PsNPvErJ7efWSGRxWcmv098mtOA8lqBPAbggbLbE8RJOpTcFAR/zXmS5O7Y7OIR9eBhCimDjCsClOJaSG5J60Ytl2IOrOBlJFKI+l4Br8u1RXA95pR7Owrp8MDvjVjDfF9Mi9kI687PrMhmTI/pF2IrVmC7zWRNZFOPVvUzslZFUMd9D4lsdW7+Ma1V4aPf5679LZ74VHW3/HPD/Xb8B8ZxpZH5TcE8AAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/enter_AR_button_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/enter_AR_button_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/enter_AR_button_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/enter_AR_button_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/enter_AR_button_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/enter_AR_button_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/media/enter_AR_button.png"
+    },
+    "assets/3d models/wiata_makieta/media/favicon-16x16.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAEF0lEQVR4nH1Ua0yVZRz/P5f3BZt+6kOf21qrb33tiw2YcjSVD9IXtUBFcrPSdFhbKgZrmqHOMsYlLofDTSAnJ+QOpwUHjQ5e8Bx2AC+oh6ChGzlKJ/B/2u85hZdV7/but9/t2fs+N6Lnn3XFglaWO7Sy9EVKqUyi1b4jlFo9RJ6aKYvg0OEjh/y/Prm5ROtLJaVWLKdU38v0dk0KpTd+Qu82nxNZ52+J7LZZILjV4SOHPHroP/N4Kh1KqXiJPNVvUnrjDvF+6ymxP9ApD/WPy8PBBzI3+Mjiof5x6PCRI+Rtr9KJD/RWg6CkyhcoufIV2lCXJjL8eTIn4FdHfo6qgtCsPDo4Lw8HWR7sY4tHB+ehw0dOZPjz0LP9JO9yolXVK2i173VKq98islpK1MH+kC4cntHe6GNdOGwHEbs6WOxotQgO/W9/Bnn00KdVvjeIkqteozW1m8R7/jJ5sH9Me6NzTktswakZZ5V/gcXOdhZbW1hknY/jznarw0dOe6Nz6KFPnppsoiRvKq0/ky/39AzoovBDt3uKnbYYq5NDLD/qYvlhJ6v8AVanLlkEhw4fObd7itFDn9bVn8aAm2ljU5HMuxDWjTeN2zfDunqUZU6AxQedrL4cZOfcBDu90xbBocNHzkW+8aZBnzZ+fwYDZtKm5lJ18nLEab5j3I5JVgW/xOfrQB/rylF2O34zbueMAYJDh4+c2zHJ6KFPm/1NRMneTMpsKVGF1yL67AQ7DTdYfvYTC/zqiSHWdbdYV0wYdXzMAMGhw0fOabjB6KFP21oxYFUmbWstVUXhiK6/zroswnJvD8v9AdblI+w03GVdMGrknksGaHn5iPWR02URRg99ymprIkr55wuHI9o7yurbqyz2dLP8PMjO2Vvs9t4zju+O0cfHLLrd94zTdJNlbpDF7m6bt73C4Qhtt1/ozaTN8TlU342wOn2Vxb4eO/lue4wTrv1pEi7+btze+xYThv8wTmuM1ZFBFnt7bN72MIdbMIdY5fT4KqvCa0YXh+3mVd9cYbd3mhNvL5jEu4tmCScWDLaK+vqK/UpdHMb8xVc5Pb7KqbThTL78uGdAHQs91EVhVqcus/aNsts/wxhk2RQvveDQ4dtcUZjRQ5/WYx/ipKyt3SQy/GXy0x/HVEFoTpdGFpzm25wQmuXE2KJZNm2WXnDo8JFTBaE59NAnT232s2d5e0uJzAmE1FehGV03/tgN3uPE6484cXLRLPuVDRAcOnzkZE4ghN6Ts/z0bZNWnyYymvPkvl6/OjYY1VXRWac9Nu9evG8ShmYNEBw6fOSQR+/JbfM/96E80NepTgyN65LwA10+8ggIDv2/78Pnb2xPxQpaVfUqra3ZQO80fUFbf+gSuzomxe6uB0Bwq8NHDvmnbuy/AOWkAcpM1EaYAAAAAElFTkSuQmCC",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-16x16_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-16x16_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-16x16_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-16x16_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-16x16_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-16x16_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/media/favicon-16x16.png"
+    },
+    "assets/3d models/wiata_makieta/media/favicon-32x32.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAE3ElEQVR4nEVVW1BTVxTd9zxugl/+d/xox5/2237XQoKA4gy1th+KlD6cYkVkBoFqFV9TtdXW99RXlbxMgiKQkLagJSGGlxEfDZVAeSmiVLE646BhYJ/OPmHaO7Mye87ZZ911d/ZeB4CemhqA1X6CAQWXOdgcCyHTsQTsns2w3NcMK/3jsNL/EJZ7Q2D3lEOm412w1S6EAieHFU0GvNeWPp9+1DxZhwF5/gWQ6VwMOd58+LihxtjQWs+q2vvZ9tgLjcpI0ihpbYCPruyEnIv5kOlYDLneBbDiRpqUuPTPCp8F7O5FYPdkQsHlcqOktZZtj/Xy/fEpvv/GLNvbjQS+/8YcPxB/xnZ03DJKWmqh4FI52N1LweZ6A3I9EmA1AOR4MyDb/Q7k+QqNtYETbEskyg/fnhCnEilx/A7y3Z3IqsLIqiLI93ahOHkXxZm+FD9ye4JVhqPG2sAxyPOtgWz325DjyABY5nkL8nzrYF2wjm2Ljorz96ZlwyiK2n7k26+jUdSEsKpOwapLyigOIt8ZQ+lKomwcRcpl26LDxrqgjwTBMvebAHZXFnxYf5RtCY8JR/+sef3vORkcQ763E42iAJEoVvG7hvFpUBnFAcW/7UKz+T6asSdzojY5S2eJA7JdWQA2Z6FR3OzjP9x8aUYm0ex6guLkbTS+CCkC/75HySvDStYPKf5dtzI+b1bG+l+UOHUXLd1P0WyfRH7o5kujuNkPdmcREZawsquN4ufEa0vXU5SBEWTVYWV8ElB8T4eSjaPKEn+uLPF/lGwYUXx3TO+xb9qVGRpDS88UinOJFNt0tQlsjo0AdmcpqwoHpKs/ZUYeoTh3F431IcVKW5Q426dk07iSF8fSaHygxJmEYptalLHhNyUv9KEZnUTpujfDKsNBsDnLiLCMbY0GpTs5Q3URB3uQ6qbVXRpW0jmiWEVcg2LpH0qr/KxZiR/jaP46jtKTnGFb24PERZ9cxrZFg9KZnJF1w8h3xXT9xPFbyrw6oZXxirgGxWbLQyWO3kzXd08nyssjSGeJY57QUcaqI0Fx/t6MdA8i33EdWWmrEuf7lKX3ubLEppT0jGlQbIk/U+LsH4p91aJ4TQylZ5DaJ8WqIwGwOUoBshwbWdm1JnE6kRLOJNJbWWVYSVdSWQemlXV0Rln/nE6D4uS0ks5+xba0aYXCNYDidOI123ytEbIcJfTJRUZxyE9/PRGKI73I9/Wg9A4q61+vVcYkqozHqDIeoY6tg6+UvDig+L5u5Id7UYvQbRPyUQuCbkbd2JExfvTOrDiVmJOOpC62dSiVJpuYxyPULzFDD/QkUS4/duf/xqYh0eOS6ys0ioI+Vh0d5gfi09I1iGZ4Eq0jM5gxqVCr0woVWodTaLY9RuEcQMpl1dFRKArW6fGlMdYDTYOd51tjFAaPsfK2KD/UOyF9QymzYwqtA6/Qen82jYFXaMaeovAOpfjB3gnKNQoDJyDPW6gNhoxGWw5ZD1mQzb1U29eXLbVsV2ev+CkxJf1Ds2ZoHAkU0xrtkcXBB/VkX5mQ7V6kLfA/PyRzJJPM9S+A952LYZk3H1ZfqTFKWurZ1+39fHfnCwLFtEZ7OodyyZTJnLVja0IS6Z8nbZq/Ai4shCzHEsimK8DbDPn+cQ2KaY32KIdy6dqg83SNAMC/M0UP11PzqNwAAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-32x32_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-32x32_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-32x32_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-32x32_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-32x32_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-32x32_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/media/favicon-32x32.png"
+    },
+    "assets/3d models/wiata_makieta/media/favicon-48x48.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAE5ElEQVR4nG2V209UVxTG19n77DMzfWmf7Uub+ND4ZPsPVOQyEwg0rZrWSMNU2xoFNdgUb1waqmCaKg2FqDWKcIa5IWhhRgSxMDAwoAyKQ2GsDpdRQFKptg/jbWatZh9s+1An+ZKTs9f6ndl7r/UtAPmrIIBNFQCb6hT48BSDTMfrsF5fC1muIshxX4Q87xzkeeOQ4+4Aq2sPrNffgwz9DSN2U51i5ErGv7AvrgNUNADkOl6D9Y2rwebOhU8uliu7rray0oFJXjn0iFcOPWalA1PK7qttcg1s7jxIb1xt5MhcgyGh7xNAbqsGVv1NsDrTYGNrsVLY08grQ2P8WHiZfz+a5NUjyI+OID82muTHw8u8MnRDKbzSBBvaisHqWgdWfRV84BWwxgsANqcFrM41kOPeohT46tmB/qBaP76oNkw+V0/dQl4VQnagD9nBAPLqYVR/iqCxVj++yA70DygFvlrI8WwGq/MdsOpmAJvrLcj2fKrYfV5WHpwRjmhC88+lhOs28m+CqNjbET7ykpTyWTvyyiAK923ULsVTqiOaYOWDMcXuc0O2Jx9szW8DZOpym7WspC+uOqIp08jvKe3yHPKqIQkj5XMfsf29xPb1krKtQ0KJHw2h1h1H07WHEppkJb1xyYAsR7oE5itbfV5eM5rQgktoGn2I6smbqGz3kxSvuU6ifYa09mlSj10jtt1PbMclUk/fQlN4GbXBJeQ1o0+Ubb4WyHQUAGQ07WDFV9rVs5EXRkDnLPJDAVK2dhCvDpHWGSfTrb/INP4naZfmiB8ZWlkr6ye5E1N4GdWzkSTb29MBGfpOgMymQnawzyeaJ5Pa0BKKhgiyHZ3EirtJbZwk7fI8iZY4aVKd86Q2TBDb00VsZyeJxgnUQksomqdSkgGZeqEEFrGyfp9wRVNaVxzV49dQnhWvHjK2KjyzxPeHDQn3LIkLMeKHg8Z5qjXXUbtyD2WuZPwDLGTl/T7RHE2JCzHk3w4a56eeGCMtsEjifPw/4Pk4ab0LpNaFSfnST/zwIIqfp1HmSob8cyvA0oBPbZpKCc8d5BUDyHZ3kTg3Qabxx2QK/UHCEzckn003HpE4GyFW1EWyrIT3DqpNU0l2KCCBhfJSdrKvejrUM5GkrC9+ZBBliYjmKJnvPiHz3HMyRxMrks93EiT0KWJf/0IyVrhvo3om8oLt7WmXFwyQ4ShQtvlb5NXLYlZ/DCP/bgSF5zcyx56S5QGSZfGlHqDxEeGMEj86jGpd2ADKkpOlBxl6PkCmI90o7H19cfXEeFJtmDC6ROu+j+bpZ2RZQLLcf6kFND6iXb6HwhlFGaueHE/JXNjQWms0idEu2Z58xe53s9JgjNeEE6LlbkoWuXn2GVoWES3zSIYeIJpnnqE2sITCezfFfxhLsLLgjGL3e2X7Gm1sNLRs7BzPZsXur2UlgQFee3NRtE4/N40sozn2FM33UyuKPUXT8DLKNRnDSgJBxe6vh2z3FsNgpNEYliOtx6avgiznOtjYJu2riR8evqGe/nVZtE4nte4F1LrmJSgp3/Ejw2NKUU+jjIUsZ5phfdICpRX+z2DTGleD1Z0HH0uD7WljZcEpXjXymFeNPGLlwUllV0+rXAObKxfSzr3CYF81AqS9p+vvgtW127D9PE/cGANyHFhdRZCurzXGxCtGwN+UExhXmmZwVAAAAABJRU5ErkJggg==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-48x48_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-48x48_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-48x48_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-48x48_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-48x48_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/media/favicon-48x48_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/media/favicon-48x48.png"
+    },
+    "assets/3d models/wiata_makieta/normal.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0UlEQVR4nHWSDQ7DIAiFPfdgCVy4SneBhX9duuSl1cInD+og+BDeBDeBmBaBMN4maYHrdimCMgzbyUW4CIU2MqNyCNdwhh2DSTgDziQ+mOXWfDH8lXBWfiwFP98VngST7Wmqs6uON1KnS9tmnKaL8Tp566IbSR51HL4dGTY+LAScW4PbhWywkaTkU+WIPsIzYS1ScIvD1OQaKgbMO0z/4c7JK1CwGjgHHlvVDlcLDauT8FYZQfbAYi6qd17B+M8+MA1Y2Mf+MkWfdvTbEhT2y7u+UKzzPWFFV88AAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/normal_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/normal_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/normal_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/normal_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/normal_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/normal_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/normal.png"
+    },
+    "assets/3d models/wiata_makieta/oslona_ao.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMFB//EAB4QAAMAAgIDAQAAAAAAAAAAAAABAgMEEWEFBiEx/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAMGCP/EABcRAQEBAQAAAAAAAAAAAAAAAAIAASH/2gAMAwEAAhEDEQA/AOy7W5g1ahZrUu3wuy6pNJr8Zg+0+P2Ny9W9WVTx2m11ybeBNYYVL6pSZz6gcBWb3bVMHAVm92oAgSpQACQACX//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/oslona_ao_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/oslona_ao_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/oslona_ao_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/oslona_ao_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/oslona_ao_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/oslona_ao_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/oslona_ao.jpg"
+    },
+    "assets/3d models/wiata_makieta/studio_small_09_4k.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEiElEQVR4nEWT+1eSBxzG339m5i13nG3nVIIgCthW4q0lqNhMawWiWBvmyWqQoL4vwQu8vFydiIVMxAvawmyrU6JGGnOrvF9QQVHuIM3Tzo6ynZ7z+fXznOeH7xdA5GgbCP3AaSyroBNyiekZJ1KOpyUmJScmJSUlJyenpCanHpJyxPG0tHwKpVUgePZ0bO7tn8Dk5NSz58+HLMNyVMFg1uYQSZ+nf5Gcmvqfn5ISJ96SnpFBoVBuNjZq1WqjwQAcHBzEYjG/3//u/fuHhh4Gk4XLJqSmpR1LSvosIeGIYwnHEo+GpKRnZJDIeRX0ShaLVVdXB/zzf/b39+fnF3R6/VUGk5x3JguHx2CzMjHYTAwWi8Vl4fBZODw+m0AkkYkkMomcl0skfZI/fvwYiURf2e2IHL16jVFBv1hWTqfSyqi08oqKyqqq6mvXGPVsNofDYbFY1TWXqVTaJznuLy8vD1mGQVB45y63+fadpqZbTU3Nd+/y+HyBTCp70K0ftgz2mX7p0GrEIhHg9/kikcjfRwkFg7Ozs2azWSKRQsL7AkEbl3ePx2sBQaFcjg70989Mv950rq2vLP0x8/rF82eA1Tpqs9kcDsebNw6bzTY4OKTVdkhgCQzDIAjx+QI+v1UkEms1Gqv18cL8XMDnDfq9O66NzbUVoOlWM1/QKhLDwvsiEIJAEBKJxFKJVI4gsBiGICEECREZ8vBBt2385dam88N+NBYNhfx7vl03cOZsPqWwuKjkfH5BIZVWXlfPbm8H5YhcgSoQGSIWwzAsUSmVvUbj1IRty7kei4RikVA05A/7dwE8gYjFETKxuJOZmHOUAgazFgRBBYqqlEoURWVSGYIgP3d0mPtMUxPjztWlcMAbDfoiQW/ItwtgcNmYLBwOT8jJJV0opdWzG0AQUqCoWqVSKpSo/LClW6+3DA7YJyfWlxcDeztBryfo9QT2tgEMFpeFJxDJeWfPUeiVFxuu3zicLZer1arDKJUdWq2xx/B4ZGTGPrW+sujzuH0el8/j8u5sASdPncZnE77+5lxBYTGd/l09+3praxuCIGqVSq1SadTqLp3ObDKNWR87pu3rywu77k2Py7nr3tjb3gROfPlVTi6xoLC4oLCISitnMFktLXyJRIKiaHy8vqtrwGz+7cmoY9q+ujjn3lhzb6x6XBs+jws4dfo0mXymuOR8YVExraycwazlcu8JhSKpRCqVSlEU1XV29vf1jY1aZ+xTy/PvXM7V7c01785W0OsBcnNJ+ZSCC6U0Kq38UnUNu+EGj9cCQUIJLJFJZUqFskun6+vtfTRsmbS9XHz/186WM25Gg16guOTbUmpZ5cWqy1e+Zzdcb759p62tHRbDqBzVqNW6zk6jwdDfZxqxWCbGXyzNv42bkaB3PxwADj/mUg2TyfqR08jl8uL3pFFr9Dpdj8FgNvVaBgceDQ8/fTI6/WpydWne53GHA3v74UAsEgRqaq7U1rI4nJs/cXkgKEQQRKvRduv1vUbjgNk8MjRk/fXR72Njk7bxt7MO5+qSd8cVDuzFIsEP0fC/MFDFsJYlG7sAAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/studio_small_09_4k_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/studio_small_09_4k_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/studio_small_09_4k_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/studio_small_09_4k_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/studio_small_09_4k_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/3d models/wiata_makieta/studio_small_09_4k_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/3d models/wiata_makieta/studio_small_09_4k.png"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Animacja_klapy_dark-91.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUDBAj/xAAeEAACAgICAwAAAAAAAAAAAAAAAQIEAxEGEyFRYf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEhAhH/2gAMAwEAAhEDEQA/AMrQ02l7HnJJ1ngowqx04Y9S+sS4UnJF20l1x8FLU4DVFwEmkBIn/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_klapy_dark-91_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_klapy_dark-91_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_klapy_dark-91_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_klapy_dark-91_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_klapy_dark-91_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_klapy_dark-91_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Animacja_klapy_dark-91.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Animacja_naroznika_glow_20100_fallback.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMIBv/EACQQAAEEAgECBwAAAAAAAAAAAAIBAwQFABEhBhIHMUFSYWJx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAIUH/2gAMAwEAAhEDEQA/AMNJ6ch14iNm1KjF7u3jHy6np16qOQNgb7zIKqBrS+WU9Nr4ljEIZsdp5PsP5k+eJ1dErxukhMAyiNprs49MWpVOU0hOW8QJoVNdJ8YYleVVVwwqv//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_naroznika_glow_20100_fallback_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_naroznika_glow_20100_fallback_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_naroznika_glow_20100_fallback_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_naroznika_glow_20100_fallback_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_naroznika_glow_20100_fallback_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_naroznika_glow_20100_fallback_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Animacja_naroznika_glow_20100_fallback.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcBAwUI/8QAJBAAAgIBAgUFAAAAAAAAAAAAAQIAAwQGEQUHEiFRFDFBQ7H/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOeNI6cbjdlpaxUrRCdz5ExrlXEudAeuxGI3Ht2jD5aoq5lqADpbHYkeYu85R62/t9jfsQpute6wvYxZj8wkbCEi/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Klapa-rednery-wzmocnien-2.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYBAgQH/8QAIRAAAgEEAgIDAAAAAAAAAAAAAQIDAAQFEQYxEyEiUWH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAwDAQACEQMRAD8AzyZfjt3bkSY4xSr04PVTbZjBto3KSXCR9Ia59Ox8wXfx+qpOSqbX0fyqZn9+TccLnePI99bopAaNG0SoJIooR//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Klapa-rednery-wzmocnien-2_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Klapa-rednery-wzmocnien-2_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Klapa-rednery-wzmocnien-2_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Klapa-rednery-wzmocnien-2_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Klapa-rednery-wzmocnien-2_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Klapa-rednery-wzmocnien-2_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Klapa-rednery-wzmocnien-2.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAACTpAAAk6QFQJOf4AAADC0lEQVR4nC2QT0gjVxzHp16lFzEIOaykt2LF4+LBg3soWMoiiFCoILXsyYNCdaFHPS+iC2rxX1J2oZDEHkNUIvhn7UYwOCpjZjKZZKb+y2Qmmbx5f3ZmzHvlDT184Pe+v+/v3xMYYx0IoZeEkHcIIRUh5DmOQ/L5/JeFhQUyODhIIpEI6erqIt3d3aSvr49MTU2RZDKJq9WqBwBQAQDvLMt6KUlSh/D8/Nzped5rz/M+EELqCKHAdV1fVdVgZ2cnGB8fD2KxWBCJRIJoNBoMDw8Hi4uLwdnZmW+aZgAhrEMIPwAAXpfL5U4BIfTC9/0Z3/dPPc/zCSFthBA1TZNmMhk6PT1N+/v7aU9PD+3t7aUjIyN0aWmJiqJIHcdpE0J8jPEpxnjm4eHhhXBwcPDKMIz3lmXpvFGj0aDVapWen5/Tra0tOjk5SQcGBmg0GqWxWIwODQ3R2dlZmkqlqCRJod91Xd1xnPeKorwSstnsr9fX1+lyuQwfHx+ppmm0UCiwTCbD1tfX2dzcHJuYmGCjo6NsbGwsjOfn59nm5iY7OTmhpVKJLwBLpVKqUCj8Iuzv778RRfFvWZZJpVKht7e3fDu2t7fHkskkSyQSbHt7m21sbIRNOPF4nKXTaXZ8fExvbm6ooihIkqTUxcXFlFAsFn8wDOMPXdcf+KmqqvKpTFVVpmkaq1arTNf1EB5zjedkWeZQRVGoLMv/FovF1aurq+8FAMA3EMLfWq3W50aj4dfr9bZlWbTZbNJWqxX+kW3bIY7jhBrP8Tf32rbt2bZ96jjOTL1e7xUajcbXGONRjPFHjLEFIWwDANq8mBfd3d1RXddDarVaqP0/rO26bhtCaGKM/8QY/wgA6BRM0+yAEH4HAPjdtu1/7u/vbUVRmqIoNvP5vJPL5ZxsNhtydHTkcO3y8rLJPdxr2/Yn13XfYoy/bbVaHQJj7CsAQPfT09PPlUrlL1EUtcPDQ2N3d9dIJBLG6uqqsbKyYiwvLxtra2tGPB430um0kcvlDFEUy5qmfazVaj8BALp4r/8AfdKv4cBnZCEAAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min.png"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Naroznik-trojkatny-wiata-na-rowery.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHAQb/xAAhEAABAwUAAgMAAAAAAAAAAAACAAEDBAUGESESQRYiUf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQADAQAAAAAAAAAAAAAAAAAAERIB/9oADAMBAAIRAxEAPwCD4pjVrr6khudzCAA6+/af3bHMTlpCaiuLRzhze+Epc7u79faxOsmUCdps6T4uZ/aGpjIPT7QkQVU4D4jKbN+bQgI//9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Naroznik-trojkatny-wiata-na-rowery_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Naroznik-trojkatny-wiata-na-rowery_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Naroznik-trojkatny-wiata-na-rowery_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Naroznik-trojkatny-wiata-na-rowery_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Naroznik-trojkatny-wiata-na-rowery_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Naroznik-trojkatny-wiata-na-rowery_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Naroznik-trojkatny-wiata-na-rowery.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Pakowanie-na-palecie-min_test-01-min-1-scaled.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABQDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAMFBAYHCP/EACUQAAIBBAEDBAMAAAAAAAAAAAEDAgAEBREhBgcxEhNRgUFS4f/EABUBAQEAAAAAAAAAAAAAAAAAAAAD/8QAGBEBAQEBAQAAAAAAAAAAAAAAAAERIVH/2gAMAwEAAhEDEQA/AOVdtOjLPqTDvErX3LkDYmT/AEVZZrtCFwdJBYj2oGXOyDx4/Px81Zdm8lLF9LPeqAlMkDZI4rYcp1js3kbliFxKzz6hvejUrbvFcnjzTcqKLhqpeYSMT9UqTJsDcjcsidiTJEH7pVUkltk722t5JRctWo+YxPFY7XucSWtnMn9pbpSgipSlB//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pakowanie-na-palecie-min_test-01-min-1-scaled_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pakowanie-na-palecie-min_test-01-min-1-scaled_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pakowanie-na-palecie-min_test-01-min-1-scaled_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pakowanie-na-palecie-min_test-01-min-1-scaled_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pakowanie-na-palecie-min_test-01-min-1-scaled_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pakowanie-na-palecie-min_test-01-min-1-scaled_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Pakowanie-na-palecie-min_test-01-min-1-scaled.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Pochwyt_szmaciany-web.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACvklEQVR4nH3SzWvTcBjA8cwpMkGGIAgePHjw4MWDR0XQg14EQRC8eRNE/wA9efKkgpsyZOrc5mq72LVrm3ZN+2uS5q1Nk7YxTWnV1mpd99K1y9balzn7RDKYzNcHvtcPDzwPxoipg6KSufThU2WsWjc+rjdb3Wrd6BU/VyD7/iOo2XegvM1BPKm3BFnLs/G0jRaTNxGbOIV4+TApKgOEpvU95/k+mqYxjIur+wRZO174XLlWM9ZfNludjNFoNssLy73s+yIktRxIKR1iivaNjadXaEFRmVjKzUnqQ0HJ3GCl9AVaVI4hTh4MRhP9mGmaGM1Lez7NLxxZazQvtjqd+187HXGpVq+per5HUhy4iBAEwiwgVgLEJb5HuESDFpUiL2tULKk/E5XMbU5Sr0R4+cwWaLW4uLir1W4f7G5snG53u3eq9dW5t9n8F4Kkv429wmH0pR0m7C5w+kIQQByEWQkoQelGY6klLqEqvKzhvKw9xqyxQFmWsVKphBmNxv5mu3NiZdW4rucLtjAj5Cdez7QejYz1HgyPwsgLG9icPvAEaZijBCCZmIVvUoK8xsRS81vgNrrd/FJtr7HePLpcMy7nPpSGUDSWmHS4jeGn470no5Mw4ZgFF4FMb5ABKx8ZBSLMQiDCw0/wd7hYLPZ/qVQPVarGWf1d6S4jKsjpJRencM+m3RUAlz8CnmAU3AHKnCEQWLkI9Cf4y7Zls0/PFwdzhfJJNVe4JSjaG8QlCgHEt70k25udo8Hlp8BJIBP3hEyHO2j+FdyJlsvlPlHRBuJp/VgsqV9lJfUp4uQ0gfh1C8O9IXB4SNNq2hP6N7jzWNbDIja+m+Lkw5SQPE8y0j1fiGOdRKRqdwd7U04/vHL6Ycrp/z+4PTiOY0NDQ5gYFHcFkXAggIRz7gAzjHvDOZtrbnMS98H4tBfGHR7zB7deKyhPm3VDAAAAAElFTkSuQmCC",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pochwyt_szmaciany-web_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pochwyt_szmaciany-web_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pochwyt_szmaciany-web_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pochwyt_szmaciany-web_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pochwyt_szmaciany-web_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Pochwyt_szmaciany-web_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Pochwyt_szmaciany-web.png"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAgFAgf/xAAnEAABBAEBBgcAAAAAAAAAAAABAAIDBAYRBQcUMVFxEhUzNXJz4f/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABgRAQEBAQEAAAAAAAAAAAAAAAARARJh/9oADAMBAAIRAxEAPwDwK5isuyJ+IuAvpN5uHVZNm1Snnc58fYjoq53sYBSOEW+BuViYYy8tEjdXKL3AtcWnmDoiHNjaZ5X4RrGSe/6ixEVD14qPJfYLv1lS/L6r/kURLLhERSf/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAf/xAAkEAACAgIABAcAAAAAAAAAAAABAgADBAUGEyFhERIxQVJxgf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGxEAAgIDAQAAAAAAAAAAAAAAAQIAAxESE2H/2gAMAwEAAhEDEQA/AOk4XE2YmCVtpNr/ADmLb57bBa+cOWF6+naNs9FrpQIoUdopuAI6gH7kVrlDrLKlDDYSF2uxtxM62ukFkJ83iAfeEqbMekuSakP5CH28jBMDE//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Wiata-na-meble-ogrodowe.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHBAX/xAAjEAACAQQCAQUBAAAAAAAAAAABAgMABAURBiESBxMxQXFy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIRIQP/2gAMAwEAAhEDEQA/AFXJZC9BRziVvY9dOF2a04fjF3zMxwrbS2bg+Sh10Pyu3wCeQ2bqzbUfR7p8xd5PDKvtP4fyAKY824p2Sp1hN5/S7MxyFWS3UjrpqKuluomiV5ds5+SSaKdQ4f/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-na-meble-ogrodowe_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-na-meble-ogrodowe_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-na-meble-ogrodowe_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-na-meble-ogrodowe_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-na-meble-ogrodowe_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata-na-meble-ogrodowe_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Wiata-na-meble-ogrodowe.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgf/xAAlEAACAgECBAcAAAAAAAAAAAABAgADBAURBhIhcSIxQUJRYfD/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwDv9TWrlGiu4Ont5DKHvTTnBzrWLE9AP33NcOAbKdhvy+cs1FFa/wASg9PUdoqkJr+G6hlDsPnYQjcZFFQAVQO0IR//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGB//EACEQAAEEAgEFAQAAAAAAAAAAAAECAwQFACERBgcSE0FR/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/xAAcEQACAgIDAAAAAAAAAAAAAAABAgADERMUIVH/2gAMAwEAAhEDEQA/AIWNYWbz7AnNOhhCtgjjkY/k9zYtPcMNVMQojkBLgV9P7mtPVsN6EfZGaPGxrMyepK2RaOF6G0sheuRh3YVkqZeurrKxD1hbsXF0uZ6grzQnZGGW7lTASQExGgAB8wwm9Yjjn2f/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBwj/xAAgEAACAgICAgMAAAAAAAAAAAACAwEEAAUGERIxE0Lh/8QAFgEBAQEAAAAAAAAAAAAAAAAABAEC/8QAGhEAAgMBAQAAAAAAAAAAAAAAAAEDESECUf/aAAwDAQACEQMRAD8A5vTQX3HY9481tMUTDBGMoa6uG2RD4twxLJ9wyPzKjX8IqX9c2xrN5TsCA+Uh9sy7GROO9M0soQxxEShmZwxvbVra7yW62EHHuMMmiX3H4j//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMI/8QAHxAAAgIABwEAAAAAAAAAAAAAAAECAwQREiEiIzFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDN7t6+Mnpy8J12zUUoSaXwAkVrxFijvNgAD//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/Zamykanie.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAADNElEQVR4nC2RzW8idRyHh7sn42Gb9erBg0cPerCJ/gMeTUx1l8pLO7C8dctQOwydDm8zMAzv7y0UylAY6PBSsKULbIt0NTFxI9t1zapZD3tqYtNbk/L7GoiH5/okn+eDBaNpfsvlG5K058ZKbl9TDNsiae8DPpy9r1wxvrOk1N578N3Kh0tKzaeqVeO3atzkVuOm4rL2UfOhCh8/VONv1TrTrZkgkZ1hERaKZ75kvAHWyQrPHE7uOeMNVCknZ6Xd/DebtPtrws7ghJ0h1zYcAbPVXn5k2RiuGtZ/1ejML5c1+jdKje5GrTPdmQk7ohgOYdm9wrssH/mcC0Q3Pb7wLifEq6wQE7lgXHL7QzLDCgPa7X++SXv+mS0wrpO3OhMx1erXpqpVA1Jq9UijMyEzYQeHywdYpVJRBMLJ95ys8AknxDaC8Ww7msq9iabzN6F49laIZe74SAr5QompL5hAnBBDTlZABLmNcONjtDwT6s3IYqNgy+0HjKIojCAIxVdLy/f8oQSeyu33iwf1u3KtiXaLFZTOl1A0nUOZvDgVJRm1uj1Ubx5BJJEBgqRBjRth1fAY1jYcQHt4wFQqlWKGUmt4P7lTNJaqh6Nmtzft9gZoJt0plFEsnYfKYRtGFz/D67/+hpev/gC51QGPLwi4cR30Fhusb9Kw7Q0AZrFYFDNWDNYP8qWqrSq3fzkdnqPhaIykxhHsFMoQSeag2T2FyeUr+Pf6Gq6urmB49iNEElkwWUmY9bNRTmBYAbBkMqmYYbE5PhJrja16q/tiOLqYno2fTevNDqR29yEQzYAoNeB8/BNMLn+H315cQqtzDOFEFmyUa46dYcHlCwE2mUzmfL/l/fig3vLWWt0/B6OL6XA0njY7J7AnSpDYKUKhXIfG0TH8cDqAXv8pSHILsnsl4IQYbHv4+SFufxiwwWCA6fV6zOHyfyZKjVBVbr99cjZC/bMR6pw8AUluQ6Fcm5MXJcjtV2BPrM1TpHaLIETTc9FsroePALa4uIgtLCwoaDf/xX71MHFQb171hudo1vGk/xQ6vT7IR8cgNTpQrBxCXqxBsSJDviRBNl+CYCwNnv+F3kAU/gP+qiqg/ki3EQAAAABJRU5ErkJggg==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Zamykanie_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Zamykanie_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Zamykanie_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Zamykanie_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Zamykanie_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Zamykanie_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Zamykanie.png"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBwj/xAAgEAACAgICAgMAAAAAAAAAAAACAwEEAAUGERIxE0Lh/8QAFgEBAQEAAAAAAAAAAAAAAAAABAEC/8QAGhEAAgMBAQAAAAAAAAAAAAAAAAEDESECUf/aAAwDAQACEQMRAD8A5vTQX3HY9481tMUTDBGMoa6uG2RD4twxLJ9wyPzKjX8IqX9c2xrN5TsCA+Uh9sy7GROO9M0soQxxEShmZwxvbVra7yW62EHHuMMmiX3H4j//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBgf/xAAgEAACAgIBBQEAAAAAAAAAAAABAgADBAURBhIUMVEh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIF/8QAGBEBAQADAAAAAAAAAAAAAAAAAAERMTL/2gAMAwEAAhEDEQA/AMe0G8GkJ8LGqDeu4x3ddY5m1xxTlpU1YPIHEq9lZWxh8MjsUhZDRmJNG8ZQ9Ks3JJHuGSgFX59hCCcv/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYIB//EACMQAAECBQMFAAAAAAAAAAAAAAIAAQMFBxESBAZBExQhcdH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAAMBAQAAAAAAAAAAAAAAAAABAgMh/9oADAMBAAIRAxEAPwDJdw0xiSKOUPUkRYva/CRtzS0ZXrQghyN3VMVJMovadR8si835U9VFa06b18RRfSUp4KiEISIH/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHAwT/xAAeEAACAQUBAQEAAAAAAAAAAAABAgADBAUGESExQf/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECESED/9oADAMBAAIRAxEAPwCFY7FM+PpNRIKkd7NVxFYH8jXRwH1cs3pD8BMcWSKbhQQCOwUWx6KlhNc1Y0qV8ytUAbgJEJz7SSc9d+/G4IREspJt4f/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL3005/Wiata_rowerowa_RAL3005_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUGBwj/xAAiEAACAgICAAcAAAAAAAAAAAACAwEEAAUGERMhIjFBQuH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAGREAAgMBAAAAAAAAAAAAAAAAAAIBERJR/9oADAMBAAIRAxEAPwDN6aC+49PePdZQFMwwRjyxygOJWIDwtsajn4OPzJbquHVNhrG2Nbu6j4WPcr+2JNmdlYr21WqMcREke5wxhbjXIeS22wgx94wwVJPD9P/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAIEBQYH/8QAIBAAAQQCAgMBAAAAAAAAAAAAAQACAwQFESFRBhIxQf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAwT/xAAYEQEBAAMAAAAAAAAAAAAAAAAAEQExQf/aAAwDAQACEQMRAD8Ax3AZdmGO6laL27Ke5ryuxk64itRxOjB2BpVh0Za8jpIlBDVNkubtIUoWvrxudskjnlF6BjICRv6P1CEH1//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYHCP/EACIQAAEDAwMFAAAAAAAAAAAAAAEAAgMEBREGB0EhMTVx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIRAxEAPwCP33baWyVLoaouJacE8JK1Hbm22sbEzsW5WjtxZHSywmRxcXHrnlQHXvlR6+IjSwqyyhCEqt//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQHAwX/xAAdEAACAQUBAQAAAAAAAAAAAAABAhEAAwQFIQYi/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQADAQEAAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8AhOu1hfX2jZIKkTNbrqbwM8p7xv15mW6Q8A11MIBshQRImhCDx0n+6wrNvOZWcBoBIopb0zE7vK6eNFFIqlEf/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6005/Wiata_rowerowa_RAL6005_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAj/xAAiEAABBAICAQUAAAAAAAAAAAACAQMEBQARBiESIjFBceH/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/EABcRAQEBAQAAAAAAAAAAAAAAAAABIRH/2gAMAwEAAhEDEQA/AOfI9Swmthv7x5URGo8tohbHW+8aR3uJviCN2ptGvwafmVNXxCJYQnJdbdxHkaTyVvfqXBZR1Pz62sekkZRQ2vvhmebYQWJBNuygQx6VMMHKmv/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAECBAUH/8QAHhAAAgICAgMAAAAAAAAAAAAAAQMAAgQFERIxcYH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/AOMarITgUASinsyzsNqcpQo1SzUHxMQE1PEi256zOpLGHZNCeSeI8moC/sIRh//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYHCP/EACIQAAEEAQMFAQAAAAAAAAAAAAMAAQIRBQQGBxIhMTVxwf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEh/9oADAMBAAIRAxEAPwCTa/jgOOI7FJKdPSR90Y0eM1sRC8O1rQG5HeYw9Xe7tQ7kD2cPj/imXQVkIQqL/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBgf/xAAgEAABAwQDAQEAAAAAAAAAAAABAAIRAwQFBhIhYSIx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwDjeJtqQxFBtDuRJPqfSti10kCEnTfrXJd2Q+Aq1q0Gu0ESJQgxidktrM5R558SQCR6hStkJOauu/x0IShP/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL6020 mat/Wiata_rowerowa_RAL6020 mat_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYBAwUH/8QAIRAAAQQDAAEFAAAAAAAAAAAAAQIDBAUABhIhERMxQmH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4tC1uGCCW+j+40UFVGizmFJZSE9ecmJc6m8EBFktpZ+QsY6UdJAsoqpNdcxXfbHRb+2BVaa7r8iYp1cBrpQBPphmXY7HVRpSmnZqAtPgjDA//9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAIDBAUH/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQMAAgQFETETIkFRcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDNdEXh4Kq9FFN/Zk/UMtOSoUalZqDxKBLDWgG/iD3EU5gMad3YajYkkiLyxsk/YQgf/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAcIBv/EACIQAAEDBAAHAAAAAAAAAAAAAAEAAgMEBQYHESExNXLB0f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwBfT6mpqCctqJXvDeqW+aWmG03BkUA4NI+KoshJdG8u5kgqbtmdyg8T6QYxCEIP/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYEBQf/xAAgEAACAQQCAwEAAAAAAAAAAAABAgADBAYRBWESExYh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AM/xu3t0x21p2v6Cuye5Oo2/rcMQNRfwCo/y2/I7D6HUvbWo7VlBYkbgIea2nHPz1VvZ4EqCR3CLuWOzZBdlmJ02oQP/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016 mat/Wiata_rowerowa_RAL7016 mat_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQGB//EACAQAAEEAgIDAQAAAAAAAAAAAAIBAwQFABEGEiFBUXH/xAAVAQEBAAAAAAAAAAAAAAAAAAABBf/EABsRAAEFAQEAAAAAAAAAAAAAAAABAgMEQRFR/9oADAMBAAIRAxEAPwDBYtHHUk2G/wByyqeMttRCkC2KIKbxiFP4Y+gdLRxlz4aZf1kCtnUUha63ivaBV6+8lTMsYWK7q2qZBKgQHHyImB2uGNzJFWxIJt2WKGPhUwwSOT1RV8XcP//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYBAwQF/8QAHxAAAgIDAAIDAAAAAAAAAAAAAQIAAwQFEQYSITJB/8QAFgEBAQEAAAAAAAAAAAAAAAAABgEC/8QAHBEAAwABBQAAAAAAAAAAAAAAAAECMgMREjNx/9oADAMBAAIRAxEAPwBJ8Sy8LSKGxcWr3I+zTsb3yVdniinKpqesHoXkTKanCgSchXCdPYeqtR1tyYjmYU4o26RA+voZ+livyZdsq1XHPB+iEJKzNT1rw//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAcIBv/EACMQAAEDAwIHAAAAAAAAAAAAAAIAAQUDBhEHIQQSFDVBYXL/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECAxEh/9oADAMBAAIRAxEAPwBb3BpE8CZ9UZGI7Z8JZ3JHjHcWNMGwztlVpquZFF0OZ3fL7+1Ld+dyp/KNlbd+sZtEzC4jMIQhJBn/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQHAwX/xAAgEAACAQUAAgMAAAAAAAAAAAABAgMABAUGEQdhEhQi/8QAFAEBAAAAAAAAAAAAAAAAAAAABf/EABgRAQEBAQEAAAAAAAAAAAAAAAECABED/9oADAMBAAIRAxEAPwCcYDAGbX7X6ZUqy9Le6zuNYuoyWLJT3jKeQ6Weufy/B6p+SVzJwsSO0VXjRbxzU+0MHTSfYsfDDlJFeQBuAkUVz9ndnzl0WYk/LlFIxKSHcVdjS83/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8004/Wiata_rowerowa_RAL8004_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUGBwj/xAAgEAACAgMAAQUAAAAAAAAAAAACAwEEAAURBhMhIjFB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECERL/2gAMAwEAAhEDEQA/AM2qor7HR7jzWURSUMEY9sdoX4lYEfS2xqOfw4yWavwypsNY2xrd3UfCx7K+/KYwPTVOSvLNeqxxESR7OGMLY65DyW22EGP3GGTGLqT/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwQGB//EAB0QAAICAwADAAAAAAAAAAAAAAECAAMEBREGIVH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAwDAQACEQMRAD8A4ZotwdOxbEprDfTL228rzNnQKcoVtWD0DkzTIQxERweSGsTUKGqUn2eR16gJCED/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcFBgj/xAAgEAABBAEEAwAAAAAAAAAAAAABAAIDBBEFBgc1QVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AEtuPj2XQZnx2iSWnGVTNXqCnYEY9ZWgOUpXyQVjI4uLjkk+Ui919gPiJVWYhEIQlL//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQHAwX/xAAeEAABBAMBAQEAAAAAAAAAAAABAAIFEQMEBiEiMf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEBAQADAAAAAAAAAAAAAAAAAAECESH/2gAMAwEAAhEDEQA/AIPHxhfH4jhILSLtbNiswN+J/jvrmrd6Q+gV1NJoOw0EWLQ0rMuJ/M6eLHvOa54DqBIQl+lJM3te/jqCEk7X/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017/Wiata_rowerowa_RAL8017_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAwj/xAAhEAACAgIBBAMAAAAAAAAAAAACBAEDAAURBhIhMUFCcf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oADAMBAAIRAxEAPwDnajWUx7Hn9xzqlq12qyEI45845pLpNgQirbHUc/BxlNrei1X0bHNbu1L4qjumv7ThdqCUy8hr7WSMlw5n3hmbjiVLBV2MjBx4mMMOMtL/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAEEBQf/xAAdEAABBQEAAwAAAAAAAAAAAAABAAIDBBEFEjFR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAID/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/AMR5duOg3IYI9+lSb3YfajDJY4y0H1io9LTiT3EBS0hVx5RNJ0nE5mgMQhB//9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAcG/8QAIxAAAAYBAgcAAAAAAAAAAAAAAAECAwURBgQhBxIxNWFxwf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEh/9oADAMBAAIRAxEAPwCQyXDxqNWonXFLo6sYrJo5EbrEtN9DKxesmM1t6fm3s9/Iime90R6P4CVVmMwAAFL/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAwYH/8QAIBABAAEEAgIDAAAAAAAAAAAAAQIAAwQRBhIVIQUxYf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A4n8ZjWvFWSx7E2tXWsZjPbrVRxAJcc7S9pPQ01xIRb8RBN0caSsVyDGxPJTe/VQU/aKXcjXzOUb+paKKoWv/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL8017 mat/Wiata_rowerowa_RAL8017 mat_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHBAb/xAAhEAABBAICAgMAAAAAAAAAAAABAgMEBQAGERIhQRUyYf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCTQdTgJUOWux/c7/WdTjMLbkIYQEpPJGKIOzai704nraX7CxlT1Vyos6xfx9tGcUB9OfOAhsdW1uTKU65XNd1AE8YZnttjoYU1cd+zbDiPBA9YYH//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMGAQX/xAAhEAACAgIBBAMAAAAAAAAAAAABAgAEAwURBhITMSFRcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCK6UenpkV6tdAxHszsbveJsqww28SPjB5CmS1VG8K/k2yGGPmA/SDv1tdm+SV9xuxUCuePsQhA/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAgEBgf/xAAhEAABBAEDBQAAAAAAAAAAAAABAAIDBQQHEcEGEzE1cv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCNdaBUNI0l+bLO5oJIWB9d08FPZNix27MIPCaqzyp8iTN70rn7NPkpadVfZ43weEFFQhCD/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgAFB//EAB8QAAIBBAIDAAAAAAAAAAAAAAECBAADBhEFEgdRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwA1h/DocXhrCZWRl2W9mtVODkWm7EodeqL+MJchcKGrrDrc0PlJIE2S0hQ15yCaDlvkDjIC5Le73gjlQWH2qjWdXrl3KZzXHLHvrZqoP//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9006/Wiata_rowerowa_RAL9006_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHBAb/xAAkEAABAwQBAwUAAAAAAAAAAAABAgMFAAQGBxESIUETMTJRYv/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABcRAQEBAQAAAAAAAAAAAAAAAAAhARH/2gAMAwEAAhEDEQA/AEUTrOEaWnqti4f1VXxHXcdbBp9u0bQhJ78D3FcPFbQw14t9V0tpfkKFWXDsux6XjvTsJJhauPjz3oc0oXyutsNurxTzsQyXFgEkfdFZZ3Y2Ix0i5a3Ew0HWwAoDwaKyqP/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYCAwT/xAAhEAABBAICAgMAAAAAAAAAAAABAAIDBQQGETESISIjUv/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABYRAQEBAAAAAAAAAAAAAAAAAAARQf/aAAwDAQACEQMRAD8Ab9HpqSkxI3YeJGHEdlMN5NX2OGIMzGjlhBBDT0luoiecCHj8q2wa9mOXHnsIUk9J+zWa97/k4xDklbNgaG17iB78ghCzU//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAgFB//EACQQAAEEAQMDBQAAAAAAAAAAAAEAAgMEBQYIEQcSIUFDYaGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwDYO23TWMqST27k87mAnj0P2pv6n4Cvp/NNr1Y+yNwJA+PCuXNzyyVLYe9xAao+3DADU1XgeyPwKZenHKERFQf/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgcA/8QAIxAAAQMEAgEFAAAAAAAAAAAAAgEDBAAFBxEGUSESExYxQf/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwBXjGwsDwC2N2shNsg9RH2tJGuPSWDQ1UFROqlGDLrObx0IhKcQQc0Kb+k804gXi4FIFCluqir3QsLUSzLZLN87lK7IRpwgFTHf753Wqf5RlPyec3Rx90zP3NbVa1KRH//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL9010/Wiata_rowerowa_RAL9010_top-min.jpg"
+    },
+    "assets/makieta_3d/11723-normal.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAQG/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AtAbZMAAAAAA//9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/11723-normal_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/11723-normal_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/11723-normal_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/11723-normal_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/11723-normal_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/11723-normal_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/11723-normal.jpg"
+    },
+    "assets/makieta_3d/Mapa naklejki na brame_alu.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACXElEQVR4nD3QbUvyABQGYP9LIEEiQukzidBVSkK+IAXN1SyXzmlTGNPIZVakbk5XfojGQrAh4jvui0uQIBALUfEnPWjR/fHAdXPOUYVCIZIkb25uOI57eXmpVCqyLA8Gg6+vr9lsNp/Pp9PpaDT6+Pjo9XqtVkuSJEEQHh8fWZZV4TgeiUQIgggvQ1HU9fV1NpsVRbFSqXQ6nUaj0el0SqUSz/NXV1eJROL+/p5l2Vwut8CBQACCIIfDYbfbIQhCEMTr9ZIkSVFUJpOhaTqdTkciEb/ff3BwgKLoz/wXn5yc7O3tra+vazQanU73bxmXy2W1Wk9PTx0Oh9frBUFwc3NzZWVla2sLQZDb29t8Pq8KhUIQBO3u7ur1eoPBAACAxWIxmUxHR0cgCMIwbDabnU4nAADb29tarRYEwePj41QqtcA4jiMIYrPZ9Hr92tra6uqqyWTa2dlBUXR/f//8/Nxqtdrt9o2NDaPRqFarAQDweDypVIrjuN+bYRh2u90ul+vw8BDH8Wg0yjBMMpnkeT4ej8diMRRFMQyDYfjs7IwkyUwm84svLi5wHEdR1OfzhcPhZDLJMMzr66soim9vb8VikWVZmqYvLy9JkozH43d3d7llVMFgkCCIWCz281We5wVBkCRJlmVFUd7f32VZbrfbtVpNkiRRFIvFIs/zHMctMIZhBEFQFJVIJB4eHgqFwh/u9XqKonS73WazWa1Wy+WyIAhPT0+FQiGfzy/WxjAsGo3SNM0wzPPzc7lcbrVaiqIMh8PxeDyZTL6/vz8/P/v9vizL9Xr9r4LjuP+/GDgWQ2KjeAAAAABJRU5ErkJggg==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Mapa naklejki na brame_alu_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Mapa naklejki na brame_alu_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Mapa naklejki na brame_alu_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Mapa naklejki na brame_alu_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Mapa naklejki na brame_alu_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Mapa naklejki na brame_alu_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/Mapa naklejki na brame_alu.png"
+    },
+    "assets/makieta_3d/Naklejka.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUHAf/EACYQAAEDAwMCBwAAAAAAAAAAAAIAAQQDBREGEiITMSFSYXGRobH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AnGjLXp6TYxq3LY8jPLd3/E0iWHSlSuJkQ7G7j8enupOFUw8BLDLevU830gZ6miR495kU4BC8dn44QlLk5Pl3y6EH/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Naklejka_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Naklejka_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Naklejka_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Naklejka_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Naklejka_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/Naklejka_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/Naklejka.jpg"
+    },
+    "assets/makieta_3d/albedo.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArUlEQVR4nHWRgQ6AIAhE+aoE0fr/v2oCJpe13Voo73AHiXaurYgWaVyHCpasnbXLFFfrtysahXi3BjzLxSeVcRvuhN3BYPmhg8eXplO2fBnB4cFLtL1qJ3/daWKeRLe0QuArpgqJUCafSPac0oxmAVvaqTXg/JZnN2lGi4eMVeU5AhjsFvbcvf+d9k4mnaInwDhzwD/k1+RUh31tSz4Nh69/mtcPcKEA9tI7tV83d2uxAN78B/4AAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/albedo_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/albedo_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/albedo_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/albedo_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/albedo_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/albedo_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/albedo.png"
+    },
+    "assets/makieta_3d/media/android-chrome-192x192.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAE8klEQVR4nG2V31MTVxTHz967dzfRlz63Lz70oX1s/wJ1gFCiaUfGdhwR7Q8dKyAjKoq0pop2ahVbRB2tWEt+kB9oBEmkFJRgAkEJoohJKgZCEEnr75eomL2ncxedvrgzZ2Zn93u/9+zecz4HQFxWBChsALA0SWD+g4LJ8Q7k2T8Ck6sczJ42sHinwOKZBrPbDyZXJeQ5PtY1QivWiLXCQ79WegHWDwGUdEmwzL0QltreB5PLAp+37ZbKes6SmlCMWvufUGv/U1ITSkjll3zwRZsVTG6Lrl3mXAAlNkn3EQEVDQDFrQoUOt8Dk2sJrPBVkW+7bdQ6MEIPRB/Rn4ZytG6Q032DnB4YytGDw4/pD5ERoYEV57aAybUYCh3vwkov073gU5sRPnF9CGbPammN/yjZ0ReWj9yYlU/dnpOP3eS0boDTHb2c7gxyui/C5eOjXG66PSc0Qiut8TeC2bMKCls+gGU2A4DZvQjM3hJpbcBDvgtPsuZ4VmlPacye4PT7EJdK2zl85kER0toLnFpDnDkTXLmQ0oSW1IaTUqnfDUXeEjC7FgEUtiyGYl8D2RZMM1tCUwf+1ZRAitO6fmGG0lcdSKovI9l+GaUvO1A8o/sHuNI5xdXIA401J3JiLRT7joDJtRQg37laWhfwyPXRrNqX4erVB1w+PoLS+gCS9QGUD11DpW0ClfMTSA9eQ+kbP5INAZRP3OTq0EOuXslwuT76XFoXaIWCllKAPMdGsrm7nTWNvhJmin9S/C/xeUj3DaDSMYXq9WeoDj9DpT2FdG///LvaPlQupnRT1nQrRzZ3d0C+owwgz15Gqnv9zBbLKX2znJ0e5WTDRSSbu5Cdvo1KxwwqLWlkLWlU2u+hfGoMSUUXko2dyM6McTWU4cwe00h1bwDy7RXzhjV9fuaI55TAFJcPXeXSOpFdP7KzE8jsKaRVw0i3DCOzTSLzJpHuDaPQyIevcaUzzZkjrgkPyLeXC8NysuuKnzXHNdaa5HRPmIv/JB+7jkrPfWTu9P+GrjQqf82g3DiM0td+FAfHziU5s8VzwkMkJwwryM5ggP0e05jzjl4qpKxLfA6q15+i2v8YmTOth7hXo0+Qnb6FZNOfSK1hzlx3uHwmliM7gm8MHWWksqdDPjmaY/a4niHZdhmZI4GG8edoSM2hIZadD3F/J4vMFkOy9dJ8ho4El3+79YpUdreLAwZx1OLIaX30uTCUf4ly+mOEM9ffaLj7Ao0ZjsbZ1/EP1zdhzgTS/RGUf43qhrQ+mhWlJ0oQ9GIs9h0h24NpufFGTj45qjFbnCud09yQfInG+xyN917HLNc3US6mOWuOi8w0+egNjVTrhd2gN4neLkUe0XpuUhNK0p+jWdYyrinBDDdMvuTGDOfGGY56ZLj+TLxjznGNHoxmya7QpGjb+dZzLwK9oUVjF7lXSaX+RlLVG6aHR2aZNzmnRh5xw90X3DCtzcf4C64OPOTMk5wTGrI1GJZKA0ehyLNaB4wAjY4cgR6BoAK9r7dIAl97IyPyybHHrHUip3TOcBHMm8zJJ8Ye0T2REaGBYl8VFLiW6OgTCNTx9QaMApIW5wJY2vwasOet0qYeH60NJ2jd4FNaN/iE1oZi0qbuc7Dy/G4ocFlgiQCse6EOZwFpHbBvGwEFYgQIzLsqdewv90zDcs8UmN1t+lgQ4yH/7SPgP1HYEqJcB1EyAAAAAElFTkSuQmCC",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-192x192_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-192x192_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-192x192_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-192x192_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-192x192_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-192x192_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/media/android-chrome-192x192.png"
+    },
+    "assets/makieta_3d/media/android-chrome-512x512.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAFP0lEQVR4nE2V209URxzHf2fmzNlFX3y2LzbxQX1oov+AIpflUrRKaGNFkLQYES+BeuGSuhGxjUppQGpKlFT27B25yS6oUFlgWUQXUAQWRZZ1FcEq2D64Au7Orzlnje0k32SSmXzynd9v5jsAysjIAMitBcg0CLCrg4DOuAbiDJtBZz4MKdYWSLMFIM0WhFRrG+jMxyBO3gIJ8hrY0UIgwSDAlloA0KsoAL0eIDcXQF8rwE7LaoiT14POugO+bj4t5Hc1kqLeCarvf6uIFPf6hPyuJvimWQ86yw7YLq+HFMsqyLALsFUfZcHWboCvTBIkyZ+BzhILu5sKhbxOA9V7Ruh57wL9+V6Ynh3gtPwup+fvh+kF76KyJuTdNsDuxgJING8DnbwWvpSZyoJUOQaSzBsh1bpX2OeoIad63GLVgznxytiyWPOQ07MeTopcqui5AS5eHo2IV8dXxOqROXKyp0/IbLsEKbY9oDNvAJ1ZC5BsWQcptkwhy2Gjpe4ZVu8LSa2BCJMnOf2xlwtZrRx22VGRkH2DU30fZ6ZJLt0IcHbNF6KlfdNClsMKybZMlQU68zZIb6oix11BVu+LaDx/RSRngNOz/QoMhRwHkhPdSE7cQSGnDYXsVqTnPFxqf8Y1ntcRVu8Lk+OuZ5DeVA0603aABNO3wn6HjVZ4Q1LvPNcMvubi5Qco5DqR5DpRrLiPUosfpWY/ihcHUfjegeRAO4q/P0TNvTdc6pnn9BdvSMhxNkCiKRsgTj5Ajna2ildHwwpMcsxwWuxSjoe03INS2zPUDP2DGu/fKLUEkJ7pj66V9KDUHuAKVKx79IEc62yDBGM+QJwhj5zsbmOG8YjUO8dZ3ShXHJCjt5DVjaPUNouSOYjMHESp9QWKV8aQHLmF5GAHsj/GuMb9ijN5IkxOuZwQbzgCEC8fIsU9Dib7IkpdxIpBLuxX3LmRXfcjkwNIC4ZUMUMAmX0aaZkblT1i5T0u3QxyZvSFSUnPJ2A+KelxKA1h16c5PdPPlTqJvw2h1PUSJUsQaeEw0oJhdS7dnkXx0hAK3zlQaRxr9HMmT0aBcSrQkE+KXE5WNx5hpiecnu7j5PAt5TioGX6Lmv5FZKagKmWu8S4iq3uEJO8mUr2bM8sTLl6bCJMilwPiDYeVpuQpBRVrRyNM9nFa1s/J8TvIjD7UTr1H7cwKaifeo3Y8hNrACmofv0NmmEBS+GfUoXGSi1cerZBjXa0QLx8ESDTtE3IcDWLF/fcKUPzVy+lPd5FZHqP26RLGzHOMmfuoVxy1T0LITJOovpoqrwqkld53Qo7TConmvcrFjoX0xmpyojsoVo+EVacGH5c6nnPt9DLGvOQY8+Kj5rjqWmoPclbvU5xFxJoHYXJSvdhVoLNsA0g2f648GyHbYSXFfdP0gjek1FJyzXPtzDKPmedchc5yxS3X+pe4xjXPmXkqIlYMhUhJn1/Idtog2b4Pkq3rAJKuKeGwAVKse4QsRzUp7O4TK4fnmG16ReNZ4NqpJa59Holqaimi8byJMNv0slg5Mkd+cLmFLGcNpNr3gs6yEZJNMQCb9AA7jQySjGsh0bwV0psK1PgqGxgRa8cWWYM/LHXMckWswf9BrB1boGUDwySv0wDpTYWQYI6FBONnkGiXYJP9Y8AqqmoH2GVf9V/AtuiFQ11NtNQ9QcsHF2j54Bta6h4jhzqvCxnNp9WAjTWsh2TT6mjAdgPo8X+pre8GyL0R/QISjGsg3rgFdNajkGJrgTT7U0izTUGqtVH9FuLkzdE9ZgJfXBQAcj99Af8Cl+cOQ2SwfqUAAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-512x512_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-512x512_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-512x512_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-512x512_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-512x512_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/android-chrome-512x512_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/media/android-chrome-512x512.png"
+    },
+    "assets/makieta_3d/media/apple-touch-icon.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAFCUlEQVR4nG1V21NTRxj/dvfsSdAX+9q++OBD+2j7D1jlJihaqTqOGrVeqgZ1QCkiI2kBO/WCrajtoNg2F8jFchESvKASSAIoQRARUzEQ4iWx1ttLRCbZr7MHZjrT6Zn5zZzd832/3T37/X4fgHxWuwC29wPk1RH42sUg1zIPMqwLIauhAHIdLbDcOQnLnY8h1+GGrIZ9kGn9DJaaP4BtVqblyFzJoT0mE8D2WoDCHgLLHHMh3boAsu15ZG1LOTVeb6QHu0dZeeA1Kw+8oaXdIWq83kzWtphkDGRYF0CeYw6YOgFWm2a4oFMOXCpk2z6CLPvnkN9YRHZ1WJipZ5AdDb5kP/QnWWWfYFV9gh3tT7JjA6/Ytz2DMgZWNRVCln0RZFk/hJW/8xnClbY0WGr/BHKd68lG91la0uVXTg3FlPMj08qZu4JV9gpa4hX0oFewI31C+WVYKHX3p5WaoRgt6fKRje7TkONcB9n1H8MKix4gxz4fclwbicHjYmX+CW5+kFAvRQS3hgQ77BPE0CrgCxdKkM2tgpl8gteHhNoaETKWlfnDxOBxQI5zAyyzzwfIalgE+U2n6AFvlJtDKV3PXynVExGsMiCI4RKSr9xIizuRFt9EsqUNyaZWZN/3CrV9Uuh6X6S4OZSUuZDfVAPZDYsBMurXk81up3IimFC74kJ364VQfh5Cst2jQTnRj2rLOKrN46gcv41kmwfJjnZUau+irv9voeuOC6W6/x3Z4r4ImTYDQLp1J93b0arUDSclmeqeEKzUO7OTqh5U2yZRd+ct6gbeonopgqwiMPOtrAvV9oiQpLxuOEX3dbRBhnUXQLrFSL/pdHPLfaF2xwS/MCzojnake68hv3Af1banyO1R5A1RVFufID8/gnTPVaQ7LyP/bQR1/jjKXFrS6YF0awFAhqWAlnZ5uPWBUD2TqJy4hWRzG7KqAPLGceS2CLKiAWSFA8gtE8hdYWQVfi1GOXkb1StRlLn0UJcHMixGSWiUA25+IPgfYWTfBZBs9aBy9g6qN2KoOqL/EtqjqF57hsrpASRb3cgqZxc1zxKmWwrkkQvoQa+H/zoqeP1DZId9SI1XZ45z5w3qAq+Q10c1yHdd8DXyC/eQ7r6CzOQX3D4mZC4t8brl75OEu+QPVc4Np7TaqwgIeuAmclsI9WPvUB+ZRv1oYgby/WECuWUU6f4bcoeC20JCOTeclBcLS6w7QV61vHKlOvhOEio/BqUikNv/RP2jKUyLC0yLzeK50Bbh9SFkR3pR+SmoEbLqYEKWnixBWdiLIb+xhhZ3RpWaoaRSOyyLVaiXHwt9+D2mPROY9mQWMYH68BSq7VGpEqGcu5dSzgylaLE3CqsaT2ki0eSS49xANrkdtNQXZseCCV4/JlTvc6GfeC/S4kJopBJxoc2p3rjgDWOCHR9I0EP+CbLJ45Ly1WSsCVoKO8exjhjcp2lRp49VD8a4Mzyt63kp9I+mhP5JagaPpoSc467wNDs5GKP7vX5i8JyFHOd6zWCk0WiWI61HWlCmputCzb4qegeV2pFX/GI4qV5+KiT4xfGkUjvyUn4juzss8GVTkWZ50vqkBUor1AilORa6CORZ58ASs2awsKbZRHZ3NLEyX4hV9b1hVX2vWZlvlBg7GmFNc7kWk25ZACscczVzliat+eH/tYCllnmQafsUsu37INfRBsudUa0NyHaQbS+ATOtCrU3I2P+0gH8AlhgTowCbr4IAAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/apple-touch-icon_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/apple-touch-icon_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/apple-touch-icon_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/apple-touch-icon_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/apple-touch-icon_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/apple-touch-icon_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/media/apple-touch-icon.png"
+    },
+    "assets/makieta_3d/media/enter_AR_button.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAACbpAAAm6QHEPyK/AAAB30lEQVR4nM3U2YtPYRgH8M/YImMZSzJDJGUfS1kSiSRyYU1GKSmhZErKPpKklMiFstRkK0VGxq6skQszFFIy4q9wq/PrO/o1F5MLTd56O+d93ud8n+X7fQ5dtCqyO7sr310HWIkRmIBRGIhuueuBwRiDSZiI8fGrQs+OYL1Qi/U4iE2YmSBFFv0xB5txGA04gF1Yiynx/bOGog6N+IAb2ILRARyGjbiMN7iP22iObRumlveliHAErfiFrziNeSm3BvV4iS+4iTMBfo9rCVgC643lya64bMOnZLkBA1CNnXiOF9iPlTiRip7EVgIcju24h8dowgM8xV6MDWB9wN4lux24mPOtlF1icQaOpzeNKf0s3ua5MGy2l/wjwM15PgpBc9ulsio9+JYsLyRicb4bxmvLAL/jc3rZhitYgUEF4Mg4PsNPvErJ7efWSGRxWcmv098mtOA8lqBPAbggbLbE8RJOpTcFAR/zXmS5O7Y7OIR9eBhCimDjCsClOJaSG5J60Ytl2IOrOBlJFKI+l4Br8u1RXA95pR7Owrp8MDvjVjDfF9Mi9kI687PrMhmTI/pF2IrVmC7zWRNZFOPVvUzslZFUMd9D4lsdW7+Ma1V4aPf5679LZ74VHW3/HPD/Xb8B8ZxpZH5TcE8AAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/enter_AR_button_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/enter_AR_button_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/enter_AR_button_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/enter_AR_button_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/enter_AR_button_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/enter_AR_button_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/media/enter_AR_button.png"
+    },
+    "assets/makieta_3d/media/favicon-16x16.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAEF0lEQVR4nH1Ua0yVZRz/P5f3BZt+6kOf21qrb33tiw2YcjSVD9IXtUBFcrPSdFhbKgZrmqHOMsYlLofDTSAnJ+QOpwUHjQ5e8Bx2AC+oh6ChGzlKJ/B/2u85hZdV7/but9/t2fs+N6Lnn3XFglaWO7Sy9EVKqUyi1b4jlFo9RJ6aKYvg0OEjh/y/Prm5ROtLJaVWLKdU38v0dk0KpTd+Qu82nxNZ52+J7LZZILjV4SOHPHroP/N4Kh1KqXiJPNVvUnrjDvF+6ymxP9ApD/WPy8PBBzI3+Mjiof5x6PCRI+Rtr9KJD/RWg6CkyhcoufIV2lCXJjL8eTIn4FdHfo6qgtCsPDo4Lw8HWR7sY4tHB+ehw0dOZPjz0LP9JO9yolXVK2i173VKq98islpK1MH+kC4cntHe6GNdOGwHEbs6WOxotQgO/W9/Bnn00KdVvjeIkqteozW1m8R7/jJ5sH9Me6NzTktswakZZ5V/gcXOdhZbW1hknY/jznarw0dOe6Nz6KFPnppsoiRvKq0/ky/39AzoovBDt3uKnbYYq5NDLD/qYvlhJ6v8AVanLlkEhw4fObd7itFDn9bVn8aAm2ljU5HMuxDWjTeN2zfDunqUZU6AxQedrL4cZOfcBDu90xbBocNHzkW+8aZBnzZ+fwYDZtKm5lJ18nLEab5j3I5JVgW/xOfrQB/rylF2O34zbueMAYJDh4+c2zHJ6KFPm/1NRMneTMpsKVGF1yL67AQ7DTdYfvYTC/zqiSHWdbdYV0wYdXzMAMGhw0fOabjB6KFP21oxYFUmbWstVUXhiK6/zroswnJvD8v9AdblI+w03GVdMGrknksGaHn5iPWR02URRg99ymprIkr55wuHI9o7yurbqyz2dLP8PMjO2Vvs9t4zju+O0cfHLLrd94zTdJNlbpDF7m6bt73C4Qhtt1/ozaTN8TlU342wOn2Vxb4eO/lue4wTrv1pEi7+btze+xYThv8wTmuM1ZFBFnt7bN72MIdbMIdY5fT4KqvCa0YXh+3mVd9cYbd3mhNvL5jEu4tmCScWDLaK+vqK/UpdHMb8xVc5Pb7KqbThTL78uGdAHQs91EVhVqcus/aNsts/wxhk2RQvveDQ4dtcUZjRQ5/WYx/ipKyt3SQy/GXy0x/HVEFoTpdGFpzm25wQmuXE2KJZNm2WXnDo8JFTBaE59NAnT232s2d5e0uJzAmE1FehGV03/tgN3uPE6484cXLRLPuVDRAcOnzkZE4ghN6Ts/z0bZNWnyYymvPkvl6/OjYY1VXRWac9Nu9evG8ShmYNEBw6fOSQR+/JbfM/96E80NepTgyN65LwA10+8ggIDv2/78Pnb2xPxQpaVfUqra3ZQO80fUFbf+gSuzomxe6uB0Bwq8NHDvmnbuy/AOWkAcpM1EaYAAAAAElFTkSuQmCC",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-16x16_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-16x16_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-16x16_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-16x16_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-16x16_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-16x16_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/media/favicon-16x16.png"
+    },
+    "assets/makieta_3d/media/favicon-32x32.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAE3ElEQVR4nEVVW1BTVxTd9zxugl/+d/xox5/2237XQoKA4gy1th+KlD6cYkVkBoFqFV9TtdXW99RXlbxMgiKQkLagJSGGlxEfDZVAeSmiVLE646BhYJ/OPmHaO7Mye87ZZ911d/ZeB4CemhqA1X6CAQWXOdgcCyHTsQTsns2w3NcMK/3jsNL/EJZ7Q2D3lEOm412w1S6EAieHFU0GvNeWPp9+1DxZhwF5/gWQ6VwMOd58+LihxtjQWs+q2vvZ9tgLjcpI0ihpbYCPruyEnIv5kOlYDLneBbDiRpqUuPTPCp8F7O5FYPdkQsHlcqOktZZtj/Xy/fEpvv/GLNvbjQS+/8YcPxB/xnZ03DJKWmqh4FI52N1LweZ6A3I9EmA1AOR4MyDb/Q7k+QqNtYETbEskyg/fnhCnEilx/A7y3Z3IqsLIqiLI93ahOHkXxZm+FD9ye4JVhqPG2sAxyPOtgWz325DjyABY5nkL8nzrYF2wjm2Ljorz96ZlwyiK2n7k26+jUdSEsKpOwapLyigOIt8ZQ+lKomwcRcpl26LDxrqgjwTBMvebAHZXFnxYf5RtCY8JR/+sef3vORkcQ763E42iAJEoVvG7hvFpUBnFAcW/7UKz+T6asSdzojY5S2eJA7JdWQA2Z6FR3OzjP9x8aUYm0ex6guLkbTS+CCkC/75HySvDStYPKf5dtzI+b1bG+l+UOHUXLd1P0WyfRH7o5kujuNkPdmcREZawsquN4ufEa0vXU5SBEWTVYWV8ElB8T4eSjaPKEn+uLPF/lGwYUXx3TO+xb9qVGRpDS88UinOJFNt0tQlsjo0AdmcpqwoHpKs/ZUYeoTh3F431IcVKW5Q426dk07iSF8fSaHygxJmEYptalLHhNyUv9KEZnUTpujfDKsNBsDnLiLCMbY0GpTs5Q3URB3uQ6qbVXRpW0jmiWEVcg2LpH0qr/KxZiR/jaP46jtKTnGFb24PERZ9cxrZFg9KZnJF1w8h3xXT9xPFbyrw6oZXxirgGxWbLQyWO3kzXd08nyssjSGeJY57QUcaqI0Fx/t6MdA8i33EdWWmrEuf7lKX3ubLEppT0jGlQbIk/U+LsH4p91aJ4TQylZ5DaJ8WqIwGwOUoBshwbWdm1JnE6kRLOJNJbWWVYSVdSWQemlXV0Rln/nE6D4uS0ks5+xba0aYXCNYDidOI123ytEbIcJfTJRUZxyE9/PRGKI73I9/Wg9A4q61+vVcYkqozHqDIeoY6tg6+UvDig+L5u5Id7UYvQbRPyUQuCbkbd2JExfvTOrDiVmJOOpC62dSiVJpuYxyPULzFDD/QkUS4/duf/xqYh0eOS6ys0ioI+Vh0d5gfi09I1iGZ4Eq0jM5gxqVCr0woVWodTaLY9RuEcQMpl1dFRKArW6fGlMdYDTYOd51tjFAaPsfK2KD/UOyF9QymzYwqtA6/Qen82jYFXaMaeovAOpfjB3gnKNQoDJyDPW6gNhoxGWw5ZD1mQzb1U29eXLbVsV2ev+CkxJf1Ds2ZoHAkU0xrtkcXBB/VkX5mQ7V6kLfA/PyRzJJPM9S+A952LYZk3H1ZfqTFKWurZ1+39fHfnCwLFtEZ7OodyyZTJnLVja0IS6Z8nbZq/Ai4shCzHEsimK8DbDPn+cQ2KaY32KIdy6dqg83SNAMC/M0UP11PzqNwAAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-32x32_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-32x32_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-32x32_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-32x32_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-32x32_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-32x32_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/media/favicon-32x32.png"
+    },
+    "assets/makieta_3d/media/favicon-48x48.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAE5ElEQVR4nG2V209UVxTG19n77DMzfWmf7Uub+ND4ZPsPVOQyEwg0rZrWSMNU2xoFNdgUb1waqmCaKg2FqDWKcIa5IWhhRgSxMDAwoAyKQ2GsDpdRQFKptg/jbWatZh9s+1An+ZKTs9f6ndl7r/UtAPmrIIBNFQCb6hT48BSDTMfrsF5fC1muIshxX4Q87xzkeeOQ4+4Aq2sPrNffgwz9DSN2U51i5ErGv7AvrgNUNADkOl6D9Y2rwebOhU8uliu7rray0oFJXjn0iFcOPWalA1PK7qttcg1s7jxIb1xt5MhcgyGh7xNAbqsGVv1NsDrTYGNrsVLY08grQ2P8WHiZfz+a5NUjyI+OID82muTHw8u8MnRDKbzSBBvaisHqWgdWfRV84BWwxgsANqcFrM41kOPeohT46tmB/qBaP76oNkw+V0/dQl4VQnagD9nBAPLqYVR/iqCxVj++yA70DygFvlrI8WwGq/MdsOpmAJvrLcj2fKrYfV5WHpwRjmhC88+lhOs28m+CqNjbET7ykpTyWTvyyiAK923ULsVTqiOaYOWDMcXuc0O2Jx9szW8DZOpym7WspC+uOqIp08jvKe3yHPKqIQkj5XMfsf29xPb1krKtQ0KJHw2h1h1H07WHEppkJb1xyYAsR7oE5itbfV5eM5rQgktoGn2I6smbqGz3kxSvuU6ifYa09mlSj10jtt1PbMclUk/fQlN4GbXBJeQ1o0+Ubb4WyHQUAGQ07WDFV9rVs5EXRkDnLPJDAVK2dhCvDpHWGSfTrb/INP4naZfmiB8ZWlkr6ye5E1N4GdWzkSTb29MBGfpOgMymQnawzyeaJ5Pa0BKKhgiyHZ3EirtJbZwk7fI8iZY4aVKd86Q2TBDb00VsZyeJxgnUQksomqdSkgGZeqEEFrGyfp9wRVNaVxzV49dQnhWvHjK2KjyzxPeHDQn3LIkLMeKHg8Z5qjXXUbtyD2WuZPwDLGTl/T7RHE2JCzHk3w4a56eeGCMtsEjifPw/4Pk4ab0LpNaFSfnST/zwIIqfp1HmSob8cyvA0oBPbZpKCc8d5BUDyHZ3kTg3Qabxx2QK/UHCEzckn003HpE4GyFW1EWyrIT3DqpNU0l2KCCBhfJSdrKvejrUM5GkrC9+ZBBliYjmKJnvPiHz3HMyRxMrks93EiT0KWJf/0IyVrhvo3om8oLt7WmXFwyQ4ShQtvlb5NXLYlZ/DCP/bgSF5zcyx56S5QGSZfGlHqDxEeGMEj86jGpd2ADKkpOlBxl6PkCmI90o7H19cfXEeFJtmDC6ROu+j+bpZ2RZQLLcf6kFND6iXb6HwhlFGaueHE/JXNjQWms0idEu2Z58xe53s9JgjNeEE6LlbkoWuXn2GVoWES3zSIYeIJpnnqE2sITCezfFfxhLsLLgjGL3e2X7Gm1sNLRs7BzPZsXur2UlgQFee3NRtE4/N40sozn2FM33UyuKPUXT8DLKNRnDSgJBxe6vh2z3FsNgpNEYliOtx6avgiznOtjYJu2riR8evqGe/nVZtE4nte4F1LrmJSgp3/Ejw2NKUU+jjIUsZ5phfdICpRX+z2DTGleD1Z0HH0uD7WljZcEpXjXymFeNPGLlwUllV0+rXAObKxfSzr3CYF81AqS9p+vvgtW127D9PE/cGANyHFhdRZCurzXGxCtGwN+UExhXmmZwVAAAAABJRU5ErkJggg==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-48x48_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-48x48_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-48x48_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-48x48_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-48x48_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/media/favicon-48x48_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/media/favicon-48x48.png"
+    },
+    "assets/makieta_3d/normal.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0UlEQVR4nHWSDQ7DIAiFPfdgCVy4SneBhX9duuSl1cInD+og+BDeBDeBmBaBMN4maYHrdimCMgzbyUW4CIU2MqNyCNdwhh2DSTgDziQ+mOXWfDH8lXBWfiwFP98VngST7Wmqs6uON1KnS9tmnKaL8Tp566IbSR51HL4dGTY+LAScW4PbhWywkaTkU+WIPsIzYS1ScIvD1OQaKgbMO0z/4c7JK1CwGjgHHlvVDlcLDauT8FYZQfbAYi6qd17B+M8+MA1Y2Mf+MkWfdvTbEhT2y7u+UKzzPWFFV88AAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/normal_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/normal_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/normal_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/normal_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/normal_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/normal_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/normal.png"
+    },
+    "assets/makieta_3d/oslona_ao.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMFB//EAB4QAAMAAgIDAQAAAAAAAAAAAAABAgMEEWEFBiEx/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAMGCP/EABcRAQEBAQAAAAAAAAAAAAAAAAIAASH/2gAMAwEAAhEDEQA/AOy7W5g1ahZrUu3wuy6pNJr8Zg+0+P2Ny9W9WVTx2m11ybeBNYYVL6pSZz6gcBWb3bVMHAVm92oAgSpQACQACX//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/oslona_ao_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/oslona_ao_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/oslona_ao_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/oslona_ao_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/oslona_ao_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/oslona_ao_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/oslona_ao.jpg"
+    },
+    "assets/makieta_3d/studio_small_09_4k.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEiElEQVR4nEWT+1eSBxzG339m5i13nG3nVIIgCthW4q0lqNhMawWiWBvmyWqQoL4vwQu8vFydiIVMxAvawmyrU6JGGnOrvF9QQVHuIM3Tzo6ynZ7z+fXznOeH7xdA5GgbCP3AaSyroBNyiekZJ1KOpyUmJScmJSUlJyenpCanHpJyxPG0tHwKpVUgePZ0bO7tn8Dk5NSz58+HLMNyVMFg1uYQSZ+nf5Gcmvqfn5ISJ96SnpFBoVBuNjZq1WqjwQAcHBzEYjG/3//u/fuHhh4Gk4XLJqSmpR1LSvosIeGIYwnHEo+GpKRnZJDIeRX0ShaLVVdXB/zzf/b39+fnF3R6/VUGk5x3JguHx2CzMjHYTAwWi8Vl4fBZODw+m0AkkYkkMomcl0skfZI/fvwYiURf2e2IHL16jVFBv1hWTqfSyqi08oqKyqqq6mvXGPVsNofDYbFY1TWXqVTaJznuLy8vD1mGQVB45y63+fadpqZbTU3Nd+/y+HyBTCp70K0ftgz2mX7p0GrEIhHg9/kikcjfRwkFg7Ozs2azWSKRQsL7AkEbl3ePx2sBQaFcjg70989Mv950rq2vLP0x8/rF82eA1Tpqs9kcDsebNw6bzTY4OKTVdkhgCQzDIAjx+QI+v1UkEms1Gqv18cL8XMDnDfq9O66NzbUVoOlWM1/QKhLDwvsiEIJAEBKJxFKJVI4gsBiGICEECREZ8vBBt2385dam88N+NBYNhfx7vl03cOZsPqWwuKjkfH5BIZVWXlfPbm8H5YhcgSoQGSIWwzAsUSmVvUbj1IRty7kei4RikVA05A/7dwE8gYjFETKxuJOZmHOUAgazFgRBBYqqlEoURWVSGYIgP3d0mPtMUxPjztWlcMAbDfoiQW/ItwtgcNmYLBwOT8jJJV0opdWzG0AQUqCoWqVSKpSo/LClW6+3DA7YJyfWlxcDeztBryfo9QT2tgEMFpeFJxDJeWfPUeiVFxuu3zicLZer1arDKJUdWq2xx/B4ZGTGPrW+sujzuH0el8/j8u5sASdPncZnE77+5lxBYTGd/l09+3praxuCIGqVSq1SadTqLp3ObDKNWR87pu3rywu77k2Py7nr3tjb3gROfPlVTi6xoLC4oLCISitnMFktLXyJRIKiaHy8vqtrwGz+7cmoY9q+ujjn3lhzb6x6XBs+jws4dfo0mXymuOR8YVExraycwazlcu8JhSKpRCqVSlEU1XV29vf1jY1aZ+xTy/PvXM7V7c01785W0OsBcnNJ+ZSCC6U0Kq38UnUNu+EGj9cCQUIJLJFJZUqFskun6+vtfTRsmbS9XHz/186WM25Gg16guOTbUmpZ5cWqy1e+Zzdcb759p62tHRbDqBzVqNW6zk6jwdDfZxqxWCbGXyzNv42bkaB3PxwADj/mUg2TyfqR08jl8uL3pFFr9Dpdj8FgNvVaBgceDQ8/fTI6/WpydWne53GHA3v74UAsEgRqaq7U1rI4nJs/cXkgKEQQRKvRduv1vUbjgNk8MjRk/fXR72Njk7bxt7MO5+qSd8cVDuzFIsEP0fC/MFDFsJYlG7sAAAAASUVORK5CYII=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/studio_small_09_4k_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/studio_small_09_4k_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/studio_small_09_4k_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/studio_small_09_4k_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/studio_small_09_4k_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/makieta_3d/studio_small_09_4k_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/makieta_3d/studio_small_09_4k.png"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAcIBf/EACMQAAEEAQQBBQAAAAAAAAAAAAECAwQFAAYHERIhEzEyQZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AnWPUAuAdfvHtobbSOjTTl4pY5aQVlOZdTebcSm2/VedjvEeew8A449IXGmpOmpNVX2jDiXklI5PkDAly4cgv2Lzhjo5UcMa1pS7cV81cadbIMhPz6+3P7hgf/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQHA//EAB8QAAEDBAMBAAAAAAAAAAAAAAIBAwQABQYRBxIhQf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCeYzeIWPH3hxWhc1rsVN5Pm5XiKLEtttxsV2g6Xynk48kSRE2y8JN0rcON5TDCmRebRKC98esNvYvbnHR7GTSKqr9rfNo7TdoIgFEXuNFFB//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAcGCP/EACIQAAEEAAUFAAAAAAAAAAAAAAIAAQMFBgcREiEECBNRcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdSZWw0luHTWwSSNpz61WCzBpYqS3GCANgkO7RdM4xlOfEMTTE5tvZuVDu4QBDGYiDMzeIeG+IJciIg//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYHBf/EACIQAAEDBAICAwAAAAAAAAAAAAECAwQABQcRBiESMRMUUf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwChYtgNM4ihQrZGRJ+wyfIk9EkUnY+xZe+LcxVeHosZ1hSyQgHtAP53WVgy9XJjGnizMdSltzSQD6FOVg5Fd3JoQue8pJPomgkOd7PZncjTXFuhhxaEqWjfone6KmuVpkiVzy6uSHluL+TWyaKD/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/ocynk/Wiata_rowerowa_ocynk_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_45deg-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYEBQj/xAAgEAABBAIDAAMAAAAAAAAAAAADAQIEBQARBhIhMTKR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEh/9oADAMBAAIRAxEAPwDOgK0Xm27xgqq1gXNI1iaTLKK/iRxj62ZQkVPUenm/zHGo4vXz60p6+9iF6N2o1+y5oUiSoUIhnPdHbtcMlTC1seQ4ZZjEe35TDIa//9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_45deg-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_45deg-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_45deg-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_45deg-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_45deg-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_45deg-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_45deg-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_bok-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUAA8DASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECAwUGB//EAB8QAAEEAgMBAQAAAAAAAAAAAAEAAgMEBREGEiFRgf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5Lx7JQYb2rVi7fXKwzPJ5MlXEVmGF0YOwNLLdHNcQmzBwZtUlPTHauwu9JCW20CL9QhB/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_bok-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_bok-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_bok-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_bok-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_bok-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_bok-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_bok-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_klapa-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYIB//EACEQAAIBAwMFAAAAAAAAAAAAAAECAAMFEQQGBzE1QXHB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDJL3xlUsmrNHVliVOCfER9zW5LbrFpJ0K5lK8iu1WshqEsSTnMnrf/AHVfR+RohXhCEC//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_klapa-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_klapa-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_klapa-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_klapa-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_klapa-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_klapa-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_klapa-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_top-min.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQHBf/EAB0QAAEEAwEBAAAAAAAAAAAAAAEAAgURAwQhBiL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAwDAQACEQMRAD8AiEXGF0bhOAgtIu0w2KzNN8THiyXeYs9IfQK1tH62Gg9FpMifTulhxyDw54DqBIQk/TuJnNqyeOpCKf/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_top-min_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_top-min_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_top-min_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_top-min_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_top-min_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_top-min_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_top-min.jpg"
+    }
+  },
+  "videos": {
+    "assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.av1.hevc.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.av1.hevc.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.av1.hevc.mp4"
+        ]
+      }
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1.mov": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1.mov"
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse.mp4"
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna.mp4"
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.mp4"
+    }
+  }
+}

@@ -34,7 +34,7 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
   const [manifest, setManifest] = useState<any>(null);
   const isVideo = type === 'video' || /\.(mp4|mov|webm)$/i.test(src);
 
-  // Wyczyść ścieżkę z leading slash dla lookupu w manifeście
+  const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
   const cleanSrc = src.startsWith('/') ? src.slice(1) : src;
 
   useEffect(() => {
@@ -48,11 +48,11 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
     const videoData = manifest?.videos?.[cleanSrc];
     const baseName = src.replace(/\.[^/.]+$/, "");
     
-    // Konwencja nazw jeśli manifestu brak
-    const mobileWebm = videoData?.variants.mobile.find((v: string) => v.endsWith('.webm')) || `/_optimized/${baseName}_mobile.webm`;
-    const mobileMp4 = videoData?.variants.mobile.find((v: string) => v.endsWith('.mp4')) || `/_optimized/${baseName}_mobile.mp4`;
-    const desktopWebm = videoData?.variants.desktop.find((v: string) => v.endsWith('.webm')) || `/_optimized/${baseName}_desktop.webm`;
-    const desktopMp4 = videoData?.variants.desktop.find((v: string) => v.endsWith('.mp4')) || `/_optimized/${baseName}_desktop.mp4`;
+    // Konwencja nazw jeśli manifestu brak - zawsze serwujemy z S3/CloudFront
+    const mobileWebm = videoData?.variants.mobile.find((v: string) => v.endsWith('.webm')) || `${CLOUDFRONT_URL}/_optimized/${baseName}_mobile.webm`;
+    const mobileMp4 = videoData?.variants.mobile.find((v: string) => v.endsWith('.mp4')) || `${CLOUDFRONT_URL}/_optimized/${baseName}_mobile.mp4`;
+    const desktopWebm = videoData?.variants.desktop.find((v: string) => v.endsWith('.webm')) || `${CLOUDFRONT_URL}/_optimized/${baseName}_desktop.webm`;
+    const desktopMp4 = videoData?.variants.desktop.find((v: string) => v.endsWith('.mp4')) || `${CLOUDFRONT_URL}/_optimized/${baseName}_desktop.mp4`;
 
     return (
       <video
@@ -88,14 +88,13 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
   const imageData = manifest?.images?.[cleanSrc];
   const baseName = src.replace(/\.[^/.]+$/, "");
 
-  // Helpers do budowania srcset
+  // Helpers do budowania srcset - fallback do CloudFront
   const getUrl = (size: string, format: string) => 
-    imageData?.variants[size].find((v: string) => v.endsWith(format)) || `/_optimized/${baseName}_${size}.${format}`;
+    imageData?.variants[size].find((v: string) => v.endsWith(format)) || `${CLOUDFRONT_URL}/_optimized/${baseName}_${size}.${format}`;
 
   const isContain = className.includes('object-contain');
 
   // Fallback URL w razie braku danych w manifeście
-  const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
   const fallbackS3Url = imageData?.original || `${CLOUDFRONT_URL}/_optimized/originals/${cleanSrc}`;
 
   return (
