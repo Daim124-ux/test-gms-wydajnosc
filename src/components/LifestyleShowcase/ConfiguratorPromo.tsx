@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ShoppingBag } from 'lucide-react';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 const ConfiguratorPromo = () => {
   return (
@@ -17,10 +17,9 @@ const ConfiguratorPromo = () => {
           transition={{ duration: 1 }}
           className="relative w-full aspect-[1024/491] rounded-3xl overflow-hidden border border-white/10 shadow-2xl mb-12"
         >
-          <Image
+          <ResponsiveAsset
             src="/assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491.jpg"
             alt="Podgląd konfiguratora wiaty"
-            fill
             className="object-cover"
           />
         </motion.div>

@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'gms-system.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'd1moyf5ccth9x8.cloudfront.net',
+      },
     ],
   },
 };

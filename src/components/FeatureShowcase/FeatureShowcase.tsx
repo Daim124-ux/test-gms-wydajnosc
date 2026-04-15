@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 interface FeatureShowcaseProps {
   titleTop?: string;
@@ -15,6 +16,7 @@ interface FeatureShowcaseProps {
   contentTranslateY?: string;
   gradientFrom?: string;
   fullWidth?: boolean;
+  loop?: boolean;
 }
 
 export default function FeatureShowcase({
@@ -28,7 +30,8 @@ export default function FeatureShowcase({
   titleTranslateY = "0px",
   contentTranslateY = "0px",
   gradientFrom = "#161617",
-  fullWidth = false
+  fullWidth = false,
+  loop = true
 }: FeatureShowcaseProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const isInView = useInView(videoRef, { once: true, amount: 0.3 });
@@ -86,12 +89,14 @@ export default function FeatureShowcase({
           </>
         )}
 
-        <video
+        <ResponsiveAsset
           ref={videoRef}
           src={videoUrl}
+          type="video"
           muted
           playsInline
-          preload="auto"
+          priority
+          loop={loop}
           className="w-full h-auto"
         />
       </div>

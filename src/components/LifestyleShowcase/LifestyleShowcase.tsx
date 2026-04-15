@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useRef, useState } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 const LifestyleShowcase = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -90,11 +90,11 @@ const LifestyleShowcase = () => {
                 key={item.id}
                 className="min-w-full snap-start relative aspect-[4/5] md:aspect-[21/11] overflow-hidden"
               >
-                <Image
+                <ResponsiveAsset
                   src={item.image}
                   alt={item.title}
-                  fill
-                  className="object-cover"
+                  type="image"
+                  className="w-full h-full object-cover"
                   priority={index === 0}
                 />
                 

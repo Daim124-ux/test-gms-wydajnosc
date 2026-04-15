@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect } from 'react';
 import { motion, useTransform, useMotionValue } from 'framer-motion';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 interface AppleHeroEntranceProps {
   videoUrl?: string;
@@ -94,10 +95,14 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
       <div className="relative w-full h-[400vh]">
         <div className="sticky top-0 h-screen w-full overflow-hidden z-0 bg-black">
           {videoUrl && (
-            <video
+            <ResponsiveAsset
               ref={videoRef}
               src={videoUrl}
-              muted playsInline preload="auto"
+              type="video"
+              autoPlay={false}
+              muted
+              playsInline
+              priority
               onLoadedMetadata={handleLoadedMetadata}
               className="w-full h-full object-cover opacity-80"
             />

@@ -2,10 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { X, BoxIcon, Move3d, RotateCcw } from 'lucide-react';
 import dynamic from 'next/dynamic';
+import { useRef } from 'react';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 const VergeViewer = dynamic(() => import('./VergeViewer'), {
   ssr: false,
@@ -44,11 +45,22 @@ export default function ThreeDShowcase() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const [isClosing, setIsClosing] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(false);
+ 
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "600px" });
 
   useEffect(() => {
     setMounted(true);
     return () => setMounted(false);
   }, []);
+
+  useEffect(() => {
+    if (isInView && !shouldLoad) {
+      console.log('[ThreeDShowcase] Preloading 3D model...');
+      setShouldLoad(true);
+    }
+  }, [isInView, shouldLoad]);
 
   const handleOpen = () => {
     setIsModalOpen(true);
@@ -84,35 +96,35 @@ export default function ThreeDShowcase() {
   };
 
   const modalContent = (
-    <AnimatePresence>
-      {isModalOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[500] flex items-center justify-center bg-black overflow-hidden"
-        >
-          {/* CLOSE BUTTON */}
-          <button
-            onClick={handleClose}
-            className="absolute top-8 right-8 z-[510] p-4 bg-white/5 hover:bg-white/10 backdrop-blur-xl rounded-full text-white/60 hover:text-white border border-white/10 transition-all duration-300 active:scale-90"
-          >
-            <X size={24} />
-          </button>
+    <div 
+      className={`fixed inset-0 z-[500] flex items-center justify-center bg-black overflow-hidden transition-all duration-700 ${
+        isModalOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+      }`}
+    >
+      {/* CLOSE BUTTON */}
+      <button
+        onClick={handleClose}
+        className="absolute top-8 right-8 z-[510] p-4 bg-white/5 hover:bg-white/10 backdrop-blur-xl rounded-full text-white/60 hover:text-white border border-white/10 transition-all duration-300 active:scale-90"
+      >
+        <X size={24} />
+      </button>
 
-          {/* MAIN CONTENT AREA */}
-          <div className="relative w-full h-full flex flex-col">
-            
-            {/* 3D VIEWPORT */}
-            <div className="flex-1 relative">
-               <VergeViewer 
-                 src="/apps/verge-model/index.html" 
-                 className="w-full h-full"
-                 onLoad={handleVergeLoad}
-               />
-            </div>
+      {/* MAIN CONTENT AREA */}
+      <div className="relative w-full h-full flex flex-col">
+        
+        {/* 3D VIEWPORT */}
+        <div className="flex-1 relative">
+           <VergeViewer 
+             src="/apps/verge-model/index.html" 
+             className="w-full h-full"
+             onLoad={handleVergeLoad}
+             shouldLoad={shouldLoad}
+           />
+        </div>
 
-            {/* BOTTOM NAVIGATION BAR (APPLE STYLE) */}
+        {/* BOTTOM NAVIGATION BAR (APPLE STYLE) */}
+        <AnimatePresence>
+          {isModalOpen && (
             <motion.div 
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -175,14 +187,14 @@ export default function ThreeDShowcase() {
                 </AnimatePresence>
               </div>
             </motion.div>
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+          )}
+        </AnimatePresence>
+      </div>
+    </div>
   );
 
   return (
-    <section className="relative w-full min-h-[80vh] bg-black py-24 flex flex-col items-center justify-center overflow-hidden">
+    <section ref={sectionRef} className="relative w-full min-h-[80vh] bg-black py-24 flex flex-col items-center justify-center overflow-hidden">
       {/* BACKGROUND GLOW */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
 
@@ -207,11 +219,9 @@ export default function ThreeDShowcase() {
         viewport={{ once: true }}
         className="relative z-10 w-full max-w-4xl px-4 flex justify-center"
       >
-        <Image
+        <ResponsiveAsset
           src="/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min.png"
           alt="Wiata w 3D"
-          width={1000}
-          height={600}
           className="object-contain drop-shadow-[0_0_50px_rgba(59,130,246,0.2)]"
         />
       </motion.div>

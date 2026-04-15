@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 export default function AluminumFloor() {
   return (
@@ -15,13 +15,12 @@ export default function AluminumFloor() {
           WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%)'
         }}
       >
-        <Image
+        <ResponsiveAsset
           src="/assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min.jpg"
           alt="Aluminiowa podłoga - montaż"
-          width={1920}
-          height={1080}
-          className="w-full h-full object-cover object-top block"
+          type="image"
           priority
+          className="w-full h-full object-cover object-top block"
         />
         {/* Cinematic Overlays (Atmospheric) */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/10" />

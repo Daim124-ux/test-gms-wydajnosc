@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 export interface KolorWiaty {
   id: string;
@@ -68,22 +69,9 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     return () => sectionObserver.disconnect();
   }, []);
 
-  // Manipulacja tłami Body / Main dla efektu na całej stronie
+  // Manipulacja tłem sekcji dla efektu głębi
   useEffect(() => {
-    const mainEl = document.querySelector('main');
-    const styl = { transition: 'background-color 1s ease' };
-
-    document.body.style.transition = styl.transition;
-    if (mainEl) mainEl.style.transition = styl.transition;
-
-    if (sekcjaWidoczna) {
-      const bgColor = `color-mix(in srgb, ${wybranyKolor.hex} 15%, #161617)`;
-      document.body.style.backgroundColor = bgColor;
-      if (mainEl) mainEl.style.backgroundColor = bgColor;
-    } else {
-      document.body.style.backgroundColor = '#161617'; // powrót do szarawego
-      if (mainEl) mainEl.style.backgroundColor = '#161617';
-    }
+    // Usunięto manipulację document.body, która mogła powodować dziwne kolory na mobile
   }, [sekcjaWidoczna, wybranyKolor]);
 
   const zmienKolor = (kolor: KolorWiaty) => {
@@ -109,7 +97,6 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     <section
       id="sekcja-kolorystyka"
       className="w-full bg-[#161617] py-24 sm:py-32 relative min-h-[100vh] flex flex-col justify-center snap-center transition-colors duration-1000"
-      style={{ backgroundColor: sekcjaWidoczna ? `color-mix(in srgb, ${wybranyKolor.hex} 15%, #161617)` : '#161617' }}
     >
       {/* GLOBALNY EFEKT SPLASH DLA CAŁEJ STRONY */}
       <div
@@ -119,10 +106,13 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
           zIndex: 5 // Nad bazowym tłem, pod main contentem
         }}
       >
-        {/* Bazowe tło globalne dla koloru */}
+        {/* Bazowe tło globalne dla koloru - tylko jako overlay */}
         <div
-          className="absolute inset-0 transition-colors duration-1000"
-          style={{ backgroundColor: `color-mix(in srgb, ${wybranyKolor.hex} 15%, #161617)` }}
+          className="absolute inset-0 transition-opacity duration-1000"
+          style={{ 
+            backgroundColor: wybranyKolor.hex,
+            opacity: 0.08 
+          }}
         />
 
         <AnimatePresence mode="popLayout">
@@ -226,13 +216,17 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.6 }}
-                      className={`absolute ${element.rozmiarObrazu === 'cover' ? 'inset-0' : 'inset-[30px]'} bg-no-repeat brightness-[1.15]
-                        ${element.rozmiarObrazu === 'cover' ? 'bg-cover' : 'bg-contain'}`}
-                      style={{
-                        backgroundImage: `url('/assets/images/wiaty-stalowe-na-rowery/kolorystyka/${wybranyKolor.folder}/Wiata_rowerowa_${wybranyKolor.folder}_${element.id}-min.jpg')`,
-                        backgroundPosition: element.id === 'klapa' ? 'calc(50% + 100px) center' : (element.pozycjaObrazu || 'center')
-                      }}
-                    />
+                      className={`absolute ${element.rozmiarObrazu === 'cover' ? 'inset-0' : 'inset-[30px]'} brightness-[1.15]`}
+                    >
+                      <ResponsiveAsset
+                        src={`/assets/images/wiaty-stalowe-na-rowery/kolorystyka/${wybranyKolor.folder}/Wiata_rowerowa_${wybranyKolor.folder}_${element.id}-min.jpg`}
+                        type="image"
+                        alt={`${wybranyKolor.nazwa} - ${element.tytul}`}
+                        className={`w-full h-full ${
+                          element.rozmiarObrazu === 'cover' ? 'object-cover' : 'object-contain'
+                        }`}
+                      />
+                    </motion.div>
                   </AnimatePresence>
 
                   <div className="absolute inset-0 bg-black/20" />

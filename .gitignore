@@ -42,3 +42,4 @@ next-env.d.ts
 
 # optimized assets
 /public/_optimized/
+/public/assets/

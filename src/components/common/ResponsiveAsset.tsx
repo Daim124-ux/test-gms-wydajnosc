@@ -13,19 +13,24 @@ interface ResponsiveAssetProps {
   loop?: boolean;
   muted?: boolean;
   playsInline?: boolean;
+  onLoadedMetadata?: (e: React.SyntheticEvent<HTMLVideoElement, Event>) => void;
 }
 
-export default function ResponsiveAsset({
-  src,
-  alt = '',
-  className = '',
-  priority = false,
-  type,
-  autoPlay = true,
-  loop = true,
-  muted = true,
-  playsInline = true
-}: ResponsiveAssetProps) {
+const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, ResponsiveAssetProps>((
+  {
+    src,
+    alt = '',
+    className = '',
+    priority = false,
+    type,
+    autoPlay = false,
+    loop = true,
+    muted = true,
+    playsInline = true,
+    onLoadedMetadata
+  },
+  ref
+) => {
   const [manifest, setManifest] = useState<any>(null);
   const isVideo = type === 'video' || /\.(mp4|mov|webm)$/i.test(src);
 
@@ -51,12 +56,19 @@ export default function ResponsiveAsset({
 
     return (
       <video
+        ref={ref as React.RefObject<HTMLVideoElement>}
         className={className}
         autoPlay={autoPlay}
         loop={loop}
         muted={muted}
         playsInline={playsInline}
         preload={priority ? "auto" : "metadata"}
+        onLoadedMetadata={(e) => {
+          if (!autoPlay) {
+            e.currentTarget.pause();
+          }
+          if (onLoadedMetadata) onLoadedMetadata(e);
+        }}
       >
         {/* Mobile Sources */}
         <source src={mobileWebm} type="video/webm" media="(max-width: 768px)" />
@@ -80,8 +92,14 @@ export default function ResponsiveAsset({
   const getUrl = (size: string, format: string) => 
     imageData?.variants[size].find((v: string) => v.endsWith(format)) || `/_optimized/${baseName}_${size}.${format}`;
 
+  const isContain = className.includes('object-contain');
+
+  // Fallback URL w razie braku danych w manifeście
+  const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
+  const fallbackS3Url = imageData?.original || `${CLOUDFRONT_URL}/_optimized/originals/${cleanSrc}`;
+
   return (
-    <picture className={className}>
+    <picture className={`block w-full h-full ${className}`}>
       {/* AVIF Variants */}
       <source srcSet={getUrl('small', 'avif')} type="image/avif" media="(max-width: 768px)" />
       <source srcSet={getUrl('medium', 'avif')} type="image/avif" media="(max-width: 1440px)" />
@@ -92,17 +110,21 @@ export default function ResponsiveAsset({
       <source srcSet={getUrl('medium', 'webp')} type="image/webp" media="(max-width: 1440px)" />
       <source srcSet={getUrl('large', 'webp')} type="image/webp" />
 
-      {/* Fallback IMG z Next Image dla optymalizacji LCP i Blur */}
+      {/* Fallback IMG z Next Image (z S3 zamiast local) */}
       <Image
-        src={src}
+        src={fallbackS3Url}
         alt={alt}
         fill
         priority={priority}
-        className={`object-cover ${className}`}
+        className={`w-full h-full ${isContain ? 'object-contain' : 'object-cover'}`}
         placeholder={imageData?.blur ? "blur" : "empty"}
         blurDataURL={imageData?.blur}
         sizes="(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 33vw"
       />
     </picture>
   );
-}
+});
+
+ResponsiveAsset.displayName = 'ResponsiveAsset';
+
+export default ResponsiveAsset;

@@ -2,6 +2,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 export interface ElementKaruzeli {
   id: string;
@@ -96,23 +97,23 @@ export default function KaruzelaFunkcji({
               <div className={`w-full h-full relative rounded-[20px] overflow-hidden group bg-black transition-all duration-500 border ${aktywnyId === element.id ? 'border-white/5' : 'border-[#86868B]'}`}>
                 {/* OBRAZ / TŁO / VIDEO */}
                 {element.videoUrl && aktywnyId === element.id ? (
-                  <video
+                  <ResponsiveAsset
                     src={element.videoUrl}
+                    type="video"
                     autoPlay
                     muted
                     loop={element.loop !== false}
                     playsInline
-                    preload="metadata"
                     className="absolute inset-0 w-full h-full object-cover brightness-[1.15]"
                   />
                 ) : element.obrazUrl ? (
-                  <div
-                    className={`absolute inset-0 bg-no-repeat transition-opacity duration-700 brightness-[1.15]
-                      ${element.rozmiarObrazu === 'contain' ? 'bg-contain' : 'bg-cover'}`}
-                    style={{
-                      backgroundImage: `url(${element.obrazUrl})`,
-                      backgroundPosition: element.pozycjaObrazu || 'center'
-                    }}
+                  <ResponsiveAsset
+                    src={element.obrazUrl}
+                    type="image"
+                    alt={element.tytul}
+                    className={`absolute inset-0 w-full h-full brightness-[1.15] ${
+                      element.rozmiarObrazu === 'contain' ? 'object-contain' : 'object-cover'
+                    }`}
                   />
                 ) : (
                   <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">

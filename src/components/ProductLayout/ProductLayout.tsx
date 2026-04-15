@@ -137,6 +137,7 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
         titleBottom="ze stali."
         videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1.mov"
         videoTranslateX="-50px"
+        loop={false}
         description="W naszej wiacie na rowery zastosowaliśmy zawias fortepianowy, który podnosi standard codziennego użytkowania. Ten subtelny, a jednocześnie wyjątkowo wytrzymały element zapewnia nie tylko idealną sztywność klapy zamykającej, ale także jej płynną, niemal bezszelestną pracę. Dzięki kompaktowej konstrukcji i dużej powierzchni styku, zawias ten nie tylko gwarantuje niezawodność, ale również trwałość na lata. To rozwiązanie, które docenią wszyscy użytkownicy ceniący sobie precyzję, funkcjonalność i nowoczesny design."
       />
 
@@ -147,6 +148,7 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
         videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse.mp4"
         gradientFrom="black"
         fullWidth={true}
+        loop={false}
         videoTranslateY="-70vh"
         contentTranslateY="-70vh"
         description="Dolna część wiaty została zaprojektowana z myślą o maksymalnej funkcjonalności i komforcie użytkowania. Stalowy próg z eleganckim materiałowym pochwytem zapewnia solidne zamknięcie, a neodymowe magnesy precyzyjnie utrzymują go w pozycji, zapobiegając przypadkowemu otwarciu. Specjalnie dopasowane zawiasy oraz dodatkowe gięcie elementu tworzą po otwarciu płynnie wyprofilowany podjazd, ułatwiający wprowadzenie roweru. To przemyślane rozwiązanie łączy trwałość z wygodą, odpowiadając na potrzeby wymagających użytkowników."

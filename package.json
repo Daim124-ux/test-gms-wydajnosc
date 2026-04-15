@@ -8,14 +8,18 @@
     "start": "next start",
     "lint": "eslint",
     "optimize": "tsx scripts/optimize-all.ts",
-    "optimize-site": "tsx scripts/optimize-site-assets.ts"
+    "optimize-site": "tsx scripts/optimize-site-assets.ts",
+    "optimize-site-force": "tsx scripts/optimize-site-assets.ts --force"
   },
   "dependencies": {
+    "@aws-sdk/client-cloudfront": "^3.1030.0",
     "@aws-sdk/client-s3": "^3.1030.0",
     "@aws-sdk/lib-storage": "^3.1030.0",
     "@google/model-viewer": "^4.2.0",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
+    "@supabase/ssr": "^0.10.2",
+    "@supabase/supabase-js": "^2.103.0",
     "@types/three": "^0.183.1",
     "dotenv": "^17.4.2",
     "fluent-ffmpeg": "^2.1.3",

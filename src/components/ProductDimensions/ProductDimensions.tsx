@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 const ProductDimensions = () => {
   const dimensions = [
@@ -56,11 +56,11 @@ const ProductDimensions = () => {
           transition={{ duration: 1 }}
           className="relative w-full aspect-[1024/392] rounded-3xl overflow-hidden bg-zinc-900/30 border border-white/5 shadow-2xl group"
         >
-          <Image
+          <ResponsiveAsset
             src="/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392.jpg"
             alt="Wymiary wiaty na rowery - rysunek techniczny"
-            fill
-            className="object-contain p-8 md:p-12"
+            type="image"
+            className="w-full h-full object-contain p-8 md:p-12"
             priority={false}
           />
           

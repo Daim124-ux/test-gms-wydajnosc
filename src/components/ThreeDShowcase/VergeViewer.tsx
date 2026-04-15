@@ -6,12 +6,14 @@ interface VergeViewerProps {
   src?: string;
   className?: string;
   onLoad?: () => void;
+  shouldLoad?: boolean;
 }
 
 export default function VergeViewer({ 
   src = '/apps/verge-model/index.html',
   className = '',
-  onLoad
+  onLoad,
+  shouldLoad = true
 }: VergeViewerProps) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -57,15 +59,17 @@ export default function VergeViewer({
     <div className={`relative w-full h-full overflow-hidden bg-black ${className}`}>
 
       {/* Verge3D Player Iframe */}
-      <iframe
-        ref={iframeRef}
-        src={src}
-        className="w-full h-full border-none shadow-inner transition-opacity duration-700"
-        style={{ opacity: isLoading ? 0 : 1 }}
-        onLoad={handleLoad}
-        title="Verge3D Interactive Viewer"
-        allow="fullscreen; xr-spatial-tracking"
-      />
+      {shouldLoad && (
+        <iframe
+          ref={iframeRef}
+          src={src}
+          className="w-full h-full border-none shadow-inner transition-opacity duration-700"
+          style={{ opacity: isLoading ? 0 : 1 }}
+          onLoad={handleLoad}
+          title="Verge3D Interactive Viewer"
+          allow="fullscreen; xr-spatial-tracking"
+        />
+      )}
     </div>
   );
 }

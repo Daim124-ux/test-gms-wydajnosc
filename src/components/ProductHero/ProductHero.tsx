@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 interface ProductHeroProps {
   title: string;
@@ -46,12 +46,11 @@ export default function ProductHero({ title, description, imageUrl, imageAlt }: 
         <div className="flex-1 w-full relative">
           <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5 dark:ring-white/10">
             {imageUrl ? (
-              <Image 
+              <ResponsiveAsset 
                 src={imageUrl} 
                 alt={imageAlt || 'Zdjęcie produktu'} 
-                fill 
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                type="image"
+                className="w-full h-full object-cover"
                 priority // Preload głównego zdjęcia hero ze względów LCP
               />
             ) : (
