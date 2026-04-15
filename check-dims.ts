@@ -1,1 +1,0 @@
-﻿import sharp from 'sharp'; ['ocynk', 'ral3005', 'ral7016'].forEach(async c => { try { const m = await sharp(public/assets/images/wiaty-stalowe-na-rowery/kolorystyka//Wiata_rowerowa__1-min.jpg).metadata(); console.log(${c}: x); } catch(e) { console.error(e.message); } });
