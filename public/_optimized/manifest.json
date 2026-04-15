@@ -1645,6 +1645,69 @@
         ]
       },
       "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.mp4"
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.frames.av1.hevc.webm": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.frames.av1.hevc.webm"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.frames.av1.hevc.webm"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.frames.av1.hevc.webm"
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1.webm": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1.webm"
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse.webm": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse.webm"
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/Animacjanaronika-wiatarowerowa-web.webm": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacjanaronika-wiatarowerowa-web_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacjanaronika-wiatarowerowa-web_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacjanaronika-wiatarowerowa-web_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacjanaronika-wiatarowerowa-web_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/wiaty-stalowe-na-rowery/Animacjanaronika-wiatarowerowa-web.webm"
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna.webm": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna.webm"
     }
   }
 }

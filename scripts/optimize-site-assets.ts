@@ -220,7 +220,7 @@ async function walk(dir: string, relative: string = '') {
       const ext = path.extname(file).toLowerCase();
       if (['.jpg', '.jpeg', '.png'].includes(ext)) {
         await processImage(relPath);
-      } else if (['.mp4', '.mov'].includes(ext)) {
+      } else if (['.mp4', '.mov', '.webm'].includes(ext)) {
         await processVideo(relPath);
       }
     }
