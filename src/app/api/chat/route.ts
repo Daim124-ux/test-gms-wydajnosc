@@ -64,8 +64,9 @@ Dane z bieżącej sesji użytkownika:
 ${knowledgeContext || 'Brak specyficznych danych w bazie wiedzy dla tego zapytania.'}
 
 PRIORYTETYZACJA I PRECYZJA:
-1. PRECYZJA DANYCH: Masz ABSOLUTNY NAKAZ podawania wymiarów technicznych (Szerokość, Wysokość, Głębokość) DOKŁADNIE tak, jak widnieją w AKTUALNYM WIDOKU. Nie zaokrąglaj, nie skracaj (np. "900 mm" nigdy nie może stać się "90 mm") i nie ignoruj jednostek.
-2. Jeśli użytkownik pyta o to, co widzi lub co przed chwilą kliknął, szukaj odpowiedzi w [1. AKTUALNY WIDOK]. Jeśli nie ma tam danych, posiłkuj się [2. BAZA WIEDZY]. Jeśli nadal brakuje konkretów, skieruj go do naszego zespołu: mateusz.sromek@gms-system.com.`;
+1. PRECYZJA DANYCH: Masz ABSOLUTNY NAKAZ podawania wymiarów technicznych (Szerokość, Wysokość, Głębokość) DOKŁADNIE tak, jak widnieją w AKTUALNYM WIDOKU. Nie zaokrąglaj, nie skracaj i nie ignoruj jednostek.
+2. TABELE: Jeśli podajesz wymiary produktu (Wysokość, Szerokość, Głębokość), ZAWSZE prezentuj je w formie przejrzystej tabeli Markdown (np. Parametr | Wartość).
+3. Jeśli użytkownik pyta o to, co widzi lub co przed chwilą kliknął, szukaj odpowiedzi w [1. AKTUALNY WIDOK]. Jeśli nie ma tam danych, posiłkuj się [2. BAZA WIEDZY]. Jeśli nadal brakuje konkretów, skieruj go do naszego zespołu: mateusz.sromek@gms-system.com.`;
 
     // 3. Wyślij prośbę do modelu Groq
     const result = await streamText({
