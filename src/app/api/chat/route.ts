@@ -11,7 +11,7 @@ const groq = createOpenAI({
 // Wybierz model (nowy model wspierany przez Groq)
 const model = groq('llama-3.3-70b-versatile');
 
-export const runtime = 'edge';
+// export const runtime = 'edge';
 
 export async function POST(req: Request) {
   try {
@@ -58,7 +58,7 @@ Zawsze priorytetyzuj informacje z AKTUALNEGO WIDOKU przy prośbach o podsumowani
 ŹRÓDŁA WIEDZY:
 [1. AKTUALNY WIDOK KONFIGURACJI / STRONY]
 Dane z bieżącej sesji użytkownika:
-\${currentPageContent || 'Brak bezpośredniego podglądu treści strony.'}
+${currentPageContent || 'Brak bezpośredniego podglądu treści strony.'}
 
 [2. BAZA WIEDZY KORPORACYJNEJ]
 ${knowledgeContext || 'Brak specyficznych danych w bazie wiedzy dla tego zapytania.'}
