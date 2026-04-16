@@ -11,10 +11,14 @@ const groq = createOpenAI({
 // Wybierz model (nowy model wspierany przez Groq)
 const model = groq('llama-3.3-70b-versatile');
 
-// export const runtime = 'edge'; // Wyłączamy edge dla lepszego debugowania
+export const runtime = 'edge';
 
 export async function POST(req: Request) {
   try {
+    if (!process.env.GROQ_API_KEY) {
+      throw new Error('API Key configuration missing (GROQ_API_KEY). Please add it to Vercel environment variables.');
+    }
+
     const { messages, currentPageContent } = await req.json();
     if (!messages) {
       return new Response('Missing messages', { status: 400 });
