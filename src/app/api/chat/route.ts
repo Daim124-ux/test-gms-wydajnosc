@@ -8,8 +8,8 @@ const groq = createOpenAI({
   baseURL: 'https://api.groq.com/openai/v1',
 });
 
-// Wybierz model (nowy model wspierany przez Groq)
-const model = groq('llama-3.3-70b-versatile');
+// Wybierz model o wysokich limitach (8b is perfect for high-speed chat)
+const model = groq('llama-3.1-8b-instant');
 
 // export const runtime = 'edge';
 
@@ -73,7 +73,10 @@ PRIORYTETYZACJA I PRECYZJA:
       model: model,
       messages: [
         { role: 'system', content: systemPrompt },
-        ...messages,
+        ...messages.map((m: any) => ({
+          ...m,
+          content: m.content.length > 4000 ? m.content.substring(0, 4000) + '...' : m.content
+        })),
       ],
       temperature: 0.1,
     });

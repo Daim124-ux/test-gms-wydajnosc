@@ -45,8 +45,8 @@ export function getCurrentPageContext(): PageContext | null {
 
     console.log('[GMS-AI-DEBUG] Scraped Content:', resultText.substring(0, 500));
 
-    // Limit text length to prevent token overflow
-    const truncatedText = resultText.length > 6000 ? resultText.substring(0, 6000) + '...' : resultText;
+    // Limit text length to avoid Rate Limits (TPD) on free tiers
+    const truncatedText = resultText.length > 4000 ? resultText.substring(0, 4000) + '...' : resultText;
 
     // 3. Configurator State (Placeholder for future feature)
     // We look for a global object that the future configurator will set
