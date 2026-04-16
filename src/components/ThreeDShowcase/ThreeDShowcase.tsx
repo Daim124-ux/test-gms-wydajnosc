@@ -89,11 +89,30 @@ export default function ThreeDShowcase() {
   const handleTabClick = (tab: typeof tabs[0]) => {
     setActiveTab(tab);
     (window as any).vergeViewer?.sendCommandToPuzzles(tab.id);
+    
+    // Notify the AI assistant of the state change
+    const event = new CustomEvent('gms:3d-update', { 
+      detail: { 
+        activeTab: tab.label,
+        description: tab.description,
+        timestamp: Date.now()
+      } 
+    });
+    window.dispatchEvent(event);
+    
+    // Fallback for direct state access (Configurator-Ready architecture)
+    if (!(window as any).__GMS_CONFIG__) (window as any).__GMS_CONFIG__ = {};
+    (window as any).__GMS_CONFIG__.current3DView = tab.label;
   };
 
   const handleReset = () => {
     setActiveTab(tabs[0]);
     (window as any).vergeViewer?.sendCommandToPuzzles('ha-tab-title-9971');
+    
+    const event = new CustomEvent('gms:3d-update', { 
+      detail: { activeTab: 'Reset', timestamp: Date.now() } 
+    });
+    window.dispatchEvent(event);
   };
 
   const modalContent = (

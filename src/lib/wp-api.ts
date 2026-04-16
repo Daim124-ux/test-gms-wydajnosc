@@ -1,10 +1,22 @@
-const API_URL = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://twoja-domena.pl/graphql';
-
 /**
  * Główna funkcja wykonująca zapytania do endpointu GraphQL.
  */
 export async function fetchAPI(query: string, { variables }: { variables?: any } = {}) {
-  const headers = { 'Content-Type': 'application/json' };
+  const API_URL = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://twoja-domena.pl/graphql';
+  const headers: Record<string, string> = { 
+    'Content-Type': 'application/json',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+  };
+
+  if (process.env.WORDPRESS_AUTH_USER && process.env.WORDPRESS_APP_PASS) {
+    const auth = Buffer.from(`${process.env.WORDPRESS_AUTH_USER}:${process.env.WORDPRESS_APP_PASS}`).toString('base64');
+    headers['Authorization'] = `Basic ${auth}`;
+    console.log('Using Basic Auth for WP API');
+  } else {
+    console.log('No Auth credentials found for WP API');
+  }
+
+  console.log('Fetching from:', API_URL);
 
   try {
     const res = await fetch(API_URL, {
@@ -12,21 +24,25 @@ export async function fetchAPI(query: string, { variables }: { variables?: any }
       headers,
       body: JSON.stringify({ query, variables }),
       next: {
-        revalidate: 60, // ISR: Rewalidacja co 60 sekund. Zmień według potrzeb (np. na tagi dla on-demand revalidation)
+        revalidate: 3600, // ISR: Rewalidacja co 1h dla bazy wiedzy
       },
     });
 
-    const json = await res.json();
-    if (json.errors) {
-      console.error(JSON.stringify(json.errors, null, 2));
-      // throw new Error('Failed to fetch API: ' + json.errors[0]?.message);
-      return { _hasError: true, errors: json.errors };
+    const text = await res.text();
+    
+    try {
+      const json = JSON.parse(text);
+      if (json.errors) {
+        console.error(JSON.stringify(json.errors, null, 2));
+        return { _hasError: true, errors: json.errors };
+      }
+      return json.data;
+    } catch (parseError) {
+      console.error('Failed to parse WP JSON. Response snippet:', text.slice(0, 500));
+      return { _hasError: true, error: parseError };
     }
-
-    return json.data;
   } catch (error) {
     console.error('WPGraphQL Fetch Error:', error);
-    // throw error;
     return { _hasError: true, error };
   }
 }

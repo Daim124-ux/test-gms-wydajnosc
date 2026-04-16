@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   description: "Zaawansowane stalowe wiaty systemowe na rowery",
 };
 
+import ChatWidget from "@/components/Chat/ChatWidget";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -24,7 +26,10 @@ export default function RootLayout({
       lang="pl"
       className={`${poppins.variable} font-sans h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <ChatWidget />
+      </body>
     </html>
   );
 }

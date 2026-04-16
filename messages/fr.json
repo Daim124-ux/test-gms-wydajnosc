@@ -1,0 +1,31 @@
+{
+  "common": {
+    "buy": "Acheter maintenant",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "seeMore": "Voir plus"
+  },
+  "hero": {
+    "title": "Abri à vélos en acier",
+    "subtitle": "Notre solution de stockage.",
+    "cta": "Voir en détail"
+  },
+  "features": {
+    "title": "Solutions innovantes",
+    "floor": {
+      "title": "Sol en aluminium",
+      "description": "Empêche efficacement la croissance de la végétation indésirable."
+    },
+    "threshold": {
+      "title": "Seuil métallique",
+      "description": "Fabriqué en aluminium léger et durable."
+    }
+  },
+  "colors": {
+    "title": "Découvrez les couleurs",
+    "ocynk": "Galvanisé",
+    "burgund": "RAL 3005 - Bordeaux",
+    "antracyt": "RAL 7016 - Anthracite"
+  }
+}

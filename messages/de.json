@@ -1,0 +1,31 @@
+{
+  "common": {
+    "buy": "Jetzt kaufen",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "seeMore": "Mehr sehen"
+  },
+  "hero": {
+    "title": "Fahrradunterstand aus Stahl",
+    "subtitle": "Ihre Aufbewahrungslösung.",
+    "cta": "Details ansehen"
+  },
+  "features": {
+    "title": "Innovative Lösungen",
+    "floor": {
+      "title": "Aluminiumboden",
+      "description": "Verhindert effektiv das Wachstum unerwünschter Vegetation."
+    },
+    "threshold": {
+      "title": "Metallschwelle",
+      "description": "Aus leichtem und langlebigem Aluminium gefertigt."
+    }
+  },
+  "colors": {
+    "title": "Entdecken Sie die Farben",
+    "ocynk": "Verzinkt",
+    "burgund": "RAL 3005 - Weinrot",
+    "antracyt": "RAL 7016 - Anthrazit"
+  }
+}

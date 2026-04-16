@@ -1,0 +1,31 @@
+{
+  "common": {
+    "buy": "Buy now",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "seeMore": "See more"
+  },
+  "hero": {
+    "title": "Steel bicycle shed",
+    "subtitle": "Our storage solution.",
+    "cta": "Take a closer look"
+  },
+  "features": {
+    "title": "Innovative solutions",
+    "floor": {
+      "title": "Aluminum floor",
+      "description": "Effectively prevents the growth of unwanted vegetation."
+    },
+    "threshold": {
+      "title": "Metal threshold",
+      "description": "Made of lightweight and durable aluminum."
+    }
+  },
+  "colors": {
+    "title": "Explore the colors",
+    "ocynk": "Galvanized",
+    "burgund": "RAL 3005 - Wine Red",
+    "antracyt": "RAL 7016 - Anthracite Grey"
+  }
+}

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #ffffff;
@@ -65,4 +66,73 @@ body {
 @keyframes rotate {
   0%     { --angle: 0deg; }
   100%   { --angle: 360deg; }
+}
+
+/* Custom Premium Scrollbar for Chat */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Google AI Premium Border Effect */
+@property --glow-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.google-ai-border {
+  --clr-1: #4285F4; /* Google Blue */
+  --clr-2: #34A853; /* Google Green */
+  --clr-3: #FBBC05; /* Google Yellow */
+  --clr-4: #EA4335; /* Google Red */
+  --clr-5: #4285F4;
+  
+  position: relative;
+  background: linear-gradient(var(--background, #000) 0 0) padding-box,
+              conic-gradient(from var(--glow-angle), var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4), var(--clr-5)) border-box !important;
+  border: 2px solid transparent !important;
+  isolation: isolate;
+  animation: google-glow 8s linear infinite;
+}
+
+.google-ai-border::after {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  z-index: -1;
+  background: conic-gradient(from var(--glow-angle), var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4), var(--clr-5));
+  filter: blur(20px);
+  opacity: 0.25;
+  border-radius: inherit;
+  animation: inherit;
+  pointer-events: none;
+}
+
+@keyframes google-glow {
+  100% {
+    --glow-angle: 360deg;
+  }
 }
