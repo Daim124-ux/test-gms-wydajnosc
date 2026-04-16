@@ -53,7 +53,7 @@ const LifestyleDescription = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-[56px] font-normal text-zinc-400 tracking-tighter"
+            className="section-headline"
           >
             Skonfiguruj swoją wiatę
           </motion.h2>

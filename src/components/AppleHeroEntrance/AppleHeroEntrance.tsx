@@ -13,10 +13,13 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
   const videoRef = useRef<HTMLVideoElement>(null);
   const scrollValue = useMotionValue(0);
 
-  // SILNIK WIDEO
+  // SILNIK WIDEO (Tylko dla desktopu, sprawdzane wewnątrz handleScroll)
   useEffect(() => {
     let reqId: number;
     const handleScroll = () => {
+      // Optymalizacja: Nie wykonuj logiki na telefonach
+      if (window.innerWidth < 768) return;
+
       const video = videoRef.current;
       const container = containerRef.current;
       if (!video || !container) return;
@@ -49,32 +52,19 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
   }, [scrollValue]);
 
   const handleLoadedMetadata = () => {
-    if (videoRef.current) {
+    // Pauza tylko na desktopie, na mobile ResponsiveAsset samo obsłuży autoPlay
+    if (videoRef.current && window.innerWidth >= 768) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0.001;
     }
   };
 
-  // CHOREOGRAFIA ZBIEŻNA (Convergence)
-  // Dolny napis: Startuje z bottom: 100px (y: 0) i jedzie do góry (y: ujemne)
-  const line3Y = useTransform(
-    scrollValue,
-    [0.1, 0.9],
-    ["0px", "-58vh"] // Przywrócone do -58vh
-  );
-
-  // Animacja wyjściowa: Spokojny zjazd na dół widocznego ekranu (viewportu)
-  const exitY = useTransform(
-    scrollValue,
-    [0.85, 1],
-    ["0px", "65vh"]
-  );
-
+  // CHOREOGRAFIA ZBIEŻNA (Desktop Only Transformations)
+  const line3Y = useTransform(scrollValue, [0.1, 0.9], ["0px", "-58vh"]);
+  const exitY = useTransform(scrollValue, [0.85, 1], ["0px", "65vh"]);
   const groupScale = useTransform(scrollValue, [0.85, 1], [1, 1]);
   const groupOpacity = useTransform(scrollValue, [0.95, 1], [1, 1]);
-  const textOpacity = 1;
 
-  // Specyfikacja .glow-text od użytkownika
   const glowTextStyle = {
     textShadow: `
       0 -35px 50px rgba(22, 96, 177, 0.99), 
@@ -91,80 +81,136 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
   return (
     <div ref={containerRef} className="relative w-full bg-black">
 
-      {/* WIDEO LAYER */}
-      <div className="relative w-full h-[400vh]">
-        <div className="sticky top-0 h-screen w-full overflow-hidden z-0 bg-black">
-          {videoUrl && (
-            <ResponsiveAsset
-              ref={videoRef}
-              src={videoUrl}
-              type="video"
-              autoPlay={false}
-              muted
-              playsInline
-              priority
-              onLoadedMetadata={handleLoadedMetadata}
-              className="w-full h-full object-cover opacity-80"
-            />
-          )}
-        </div>
-      </div>
-
-      {/* TEKST LAYER */}
-      <div className="relative w-full h-[400vh] -mt-[400vh] pointer-events-none z-20">
-        <div className="sticky top-0 h-screen w-full">
+      {/* ================================================================= */}
+      {/* 📱 WERSJA MOBILE (Autoplay Hero - Isolated)                       */}
+      {/* ================================================================= */}
+      <div className="block md:hidden relative h-[75vh] w-full overflow-hidden bg-black">
+        {/* Mobile Video Layer */}
+        <div className="absolute inset-0 flex items-center justify-center z-0">
           <motion.div
-            style={{ scale: groupScale, opacity: groupOpacity, y: exitY }}
-            className="relative w-full h-full flex flex-col items-center"
+            initial={{ y: -60 }}
+            className="w-full flex items-center justify-center"
           >
-            {/* GRUPA GÓRNA (Wiata + na rowery) */}
-            <div className="absolute top-[80px] flex flex-col items-center px-4 w-full h-fit">
-              <span className="text-[32px] md:text-[40px] font-semibold tracking-tight text-[#2779c2] scale-[1.15] text-center drop-shadow-[0_0_10px_rgba(22,96,177,0.3)]">
-                Wiata stalowa
-              </span>
-              <h1 className="text-[64px] md:text-[110px] font-semibold tracking-tight leading-none text-[#2779c2] drop-shadow-[0_0_60px_rgba(39,121,194,0.4)] text-center font-sans -mt-4">
-                na rowery
-              </h1>
-            </div>
-
-            {/* LINIA DOLNA (Glow-Text) */}
-            <motion.div
-              style={{ y: line3Y }}
-              className="absolute bottom-[100px] flex justify-center px-4 w-full h-fit items-center"
-            >
-              <span
-                style={glowTextStyle}
-                className="relative z-10 text-[32px] font-[600] tracking-[2px] text-[#2779c2] text-center whitespace-nowrap"
-              >
-                Nasz rouler przechowywania.
-              </span>
-            </motion.div>
+            {videoUrl && (
+              <ResponsiveAsset
+                src={videoUrl}
+                type="video"
+                autoPlay={true}
+                loop={false}
+                muted
+                playsInline
+                priority
+                className="w-[210vw] max-w-none h-auto aspect-video opacity-80"
+              />
+            )}
           </motion.div>
         </div>
+
+        {/* Mobile Overlay Content */}
+        <div className="relative z-30 h-full w-full flex flex-col items-center pt-[15vh] px-6 pointer-events-none -translate-y-[60px]">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 2.9, ease: "easeOut" }}
+            className="flex flex-col items-center"
+          >
+            <span 
+              className="text-[28px] font-semibold tracking-tight text-center inner-shine-text"
+              style={{ animationDelay: '2.9s' }}
+            >
+              Wiata stalowa
+            </span>
+            <h1 
+              className="text-[52px] font-semibold tracking-tight leading-none text-center font-sans mt-[250px] inner-shine-text"
+              style={{ animationDelay: '2.9s' }}
+            >
+              na rowery
+            </h1>
+          </motion.div>
+        </div>
+
+        {/* Studio Floor Gradient for Mobile */}
+        <div className="absolute bottom-0 left-0 w-full h-[40vh] pointer-events-none z-10 
+          bg-gradient-to-t from-[#161617] via-[#161617]/95 via-[#161617]/40 to-transparent" />
       </div>
 
-      {/* EFEKT "STUDIO FLOOR" - Bardzo miękkie przejście (Easing Gradient) */}
-      <div className="absolute bottom-0 left-0 w-full h-[25vh] pointer-events-none z-10 backdrop-blur-[4px]">
-        {/* Glow pod produktem (Radialny, żeby nadać głębi - nieco subtelniejszy) */}
-        <div 
-          className="absolute inset-x-0 bottom-0 h-full opacity-40"
-          style={{
-            background: 'radial-gradient(circle at 50% 100%, rgba(39, 121, 194, 0.2) 0%, transparent 50%)'
-          }}
-        />
-        {/* Bardzo miękki gradient - jeszcze dłuższą strefą przeźroczystości (likwidacja linii odcięcia) */}
-        <div 
-          className="absolute inset-x-0 bottom-0 h-full"
-          style={{
-            background: `linear-gradient(to bottom, 
-              rgba(22, 22, 23, 0) 0%, 
-              rgba(22, 22, 23, 0) 40%, 
-              rgba(22, 22, 23, 0.1) 60%, 
-              rgba(22, 22, 23, 0.4) 80%, 
-              rgba(22, 22, 23, 0.8) 92%, 
-              #161617 100%)`
-          }}
-        />
+      {/* ================================================================= */}
+      {/* 🖥️ WERSJA DESKTOP (UNTOUCHED LOGIC - Wrapped)                    */}
+      {/* ================================================================= */}
+      <div className="hidden md:block">
+        {/* WIDEO LAYER */}
+        <div className="relative w-full h-[400vh]">
+          <div className="sticky top-0 h-screen w-full overflow-hidden z-0 bg-black">
+            {videoUrl && (
+              <ResponsiveAsset
+                ref={videoRef}
+                src={videoUrl}
+                type="video"
+                autoPlay={false}
+                muted
+                playsInline
+                priority
+                onLoadedMetadata={handleLoadedMetadata}
+                className="w-full h-full object-cover opacity-80"
+              />
+            )}
+          </div>
+        </div>
+
+        {/* TEKST LAYER */}
+        <div className="relative w-full h-[400vh] -mt-[400vh] pointer-events-none z-20">
+          <div className="sticky top-0 h-screen w-full">
+            <motion.div
+              style={{ scale: groupScale, opacity: groupOpacity, y: exitY }}
+              className="relative w-full h-full flex flex-col items-center"
+            >
+              {/* GRUPA GÓRNA (Wiata + na rowery) */}
+              <div className="absolute top-[80px] flex flex-col items-center px-4 w-full h-fit">
+                <span className="text-[32px] md:text-[40px] font-semibold tracking-tight text-[#2779c2] scale-[1.15] text-center drop-shadow-[0_0_10px_rgba(22,96,177,0.3)]">
+                  Wiata stalowa
+                </span>
+                <h1 className="text-[64px] md:text-[110px] font-semibold tracking-tight leading-none text-[#2779c2] drop-shadow-[0_0_60px_rgba(39,121,194,0.4)] text-center font-sans -mt-4">
+                  na rowery
+                </h1>
+              </div>
+
+              {/* LINIA DOLNA (Glow-Text) */}
+              <motion.div
+                style={{ y: line3Y }}
+                className="absolute bottom-[100px] flex justify-center px-4 w-full h-fit items-center"
+              >
+                <span
+                  style={glowTextStyle}
+                  className="relative z-10 text-[32px] font-[600] tracking-[2px] text-[#2779c2] text-center whitespace-nowrap"
+                >
+                  Nasz rouler przechowywania.
+                </span>
+              </motion.div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* EFEKT "STUDIO FLOOR" (Desktop Transition) */}
+        <div className="absolute bottom-0 left-0 w-full h-[25vh] pointer-events-none z-10 backdrop-blur-[4px]">
+          <div
+            className="absolute inset-x-0 bottom-0 h-full opacity-40"
+            style={{
+              background: 'radial-gradient(circle at 50% 100%, rgba(39, 121, 194, 0.2) 0%, transparent 50%)'
+            }}
+          />
+          <div
+            className="absolute inset-x-0 bottom-0 h-full"
+            style={{
+              background: `linear-gradient(to bottom, 
+                rgba(22, 22, 23, 0) 0%, 
+                rgba(22, 22, 23, 0) 40%, 
+                rgba(22, 22, 23, 0.1) 60%, 
+                rgba(22, 22, 23, 0.4) 80%, 
+                rgba(22, 22, 23, 0.8) 92%, 
+                #161617 100%)`
+            }}
+          />
+        </div>
       </div>
     </div>
   );

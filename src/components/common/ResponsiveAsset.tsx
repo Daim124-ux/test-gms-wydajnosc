@@ -109,12 +109,10 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
     <picture className={`block w-full h-full ${className}`}>
       {/* AVIF Variants */}
       <source srcSet={getUrl('small', 'avif')} type="image/avif" media="(max-width: 768px)" />
-      <source srcSet={getUrl('medium', 'avif')} type="image/avif" media="(max-width: 1440px)" />
       <source srcSet={getUrl('large', 'avif')} type="image/avif" />
 
       {/* WebP Variants */}
       <source srcSet={getUrl('small', 'webp')} type="image/webp" media="(max-width: 768px)" />
-      <source srcSet={getUrl('medium', 'webp')} type="image/webp" media="(max-width: 1440px)" />
       <source srcSet={getUrl('large', 'webp')} type="image/webp" />
 
       {/* Fallback IMG z Next Image (z S3 zamiast local) */}
@@ -123,9 +121,10 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
         alt={alt}
         fill
         priority={priority}
-        className={`w-full h-full ${isContain ? 'object-contain' : 'object-cover'}`}
+        quality={95}
+        className={`w-full h-full ${className} ${isContain ? 'object-contain' : 'object-cover'}`}
         placeholder="empty"
-        sizes="(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 33vw"
+        sizes="100vw"
       />
     </picture>
   );

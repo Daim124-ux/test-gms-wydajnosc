@@ -72,7 +72,7 @@ export default function KaruzelaFunkcji({
       {/* NAGŁÓWEK SEKCI - W kontenerze 1280px */}
       {showTitle && (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-          <h2 className="text-[40px] md:text-[56px] font-[600] tracking-tight text-[#86868B] leading-tight">
+          <h2 className="section-headline">
             Najważniejsze informacje.
           </h2>
         </div>

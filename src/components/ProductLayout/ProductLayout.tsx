@@ -114,9 +114,11 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
         videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.frames.av1.hevc.webm"
       />
 
-      <section className="bg-[#161617] pt-[56px] pb-24 px-6 overflow-hidden relative z-10">
+      <section 
+        className="pt-[32px] md:pt-[56px] pb-24 px-6 overflow-hidden relative z-10 -mt-[200px] md:mt-0 mobile-legacy-gradient"
+      >
         <div className="max-w-7xl mx-auto text-center px-4 md:px-[100px]">
-          <p className="text-[24px] md:text-[32px] font-[500] tracking-normal text-[#54595F] leading-[1.2]">
+          <p className="text-[20px] md:text-[32px] font-[500] tracking-normal text-[#86868B] leading-[1.2]">
             Wiata stalowa została zaprojektowana głównie z myślą o przechowywaniu rowerów,
             jednak można w niej składować również narzędzia ogrodowe, wózki dziecięce,
             skutery, hulajnogi i inne akcesoria oraz przedmioty użytkowe.

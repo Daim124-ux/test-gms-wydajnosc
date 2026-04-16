@@ -21,7 +21,7 @@ const ProductDimensions = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-3xl md:text-5xl font-semibold text-zinc-300 tracking-tight mb-12"
+            className="section-headline mb-12"
           >
             Wymiary wiaty na rowery
           </motion.h2>

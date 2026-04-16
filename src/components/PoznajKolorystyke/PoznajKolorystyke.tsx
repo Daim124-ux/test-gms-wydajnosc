@@ -181,7 +181,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
 
         {/* NAGŁÓWEK */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-          <h2 className="text-[40px] md:text-[56px] font-[600] tracking-tight text-[#86868B] leading-tight">
+          <h2 className="section-headline">
             Poznaj kolorystykę.
           </h2>
         </div>
@@ -224,7 +224,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                         alt={`${wybranyKolor.nazwa} - ${element.tytul}`}
                         className={`w-full h-full ${
                           element.rozmiarObrazu === 'cover' ? 'object-cover' : 'object-contain'
-                        }`}
+                        } ${element.id === 'klapa' ? 'md:[object-position:-30px_center]' : ''}`}
                       />
                     </motion.div>
                   </AnimatePresence>

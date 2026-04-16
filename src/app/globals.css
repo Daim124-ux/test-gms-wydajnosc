@@ -136,3 +136,67 @@ body {
     --glow-angle: 360deg;
   }
 }
+
+/* Premium Inner Shine / Shimmer Effect - Full Sweep */
+@keyframes shimmer {
+  0% { background-position: 150% 0; }
+  100% { background-position: -50% 0; }
+}
+
+.inner-shine-text {
+  background: linear-gradient(
+    90deg, 
+    #2779c2 0%, 
+    #2779c2 45%, 
+    #ffffff 50%, 
+    #2779c2 55%, 
+    #2779c2 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: shimmer 3s ease-in-out 1 forwards;
+  text-shadow: none !important; /* Usuwamy shadow bo psuje background-clip */
+}
+
+/* ==========================================================================
+   DESIGN SYSTEM - TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ * Nagłówek sekcji (Section Headline)
+ * Specyfikacja Mobile: 28px, 1.14lh, 600 weight, .007em tracking
+ * Specyfikacja Desktop: 56px, 1.07lh, 600 weight, -0.005em tracking
+ */
+.section-headline {
+  position: relative;
+  z-index: 40;
+  font-family: inherit;
+  font-weight: 600;
+  color: #86868b;
+  
+  /* Mobile Style */
+  font-size: 28px;
+  line-height: 1.1428571429;
+  letter-spacing: .007em;
+
+  /* Desktop Style (Apple Standard Scale) */
+  @media (min-width: 768px) {
+    font-size: 56px;
+    line-height: 1.0714285714;
+    letter-spacing: -0.005em;
+  }
+}
+
+/* Legacy Mobile Gradient Transition */
+.mobile-legacy-gradient {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #161617 27%, #161617 100%);
+}
+
+@media (min-width: 768px) {
+  .mobile-legacy-gradient {
+    background: #161617 !important;
+  }
+}
