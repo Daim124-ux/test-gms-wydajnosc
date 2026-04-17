@@ -2,7 +2,7 @@
  * Główna funkcja wykonująca zapytania do endpointu GraphQL.
  */
 export async function fetchAPI(query: string, { variables }: { variables?: any } = {}) {
-  const API_URL = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://twoja-domena.pl/graphql';
+  const API_URL = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://gms-system.com/graphql';
   const headers: Record<string, string> = { 
     'Content-Type': 'application/json',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
