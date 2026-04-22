@@ -43,4 +43,11 @@ next-env.d.ts
 # optimized assets
 /public/_optimized/*
 !/public/_optimized/manifest.json
-/public/assets/
+/public/assets/*
+!/public/assets/logo/
+!/public/assets/piktogramy/
+!/public/assets/videos/
+/public/assets/videos/*
+!/public/assets/videos/main/
+/public/assets/videos/main/*
+!/public/assets/videos/main/jednorozec_gms.mkv
