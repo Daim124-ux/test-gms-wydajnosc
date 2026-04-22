@@ -17,6 +17,7 @@ interface FeatureShowcaseProps {
   gradientFrom?: string;
   fullWidth?: boolean;
   loop?: boolean;
+  videoClassName?: string;
 }
 
 export default function FeatureShowcase({
@@ -31,10 +32,20 @@ export default function FeatureShowcase({
   contentTranslateY = "0px",
   gradientFrom = "#161617",
   fullWidth = false,
-  loop = true
+  loop = true,
+  videoClassName = ""
 }: FeatureShowcaseProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const isInView = useInView(videoRef, { once: true, amount: 0.3 });
+
+  const [isDesktop, setIsDesktop] = React.useState(false);
+
+  useEffect(() => {
+    const checkDesktop = () => setIsDesktop(window.innerWidth >= 768);
+    checkDesktop();
+    window.addEventListener('resize', checkDesktop);
+    return () => window.removeEventListener('resize', checkDesktop);
+  }, []);
 
   useEffect(() => {
     if (isInView && videoRef.current) {
@@ -43,7 +54,7 @@ export default function FeatureShowcase({
   }, [isInView]);
 
   return (
-    <section className="relative flex flex-col items-center justify-center text-center overflow-hidden bg-black pb-0 pt-12">
+    <section className="relative flex flex-col items-center justify-center text-center overflow-hidden bg-black pb-0 pt-12 w-full">
       {/* Przejście gradientowe */}
       <div
         className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b"
@@ -56,7 +67,7 @@ export default function FeatureShowcase({
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as const }}
         className="relative z-20 flex flex-col items-center mb-12 px-4"
-        style={{ transform: `translateY(${titleTranslateY})` }}
+        style={{ transform: isDesktop ? `translateY(${titleTranslateY})` : 'none' }}
       >
         <h2 className="text-[48px] md:text-[80px] font-[600] text-white leading-[1.0] tracking-tight text-center">
           {titleTop && <>{titleTop}<br /></>}
@@ -78,8 +89,16 @@ export default function FeatureShowcase({
 
       {/* VIDEO LAYER */}
       <div
-        className={`relative z-10 overflow-hidden ${fullWidth ? 'w-screen' : 'w-full max-w-7xl mx-auto rounded-2xl shadow-2xl'}`}
-        style={{ transform: `translate(${videoTranslateX}, ${videoTranslateY})` }}
+        className={`relative z-10 overflow-hidden ${videoClassName} ${
+          fullWidth 
+            ? 'w-[180vw] left-1/2 -translate-x-1/2 md:w-full md:left-0 md:translate-x-0' 
+            : 'w-full max-w-7xl mx-auto rounded-2xl shadow-2xl'
+        }`}
+        style={{ 
+          transform: isDesktop 
+            ? `translate(${videoTranslateX}, ${videoTranslateY})` 
+            : (fullWidth ? 'translateX(22.5%)' : 'none') 
+        }}
       >
         {/* Maski boczne - efekt rozmycia krawędzi (wzmocnione - widoczne tylko przy fullWidth) */}
         {fullWidth && (
@@ -104,7 +123,7 @@ export default function FeatureShowcase({
       {/* TEXT LAYER */}
       <div
         className="relative z-10 w-full max-w-[1280px] mx-auto mt-4 pb-32"
-        style={{ transform: `translateY(${contentTranslateY})` }}
+        style={{ transform: isDesktop ? `translateY(${contentTranslateY})` : 'none' }}
       >
         <motion.p
           initial={{ opacity: 0, y: 20 }}

@@ -6,13 +6,28 @@ import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 export default function AluminumFloor() {
   return (
-    <section className="relative w-full bg-black overflow-hidden flex flex-col">
-      {/* Background Image - Adjusted height with procedural bottom mask */}
-      <div 
-        className="relative w-full max-h-[800px] md:max-h-[1050px] z-0 overflow-hidden"
+    <section className="relative w-full bg-black flex flex-col">
+      {/* Title moved OUTSIDE the background container to avoid clipping */}
+      <div className="relative z-30 w-full px-6 md:p-20 pointer-events-none">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          viewport={{ once: true }}
+          className="pointer-events-auto"
+        >
+          <h2 className="text-[48px] md:text-[80px] font-[600] text-white leading-[1.1] tracking-tighter mt-[-200px] md:mt-0 relative z-[999]">
+            Aluminiowa<br />podłoga
+          </h2>
+        </motion.div>
+      </div>
+
+      {/* Background Image Container */}
+      <div
+        className="relative w-full h-[850px] md:h-[900px] lg:h-[1050px] z-0 overflow-hidden mt-[-200px] md:mt-0"
         style={{
-          maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%)',
-          WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%)'
+          maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)'
         }}
       >
         <ResponsiveAsset
@@ -20,43 +35,31 @@ export default function AluminumFloor() {
           alt="Aluminiowa podłoga - montaż"
           type="image"
           priority
-          className="w-full h-full object-cover object-top block"
+          className="w-full h-full object-cover object-[center_115px] md:object-top block"
         />
-        {/* Cinematic Overlays (Atmospheric) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/10" />
-        
-        {/* Content Overlay - Absolute over the image */}
-        <div className="absolute inset-0 z-20 w-full h-full flex flex-col justify-start p-6 md:p-20">
-          {/* Top-Left: Massive Title */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-[48px] md:text-[80px] font-[600] text-white leading-[1.1] tracking-tighter">
-              Aluminiowa<br />podłoga
-            </h2>
-          </motion.div>
+        {/* Cinematic Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/20" />
 
-          {/* Technical Details - Anchored position */}
+        {/* Content Overlay */}
+        <div className="absolute inset-0 z-20 w-full h-full flex flex-col justify-end p-6 md:p-20">
+          {/* Bottom-Right Description */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
             viewport={{ once: true }}
-            className="self-end text-right mt-[140px] md:mt-[340px]"
+            className="self-end text-right mt-auto mb-12 md:mb-0"
           >
-            <div className="max-w-[320px] sm:max-w-2xl md:max-w-[1000px] xl:max-w-[1200px]">
-              <h3 className="text-white text-[18px] md:text-[21px] font-[600] mb-2 md:mb-6 tracking-tight leading-[1.5rem]">
+            <div className="max-w-[320px] sm:max-w-xl md:max-w-3xl">
+              <h3 className="text-white text-[18px] md:text-[21px] font-[600] mb-2 md:mb-6 tracking-tight leading-snug">
                 mocowana do gruntu za pomocą nierdzewnych kotew.
               </h3>
               <p className="text-[#86868b] text-[16px] md:text-[21px] font-[600] leading-[1.6] tracking-tight">
-                W wiacie rowerowej istnieje możliwość zamontowania aluminiowej podłogi, 
-                która skutecznie zapobiega wzrostowi niechcianej roślinności, 
-                szczególnie w przypadku montażu na kostce brukowej. Podłoga została 
-                zaprojektowana w taki sposób, aby kotwienie wiaty odbywało się przez 
-                te same otwory, co w wersji bez podłogi. Dzięki temu można łatwo 
+                W wiacie rowerowej istnieje możliwość zamontowania aluminiowej podłogi,
+                która skutecznie zapobiega wzrostowi niechcianej roślinności,
+                szczególnie w przypadku montażu na kostce brukowej. Podłoga została
+                zaprojektowana w taki sposób, aby kotwienie wiaty odbywało się przez
+                te same otwory, co w wersji bez podłogi. Dzięki temu można łatwo
                 doposażyć wiatę w tę opcję w dowolnym momencie, gdy uznamy, że jest to potrzebne.
               </p>
             </div>
@@ -64,5 +67,6 @@ export default function AluminumFloor() {
         </div>
       </div>
     </section>
+
   );
 }

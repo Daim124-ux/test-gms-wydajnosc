@@ -62,6 +62,16 @@ export async function getNodeByUri(uri: string) {
           slug
           uri
           content
+          seo {
+            title
+            metaDesc
+            canonical
+            opengraphTitle
+            opengraphDescription
+            schema {
+              raw
+            }
+          }
           featuredImage {
             node {
               sourceUrl
@@ -75,6 +85,16 @@ export async function getNodeByUri(uri: string) {
           slug
           uri
           content
+          seo {
+            title
+            metaDesc
+            canonical
+            opengraphTitle
+            opengraphDescription
+            schema {
+              raw
+            }
+          }
           featuredImage {
             node {
               sourceUrl
@@ -102,7 +122,15 @@ export async function getNodeByUri(uri: string) {
         title: 'GMS System - Witaj',
         slug: 'home',
         uri: '/',
-        content: '<p>Witaj na nowej stronie GMS System. Tu znajdziesz najlepsze rozwiązania dla domu i osiedla.</p>'
+        content: '<p>Witaj na nowej stronie GMS System. Tu znajdziesz najlepsze rozwiązania dla domu i osiedla.</p>',
+        seo: {
+          title: 'GMS System - Innowacyjne rozwiązania na lata',
+          metaDesc: 'Witaj na stronie GMS System.',
+          canonical: 'https://gms-system.com/',
+          opengraphTitle: 'GMS System',
+          opengraphDescription: 'Witaj na stronie GMS System.',
+          schema: { raw: '' }
+        }
       };
     }
 
@@ -117,6 +145,14 @@ export async function getNodeByUri(uri: string) {
         image: {
           sourceUrl: 'https://placehold.co/1920x1080/png/white?text=Wiata+GMS',
           altText: 'Mock Wiata'
+        },
+        seo: {
+          title: 'Wiata stalowa na rowery | GMS System',
+          metaDesc: 'Odkryj wiaty stalowe od GMS System.',
+          canonical: 'https://gms-system.com/system-dom/wiata-stalowa-na-rowery/',
+          opengraphTitle: 'Wiata stalowa na rowery | GMS System',
+          opengraphDescription: 'Odkryj wiaty stalowe od GMS System.',
+          schema: { raw: '' }
         }
       };
     }
@@ -127,7 +163,15 @@ export async function getNodeByUri(uri: string) {
       title: uri.charAt(0).toUpperCase() + uri.slice(1).replace(/-/g, ' '),
       slug: uri,
       uri: `/${uri}/`,
-      content: `<p>To jest przykładowa treść dla strony: ${uri}.</p>`
+      content: `<p>To jest przykładowa treść dla strony: ${uri}.</p>`,
+      seo: {
+        title: `${uri.charAt(0).toUpperCase() + uri.slice(1).replace(/-/g, ' ')} | GMS System`,
+        metaDesc: `Opis dla ${uri}`,
+        canonical: `https://gms-system.com/${uri}/`,
+        opengraphTitle: uri,
+        opengraphDescription: `Opis dla ${uri}`,
+        schema: { raw: '' }
+      }
     };
   }
 

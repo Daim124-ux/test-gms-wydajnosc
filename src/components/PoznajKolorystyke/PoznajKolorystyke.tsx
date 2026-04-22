@@ -242,12 +242,12 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
             {/* Liquid Glass Label + Picker Container */}
             <div className="relative flex items-center justify-center w-full">
               {/* Liquid Glass Picker - Stable Center */}
-              <div className="backdrop-blur-3xl bg-white/5 border border-white/10 rounded-full p-1 flex gap-1.5 shadow-2xl ring-1 ring-white/5 z-10">
+              <div className="backdrop-blur-3xl bg-white/5 border border-white/10 rounded-[24px] md:rounded-full p-1.5 md:p-1 flex flex-wrap md:flex-nowrap justify-center gap-1 md:gap-1.5 shadow-2xl ring-1 ring-white/5 z-10 max-w-[calc(100vw-32px)] md:max-w-none">
                 {kolory.map((kolor) => (
                   <button
                     key={kolor.id}
                     onClick={() => zmienKolor(kolor)}
-                    className={`w-8 h-8 rounded-full flex-shrink-0 transition-all duration-500 relative flex items-center justify-center
+                    className={`w-[30px] h-[30px] md:w-8 md:h-8 rounded-full flex-shrink-0 transition-all duration-500 relative flex items-center justify-center
                       ${wybranyKolor.id === kolor.id ? 'scale-100' : 'scale-75 hover:scale-95 opacity-60 hover:opacity-100'}`}
                     style={{ backgroundColor: kolor.hex }}
                   >

@@ -2,7 +2,6 @@
 
 import React, { useRef, useEffect } from 'react';
 import { motion, useTransform, useMotionValue } from 'framer-motion';
-import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 interface AppleHeroEntranceProps {
   videoUrl?: string;
@@ -13,11 +12,10 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
   const videoRef = useRef<HTMLVideoElement>(null);
   const scrollValue = useMotionValue(0);
 
-  // SILNIK WIDEO (Tylko dla desktopu, sprawdzane wewnątrz handleScroll)
+  // SILNIK WIDEO (Tylko dla desktopu)
   useEffect(() => {
     let reqId: number;
     const handleScroll = () => {
-      // Optymalizacja: Nie wykonuj logiki na telefonach
       if (window.innerWidth < 768) return;
 
       const video = videoRef.current;
@@ -52,14 +50,13 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
   }, [scrollValue]);
 
   const handleLoadedMetadata = () => {
-    // Pauza tylko na desktopie, na mobile ResponsiveAsset samo obsłuży autoPlay
     if (videoRef.current && window.innerWidth >= 768) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0.001;
     }
   };
 
-  // CHOREOGRAFIA ZBIEŻNA (Desktop Only Transformations)
+  // CHOREOGRAFIA ZBIEŻNA (Desktop Only)
   const line3Y = useTransform(scrollValue, [0.1, 0.9], ["0px", "-58vh"]);
   const exitY = useTransform(scrollValue, [0.85, 1], ["0px", "65vh"]);
   const groupScale = useTransform(scrollValue, [0.85, 1], [1, 1]);
@@ -85,28 +82,24 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
       {/* 📱 WERSJA MOBILE (Autoplay Hero - Isolated)                       */}
       {/* ================================================================= */}
       <div className="block md:hidden relative h-[75vh] w-full overflow-hidden bg-black">
-        {/* Mobile Video Layer */}
         <div className="absolute inset-0 flex items-center justify-center z-0">
           <motion.div
             initial={{ y: -60 }}
             className="w-full flex items-center justify-center"
           >
             {videoUrl && (
-              <ResponsiveAsset
+              <video
                 src={videoUrl}
-                type="video"
-                autoPlay={true}
+                autoPlay
                 loop={false}
                 muted
                 playsInline
-                priority
                 className="w-[210vw] max-w-none h-auto aspect-video opacity-80"
               />
             )}
           </motion.div>
         </div>
 
-        {/* Mobile Overlay Content */}
         <div className="relative z-30 h-full w-full flex flex-col items-center pt-[15vh] px-6 pointer-events-none -translate-y-[60px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -114,42 +107,30 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
             transition={{ duration: 1, delay: 2.9, ease: "easeOut" }}
             className="flex flex-col items-center"
           >
-            <span 
-              className="text-[28px] font-semibold tracking-tight text-center inner-shine-text"
-              style={{ animationDelay: '2.9s' }}
-            >
+            <span className="text-[28px] font-semibold tracking-tight text-center inner-shine-text" style={{ animationDelay: '2.9s' }}>
               Wiata stalowa
             </span>
-            <h1 
-              className="text-[52px] font-semibold tracking-tight leading-none text-center font-sans mt-[250px] inner-shine-text"
-              style={{ animationDelay: '2.9s' }}
-            >
+            <h1 className="text-[52px] font-semibold tracking-tight leading-none text-center font-sans mt-[250px] inner-shine-text" style={{ animationDelay: '2.9s' }}>
               na rowery
             </h1>
           </motion.div>
         </div>
 
-        {/* Studio Floor Gradient for Mobile */}
         <div className="absolute bottom-0 left-0 w-full h-[40vh] pointer-events-none z-10 
           bg-gradient-to-t from-[#161617] via-[#161617]/95 via-[#161617]/40 to-transparent" />
       </div>
 
       {/* ================================================================= */}
-      {/* 🖥️ WERSJA DESKTOP (UNTOUCHED LOGIC - Wrapped)                    */}
+      {/* 🖥️ WERSJA DESKTOP (Restored from Master)                          */}
       {/* ================================================================= */}
       <div className="hidden md:block">
-        {/* WIDEO LAYER */}
         <div className="relative w-full h-[400vh]">
           <div className="sticky top-0 h-screen w-full overflow-hidden z-0 bg-black">
             {videoUrl && (
-              <ResponsiveAsset
+              <video
                 ref={videoRef}
                 src={videoUrl}
-                type="video"
-                autoPlay={false}
-                muted
-                playsInline
-                priority
+                muted playsInline preload="auto"
                 onLoadedMetadata={handleLoadedMetadata}
                 className="w-full h-full object-cover opacity-80"
               />
@@ -157,14 +138,12 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
           </div>
         </div>
 
-        {/* TEKST LAYER */}
         <div className="relative w-full h-[400vh] -mt-[400vh] pointer-events-none z-20">
           <div className="sticky top-0 h-screen w-full">
             <motion.div
               style={{ scale: groupScale, opacity: groupOpacity, y: exitY }}
               className="relative w-full h-full flex flex-col items-center"
             >
-              {/* GRUPA GÓRNA (Wiata + na rowery) */}
               <div className="absolute top-[80px] flex flex-col items-center px-4 w-full h-fit">
                 <span className="text-[32px] md:text-[40px] font-semibold tracking-tight text-[#2779c2] scale-[1.15] text-center drop-shadow-[0_0_10px_rgba(22,96,177,0.3)]">
                   Wiata stalowa
@@ -174,7 +153,6 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
                 </h1>
               </div>
 
-              {/* LINIA DOLNA (Glow-Text) */}
               <motion.div
                 style={{ y: line3Y }}
                 className="absolute bottom-[100px] flex justify-center px-4 w-full h-fit items-center"
@@ -190,26 +168,9 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
           </div>
         </div>
 
-        {/* EFEKT "STUDIO FLOOR" (Desktop Transition) */}
         <div className="absolute bottom-0 left-0 w-full h-[25vh] pointer-events-none z-10 backdrop-blur-[4px]">
-          <div
-            className="absolute inset-x-0 bottom-0 h-full opacity-40"
-            style={{
-              background: 'radial-gradient(circle at 50% 100%, rgba(39, 121, 194, 0.2) 0%, transparent 50%)'
-            }}
-          />
-          <div
-            className="absolute inset-x-0 bottom-0 h-full"
-            style={{
-              background: `linear-gradient(to bottom, 
-                rgba(22, 22, 23, 0) 0%, 
-                rgba(22, 22, 23, 0) 40%, 
-                rgba(22, 22, 23, 0.1) 60%, 
-                rgba(22, 22, 23, 0.4) 80%, 
-                rgba(22, 22, 23, 0.8) 92%, 
-                #161617 100%)`
-            }}
-          />
+          <div className="absolute inset-x-0 bottom-0 h-full opacity-40" style={{ background: 'radial-gradient(circle at 50% 100%, rgba(39, 121, 194, 0.2) 0%, transparent 50%)' }} />
+          <div className="absolute inset-x-0 bottom-0 h-full" style={{ background: `linear-gradient(to bottom, rgba(22, 22, 23, 0) 0%, rgba(22, 22, 23, 0) 40%, rgba(22, 22, 23, 0.1) 60%, rgba(22, 22, 23, 0.4) 80%, rgba(22, 22, 23, 0.8) 92%, #161617 100%)` }} />
         </div>
       </div>
     </div>

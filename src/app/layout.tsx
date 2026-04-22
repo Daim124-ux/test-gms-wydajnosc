@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 };
 
 import ChatWidget from "@/components/Chat/ChatWidget";
+import Footer from "@/components/Footer/Footer";
 
 export default function RootLayout({
   children,

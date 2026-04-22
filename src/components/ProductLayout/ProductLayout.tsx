@@ -10,6 +10,7 @@ import FeatureShowcase from '@/components/FeatureShowcase/FeatureShowcase';
 import ThresholdGrid from '@/components/ThresholdGrid/ThresholdGrid';
 import AluminumFloor from '@/components/AluminumFloor/AluminumFloor';
 import ProductDimensions from '@/components/ProductDimensions/ProductDimensions';
+import Footer from '@/components/Footer/Footer';
 import { ElementKaruzeli } from '@/components/KaruzelaFunkcji/KaruzelaFunkcji';
 import { KolorWiaty } from '@/components/PoznajKolorystyke/PoznajKolorystyke';
 
@@ -24,6 +25,12 @@ interface ProductLayoutProps {
 }
 
 export default function ProductLayout({ node }: ProductLayoutProps) {
+  // Wymuszamy tryb ciemny dla całej strony produktu
+  React.useEffect(() => {
+    document.documentElement.classList.add('dark');
+    return () => document.documentElement.classList.remove('dark');
+  }, []);
+
   // Mockowe dane
   const mockFunkcje: ElementKaruzeli[] = [
     {
@@ -153,10 +160,11 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
         loop={false}
         videoTranslateY="-70vh"
         contentTranslateY="-70vh"
+        videoClassName="mt-[-250px] md:mt-0"
         description="Dolna część wiaty została zaprojektowana z myślą o maksymalnej funkcjonalności i komforcie użytkowania. Stalowy próg z eleganckim materiałowym pochwytem zapewnia solidne zamknięcie, a neodymowe magnesy precyzyjnie utrzymują go w pozycji, zapobiegając przypadkowemu otwarciu. Specjalnie dopasowane zawiasy oraz dodatkowe gięcie elementu tworzą po otwarciu płynnie wyprofilowany podjazd, ułatwiający wprowadzenie roweru. To przemyślane rozwiązanie łączy trwałość z wygodą, odpowiadając na potrzeby wymagających użytkowników."
       />
 
-      <div className="relative z-20 mt-[-70vh]">
+      <div className="relative z-20 md:mt-[-70vh] mt-0">
         <ThresholdGrid />
 
         {/* Techniczna Karuzela - Miękkie przejście i synchronizacja pozycji */}
@@ -171,7 +179,9 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
       </div>
 
       {/* Sekcja: Aluminiowa Podłoga */}
-      <AluminumFloor />
+      <div className="relative z-30">
+        <AluminumFloor />
+      </div>
 
       {/* Sekcja: 3D Showcase */}
       <ThreeDShowcase />
@@ -187,6 +197,8 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
 
       {/* Promocja konfiguratora z obrazkiem i przyciskiem */}
       <ConfiguratorPromo />
+
+      <Footer variant="dark" />
     </main>
   );
 }

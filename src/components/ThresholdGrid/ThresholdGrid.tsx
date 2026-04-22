@@ -56,7 +56,7 @@ export default function ThresholdGrid() {
         className="relative z-30 pb-24"
       >
         <h3
-          className="text-[60px] md:text-[80px] font-[600] text-white tracking-tighter text-center mb-8"
+          className="text-[42px] md:text-[64px] font-[600] text-white tracking-tighter text-center mb-8"
           style={{
             textShadow: '0 -35px 50px rgba(22, 96, 177, 0.99), 0 -10px 30px rgba(22, 96, 177, 0.99), 0 -5px 20px rgba(22, 96, 177, 0.99), 0 10px 30px rgba(22, 96, 177, 0.8), 0 30px 50px rgba(22, 96, 177, 0.7), 0 50px 70px rgba(22, 96, 177, 0.6), 0 70px 90px rgba(22, 96, 177, 0.5), 0 90px 120px rgba(22, 96, 177, 0.4)'
           }}
