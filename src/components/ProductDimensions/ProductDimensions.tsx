@@ -12,10 +12,10 @@ const ProductDimensions = () => {
   ];
 
   return (
-    <section className="bg-black py-24 px-6 overflow-hidden">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-black py-24 px-0 md:px-6 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-[20px] md:px-0">
         {/* HEADER */}
-        <div className="text-center mb-16">
+        <div className="text-left md:text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ const ProductDimensions = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="flex flex-col items-center"
+                className="flex flex-col items-start md:items-center"
               >
                 <span className="text-zinc-500 text-sm md:text-base font-medium mb-2 uppercase tracking-widest leading-none">
                   {dim.label}
@@ -47,20 +47,22 @@ const ProductDimensions = () => {
             ))}
           </div>
         </div>
+      </div>
 
-        {/* IMAGE CONTAINER */}
+      {/* IMAGE CONTAINER - Moved outside max-w-6xl inner div to achieve 100% width on mobile */}
+      <div className="max-w-6xl mx-auto px-0 md:px-0">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative w-full aspect-[1024/392] rounded-3xl overflow-hidden bg-zinc-900/30 border border-white/5 shadow-2xl group"
+          className="relative w-full aspect-[1024/392] rounded-none md:rounded-3xl overflow-hidden bg-zinc-900/30 border-0 md:border md:border-white/5 shadow-none md:shadow-2xl group"
         >
           <ResponsiveAsset
             src="/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392.jpg"
             alt="Wymiary wiaty na rowery - rysunek techniczny"
             type="image"
-            className="w-full h-full object-contain p-8 md:p-12"
+            className="w-full h-full object-contain p-4 md:p-12"
             priority={false}
           />
           

@@ -27,7 +27,7 @@ export default function ThresholdGrid() {
       </div>
 
       {/* Grid of details */}
-      <div className="relative z-30 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-12 mb-32">
+      <div className="relative z-30 max-w-7xl mx-auto px-[20px] md:px-6 grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-12 mb-32">
         {features.map((f, idx) => (
           <motion.div
             key={idx}
@@ -35,7 +35,7 @@ export default function ThresholdGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: idx * 0.1 }}
             viewport={{ once: true }}
-            className="flex flex-col items-center text-center group"
+            className="flex flex-col items-start md:items-center text-left md:text-center group"
           >
             <h4 className="!text-[#2779c2] text-[22px] font-bold tracking-tight mb-2 transition-colors">
               {f.title}
@@ -53,10 +53,10 @@ export default function ThresholdGrid() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] as const }}
         viewport={{ once: true }}
-        className="relative z-30 pb-24"
+        className="relative z-30 pb-24 px-[20px] md:px-0"
       >
         <h3
-          className="text-[42px] md:text-[64px] font-[600] text-white tracking-tighter text-center mb-8"
+          className="text-[42px] md:text-[64px] font-[600] text-white tracking-tighter text-left md:text-center mb-8"
           style={{
             textShadow: '0 -35px 50px rgba(22, 96, 177, 0.99), 0 -10px 30px rgba(22, 96, 177, 0.99), 0 -5px 20px rgba(22, 96, 177, 0.99), 0 10px 30px rgba(22, 96, 177, 0.8), 0 30px 50px rgba(22, 96, 177, 0.7), 0 50px 70px rgba(22, 96, 177, 0.6), 0 70px 90px rgba(22, 96, 177, 0.5), 0 90px 120px rgba(22, 96, 177, 0.4)'
           }}
@@ -69,7 +69,7 @@ export default function ThresholdGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto text-[#86868b] text-[18px] md:text-[21px] font-[600] leading-[1.5rem] text-center tracking-tight"
+          className="max-w-4xl mx-auto text-[#86868b] text-[18px] md:text-[21px] font-[600] leading-[1.5rem] text-left md:text-center tracking-tight"
         >
           Konstrukcja wiaty na rowery została zaprojektowana z myślą o maksymalnej
           wytrzymałości i trwałości. Kluczowym elementem wzmacniającym są autorskie

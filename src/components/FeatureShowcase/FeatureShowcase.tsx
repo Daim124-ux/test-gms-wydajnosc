@@ -66,10 +66,10 @@ export default function FeatureShowcase({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as const }}
-        className="relative z-20 flex flex-col items-center mb-12 px-4"
+        className="relative z-20 flex flex-col items-start md:items-center mb-12 px-[20px] w-full"
         style={{ transform: isDesktop ? `translateY(${titleTranslateY})` : 'none' }}
       >
-        <h2 className="text-[48px] md:text-[80px] font-[600] text-white leading-[1.0] tracking-tight text-center">
+        <h2 className="text-[48px] md:text-[80px] font-[600] text-white leading-[1.0] tracking-tight text-left md:text-center w-full">
           {titleTop && <>{titleTop}<br /></>}
           {titleGlow && (
             <span
@@ -130,7 +130,7 @@ export default function FeatureShowcase({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-[#86868b] text-[18px] md:text-[21px] font-[600] leading-[1.5rem] text-center tracking-tight px-4 md:px-0"
+          className="text-[#86868b] text-[18px] md:text-[21px] font-[600] leading-[1.5rem] text-left md:text-center tracking-tight px-[20px] md:px-0"
         >
           {description}
         </motion.p>
