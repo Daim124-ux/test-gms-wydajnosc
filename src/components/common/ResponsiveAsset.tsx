@@ -32,7 +32,7 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
   ref
 ) => {
   const [manifest, setManifest] = useState<any>(null);
-  const isVideo = type === 'video' || /\.(mp4|mov|webm|mkv)$/i.test(src);
+  const isVideo = type === 'video' || /\.(mp4|mov|webm)$/i.test(src);
 
   const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
   const cleanSrc = src.startsWith('/') ? src.slice(1) : src;

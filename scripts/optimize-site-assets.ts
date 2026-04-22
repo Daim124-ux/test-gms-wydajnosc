@@ -98,19 +98,7 @@ async function uploadToS3(filePath: string, s3Key: string, contentType: string) 
 
 async function processImage(relativePath: string) {
   const srcPath = path.join(PUBLIC_DIR, relativePath);
-  const ext = path.extname(relativePath).toLowerCase();
-  
-  if (ext === '.svg') {
-    const s3Key = `_optimized/originals/${relativePath}`.replace(/\\/g, '/');
-    const cloudPath = await uploadToS3(srcPath, s3Key, 'image/svg+xml');
-    manifest.images[relativePath] = {
-      blur: '',
-      variants: { original: [cloudPath] },
-      original: cloudPath,
-    };
-    return;
-  }
-
+  const ext = path.extname(relativePath);
   const baseName = relativePath.replace(ext, '');
   const targetDir = path.join(OPT_DIR, path.dirname(relativePath));
   
@@ -230,9 +218,9 @@ async function walk(dir: string, relative: string = '') {
       await walk(fullPath, relPath);
     } else {
       const ext = path.extname(file).toLowerCase();
-      if (['.jpg', '.jpeg', '.png', '.svg'].includes(ext)) {
+      if (['.jpg', '.jpeg', '.png'].includes(ext)) {
         await processImage(relPath);
-      } else if (['.mp4', '.mov', '.webm', '.mkv'].includes(ext)) {
+      } else if (['.mp4', '.mov', '.webm'].includes(ext)) {
         await processVideo(relPath);
       }
     }
