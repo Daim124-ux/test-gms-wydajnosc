@@ -12,6 +12,18 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
   const videoRef = useRef<HTMLVideoElement>(null);
   const scrollValue = useMotionValue(0);
 
+  const resolveS3Url = (url?: string) => {
+    if (!url) return undefined;
+    if (url.startsWith('http')) return url;
+    
+    // Używamy CDN dla ciężkich plików hero, jeśli to lokalna ścieżka
+    const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
+    const cleanSrc = url.startsWith('/') ? url.slice(1) : url;
+    return `${CLOUDFRONT_URL}/_optimized/${cleanSrc}`;
+  };
+
+  const resolvedVideoUrl = resolveS3Url(videoUrl);
+
   // SILNIK WIDEO (Tylko dla desktopu)
   useEffect(() => {
     let reqId: number;
@@ -87,9 +99,9 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
             initial={{ y: -60 }}
             className="w-full flex items-center justify-center"
           >
-            {videoUrl && (
+            {resolvedVideoUrl && (
               <video
-                src={videoUrl}
+                src={resolvedVideoUrl}
                 autoPlay
                 loop={false}
                 muted
@@ -126,10 +138,10 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
       <div className="hidden md:block">
         <div className="relative w-full h-[400vh]">
           <div className="sticky top-0 h-screen w-full overflow-hidden z-0 bg-black">
-            {videoUrl && (
+            {resolvedVideoUrl && (
               <video
                 ref={videoRef}
-                src={videoUrl}
+                src={resolvedVideoUrl}
                 muted playsInline preload="auto"
                 onLoadedMetadata={handleLoadedMetadata}
                 className="w-full h-full object-cover opacity-80"
