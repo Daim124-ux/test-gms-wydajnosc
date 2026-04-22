@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import ResponsiveAsset from '../common/ResponsiveAsset';
 
 const PIKTOGRAMY = [
   '/assets/piktogramy/Piktogram_1.svg',
@@ -44,7 +45,21 @@ interface FooterProps {
 
 export default function Footer({ variant }: FooterProps) {
   const [icons, setIcons] = useState<{ id: number; src: string; delay: number; x: string; size: number; startY: number; color: string }[]>([]);
+  const [manifest, setManifest] = useState<any>(null);
   const videoRef = React.useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    fetch('/_optimized/manifest.json')
+      .then(res => res.json())
+      .then(data => setManifest(data))
+      .catch(() => console.warn('Footer manifest not found.'));
+  }, []);
+
+  const resolveAsset = (src: string) => {
+    if (!manifest) return src;
+    const cleanSrc = src.startsWith('/') ? src.slice(1) : src;
+    return manifest.images?.[cleanSrc]?.original || manifest.videos?.[cleanSrc]?.original || src;
+  };
 
   useEffect(() => {
     // Generujemy losowe piktogramy
@@ -101,11 +116,11 @@ export default function Footer({ variant }: FooterProps) {
               className="w-full h-full relative z-10 opacity-70"
               style={{
                 backgroundColor: icon.color,
-                WebkitMaskImage: `url(${icon.src})`,
+                WebkitMaskImage: `url(${resolveAsset(icon.src)})`,
                 WebkitMaskSize: 'contain',
                 WebkitMaskRepeat: 'no-repeat',
                 WebkitMaskPosition: 'center',
-                maskImage: `url(${icon.src})`,
+                maskImage: `url(${resolveAsset(icon.src)})`,
                 maskSize: 'contain',
                 maskRepeat: 'no-repeat',
                 maskPosition: 'center'
@@ -128,11 +143,11 @@ export default function Footer({ variant }: FooterProps) {
           <div
             className="w-full max-w-[1200px] h-[350px] md:h-[450px] bg-gradient-to-r from-gray-400 via-white to-gray-400 opacity-20 dark:opacity-30 relative z-10"
             style={{
-              WebkitMaskImage: 'url(/assets/logo/gms_logo_achromat_r.svg)',
+              WebkitMaskImage: `url(${resolveAsset('/assets/logo/gms_logo_achromat_r.svg')})`,
               WebkitMaskSize: 'contain',
               WebkitMaskRepeat: 'no-repeat',
               WebkitMaskPosition: 'center',
-              maskImage: 'url(/assets/logo/gms_logo_achromat_r.svg)',
+              maskImage: `url(${resolveAsset('/assets/logo/gms_logo_achromat_r.svg')})`,
               maskSize: 'contain',
               maskRepeat: 'no-repeat',
               maskPosition: 'center'
@@ -154,8 +169,10 @@ export default function Footer({ variant }: FooterProps) {
             Nie goń schematów.<br />Złap <span className="bg-gradient-to-r from-[#e69b35] via-[#4062cc] to-[#ed3e44] bg-clip-text text-transparent">Jednorożca.</span>
           </span>
         </motion.div>
-        <video
+        <ResponsiveAsset
+          ref={videoRef}
           src="/assets/videos/main/jednorozec_gms.mkv"
+          type="video"
           autoPlay
           loop
           muted
