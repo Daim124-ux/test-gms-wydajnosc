@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.83 26.88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4a4a49;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa 1">
+    <path class="cls-1" d="M2.15,2.24h21.53v22.4H2.15V2.24ZM0,26.88h25.83V0H0v26.88Z"/>
+    <rect class="cls-1" x="5.38" y="7.84" width="2.15" height="11.2"/>
+    <rect class="cls-1" x="9.69" y="7.84" width="2.15" height="11.2"/>
+    <rect class="cls-1" x="13.99" y="7.84" width="2.15" height="11.2"/>
+    <rect class="cls-1" x="18.3" y="7.84" width="2.15" height="11.2"/>
+  </g>
+</svg>

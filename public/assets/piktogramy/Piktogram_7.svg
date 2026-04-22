@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.68 25.68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4a4a49;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa 1">
+    <path class="cls-1" d="M2.14,2.14h21.4v21.4H2.14V2.14ZM0,25.68h25.68V0H0v25.68Z"/>
+    <polygon class="cls-1" points="10.7 7.49 10.7 18.19 8.56 18.19 8.56 9.63 6.42 9.63 6.42 7.49 10.7 7.49"/>
+    <rect class="cls-1" x="12.84" y="7.49" width="2.14" height="10.7"/>
+    <rect class="cls-1" x="17.12" y="7.49" width="2.14" height="10.7"/>
+  </g>
+</svg>
