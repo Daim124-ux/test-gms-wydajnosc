@@ -7,38 +7,79 @@
     "seeMore": "Zobrazit více",
     "readMore": "Číst článek",
     "configure": "Konfigurovat produkt",
-    "checkAlso": "Podívejte se také na",
-    "blogArticles": "Články na blogu",
+    "checkAlso": "Podívejte se také",
+    "blogArticles": "Blogové články",
     "fromBlog": "Článek z blogu",
     "shop": "Obchod",
-    "goToShop": "Přejít do obchodu"
+    "goToShop": "Přejít do obchodu",
+    "productPage": "Stránka produktu",
+    "watchVideo": "Sledovat video"
   },
   "navigation": {
     "header": {
       "domSystem": "Domovní systém",
-      "osiedleSystem": "Sídelní systém",
+      "osiedleSystem": "Systém pro sídliště",
       "shop": "Obchod",
       "partnerZone": "Partnerská zóna",
       "contact": "Kontakt",
       "more": "Více"
     },
     "megaMenu": {
-      "superstrongDesc": "Extrémně pevné garáže pro montáž přímo do země.",
-      "shelterWoodDesc": "Zahradní přístřešky, na nářadí, na dřevo nebo motocykl.",
-      "shelterRamps": "s možností montáže nájezdové kolejnice",
+      "superstrongDesc": "Superpevné garáže, k montáži přímo do země.",
+      "shelterWoodDesc": "Zahradní přístřešky, na nářadí, dřevo nebo motocykl.",
+      "shelterRamps": "s možností montáže vjezdové lišty",
       "tabs": {
         "garages": "Ocelové garáže",
         "superstrong": "Garáže Superstrong",
-        "bikeShelter": "Přístřešek na kola",
+        "bikeShelter": "Přístřešek pro kola",
         "steelShelters": "Ocelové přístřešky",
-        "gates": "Garážová vrata a pohony",
+        "gates": "Garážové brány a pohony",
         "greenShelters": "Zelené altány",
-        "trashShelters": "Přístřešky na popelnice",
-        "compactShelters": "Kompaktní kryty na popelnice",
-        "basementDoors": "Dveře do společných prostor",
-        "collectiveGarages": "Hromadné garáže",
-        "partitionWalls": "Dělicí stěny",
-        "bikeCages": "Oplocení boxů na kola"
+        "trashShelters": "Kontejnerové altány",
+        "compactShelters": "Kompaktní kryty odpadkových kontejnerů",
+        "basementDoors": "Vnitřní schodišťové dveře",
+        "collectiveGarages": "Kolektivní garáže",
+        "partitionWalls": "Oddělovací stěny",
+        "bikeCages": "Kolařské boxy"
+      },
+      "promos": {
+        "checkAlso": "Podívejte se také na:",
+        "trashSheltersTitle": "Krytí a přístřešky pro odpad",
+        "trashSheltersDesc": "Skladujte odpady stylově.",
+        "greenSheltersTitle": "Přístřešky s zelenou střechou",
+        "greenSheltersDesc": "Zelený akcent v betonové džungli.",
+        "ecoMoves": "Naše eko kroky",
+        "configureShelter": "Konfigurujte svůj přístřešek",
+        "configureGarage": "Konfigurujte svou garáž",
+        "configureInShop": "Konfigurovat v obchodě",
+        "collectiveGaragesTitle": "Kolektivní garáže - boxy",
+        "collectiveGaragesDesc": "Spolehlivá kvalita ve vašem boxu.",
+        "partitionWallsTitle": "Příčky a oddělení",
+        "watchTest": "Podívejte se na test SuperStronga",
+        "nanoCover": "Ochrana NANO-{num}",
+        "sectionInPrep": "Sekce {name} se momentálně připravuje."
+      },
+      "configuratorPromo": {
+        "title": "Konfigurujte si svůj přístřešek"
+      },
+      "blog": {
+        "articles": "Blogové články",
+        "fromBlog": "Článek z blogu",
+        "readMore": "Číst článek",
+        "titles": {
+          "ecoTrash": "Může být přístřešek pro odpadové kontejnery šetrný k životnímu prostředí?",
+          "trashDistance": "Pravidla pro vzdálenost odpadního místa od budovy",
+          "investInDoors": "Vyplatí se investovat do sklepních dveří a které vybrat?",
+          "garageOrganization": "Jak optimálně využít garážový box v bytovém domě?",
+          "partitionPlanning": "Zásady plánování oddělení v moderním stavebnictví",
+          "warehouseSafety": "Bezpečnost a organizace prostoru v skladových halách",
+          "beforeBuying": "6 věcí, které byste měli vědět před koupí ocelové garáže",
+          "howToArrange": "Jak zařízení garáž: od jednoduchého skladu po stylovou dílnu",
+          "superstrongInvestment": "Proč je garáž SuperStrong investicí na roky?",
+          "superstrongInstall": "Montáž garáže SuperStrong krok za krokem",
+          "motoGarage": "Vytvořte si ideální garáž pro motocykl: Průvodce krok za krokem",
+          "bikeSecurity": "Jak zabezpečit kola před krádeží a počasím?"
+        }
       },
       "moreLinks": {
         "about": "O nás",
@@ -46,124 +87,136 @@
         "blog": "Blog",
         "distributors": "Distributoři",
         "projects": "Realizace",
-        "privacy": "Zásady ochrany osobních údajů",
+        "privacy": "Zásady ochrany soukromí",
         "downloads": "Ke stažení"
       },
       "titles": {
         "garaze_stalowe": "Ocelové garáže",
         "garaze_superstrong": "Garáže Superstrong",
-        "wiata": "Přístřešek na kola",
+        "wiata": "Kolařský přístřešek",
         "wiaty_stalowe": "Ocelové přístřešky",
         "bramy": "Garážová vrata a pohony",
         "altany_zielone": "Zelené altány",
-        "altany_smietnikowe": "Přístřešky na popelnice",
+        "altany_smietnikowe": "Altány pro odpad",
         "kompaktowe": "Kompaktní kryty",
         "drzwi": "Sklepní dveře",
-        "garaze_zbiorcze": "Hromadné garáže",
-        "scianki": "Dělicí stěny",
-        "wygrodzenia": "Průmyslové oplocení"
+        "garaze_zbiorcze": "Kolektivní garáže",
+        "scianki": "Oddělovací stěny",
+        "wygrodzenia": "Průmyslová ohrazení"
       },
       "gatesTitles": {
-        "tilt": "Výklopná garážová vrata",
+        "tilt": "Vyklápěcí garážová vrata",
         "hinged": "Křídlová vrata",
-        "hingedPanel": "Křídlová panelová vrata",
-        "sectional": "Sekční vrata"
+        "hingedPanel": "Panelová křídlová vrata",
+        "sectional": "Sekční vrata",
+        "singleLeafSteel": "Jednokřídlá - plechová",
+        "doubleLeafSteel": "Dvoukřídlá - plechová",
+        "singleLeafPanel": "Jednokřídlá - panelová",
+        "doubleLeafPanel": "Dvoukřídlá - panelová"
       }
     }
   },
   "hero": {
-    "title": "Ocelový přístřešek na kola",
-    "subtitle": "Náš univerzál pro skladování.",
+    "title": "Ocelový kolařský přístřešek",
+    "subtitle": "Náš Rouleur skladování.",
     "newCategory": "Zcela nová kategorie",
-    "cinematicDesc": "Lehčí, pevnější, propracované v každém milimetru. Skutečná ocel, která odolá každému větru."
+    "cinematicDesc": "Lehčí, silnější, dopracovaný do posledního milimetru. Skutečná ocel, kterou žádný vítr nepřemůže."
+  },
+  "productHero": {
+    "new": "Novinka",
+    "requestQuote": "Zadat poptávku",
+    "downloadCatalog": "Stáhnout katalog (PDF)",
+    "productImage": "Fotografie produktu",
+    "noImage": "Chybějící fotografie"
   },
   "features": {
     "title": "Nejdůležitější informace."
   },
   "configuratorPromo": {
-    "title": "Nakonfigurujte si svůj přístřešek",
-    "description": "Náš konfigurátor dává možnost personalizace produktů tak, aby vyhovovaly i těm nejnáročnějším zákazníkům. Při konfiguraci máte k dispozici náhled produktu v reálném čase."
+    "title": "Konfigurujte svůj přístřešek",
+    "description": "Náš konfigurátor umožňuje personalizaci produktů tak, aby vyhovovaly i těm nejnáročnějším zákazníkům. Během konfigurace máte k dispozici náhled produktu v reálném čase."
   },
   "lifestyle": {
     "title": "Více než jen přístřešek na kola",
-    "description": "Přestože byl náš přístřešek navržen především pro skladování kol, jeho všestrannost z něj činí ideální řešení i pro mnoho dalších potřeb."
+    "description": "Ačkoliv byl náš přístřešek navržen především pro skladování kol, jeho všestrannost z něj činí ideální řešení i pro mnoho jiných potřeb."
   },
   "productLayout": {
     "intro": {
-      "text": "Ocelový přístřešek byl navržen především pro skladování kol, ale lze v něm uskladnit i zahradní nářadí, kočárky, skútry, koloběžky a další příslušenství či užitkové předměty. Sklon střechy směřující dopředu zajišťuje dobrý odvod vody a díky pohodlnému madlu je otevírání snadné."
+      "text": "Ocelový přístřešek byl navržen především pro skladování kol, lze v něm však uchovávat také zahradní nářadí, dětské kočárky, skútry, koloběžky a další příslušenství i užitečné předměty. Sklon střechy klopy směřující dopředu zajišťuje dobrý odtok vody a díky pohodlné madle je otevírání snadné."
     },
     "features": {
       "pianoHinge": {
-        "title": "Klavírový pant ve víku přístřešku"
+        "title": "Klavírný závěs v klopě přístřešku"
       },
       "stopPoints": {
         "title": "Inovativní systém otevírání s body STOP"
       },
       "fabricHandle": {
-        "title": "Látkové madlo pro snadné otevírání a zavírání prahu"
+        "title": "Látková madla usnadňující otevírání a zavírání prahu"
       },
       "steelRods": {
-        "title": "Zavírání přístřešku pomocí hliníkovo-ocelových táhel."
+        "title": "Zavírání přístřešku pomocí hliníkovo-ocelových tahel."
       },
       "packing": {
         "title": "Pohodlné balení v paletovém boxu"
       },
       "reinforcedCorners": {
-        "title": "Zesílené rohy"
+        "title": "Zpevněné rohy"
       },
       "steelTriangles": {
         "title": "Zpevňující ocelové trojúhelníky v rozích"
       },
       "lidReinforcement": {
-        "title": "Ocelové výztuhy víka spojené s U-profily"
+        "title": "Ocelová zpevnění klopy spojená s U-profily"
       }
     },
     "colorSection": {
-      "title": "Seznamte se s barevným provedením.",
+      "title": "Seznamte se s barevností.",
       "aesthetic": "Nadčasová estetika v každé barvě",
       "match": "Přizpůsobte přístřešek fasádě vašeho domu",
-      "protection": "Ochrana za každého počasí",
-      "quality": "Nejvyšší kvalita laku"
+      "protection": "Ochrana za všech podmínek",
+      "quality": "Nejvyšší kvalita lakovaného povrchu"
     },
     "dimensions": {
       "title": "Rozměry přístřešku na kola",
       "height": "Výška",
       "width": "Šířka",
-      "depth": "Hloubka"
+      "depth": "Hloubka",
+      "drawingAlt": "Rozměry přístřešku pro kola - technický výkres"
     },
     "nav": {
-      "priceFrom": "Od 12 999 PLN"
+      "priceFrom": "Od 12 999 zł"
     },
     "aluminumFloor": {
       "title": "Hliníková podlaha",
-      "subtitle": "připevněná k zemi pomocí nerezových kotev.",
-      "description": "V přístřešku na kola je možné namontovat hliníkovou podlahu, která účinně zabraňuje růstu nežádoucí vegetace, zejména při montáži na zámkovou dlažbu. Podlaha byla navržena tak, aby ukotvení přístřešku probíhalo přes stejné otvory jako u verze bez podlahy. Díky tomu je možné přístřešek touto možností snadno dovybavit kdykoliv, když to uznáte za vhodné."
+      "subtitle": "ukotvená k zemi pomocí nerezových kotev.",
+      "description": "V cyklistickém přístřešku je možnost instalace hliníkové podlahy, která účinně zabraňuje růstu nežádané vegetace, zejména v případě montáže na zámkovou dlažbu. Podlaha byla navržena tak, aby ukotvování přístřešku probíhalo stejnými otvory jako u verze bez podlahy. Díky tomu lze přístřešek touto opcí snadno doplnit v kterýkoli okamžik, kdy bude uznáno za potřebné."
     },
     "lifestyle": {
-      "p1": "Přestože byl náš přístřešek navržen především pro skladování kol, jeho všestrannost z něj činí ideální řešení i pro mnoho dalších potřeb. Kromě kol snadno pojme zahradní nářadí, jako jsou lopaty, hrábě nebo zahradní nůžky, a menší zahradní doplňky, jako jsou květináče, semena nebo hnojiva. Díky prostorným rozměrům — 1950 mm na šířku, 900 mm do hloubky a 1290 mm na výšku — může přístřešek sloužit také jako praktický úložný prostor pro domácí příslušenství, jako jsou sekačky na trávu, zahradní hadice atd.",
-      "p2": "Ideálně se hodí také pro skladování dětských hraček, včetně elektrických nebo šlapacích autíček, hraček na pískoviště a sad pro hraní na zahradě. Přístřešek navíc pojme rybářské vybavení, jako jsou pruty, navijáky nebo rybářské tašky, a také sezónní zahradní dekorace, jako jsou lucerny a solární světla nebo drobný zahradní nábytek. Pokud využíváte zahradu k relaxaci, najdete zde také místo pro grilovací příslušenství.",
-      "p3": "Díky své funkčnosti a prostornosti nabízí náš přístřešek pohodlné řešení pro uskladnění široké škály předmětů, které mohou být užitečné v každodenním životě, s maximálním využitím dostupného prostoru."
+      "p1": "Ačkoliv byl náš přístřešek navržen především pro skladování kol, jeho všestrannost z něj činí ideální řešení i pro mnoho jiných potřeb. Kromě kol v něm snadno umístíte zahradní nářadí, jako jsou lopaty, hrábky nebo sekory, a malé zahradní doplňky, jako jsou květináče, semena nebo hnojiva. Díky prostorným rozměrům — 1950 mm šířky, 900 mm hloubky a 1290 mm výšky — může přístřešek sloužit také jako praktický úložný prostor pro domácí doplňky, jako jsou sekačky, zahradní hadice atd.",
+      "p2": "Ideálně se hodí také pro skladování dětských hraček, včetně elektrických autíček nebo autíček na pedály, hraček do pískoviště a sad pro hraní v zahradě. Navíc může přístřešek pojmout rybářské potřeby, jako jsou pruty, navijáky nebo rybářské tašky, a také sezónní zahradní dekorace, jako jsou lampiony, solární lampy nebo drobný zahradní nábytek. Pokud využíváte zahradu k relaxaci, najdete zde také místo pro grillingové příslušenství.",
+      "p3": "Díky své funkcionalitě a prostornosti nabízí náš přístřešek pohodlné řešení pro skladování široké škály předmětů, které mohou být užitečné v každodenním životě, a to při maximálním využití dostupného prostoru."
     },
     "showcase1": {
       "top": "Odolný",
-      "glow": "klavírový pant",
+      "glow": "klavírní pant",
       "bottom": "z oceli.",
-      "description": "V našem přístřešku na kola jsme použili klavírový pant, který zvyšuje standard každodenního používání. Tento subtilní, a přesto mimořádně odolný prvek, zajišťuje nejen ideální tuhost uzavíracího víka, ale také jeho plynulý a téměř bezhlučný chod. Díky kompaktní konstrukci a velké kontaktní ploše tento pant zaručuje nejen spolehlivost, ale také dlouholetou životnost. Jedná se o řešení, které ocení všichni uživatelé ceníci si preciznosti, funkčnosti a moderního designu."
+      "description": "V našem přístřešku pro kola jsme použili klavírní pant, který zvyšuje standard každodenního používání. Tento nenápadný, a zároveň výjimečně odolný prvek zajišťuje nejen ideální tuhost uzavírací klapy, ale také její plynulý, téměř bezhlučný chod. Díky kompaktní konstrukci a velké kontaktní ploše zaručuje tento pant nejen spolehlivost, ale i dlouhou životnost. Je to řešení, které ocení všichni uživatelé, kteří si cení preciznosti, funkčnosti a moderního designu."
     },
     "showcase2": {
       "top": "Kovový práh",
       "glow": "z lehkého hliníku",
-      "description": "Spodní část přístřešku byla navržena s ohledem na maximální funkčnost a komfort používání. Ocelový práh s elegantním látkovým madlem zajišťuje pevné uzavření a neodymové magnety ho přesně udržují na svém místě, čímž zabraňují náhodnému otevření. Speciálně přizpůsobené panty a dodatečné ohyby prvku po otevření vytvářejí plynule profilovaný nájezd, který usnadňuje vložení kola. Toto promyšlené řešení spojuje odolnost s pohodlím a odpovídá na potřeby náročných uživatelů."
+      "description": "Spodní část přístřešku byla navržena s ohledem na maximální funkcionalitu a komfort používání. Ocelový práh s elegantní textilní úchytkou zajišťuje pevné uzavření a neodymové magnety jej přesně drží v pozici, čímž zabraňují náhodnému otevření. Speciálně přizpůsobené panty a dodatečné ohnutí prvku vytvářejí po otevření plynule profilovanou nájezdovou plochu, která usnadňuje vjezd kola. Toto promyšlené řešení spojuje odolnost s pohodlím a odpovídá potřebám náročných uživatelů."
     }
   },
   "footer": {
     "unicorn": {
-      "tagline": "Neřiďte se konvencemi.",
+      "tagline": "Nechoďte podle šablon.",
       "prefix": "Chyťte oborového",
       "cta": "Jednorožce."
     },
     "location": {
-      "title": "Pracovní doba a lokace",
+      "title": "Provozní doba a poloha",
       "address1": "Kancelář I, II, Nawojowa 33-335",
       "address2": "Krynicka 55, Nawojowa",
       "country": "Polsko",
@@ -180,7 +233,7 @@
     },
     "bottom": {
       "rights": "Všechna práva vyhrazena",
-      "author": "autor Mateusz Sromek",
+      "author": "autorem Mateusz Sromek",
       "rodo": "GDPR",
       "cookies": "Soubory cookie"
     }
@@ -189,7 +242,7 @@
     "welcome": "Jak vám mohu dnes pomoci?",
     "placeholder": "Zeptejte se GMS Corporation...",
     "assistant": "AI asistent",
-    "processing": "Zpracování dat...",
+    "processing": "Zpracovávání dat...",
     "clearHistory": "Vymazat historii konverzace",
     "clearConfirm": "Opravdu chcete vymazat historii konverzace?",
     "close": "Zavřít",
@@ -204,7 +257,7 @@
     "features": {
       "magnets": {
         "title": "Neodymové magnety",
-        "desc": "namontované na bocích víka"
+        "desc": "namontované na stranách klopy"
       },
       "handle": {
         "title": "Textilní úchop",
@@ -212,14 +265,14 @@
       },
       "tin": {
         "title": "Pozinkovaná",
-        "desc": "klapa"
+        "desc": "klopa"
       },
       "hinges": {
         "title": "Přišroubované panty",
         "desc": "zaručující dlouhou životnost"
       },
       "bends": {
-        "title": "Zpevňující ohýbání",
+        "title": "Zpevňující ohyby",
         "desc": "ztuhující práh"
       },
       "angle": {
@@ -228,32 +281,51 @@
       }
     },
     "headline": "Cyklistická odolnost.",
-    "description": "Konstrukce přístřešku pro kola byla navržena s ohledem na maximální pevnost a trvanlivost. Klíčovým zpevňujícím prvkem jsou autorské trojúhelníky spojené s U-profilovými trámi, které byly vyvinuty a vyrobeny interně. Toto řešení zajišťuje mimořádnou tuhost a stabilitu jednotlivých komponentů víka. Stěny přístřešku jsou zase spojeny pomocí regulovatelných trojúhelníků, což umožňuje přesné přizpůsobení a montáž. Další zpevnění zajišťují ocelové rohy vyřezávané na CNC strojích, které nejen zvyšují tuhost stěn, ale také trvale zabezpiečují všechna spojení. Je to inovativní přístup, který zaručuje spolehlivost na dlouhá léta."
+    "description": "Konstrukce přístřešku pro kola byla navržena s ohledem na maximální pevnost a odolnost. Klíčovým zpevňujícím prvkem jsou autorské trojúhelníky spojené s U-profily, které byly vyvinuty a vyrobeny interně. Toto řešení zajišťuje mimořádnou tuhost a stabilitu jednotlivých komponentů klopy. Stěny přístřešku jsou následně spojeny pomocí regulovatelných trojúhelníků, což umožňuje precizní přizpůsobení a montáž. Další zpevnění zajišťují ocelové rohy vyřezávané na CNC strojích, které nejen zvyšují tuhost stěn, ale také trvale zabezpečují všechna spojení. Je to inovativní přístup, který zaručuje spolehlivost na dlouhá léta."
   },
   "threeDShowcase": {
     "title": "Podívejte se na několik předností v 3D",
-    "button": "Podívat se zblízka",
+    "button": "Podívejte se zblízka",
     "resetTooltip": "Resetovat zobrazení",
+    "modelAlt": "Přístřešek v 3D",
+    "arButton": "Zobrazit ve své zahradě (AR)",
     "tabs": {
       "pianoHinge": {
-        "label": "Klavírní pant",
-        "description": "Tento prvek, připevněný k víku pomocí malých, hustě rozmístěných šroubů, zaručuje tichý a spolehlivý chod i dlouhou životnost víka. Díky pečlivému rozmístění šroubů víko funguje plynule a bezhlučně, což zároveň zajišťuje trvanlivost a stabilitu po mnoho let používání."
+        "label": "Klavirní pant",
+        "description": "Tento prvek, připevněný ke klopě pomocí malých, hustě rozmístěných šroubů, zaručuje tichý a spolehlivý chod i dlouhou životnost klopy. Díky pečlivému rozmístění šroubů klopa funguje plynule a bezhlučně, přičemž zároveň zajišťuje trvanlivost a stabilitu po mnoho let používání."
       },
       "reinforcedCorners": {
         "label": "Zpevněné rohy",
-        "description": "Další zpevnění v rozích konstrukce zajišťují výjimečnou tuhost a odolnost proti deformacím. Jedná se o klíčový prvek při intenzivním používání přístřešku, který zabraňuje „pracování“ materiálu a udržuje geometrii po celá desetiletí."
+        "description": "Další zpevnění v rozích konstrukce zajišťují výjimečnou tuhost a odolnost proti deformacím. Jedná se o klíčový prvek při intenzivním používání přístřešku, který zabraňuje „pracování“ materiálu a udržuje geometrii po desetiletí."
       },
       "locking": {
-        "label": "Uzamykání na klíč",
-        "description": "Použili jsme válečkový zámek s vícebodovým jištěním, který zajišťuje nejvyšší stupeň bezpečnosti vašeho kola. Tento systém je odolný vůči povětrnostním podmínkám a pokusům o vloupání, což vám přináší plný klid."
+        "label": "Zamykání na klíč",
+        "description": "Použili jsme válcový zámek s vícebodovým jištěním, který zajišťuje nejvyšší úroveň bezpečnosti vašeho kola. Tento systém je odolný vůči atmosférickým podmínkám i pokusům o vloupání, což vám přináší plný klid."
       },
       "stopPoints": {
         "label": "Inovativní systém s STOP body",
-        "description": "Speciální dorazy a hydraulický brzdicí systém klopy zabraňují prudkým nárazům při zavírání. STOP body umožňují bezpečné ovládání klopy bez rizika přiskřípnutí prstů nebo poškození krytu."
+        "description": "Speciální dorazy a hydraulický brzdicí systém klopy zabraňují prudkým nárazům při zavírání. STOP body umožňují bezpečné ovládání klopy bez rizika přimáčknutí prstů nebo poškození krytu."
       },
       "thresholdHandle": {
-        "label": "Práh s látkovou úchytkou",
-        "description": "Ergonomický práh vybavený látkovou úchytkou usnadňuje zasouvání kola do interiéru přístřešku. Úchytka zajišťuje pevný úchop i v rukavicích a konstrukce prahu eliminuje překážku pro kola jízdního kola."
+        "label": "Práh s textilním úchopem",
+        "description": "Ergonomický práh vybavený textilním úchopem usnadňuje vjezd kola do přístřešku. Úchop zajišťuje pevný stisk i v rukavicích a konstrukce prahu minimalizuje překážku pro kola jízdního kola."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Nejen pro kola",
+    "items": {
+      "item1": {
+        "title": "Ocelový úschovný prostor pro kola",
+        "description": "Bezpečně uchovávejte svá kola v ocelovém přístřešku od polského výrobce."
+      },
+      "item2": {
+        "title": "Ocelový přístřešek na zahradní potřeby",
+        "description": "Ocelový přístřešek na zahradní potřeby."
+      },
+      "item3": {
+        "title": "Ocelový přístřešek na věci do SPA",
+        "description": "Uchovávejte ručníky, župany a vybavení pro čištění jacuzzi."
       }
     }
   }

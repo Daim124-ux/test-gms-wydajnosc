@@ -11,7 +11,9 @@
     "blogArticles": "Artykuły blogowe",
     "fromBlog": "Artykuł z bloga",
     "shop": "Sklep",
-    "goToShop": "Przejdź do sklepu"
+    "goToShop": "Przejdź do sklepu",
+    "productPage": "Strona produktu",
+    "watchVideo": "Zobacz film"
   },
   "navigation": {
     "header": {
@@ -23,7 +25,7 @@
       "more": "Więcej"
     },
     "megaMenu": {
-      "superstrongDesc": "Supermocne garaże, do montażu bezpośrednio v gruncie.",
+      "superstrongDesc": "Supermocne garaże, do montażu bezpośrednio w gruncie.",
       "shelterWoodDesc": "Wiaty ogrodowe, narzędziowe, na drewno czy motocykl.",
       "shelterRamps": "z możliwością montażu szyny wjazdowej",
       "tabs": {
@@ -39,6 +41,45 @@
         "collectiveGarages": "Garaże Zbiorcze",
         "partitionWalls": "Ścianki Działowe",
         "bikeCages": "Wygrodzenia Boksów Rowerowych"
+      },
+      "promos": {
+        "checkAlso": "Sprawdź również:",
+        "trashSheltersTitle": "Altany i wiaty śmietnikowe",
+        "trashSheltersDesc": "Odpady też przechowuj z klasą.",
+        "greenSheltersTitle": "Altany z zielonym dachem",
+        "greenSheltersDesc": "Zielony akcent w betonowym lesie.",
+        "ecoMoves": "Nasze eko ruchy",
+        "configureShelter": "Skonfiguruj swoją altanę",
+        "configureGarage": "Skonfiguruj swój garaż",
+        "configureInShop": "Skonfiguruj w sklepie",
+        "collectiveGaragesTitle": "Garaże zbiorcze - boksy",
+        "collectiveGaragesDesc": "Niezawodna jakość w Twoim boksie.",
+        "partitionWallsTitle": "Ścianki działowe i wygrodzenia",
+        "watchTest": "Obejrzyj test SuperStronga",
+        "nanoCover": "Osłona NANO-{num}",
+        "sectionInPrep": "Sekcja {name} jest aktualnie w przygotowaniu."
+      },
+      "configuratorPromo": {
+        "title": "Skonfiguruj swoją wiatę"
+      },
+      "blog": {
+        "articles": "Artykuły blogowe",
+        "fromBlog": "Artykuł z bloga",
+        "readMore": "Czytaj artykuł",
+        "titles": {
+          "ecoTrash": "Czy altana na pojemniki z odpadami może być przyjazna dla środowiska?",
+          "trashDistance": "Zasady dotyczące odległości śmietnika od budynku",
+          "investInDoors": "Czy warto zainwestować w drzwi piwniczne i jakie wybrać?",
+          "garageOrganization": "Jak optymalnie zagospodarować boks garażowy w bloku?",
+          "partitionPlanning": "Zasady planowania wygrodzeń w nowoczesnym budownictwie",
+          "warehouseSafety": "Bezpieczeństwo i organizacja przestrzeni w halach magazynowych",
+          "beforeBuying": "6 rzeczy, które warto wiedzieć przed zakupem garażu stalowego",
+          "howToArrange": "Jak urządzić garaż: od prostego magazynu do stylowego warsztatu",
+          "superstrongInvestment": "Dlaczego garaż SuperStrong to inwestycja na lata?",
+          "superstrongInstall": "Montaż garażu SuperStrong krok po kroku",
+          "motoGarage": "Stwórz idealny garaż na motocykl: Poradnik krok po kroku",
+          "bikeSecurity": "Jak zabezpieczyć rowery przed kradzieżą i pogodą?"
+        }
       },
       "moreLinks": {
         "about": "O nas",
@@ -67,7 +108,11 @@
         "tilt": "Bramy uchylne garażowe",
         "hinged": "Bramy rozwierne",
         "hingedPanel": "Bramy rozwierne panelowe",
-        "sectional": "Bramy segmentowe"
+        "sectional": "Bramy segmentowe",
+        "singleLeafSteel": "Jednoskrzydłowe - blaszane",
+        "doubleLeafSteel": "Dwuskrzydłowe - blaszane",
+        "singleLeafPanel": "Jednoskrzydłowe - panelowe",
+        "doubleLeafPanel": "Dwuskrzydłowe - panelowe"
       }
     }
   },
@@ -76,6 +121,13 @@
     "subtitle": "Nasz rouleur przechowywania.",
     "newCategory": "Całkowicie nowa kategoria",
     "cinematicDesc": "Lżejsze, mocniejsze, dopracowane w każdym milimetrze. Prawdziwa stal, której nie oprze się żaden wiatr."
+  },
+  "productHero": {
+    "new": "Nowość",
+    "requestQuote": "Zapytaj o wycenę",
+    "downloadCatalog": "Pobierz katalog (PDF)",
+    "productImage": "Zdjęcie produktu",
+    "noImage": "Brak zdjęcia"
   },
   "features": {
     "title": "Najważniejsze informacje."
@@ -106,7 +158,7 @@
         "title": "Zamykanie wiaty za pomocą aluminiowo-stalowych cięgien."
       },
       "packing": {
-        "title": "Wygodne pakowanie v boxie paletowym"
+        "title": "Wygodne pakowanie w boxie paletowym"
       },
       "reinforcedCorners": {
         "title": "Wzmocnione narożniki"
@@ -129,7 +181,8 @@
       "title": "Wymiary wiaty na rowery",
       "height": "Wysokość",
       "width": "Szerokość",
-      "depth": "Głębokość"
+      "depth": "Głębokość",
+      "drawingAlt": "Wymiary wiaty na rowery - rysunek techniczny"
     },
     "nav": {
       "priceFrom": "Od 12 999 zł"
@@ -137,11 +190,11 @@
     "aluminumFloor": {
       "title": "Aluminiowa podłoga",
       "subtitle": "mocowana do gruntu za pomocą nierdzewnych kotew.",
-      "description": "W wiacie rowerowej istnieje możliwość zamontowania aluminiowej podłogi, która skutecznie zapobiega wzrostowi niechcianej roślinności, szczególnie v przypadku montażu na kostce brukowej. Podłoga została zaprojektowana w taki sposób, aby kotwienie wiaty odbywało się przez te same otwory, co w wersji bez podłogi. Dzięki temu można łatwo doposażyć wiatę w tę opcję w dowolnym momencie, gdy uznamy, że jest to potrzebne."
+      "description": "W wiacie rowerowej istnieje możliwość zamontowania aluminiowej podłogi, która skutecznie zapobiega wzrostowi niechcianej roślinności, szczególnie w przypadku montażu na kostce brukowej. Podłoga została zaprojektowana w taki sposób, aby kotwienie wiaty odbywało się przez te same otwory, co w wersji bez podłogi. Dzięki temu można łatwo doposażyć wiatę w tę opcję w dowolnym momencie, gdy uznamy, że jest to potrzebne."
     },
     "lifestyle": {
       "p1": "Mimo że nasza wiata została zaprojektowana głównie z myślą o przechowywaniu rowerów, jej wszechstronność sprawia, że jest idealnym rozwiązaniem również dla wielu innych potrzeb. Oprócz rowerów, z łatwością pomieści narzędzia ogrodowe, takie jak łopaty, grabie czy sekatory, oraz niewielkie akcesoria ogrodowe, takie jak doniczki, nasiona czy nawozy. Dzięki przestronnym wymiarom — 1950 mm szerokości, 900 mm głębokości i 1290 mm wysokości — wiata może również służyć jako praktyczny schowek na przydomowe akcesoria, takie jak kosiarki, węże ogrodowe itp.",
-      "p2": "Idealnie nadaje się również do przechowywania zabawek dziecięcych, w tym samochodzików elektrycznych czy na pedały, zabawek do piaskownicy oraz zestawów do zabawy v ogrodzie. Dodatkowo, wiata może pomieścić akcesoria wędkarskie, takie jak wędki, kołowrotki czy torby wędkarskie, a także sezonowe dekoracje ogrodowe, takie jak latarenki i lampki solarne czy drobne meble ogrodowe. Jeśli korzystasz z ogrodu do relaksu, znajdziesz tu również miejsce na akcesoria do grillowania.",
+      "p2": "Idealnie nadaje się również do przechowywania zabawek dziecięcych, w tym samochodzików elektrycznych czy na pedały, zabawek do piaskownicy oraz zestawów do zabawy w ogrodzie. Dodatkowo, wiata może pomieścić akcesoria wędkarskie, takie jak wędki, kołowrotki czy torby wędkarskie, a także sezonowe dekoracje ogrodowe, takie jak latarenki i lampki solarne czy drobne meble ogrodowe. Jeśli korzystasz z ogrodu do relaksu, znajdziesz tu również miejsce na akcesoria do grillowania.",
       "p3": "Dzięki swojej funkcjonalności i przestronności, nasza wiata oferuje wygodne rozwiązanie do przechowywania szerokiej gamy przedmiotów, które mogą być przydatne w codziennym życiu, maksymalnie wykorzystując dostępną przestrzeń."
     },
     "showcase1": {
@@ -202,12 +255,30 @@
   },
   "thresholdGrid": {
     "features": {
-      "magnets": { "title": "Neodymowe magnesy", "desc": "zamontowane na bokach klapy" },
-      "handle": { "title": "Materiałowy pochwyt", "desc": "ułatwiający otwieranie" },
-      "tin": { "title": "Ocynowana", "desc": "klapa" },
-      "hinges": { "title": "Przykręcane zawiasy", "desc": "gwarantujące trwałość" },
-      "bends": { "title": "Wzmacniające gięcia", "desc": "usztywniające próg" },
-      "angle": { "title": "Wyprofilowany kąt", "desc": "dla prostszego wjazdu" }
+      "magnets": {
+        "title": "Neodymowe magnesy",
+        "desc": "zamontowane na bokach klapy"
+      },
+      "handle": {
+        "title": "Materiałowy pochwyt",
+        "desc": "ułatwiający otwieranie"
+      },
+      "tin": {
+        "title": "Ocynowana",
+        "desc": "klapa"
+      },
+      "hinges": {
+        "title": "Przykręcane zawiasy",
+        "desc": "gwarantujące trwałość"
+      },
+      "bends": {
+        "title": "Wzmacniające gięcia",
+        "desc": "usztywniające próg"
+      },
+      "angle": {
+        "title": "Wyprofilowany kąt",
+        "desc": "dla prostszego wjazdu"
+      }
     },
     "headline": "Kolarska wytrzymałość.",
     "description": "Konstrukcja wiaty na rowery została zaprojektowana z myślą o maksymalnej wytrzymałości i trwałości. Kluczowym elementem wzmacniającym są autorskie trójkąty połączone z ceownikami, które zostały opracowane i wyprodukowane we własnym zakresie. To rozwiązanie zapewnia niezwykłą sztywność i stabilność poszczególnych komponentów klapy. Ściany wiaty są z kolei połączone za pomocą regulowanych trójkątów, co umożliwia precyzyjne dopasowanie i montaż. Dodatkowe wzmocnienie zapewniają stalowe narożniki, wycinane na maszynach CNC, które nie tylko zwiększają sztywność ścian, ale także trwale zabezpieczają wszystkie połączenia. To innowacyjne podejście, które gwarantuje niezawodność na lata."
@@ -216,6 +287,8 @@
     "title": "Zobacz parę wyróżników w 3D",
     "button": "Zobacz z bliska",
     "resetTooltip": "Resetuj widok",
+    "modelAlt": "Wiata w 3D",
+    "arButton": "Pokaż w swoim ogrodzie (AR)",
     "tabs": {
       "pianoHinge": {
         "label": "Zawias fortepianowy",
@@ -236,6 +309,23 @@
       "thresholdHandle": {
         "label": "Próg z materiałowym uchwytem",
         "description": "Ergonomiczny próg wyposażony w materiałowy uchwyt ułatwia wprowadzanie roweru do wnętrza wiaty. Uchwyt zapewnia pewny chwyt nawet w rękawiczkach, a konstrukcja progu niweluje przeszkodę dla kół roweru."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Nie tylko na rowery",
+    "items": {
+      "item1": {
+        "title": "Stalowy schowek na rowery",
+        "description": "Przechowuj swoje rowery bezpiecznie w wiacie stalowej od Polskiego producenta."
+      },
+      "item2": {
+        "title": "Wiata stalowa na ogrodowe akcesoria",
+        "description": "Wiata stalowa na ogrodowe akcesoria."
+      },
+      "item3": {
+        "title": "Wiata stalowa na rzeczy do SPA",
+        "description": "Przechowuj ręczniki, szlafroki oraz sprzęt do czyszczenia jacuzzi."
       }
     }
   }

@@ -11,7 +11,9 @@
     "blogArticles": "Blogartikel",
     "fromBlog": "Artikel aus dem Blog",
     "shop": "Shop",
-    "goToShop": "Zum Shop"
+    "goToShop": "Zum Shop",
+    "productPage": "Produktseite",
+    "watchVideo": "Video ansehen"
   },
   "navigation": {
     "header": {
@@ -40,6 +42,45 @@
         "partitionWalls": "Trennwände",
         "bikeCages": "Fahrradbox-Einzäunungen"
       },
+      "promos": {
+        "checkAlso": "Auch interessant:",
+        "trashSheltersTitle": "Mülltonnenunterstände und Überdachungen",
+        "trashSheltersDesc": "Abfälle stilvoll lagern.",
+        "greenSheltersTitle": "Unterstände mit Gründach",
+        "greenSheltersDesc": "Ein grüner Akzent im Betonwald.",
+        "ecoMoves": "Unsere Öko-Maßnahmen",
+        "configureShelter": "Konfigurieren Sie Ihren Unterstand",
+        "configureGarage": "Konfigurieren Sie Ihre Garage",
+        "configureInShop": "Im Shop konfigurieren",
+        "collectiveGaragesTitle": "Sammelgaragen - Boxen",
+        "collectiveGaragesDesc": "Zuverlässige Qualität in Ihrer Box.",
+        "partitionWallsTitle": "Trennwände und Einfassungen",
+        "watchTest": "SuperStrong-Test ansehen",
+        "nanoCover": "NANO-Abdeckung {num}",
+        "sectionInPrep": "Der Bereich {name} befindet sich derzeit in Vorbereitung."
+      },
+      "configuratorPromo": {
+        "title": "Konfigurieren Sie Ihren Unterstand"
+      },
+      "blog": {
+        "articles": "Blog-Artikel",
+        "fromBlog": "Artikel aus dem Blog",
+        "readMore": "Artikel lesen",
+        "titles": {
+          "ecoTrash": "Kann ein Mülltonnenunterstand umweltfreundlich sein?",
+          "trashDistance": "Regeln zum Abstand des Müllplatzes vom Gebäude",
+          "investInDoors": "Lohnt sich die Investition in Kellertüren und welche sollte man wählen?",
+          "garageOrganization": "Wie optimiert man die Nutzung einer Garagenbox im Mehrfamilienhaus?",
+          "partitionPlanning": "Grundsätze der Planung von Einfassungen im modernen Bauwesen",
+          "warehouseSafety": "Sicherheit und Raumorganisation in Lagerhallen",
+          "beforeBuying": "6 Dinge, die man vor dem Kauf einer Stahlgarage wissen sollte",
+          "howToArrange": "Wie man eine Garage einrichtet: vom einfachen Lager zum stilvollen Workshop",
+          "superstrongInvestment": "Warum ist eine SuperStrong-Garage eine Investition für Jahre?",
+          "superstrongInstall": "SuperStrong-Garagenmontage Schritt für Schritt",
+          "motoGarage": "Erstellen Sie die perfekte Motorradgarage: Schritt-für-Schritt-Anleitung",
+          "bikeSecurity": "Wie schützt man Fahrräder vor Diebstahl und Wetter?"
+        }
+      },
       "moreLinks": {
         "about": "Über uns",
         "career": "Karriere",
@@ -67,7 +108,11 @@
         "tilt": "Garagentore zum Schwingen",
         "hinged": "Flügeltore",
         "hingedPanel": "Panel-Flügeltore",
-        "sectional": "Segmenttore"
+        "sectional": "Segmenttore",
+        "singleLeafSteel": "Einflügelig - Stahl",
+        "doubleLeafSteel": "Zweiflügelig - Stahl",
+        "singleLeafPanel": "Einflügelig - Panel",
+        "doubleLeafPanel": "Zweiflügelig - Panel"
       }
     }
   },
@@ -76,6 +121,13 @@
     "subtitle": "Unser Rouleur der Aufbewahrung.",
     "newCategory": "Eine völlig neue Kategorie",
     "cinematicDesc": "Leichter, stärker, in jedem Millimeter perfektioniert. Echter Stahl, dem kein Wind etwas anhaben kann."
+  },
+  "productHero": {
+    "new": "Neuheit",
+    "requestQuote": "Angebot anfordern",
+    "downloadCatalog": "Katalog herunterladen (PDF)",
+    "productImage": "Produktbild",
+    "noImage": "Kein Bild verfügbar"
   },
   "features": {
     "title": "Die wichtigsten Informationen."
@@ -129,7 +181,8 @@
       "title": "Maße des Fahrradunterstands",
       "height": "Höhe",
       "width": "Breite",
-      "depth": "Tiefe"
+      "depth": "Tiefe",
+      "drawingAlt": "Maße des Fahrradunterstands - technische Zeichnung"
     },
     "nav": {
       "priceFrom": "Ab 12 999 zł"
@@ -198,6 +251,82 @@
       "summaryPrompt": "Erstelle eine kurze Zusammenfassung (3-5 Punkte) der Inhalte auf dieser Unterseite",
       "specs": "Technische Spezifikationen",
       "specsPrompt": "Extrahiere die technischen Spezifikationen aus dem Inhalt dieser Seite oder beschreibe die wichtigsten technischen Details"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymmagnete",
+        "desc": "an den Seiten der Klappe montiert"
+      },
+      "handle": {
+        "title": "Stoffgriff",
+        "desc": "erleichtert das Öffnen"
+      },
+      "tin": {
+        "title": "Verzinkt",
+        "desc": "Klappe"
+      },
+      "hinges": {
+        "title": "Verschraubte Scharniere",
+        "desc": "garantieren Langlebigkeit"
+      },
+      "bends": {
+        "title": "Verstärkende Biegungen",
+        "desc": "versteifen die Schwelle"
+      },
+      "angle": {
+        "title": "Profilierter Winkel",
+        "desc": "für eine einfachere Einfahrt"
+      }
+    },
+    "headline": "Radsport-Belastbarkeit.",
+    "description": "Die Konstruktion des Fahrradunterstands wurde auf maximale Belastbarkeit und Langlebigkeit ausgelegt. Ein wesentliches verstärkendes Element sind die eigenentwickelten Dreiecke in Kombination mit C-Profilen, die intern entwickelt und gefertigt wurden. Diese Lösung gewährleistet eine außergewöhnliche Steifigkeit und Stabilität der einzelnen Klappenkomponenten. Die Wände des Unterstands sind ihrerseits durch verstellbare Dreiecke verbunden, was eine präzise Anpassung und Montage ermöglicht. Zusätzliche Verstärkung bieten CNC-geschnittene Stahlecken, die nicht nur die Steifigkeit der Wände erhöhen, sondern auch alle Verbindungen dauerhaft sichern. Dies ist ein innovativer Ansatz, der Zuverlässigkeit über Jahre hinweg garantiert."
+  },
+  "threeDShowcase": {
+    "title": "Einige Highlights in 3D ansehen",
+    "button": "Aus der Nähe betrachten",
+    "resetTooltip": "Ansicht zurücksetzen",
+    "modelAlt": "Unterstand in 3D",
+    "arButton": "In Ihrem Garten anzeigen (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Klavierband",
+        "description": "Mit kleinen, eng beieinander liegenden Schrauben an der Klappe befestigt, garantiert dieses Element einen leisen und zuverlässigen Betrieb sowie eine lange Lebensdauer der Klappe. Dank der sorgfältigen Anordnung der Schrauben arbeitet die Klappe reibungslos und geräuschlos, während sie gleichzeitig über viele Jahre hinweg Haltbarkeit und Stabilität bietet."
+      },
+      "reinforcedCorners": {
+        "label": "Verstärkte Ecken",
+        "description": "Zusätzliche Verstärkungen in den Ecken der Konstruktion sorgen für außergewöhnliche Steifigkeit und Verformungsbeständigkeit. Dies ist ein entscheidendes Element bei intensiver Nutzung des Unterstands, das ein \"Arbeiten\" des Materials verhindert und die Geometrie über Jahrzehnte hinweg beibehält."
+      },
+      "locking": {
+        "label": "Abschließbar",
+        "description": "Wir haben ein Zylinderschloss mit Mehrpunktverriegelung eingesetzt, das ein Höchstmaß an Sicherheit für Ihr Fahrrad bietet. Dieses System ist witterungsbeständig und resistent gegen Einbruchversuche, sodass Sie vollkommen beruhigt sein können."
+      },
+      "stopPoints": {
+        "label": "Innovatives System mit STOP-Punkten",
+        "description": "Spezielle Stopper und ein hydraulisches Bremssystem der Klappe verhindern ein abruptes Zuschlagen beim Schließen. Die STOP-Punkte ermöglichen eine sichere Bedienung der Klappe ohne das Risiko, sich die Finger einzuklemmen oder das Gehäuse zu beschädigen."
+      },
+      "thresholdHandle": {
+        "label": "Schwelle mit Stoffgriff",
+        "description": "Eine ergonomische Schwelle mit einem Textilgriff erleichtert das Hineinfahren des Fahrrads in den Unterstand. Der Griff gewährleistet einen sicheren Halt, auch mit Handschuhen, und die Konstruktion der Schwelle minimiert das Hindernis für die Fahrradräder."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Nicht nur für Fahrräder",
+    "items": {
+      "item1": {
+        "title": "Stahl-Fahrradunterstand",
+        "description": "Lagern Sie Ihre Fahrräder sicher in einem Stahlunterstand eines polnischen Herstellers."
+      },
+      "item2": {
+        "title": "Stahlunterstand für Gartenzubehör",
+        "description": "Stahlunterstand für Gartenzubehör."
+      },
+      "item3": {
+        "title": "Stahlunterstand für SPA-Zubehör",
+        "description": "Lagern Sie Handtücher, Bademäntel und Zubehör zur Reinigung des Whirlpools."
+      }
     }
   }
 }

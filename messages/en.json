@@ -11,7 +11,9 @@
     "blogArticles": "Blog articles",
     "fromBlog": "Blog article",
     "shop": "Shop",
-    "goToShop": "Go to shop"
+    "goToShop": "Go to shop",
+    "productPage": "Product page",
+    "watchVideo": "Watch video"
   },
   "navigation": {
     "header": {
@@ -40,6 +42,45 @@
         "partitionWalls": "Partition Walls",
         "bikeCages": "Bicycle Cage Enclosures"
       },
+      "promos": {
+        "checkAlso": "Also check:",
+        "trashSheltersTitle": "Trash shelters and canopies",
+        "trashSheltersDesc": "Store waste with class too.",
+        "greenSheltersTitle": "Shelters with green roofs",
+        "greenSheltersDesc": "A green accent in the concrete jungle.",
+        "ecoMoves": "Our eco moves",
+        "configureShelter": "Configure your shelter",
+        "configureGarage": "Configure your garage",
+        "configureInShop": "Configure in store",
+        "collectiveGaragesTitle": "Collective garages - boxes",
+        "collectiveGaragesDesc": "Reliable quality in your box.",
+        "partitionWallsTitle": "Partition walls and enclosures",
+        "watchTest": "Watch the SuperStrong test",
+        "nanoCover": "NANO-{num} cover",
+        "sectionInPrep": "Section {name} is currently under preparation."
+      },
+      "configuratorPromo": {
+        "title": "Configure your carport"
+      },
+      "blog": {
+        "articles": "Blog articles",
+        "fromBlog": "Article from the blog",
+        "readMore": "Read article",
+        "titles": {
+          "ecoTrash": "Can a waste container shelter be environmentally friendly?",
+          "trashDistance": "Rules regarding the distance of the waste container from the building",
+          "investInDoors": "Is it worth investing in cellar doors and which one to choose?",
+          "garageOrganization": "How to optimally organize a garage box in an apartment building?",
+          "partitionPlanning": "Principles of planning enclosures in modern construction",
+          "warehouseSafety": "Safety and space organization in warehouse halls",
+          "beforeBuying": "6 things worth knowing before buying a steel garage",
+          "howToArrange": "How to arrange a garage: from a simple storage room to a stylish workshop",
+          "superstrongInvestment": "Why is a SuperStrong garage an investment for years?",
+          "superstrongInstall": "SuperStrong garage installation step by step",
+          "motoGarage": "Create the perfect motorcycle garage: A step-by-step guide",
+          "bikeSecurity": "How to protect bikes from theft and weather?"
+        }
+      },
       "moreLinks": {
         "about": "About Us",
         "career": "Careers",
@@ -67,7 +108,11 @@
         "tilt": "Up-and-over garage doors",
         "hinged": "Side-hinged doors",
         "hingedPanel": "Panel side-hinged doors",
-        "sectional": "Sectional doors"
+        "sectional": "Sectional doors",
+        "singleLeafSteel": "Single-leaf - steel",
+        "doubleLeafSteel": "Double-leaf - steel",
+        "singleLeafPanel": "Single-leaf - panel",
+        "doubleLeafPanel": "Double-leaf - panel"
       }
     }
   },
@@ -76,6 +121,13 @@
     "subtitle": "Our storage Rouleur.",
     "newCategory": "A completely new category",
     "cinematicDesc": "Lighter, stronger, refined in every millimeter. True steel that no wind can resist."
+  },
+  "productHero": {
+    "new": "New",
+    "requestQuote": "Request a quote",
+    "downloadCatalog": "Download catalog (PDF)",
+    "productImage": "Product image",
+    "noImage": "No image"
   },
   "features": {
     "title": "Innovative solutions"
@@ -129,7 +181,8 @@
       "title": "Bike shelter dimensions",
       "height": "Height",
       "width": "Width",
-      "depth": "Depth"
+      "depth": "Depth",
+      "drawingAlt": "Bike shelter dimensions - technical drawing"
     },
     "nav": {
       "priceFrom": "From 12,999 PLN"
@@ -234,6 +287,8 @@
     "title": "See some highlights in 3D",
     "button": "View up close",
     "resetTooltip": "Reset view",
+    "modelAlt": "3D shelter",
+    "arButton": "Show in your garden (AR)",
     "tabs": {
       "pianoHinge": {
         "label": "Piano hinge",
@@ -254,6 +309,23 @@
       "thresholdHandle": {
         "label": "Threshold with a fabric handle",
         "description": "An ergonomic threshold equipped with a fabric handle makes it easier to move the bike into the shelter. The handle ensures a firm grip even when wearing gloves, and the threshold design eliminates the obstacle for the bicycle wheels."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Not just for bikes",
+    "items": {
+      "item1": {
+        "title": "Steel bike storage",
+        "description": "Store your bikes safely in a steel shelter from a Polish manufacturer."
+      },
+      "item2": {
+        "title": "Steel shelter for garden accessories",
+        "description": "Steel shelter for garden accessories."
+      },
+      "item3": {
+        "title": "Steel shelter for SPA items",
+        "description": "Store towels, bathrobes and jacuzzi cleaning equipment."
       }
     }
   }

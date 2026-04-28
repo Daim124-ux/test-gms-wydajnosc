@@ -1,5 +1,6 @@
 import React from 'react';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
+import { useTranslations } from 'next-intl';
 
 interface ProductHeroProps {
   title: string;
@@ -9,6 +10,9 @@ interface ProductHeroProps {
 }
 
 export default function ProductHero({ title, description, imageUrl, imageAlt }: ProductHeroProps) {
+  const t = useTranslations('productHero');
+  const tc = useTranslations('common');
+
   return (
     <section className="relative w-full overflow-hidden bg-white dark:bg-[#161617] pt-20 pb-16 lg:pt-32 lg:pb-24">
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-gray-50 to-white dark:from-black/20 dark:to-[#161617] pointer-events-none" />
@@ -18,7 +22,7 @@ export default function ProductHero({ title, description, imageUrl, imageAlt }: 
         {/* Lewa strona - Teksty */}
         <div className="flex-1 w-full flex flex-col items-start text-left">
           <span className="inline-block px-3 py-1 mb-6 text-sm font-semibold text-[#1660b1] bg-[#1660b1]/10 rounded-full dark:text-[#ffcc33] dark:bg-[#ffcc33]/10">
-            Nowość
+            {t('new')}
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white mb-6">
             {title}
@@ -34,10 +38,10 @@ export default function ProductHero({ title, description, imageUrl, imageAlt }: 
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <button className="px-8 py-4 bg-[#1660b1] hover:bg-[#114b8a] text-white font-medium rounded-lg transition-colors shadow-lg shadow-[#1660b1]/30">
-              Zapytaj o wycenę
+              {t('requestQuote')}
             </button>
             <button className="px-8 py-4 bg-gray-100 hover:bg-gray-200 text-gray-900 dark:bg-white/5 dark:text-white dark:hover:bg-white/10 font-medium rounded-lg transition-colors">
-              Pobierz katalog (PDF)
+              {t('downloadCatalog')}
             </button>
           </div>
         </div>
@@ -48,14 +52,14 @@ export default function ProductHero({ title, description, imageUrl, imageAlt }: 
             {imageUrl ? (
               <ResponsiveAsset 
                 src={imageUrl} 
-                alt={imageAlt || 'Zdjęcie produktu'} 
+                alt={imageAlt || t('productImage')} 
                 type="image"
                 className="w-full h-full object-cover"
                 priority // Preload głównego zdjęcia hero ze względów LCP
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
-                <span className="text-gray-400 dark:text-gray-500">Brak zdjęcia</span>
+                <span className="text-gray-400 dark:text-gray-500">{t('noImage')}</span>
               </div>
             )}
           </div>

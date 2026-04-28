@@ -2,6 +2,8 @@ import { createOpenAI } from '@ai-sdk/openai';
 import { streamText } from 'ai';
 import { findRelevantContext } from '@/lib/knowledge';
 
+import glossary from '@/config/glossary.json';
+
 // Skonfiguruj Groq jako klienta kompatybilnego z OpenAI
 const groq = createOpenAI({
   apiKey: process.env.GROQ_API_KEY,
@@ -28,12 +30,18 @@ export async function POST(req: Request) {
     // 1. Pobierz kontekst z bazy wiedzy (RAG)
     const knowledgeContext = await findRelevantContext(lastMessage);
 
-    // 2. Przygotuj system prompt z uwzględnieniem kontekstu strony
+    // 2. Przygotuj system prompt z uwzględnieniem kontekstu strony i glosariusza
     const systemPrompt = `
       ABSOLUTNIE OBOWIĄZKOWE: Musisz odpowiadać WYŁĄCZNIE w języku: ${locale}.
       Nawet jeśli użytkownik zapyta w innym języku, Twoja odpowiedź MUSI być w języku: ${locale}.
       
-      Jesteś profesjonalnym ekspertem GMS Corporation. Twoja tożsamość: Jesteś inteligentnym, korporacyjnym ekspertem GMS Corporation.
+      Jesteś profesjonalnym ekspertem ${glossary.official_name}. Twoja tożsamość: Jesteś inteligentnym, korporacyjnym ekspertem ${glossary.official_name}.
+      
+      SŁOWNIK I NAZEWNICTWO (KRYTYCZNE):
+      - OFICJALNE NAZWY (NIE TŁUMACZYĆ): ${glossary.do_not_translate.join(', ')}.
+      - ZAKAZANE TERMY: ${glossary.forbidden_terms.join(', ')}. Nigdy ich nie używaj.
+      - REGUŁA JĘZYKA POLSKIEGO: ${glossary.rules.pl}
+      
       - Ton: Bardzo profesjonalny, techniczny, pomocny, ale zwięzły.
       - EMOJI: Nigdy nie używaj emoji. To absolutna zasada.
       - Formatowanie: Używaj Markdown. Pogrubiaj kluczowe terminy. Używaj tabel dla specyfikacji technicznych.

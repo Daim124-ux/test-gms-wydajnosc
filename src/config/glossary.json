@@ -1,0 +1,15 @@
+{
+  "official_name": "GMS Corporation",
+  "do_not_translate": [
+    "GMS Corporation",
+    "Rouleur",
+    "GMS Rouler"
+  ],
+  "forbidden_terms": [
+    "system osadniczy",
+    "Korporacja GMS"
+  ],
+  "rules": {
+    "pl": "Nigdy nie tłumaczyj ani nie zmieniaj terminologii technicznej. Zachowaj oryginalne nazwy własne i opisy techniczne, ponieważ strona jest pierwotnie napisana w języku polskim."
+  }
+}

@@ -3,29 +3,31 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 const LifestyleShowcase = () => {
+  const t = useTranslations('lifestyleShowcase');
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const items = [
     {
       id: '1',
-      title: 'Stalowy schowek na rowery',
-      description: 'Przechowuj swoje rowery bezpiecznie w wiacie stalowej od Polskiego producenta.',
+      title: t('items.item1.title'),
+      description: t('items.item1.description'),
       image: '/assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio.jpg',
     },
     {
       id: '2',
-      title: 'Wiata stalowa na ogrodowe akcesoria',
-      description: 'Wiata stalowa na ogrodowe akcesoria.',
+      title: t('items.item2.title'),
+      description: t('items.item2.description'),
       image: '/assets/images/wiaty-stalowe-na-rowery/Wiata-na-meble-ogrodowe.jpg',
     },
     {
       id: '3',
-      title: 'Wiata stalowa na rzeczy do SPA',
-      description: 'Przechowuj ręczniki, szlafroki oraz sprzęt do czyszczenia jacuzzi.',
+      title: t('items.item3.title'),
+      description: t('items.item3.description'),
       image: '/assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller.jpg',
     },
   ];
@@ -75,7 +77,7 @@ const LifestyleShowcase = () => {
               textShadow: '0 -35px 50px rgba(22, 96, 177, 0.99), 0 -10px 30px rgba(22, 96, 177, 0.99), 0 -5px 20px rgba(22, 96, 177, 0.99), 0 10px 30px rgba(22, 96, 177, 0.8), 0 30px 50px rgba(22, 96, 177, 0.7), 0 50px 70px rgba(22, 96, 177, 0.6), 0 70px 90px rgba(22, 96, 177, 0.5), 0 90px 120px rgba(22, 96, 177, 0.4)'
             }}
           >
-            Nie tylko na rowery
+            {t('mainTitle')}
           </motion.h2>
         </div>
 
@@ -127,14 +129,12 @@ const LifestyleShowcase = () => {
             <button 
               onClick={prevSlide}
               className="w-10 h-10 md:w-14 md:h-14 bg-blue-600/30 backdrop-blur-xl border border-white/20 rounded-full flex items-center justify-center text-white shadow-2xl hover:bg-blue-600/50 active:scale-90 transition-all pointer-events-auto"
-              aria-label="Poprzedni slajd"
             >
               <ChevronLeft size={28} strokeWidth={2.5} />
             </button>
             <button 
               onClick={nextSlide}
               className="w-10 h-10 md:w-14 md:h-14 bg-blue-600/30 backdrop-blur-xl border border-white/20 rounded-full flex items-center justify-center text-white shadow-2xl hover:bg-blue-600/50 active:scale-90 transition-all pointer-events-auto"
-              aria-label="Następny slajd"
             >
               <ChevronRight size={28} strokeWidth={2.5} />
             </button>

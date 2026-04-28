@@ -11,7 +11,9 @@
     "blogArticles": "Blogcikkek",
     "fromBlog": "Cikk a blogról",
     "shop": "Webshop",
-    "goToShop": "Menj a webshopba"
+    "goToShop": "Menj a webshopba",
+    "productPage": "Termékoldal",
+    "watchVideo": "Videó megtekintése"
   },
   "navigation": {
     "header": {
@@ -40,6 +42,45 @@
         "partitionWalls": "Válogatófalak",
         "bikeCages": "Kerékpár-boxok lekerítései"
       },
+      "promos": {
+        "checkAlso": "Nézze meg még:",
+        "trashSheltersTitle": "Szeméttartó pavilonok és fedélkezű szerkezetek",
+        "trashSheltersDesc": "A hulladék tárolása is lehet elegáns.",
+        "greenSheltersTitle": "Zöld tetős pavilonok",
+        "greenSheltersDesc": "Zöld kiegészítés a betonrengetegben.",
+        "ecoMoves": "Öko-lépéseink",
+        "configureShelter": "Konfigurálja a pavilonját",
+        "configureGarage": "Konfigurálja a garázsát",
+        "configureInShop": "Konfigurálás a webshopban",
+        "collectiveGaragesTitle": "Közös garázsok - boxok",
+        "collectiveGaragesDesc": "Megbízható minőség a boxjában.",
+        "partitionWallsTitle": "Válogatófalak és lekerítések",
+        "watchTest": "Nézze meg a SuperStrong tesztet",
+        "nanoCover": "NANO-{num} takaró",
+        "sectionInPrep": "A {name} szekció jelenleg készítés alatt áll."
+      },
+      "configuratorPromo": {
+        "title": "Konfigurálja a fedélkezű szerkezetét"
+      },
+      "blog": {
+        "articles": "Blogcikkek",
+        "fromBlog": "Cikk a blogról",
+        "readMore": "A cikk elolvasása",
+        "titles": {
+          "ecoTrash": "Lehet egy szeméttartó pavilon környezetbarát?",
+          "trashDistance": "Szabályok a szeméttartó és az épület közötti távolságról",
+          "investInDoors": "Megéri beruházni pincajtókba, és melyiket érdemes választani?",
+          "garageOrganization": "Hogyan használjuk ki optimálisan a garázsboxot egy lakóházban?",
+          "partitionPlanning": "A lekerítések tervezésének alapjai a modern építészetben",
+          "warehouseSafety": "Biztonság és térszervezés raktárhallokban",
+          "beforeBuying": "6 dolog, amit érdemes tudni acélgarázs vásárlása előtt",
+          "howToArrange": "Hogyan rendezzük be a garázst: az egyszerű raktártól a stílusos műhelyig",
+          "superstrongInvestment": "Miért hosszú távú befektetés egy SuperStrong garázs?",
+          "superstrongInstall": "SuperStrong garázs összeszerelése lépésről lépésre",
+          "motoGarage": "Készítsd elő az ideális motorkerékpár garázst: Lépésről lépésre útmutató",
+          "bikeSecurity": "Hogyan védjük meg a bicikliket a lopástól és az időjárástól?"
+        }
+      },
       "moreLinks": {
         "about": "Rólunk",
         "career": "Karrier",
@@ -67,7 +108,11 @@
         "tilt": "Felnyeregető garázskapuk",
         "hinged": "Nyitható kapuk",
         "hingedPanel": "Panelos nyitható kapuk",
-        "sectional": "Szekciós kapuk"
+        "sectional": "Szekciós kapuk",
+        "singleLeafSteel": "Egybekarmos - lemez",
+        "doubleLeafSteel": "Kétbekarmos - lemez",
+        "singleLeafPanel": "Egybekarmos - paneles",
+        "doubleLeafPanel": "Kétbekarmos - paneles"
       }
     }
   },
@@ -76,6 +121,13 @@
     "subtitle": "Tárolás Rouleur-ja.",
     "newCategory": "Teljesen új kategória",
     "cinematicDesc": "Könnyebb, erősebb, minden milliméterében átgondolt. Valódi acél, amelyet egyetlen szél sem tud legyőzni."
+  },
+  "productHero": {
+    "new": "Új",
+    "requestQuote": "Kérjen ajánlatot",
+    "downloadCatalog": "Katalógus letöltése (PDF)",
+    "productImage": "Termékfotó",
+    "noImage": "Nincs kép"
   },
   "features": {
     "title": "A legfontosabb információk."
@@ -129,7 +181,8 @@
       "title": "Kerékpár-védőbeépítés méretei",
       "height": "Magasság",
       "width": "Szélesség",
-      "depth": "Mélység"
+      "depth": "Mélység",
+      "drawingAlt": "Biciklis tároló méretei - műszaki rajz"
     },
     "nav": {
       "priceFrom": "12 999 zł-től"
@@ -198,6 +251,82 @@
       "summaryPrompt": "Készíts egy rövid összefoglalót (3-5 pontban) arról, hogy mi található ezen az aloldalon",
       "specs": "Technikai specifikáció",
       "specsPrompt": "Készítsd ki a műszaki specifikációkat az oldal tartalmából, vagy beszélj a legfontosabb műszaki részletekről"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodímium mágnesek",
+        "desc": "a fedél oldalán elhelyezve"
+      },
+      "handle": {
+        "title": "Szövetfogantyú",
+        "desc": "megkönnyíti a nyitást"
+      },
+      "tin": {
+        "title": "Horganyzott",
+        "desc": "fedél"
+      },
+      "hinges": {
+        "title": "Csavarozható pántok",
+        "desc": "garantálják a tartósságot"
+      },
+      "bends": {
+        "title": "Erősítő hajlítások",
+        "desc": "megmerevíti a küszöböt"
+      },
+      "angle": {
+        "title": "Profilált szög",
+        "desc": "a könnyebb bejutáshoz"
+      }
+    },
+    "headline": "Kerékpáros strapabíróság.",
+    "description": "A biciklis tároló szerkezete a maximális szívósság és tartósságra lett tervezve. A kulcsfontosságú erősítő elem a saját fejlesztésű, U-profilokkal kombinált háromszögek, amelyeket házon belül fejlesztettünk és gyártottunk. Ez a megoldás rendkívüli merevséget és stabilitást biztosít a fedél egyes összetevői számára. A tároló falaiMeanwhile állítható háromszögekkel vannak összekötve, ami lehetővé teszi a pontos illeszkedést és összeszerelést. További erősítést nyújtanak a CNC gépekkel kivágott acél sarokvasak, amelyek nemcsak növelik a falak merevségét, hanem tartósan rögzítik az összes kapcsolódási pontot. Ez egy innovatív megközelítés, amely hosszú évekig garantálja a megbízhatóságot."
+  },
+  "threeDShowcase": {
+    "title": "Nézze meg a kiemelkedő jellemzőket 3D-ben",
+    "button": "Nézze közelből",
+    "resetTooltip": "Nézet visszaállítása",
+    "modelAlt": "Bicikli tároló 3D-ben",
+    "arButton": "Mutasd a saját kertedben (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Zongora pálya",
+        "description": "Kisebb, sűrűn elhelyezett csavarokkal a fedélhez rögzítve, ez az elem a fedél halk és megbízható működését, valamint hosszú élettartamát garantálja. A csavarok gondos elrendezése révén a fedél simán és csendben működik, miközben hosszú évekig tartó stabilitást és tartósságot biztosít."
+      },
+      "reinforcedCorners": {
+        "label": "Erősített sarkok",
+        "description": "A szerkezet sarkainál alkalmazott további erősítések kivételes merevességet és deformációs ellenállást biztosítanak. Ez kulcsfontosságú elem a lakolat intenzív használata során, amely megakadályozza az anyag „mozgását” és évtizedekig megőrzi a geometriát."
+      },
+      "locking": {
+        "label": "Kulcsos zárás",
+        "description": "Többpontos zárással ellátott hengeres zárat alkalmaztunk, amely a lehető legmagasabb biztonságot nyújt biciklijének. Ez a rendszer ellenáll az időjárási körülményeknek és a feltörési kísérleteknek, így Ön teljes nyugalmat érzelhet."
+      },
+      "stopPoints": {
+        "label": "Innovatív STOP-pontos rendszer",
+        "description": "Különleges ütékesstopperszárak és a fedél hidraulikus fékezési rendszere megakadályozzák a hirtelen csapódást záráskor. A STOP-pontok lehetővé teszik a fedél biztonságos kezelését, kizárva az ujjak becsapódásának vagy a ház sérülésének kockázatát."
+      },
+      "thresholdHandle": {
+        "label": "Küszöb anyagfogantyúval",
+        "description": "Az anyagfogantyúval ellátott ergonómiai küszöb megkönnyíti a bicikli bevitele a lakolatba. A fogantyú biztos fogást biztosít akár kesztyűben is, a küszöb kialakítása pedig minimalizálja a kerék önütszközöt."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Nem csak bicikliknek",
+    "items": {
+      "item1": {
+        "title": "Acél biciklitároló",
+        "description": "Tárolja biztonságosan biciklijeit egy lengyel gyártó által készített acél lakolatban."
+      },
+      "item2": {
+        "title": "Acél lakolat kerti eszközöknek",
+        "description": "Acél lakolat kerti eszközöknek."
+      },
+      "item3": {
+        "title": "Acél lakolat SPA eszközöknek",
+        "description": "Tárolja itt a törölközőket, fürdőköntöket és a jakuzzi tisztításához szükséges eszközöket."
+      }
     }
   }
 }

@@ -96,8 +96,10 @@ async function translate(targetLang: string) {
 
   for (let i = 0; i < chunks.length; i++) {
     console.log(`   ➔ Część ${i + 1}/${chunks.length}...`);
+    const glossary = require("../src/config/glossary.json");
     const prompt = `Translate this JSON from Polish to ${targetLang}. 
-Keep keys exactly. Don't translate {param}. Keep 'Rouleur'.
+Keep keys exactly. Don't translate {param}.
+DO NOT translate brand names: ${glossary.do_not_translate.join(', ')}.
 Return ONLY JSON. No explanations.
 
 JSON:

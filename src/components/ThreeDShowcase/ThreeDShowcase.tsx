@@ -128,9 +128,21 @@ export default function ThreeDShowcase() {
       <button
         onClick={handleClose}
         className="absolute top-8 right-8 z-[2010] p-3 bg-white/10 hover:bg-white/20 backdrop-blur-2xl rounded-full text-[#3b82f6] border border-white/10 transition-all duration-300 active:scale-90 shadow-[0_0_20px_rgba(59,130,246,0.2)]"
+        title={t('close')}
       >
         <X size={18} />
       </button>
+
+      {/* AR BUTTON (MOBILE ONLY) */}
+      <div className="absolute top-24 right-8 z-[2010] md:hidden">
+        <a
+          href={`intent://arvr.google.com/scene-viewer/1.0?file=${typeof window !== 'undefined' ? window.location.origin : ''}/assets/makieta_3d/wiata_makieta.glb&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`}
+          className="flex items-center gap-2 px-4 py-3 bg-blue-600 text-white rounded-full font-bold text-xs shadow-lg active:scale-95 transition-transform"
+        >
+          <BoxIcon size={16} />
+          {t('arButton')}
+        </a>
+      </div>
 
       {/* MAIN CONTENT AREA */}
       <div className="relative w-full h-full flex flex-col">
@@ -244,7 +256,7 @@ export default function ThreeDShowcase() {
       >
         <ResponsiveAsset
           src="/assets/images/wiaty-stalowe-na-rowery/Kolor_wiaty_png-min.png"
-          alt="Wiata w 3D"
+          alt={t('modelAlt')}
           className="object-contain drop-shadow-[0_0_50px_rgba(59,130,246,0.2)]"
         />
       </motion.div>

@@ -11,7 +11,9 @@
     "blogArticles": "Articles de blog",
     "fromBlog": "Article du blog",
     "shop": "Boutique",
-    "goToShop": "Aller à la boutique"
+    "goToShop": "Aller à la boutique",
+    "productPage": "Page produit",
+    "watchVideo": "Voir la vidéo"
   },
   "navigation": {
     "header": {
@@ -36,46 +38,96 @@
         "trashShelters": "Abris pour poubelles",
         "compactShelters": "Abris poubelles compacts",
         "basementDoors": "Portes de cage d'escalier",
-        "collectiveGarages": "Garaże Zbiorcze",
-        "partitionWalls": "Ścianki Działowe",
-        "bikeCages": "Wygrodzenia Boksów Rowerowych"
+        "collectiveGarages": "Garages collectifs",
+        "partitionWalls": "Cloisons",
+        "bikeCages": "Enclos pour vélos"
+      },
+      "promos": {
+        "checkAlso": "Consultez également :",
+        "trashSheltersTitle": "Abris pour poubelles",
+        "trashSheltersDesc": "Stockez vos déchets avec élégance.",
+        "greenSheltersTitle": "Abris à toit végétalisé",
+        "greenSheltersDesc": "Une touche de vert dans la forêt de béton.",
+        "ecoMoves": "Nos initiatives éco",
+        "configureShelter": "Configurez votre abri",
+        "configureGarage": "Configurez votre garage",
+        "configureInShop": "Configurez dans la boutique",
+        "collectiveGaragesTitle": "Garages collectifs - box",
+        "collectiveGaragesDesc": "Une qualité fiable pour votre box.",
+        "partitionWallsTitle": "Cloisons et enclos",
+        "watchTest": "Regardez le test SuperStrong",
+        "nanoCover": "Protection NANO-{num}",
+        "sectionInPrep": "La section {name} est actuellement en préparation."
+      },
+      "configuratorPromo": {
+        "title": "Configurez votre abri"
+      },
+      "blog": {
+        "articles": "Articles de blog",
+        "fromBlog": "Article du blog",
+        "readMore": "Lire l'article",
+        "titles": {
+          "ecoTrash": "Un abri pour poubelles peut-il être respectueux de l'environnement ?",
+          "trashDistance": "Règles concernant la distance entre les poubelles et le bâtiment",
+          "investInDoors": "Vaut-il la peine d'investir dans des portes de cave et lesquelles choisir ?",
+          "garageOrganization": "Comment optimiser l'aménagement d'un box de garage dans un immeuble ?",
+          "partitionPlanning": "Principes de planification des enclos dans la construction moderne",
+          "warehouseSafety": "Sécurité et organisation de l'espace dans les entrepôts",
+          "beforeBuying": "6 choses à savoir avant d'acheter un garage en acier",
+          "howToArrange": "Comment aménager son garage : d'un simple espace de stockage à un atelier stylé",
+          "superstrongInvestment": "Pourquoi le garage SuperStrong est-il un investissement pour des années ?",
+          "superstrongInstall": "Installation du garage SuperStrong étape par étape",
+          "motoGarage": "Créez le garage à moto idéal : guide étape par étape",
+          "bikeSecurity": "Comment protéger les vélos contre le vol et les intempéries ?"
+        }
       },
       "moreLinks": {
-        "about": "O nas",
-        "career": "Kariera",
+        "about": "À propos",
+        "career": "Carrière",
         "blog": "Blog",
-        "distributors": "Dystrybutorzy",
-        "projects": "Realizacje",
-        "privacy": "Polityka prywatności",
-        "downloads": "Do pobrania"
+        "distributors": "Distributeurs",
+        "projects": "Réalisations",
+        "privacy": "Politique de confidentialité",
+        "downloads": "Téléchargements"
       },
       "titles": {
-        "garaze_stalowe": "Garaże stalowe",
-        "garaze_superstrong": "Garaże Superstrong",
-        "wiata": "Wiata na rowery",
-        "wiaty_stalowe": "Wiaty stalowe",
-        "bramy": "Bramy garażowe i napędy",
-        "altany_zielone": "Altany zielone",
-        "altany_smietnikowe": "Altany śmietnikowe",
-        "kompaktowe": "Kompaktowe osłony",
-        "drzwi": "Drzwi piwniczne",
-        "garaze_zbiorcze": "Garaże zbiorcze",
-        "scianki": "Ścianki działowe",
-        "wygrodzenia": "Wygrodzenia przemysłowe"
+        "garaze_stalowe": "Garages en acier",
+        "garaze_superstrong": "Garages Superstrong",
+        "wiata": "Abri pour vélos",
+        "wiaty_stalowe": "Abris en acier",
+        "bramy": "Portes de garage et motorisations",
+        "altany_zielone": "Abris de jardin",
+        "altany_smietnikowe": "Abris pour poubelles",
+        "kompaktowe": "Protections compactes",
+        "drzwi": "Portes de cave",
+        "garaze_zbiorcze": "Garages collectifs",
+        "scianki": "Cloisons",
+        "wygrodzenia": "Clôtures industrielles"
       },
       "gatesTitles": {
-        "tilt": "Bramy uchylne garażowe",
-        "hinged": "Bramy rozwierne",
-        "hingedPanel": "Bramy rozwierne panelowe",
-        "sectional": "Bramy segmentowe"
+        "tilt": "Portes de garage basculantes",
+        "hinged": "Portes battantes",
+        "hingedPanel": "Portes battantes à panneaux",
+        "sectional": "Portes sectionnelles",
+        "singleLeafSteel": "À un vantail - en tôle",
+        "doubleLeafSteel": "À deux vantaux - en tôle",
+        "singleLeafPanel": "À un vantail - panneaux",
+        "doubleLeafPanel": "À deux vantaux - panneaux"
       }
     }
   },
   "hero": {
-    "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouleur przechowywania.",
-    "newCategory": "Całkowicie nowa kategoria",
-    "cinematicDesc": "Lżejsze, mocniejsze, dopracowane w każdym milimetrze. Prawdziwa stal, której nie oprze się żaden wiatr."
+    "title": "Abri vélo en acier",
+    "subtitle": "Notre Rouleur de stockage.",
+    "newCategory": "Catégorie entièrement nouvelle",
+    "cinematicDesc": "Plus léger, plus solide, perfectionné dans chaque millimètre. Un véritable acier capable de résister à tous les vents."
+  },
+  "productHero": {
+    "new": "Nouveauté",
+    "requestQuote": "Demander un devis",
+    "downloadCatalog": "Télécharger le catalogue (PDF)",
+    "productImage": "Photo du produit",
+    "noImage": "Pas de photo"
   },
   "features": {
     "title": "Informations principales."
@@ -129,7 +181,8 @@
       "title": "Dimensions de l'abri à vélos",
       "height": "Hauteur",
       "width": "Largeur",
-      "depth": "Profondeur"
+      "depth": "Profondeur",
+      "drawingAlt": "Dimensions de l'abri vélo - dessin technique"
     },
     "nav": {
       "priceFrom": "À partir de 12 999 zł"
@@ -195,7 +248,85 @@
     "close": "Fermer",
     "chips": {
       "summary": "Résumer la page",
-      "specs": "Spécifications techniques"
+      "summaryPrompt": "Préparez un bref résumé (3 à 5 points) du contenu de cette sous-page",
+      "specs": "Spécifications techniques",
+      "specsPrompt": "Extrayez les spécifications techniques du contenu de cette page ou détaillez les caractéristiques techniques les plus importantes"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Aimants au néodyme",
+        "desc": "montés sur les côtés du rabat"
+      },
+      "handle": {
+        "title": "Poignée en tissu",
+        "desc": "facilitant l'ouverture"
+      },
+      "tin": {
+        "title": "Galvanisé",
+        "desc": "rabat"
+      },
+      "hinges": {
+        "title": "Charnières vissées",
+        "desc": "garantissant la durabilité"
+      },
+      "bends": {
+        "title": "Pliages de renfort",
+        "desc": "rigidifiant le seuil"
+      },
+      "angle": {
+        "title": "Angle profilé",
+        "desc": "pour un accès plus facile"
+      }
+    },
+    "headline": "Résistance cycliste.",
+    "description": "La conception de l'abri vélo a été pensée pour une résistance et une durabilité maximales. L'élément de renfort clé réside dans les triangles exclusifs combinés à des profilés en U, développés et produits en interne. Cette solution assure une rigidité et une stabilité exceptionnelles des différents composants du rabat. Les parois de l'abri sont, quant à elles, reliées par des triangles réglables, permettant un ajustement et un montage précis. Un renfort supplémentaire est apporté par des coins en acier, découpés sur machines CNC, qui augmentent non seulement la rigidité des parois, mais sécurisent également durablement toutes les connexions. C'est une approche innovante qui garantit une fiabilité pendant des années."
+  },
+  "threeDShowcase": {
+    "title": "Découvrez quelques points forts en 3D",
+    "button": "Voir de près",
+    "resetTooltip": "Réinitialiser la vue",
+    "modelAlt": "Abri en 3D",
+    "arButton": "Voir dans votre jardin (RA)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Charnière piano",
+        "description": "Fixé au capot à l'aide de petites vis étroitement espacées, cet élément garantit un fonctionnement silencieux et fiable ainsi qu'une grande longévité du capot. Grâce à la disposition minutieuse des vis, le capot fonctionne de manière fluide et silencieuse, tout en assurant durabilité et stabilité pendant de nombreuses années d'utilisation."
+      },
+      "reinforcedCorners": {
+        "label": "Coins renforcés",
+        "description": "Des renforts supplémentaires aux coins de la structure assurent une rigidité et une résistance exceptionnelles aux déformations. Il s'agit d'un élément clé lors d'une utilisation intensive de l'abri, empêchant le matériau de « travailler » et maintenant la géométrie pendant des décennies."
+      },
+      "locking": {
+        "label": "Fermeture à clé",
+        "description": "Nous avons utilisé une serrure à cylindre avec verrouillage multipoints, qui assure le plus haut niveau de sécurité pour votre vélo. Ce système est résistant aux intempéries et aux tentatives d'effraction, vous offrant une tranquillité d'esprit totale."
+      },
+      "stopPoints": {
+        "label": "Système innovant avec points STOP",
+        "description": "Des butées spéciales et un système de freinage hydraulique du capot empêchent les chocs violents lors de la fermeture. Les points STOP permettent de manipuler le capot en toute sécurité, sans risque de se pincer les doigts ou d'endommager le boîtier."
+      },
+      "thresholdHandle": {
+        "label": "Seuil avec poignée en tissu",
+        "description": "Le seuil ergonomique équipé d'une poignée en tissu facilite l'introduction du vélo à l'intérieur de l'abri. La poignée assure une prise ferme même avec des gants, et la conception du seuil minimise l'obstacle pour les roues du vélo."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Pas seulement pour les vélos",
+    "items": {
+      "item1": {
+        "title": "Abri à vélos en acier",
+        "description": "Rangez vos vélos en toute sécurité dans un abri en acier d'un fabricant polonais."
+      },
+      "item2": {
+        "title": "Abri en acier pour accessoires de jardin",
+        "description": "Abri en acier pour accessoires de jardin."
+      },
+      "item3": {
+        "title": "Abri en acier pour articles de SPA",
+        "description": "Rangez vos serviettes, peignoirs et matériel de nettoyage pour jacuzzi."
+      }
     }
   }
 }

@@ -64,7 +64,7 @@ const ProductDimensions = () => {
         >
           <ResponsiveAsset
             src="/assets/images/wiaty-stalowe-na-rowery/Wymiary_wiaty_na_rowery-min-scaled-1024x392.jpg"
-            alt="Wymiary wiaty na rowery - rysunek techniczny"
+            alt={t('drawingAlt')}
             type="image"
             className="w-full h-full object-contain p-4 md:p-12"
             priority={false}

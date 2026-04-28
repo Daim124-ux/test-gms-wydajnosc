@@ -11,7 +11,9 @@
     "blogArticles": "Статті блогу",
     "fromBlog": "Стаття з блогу",
     "shop": "Магазин",
-    "goToShop": "Перейти до магазину"
+    "goToShop": "Перейти до магазину",
+    "productPage": "Сторінка продукту",
+    "watchVideo": "Дивитися відео"
   },
   "navigation": {
     "header": {
@@ -36,166 +38,295 @@
         "trashShelters": "Сміттєві альтанки",
         "compactShelters": "Компактні сміттєві укриття",
         "basementDoors": "Внутрішньопід’їзні двері",
-        "collectiveGarages": "Garaże Zbiorcze",
-        "partitionWalls": "Ścianki Działowe",
-        "bikeCages": "Wygrodzenia Boksów Rowerowych"
+        "collectiveGarages": "Колективні гаражі",
+        "partitionWalls": "Перегородки",
+        "bikeCages": "Огорожі для велосипедних боксів"
+      },
+      "promos": {
+        "checkAlso": "Також перевірте:",
+        "trashSheltersTitle": "Альтанки та навіси для сміття",
+        "trashSheltersDesc": "Зберігайте відходи зі смаком.",
+        "greenSheltersTitle": "Альтанки з зеленим дахом",
+        "greenSheltersDesc": "Зелений акцент у бетонних джунглях.",
+        "ecoMoves": "Наші еко-кроки",
+        "configureShelter": "Налаштуйте свою альтанку",
+        "configureGarage": "Налаштуйте свій гараж",
+        "configureInShop": "Налаштуйте в магазині",
+        "collectiveGaragesTitle": "Колективні гаражі - бокси",
+        "collectiveGaragesDesc": "Надійна якість у вашому боксі.",
+        "partitionWallsTitle": "Перегородки та огорожі",
+        "watchTest": "Подивіться тест SuperStrong",
+        "nanoCover": "Захист NANO-{num}",
+        "sectionInPrep": "Розділ {name} наразі знаходиться в підготовці."
+      },
+      "configuratorPromo": {
+        "title": "Налаштуйте свій навіс"
+      },
+      "blog": {
+        "articles": "Статті блогу",
+        "fromBlog": "Стаття з блогу",
+        "readMore": "Читати статтю",
+        "titles": {
+          "ecoTrash": "Чи може альтанка для контейнерів зі сміттям бути екологічною?",
+          "trashDistance": "Правила щодо відстані від сміттєзбірника до будівлі",
+          "investInDoors": "Чи варто інвестувати в підвальні двері та які обрати?",
+          "garageOrganization": "Як оптимально облаштувати гаражний бокс у багатоквартирному будинку?",
+          "partitionPlanning": "Принципи планування огорож у сучасному будівництві",
+          "warehouseSafety": "Безпека та організація простору в складських приміщеннях",
+          "beforeBuying": "6 речей, які варто знати перед покупкою сталевого гаража",
+          "howToArrange": "Як облаштувати гараж: від простого складу до стильної майстерні",
+          "superstrongInvestment": "Чому гараж SuperStrong — це інвестиція на роки?",
+          "superstrongInstall": "Монтаж гаража SuperStrong крок за кроком",
+          "motoGarage": "Створіть ідеальний гараж для мотоцикла: посібник крок за кроком",
+          "bikeSecurity": "Як захистити велосипеди від крадіжки та негоди?"
+        }
       },
       "moreLinks": {
-        "about": "O nas",
-        "career": "Kariera",
-        "blog": "Blog",
-        "distributors": "Dystrybutorzy",
-        "projects": "Realizacje",
-        "privacy": "Polityka prywatności",
-        "downloads": "Do pobrania"
+        "about": "Про нас",
+        "career": "Кар'єра",
+        "blog": "Блог",
+        "distributors": "Дистриб'ютори",
+        "projects": "Реалізації",
+        "privacy": "Політика конфіденційності",
+        "downloads": "Для завантаження"
       },
       "titles": {
-        "garaze_stalowe": "Garaże stalowe",
-        "garaze_superstrong": "Garaże Superstrong",
-        "wiata": "Wiata na rowery",
-        "wiaty_stalowe": "Wiaty stalowe",
-        "bramy": "Bramy garażowe i napędy",
-        "altany_zielone": "Altany zielone",
-        "altany_smietnikowe": "Altany śmietnikowe",
-        "kompaktowe": "Kompaktowe osłony",
-        "drzwi": "Drzwi piwniczne",
-        "garaze_zbiorcze": "Garaże zbiorcze",
-        "scianki": "Ścianki działowe",
-        "wygrodzenia": "Wygrodzenia przemysłowe"
+        "garaze_stalowe": "Сталеві гаражі",
+        "garaze_superstrong": "Гаражі Superstrong",
+        "wiata": "Навіс для велосипедів",
+        "wiaty_stalowe": "Сталеві навіси",
+        "bramy": "Гаражні ворота та приводи",
+        "altany_zielone": "Зелені альтанки",
+        "altany_smietnikowe": "Сміттєві альтанки",
+        "kompaktowe": "Компактні укриття",
+        "drzwi": "Підвальні двері",
+        "garaze_zbiorcze": "Колективні гаражі",
+        "scianki": "Перегородки",
+        "wygrodzenia": "Промислові огородження"
       },
       "gatesTitles": {
-        "tilt": "Bramy uchylne garażowe",
-        "hinged": "Bramy rozwierne",
-        "hingedPanel": "Bramy rozwierne panelowe",
-        "sectional": "Bramy segmentowe"
+        "tilt": "Підйомні гаражні ворота",
+        "hinged": "Розпашні ворота",
+        "hingedPanel": "Панельні розпашні ворота",
+        "sectional": "Секційні ворота",
+        "singleLeafSteel": "Одностулкові - металеві",
+        "doubleLeafSteel": "Двостулкові - металеві",
+        "singleLeafPanel": "Одностулкові - панельні",
+        "doubleLeafPanel": "Двостулкові - панельні"
       }
     }
   },
   "hero": {
-    "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouleur przechowywania.",
-    "newCategory": "Całkowicie nowa kategoria",
-    "cinematicDesc": "Lżejsze, mocniejsze, dopracowane w każdym milimetrze. Prawdziwa stal, której nie oprze się żaden wiatr."
+    "title": "Сталевий навіс для велосипедів",
+    "subtitle": "Наш Rouleur для зберігання.",
+    "newCategory": "Цілком нова категорія",
+    "cinematicDesc": "Легший, міцніший, допрацьований у кожному міліметрі. Справжня сталь, якій не протистоїть жоден вітер."
+  },
+  "productHero": {
+    "new": "Новинка",
+    "requestQuote": "Запитати про вартість",
+    "downloadCatalog": "Завантажити каталог (PDF)",
+    "productImage": "Фото продукту",
+    "noImage": "Немає фото"
   },
   "features": {
-    "title": "Najważniejsze informacje."
+    "title": "Найважливіша інформація."
   },
   "configuratorPromo": {
-    "title": "Skonfiguruj swoją wiatę",
-    "description": "Nasz konfigurator daje możliwość personalizacji produktów, tak aby odpowiadały one najbardziej wymagającym klientom. Przy konfiguracji mamy podgląd naszego produktu w czasie rzeczywistym."
+    "title": "Налаштуйте свій навіс",
+    "description": "Наш конфігуратор надає можливість персоналізації продуктів, щоб вони відповідали найвибагливішим клієнтам. Під час конфігурації ми маємо попередній перегляд продукту в режимі реального часу."
   },
   "lifestyle": {
-    "title": "Więcej niż wiata na rowery",
-    "description": "Mimo że nasza wiata została zaprojektowana głównie z myślą o przechowywaniu rowerów, jej wszechstronność sprawia, że jest idealnym rozwiązaniem również dla wielu innych potrzeb."
+    "title": "Більше ніж навіс для велосипедів",
+    "description": "Хоча наш навіс був спроектований переважно для зберігання велосипедів, його універсальність робить його ідеальним рішенням також для багатьох інших потреб."
   },
   "productLayout": {
     "intro": {
-      "text": "Wiata stalowa została zaprojektowana głównie z myślą o przechowywaniu rowerów, jednak można w niej składować również narzędzia ogrodowe, wózki dziecięce, skutery, hulajnogi i inne akcesoria oraz przedmioty użytkowe. Spad dachu klapy skierowany do przodu zapewnia dobre odprowadzenie wody, a dzięki wygodnemu pochwytowi otwieranie jest proste."
+      "text": "Сталевий навіс був спроектований переважно для зберігання велосипедів, проте в ньому також можна зберігати садові інструменти, дитячі візочки, скутери, самокати та інші аксесуари та предмети побуту. Нахил даху стулки, спрямований вперед, забезпечує хороший відвід води, а завдяки зручній ручці відкривання є простим."
     },
     "features": {
       "pianoHinge": {
-        "title": "Zawias fortepianowy w klapie wiaty"
+        "title": "Фортепіанна завіса у стулці навісу"
       },
       "stopPoints": {
-        "title": "Innowacyjny system otwierania z punktami STOP"
+        "title": "Інноваційна система відкривання з точками STOP"
       },
       "fabricHandle": {
-        "title": "Szmaciany pochwyt ułatwiający otwieranie oraz zamykanie progu"
+        "title": "Тканинна ручка, що полегшує відкривання та закривання порогу"
       },
       "steelRods": {
-        "title": "Zamykanie wiaty za pomocą aluminiowo-stalowych cięgien."
+        "title": "Закривання навісу за допомогою алюміній-сталевих тяг."
       },
       "packing": {
         "title": "Wygodne pakowanie v boxie paletowym"
       },
       "reinforcedCorners": {
-        "title": "Wzmocnione narożniki"
+        "title": "Зміцнені кути"
       },
       "steelTriangles": {
-        "title": "Usztywniające stalowe trójkąty w narożnikach"
+        "title": "Зміцнюючі сталеві трикутники в кутах"
       },
       "lidReinforcement": {
-        "title": "Stalowe wzmocnienia klapy połączone z ceownikami"
+        "title": "Сталеві підсилення стулки, поєднані зі швеллерами"
       }
     },
     "colorSection": {
-      "title": "Poznaj kolorystykę.",
-      "aesthetic": "Ponadczasowa estetyka w każdym kolorze",
-      "match": "Dopasuj wiatę do elewacji Twojego domu",
-      "protection": "Ochrona przed każdymi warunkami",
-      "quality": "Najwyższa jakość powłoki lakierniczej"
+      "title": "Ознайомтеся з кольорами.",
+      "aesthetic": "Позачасова естетика в кожному кольорі",
+      "match": "Підберіть навіс під фасад вашого будинку",
+      "protection": "Захист за будь-яких умов",
+      "quality": "Найвища якість лакофарбового покриття"
     },
     "dimensions": {
-      "title": "Wymiary wiaty na rowery",
-      "height": "Wysokość",
-      "width": "Szerokość",
-      "depth": "Głębokość"
+      "title": "Розміри навісу для велосипедів",
+      "height": "Висота",
+      "width": "Ширина",
+      "depth": "Глибина",
+      "drawingAlt": "Розміри навісу для велосипедів - технічне креслення"
     },
     "nav": {
-      "priceFrom": "Od 12 999 zł"
+      "priceFrom": "Від 12 999 zł"
     },
     "aluminumFloor": {
-      "title": "Aluminiowa podłoga",
-      "subtitle": "mocowana do gruntu za pomocą nierdzewnych kotew.",
+      "title": "Алюмінієва підлога",
+      "subtitle": "кріпиться до землі за допомогою нержавіючих анкерів.",
       "description": "W wiacie rowerowej istnieje możliwość zamontowania aluminiowej podłogi, która skutecznie zapobiega wzrostowi niechcianej roślinności, szczególnie v przypadku montażu na kostce brukowej. Podłoga została zaprojektowana w taki sposób, aby kotwienie wiaty odbywało się przez te same otwory, co w wersji bez podłogi. Dzięki temu można łatwo doposażyć wiatę w tę opcję w dowolnym momencie, gdy uznamy, że jest to potrzebne."
     },
     "lifestyle": {
-      "p1": "Mimo że nasza wiata została zaprojektowana głównie z myślą o przechowywaniu rowerów, jej wszechstronność sprawia, że jest idealnym rozwiązaniem również dla wielu innych potrzeb. Oprócz rowerów, z łatwością pomieści narzędzia ogrodowe, takie jak łopaty, grabie czy sekatory, oraz niewielkie akcesoria ogrodowe, takie jak doniczki, nasiona czy nawozy. Dzięki przestronnym wymiarom — 1950 mm szerokości, 900 mm głębokości i 1290 mm wysokości — wiata może również służyć jako praktyczny schowek na przydomowe akcesoria, takie jak kosiarki, węże ogrodowe itp.",
+      "p1": "Хоча наш навіс був спроектований переважно для зберігання велосипедів, його універсальність робить його ідеальним рішенням і для багатьох інших потреб. Окрім велосипедів, у ньому легко помістяться садові інструменти, такі як лопати, граблі чи секатори, а також дрібні садові аксесуари, як-от горщики, насіння чи добрива. Завдяки просторим розмірам — 1950 мм шириною, 900 мм глибиною та 1290 мм висотою — навіс також може слугувати практичною коморою для прибудинкових аксесуарів, таких як газонокосарки, садові шланги тощо.",
       "p2": "Idealnie nadaje się również do przechowywania zabawek dziecięcych, w tym samochodzików elektrycznych czy na pedały, zabawek do piaskownicy oraz zestawów do zabawy v ogrodzie. Dodatkowo, wiata może pomieścić akcesoria wędkarskie, takie jak wędki, kołowrotki czy torby wędkarskie, a także sezonowe dekoracje ogrodowe, takie jak latarenki i lampki solarne czy drobne meble ogrodowe. Jeśli korzystasz z ogrodu do relaksu, znajdziesz tu również miejsce na akcesoria do grillowania.",
-      "p3": "Dzięki swojej funkcjonalności i przestronności, nasza wiata oferuje wygodne rozwiązanie do przechowywania szerokiej gamy przedmiotów, które mogą być przydatne w codziennym życiu, maksymalnie wykorzystując dostępną przestrzeń."
+      "p3": "Завдяки своїй функціональності та просторості наш навіс пропонує зручне рішення для зберігання широкого спектра предметів, які можуть бути корисними в повсякденному житті, максимально використовуючи доступний простір."
     },
     "showcase1": {
-      "top": "Wytrzymały",
-      "glow": "zawias fortepianowy",
-      "bottom": "ze stali.",
-      "description": "W naszej wiacie na rowery zastosowaliśmy zawias fortepianowy, który podnosi standard codziennego użytkowania. Ten subtelny, a jednocześnie wyjątkowo wytrzymały element zapewnia nie tylko idealną sztywność klapy zamykającej, ale także jej płynną, niemal bezszelestną pracę. Dzięki kompaktowej konstrukcji i dużej powierzchni styku, zawias ten nie tylko gwarantuje niezawodność, ale również trwałość na lata. To rozwiązanie, które docenią wszyscy użytkownicy ceniący sobie precyzję, funkcjonalność i nowoczesny design."
+      "top": "Міцний",
+      "glow": "рояльний шарнір",
+      "bottom": "зі сталі.",
+      "description": "У нашому навісі для велосипедів ми використали рояльний шарнір, який підвищує стандарт щоденного використання. Цей непомітний, але водночас надзвичайно міцний елемент забезпечує не тільки ідеальну жорсткість закривного клапана, але й його плавну, майже безшумну роботу. Завдяки компактній конструкції та великій площі контакту, цей шарнір гарантує не лише надійність, а й довговічність на роки. Це рішення, яке оцінять всі користувачі, що цінують точність, функціональність та сучасний дизайн."
     },
     "showcase2": {
-      "top": "Metalowy próg",
-      "glow": "z lekkiego aluminium",
-      "description": "Dolna część wiaty została zaprojektowana z myślą o maksymalnej funkcjonalności i komforcie użytkowania. Stalowy próg z eleganckim materiałowym pochwytem zapewnia solidne zamknięcie, a neodymowe magnesy precyzyjnie utrzymują go w pozycji, zapobiegając przypadkowemu otwarciu. Specjalnie dopasowane zawiasy oraz dodatkowe gięcie elementu tworzą po otwarciu płynnie wyprofilowany podjazd, ułatwiający wprowadzenie roweru. To przemyślane rozwiązanie łączy trwałość z wygodą, odpowiadając na potrzeby wymagających użytkowników."
+      "top": "Металевий поріг",
+      "glow": "з легкого алюмінію",
+      "description": "Нижня частина навісу була спроектована з думкою про максимальну функціональність та комфорт використання. Сталевий поріг з елегантним тканинним захватом забезпечує надійне закриття, а неодимові магніти точно утримують його в позиції, запобігаючи випадковому відкриттю. Спеціально підібрані шарніри та додатковий вигин елемента після відкриття створюють плавно профільований під'їзд, що полегшує заведення велосипеда. Це продумане рішення поєднує довговічність зі зручністю, відповідаючи потребам вимогливих користувачів."
     }
   },
   "footer": {
     "unicorn": {
-      "tagline": "Nie goń schematów.",
-      "prefix": "Złap branżowego",
-      "cta": "Jednorożca."
+      "tagline": "Не йди шаблонами.",
+      "prefix": "Спіймай галузевого",
+      "cta": "Єдинорога."
     },
     "location": {
-      "title": "Godziny pracy & Lokalizacja",
-      "address1": "Biuro I, II, Nawojowa 33-335",
-      "address2": "Krynicka 55, Nawojowa",
-      "country": "Polska",
-      "workingDays": "Poniedziałek - Piątek",
+      "title": "Години роботи та розташування",
+      "address1": "Офіс I, II, Nawojowa 33-335",
+      "address2": "Криницька 55, Навоєва",
+      "country": "Польща",
+      "workingDays": "Понеділок - П'ятниця",
       "workingHours": "07:00 - 15:00"
     },
     "quickAccess": {
-      "title": "Szybki dostęp"
+      "title": "Швидкий доступ"
     },
     "career": {
-      "title": "GMS Kariera",
-      "description": "Zacznij pracę w GMS Corporation",
-      "cta": "Dołącz do naszej społeczności"
+      "title": "GMS Кар'єра",
+      "description": "Почніть працювати в GMS Corporation",
+      "cta": "Приєднуйтесь до нашої спільноти"
     },
     "bottom": {
-      "rights": "All Rights Reserved",
-      "author": "by Mateusz Sromek",
-      "rodo": "RODO",
-      "cookies": "Pliki cookies"
+      "rights": "Усі права захищені",
+      "author": "автор Mateusz Sromek",
+      "rodo": "GDPR",
+      "cookies": "Файли cookie"
     }
   },
   "chat": {
-    "welcome": "Jak mogę Ci dzisiaj pomóc?",
-    "placeholder": "Zapytaj GMS Corporation...",
-    "assistant": "Asystent AI",
-    "processing": "Przetwarzanie danych...",
-    "clearHistory": "Wyczyść historię rozmowy",
-    "clearConfirm": "Czy na pewno chcesz wyczyścić historię rozmowy?",
-    "close": "Zamknij",
+    "welcome": "Як я можу допомогти вам сьогодні?",
+    "placeholder": "Запитайте GMS Corporation...",
+    "assistant": "AI-асистент",
+    "processing": "Обробка даних...",
+    "clearHistory": "Очистити історію чату",
+    "clearConfirm": "Ви дійсно хочете очистити історію чату?",
+    "close": "Закрити",
     "chips": {
-      "summary": "Podsumuj stronę",
-      "specs": "Specyfikacja techniczna"
+      "summary": "Підсумувати сторінку",
+      "summaryPrompt": "Підготуйте короткий підсумок (3-5 пунктів) того, що знаходиться на цій сторінці",
+      "specs": "Технічні характеристики",
+      "specsPrompt": "Витягніть технічні характеристики зі змісту цієї сторінки або розкажіть про найважливіші технічні деталі"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Неодимові магніти",
+        "desc": "встановлені з боків кришки"
+      },
+      "handle": {
+        "title": "Тканинна ручка",
+        "desc": "що полегшує відкривання"
+      },
+      "tin": {
+        "title": "Оцинкована",
+        "desc": "кришка"
+      },
+      "hinges": {
+        "title": "Прикручені шарніри",
+        "desc": "що гарантують довговічність"
+      },
+      "bends": {
+        "title": "Зміцнюючі згини",
+        "desc": "що надають жорсткості порогу"
+      },
+      "angle": {
+        "title": "Профільний кут",
+        "desc": "для легшого заїзду"
+      }
+    },
+    "headline": "Велосипедна витривалість.",
+    "description": "Конструкція навісу для велосипедів була розроблена з розрахунком на максимальну міцність і довговічність. Ключовим зміцнювальним елементом є авторські трикутники, поєднані зі швеллерами, які були розроблені та виготовлені власними силами. Це рішення забезпечує надзвичайну жорсткість і стабільність окремих компонентів кришки. Стіни навісу, у свою чергу, з'єднані за допомогою регульованих трикутників, що дозволяє точно підігнати та змонтувати їх. Додаткове підсилення забезпечують сталеві кутники, вирізані на верстатах з ЧПК, які не тільки підвищують жорсткість стін, але й надійно закріплюють усі з'єднання. Це інноваційний підхід, який гарантує надійність на роки."
+  },
+  "threeDShowcase": {
+    "title": "Подивіться на кілька особливостей у 3D",
+    "button": "Подивитися ближче",
+    "resetTooltip": "Скинути вигляд",
+    "modelAlt": "Навіс у 3D",
+    "arButton": "Показати у своєму саду (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Фортепіанна петля",
+        "description": "Закріплений на кришці за допомогою маленьких, щільно розташованих гвинтів, цей елемент гарантує тиху та надійну роботу, а також довговічність кришки. Завдяки ретельному розташуванню гвинтів кришка працює плавно та безшумно, забезпечуючи при цьому міцність і стабільність протягом багатьох років використання."
+      },
+      "reinforcedCorners": {
+        "label": "Посилені кути",
+        "description": "Додаткове посилення в кутах конструкції забезпечує виняткову жорсткість і стійкість до деформацій. Це ключовий елемент при інтенсивному використанні навісу, що запобігає «праці» матеріалу та зберігає геометрію протягом десятиліть."
+      },
+      "locking": {
+        "label": "Замикання на ключ",
+        "description": "Ми використали циліндровий замок із багатоточковим ризанням, який забезпечує найвищий рівень безпеки вашого велосипеда. Ця система стійка до атмосферних впливів і спроб злому, що дає вам повний спокій."
+      },
+      "stopPoints": {
+        "label": "Інноваційна система з точками STOP",
+        "description": "Спеціальні відбійники та гідравлічна система гальмування кришки запобігають різким ударам при закритті. Точки STOP дозволяють безпечно керувати кришкою без ризику притискання пальців або пошкодження корпусу."
+      },
+      "thresholdHandle": {
+        "label": "Поріг з тканинною ручкою",
+        "description": "Ергономічний поріг, оснащений тканинною ручкою, полегшує заведення велосипеда всередину навісу. Ручка забезпечує надійний хват навіть у рукавичках, а конструкція порогу нівелює перешкоду для коліс велосипеда."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Не тільки для велосипедів",
+    "items": {
+      "item1": {
+        "title": "Сталевий бокс для велосипедів",
+        "description": "Зберігайте свої велосипеди в безпеці в сталевому навісі від польського виробника."
+      },
+      "item2": {
+        "title": "Сталевий навіс для садового інвентарю",
+        "description": "Сталевий навіс для садового інвентарю."
+      },
+      "item3": {
+        "title": "Сталевий навіс для речей до SPA",
+        "description": "Зберігайте рушники, халати та обладнання для чищення джакузі."
+      }
     }
   }
 }

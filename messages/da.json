@@ -11,7 +11,9 @@
     "blogArticles": "Blogartikler",
     "fromBlog": "Artikel fra bloggen",
     "shop": "Butik",
-    "goToShop": "Gå til butikken"
+    "goToShop": "Gå til butikken",
+    "productPage": "Produktside",
+    "watchVideo": "Se video"
   },
   "navigation": {
     "header": {
@@ -40,6 +42,45 @@
         "partitionWalls": "Skillevægge",
         "bikeCages": "Cykelboks-afskærmning"
       },
+      "promos": {
+        "checkAlso": "Tjek også:",
+        "trashSheltersTitle": "Affaldsskur og overdækninger",
+        "trashSheltersDesc": "Opbevar også affald med stil.",
+        "greenSheltersTitle": "Skure med grønt tag",
+        "greenSheltersDesc": "Et grønt touch i betonjunglen.",
+        "ecoMoves": "Vores øko-tiltag",
+        "configureShelter": "Konfigurer dit skur",
+        "configureGarage": "Konfigurer din garage",
+        "configureInShop": "Konfigurer i butikken",
+        "collectiveGaragesTitle": "Kollektive garager - bokse",
+        "collectiveGaragesDesc": "Pålidelig kvalitet i din boks.",
+        "partitionWallsTitle": "Skillevægge og indhegninger",
+        "watchTest": "Se SuperStrong-testen",
+        "nanoCover": "NANO-{num} beskyttelse",
+        "sectionInPrep": "Sektionen {name} er i øjeblikket under forberedelse."
+      },
+      "configuratorPromo": {
+        "title": "Konfigurer din overdækning"
+      },
+      "blog": {
+        "articles": "Blogartikler",
+        "fromBlog": "Artikel fra bloggen",
+        "readMore": "Læs artiklen",
+        "titles": {
+          "ecoTrash": "Kan et affaldsskur være miljøvenligt?",
+          "trashDistance": "Regler for afstand fra affaldsbeholdere til bygninger",
+          "investInDoors": "Er det værd at investere i kælderdøre, og hvilke skal man vælge?",
+          "garageOrganization": "Hvordan udnytter man bedst en garageboks i en lejlighedsejendom?",
+          "partitionPlanning": "Principper for planlægning af indhegninger i moderne byggeri",
+          "warehouseSafety": "Sikkerhed og pladsoptimering i lagerhaller",
+          "beforeBuying": "6 ting, du bør vide, før du køber en stålgarage",
+          "howToArrange": "Hvordan man indretter sin garage: fra et simpelt lager til et stilfuldt værksted",
+          "superstrongInvestment": "Hvorfor er SuperStrong-garagen en investering for fremtiden?",
+          "superstrongInstall": "Montering af SuperStrong-garage trin for trin",
+          "motoGarage": "Skab den perfekte garage til motorcykler: Trin-for-trin guide",
+          "bikeSecurity": "Hvordan sikrer man cykler mod tyveri og vejr?"
+        }
+      },
       "moreLinks": {
         "about": "Om os",
         "career": "Karriere",
@@ -67,7 +108,11 @@
         "tilt": "Opvippelige garageporte",
         "hinged": "Svingporte",
         "hingedPanel": "Panel-svingporte",
-        "sectional": "Sektionsporte"
+        "sectional": "Sektionsporte",
+        "singleLeafSteel": "Enfløjede - stål",
+        "doubleLeafSteel": "Tofløjede - stål",
+        "singleLeafPanel": "Enfløjede - panel",
+        "doubleLeafPanel": "Tofløjede - panel"
       }
     }
   },
@@ -76,6 +121,13 @@
     "subtitle": "Vores opbevarings-Rouleur.",
     "newCategory": "Helt ny kategori",
     "cinematicDesc": "Lettere, stærkere, gennemarbejdet i hver eneste millimeter. Ægte stål, som ingen vind kan modstå."
+  },
+  "productHero": {
+    "new": "Nyhed",
+    "requestQuote": "Anmod om tilbud",
+    "downloadCatalog": "Download katalog (PDF)",
+    "productImage": "Produktbillede",
+    "noImage": "Intet billede"
   },
   "features": {
     "title": "Vigtigste informationer."
@@ -129,7 +181,8 @@
       "title": "Dimensioner for cykelhus",
       "height": "Højde",
       "width": "Bredde",
-      "depth": "Dybde"
+      "depth": "Dybde",
+      "drawingAlt": "Dimensioner for cykelskur - teknisk tegning"
     },
     "nav": {
       "priceFrom": "Fra 12 999 zł"
@@ -195,9 +248,85 @@
     "close": "Luk",
     "chips": {
       "summary": "Opsummer siden",
-      "summaryPrompt": "Przygotuj krótkie podsumowanie (3-5 punktów) tego, co znajduje się na tej podstronie",
+      "summaryPrompt": "Lav et kort resumé (3-5 punkter) af indholdet på denne underside",
       "specs": "Tekniske specifikationer",
-      "specsPrompt": "Wyciągnij specyfikację techniczną z treści tej strony lub opowiedz o najważniejszych szczegółach technicznych"
+      "specsPrompt": "Udtræk den tekniske specifikation fra indholdet på denne side eller fortæl om de vigtigste tekniske detaljer"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymmagneter",
+        "desc": "monteret på siderne af klappen"
+      },
+      "handle": {
+        "title": "Tekstilgreb",
+        "desc": "der gør det lettere at åbne"
+      },
+      "tin": {
+        "title": "Galvaniseret",
+        "desc": "klap"
+      },
+      "hinges": {
+        "title": "Skruede hængsler",
+        "desc": "der garanterer holdbarhed"
+      },
+      "bends": {
+        "title": "Forstærkende buk",
+        "desc": "der stiver tærsklen af"
+      },
+      "angle": {
+        "title": "Profileret vinkel",
+        "desc": "for lettere indkørsel"
+      }
+    },
+    "headline": "Cykelstærk holdbarhed.",
+    "description": "Konstruktionen af cykeludhænget er designet med henblik på maksimal styrke og holdbarhed. Et centralt forstærkende element er de proprietære trekanter forbundet med U-profiler, som er udviklet og produceret internt. Denne løsning sikrer en ekstraordinær stivhed og stabilitet af klappens enkelte komponenter. Væggene i udhænget er forbundet via justerbare trekanter, hvilket muliggør præcis tilpasning og montering. Yderligere forstærkning gives af stålhjørner, skåret på CNC-maskiner, som ikke kun øger væggenes stivhed, men også sikrer alle samlinger permanent. Dette er en innovativ tilgang, der garanterer pålidelighed i årevis."
+  },
+  "threeDShowcase": {
+    "title": "Se nogle af højdepunkterne i 3D",
+    "button": "Se tæt på",
+    "resetTooltip": "Nulstil visning",
+    "modelAlt": "Udhæng i 3D",
+    "arButton": "Vis i din have (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Klaverhængsel",
+        "description": "Dette element er monteret på klappen med små, tætsiddende skruer, hvilket garanterer en støjsvag og pålidelig drift samt lang levetid for klappen. Takket være den omhyggelige placering af skruerne fungerer klappen jævnt og lydløst, samtidig med at den sikrer holdbarhed og stabilitet gennem mange års brug."
+      },
+      "reinforcedCorners": {
+        "label": "Forstærkede hjørner",
+        "description": "Ekstra forstærkninger i konstruktionens hjørner sikrer ekstraordinær stivhed og modstand mod deformation. Dette er et afgørende element ved intensiv brug af udhænget, da det forhindrer materialet i at 'arbejde' og bevarer geometrien i årtier."
+      },
+      "locking": {
+        "label": "Låsning med nøgle",
+        "description": "Vi har anvendt en cylinderlås med flerpunktslåsning, som sikrer det højeste sikkerhedsniveau for din cykel. Dette system er modstandsdygtigt over for vejrforhold og forsøg på opbrud, hvilket giver dig fuldstændig ro i sindet."
+      },
+      "stopPoints": {
+        "label": "Innovativt system med STOP-punkter",
+        "description": "Specielle stopklodser og et hydraulisk bremsesystem til klappen forhindrer hårde stød ved lukning. STOP-punkterne gør det muligt at betjene klappen sikkert uden risiko for at klemme fingrene eller beskadige kabinettet."
+      },
+      "thresholdHandle": {
+        "label": "Tærskel med stofgreb",
+        "description": "En ergonomisk tærskel udstyret med et stofgreb gør det lettere at føre cyklen ind i udhænget. Grebet sikrer et fast hold, selv med handsker, og tærsklens design minimerer forhindringen for cyklens hjul."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Ikke kun til cykler",
+    "items": {
+      "item1": {
+        "title": "Stålskur til cykler",
+        "description": "Opbevar dine cykler sikkert i et ståludhæng fra en polsk producent."
+      },
+      "item2": {
+        "title": "Ståludhæng til haveudstyr",
+        "description": "Ståludhæng til haveudstyr."
+      },
+      "item3": {
+        "title": "Ståludhæng til SPA-ting",
+        "description": "Opbevar håndklæder, badekåber og udstyr til rengøring af jacuzzi."
+      }
     }
   }
 }

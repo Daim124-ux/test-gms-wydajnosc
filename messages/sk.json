@@ -11,12 +11,14 @@
     "blogArticles": "Blogové články",
     "fromBlog": "Článok z blogu",
     "shop": "Obchod",
-    "goToShop": "Prejsť do obchodu"
+    "goToShop": "Prejsť do obchodu",
+    "productPage": "Produktová stránka",
+    "watchVideo": "Pozrieť video"
   },
   "navigation": {
     "header": {
-      "domSystem": "Dom system",
-      "osiedleSystem": "Osiedle system",
+      "domSystem": "Systém pre domy",
+      "osiedleSystem": "Systém pre sídliska",
       "shop": "Obchod",
       "partnerZone": "Zóna partnera",
       "contact": "Kontakt",
@@ -39,6 +41,45 @@
         "collectiveGarages": "Kolektívne garáže",
         "partitionWalls": "Prehrádkové steny",
         "bikeCages": "Zabezpečenia bicyklových boxov"
+      },
+      "promos": {
+        "checkAlso": "Pozrite si tiež:",
+        "trashSheltersTitle": "Kontejnerové prístrešky",
+        "trashSheltersDesc": "Skladujte odpady s gráciou.",
+        "greenSheltersTitle": "Prístrešky so zelenou strechou",
+        "greenSheltersDesc": "Zelený akcent v betónovom lese.",
+        "ecoMoves": "Naše eko kroky",
+        "configureShelter": "Konfigurujte svoj prístrešok",
+        "configureGarage": "Konfigurujte svoju garáž",
+        "configureInShop": "Konfigurujte v obchode",
+        "collectiveGaragesTitle": "Kolektívne garáže - boxy",
+        "collectiveGaragesDesc": "Spoľahlivá kvalita vo vašom boxe.",
+        "partitionWallsTitle": "Prepážky a ohradenia",
+        "watchTest": "Pozrite si test SuperStronga",
+        "nanoCover": "Ochrana NANO-{num}",
+        "sectionInPrep": "Sekcia {name} sa momentálne pripravuje."
+      },
+      "configuratorPromo": {
+        "title": "Konfigurujte si svoju prístrešnicu"
+      },
+      "blog": {
+        "articles": "Blogové články",
+        "fromBlog": "Článok z blogu",
+        "readMore": "Čítať článok",
+        "titles": {
+          "ecoTrash": "Môže byť prístrešok na odpadkové kontajnery šetrný k životnému prostrediu?",
+          "trashDistance": "Pravidlá týkajúce sa vzdialenosti kontajnera od budovy",
+          "investInDoors": "Oplatí sa investovať do pivničných dverí a ktoré vybrať?",
+          "garageOrganization": "Ako optimálne využiť garážový box v bloku?",
+          "partitionPlanning": "Pravidlá plánovania ohradení v modernom stavebníctve",
+          "warehouseSafety": "Bezpečnosť a organizácia priestoru v skladových halách",
+          "beforeBuying": "6 vecí, ktoré je dobré vedieť pred kúpou oceľovej garáže",
+          "howToArrange": "Ako zariadiť garáž: od jednoduchého skladu po štýlovú dielňu",
+          "superstrongInvestment": "Prečo je garáž SuperStrong investíciou na roky?",
+          "superstrongInstall": "Montáž garáže SuperStrong krok za krokom",
+          "motoGarage": "Vytvorte si ideálnu garáž na motocykel: Príručka krok za krokom",
+          "bikeSecurity": "Ako zabezpečiť bicykle pred krádežou a počasím?"
+        }
       },
       "moreLinks": {
         "about": "O nás",
@@ -67,7 +108,11 @@
         "tilt": "Vyklápacie garážové brány",
         "hinged": "Krídlové brány",
         "hingedPanel": "Panelové krídlové brány",
-        "sectional": "Segmentové brány"
+        "sectional": "Segmentové brány",
+        "singleLeafSteel": "Jednokrýdlové - plechové",
+        "doubleLeafSteel": "Dvojkrýdlové - plechové",
+        "singleLeafPanel": "Jednokrýdlové - panelové",
+        "doubleLeafPanel": "Dvojkrýdlové - panelové"
       }
     }
   },
@@ -76,6 +121,13 @@
     "subtitle": "Náš Rouleur skladovania.",
     "newCategory": "Úplne nová kategória",
     "cinematicDesc": "Ľahší, silnejší, dopracovaný do posledného milimetra. Pravá oceľ, ktorá odolá každému vetru."
+  },
+  "productHero": {
+    "new": "Novinka",
+    "requestQuote": "Požiadajte o cenovú ponuku",
+    "downloadCatalog": "Stiahnite si katalóg (PDF)",
+    "productImage": "Fotografia produktu",
+    "noImage": "Žiadna fotografia"
   },
   "features": {
     "title": "Najdôležitejšie informácie."
@@ -129,7 +181,8 @@
       "title": "Rozmery prístrešnice na bicykle",
       "height": "Výška",
       "width": "Šírka",
-      "depth": "Hĺbka"
+      "depth": "Hĺbka",
+      "drawingAlt": "Rozmery prístrešku na bicykle - technický výkres"
     },
     "nav": {
       "priceFrom": "Od 12 999 zł"
@@ -180,7 +233,7 @@
     },
     "bottom": {
       "rights": "Všetky práva vyhradené",
-      "author": "by Mateusz Sromek",
+      "author": "autor Mateusz Sromek",
       "rodo": "GDPR",
       "cookies": "Cookies"
     }
@@ -234,6 +287,8 @@
     "title": "Pozrite si niekoľko zaujatostí v 3D",
     "button": "Pozrieť zblízka",
     "resetTooltip": "Resetovať zobrazenie",
+    "modelAlt": "Prístrešok v 3D",
+    "arButton": "Zobraziť vo svojej záhrade (AR)",
     "tabs": {
       "pianoHinge": {
         "label": "Klavírny závis",
@@ -254,6 +309,23 @@
       "thresholdHandle": {
         "label": "Prah s textilným úchvatom",
         "description": "Ergonomický prah vybavený textilným úchvatom uľahčuje vjazd bicykla do vnútra prístrešku. Úchvat zabezpečuje istý úchop aj v rukaviciach a konštrukcia prahu eliminuje prekážku pre kolá bicykla."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Nielenko na bicykle",
+    "items": {
+      "item1": {
+        "title": "Ocelový úložný priestor na bicykle",
+        "description": "Bezpečne uskladnite svoje bicykle v ocelovej prístrešnici od poľského výrobcu."
+      },
+      "item2": {
+        "title": "Ocelová prístrešnica na záhradné doplnky",
+        "description": "Ocelová prístrešnica na záhradné doplnky."
+      },
+      "item3": {
+        "title": "Ocelová prístrešnica na veci do SPA",
+        "description": "Uskladnite uteráky, župany a vybavenie na čistenie jacuzzi."
       }
     }
   }
