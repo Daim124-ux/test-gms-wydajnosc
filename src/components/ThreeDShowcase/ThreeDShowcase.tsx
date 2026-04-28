@@ -13,15 +13,6 @@ const VergeViewer = dynamic(() => import('./VergeViewer'), {
   ssr: false,
 });
 
-// Custom declaration for model-viewer to keep TS happy
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'model-viewer': any;
-    }
-  }
-}
-
 export default function ThreeDShowcase() {
   const t = useTranslations('threeDShowcase');
 
@@ -301,16 +292,14 @@ export default function ThreeDShowcase() {
       {mounted && createPortal(modalContent, document.body)}
 
       {/* HIDDEN MODEL-VIEWER FOR AR CAPABILITIES */}
-      {mounted && (
-        <model-viewer
-          id="ar-viewer"
-          src="/assets/makieta_3d/wiata_makieta.glb"
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-          camera-controls
-          style={{ position: 'absolute', width: 0, height: 0, opacity: 0, pointerEvents: 'none' }}
-        />
-      )}
+      {mounted && React.createElement('model-viewer', {
+        id: "ar-viewer",
+        src: "/assets/makieta_3d/wiata_makieta.glb",
+        ar: true,
+        "ar-modes": "webxr scene-viewer quick-look",
+        "camera-controls": true,
+        style: { position: 'absolute', width: 0, height: 0, opacity: 0, pointerEvents: 'none' }
+      })}
 
       {/* HIDDEN TRIGGERS FOR VERGE3D (PARENT DOC LISTENERS) */}
       <div style={{ display: 'none' }} aria-hidden="true">
