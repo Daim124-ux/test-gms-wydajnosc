@@ -195,7 +195,9 @@
     "close": "Sluiten",
     "chips": {
       "summary": "Pagina samenvatten",
-      "specs": "Technische specificaties"
+      "summaryPrompt": "Przygotuj krótkie podsumowanie (3-5 punktów) tego, co znajduje się na tej podstronie",
+      "specs": "Technische specificaties",
+      "specsPrompt": "Wyciągnij specyfikację techniczną z treści tej strony lub opowiedz o najważniejszych szczegółach technicznych"
     }
   }
 }

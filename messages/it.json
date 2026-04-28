@@ -195,7 +195,9 @@
     "close": "Chiudi",
     "chips": {
       "summary": "Riassumi la pagina",
-      "specs": "Specifiche tecniche"
+      "summaryPrompt": "Prepara un breve riassunto (3-5 punti) di ciò che si trova in questa sottopagina",
+      "specs": "Specifiche tecniche",
+      "specsPrompt": "Estrai le specifiche tecniche dal contenuto di questa pagina o descrivi i dettagli tecnici più importanti"
     }
   }
 }

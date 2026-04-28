@@ -195,7 +195,9 @@
     "close": "Bezárás",
     "chips": {
       "summary": "Összegezés az oldalról",
-      "specs": "Technikai specifikáció"
+      "summaryPrompt": "Készíts egy rövid összefoglalót (3-5 pontban) arról, hogy mi található ezen az aloldalon",
+      "specs": "Technikai specifikáció",
+      "specsPrompt": "Készítsd ki a műszaki specifikációkat az oldal tartalmából, vagy beszélj a legfontosabb műszaki részletekről"
     }
   }
 }

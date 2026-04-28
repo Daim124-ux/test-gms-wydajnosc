@@ -195,7 +195,9 @@
     "close": "Luk",
     "chips": {
       "summary": "Opsummer siden",
-      "specs": "Tekniske specifikationer"
+      "summaryPrompt": "Przygotuj krótkie podsumowanie (3-5 punktów) tego, co znajduje się na tej podstronie",
+      "specs": "Tekniske specifikationer",
+      "specsPrompt": "Wyciągnij specyfikację techniczną z treści tej strony lub opowiedz o najważniejszych szczegółach technicznych"
     }
   }
 }
