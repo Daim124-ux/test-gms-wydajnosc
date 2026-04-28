@@ -135,13 +135,15 @@ export default function ThreeDShowcase() {
 
       {/* AR BUTTON (MOBILE ONLY) */}
       <div className="absolute top-24 right-8 z-[2010] md:hidden">
-        <a
-          href={`intent://arvr.google.com/scene-viewer/1.0?file=${typeof window !== 'undefined' ? window.location.origin : ''}/assets/makieta_3d/wiata_makieta.glb&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`}
-          className="flex items-center gap-2 px-4 py-3 bg-blue-600 text-white rounded-full font-bold text-xs shadow-lg active:scale-95 transition-transform"
-        >
-          <BoxIcon size={16} />
-          {t('arButton')}
-        </a>
+        {typeof window !== 'undefined' && (
+          <a
+            href={`intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(`${window.location.origin}/assets/makieta_3d/wiata_makieta.glb`)}&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`}
+            className="flex items-center gap-2 px-4 py-3 bg-blue-600 text-white rounded-full font-bold text-xs shadow-lg active:scale-95 transition-transform"
+          >
+            <BoxIcon size={16} />
+            {t('arButton')}
+          </a>
+        )}
       </div>
 
       {/* MAIN CONTENT AREA */}
