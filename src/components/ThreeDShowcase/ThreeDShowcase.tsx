@@ -138,10 +138,10 @@ export default function ThreeDShowcase() {
         {typeof window !== 'undefined' && (
           <a
             href={`intent://arvr.google.com/scene-viewer/1.0?file=${window.location.origin}/assets/makieta_3d/wiata_makieta.glb&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`}
-            className="flex items-center gap-2 px-4 py-3 bg-blue-600 text-white rounded-full font-bold text-xs shadow-lg active:scale-95 transition-transform"
+            className="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg active:scale-95 transition-transform"
+            title={t('arButton')}
           >
-            <BoxIcon size={16} />
-            {t('arButton')}
+            <BoxIcon size={20} />
           </a>
         )}
       </div>
