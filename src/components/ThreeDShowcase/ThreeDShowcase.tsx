@@ -13,6 +13,15 @@ const VergeViewer = dynamic(() => import('./VergeViewer'), {
   ssr: false,
 });
 
+// Custom declaration for model-viewer to keep TS happy
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'model-viewer': any;
+    }
+  }
+}
+
 export default function ThreeDShowcase() {
   const t = useTranslations('threeDShowcase');
 
@@ -55,6 +64,8 @@ export default function ThreeDShowcase() {
 
   useEffect(() => {
     setMounted(true);
+    // Dynamically import model-viewer for AR functionality
+    import('@google/model-viewer').catch(console.error);
     return () => setMounted(false);
   }, []);
 
@@ -136,13 +147,18 @@ export default function ThreeDShowcase() {
       {/* AR BUTTON (MOBILE ONLY) */}
       <div className="absolute top-24 right-8 z-[2010] md:hidden">
         {typeof window !== 'undefined' && (
-          <a
-            href={`intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(`${window.location.origin}/assets/makieta_3d/wiata_makieta.glb`)}&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`}
+          <button
+            onClick={() => {
+              const viewer = document.getElementById('ar-viewer') as any;
+              if (viewer && viewer.activateAR) {
+                viewer.activateAR();
+              }
+            }}
             className="flex items-center gap-2 px-4 py-3 bg-blue-600 text-white rounded-full font-bold text-xs shadow-lg active:scale-95 transition-transform"
           >
             <BoxIcon size={16} />
             {t('arButton')}
-          </a>
+          </button>
         )}
       </div>
 
@@ -283,6 +299,18 @@ export default function ThreeDShowcase() {
 
       {/* FULLSCREEN CONFIGURATOR MODAL (W PORTALU) */}
       {mounted && createPortal(modalContent, document.body)}
+
+      {/* HIDDEN MODEL-VIEWER FOR AR CAPABILITIES */}
+      {mounted && (
+        <model-viewer
+          id="ar-viewer"
+          src="/assets/makieta_3d/wiata_makieta.glb"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          style={{ position: 'absolute', width: 0, height: 0, opacity: 0, pointerEvents: 'none' }}
+        />
+      )}
 
       {/* HIDDEN TRIGGERS FOR VERGE3D (PARENT DOC LISTENERS) */}
       <div style={{ display: 'none' }} aria-hidden="true">
