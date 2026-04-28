@@ -17,8 +17,8 @@
   },
   "navigation": {
     "header": {
-      "domSystem": "Dom system",
-      "osiedleSystem": "Osiedle system",
+      "domSystem": "Sistema casa",
+      "osiedleSystem": "Sistema residenziale",
       "shop": "Negozio",
       "partnerZone": "Area Partner",
       "contact": "Contatti",
@@ -44,12 +44,12 @@
       },
       "promos": {
         "checkAlso": "Controlla anche:",
-        "trashSheltersTitle": "Pensiline e shelter per rifiuti",
+        "trashSheltersTitle": "Ricoveri e tettoie per rifiuti",
         "trashSheltersDesc": "Conserva i rifiuti con classe.",
-        "greenSheltersTitle": "Shelter con tetto verde",
+        "greenSheltersTitle": "Ricoveri con tetto verde",
         "greenSheltersDesc": "Un tocco di verde nella foresta di cemento.",
         "ecoMoves": "Le nostre mosse eco",
-        "configureShelter": "Configura il tuo shelter",
+        "configureShelter": "Configura il tuo ricovero",
         "configureGarage": "Configura il tuo garage",
         "configureInShop": "Configura nel negozio",
         "collectiveGaragesTitle": "Garage collettivi - box",
@@ -60,20 +60,20 @@
         "sectionInPrep": "La sezione {name} è attualmente in preparazione."
       },
       "configuratorPromo": {
-        "title": "Configura la tua pensilina"
+        "title": "Configura la tua tettoia"
       },
       "blog": {
         "articles": "Articoli del blog",
         "fromBlog": "Articolo dal blog",
         "readMore": "Leggi l'articolo",
         "titles": {
-          "ecoTrash": "Uno shelter per i contenitori dei rifiuti può essere ecologico?",
-          "trashDistance": "Regole riguardanti la distanza dei rifiuti dall'edificio",
-          "investInDoors": "Vale la pena investire in porte per cantine e quali scegliere?",
+          "ecoTrash": "Un ricovero per i contenitori dei rifiuti può essere ecosostenibile?",
+          "trashDistance": "Regole riguardanti la distanza del ricovero rifiuti dall'edificio",
+          "investInDoors": "Vale la pena investire in porte per cantina e quali scegliere?",
           "garageOrganization": "Come organizzare in modo ottimale un box garage in un condominio?",
           "partitionPlanning": "Principi di pianificazione delle recinzioni nell'edilizia moderna",
           "warehouseSafety": "Sicurezza e organizzazione dello spazio nei magazzini",
-          "beforeBuying": "6 cose che vale la pena sapere prima di acquistare un garage in acciaio",
+          "beforeBuying": "6 cose da sapere prima di acquistare un garage in acciaio",
           "howToArrange": "Come arredare il garage: da un semplice magazzino a un'officina di stile",
           "superstrongInvestment": "Perché il garage SuperStrong è un investimento per anni?",
           "superstrongInstall": "Montaggio del garage SuperStrong passo dopo passo",
@@ -109,10 +109,10 @@
         "hinged": "Cancelli a battente",
         "hingedPanel": "Cancelli a battente a pannelli",
         "sectional": "Cancelli sezionali",
-        "singleLeafSteel": "A un'anta - in lamiera",
-        "doubleLeafSteel": "A due ante - in lamiera",
-        "singleLeafPanel": "A un'anta - a pannelli",
-        "doubleLeafPanel": "A due ante - a pannelli"
+        "singleLeafSteel": "A un'anta - lamiera",
+        "doubleLeafSteel": "A due ante - lamiera",
+        "singleLeafPanel": "A un'anta - pannello",
+        "doubleLeafPanel": "A due ante - pannello"
       }
     }
   },
@@ -126,8 +126,8 @@
     "new": "Novità",
     "requestQuote": "Richiedi un preventivo",
     "downloadCatalog": "Scarica il catalogo (PDF)",
-    "productImage": "Foto del prodotto",
-    "noImage": "Nessuna foto"
+    "productImage": "Immagine del prodotto",
+    "noImage": "Immagine non disponibile"
   },
   "features": {
     "title": "Informazioni principali."
@@ -257,18 +257,18 @@
     "features": {
       "magnets": {
         "title": "Magneti al neodimio",
-        "desc": "montati sui lati del lembo"
+        "desc": "montati sui lati dello sportello"
       },
       "handle": {
         "title": "Impugnatura in tessuto",
-        "desc": "che facilita l'apertura"
+        "desc": "per facilitare l'apertura"
       },
       "tin": {
         "title": "Zincata",
-        "desc": "copertura"
+        "desc": "sportello"
       },
       "hinges": {
-        "title": "Cerniere avvitate",
+        "title": "Cerniere avvitabili",
         "desc": "che garantiscono la durata"
       },
       "bends": {
@@ -281,34 +281,34 @@
       }
     },
     "headline": "Resistenza ciclistica.",
-    "description": "La struttura della tettoia per biciclette è stata progettata per la massima resistenza e durata. L'elemento di rinforzo chiave sono i triangoli proprietari collegati a profili a C, sviluppati e prodotti internamente. Questa soluzione assicura un'eccezionale rigidità e stabilità dei singoli componenti del coperchio. Le pareti della tettoia sono a loro volta collegate tramite triangoli regolabili, che consentono un adattamento e un montaggio precisi. Un ulteriore rinforzo è fornito dagli angoli in acciaio, tagliati con macchine CNC, che non solo aumentano la rigidità delle pareti, ma proteggono in modo permanente tutte le connessioni. Si tratta di un approccio innovativo che garantisce l'affidabilità per anni."
+    "description": "La struttura della tettoia per biciclette è stata progettata per la massima resistenza e durata. L'elemento di rinforzo chiave sono i triangoli proprietari collegati a profili a C, sviluppati e prodotti internamente. Questa soluzione garantisce un'eccezionale rigidità e stabilità dei singoli componenti del coperchio. Le pareti della tettoia sono a loro volta collegate tramite triangoli regolabili, che consentono un adattamento e un montaggio precisi. Un ulteriore rinforzo è fornito dagli angoli in acciaio, tagliati con macchine CNC, che non solo aumentano la rigidità delle pareti, ma proteggono in modo permanente tutti i collegamenti. Si tratta di un approccio innovativo che garantisce l'affidabilità per anni."
   },
   "threeDShowcase": {
-    "title": "Scopri alcuni dettagli in 3D",
-    "button": "Vedi da vicino",
+    "title": "Scopri alcuni punti di forza in 3D",
+    "button": "Guarda da vicino",
     "resetTooltip": "Ripristina vista",
     "modelAlt": "Tettoia in 3D",
     "arButton": "Mostra nel tuo giardino (AR)",
     "tabs": {
       "pianoHinge": {
         "label": "Cerniera a pianoforte",
-        "description": "Fissata al coperchio tramite piccole viti densamente distanziate, questo elemento garantisce un funzionamento silenzioso, affidabile e una lunga durata del coperchio. Grazie al posizionamento accurato delle viti, il coperchio opera in modo fluido e silenzioso, assicurando al contempo durata e stabilità per molti anni di utilizzo."
+        "description": "Fissato al coperchio tramite piccole viti densamente distribuite, questo elemento garantisce un funzionamento silenzioso, affidabile e una lunga durata del coperchio. Grazie al posizionamento accurato delle viti, il coperchio scorre in modo fluido e silenzioso, assicurando al contempo durata e stabilità per molti anni di utilizzo."
       },
       "reinforcedCorners": {
         "label": "Angoli rinforzati",
-        "description": "I rinforzi aggiuntivi negli angoli della struttura assicurano un'eccezionale rigidità e resistenza alle deformazioni. Si tratta di un elemento fondamentale in caso di utilizzo intensivo della tettoia, che impedisce il \"movimento\" del materiale e mantiene la geometria per decenni."
+        "description": "I rinforzi aggiuntivi negli angoli della struttura assicurano un'eccezionale rigidità e resistenza alle deformazioni. Questo è un elemento fondamentale in caso di utilizzo intensivo della tettoia, prevenendo il \"movimento\" del materiale e mantenendo la geometria per decenni."
       },
       "locking": {
-        "label": "Chiusura a chiave",
-        "description": "Abbiamo utilizzato una serratura a cilindro con chiusura multipunto, che assicura il massimo livello di sicurezza per la tua bicicletta. Questo sistema è resistente alle condizioni atmosferiche e ai tentativi di scasso, offrendoti totale tranquillità."
+        "label": "Chiusura con chiave",
+        "description": "Abbiamo utilizzato una serratura a cilindro con chiusura multipunto, che garantisce il massimo livello di sicurezza per la tua bicicletta. Questo sistema è resistente agli agenti atmosferici e ai tentativi di scasso, offrendoti totale tranquillità."
       },
       "stopPoints": {
         "label": "Sistema innovativo con punti STOP",
-        "description": "Parurti speciali e un sistema di frenata idraulica del coperchio prevengono urti violenti durante la chiusura. I punti STOP consentono di manovrare il coperchio in sicurezza senza rischio di schiacciarsi le dita o danneggiare la scocca."
+        "description": "Parurti speciali e un sistema di frenata idraulica del coperchio prevengono urti improvvisi durante la chiusura. I punti STOP consentono di manovrare il coperchio in sicurezza, senza rischio di schiacciarsi le dita o danneggiare la scocca."
       },
       "thresholdHandle": {
         "label": "Soglia con maniglia in tessuto",
-        "description": "La soglia ergonomica dotata di maniglia in tessuto facilita l'inserimento della bicicletta all'interno della tettoia. La maniglia assicura una presa sicura anche con i guanti, mentre la struttura della soglia elimina l'ostacolo per le ruote della bicicletta."
+        "description": "La soglia ergonomica dotata di maniglia in tessuto facilita l'inserimento della bicicletta all'interno della tettoia. La maniglia assicura una presa salda anche con i guanti, mentre la struttura della soglia elimina l'ostacolo per le ruote della bicicletta."
       }
     }
   },
@@ -317,7 +317,7 @@
     "items": {
       "item1": {
         "title": "Deposito in acciaio per biciclette",
-        "description": "Custodisci le tue biciclette in sicurezza in una tettoia in acciaio di produzione polacca."
+        "description": "Riponi le tue biciclette in sicurezza in una tettoia in acciaio di un produttore polacco."
       },
       "item2": {
         "title": "Tettoia in acciaio per accessori da giardino",
@@ -325,7 +325,7 @@
       },
       "item3": {
         "title": "Tettoia in acciaio per articoli SPA",
-        "description": "Custodisci asciugamani, accappatoi e attrezzature per la pulizia della jacuzzi."
+        "description": "Riponi asciugamani, accappatoi e attrezzatura per la pulizia della jacuzzi."
       }
     }
   }

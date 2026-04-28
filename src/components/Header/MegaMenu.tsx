@@ -501,7 +501,7 @@ export default function MegaMenu({ type, onClose }: MegaMenuProps) {
                 <div className="w-12 h-12 rounded-full border-2 border-gray-100 flex items-center justify-center opacity-50">
                   <span className="text-[20px]">🛠️</span>
                 </div>
-                <span>{t('promos.sectionInPrep', { name: tabs.find(t => t.id === activeTab)?.label })}</span>
+                <span>{t('promos.sectionInPrep', { name: tabs.find(t => t.id === activeTab)?.label || '' })}</span>
               </div>
             </div>
           )}

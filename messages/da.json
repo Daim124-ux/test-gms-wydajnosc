@@ -44,40 +44,40 @@
       },
       "promos": {
         "checkAlso": "Tjek også:",
-        "trashSheltersTitle": "Affaldsskur og overdækninger",
+        "trashSheltersTitle": "Affaldsskure og overdækninger",
         "trashSheltersDesc": "Opbevar også affald med stil.",
         "greenSheltersTitle": "Skure med grønt tag",
         "greenSheltersDesc": "Et grønt touch i betonjunglen.",
         "ecoMoves": "Vores øko-tiltag",
         "configureShelter": "Konfigurer dit skur",
         "configureGarage": "Konfigurer din garage",
-        "configureInShop": "Konfigurer i butikken",
-        "collectiveGaragesTitle": "Kollektive garager - bokse",
+        "configureInShop": "Konfigurer i shoppen",
+        "collectiveGaragesTitle": "Fællesgarage - bokse",
         "collectiveGaragesDesc": "Pålidelig kvalitet i din boks.",
-        "partitionWallsTitle": "Skillevægge og indhegninger",
+        "partitionWallsTitle": "Skillevægge og afspærringer",
         "watchTest": "Se SuperStrong-testen",
         "nanoCover": "NANO-{num} beskyttelse",
         "sectionInPrep": "Sektionen {name} er i øjeblikket under forberedelse."
       },
       "configuratorPromo": {
-        "title": "Konfigurer din overdækning"
+        "title": "Konfigurer dit skur"
       },
       "blog": {
-        "articles": "Blogartikler",
+        "articles": "Blogindlæg",
         "fromBlog": "Artikel fra bloggen",
         "readMore": "Læs artiklen",
         "titles": {
           "ecoTrash": "Kan et affaldsskur være miljøvenligt?",
-          "trashDistance": "Regler for afstand fra affaldsbeholdere til bygninger",
+          "trashDistance": "Regler for afstand mellem affaldscontainer og bygning",
           "investInDoors": "Er det værd at investere i kælderdøre, og hvilke skal man vælge?",
-          "garageOrganization": "Hvordan udnytter man bedst en garageboks i en lejlighedsejendom?",
-          "partitionPlanning": "Principper for planlægning af indhegninger i moderne byggeri",
+          "garageOrganization": "Hvordan optimerer man pladsen i en garageboks i en etageejendom?",
+          "partitionPlanning": "Principper for planlægning af afspærringer i moderne byggeri",
           "warehouseSafety": "Sikkerhed og pladsoptimering i lagerhaller",
           "beforeBuying": "6 ting, du bør vide, før du køber en stålgarage",
-          "howToArrange": "Hvordan man indretter sin garage: fra et simpelt lager til et stilfuldt værksted",
-          "superstrongInvestment": "Hvorfor er SuperStrong-garagen en investering for fremtiden?",
+          "howToArrange": "Sådan indretter du din garage: fra et simpelt lager til et stilfuldt værksted",
+          "superstrongInvestment": "Hvorfor er en SuperStrong-garage en investering for fremtiden?",
           "superstrongInstall": "Montering af SuperStrong-garage trin for trin",
-          "motoGarage": "Skab den perfekte garage til motorcykler: Trin-for-trin guide",
+          "motoGarage": "Skab den perfekte motorcykelgarage: Trin-for-trin guide",
           "bikeSecurity": "Hvordan sikrer man cykler mod tyveri og vejr?"
         }
       },
@@ -182,7 +182,7 @@
       "height": "Højde",
       "width": "Bredde",
       "depth": "Dybde",
-      "drawingAlt": "Dimensioner for cykelskur - teknisk tegning"
+      "drawingAlt": "Mål for cykeloverdækning - teknisk tegning"
     },
     "nav": {
       "priceFrom": "Fra 12 999 zł"
@@ -248,9 +248,9 @@
     "close": "Luk",
     "chips": {
       "summary": "Opsummer siden",
-      "summaryPrompt": "Lav et kort resumé (3-5 punkter) af indholdet på denne underside",
+      "summaryPrompt": "Forbered et kort resumé (3-5 punkter) af, hvad der findes på denne underside",
       "specs": "Tekniske specifikationer",
-      "specsPrompt": "Udtræk den tekniske specifikation fra indholdet på denne side eller fortæl om de vigtigste tekniske detaljer"
+      "specsPrompt": "Udtræk de tekniske specifikationer fra indholdet på denne side, eller fortæl om de vigtigste tekniske detaljer"
     }
   },
   "thresholdGrid": {
@@ -277,38 +277,38 @@
       },
       "angle": {
         "title": "Profileret vinkel",
-        "desc": "for lettere indkørsel"
+        "desc": "for lettere adgang"
       }
     },
     "headline": "Cykelstærk holdbarhed.",
-    "description": "Konstruktionen af cykeludhænget er designet med henblik på maksimal styrke og holdbarhed. Et centralt forstærkende element er de proprietære trekanter forbundet med U-profiler, som er udviklet og produceret internt. Denne løsning sikrer en ekstraordinær stivhed og stabilitet af klappens enkelte komponenter. Væggene i udhænget er forbundet via justerbare trekanter, hvilket muliggør præcis tilpasning og montering. Yderligere forstærkning gives af stålhjørner, skåret på CNC-maskiner, som ikke kun øger væggenes stivhed, men også sikrer alle samlinger permanent. Dette er en innovativ tilgang, der garanterer pålidelighed i årevis."
+    "description": "Cykeludhuset er designet med henblik på maksimal styrke og holdbarhed. Et centralt forstærkende element er de proprietære trekanter forbundet med C-profiler, som er udviklet og produceret internt. Denne løsning sikrer ekstraordinær stivhed og stabilitet for de enkelte komponenter af klappen. Væggene i udhuset er forbundet via justerbare trekanter, hvilket muliggør præcis tilpasning og montering. Yderligere forstærkning gives af stålvinkler, udskåret med CNC-maskiner, som ikke kun øger væggenes stivhed, men også sikrer alle samlinger permanent. Dette er en innovativ tilgang, der garanterer pålidelighed i årevis."
   },
   "threeDShowcase": {
-    "title": "Se nogle af højdepunkterne i 3D",
+    "title": "Se nogle højdepunkter i 3D",
     "button": "Se tæt på",
     "resetTooltip": "Nulstil visning",
-    "modelAlt": "Udhæng i 3D",
+    "modelAlt": "Udhus i 3D",
     "arButton": "Vis i din have (AR)",
     "tabs": {
       "pianoHinge": {
         "label": "Klaverhængsel",
-        "description": "Dette element er monteret på klappen med små, tætsiddende skruer, hvilket garanterer en støjsvag og pålidelig drift samt lang levetid for klappen. Takket være den omhyggelige placering af skruerne fungerer klappen jævnt og lydløst, samtidig med at den sikrer holdbarhed og stabilitet gennem mange års brug."
+        "description": "Fastgjort til klappen med små, tætsiddende skruer, garanterer dette element en støjsvag og pålidelig funktion samt lang levetid for klappen. Takket være den omhyggelige placering af skruerne fungerer klappen jævnt og lydløst, samtidig med at den sikrer holdbarhed og stabilitet gennem mange års brug."
       },
       "reinforcedCorners": {
         "label": "Forstærkede hjørner",
-        "description": "Ekstra forstærkninger i konstruktionens hjørner sikrer ekstraordinær stivhed og modstand mod deformation. Dette er et afgørende element ved intensiv brug af udhænget, da det forhindrer materialet i at 'arbejde' og bevarer geometrien i årtier."
+        "description": "Yderligere forstærkninger i konstruktionens hjørner sikrer ekstraordinær stivhed og modstandsdygtighed over for deformation. Dette er et afgørende element ved intensiv brug af udhuset, som forhindrer materialet i at \"arbejde\" og bevarer geometrien i årtier."
       },
       "locking": {
         "label": "Låsning med nøgle",
-        "description": "Vi har anvendt en cylinderlås med flerpunktslåsning, som sikrer det højeste sikkerhedsniveau for din cykel. Dette system er modstandsdygtigt over for vejrforhold og forsøg på opbrud, hvilket giver dig fuldstændig ro i sindet."
+        "description": "Vi har anvendt en cylinderlås med flerpunktslåsning, som sikrer det højeste niveau af sikkerhed for din cykel. Dette system er modstandsdygtigt over for vejrforhold og forsøg på opbrydning, hvilket giver dig fuldstændig ro i sindet."
       },
       "stopPoints": {
         "label": "Innovativt system med STOP-punkter",
-        "description": "Specielle stopklodser og et hydraulisk bremsesystem til klappen forhindrer hårde stød ved lukning. STOP-punkterne gør det muligt at betjene klappen sikkert uden risiko for at klemme fingrene eller beskadige kabinettet."
+        "description": "Specielle stoppere og et hydraulisk bremsesystem til klappen forhindrer voldsomme slag ved lukning. STOP-punkterne gør det muligt at betjene klappen sikkert uden risiko for at klemme fingrene eller beskadige kabinettet."
       },
       "thresholdHandle": {
         "label": "Tærskel med stofgreb",
-        "description": "En ergonomisk tærskel udstyret med et stofgreb gør det lettere at føre cyklen ind i udhænget. Grebet sikrer et fast hold, selv med handsker, og tærsklens design minimerer forhindringen for cyklens hjul."
+        "description": "Den ergonomiske tærskel udstyret med et stofgreb gør det lettere at føre cyklen ind i udhuset. Grebet sikrer et fast hold, selv med handsker, og tærsklens design minimerer forhindringen for cykelhjulene."
       }
     }
   },
@@ -317,14 +317,14 @@
     "items": {
       "item1": {
         "title": "Stålskur til cykler",
-        "description": "Opbevar dine cykler sikkert i et ståludhæng fra en polsk producent."
+        "description": "Opbevar dine cykler sikkert i et ståludhus fra en polsk producent."
       },
       "item2": {
-        "title": "Ståludhæng til haveudstyr",
-        "description": "Ståludhæng til haveudstyr."
+        "title": "Ståludhus til havetilbehør",
+        "description": "Ståludhus til havetilbehør."
       },
       "item3": {
-        "title": "Ståludhæng til SPA-ting",
+        "title": "Ståludhus til SPA-udstyr",
         "description": "Opbevar håndklæder, badekåber og udstyr til rengøring af jacuzzi."
       }
     }
