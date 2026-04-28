@@ -284,6 +284,7 @@
     "description": "La struttura della tettoia per biciclette è stata progettata per la massima resistenza e durata. L'elemento di rinforzo chiave sono i triangoli proprietari collegati a profili a C, sviluppati e prodotti internamente. Questa soluzione garantisce un'eccezionale rigidità e stabilità dei singoli componenti del coperchio. Le pareti della tettoia sono, a loro volta, collegate tramite triangoli regolabili, che consentono un adattamento e un montaggio precisi. Un ulteriore rinforzo è dato dagli angolari in acciaio, tagliati a macchina CNC, che non solo aumentano la rigidità delle pareti, ma fissano in modo permanente tutti i collegamenti. Si tratta di un approccio innovativo che garantisce affidabilità per anni."
   },
   "threeDShowcase": {
+    "close": "Chiudi",
     "title": "Scopri alcune caratteristiche in 3D",
     "button": "Guarda da vicino",
     "resetTooltip": "Ripristina vista",

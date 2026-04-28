@@ -284,6 +284,7 @@
     "description": "Konstrukce přístřešku pro kola byla navržena s ohledem na maximální pevnost a odolnost. Klíčovým zpevňujícím prvkem jsou autorské trojúhelníky spojené s U-profily, které byly vyvinuty a vyrobeny interně. Toto řešení zajišťuje mimořádnou tuhost a stabilitu jednotlivých komponentů klopy. Stěny přístřešku jsou následně spojeny pomocí regulovatelných trojúhelníků, což umožňuje precizní přizpůsobení a montáž. Další zpevnění zajišťují ocelové rohy vyřezávané na CNC strojích, které nejen zvyšují tuhost stěn, ale také trvale zabezpečují všechna spojení. Je to inovativní přístup, který zaručuje spolehlivost na dlouhá léta."
   },
   "threeDShowcase": {
+    "close": "Zavřít",
     "title": "Podívejte se na několik předností v 3D",
     "button": "Podívejte se zblízka",
     "resetTooltip": "Resetovat zobrazení",

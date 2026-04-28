@@ -284,6 +284,7 @@
     "description": "Konštrukcia prístrešku na bicykle bola navrhnutá s ohľadom na maximálnu odolnosť a trvácnosť. Kľúčovým posilňujúcim prvkom sú autorské trojuholníky spojené s C-profilmi, ktoré boli vyvinuté a vyrobené interné. Toto riešenie zabezpečuje mimoriadnu tuhosť a stabilitu jednotlivých komponentov klopy. Steny prístrešku sú zase spojené pomocou nastaviteľných trojuholníkov, čo umožňuje presné prispôsobenie a montáž. Dodatočné posilnenie zabezpečujú oceľové rohy, vyrezané na CNC strojoch, ktoré nielen zvyšujú tuhosť stien, ale taktiež trvalo zabezpečujú všetky spojenia. Je to inovatívny prístup, ktorý zaručuje spoľahlivosť na roky."
   },
   "threeDShowcase": {
+    "close": "Zatvoriť",
     "title": "Pozrite si niekoľko zaujatostí v 3D",
     "button": "Pozrieť zblízka",
     "resetTooltip": "Resetovať zobrazenie",

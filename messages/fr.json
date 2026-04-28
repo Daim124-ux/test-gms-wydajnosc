@@ -284,6 +284,7 @@
     "description": "La conception de l'abri vélo a été pensée pour une résistance et une durabilité maximales. L'élément de renfort clé réside dans les triangles exclusifs combinés à des profilés en U, développés et produits en interne. Cette solution assure une rigidité et une stabilité exceptionnelles des différents composants du rabat. Les parois de l'abri sont, quant à elles, reliées par des triangles réglables, permettant un ajustement et un montage précis. Un renfort supplémentaire est apporté par des coins en acier, découpés sur machines CNC, qui augmentent non seulement la rigidité des parois, mais sécurisent également durablement toutes les connexions. C'est une approche innovante qui garantit une fiabilité pendant des années."
   },
   "threeDShowcase": {
+    "close": "Fermer",
     "title": "Découvrez quelques points forts en 3D",
     "button": "Voir de près",
     "resetTooltip": "Réinitialiser la vue",

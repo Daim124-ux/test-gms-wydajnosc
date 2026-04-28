@@ -11,7 +11,9 @@
     "blogArticles": "Bloggartiklar",
     "fromBlog": "Artikel från bloggen",
     "shop": "Butik",
-    "goToShop": "Gå till butiken"
+    "goToShop": "Gå till butiken",
+    "productPage": "Produktsida",
+    "watchVideo": "Se video"
   },
   "navigation": {
     "header": {
@@ -40,6 +42,45 @@
         "partitionWalls": "Avskiljningsväggar",
         "bikeCages": "Cykelboxar"
       },
+      "promos": {
+        "checkAlso": "Kolla även in:",
+        "trashSheltersTitle": "Sopskjul och avfallsskydd",
+        "trashSheltersDesc": "Förvara även avfallet med klass.",
+        "greenSheltersTitle": "Sopskjul med grönt tak",
+        "greenSheltersDesc": "En grön accent i betongdjungeln.",
+        "ecoMoves": "Våra eko-initiativ",
+        "configureShelter": "Konfigurera ditt skjul",
+        "configureGarage": "Konfigurera ditt garage",
+        "configureInShop": "Konfigurera i butiken",
+        "collectiveGaragesTitle": "Gemensamma garage - boxar",
+        "collectiveGaragesDesc": "Pålitlig kvalitet i din box.",
+        "partitionWallsTitle": "Innerväggar och avskiljningar",
+        "watchTest": "Se testet av SuperStrong",
+        "nanoCover": "NANO-skydd {num}",
+        "sectionInPrep": "Sektionen {name} är för närvarande under förberedelse."
+      },
+      "configuratorPromo": {
+        "title": "Konfigurera ditt skjul"
+      },
+      "blog": {
+        "articles": "Bloggartiklar",
+        "fromBlog": "Artikel från bloggen",
+        "readMore": "Läs artikeln",
+        "titles": {
+          "ecoTrash": "Kan ett sopskjul för avfallskärl vara miljövänligt?",
+          "trashDistance": "Regler för avstånd mellan sopskjul och byggnad",
+          "investInDoors": "Är det värt att investera i källardörrar och vilka ska man välja?",
+          "garageOrganization": "Hur optimerar man utrymmet i ett garagebox i ett flerbostadshus?",
+          "partitionPlanning": "Principer för planering av avskiljningar i modernt byggande",
+          "warehouseSafety": "Säkerhet och rumsorganisering i lagerhallar",
+          "beforeBuying": "6 saker som är bra att veta innan man köper ett stålgarage",
+          "howToArrange": "Hur man inreder ett garage: från ett enkelt förråd till en snygg verkstad",
+          "superstrongInvestment": "Varför är SuperStrong-garaget en investering för många år?",
+          "superstrongInstall": "Montering av SuperStrong-garage steg för steg",
+          "motoGarage": "Skapa det perfekta motorcykelgaraget: Steg-för-steg-guide",
+          "bikeSecurity": "Hur skyddar man cyklar mot stöld och väder?"
+        }
+      },
       "moreLinks": {
         "about": "Om oss",
         "career": "Karriär",
@@ -67,7 +108,11 @@
         "tilt": "Uppfällbara garageportar",
         "hinged": "Slagportar",
         "hingedPanel": "Panel-slagportar",
-        "sectional": "Sektionsportar"
+        "sectional": "Sektionsportar",
+        "singleLeafSteel": "Enbladiga - plåt",
+        "doubleLeafSteel": "Tvåbladiga - plåt",
+        "singleLeafPanel": "Enbladiga - panel",
+        "doubleLeafPanel": "Tvåbladiga - panel"
       }
     }
   },
@@ -76,6 +121,13 @@
     "subtitle": "Vår förvarings-rouleur.",
     "newCategory": "Helt ny kategori",
     "cinematicDesc": "Lättare, starkare, perfekt i varje millimeter. Riktigt stål som inget vindmotstånd kan besegra."
+  },
+  "productHero": {
+    "new": "Nyhet",
+    "requestQuote": "Begär offert",
+    "downloadCatalog": "Ladda ner katalog (PDF)",
+    "productImage": "Produktbild",
+    "noImage": "Ingen bild"
   },
   "features": {
     "title": "Viktigaste informationen."
@@ -129,7 +181,8 @@
       "title": "Mått för cykelöverbyggnad",
       "height": "Höjd",
       "width": "Bredd",
-      "depth": "Djup"
+      "depth": "Djup",
+      "drawingAlt": "Dimensioner för cykelskjul - teknisk ritning"
     },
     "nav": {
       "priceFrom": "Från 12 999 zł"
@@ -198,6 +251,83 @@
       "summaryPrompt": "Skapa en kort sammanfattning (3–5 punkter) av innehållet på den här undersidan",
       "specs": "Teknisk specifikation",
       "specsPrompt": "Extrahera den tekniska specifikationen från innehållet på den här sidan eller berätta om de viktigaste tekniska detaljerna"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymmagneter",
+        "desc": "monterade på luckans sidor"
+      },
+      "handle": {
+        "title": "Tyghandtag",
+        "desc": "som underlättar öppning"
+      },
+      "tin": {
+        "title": "Galvaniserad",
+        "desc": "lucka"
+      },
+      "hinges": {
+        "title": "Skruvbara gångjärn",
+        "desc": "som garanterar hållbarhet"
+      },
+      "bends": {
+        "title": "Förstärkande böjningar",
+        "desc": "som styvar upp tröskeln"
+      },
+      "angle": {
+        "title": "Profilerad vinkel",
+        "desc": "för enklare infart"
+      }
+    },
+    "headline": "Hållbarhet för cyklister.",
+    "description": "Konstruktionen av cykelskjulet är utformad för maximal styrka och hållbarhet. Det viktigaste förstärkningselementet är egenutvecklade trianglar kombinerade med U-profiler, som har utvecklats och tillverkats internt. Denna lösning ger en exceptionell styvhet och stabilitet för luckans enskilda komponenter. Skjulets väggar är i sin tur sammanfogade med hjälp av justerbara trianglar, vilket möjliggör exakt anpassning och montering. Ytterligare förstärkning ges av stålhörn, utskurna med CNC-maskiner, som inte bara ökar väggarnas styvhet utan också permanent säkrar alla anslutningar. Detta är ett innovativt tillvägagångssätt som garanterar tillförlitlighet i många år."
+  },
+  "threeDShowcase": {
+    "close": "Stäng",
+    "title": "Se några utmärkande drag i 3D",
+    "button": "Se på nära håll",
+    "resetTooltip": "Återställ vy",
+    "modelAlt": "Cykelförråd i 3D",
+    "arButton": "Visa i din trädgård (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Pianogångjärn",
+        "description": "Monterat på locket med små, tätt placerade skruvar, garanterar denna komponent en tyst och pålitlig drift samt lång livslängd för locket. Tack vare den noggranna placeringen av skruvarna fungerar locket smidigt och ljudlöst, samtidigt som hållbarhet och stabilitet säkerställs under många års användning."
+      },
+      "reinforcedCorners": {
+        "label": "Förstärkta hörn",
+        "description": "Extra förstärkningar i konstruktionens hörn ger exceptionell styvhet och motståndskraft mot deformation. Detta är ett viktigt element vid intensiv användning av förrådet, vilket förhindrar att materialet \"rör sig\" och bibehåller geometrin i årtionden."
+      },
+      "locking": {
+        "label": "Låsning med nyckel",
+        "description": "Vi har använt ett cylinderlås med flerpunktslåsning, vilket ger högsta möjliga säkerhet för din cykel. Detta system är vädertåligt och motståndskraftigt mot försök till forcering, vilket ger dig full sinnesro."
+      },
+      "stopPoints": {
+        "label": "Innovativt system med STOP-punkter",
+        "description": "Speciella stoppklossar och ett hydrauliskt bromssystem för locket förhindrar kraftiga slag vid stängning. STOP-punkterna gör det möjligt att hantera locket säkert utan risk för att klämma fingrarna eller skada höljet."
+      },
+      "thresholdHandle": {
+        "label": "Tröskel med tyghandtag",
+        "description": "En ergonomisk tröskel utrustad med ett tyghandtag underlättar att rulla in cykeln i förrådet. Handtaget ger ett säkert grepp även med handskar, och tröskelns konstruktion minimerar hindret för cykelhjulen."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Inte bara för cyklar",
+    "items": {
+      "item1": {
+        "title": "Stålförråd för cyklar",
+        "description": "Förvara dina cyklar säkert i ett stålförråd från en polsk tillverkare."
+      },
+      "item2": {
+        "title": "Stålförråd för trädgårdstillbehör",
+        "description": "Stålförråd för trädgårdstillbehör."
+      },
+      "item3": {
+        "title": "Stålförråd för SPA-tillbehör",
+        "description": "Förvara handdukar, badrockar och utrustning för rengöring av jacuzzi."
+      }
     }
   }
 }

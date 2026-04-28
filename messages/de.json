@@ -284,6 +284,7 @@
     "description": "Die Konstruktion des Fahrradunterstands wurde auf maximale Belastbarkeit und Langlebigkeit ausgelegt. Ein wesentliches verstärkendes Element sind die eigenentwickelten Dreiecke in Kombination mit C-Profilen, die intern entwickelt und gefertigt wurden. Diese Lösung gewährleistet eine außergewöhnliche Steifigkeit und Stabilität der einzelnen Klappenkomponenten. Die Wände des Unterstands sind ihrerseits durch verstellbare Dreiecke verbunden, was eine präzise Anpassung und Montage ermöglicht. Zusätzliche Verstärkung bieten CNC-geschnittene Stahlecken, die nicht nur die Steifigkeit der Wände erhöhen, sondern auch alle Verbindungen dauerhaft sichern. Dies ist ein innovativer Ansatz, der Zuverlässigkeit über Jahre hinweg garantiert."
   },
   "threeDShowcase": {
+    "close": "Schließen",
     "title": "Einige Highlights in 3D ansehen",
     "button": "Aus der Nähe betrachten",
     "resetTooltip": "Ansicht zurücksetzen",

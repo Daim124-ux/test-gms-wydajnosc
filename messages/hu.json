@@ -284,6 +284,7 @@
     "description": "A biciklis tároló szerkezete a maximális szívósság és tartósságra lett tervezve. A kulcsfontosságú erősítő elem a saját fejlesztésű, U-profilokkal kombinált háromszögek, amelyeket házon belül fejlesztettünk és gyártottunk. Ez a megoldás rendkívüli merevséget és stabilitást biztosít a fedél egyes összetevői számára. A tároló falaiMeanwhile állítható háromszögekkel vannak összekötve, ami lehetővé teszi a pontos illeszkedést és összeszerelést. További erősítést nyújtanak a CNC gépekkel kivágott acél sarokvasak, amelyek nemcsak növelik a falak merevségét, hanem tartósan rögzítik az összes kapcsolódási pontot. Ez egy innovatív megközelítés, amely hosszú évekig garantálja a megbízhatóságot."
   },
   "threeDShowcase": {
+    "close": "Bezárás",
     "title": "Nézze meg a kiemelkedő jellemzőket 3D-ben",
     "button": "Nézze közelből",
     "resetTooltip": "Nézet visszaállítása",

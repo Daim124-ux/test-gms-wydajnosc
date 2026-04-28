@@ -44,40 +44,40 @@
       },
       "promos": {
         "checkAlso": "Sjekk også:",
-        "trashSheltersTitle": "Søppelhus og skjerming",
-        "trashSheltersDesc": "Oppbevar også avfall med stil.",
+        "trashSheltersTitle": "Søppelhus og søppelskur",
+        "trashSheltersDesc": "Oppbevar avfall med stil.",
         "greenSheltersTitle": "Søppelhus med grønt tak",
-        "greenSheltersDesc": "Et grønt innslag i betongjungelen.",
+        "greenSheltersDesc": "Et grønt innslag i betongskogen.",
         "ecoMoves": "Våre øko-tiltak",
         "configureShelter": "Konfigurer ditt søppelhus",
         "configureGarage": "Konfigurer din garasje",
         "configureInShop": "Konfigurer i butikken",
         "collectiveGaragesTitle": "Fellesgarasjer - garasjebokser",
-        "collectiveGaragesDesc": "Pålitelig kvalitet i din boks.",
-        "partitionWallsTitle": "Skillevegger og avskjerming",
-        "watchTest": "Se SuperStrong-testen",
-        "nanoCover": "NANO-deksel {num}",
+        "collectiveGaragesDesc": "Pålitelig kvalitet i din garasjeboks.",
+        "partitionWallsTitle": "Skillevegger og inngjerdinger",
+        "watchTest": "Se testen av SuperStrong",
+        "nanoCover": "NANO-beskyttelse {num}",
         "sectionInPrep": "Seksjonen {name} er for øyeblikket under forberedelse."
       },
       "configuratorPromo": {
-        "title": "Konfigurer ditt overbygg"
+        "title": "Konfigurer ditt skur"
       },
       "blog": {
         "articles": "Bloggartikler",
         "fromBlog": "Artikkel fra bloggen",
         "readMore": "Les artikkelen",
         "titles": {
-          "ecoTrash": "Kan et søppelhus være miljøvennlig?",
-          "trashDistance": "Regler for avstand mellom søppelstasjon og bygning",
-          "investInDoors": "Lønner det seg å investere i kjellerdører, og hvilke bør man velge?",
-          "garageOrganization": "Hvordan optimalisere bruken av en garasjeboks i et leilighetskompleks?",
-          "partitionPlanning": "Prinsipper for planlegging av avskjerming i moderne bygg",
-          "warehouseSafety": "Sikkerhet og plassorganisering i lagerhaller",
+          "ecoTrash": "Kan et søppelhus for avfallsbeholdere være miljøvennlig?",
+          "trashDistance": "Regler for avstand mellom søppelplass og bygning",
+          "investInDoors": "Er det verdt å investere i kjellerdører, og hvilke bør man velge?",
+          "garageOrganization": "Hvordan organisere en garasjeboks i et leilighetskompleks optimalt?",
+          "partitionPlanning": "Prinsipper for planlegging av inngjerdinger i moderne bygg",
+          "warehouseSafety": "Sikkerhet og organisering av plass i lagerhaller",
           "beforeBuying": "6 ting du bør vite før du kjøper en stålgarasje",
           "howToArrange": "Hvordan innrede garasjen: fra et enkelt lager til et stilig verksted",
           "superstrongInvestment": "Hvorfor er SuperStrong-garasjen en investering for mange år?",
-          "superstrongInstall": "Montering av SuperStrong-garasje trinn for trinn",
-          "motoGarage": "Lag den perfekte motorsykkelgarasjen: Trinn-for-trinn guide",
+          "superstrongInstall": "Montering av SuperStrong-garasje steg for steg",
+          "motoGarage": "Lag den perfekte motorsykkelgarasjen: En steg-for-steg guide",
           "bikeSecurity": "Hvordan sikre sykler mot tyveri og vær?"
         }
       },
@@ -109,10 +109,10 @@
         "hinged": "Svingporter",
         "hingedPanel": "Panel-svingporter",
         "sectional": "Seksjonsport",
-        "singleLeafSteel": "Enfløyet - stål",
-        "doubleLeafSteel": "Tofløyet - stål",
-        "singleLeafPanel": "Enfløyet - panel",
-        "doubleLeafPanel": "Tofløyet - panel"
+        "singleLeafSteel": "Enfløyete - stål",
+        "doubleLeafSteel": "Tofløyete - stål",
+        "singleLeafPanel": "Enfløyete - panel",
+        "doubleLeafPanel": "Tofløyete - panel"
       }
     }
   },
@@ -272,7 +272,7 @@
         "desc": "som garanterer holdbarhet"
       },
       "bends": {
-        "title": "Forsterkende bøyer",
+        "title": "Forsterkende bøyninger",
         "desc": "som stiver av terskelen"
       },
       "angle": {
@@ -281,34 +281,35 @@
       }
     },
     "headline": "Sykkelstyrke.",
-    "description": "Konstruksjonen av sykkelboden er designet med tanke på maksimal styrke og holdbarhet. Det viktigste forsterkende elementet er proprietære trekanter kombinert med C-profiler, som er utviklet og produsert internt. Denne løsningen sikrer eksepsjonell stivhet og stabilitet for de enkelte komponentene i klaffen. Veggene i boden er koblet sammen ved hjelp av justerbare trekanter, noe som muliggjør presis tilpasning og montering. Ytterligere forsterkning gis av stålhjørner, CNC-skåret, som ikke bare øker stivheten i veggene, men også sikrer alle koblinger permanent. Dette er en innovativ tilnærming som garanterer pålitelighet i årevis."
+    "description": "Konstruksjonen av sykkelboden er designet for maksimal styrke og holdbarhet. Et sentralt forsterkende element er de proprietære trekantene kombinert med C-profiler, som er utviklet og produsert internt. Denne løsningen sikrer eksepsjonell stivhet og stabilitet for de enkelte komponentene i klaffen. Veggene i boden er koblet sammen med justerbare trekanter, noe som muliggjør presis tilpasning og montering. Ytterligere forsterkning gis av stålhjørner, utskåret med CNC-maskiner, som ikke bare øker stivheten i veggene, men også sikrer alle koblinger permanent. Dette er en innovativ tilnærming som garanterer pålitelighet i mange år."
   },
   "threeDShowcase": {
+    "close": "Lukk",
     "title": "Se noen høydepunkter i 3D",
     "button": "Se nærmere",
     "resetTooltip": "Nullstill visning",
     "modelAlt": "Sykkelbod i 3D",
-    "arButton": "Vis i din hage (AR)",
+    "arButton": "Vis i hagen din (AR)",
     "tabs": {
       "pianoHinge": {
-        "label": "Pianohengsel",
-        "description": "Montert på lokket med små, tettplasserte skruer, garanterer denne komponenten stillegående og pålitelig drift samt lang levetid for lokket. Takket være den nøyaktige plasseringen av skruene fungerer lokket smidig og lydløst, samtidig som det sikrer holdbarhet og stabilitet i mange års bruk."
+        "label": "Pianomenthengle",
+        "description": "Festet til lokket med små, tett plasserte skruer, garanterer denne komponenten stille og pålitelig drift samt lang levetid for lokket. Takket være den nøye plasseringen av skruene fungerer lokket smidig og lydløst, samtidig som det sikrer holdbarhet og stabilitet over mange års bruk."
       },
       "reinforcedCorners": {
         "label": "Forsterkede hjørner",
-        "description": "Ekstra forsterkninger i hjørnene av konstruksjonen gir eksepsjonell stivhet og motstand mot deformasjon. Dette er et avgjørende element ved intensiv bruk av boden, som forhindrer at materialet \"slår seg\" og opprettholder geometrien i flere tiår."
+        "description": "Ekstra forsterkninger i konstruksjonens hjørner gir eksepsjonell stivhet og motstand mot deformasjon. Dette er et nøkkelelement ved intensiv bruk av boden, som forhindrer at materialet 'slår seg' og opprettholder geometrien i tiår."
       },
       "locking": {
-        "label": "Låses med nøkkel",
-        "description": "Vi har brukt en sylinderlås med flerpunktslåsing, som gir det høyeste sikkerhetsnivået for sykkelen din. Dette systemet er motstandsdyktig mot vær og forsøk på innbrudd, noe som gir deg full trygghet."
+        "label": "Låsing med nøkkel",
+        "description": "Vi har brukt en sylinderlås med flerpunktslåsing som gir det høyeste sikkerhetsnivået for sykkelen din. Dette systemet er motstandsdyktig mot vær og vind samt forsøk på innbrudd, noe som gir deg full trygghet."
       },
       "stopPoints": {
         "label": "Innovativt system med STOPP-punkter",
-        "description": "Spesielle stoppere og et hydraulisk bremsesystem for lokket forhindrer harde støt ved lukking. STOPP-punktene gjør det mulig å operere lokket trygt uten risiko for å klemme fingrene eller skade huset."
+        "description": "Spesielle stoppere og et hydraulisk bremsesystem for lokket forhindrer brå støt ved lukking. STOPP-punktene gjør det mulig å betjene lokket trygt uten risiko for å klemme fingrene eller skade kabinettet."
       },
       "thresholdHandle": {
-        "label": "Terskel med stoffgrep",
-        "description": "En ergonomisk terskel utstyrt med et stoffgrep gjør det lettere å trille sykkelen inn i boden. Grepet gir et sikkert tak selv med hansker, og terskelens konstruksjon minimerer hindringen for sykkelhjulene."
+        "label": "Terskel med stoffhåndtak",
+        "description": "En ergonomisk terskel utstyrt med et stoffhåndtak gjør det lettere å trille sykkelen inn i boden. Håndtaket gir et sikkert grep selv med hansker, og terskelens utforming minimerer hindringen for sykkelhjulene."
       }
     }
   },
@@ -325,7 +326,7 @@
       },
       "item3": {
         "title": "Stålbod for SPA-utstyr",
-        "description": "Oppbevar håndklær, morgenkåper og utstyr for rengjøring av jacuzzi."
+        "description": "Oppbevar håndklær, morgenkåper og utstyr til rengjøring av jacuzzi."
       }
     }
   }

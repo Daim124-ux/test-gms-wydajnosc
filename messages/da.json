@@ -284,6 +284,7 @@
     "description": "Cykeludhuset er designet med henblik på maksimal styrke og holdbarhed. Et centralt forstærkende element er de proprietære trekanter forbundet med C-profiler, som er udviklet og produceret internt. Denne løsning sikrer ekstraordinær stivhed og stabilitet for de enkelte komponenter af klappen. Væggene i udhuset er forbundet via justerbare trekanter, hvilket muliggør præcis tilpasning og montering. Yderligere forstærkning gives af stålvinkler, udskåret med CNC-maskiner, som ikke kun øger væggenes stivhed, men også sikrer alle samlinger permanent. Dette er en innovativ tilgang, der garanterer pålidelighed i årevis."
   },
   "threeDShowcase": {
+    "close": "Luk",
     "title": "Se nogle højdepunkter i 3D",
     "button": "Se tæt på",
     "resetTooltip": "Nulstil visning",

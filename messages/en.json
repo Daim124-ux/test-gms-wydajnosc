@@ -284,6 +284,7 @@
     "description": "The design of the bike shelter was created for maximum strength and durability. The key reinforcing elements are proprietary triangles combined with C-channels, which were developed and manufactured in-house. This solution ensures extraordinary stiffness and stability of the individual flap components. The shelter walls are connected using adjustable triangles, allowing for precise fitting and assembly. Additional reinforcement is provided by CNC-cut steel corners, which not only increase wall stiffness but also permanently secure all connections. This is an innovative approach that guarantees reliability for years to come."
   },
   "threeDShowcase": {
+    "close": "Close",
     "title": "See some highlights in 3D",
     "button": "View up close",
     "resetTooltip": "Reset view",

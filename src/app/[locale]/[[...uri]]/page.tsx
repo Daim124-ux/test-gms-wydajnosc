@@ -6,6 +6,7 @@ import Footer from '@/components/Footer/Footer';
 
 interface CatchAllPageProps {
   params: Promise<{
+    locale: string;
     uri?: string[];
   }>;
 }
@@ -38,21 +39,30 @@ export async function generateMetadata({ params }: CatchAllPageProps) {
 
 export async function generateStaticParams() {
   const allNodes = await getAllSlugs();
+  const locales = ['pl', 'en', 'de', 'fr', 'ua', 'sk', 'cs', 'hu', 'da', 'it', 'nl', 'no', 'sv'];
 
-  if (!allNodes) {
-    return [];
-  }
+  const paths: { locale: string; uri: string[] }[] = [];
 
-  // Dodajemy pusty segment dla strony głównej
-  const params = allNodes.map((node: { uri: string }) => ({
-    uri: node.uri.split('/').filter(Boolean),
-  }));
+  locales.forEach(locale => {
+    // Add home page for each locale
+    paths.push({ locale, uri: [] });
 
-  return [...params, { uri: [] }];
+    // Add all slugs for each locale
+    if (allNodes) {
+      allNodes.forEach((node: { uri: string }) => {
+        paths.push({
+          locale,
+          uri: node.uri.split('/').filter(Boolean),
+        });
+      });
+    }
+  });
+
+  return paths;
 }
 
 export default async function CatchAllPage({ params }: CatchAllPageProps) {
-  const { uri } = await params;
+  const { uri, locale } = await params;
 
   // Składamy uri z powrotem w string, np. "system-dom/wiata-stalowa-na-rowery"
   // Jeśli uri jest puste, szukamy "/" (strony głównej)
