@@ -85,12 +85,12 @@ PRIORYTETYZACJA I PRECYZJA:
     return result.toAIStreamResponse();
   } catch (error: any) {
     console.error('CRITICAL: Chat API Error:', error);
-    
+
     // Zwróć czytelny błąd JSON dla klienta
-    return new Response(JSON.stringify({ 
+    return new Response(JSON.stringify({
       error: 'Wystąpił błąd podczas komunikacji z AI.',
-      details: error.message 
-    }), { 
+      details: error.message
+    }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' }
     });

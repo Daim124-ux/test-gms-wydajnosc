@@ -4,7 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import MegaMenu from './MegaMenu';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
 import './Header.css';
 
 interface Translation {
@@ -19,40 +20,35 @@ interface HeaderProps {
 export default function Header({ translations = [] }: HeaderProps) {
   const pathname = usePathname();
   const router = useRouter();
+  const locale = useLocale();
   
-  // Hardcoded for old codebase
-  const currentLang = 'PL';
+  const languages = [
+    { code: 'pl', name: 'Polska', flag: '🇵🇱' },
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'de', name: 'Deutschland', flag: '🇩🇪' },
+    { code: 'fr', name: 'France', flag: '🇫🇷' },
+    { code: 'ua', name: 'Ukraine', flag: '🇺🇦' },
+    { code: 'sk', name: 'Slovensko', flag: '🇸🇰' },
+    { code: 'cs', name: 'Česko', flag: '🇨🇿' },
+    { code: 'hu', name: 'Magyarország', flag: '🇭🇺' },
+    { code: 'da', name: 'Danmark', flag: '🇩🇰' },
+    { code: 'it', name: 'Italia', flag: '🇮🇹' },
+    { code: 'nl', name: 'Nederland', flag: '🇳🇱' },
+    { code: 'no', name: 'Norge', flag: '🇳🇴' },
+    { code: 'sv', name: 'Sverige', flag: '🇸🇪' }
+  ];
+
+  const currentLangObj = languages.find(l => l.code === locale);
+  const currentLangDisplay = currentLangObj ? currentLangObj.name : 'Polska';
   
   const [activeMenu, setActiveMenu] = useState<'dom' | 'osiedle' | 'wiecej' | null>(null);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
 
-  const languages = [
-    { code: 'PL', name: 'Polski', flag: '🇵🇱', url: '/' },
-    { code: 'EN', name: 'English', flag: '🇬🇧', url: '/en/' },
-    { code: 'DE', name: 'Deutsch', flag: '🇩🇪', url: '/de/' }
-  ];
-
   const handleLangChange = (langCode: string) => {
     setIsLangOpen(false);
-    
-    // 1. Sprawdzamy czy mamy gotowe tłumaczenie z API WordPressa
-    const targetLocale = langCode.toLowerCase();
-    const translation = translations?.find(t => {
-      const tLocale = t.locale.toLowerCase();
-      return tLocale.includes(targetLocale) || targetLocale.includes(tLocale);
-    });
-
-    if (translation && translation.uri) {
-      window.location.href = translation.uri;
-      return;
-    }
-
-    // fallback
-    if (langCode !== 'PL') {
-      window.location.href = `/${targetLocale}/`;
-    }
+    router.replace(pathname, { locale: langCode });
   };
 
   useEffect(() => {
@@ -86,7 +82,7 @@ export default function Header({ translations = [] }: HeaderProps) {
                 className={`lang-current-minimal ${isLangOpen ? 'active' : ''}`}
                 onClick={() => setIsLangOpen(!isLangOpen)}
               >
-                {currentLang}
+                {currentLangDisplay}
               </button>
 
               <AnimatePresence>
@@ -101,12 +97,12 @@ export default function Header({ translations = [] }: HeaderProps) {
                     {languages.map((lang) => (
                       <div 
                         key={lang.code}
-                        className={`lang-option ${currentLang === lang.code ? 'selected' : ''}`}
+                        className={`lang-option ${locale === lang.code ? 'selected' : ''}`}
                         onClick={() => handleLangChange(lang.code)}
                       >
                         <span className="lang-flag">{lang.flag}</span>
                         <span className="lang-name">{lang.name}</span>
-                        {currentLang === lang.code && <span className="lang-check">✓</span>}
+                        {locale === lang.code && <span className="lang-check">✓</span>}
                       </div>
                     ))}
                   </motion.div>

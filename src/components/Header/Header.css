@@ -808,13 +808,13 @@
   border: none;
   padding: 0;
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--text-main);
   cursor: pointer;
   transition: all 0.2s ease;
   line-height: 1;
-  transform: translateY(8px); /* Final desired alignment */
+  transform: translateY(3px); /* Moved up by 5px from 8px */
 }
 
 .lang-current-minimal:hover {

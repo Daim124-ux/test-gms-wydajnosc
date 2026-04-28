@@ -17,13 +17,13 @@ const QUICK_CHIPS = [
 const STORAGE_KEY = 'gms_chat_history';
 
 const AIIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 16 16" 
-    fill="currentColor" 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 16 16"
+    fill="currentColor"
     className={className}
   >
-    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
   </svg>
 );
 
@@ -69,11 +69,11 @@ export default function ChatWidget() {
     if (isOpen) {
       setPageContext(getCurrentPageContext());
     }
-    
+
     const handle3DUpdate = () => {
       if (isOpen) setPageContext(getCurrentPageContext());
     };
-    
+
     window.addEventListener('gms:3d-update', handle3DUpdate);
     return () => window.removeEventListener('gms:3d-update', handle3DUpdate);
   }, [isOpen]);
@@ -105,9 +105,9 @@ export default function ChatWidget() {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, scale: 0.8, y: 100, filter: 'blur(20px)' }}
-            animate={{ 
-              opacity: 1, 
-              scale: isMinimized ? 0 : 1, 
+            animate={{
+              opacity: 1,
+              scale: isMinimized ? 0 : 1,
               y: isMinimized ? 500 : 0,
               filter: isMinimized ? 'blur(20px)' : 'blur(0px)',
               pointerEvents: isMinimized ? 'none' : 'auto'
@@ -131,7 +131,7 @@ export default function ChatWidget() {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <button 
+                <button
                   onClick={() => { setIsOpen(false); setIsMinimized(false); }}
                   className="hover:bg-red-500/20 hover:text-red-500 p-2.5 rounded-full transition-all active:scale-90"
                   title="Zamknij"
@@ -142,13 +142,13 @@ export default function ChatWidget() {
             </div>
 
             {/* Chat Messages */}
-            <div 
+            <div
               ref={scrollRef}
               className="flex-1 overflow-y-auto px-8 space-y-8 custom-scrollbar flex flex-col"
             >
               {messages.length === 0 && (
                 <div className="flex-1 flex items-center justify-center py-20">
-                  <motion.p 
+                  <motion.p
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     className="text-white font-bold text-3xl tracking-tighter text-center px-12 leading-tight"
@@ -159,7 +159,7 @@ export default function ChatWidget() {
               )}
 
               {messages.map((m: Message) => (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   key={m.id}
@@ -171,36 +171,35 @@ export default function ChatWidget() {
                         <AIIcon className="w-5 h-5" />
                       </div>
                     )}
-                    <div className={`p-5 rounded-[24px] text-sm leading-relaxed shadow-sm ${
-                      m.role === 'user' 
-                        ? 'bg-zinc-100 text-zinc-900 rounded-tr-none' 
+                    <div className={`p-5 rounded-[24px] text-sm leading-relaxed shadow-sm ${m.role === 'user'
+                        ? 'bg-zinc-100 text-zinc-900 rounded-tr-none'
                         : 'bg-white/5 text-zinc-100 border border-white/10 rounded-tl-none prose prose-zinc dark:prose-invert prose-sm max-w-none'
-                    }`}>
+                      }`}>
                       {m.role === 'user' ? (
                         m.content
                       ) : (
-                        <ReactMarkdown 
+                        <ReactMarkdown
                           remarkPlugins={[remarkGfm]}
                           components={{
-                            table: ({node, ...props}) => (
+                            table: ({ node, ...props }) => (
                               <div className="overflow-x-auto my-6 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md custom-scrollbar">
                                 <table className="min-w-full divide-y divide-white/10" {...props} />
                               </div>
                             ),
-                            th: ({node, ...props}) => <th className="px-5 py-3 bg-white/10 font-bold text-left text-[11px] uppercase tracking-wider" {...props} />,
-                            td: ({node, ...props}) => <td className="px-5 py-3 border-t border-white/5 text-[12px]" {...props} />,
-                            p: ({node, ...props}) => <p className="mb-3 last:mb-0" {...props} />,
-                            strong: ({node, ...props}) => <strong className="font-bold text-blue-500" {...props} />,
-                            a: ({node, href, children, ...props}) => {
+                            th: ({ node, ...props }) => <th className="px-5 py-3 bg-white/10 font-bold text-left text-[11px] uppercase tracking-wider" {...props} />,
+                            td: ({ node, ...props }) => <td className="px-5 py-3 border-t border-white/5 text-[12px]" {...props} />,
+                            p: ({ node, ...props }) => <p className="mb-3 last:mb-0" {...props} />,
+                            strong: ({ node, ...props }) => <strong className="font-bold text-blue-500" {...props} />,
+                            a: ({ node, href, children, ...props }) => {
                               const text = String(children).toLowerCase();
                               const isProduct = href?.includes('/system-dom') && text.includes('strona produktu');
                               const isConfigurator = href?.includes('/konfigurator') && text.includes('skonfiguruj');
                               const isPersonalization = href?.includes('/personalizacja') && text.includes('kolorystyka');
                               const isLinkButton = isProduct || isConfigurator || isPersonalization;
-                              
+
                               if (isLinkButton) {
                                 const displayedText = isConfigurator ? 'Skonfiguruj' : children;
-                                
+
                                 return (
                                   <motion.a
                                     href={href}
@@ -230,7 +229,7 @@ export default function ChatWidget() {
                   </div>
                 </motion.div>
               ))}
-              
+
               {isLoading && messages[messages.length - 1]?.role !== 'assistant' && (
                 <div className="flex justify-start">
                   <div className="bg-white/10 dark:bg-white/5 p-5 rounded-[24px] rounded-tl-none border border-white/20 flex items-center gap-3">
@@ -246,8 +245,8 @@ export default function ChatWidget() {
               <div className="flex-1 flex gap-3 overflow-x-auto custom-scrollbar py-2">
                 {QUICK_CHIPS.filter(chip => {
                   if (chip.id === 'summary') return true;
-                  const isProductDepth = pageContext?.url && 
-                    (pageContext.url.includes('/system-dom/') || pageContext.url.includes('/osiedle-system/')) && 
+                  const isProductDepth = pageContext?.url &&
+                    (pageContext.url.includes('/system-dom/') || pageContext.url.includes('/osiedle-system/')) &&
                     pageContext.url.split('/').filter(Boolean).length >= 2;
                   return isProductDepth;
                 }).map((chip) => (
@@ -261,7 +260,7 @@ export default function ChatWidget() {
                 ))}
               </div>
               <div className="pl-4 border-l border-white/10 ml-2">
-                <button 
+                <button
                   onClick={clearChat}
                   className="p-3 text-zinc-400 hover:text-red-500 hover:bg-red-500/10 rounded-xl transition-all active:scale-90"
                   title="Wyczyść historię rozmowy"
@@ -273,7 +272,7 @@ export default function ChatWidget() {
 
             {/* Input Area */}
             <div className="p-8 pt-4 pb-8 shrink-0">
-              <form 
+              <form
                 onSubmit={handleSubmit}
                 className="relative flex items-center"
               >
@@ -319,10 +318,10 @@ export default function ChatWidget() {
             >
               <AIIcon className="w-8 h-8" />
               {pageContext?.configuratorState && (
-                <motion.span 
-                  animate={{ scale: [1, 1.4, 1] }} 
+                <motion.span
+                  animate={{ scale: [1, 1.4, 1] }}
                   transition={{ repeat: Infinity, duration: 2 }}
-                  className="absolute top-1 right-1 w-4 h-4 bg-blue-500 rounded-full border-2 border-[#121212]" 
+                  className="absolute top-1 right-1 w-4 h-4 bg-blue-500 rounded-full border-2 border-[#121212]"
                 />
               )}
             </motion.button>

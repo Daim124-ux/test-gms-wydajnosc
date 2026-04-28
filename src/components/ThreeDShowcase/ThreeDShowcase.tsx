@@ -117,14 +117,14 @@ export default function ThreeDShowcase() {
 
   const modalContent = (
     <div 
-      className={`fixed inset-0 z-[500] flex items-center justify-center bg-black overflow-hidden transition-all duration-1000 ${
+      className={`fixed inset-0 z-[2000] flex items-center justify-center bg-black overflow-hidden transition-all duration-1000 ${
         isModalOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}
     >
       {/* CLOSE BUTTON */}
       <button
         onClick={handleClose}
-        className="absolute top-8 right-8 z-[510] p-2.5 bg-white/20 hover:bg-white/30 backdrop-blur-xl rounded-full text-white border border-white/20 transition-all duration-300 active:scale-90 shadow-lg"
+        className="absolute top-8 right-8 z-[2010] p-3 bg-white/10 hover:bg-white/20 backdrop-blur-2xl rounded-full text-[#3b82f6] border border-white/10 transition-all duration-300 active:scale-90 shadow-[0_0_20px_rgba(59,130,246,0.2)]"
       >
         <X size={18} />
       </button>

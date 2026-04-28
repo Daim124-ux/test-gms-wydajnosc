@@ -17,7 +17,7 @@ if (!API_KEY) {
 }
 
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ 
+const model = genAI.getGenerativeModel({
   model: "gemini-flash-latest",
   generationConfig: { responseMimeType: "application/json" }
 });
@@ -94,7 +94,7 @@ ${JSON.stringify(missingKeys, null, 2)}`;
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = response.text();
-    
+
     // Parsowanie odpowiedzi (Gemini w trybie JSON mode zwraca czysty JSON)
     const translatedKeys = JSON.parse(text);
 
@@ -112,7 +112,7 @@ ${JSON.stringify(missingKeys, null, 2)}`;
 
 async function main() {
   console.log("🚀 Start automatycznego tłumaczenia...");
-  
+
   if (!(await fs.pathExists(MESSAGES_DIR))) {
     await fs.ensureDir(MESSAGES_DIR);
   }

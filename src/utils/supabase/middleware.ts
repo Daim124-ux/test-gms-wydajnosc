@@ -1,8 +1,8 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
-export async function updateSession(request: NextRequest) {
-  let supabaseResponse = NextResponse.next({
+export async function updateSession(request: NextRequest, response?: NextResponse) {
+  let supabaseResponse = response || NextResponse.next({
     request,
   })
 
@@ -16,9 +16,11 @@ export async function updateSession(request: NextRequest) {
         },
         setAll(cookiesToSet) {
           cookiesToSet.forEach(({ name, value, options }) => request.cookies.set(name, value))
-          supabaseResponse = NextResponse.next({
-            request,
-          })
+          
+          if (!response) {
+            supabaseResponse = NextResponse.next({ request })
+          }
+          
           cookiesToSet.forEach(({ name, value, options }) =>
             supabaseResponse.cookies.set(name, value, options)
           )
@@ -29,7 +31,7 @@ export async function updateSession(request: NextRequest) {
 
   // Do NOT add a logout or other redirects here.
   // This middleware is just to refresh the session.
-  
+
   // This will refresh session if expired - required for Server Components
   // https://supabase.com/docs/guides/auth/server-side/nextjs
   const {
