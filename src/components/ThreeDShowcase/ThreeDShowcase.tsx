@@ -137,7 +137,7 @@ export default function ThreeDShowcase() {
       <div className="absolute top-24 right-8 z-[2010] md:hidden">
         {typeof window !== 'undefined' && (
           <a
-            href={`intent://arvr.google.com/scene-viewer/1.0?file=${window.location.origin}/assets/makieta_3d/wiata_makieta_ar.glb&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`}
+            href={`intent://arvr.google.com/scene-viewer/1.0?file=${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/assets/makieta_3d/wiata_makieta_ar.glb&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`}
             className="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg active:scale-95 transition-transform"
             title={t('arButton')}
           >
