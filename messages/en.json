@@ -4,28 +4,200 @@
     "close": "Close",
     "back": "Back",
     "next": "Next",
-    "seeMore": "See more"
+    "seeMore": "See more",
+    "readMore": "Read article",
+    "configure": "Configure product",
+    "checkAlso": "See also",
+    "blogArticles": "Blog articles",
+    "fromBlog": "Blog article",
+    "shop": "Shop",
+    "goToShop": "Go to shop"
+  },
+  "navigation": {
+    "header": {
+      "domSystem": "Home system",
+      "osiedleSystem": "Estate system",
+      "shop": "Shop",
+      "partnerZone": "Partner Zone",
+      "contact": "Contact",
+      "more": "More"
+    },
+    "megaMenu": {
+      "superstrongDesc": "Super-strong garages, for direct ground installation.",
+      "shelterWoodDesc": "Garden, tool, wood, or motorcycle shelters.",
+      "shelterRamps": "with the possibility of installing an entry rail",
+      "tabs": {
+        "garages": "Steel garages",
+        "superstrong": "Superstrong garages",
+        "bikeShelter": "Bicycle shelter / Furniture",
+        "steelShelters": "Steel Shelters",
+        "gates": "Garage doors and drives",
+        "greenShelters": "Green Shelters",
+        "trashShelters": "Trash Shelters",
+        "compactShelters": "Compact Trash Enclosures",
+        "basementDoors": "Interior Building Doors",
+        "collectiveGarages": "Collective Garages",
+        "partitionWalls": "Partition Walls",
+        "bikeCages": "Bicycle Cage Enclosures"
+      },
+      "moreLinks": {
+        "about": "About Us",
+        "career": "Careers",
+        "blog": "Blog",
+        "distributors": "Distributors",
+        "projects": "Projects",
+        "privacy": "Privacy Policy",
+        "downloads": "Downloads"
+      },
+      "titles": {
+        "garaze_stalowe": "Steel garages",
+        "garaze_superstrong": "Superstrong garages",
+        "wiata": "Bike shelter",
+        "wiaty_stalowe": "Steel shelters",
+        "bramy": "Garage doors and operators",
+        "altany_zielone": "Garden gazebos",
+        "altany_smietnikowe": "Waste container shelters",
+        "kompaktowe": "Compact enclosures",
+        "drzwi": "Basement doors",
+        "garaze_zbiorcze": "Collective garages",
+        "scianki": "Partition walls",
+        "wygrodzenia": "Industrial enclosures"
+      },
+      "gatesTitles": {
+        "tilt": "Up-and-over garage doors",
+        "hinged": "Side-hinged doors",
+        "hingedPanel": "Panel side-hinged doors",
+        "sectional": "Sectional doors"
+      }
+    }
   },
   "hero": {
     "title": "Steel bicycle shed",
-    "subtitle": "Our storage solution.",
-    "cta": "Take a closer look"
+    "newCategory": "A completely new category",
+    "cinematicDesc": "Lighter, stronger, refined in every millimeter. True steel that no wind can resist.",
+    "subtitle": "Our storage Rouleur."
   },
   "features": {
-    "title": "Innovative solutions",
-    "floor": {
-      "title": "Aluminum floor",
-      "description": "Effectively prevents the growth of unwanted vegetation."
+    "title": "Innovative solutions"
+  },
+  "configuratorPromo": {
+    "title": "Configure your shelter",
+    "description": "Our configurator allows for product personalization to meet the needs of the most demanding customers. During configuration, you can view the product in real-time."
+  },
+  "lifestyle": {
+    "title": "More than just a bike shelter",
+    "description": "Although our shelter was designed primarily for bike storage, its versatility makes it an ideal solution for many other needs as well."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "The steel shelter was designed primarily for storing bicycles, but it can also store garden tools, strollers, scooters, mopeds, and other accessories and utility items. The forward-sloping lid roof ensures efficient water drainage, and the convenient handle makes opening simple."
     },
-    "threshold": {
-      "title": "Metal threshold",
-      "description": "Made of lightweight and durable aluminum."
+    "features": {
+      "pianoHinge": {
+        "title": "Piano hinge in the shelter lid"
+      },
+      "stopPoints": {
+        "title": "Innovative opening system with STOP points"
+      },
+      "fabricHandle": {
+        "title": "Fabric handle for easy opening and closing of the threshold"
+      },
+      "steelRods": {
+        "title": "Closing the shelter with aluminum-steel rods."
+      },
+      "packing": {
+        "title": "Convenient packing in a pallet box"
+      },
+      "reinforcedCorners": {
+        "title": "Reinforced corners"
+      },
+      "steelTriangles": {
+        "title": "Stiffening steel triangles in corners"
+      },
+      "lidReinforcement": {
+        "title": "Steel lid reinforcements combined with C-channels"
+      }
+    },
+    "colorSection": {
+      "title": "Explore the colors.",
+      "aesthetic": "Timeless aesthetics in every color",
+      "match": "Match the shelter to your home's facade",
+      "protection": "Protection against all conditions",
+      "quality": "Highest quality coating"
+    },
+    "dimensions": {
+      "title": "Bike shelter dimensions",
+      "height": "Height",
+      "width": "Width",
+      "depth": "Depth"
+    },
+    "nav": {
+      "priceFrom": "From 12,999 PLN"
+    },
+    "aluminumFloor": {
+      "title": "Aluminum floor",
+      "subtitle": "fixed to the ground with stainless anchors.",
+      "description": "In the bike shelter, there is a possibility of installing an aluminum floor, which effectively prevents the growth of unwanted vegetation, especially when mounted on paving stones. The floor has been designed so that the anchoring of the shelter takes place through the same holes as in the version without a floor. This makes it easy to retrofit the shelter with this option at any time when we decide it's needed."
+    },
+    "lifestyle": {
+      "p1": "Although our shelter was designed primarily for bike storage, its versatility makes it an ideal solution for many other needs as well. In addition to bicycles, it easily accommodates garden tools like shovels, rakes, or shears, as well as small garden accessories like pots, seeds, or fertilizers. With spacious dimensions — 1950 mm wide, 900 mm deep, and 1290 mm high — the shelter can also serve as a practical storage for backyard accessories like lawnmowers, garden hoses, etc.",
+      "p2": "It's also ideal for storing children's toys, including electric or pedal cars, sandbox toys, and garden play sets. Additionally, the shelter can hold fishing accessories such as rods, reels, or fishing bags, as well as seasonal garden decorations like lanterns and solar lights or small garden furniture. If you use your garden for relaxation, you'll also find space for grilling accessories here.",
+      "p3": "Thanks to its functionality and spaciousness, our shelter offers a convenient storage solution for a wide range of items that can be useful in everyday life, maximizing the available space."
+    },
+    "showcase1": {
+      "top": "Durable",
+      "glow": "piano hinge",
+      "bottom": "made of steel.",
+      "description": "In our bike shelter, we used a piano hinge that raises the standard of everyday use. This subtle yet exceptionally durable element ensures not only the ideal stiffness of the closing lid but also its smooth, nearly silent operation. Thanks to its compact design and large contact area, this hinge guarantees not only reliability but also durability for years. This is a solution that will be appreciated by all users who value precision, functionality, and modern design."
+    },
+    "showcase2": {
+      "top": "Metal threshold",
+      "glow": "made of lightweight aluminum",
+      "description": "The lower part of the shelter is designed for maximum functionality and user comfort. The steel threshold with an elegant fabric handle ensures a secure closure, and neodymium magnets precisely hold it in position, preventing accidental opening. Specially fitted hinges and an additional bend in the element create a smoothly profiled ramp when opened, making it easier to bring in a bicycle. This thoughtful solution combines durability with convenience, meeting the needs of demanding users."
     }
   },
-  "colors": {
-    "title": "Explore the colors",
-    "ocynk": "Galvanized",
-    "burgund": "RAL 3005 - Wine Red",
-    "antracyt": "RAL 7016 - Anthracite Grey"
+  "footer": {
+    "unicorn": {
+      "tagline": "Break the mold.",
+      "prefix": "Catch the industry",
+      "cta": "Unicorn."
+    },
+    "location": {
+      "title": "Working Hours & Location",
+      "address1": "Office I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Poland",
+      "workingDays": "Monday - Friday",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Quick Access"
+    },
+    "career": {
+      "title": "GMS Careers",
+      "description": "Start your career at GMS Corporation",
+      "cta": "Join our community"
+    },
+    "bottom": {
+      "rights": "All Rights Reserved",
+      "author": "by Mateusz Sromek",
+      "rodo": "GDPR",
+      "cookies": "Cookies"
+    }
+  },
+  "chat": {
+    "welcome": "How can I help you today?",
+    "placeholder": "Ask GMS Corporation...",
+    "assistant": "AI Assistant",
+    "processing": "Processing data...",
+    "clearHistory": "Clear chat history",
+    "clearConfirm": "Are you sure you want to clear the chat history?",
+    "close": "Close",
+    "chips": {
+      "summary": "Summarize page",
+      "summaryPrompt": "Prepare a short summary (3-5 points) of what is on this subpage",
+      "specs": "Technical specification",
+      "specsPrompt": "Extract the technical specification from the content of this page or tell about the most important technical details"
+    }
   }
 }

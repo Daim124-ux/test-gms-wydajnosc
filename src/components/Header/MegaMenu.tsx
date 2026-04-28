@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 interface MegaMenuProps {
   type: 'dom' | 'osiedle' | 'wiecej' | null;
@@ -10,40 +11,31 @@ interface MegaMenuProps {
 }
 
 export default function MegaMenu({ type, onClose }: MegaMenuProps) {
+  const t = useTranslations('navigation.megaMenu');
+  const tCommon = useTranslations('common');
   const [activeTab, setActiveTab] = useState(type === 'osiedle' ? 'altany-zielone' : 'garaze-stalowe');
 
   if (!type) return null;
 
   const domTabs = [
-    { id: 'garaze-stalowe', label: 'Garaże stalowe' },
-    { id: 'garaze-superstrong', label: 'Garaże Superstrong' },
-    { id: 'wiata', label: 'Wiata na rowery / Meble' },
-    { id: 'wiaty-stalowe', label: 'Wiaty Stalowe' },
-    { id: 'bramy', label: 'Bramy garażowe i napędy' }
+    { id: 'garaze-stalowe', label: t('tabs.garages') },
+    { id: 'garaze-superstrong', label: t('tabs.superstrong') },
+    { id: 'wiata', label: t('tabs.bikeShelter') },
+    { id: 'wiaty-stalowe', label: t('tabs.steelShelters') },
+    { id: 'bramy', label: t('tabs.gates') }
   ];
 
   const osiedleTabs = [
-    { id: 'altany-zielone', label: 'Altany Zielone' },
-    { id: 'altany-smietnikowe', label: 'Altany Śmietnikowe' },
-    { id: 'kompaktowe', label: 'Kompaktowe Osłony Śmietnikowe' },
-    { id: 'drzwi', label: 'Drzwi Wewnątrzklatkowe' },
-    { id: 'garaze-zbiorcze', label: 'Garaże Zbiorcze' },
-    { id: 'scianki', label: 'Ścianki Działowe' },
-    { id: 'wygrodzenia', label: 'Wygrodzenia Boksów Rowerowych' }
+    { id: 'altany-zielone', label: t('tabs.greenShelters') },
+    { id: 'altany-smietnikowe', label: t('tabs.trashShelters') },
+    { id: 'kompaktowe', label: t('tabs.compactShelters') },
+    { id: 'drzwi', label: t('tabs.basementDoors') },
+    { id: 'garaze-zbiorcze', label: t('tabs.collectiveGarages') },
+    { id: 'scianki', label: t('tabs.partitionWalls') },
+    { id: 'wygrodzenia', label: t('tabs.bikeCages') }
   ];
 
   const tabs = type === 'osiedle' ? osiedleTabs : domTabs;
-
-  // Funkcje zastępujące next-intl dla środowiska bez wsparcia i18n
-  const t = (key: string) => {
-    if (key.startsWith('titles.')) {
-      const id = key.replace('titles.', '').replace(/_/g, '-');
-      const tab = [...domTabs, ...osiedleTabs].find(t => t.id === id);
-      return tab ? tab.label : key;
-    }
-    return key;
-  };
-  const tCommon = (key: string) => key === 'productPage' ? 'Strona produktu' : key;
 
   return (
     <motion.div
@@ -57,16 +49,16 @@ export default function MegaMenu({ type, onClose }: MegaMenuProps) {
       {type === 'wiecej' ? (
         <div className="wiecej-container">
           <div className="wiecej-links-main">
-            <Link href="/o-nas/" className="wiecej-link">O nas</Link>
-            <Link href="/kariera/" className="wiecej-link">Kariera</Link>
-            <Link href="/blog/" className="wiecej-link">Blog</Link>
-            <Link href="/dystrybutorzy/" className="wiecej-link">Dystrybutorzy</Link>
-            <Link href="/realizacje/" className="wiecej-link">Realizacje</Link>
+            <Link href="/o-nas/" className="wiecej-link">{t('moreLinks.about')}</Link>
+            <Link href="/kariera/" className="wiecej-link">{t('moreLinks.career')}</Link>
+            <Link href="/blog/" className="wiecej-link">{t('moreLinks.blog')}</Link>
+            <Link href="/dystrybutorzy/" className="wiecej-link">{t('moreLinks.distributors')}</Link>
+            <Link href="/realizacje/" className="wiecej-link">{t('moreLinks.projects')}</Link>
           </div>
           
           <div className="wiecej-footer">
-            <Link href="/polityka-prywatnosci/" className="wiecej-link-small">Polityka prywatności</Link>
-            <Link href="/do-pobrania/" className="wiecej-link-small">Do pobrania</Link>
+            <Link href="/polityka-prywatnosci/" className="wiecej-link-small">{t('moreLinks.privacy')}</Link>
+            <Link href="/do-pobrania/" className="wiecej-link-small">{t('moreLinks.downloads')}</Link>
           </div>
         </div>
       ) : (
@@ -98,8 +90,8 @@ export default function MegaMenu({ type, onClose }: MegaMenuProps) {
                   {/* COLUMN 1: MAIN PRODUCT CARD (40%) */}
                   <div className="mega-card-product border-green-accent">
                       <div className="mega-card-content flex flex-col items-start justify-center">
-                        <h2 className="mega-card-title-main">{t(`titles.${activeTab.replace("-", "_")}`)}</h2>
-                        <Link href="/system-osiedle/altany-z-zielonym-dachem/" className="mega-btn-green">{tCommon('productPage')}</Link>
+                        <h2 className="mega-card-title-main">Altany Zielone</h2>
+                        <Link href="/system-osiedle/altany-z-zielonym-dachem/" className="mega-btn-green">{t('tabs.superstrong')}</Link>
                       </div>
                       <div className="mega-card-img-wrap">
                         <img src="/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925.jpg" alt="Altana z zielonym dachem" />
@@ -168,8 +160,8 @@ export default function MegaMenu({ type, onClose }: MegaMenuProps) {
               {/* COLUMN 1: MAIN PRODUCT CARD (40%) */}
               <div className="mega-card-product">
                 <div className="mega-card-content flex flex-col items-start justify-center">
-                  <h2 className="mega-card-title-main">{t(`titles.${activeTab.replace("-", "_")}`)}</h2>
-                  <Link href="/system-osiedle/altany-smietnikowe/" className="mega-btn-black !bg-black !text-white border border-white/10">{tCommon('productPage')}</Link>
+                  <h2 className="mega-card-title-main">Altany Śmietnikowe</h2>
+                  <Link href="/system-osiedle/altany-smietnikowe/" className="mega-btn-black !bg-black !text-white border border-white/10">Strona produktu</Link>
                 </div>
                 <div className="mega-card-img-wrap">
                   <img src="/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925.jpg" alt="Altany i wiaty śmietnikowe" />
@@ -240,8 +232,8 @@ export default function MegaMenu({ type, onClose }: MegaMenuProps) {
               {/* COLUMN 1: MAIN PRODUCT CARD (40%) */}
               <div className="mega-card-product">
                 <div className="mega-card-content flex flex-col items-start justify-center">
-                  <h2 className="mega-card-title-main">{t(`titles.${activeTab.replace("-", "_")}`)}</h2>
-                  <Link href="/system-osiedle/kompaktowe-oslony-smietnikowe/" className="mega-btn-black !bg-black !text-white border border-white/10">{tCommon('productPage')}</Link>
+                  <h2 className="mega-card-title-main">Kompaktowe Osłony</h2>
+                  <Link href="/system-osiedle/kompaktowe-oslony-smietnikowe/" className="mega-btn-black !bg-black !text-white border border-white/10">Strona produktu</Link>
                 </div>
                 <div className="mega-card-img-wrap">
                   <img src="/assets/images/wiaty-stalowe-na-rowery/Wiata-na-rowery-GMS-System.jpg" alt="Kompaktowe osłony śmietnikowe" />
@@ -282,8 +274,8 @@ export default function MegaMenu({ type, onClose }: MegaMenuProps) {
               {/* COLUMN 1: MAIN PRODUCT CARD (40%) */}
               <div className="mega-card-product">
                 <div className="mega-card-content flex flex-col items-start justify-center">
-                  <h2 className="mega-card-title-main">{t(`titles.${activeTab.replace("-", "_")}`)}</h2>
-                  <Link href="/system-osiedle/drzwi-piwniczne/" className="mega-btn-black !bg-black !text-white border border-white/10">{tCommon('productPage')}</Link>
+                  <h2 className="mega-card-title-main">Drzwi Piwniczne</h2>
+                  <Link href="/system-osiedle/drzwi-piwniczne/" className="mega-btn-black !bg-black !text-white border border-white/10">Strona produktu</Link>
                 </div>
                 <div className="mega-card-img-wrap">
                   <img src="/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925.jpg" alt="Drzwi piwniczne" />

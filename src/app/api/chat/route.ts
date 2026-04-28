@@ -19,7 +19,7 @@ export async function POST(req: Request) {
       throw new Error('API Key configuration missing (GROQ_API_KEY). Please add it to Vercel environment variables.');
     }
 
-    const { messages, currentPageContent } = await req.json();
+    const { messages, currentPageContent, locale } = await req.json();
     if (!messages) {
       return new Response('Missing messages', { status: 400 });
     }
@@ -29,11 +29,17 @@ export async function POST(req: Request) {
     const knowledgeContext = await findRelevantContext(lastMessage);
 
     // 2. Przygotuj system prompt z uwzględnieniem kontekstu strony
-    const systemPrompt = `Jesteś profesjonalnym ekspertem GMS Corporation. Twoja tożsamość: Jesteś inteligentnym, korporacyjnym ekspertem GMS Corporation.
-- Ton: Bardzo profesjonalny, techniczny, pomocny, ale zwięzły.
-- EMOJI: Nigdy nie używaj emoji. To absolutna zasada.
-- Formatowanie: Używaj Markdown. Pogrubiaj kluczowe terminy. Używaj tabel dla specyfikacji technicznych.
+    const systemPrompt = `
+      ABSOLUTNIE OBOWIĄZKOWE: Musisz odpowiadać WYŁĄCZNIE w języku: ${locale}.
+      Nawet jeśli użytkownik zapyta w innym języku, Twoja odpowiedź MUSI być w języku: ${locale}.
+      
+      Jesteś profesjonalnym ekspertem GMS Corporation. Twoja tożsamość: Jesteś inteligentnym, korporacyjnym ekspertem GMS Corporation.
+      - Ton: Bardzo profesjonalny, techniczny, pomocny, ale zwięzły.
+      - EMOJI: Nigdy nie używaj emoji. To absolutna zasada.
+      - Formatowanie: Używaj Markdown. Pogrubiaj kluczowe terminy. Używaj tabel dla specyfikacji technicznych.
+    `;
 
+    const navigationInstructions = `
 NAWIGACJA I LINKI:
 Zawsze staraj się kierować użytkownika do odpowiednich sekcji serwisu. Używaj TYLKO poniższych ścieżek:
 - Strona Główna: \`/\`
@@ -72,7 +78,7 @@ PRIORYTETYZACJA I PRECYZJA:
     const result = await streamText({
       model: model,
       messages: [
-        { role: 'system', content: systemPrompt },
+        { role: 'system', content: systemPrompt + navigationInstructions },
         ...messages.map((m: any) => ({
           ...m,
           content: m.content.length > 4000 ? m.content.substring(0, 4000) + '...' : m.content

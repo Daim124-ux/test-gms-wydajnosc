@@ -5,7 +5,12 @@ import { motion } from 'framer-motion';
 import { ShoppingBag } from 'lucide-react';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
+import { useTranslations } from 'next-intl';
+
 const ConfiguratorPromo = () => {
+  const t = useTranslations('configuratorPromo');
+  const tc = useTranslations('common');
+
   return (
     <section className="bg-black pb-6 px-6 relative overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
@@ -19,7 +24,7 @@ const ConfiguratorPromo = () => {
         >
           <ResponsiveAsset
             src="/assets/images/wiaty-stalowe-na-rowery/Wiata_konfigurator-1024x491.jpg"
-            alt="Podgląd konfiguratora wiaty"
+            alt={t('title')}
             className="object-cover"
           />
         </motion.div>
@@ -32,8 +37,7 @@ const ConfiguratorPromo = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-zinc-300 text-lg md:text-xl text-center max-w-4xl leading-relaxed mb-12"
         >
-          Nasz konfigurator daje możliwość personalizacji produktów, tak aby odpowiadały one najbardziej
-          wymagającym klientom. Przy konfiguracji mamy podgląd naszego produktu w czasie rzeczywistym.
+          {t('description')}
         </motion.p>
 
         {/* CTA BUTTON - Glowing Aura Style */}
@@ -63,7 +67,7 @@ const ConfiguratorPromo = () => {
             <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
             <ShoppingBag size={22} className="group-hover:scale-110 transition-transform" />
-            <span className="relative z-10">Przejdź do sklepu</span>
+            <span className="relative z-10">{tc('goToShop')}</span>
           </motion.button>
         </motion.div>
       </div>

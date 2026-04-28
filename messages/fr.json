@@ -4,28 +4,198 @@
     "close": "Fermer",
     "back": "Retour",
     "next": "Suivant",
-    "seeMore": "Voir plus"
+    "seeMore": "Voir plus",
+    "readMore": "Lire l'article",
+    "configure": "Configurer le produit",
+    "checkAlso": "Voir aussi",
+    "blogArticles": "Articles de blog",
+    "fromBlog": "Article du blog",
+    "shop": "Boutique",
+    "goToShop": "Aller à la boutique"
   },
-  "hero": {
-    "title": "Abri à vélos en acier",
-    "subtitle": "Notre solution de stockage.",
-    "cta": "Voir en détail"
-  },
-  "features": {
-    "title": "Solutions innovantes",
-    "floor": {
-      "title": "Sol en aluminium",
-      "description": "Empêche efficacement la croissance de la végétation indésirable."
+  "navigation": {
+    "header": {
+      "domSystem": "Système Maison",
+      "osiedleSystem": "Système Résidentiel",
+      "shop": "Boutique",
+      "partnerZone": "Zone Partenaire",
+      "contact": "Contact",
+      "more": "Plus"
     },
-    "threshold": {
-      "title": "Seuil métallique",
-      "description": "Fabriqué en aluminium léger et durable."
+    "megaMenu": {
+      "superstrongDesc": "Garages super résistants, pour montage direct au sol.",
+      "shelterWoodDesc": "Abris de jardin, abris à outils, abris pour bois ou motos.",
+      "shelterRamps": "avec possibilité de montage d'un rail d'accès",
+      "tabs": {
+        "garages": "Garages en acier",
+        "superstrong": "Garages Superstrong",
+        "bikeShelter": "Abri pour vélos",
+        "steelShelters": "Abris en acier",
+        "gates": "Portes de garage et motorisations",
+        "greenShelters": "Pavillons verts",
+        "trashShelters": "Abris pour poubelles",
+        "compactShelters": "Abris poubelles compacts",
+        "basementDoors": "Portes de cage d'escalier",
+        "collectiveGarages": "Garaże Zbiorcze",
+        "partitionWalls": "Ścianki Działowe",
+        "bikeCages": "Wygrodzenia Boksów Rowerowych"
+      },
+      "moreLinks": {
+        "about": "O nas",
+        "career": "Kariera",
+        "blog": "Blog",
+        "distributors": "Dystrybutorzy",
+        "projects": "Realizacje",
+        "privacy": "Polityka prywatności",
+        "downloads": "Do pobrania"
+      },
+      "titles": {
+        "garaze_stalowe": "Garaże stalowe",
+        "garaze_superstrong": "Garaże Superstrong",
+        "wiata": "Wiata na rowery",
+        "wiaty_stalowe": "Wiaty stalowe",
+        "bramy": "Bramy garażowe i napędy",
+        "altany_zielone": "Altany zielone",
+        "altany_smietnikowe": "Altany śmietnikowe",
+        "kompaktowe": "Kompaktowe osłony",
+        "drzwi": "Drzwi piwniczne",
+        "garaze_zbiorcze": "Garaże zbiorcze",
+        "scianki": "Ścianki działowe",
+        "wygrodzenia": "Wygrodzenia przemysłowe"
+      },
+      "gatesTitles": {
+        "tilt": "Bramy uchylne garażowe",
+        "hinged": "Bramy rozwierne",
+        "hingedPanel": "Bramy rozwierne panelowe",
+        "sectional": "Bramy segmentowe"
+      }
     }
   },
-  "colors": {
-    "title": "Découvrez les couleurs",
-    "ocynk": "Galvanisé",
-    "burgund": "RAL 3005 - Bordeaux",
-    "antracyt": "RAL 7016 - Anthracite"
+  "hero": {
+    "title": "Wiata stalowa na rowery",
+    "subtitle": "Nasz rouleur przechowywania.",
+    "newCategory": "Całkowicie nowa kategoria",
+    "cinematicDesc": "Lżejsze, mocniejsze, dopracowane w każdym milimetrze. Prawdziwa stal, której nie oprze się żaden wiatr."
+  },
+  "features": {
+    "title": "Informations principales."
+  },
+  "configuratorPromo": {
+    "title": "Configurez votre abri",
+    "description": "Notre configurateur permet de personnaliser les produits afin qu'ils répondent aux clients les plus exigeants. Lors de la configuration, vous bénéficiez d'un aperçu du produit en temps réel."
+  },
+  "lifestyle": {
+    "title": "Plus qu'un simple abri à vélos",
+    "description": "Bien que notre abri ait été conçu principalement pour le rangement des vélos, sa polyvalence en fait une solution idéale pour de nombreux autres besoins."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "L'abri en acier a été conçu principalement pour le rangement des vélos, mais il peut également accueillir des outils de jardinage, des poussettes, des scooters, des trottinettes et autres accessoires et objets utilitaires. La pente du toit du couvercle orientée vers l'avant assure une bonne évacuation de l'eau, et grâce à une poignée ergonomique, l'ouverture est simple."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Charnière à piano sur le couvercle de l'abri"
+      },
+      "stopPoints": {
+        "title": "Système d'ouverture innovant avec points d'arrêt (STOP)"
+      },
+      "fabricHandle": {
+        "title": "Poignée en tissu facilitant l'ouverture et la fermeture du seuil"
+      },
+      "steelRods": {
+        "title": "Fermeture de l'abri à l'aide de câbles en aluminium et acier."
+      },
+      "packing": {
+        "title": "Emballage pratique en caisse palette"
+      },
+      "reinforcedCorners": {
+        "title": "Coins renforcés"
+      },
+      "steelTriangles": {
+        "title": "Triangles de renfort en acier dans les coins"
+      },
+      "lidReinforcement": {
+        "title": "Renforts en acier du couvercle combinés à des profilés en U"
+      }
+    },
+    "colorSection": {
+      "title": "Découvrez la gamme de couleurs.",
+      "aesthetic": "Une esthétique intemporelle dans chaque couleur",
+      "match": "Adaptez l'abri à la façade de votre maison",
+      "protection": "Protection contre toutes les conditions météorologiques",
+      "quality": "Qualité supérieure du revêtement de peinture"
+    },
+    "dimensions": {
+      "title": "Dimensions de l'abri à vélos",
+      "height": "Hauteur",
+      "width": "Largeur",
+      "depth": "Profondeur"
+    },
+    "nav": {
+      "priceFrom": "À partir de 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Plancher en aluminium",
+      "subtitle": "fixé au sol à l'aide d'ancres inoxydables.",
+      "description": "Il est possible d'installer un plancher en aluminium dans l'abri à vélos, ce qui empêche efficacement la croissance de la végétation indésirable, en particulier lors d'une installation sur pavés. Le plancher a été conçu de manière à ce que l'ancrage de l'abri s'effectue par les mêmes orifices que pour la version sans plancher. Ainsi, il est facile d'ajouter cette option à l'abri à tout moment, selon vos besoins."
+    },
+    "lifestyle": {
+      "p1": "Bien que notre abri ait été conçu principalement pour le rangement des vélos, sa polyvalence en fait une solution idéale pour de nombreux autres besoins. En plus des vélos, il peut facilement accueillir des outils de jardinage tels que des pelles, des râteaux ou des sécateurs, ainsi que de petits accessoires de jardin comme des pots, des graines ou des engrais. Grâce à ses dimensions spacieuses — 1950 mm de largeur, 900 mm de profondeur et 1290 mm de hauteur — l'abri peut également servir de rangement pratique pour les accessoires extérieurs, tels que des tondeuses, des tuyaux d'arrosage, etc.",
+      "p2": "Il est également idéal pour le rangement des jouets d'enfants, notamment les voitures électriques ou à pédales, les jouets de bac à sable et les kits de jeux de jardin. De plus, l'abri peut accueillir des accessoires de pêche, tels que des cannes, des moulinets ou des sacs de pêche, ainsi que des décorations de jardin saisonnières, comme des lanternes, des lampes solaires ou du petit mobilier de jardin. Si vous utilisez votre jardin pour vous détendre, vous y trouverez également de la place pour vos accessoires de barbecue.",
+      "p3": "Grâce à sa fonctionnalité et à son espace, notre abri offre une solution de rangement pratique pour une large gamme d'objets utiles au quotidien, optimisant ainsi l'espace disponible."
+    },
+    "showcase1": {
+      "top": "Robuste",
+      "glow": "charnière piano",
+      "bottom": "en acier.",
+      "description": "Dans notre abri pour vélos, nous avons utilisé une charnière piano qui rehausse le standard d'utilisation quotidienne. Cet élément subtil, mais extrêmement robuste, assure non seulement une rigidité parfaite du clapet de fermeture, mais également un fonctionnement fluide et presque silencieux. Grâce à sa conception compacte et à sa grande surface de contact, cette charnière garantit non seulement la fiabilité, mais aussi une durabilité sur des années. C'est une solution qui sera appréciée par tous les utilisateurs privilégiant la précision, la fonctionnalité et le design moderne."
+    },
+    "showcase2": {
+      "top": "Seuil métallique",
+      "glow": "en aluminium léger",
+      "description": "La partie inférieure de l'abri a été conçue pour une fonctionnalité et un confort d'utilisation maximaux. Le seuil en acier avec une poignée en tissu élégante assure une fermeture solide, tandis que des aimants au néodyme le maintiennent précisément en position, empêchant toute ouverture accidentelle. Des charnières spécialement adaptées ainsi qu'un pliage supplémentaire de l'élément créent, une fois ouvert, une rampe profilée et fluide, facilitant l'introduction du vélo. Cette solution réfléchie allie durabilité et confort, répondant ainsi aux besoins des utilisateurs les plus exigeants."
+    }
+  },
+  "footer": {
+    "unicorn": {
+      "tagline": "Sortez des sentiers battus.",
+      "prefix": "Attrapez la",
+      "cta": "Licorne du secteur."
+    },
+    "location": {
+      "title": "Horaires d'ouverture & Localisation",
+      "address1": "Bureau I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Pologne",
+      "workingDays": "Lundi - Vendredi",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Accès rapide"
+    },
+    "career": {
+      "title": "Carrière GMS",
+      "description": "Commencez à travailler chez GMS Corporation",
+      "cta": "Rejoignez notre communauté"
+    },
+    "bottom": {
+      "rights": "Tous droits réservés",
+      "author": "par Mateusz Sromek",
+      "rodo": "RGPD",
+      "cookies": "Cookies"
+    }
+  },
+  "chat": {
+    "welcome": "Comment puis-je vous aider aujourd'hui ?",
+    "placeholder": "Interrogez GMS Corporation...",
+    "assistant": "Assistant IA",
+    "processing": "Traitement des données...",
+    "clearHistory": "Effacer l'historique de la conversation",
+    "clearConfirm": "Voulez-vous vraiment effacer l'historique de la conversation ?",
+    "close": "Fermer",
+    "chips": {
+      "summary": "Résumer la page",
+      "specs": "Spécifications techniques"
+    }
   }
 }

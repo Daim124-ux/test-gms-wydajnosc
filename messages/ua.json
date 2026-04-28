@@ -1,31 +1,201 @@
 {
   "common": {
-    "buy": "Kup teraz",
-    "close": "Zamknij",
-    "back": "Wstecz",
-    "next": "Dalej",
-    "seeMore": "Zobacz więcej"
+    "buy": "Купити зараз",
+    "close": "Закрити",
+    "back": "Назад",
+    "next": "Далі",
+    "seeMore": "Дивитися більше",
+    "readMore": "Читати статтю",
+    "configure": "Налаштувати продукт",
+    "checkAlso": "Також перевірте",
+    "blogArticles": "Статті блогу",
+    "fromBlog": "Стаття з блогу",
+    "shop": "Магазин",
+    "goToShop": "Перейти до магазину"
+  },
+  "navigation": {
+    "header": {
+      "domSystem": "Система для дому",
+      "osiedleSystem": "Система для житлових комплексів",
+      "shop": "Магазин",
+      "partnerZone": "Зона партнера",
+      "contact": "Контакти",
+      "more": "Більше"
+    },
+    "megaMenu": {
+      "superstrongDesc": "Надміцні гаражі для монтажу безпосередньо в ґрунт.",
+      "shelterWoodDesc": "Садові навіси, навіси для інструментів, дров або мотоцикла.",
+      "shelterRamps": "з можливістю монтажу в’їзної рейки",
+      "tabs": {
+        "garages": "Сталеві гаражі",
+        "superstrong": "Гаражі Superstrong",
+        "bikeShelter": "Навіс для велосипедів",
+        "steelShelters": "Сталеві навіси",
+        "gates": "Гаражні ворота та приводи",
+        "greenShelters": "Зелені альтанки",
+        "trashShelters": "Сміттєві альтанки",
+        "compactShelters": "Компактні сміттєві укриття",
+        "basementDoors": "Внутрішньопід’їзні двері",
+        "collectiveGarages": "Garaże Zbiorcze",
+        "partitionWalls": "Ścianki Działowe",
+        "bikeCages": "Wygrodzenia Boksów Rowerowych"
+      },
+      "moreLinks": {
+        "about": "O nas",
+        "career": "Kariera",
+        "blog": "Blog",
+        "distributors": "Dystrybutorzy",
+        "projects": "Realizacje",
+        "privacy": "Polityka prywatności",
+        "downloads": "Do pobrania"
+      },
+      "titles": {
+        "garaze_stalowe": "Garaże stalowe",
+        "garaze_superstrong": "Garaże Superstrong",
+        "wiata": "Wiata na rowery",
+        "wiaty_stalowe": "Wiaty stalowe",
+        "bramy": "Bramy garażowe i napędy",
+        "altany_zielone": "Altany zielone",
+        "altany_smietnikowe": "Altany śmietnikowe",
+        "kompaktowe": "Kompaktowe osłony",
+        "drzwi": "Drzwi piwniczne",
+        "garaze_zbiorcze": "Garaże zbiorcze",
+        "scianki": "Ścianki działowe",
+        "wygrodzenia": "Wygrodzenia przemysłowe"
+      },
+      "gatesTitles": {
+        "tilt": "Bramy uchylne garażowe",
+        "hinged": "Bramy rozwierne",
+        "hingedPanel": "Bramy rozwierne panelowe",
+        "sectional": "Bramy segmentowe"
+      }
+    }
   },
   "hero": {
     "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouler przechowywania.",
-    "cta": "Zobacz z bliska"
+    "subtitle": "Nasz rouleur przechowywania.",
+    "newCategory": "Całkowicie nowa kategoria",
+    "cinematicDesc": "Lżejsze, mocniejsze, dopracowane w każdym milimetrze. Prawdziwa stal, której nie oprze się żaden wiatr."
   },
   "features": {
-    "title": "Innowacyjne rozwiązania",
-    "floor": {
-      "title": "Aluminiowa podłoga",
-      "description": "Skutecznie zapobiega wzrostowi niechcianej roślinności."
+    "title": "Najważniejsze informacje."
+  },
+  "configuratorPromo": {
+    "title": "Skonfiguruj swoją wiatę",
+    "description": "Nasz konfigurator daje możliwość personalizacji produktów, tak aby odpowiadały one najbardziej wymagającym klientom. Przy konfiguracji mamy podgląd naszego produktu w czasie rzeczywistym."
+  },
+  "lifestyle": {
+    "title": "Więcej niż wiata na rowery",
+    "description": "Mimo że nasza wiata została zaprojektowana głównie z myślą o przechowywaniu rowerów, jej wszechstronność sprawia, że jest idealnym rozwiązaniem również dla wielu innych potrzeb."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Wiata stalowa została zaprojektowana głównie z myślą o przechowywaniu rowerów, jednak można w niej składować również narzędzia ogrodowe, wózki dziecięce, skutery, hulajnogi i inne akcesoria oraz przedmioty użytkowe. Spad dachu klapy skierowany do przodu zapewnia dobre odprowadzenie wody, a dzięki wygodnemu pochwytowi otwieranie jest proste."
     },
-    "threshold": {
-      "title": "Metalowy próg",
-      "description": "Wykonany z lekkiego i wytrzymałego aluminium."
+    "features": {
+      "pianoHinge": {
+        "title": "Zawias fortepianowy w klapie wiaty"
+      },
+      "stopPoints": {
+        "title": "Innowacyjny system otwierania z punktami STOP"
+      },
+      "fabricHandle": {
+        "title": "Szmaciany pochwyt ułatwiający otwieranie oraz zamykanie progu"
+      },
+      "steelRods": {
+        "title": "Zamykanie wiaty za pomocą aluminiowo-stalowych cięgien."
+      },
+      "packing": {
+        "title": "Wygodne pakowanie v boxie paletowym"
+      },
+      "reinforcedCorners": {
+        "title": "Wzmocnione narożniki"
+      },
+      "steelTriangles": {
+        "title": "Usztywniające stalowe trójkąty w narożnikach"
+      },
+      "lidReinforcement": {
+        "title": "Stalowe wzmocnienia klapy połączone z ceownikami"
+      }
+    },
+    "colorSection": {
+      "title": "Poznaj kolorystykę.",
+      "aesthetic": "Ponadczasowa estetyka w każdym kolorze",
+      "match": "Dopasuj wiatę do elewacji Twojego domu",
+      "protection": "Ochrona przed każdymi warunkami",
+      "quality": "Najwyższa jakość powłoki lakierniczej"
+    },
+    "dimensions": {
+      "title": "Wymiary wiaty na rowery",
+      "height": "Wysokość",
+      "width": "Szerokość",
+      "depth": "Głębokość"
+    },
+    "nav": {
+      "priceFrom": "Od 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Aluminiowa podłoga",
+      "subtitle": "mocowana do gruntu za pomocą nierdzewnych kotew.",
+      "description": "W wiacie rowerowej istnieje możliwość zamontowania aluminiowej podłogi, która skutecznie zapobiega wzrostowi niechcianej roślinności, szczególnie v przypadku montażu na kostce brukowej. Podłoga została zaprojektowana w taki sposób, aby kotwienie wiaty odbywało się przez te same otwory, co w wersji bez podłogi. Dzięki temu można łatwo doposażyć wiatę w tę opcję w dowolnym momencie, gdy uznamy, że jest to potrzebne."
+    },
+    "lifestyle": {
+      "p1": "Mimo że nasza wiata została zaprojektowana głównie z myślą o przechowywaniu rowerów, jej wszechstronność sprawia, że jest idealnym rozwiązaniem również dla wielu innych potrzeb. Oprócz rowerów, z łatwością pomieści narzędzia ogrodowe, takie jak łopaty, grabie czy sekatory, oraz niewielkie akcesoria ogrodowe, takie jak doniczki, nasiona czy nawozy. Dzięki przestronnym wymiarom — 1950 mm szerokości, 900 mm głębokości i 1290 mm wysokości — wiata może również służyć jako praktyczny schowek na przydomowe akcesoria, takie jak kosiarki, węże ogrodowe itp.",
+      "p2": "Idealnie nadaje się również do przechowywania zabawek dziecięcych, w tym samochodzików elektrycznych czy na pedały, zabawek do piaskownicy oraz zestawów do zabawy v ogrodzie. Dodatkowo, wiata może pomieścić akcesoria wędkarskie, takie jak wędki, kołowrotki czy torby wędkarskie, a także sezonowe dekoracje ogrodowe, takie jak latarenki i lampki solarne czy drobne meble ogrodowe. Jeśli korzystasz z ogrodu do relaksu, znajdziesz tu również miejsce na akcesoria do grillowania.",
+      "p3": "Dzięki swojej funkcjonalności i przestronności, nasza wiata oferuje wygodne rozwiązanie do przechowywania szerokiej gamy przedmiotów, które mogą być przydatne w codziennym życiu, maksymalnie wykorzystując dostępną przestrzeń."
+    },
+    "showcase1": {
+      "top": "Wytrzymały",
+      "glow": "zawias fortepianowy",
+      "bottom": "ze stali.",
+      "description": "W naszej wiacie na rowery zastosowaliśmy zawias fortepianowy, który podnosi standard codziennego użytkowania. Ten subtelny, a jednocześnie wyjątkowo wytrzymały element zapewnia nie tylko idealną sztywność klapy zamykającej, ale także jej płynną, niemal bezszelestną pracę. Dzięki kompaktowej konstrukcji i dużej powierzchni styku, zawias ten nie tylko gwarantuje niezawodność, ale również trwałość na lata. To rozwiązanie, które docenią wszyscy użytkownicy ceniący sobie precyzję, funkcjonalność i nowoczesny design."
+    },
+    "showcase2": {
+      "top": "Metalowy próg",
+      "glow": "z lekkiego aluminium",
+      "description": "Dolna część wiaty została zaprojektowana z myślą o maksymalnej funkcjonalności i komforcie użytkowania. Stalowy próg z eleganckim materiałowym pochwytem zapewnia solidne zamknięcie, a neodymowe magnesy precyzyjnie utrzymują go w pozycji, zapobiegając przypadkowemu otwarciu. Specjalnie dopasowane zawiasy oraz dodatkowe gięcie elementu tworzą po otwarciu płynnie wyprofilowany podjazd, ułatwiający wprowadzenie roweru. To przemyślane rozwiązanie łączy trwałość z wygodą, odpowiadając na potrzeby wymagających użytkowników."
     }
   },
-  "colors": {
-    "title": "Poznaj kolorystykę",
-    "ocynk": "Ocynk",
-    "burgund": "RAL 3005 - Burgundowy",
-    "antracyt": "RAL 7016 - Antracyt"
+  "footer": {
+    "unicorn": {
+      "tagline": "Nie goń schematów.",
+      "prefix": "Złap branżowego",
+      "cta": "Jednorożca."
+    },
+    "location": {
+      "title": "Godziny pracy & Lokalizacja",
+      "address1": "Biuro I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Polska",
+      "workingDays": "Poniedziałek - Piątek",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Szybki dostęp"
+    },
+    "career": {
+      "title": "GMS Kariera",
+      "description": "Zacznij pracę w GMS Corporation",
+      "cta": "Dołącz do naszej społeczności"
+    },
+    "bottom": {
+      "rights": "All Rights Reserved",
+      "author": "by Mateusz Sromek",
+      "rodo": "RODO",
+      "cookies": "Pliki cookies"
+    }
+  },
+  "chat": {
+    "welcome": "Jak mogę Ci dzisiaj pomóc?",
+    "placeholder": "Zapytaj GMS Corporation...",
+    "assistant": "Asystent AI",
+    "processing": "Przetwarzanie danych...",
+    "clearHistory": "Wyczyść historię rozmowy",
+    "clearConfirm": "Czy na pewno chcesz wyczyścić historię rozmowy?",
+    "close": "Zamknij",
+    "chips": {
+      "summary": "Podsumuj stronę",
+      "specs": "Specyfikacja techniczna"
+    }
   }
 }

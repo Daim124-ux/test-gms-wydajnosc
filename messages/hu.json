@@ -1,31 +1,201 @@
 {
   "common": {
-    "buy": "Kup teraz",
-    "close": "Zamknij",
-    "back": "Wstecz",
-    "next": "Dalej",
-    "seeMore": "Zobacz więcej"
+    "buy": "Vegyem meg",
+    "close": "Bezárás",
+    "back": "Vissza",
+    "next": "Tovább",
+    "seeMore": "Továbbiak",
+    "readMore": "Tovább a cikkhez",
+    "configure": "Termék konfigurálása",
+    "checkAlso": "Nézze meg ezt is",
+    "blogArticles": "Blogcikkek",
+    "fromBlog": "Cikk a blogról",
+    "shop": "Webshop",
+    "goToShop": "Menj a webshopba"
   },
-  "hero": {
-    "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouler przechowywania.",
-    "cta": "Zobacz z bliska"
-  },
-  "features": {
-    "title": "Innowacyjne rozwiązania",
-    "floor": {
-      "title": "Aluminiowa podłoga",
-      "description": "Skutecznie zapobiega wzrostowi niechcianej roślinności."
+  "navigation": {
+    "header": {
+      "domSystem": "Házrendszer",
+      "osiedleSystem": "Teleprendszer",
+      "shop": "Webshop",
+      "partnerZone": "Partnerzóna",
+      "contact": "Kapcsolat",
+      "more": "Több"
     },
-    "threshold": {
-      "title": "Metalowy próg",
-      "description": "Wykonany z lekkiego i wytrzymałego aluminium."
+    "megaMenu": {
+      "superstrongDesc": "Szupererős garázsok, közvetlenül a talajra szerelhetővel.",
+      "shelterWoodDesc": "Kerti, szerszámtároló, tűzifa- vagy motorkerékpár-védőbeépítések.",
+      "shelterRamps": "bejárati sín beépítési lehetőséggel",
+      "tabs": {
+        "garages": "Acél garázsok",
+        "superstrong": "Superstrong garázsok",
+        "bikeShelter": "Kerékpár-védőbeépítés",
+        "steelShelters": "Acél védőbeépítések",
+        "gates": "Garázskapuk és hajtóművek",
+        "greenShelters": "Zöld pavilonok",
+        "trashShelters": "Szeméttárolók",
+        "compactShelters": "Kompakt szeméttárolók",
+        "basementDoors": "Belső lépcsőházi ajtók",
+        "collectiveGarages": "Közös garázsok",
+        "partitionWalls": "Válogatófalak",
+        "bikeCages": "Kerékpár-boxok lekerítései"
+      },
+      "moreLinks": {
+        "about": "Rólunk",
+        "career": "Karrier",
+        "blog": "Blog",
+        "distributors": "Forgalmazók",
+        "projects": "Referenciák",
+        "privacy": "Adatvédelmi irányelvek",
+        "downloads": "Letöltések"
+      },
+      "titles": {
+        "garaze_stalowe": "Acél garázsok",
+        "garaze_superstrong": "Superstrong garázsok",
+        "wiata": "Kerékpár-védőbeépítés",
+        "wiaty_stalowe": "Acél védőbeépítések",
+        "bramy": "Garázskapuk és hajtóművek",
+        "altany_zielone": "Zöld pavilonok",
+        "altany_smietnikowe": "Szeméttárolók",
+        "kompaktowe": "Kompakt védőbeépítések",
+        "drzwi": "Pinceajtók",
+        "garaze_zbiorcze": "Közös garázsok",
+        "scianki": "Válogatófalak",
+        "wygrodzenia": "Ipari lekerítések"
+      },
+      "gatesTitles": {
+        "tilt": "Felnyeregető garázskapuk",
+        "hinged": "Nyitható kapuk",
+        "hingedPanel": "Panelos nyitható kapuk",
+        "sectional": "Szekciós kapuk"
+      }
     }
   },
-  "colors": {
-    "title": "Poznaj kolorystykę",
-    "ocynk": "Ocynk",
-    "burgund": "RAL 3005 - Burgundowy",
-    "antracyt": "RAL 7016 - Antracyt"
+  "hero": {
+    "title": "Acél kerékpár-védőbeépítés",
+    "subtitle": "Tárolás Rouleur-ja.",
+    "newCategory": "Teljesen új kategória",
+    "cinematicDesc": "Könnyebb, erősebb, minden milliméterében átgondolt. Valódi acél, amelyet egyetlen szél sem tud legyőzni."
+  },
+  "features": {
+    "title": "A legfontosabb információk."
+  },
+  "configuratorPromo": {
+    "title": "Konfigurálja a védőbeépítést",
+    "description": "Konfigurátorunk lehetővé teszi a termékek személyre szabását, hogy azok megfeleljenek a legigényesebb ügyfeleknek is. A konfigurálás során valós időben láthatjuk a terméket."
+  },
+  "lifestyle": {
+    "title": "Több, mint egy kerékpár-védőbeépítés",
+    "description": "Bár védőbeépítésünket elsősorban kerékpárok tárolására tervezték, sokoldalúsága miatt számos egyéb igényre is ideális megoldást nyújt."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Az acél védőbeépítést elsősorban kerékpárok tárolására tervezték, azonban benne kerti szerszámok, babesikerek, robogók, rollerek és egyéb kiegészítők is tárolhatók. A fedél előre dőlő tetőszerkezete biztosítja a megfelelő vízelvezetést, a kényelmes fogantyú pedig egyszerűvé teszi a nyitást."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Zongorpánt a védőbeépítés fedelében"
+      },
+      "stopPoints": {
+        "title": "Innovatív nyitási rendszer STOP-pontokkal"
+      },
+      "fabricHandle": {
+        "title": "Szövet fogantyú a küszöb egyszerűbb nyitásához és zárásához"
+      },
+      "steelRods": {
+        "title": "A védőbeépítés zárása alumínium-acél vonórudakkal."
+      },
+      "packing": {
+        "title": "Kényelmes csomagolás raklapdobozban"
+      },
+      "reinforcedCorners": {
+        "title": "Erősített sarkok"
+      },
+      "steelTriangles": {
+        "title": "Merevítő acél háromszögök a sarkokban"
+      },
+      "lidReinforcement": {
+        "title": "Acél fedelméregetők U-profilokkal kombinálva"
+      }
+    },
+    "colorSection": {
+      "title": "Ismerje meg a színek világát.",
+      "aesthetic": "Időtlen esztétika minden színben",
+      "match": "Időzzön össze a védőbeépítést házának homlokzatával",
+      "protection": "Védelem minden körülmény között",
+      "quality": "Legmagasabb minőségű festés"
+    },
+    "dimensions": {
+      "title": "Kerékpár-védőbeépítés méretei",
+      "height": "Magasság",
+      "width": "Szélesség",
+      "depth": "Mélység"
+    },
+    "nav": {
+      "priceFrom": "12 999 zł-től"
+    },
+    "aluminumFloor": {
+      "title": "Alumínium padló",
+      "subtitle": "rozsdament csavaros rögzítőkkel a talajhoz rögzítve.",
+      "description": "A kerékpár-védőbeépítésbe alumínium padló szerelhető, amely hatékonyan megakadályozza a nemkívánt növényzet növekedését, különösen tavakockázott felületeken. A padló úgy lett tervezve, hogy a rögzítés ugyanazokon a lyukakon történjen, mint a padló nélküli változatnál. Így a védőbeépítés bármikor egyszerűen kiegészíthető ezzel az opcióval."
+    },
+    "lifestyle": {
+      "p1": "Bár védőbeépítésünket elsősorban kerékpárok tárolására tervezték, sokoldalúsága miatt számos egyéb igényre is ideális megoldást nyújt. A kerékpárok mellett könnyen befogad kerti szerszámokat, például lapátokat, rake-eket vagy metszőollókat, valamint kisebb kerti kiegészítőket, mint a cserepeket, magokat vagy műtrágyákat. A tágas méreteknek köszönben — 1950 mm szélesség, 900 mm mélység és 1290 mm magasság — a védőbeépítés praktikus tárolóként is szolgálhat olyan háztartási eszközöknek, mint a fűnyírók, kerti tömlők stb.",
+      "p2": "Kiválóan alkalmas gyerekjátékok tárolására is, beleértve az elektromos vagy pedálos autózokat, homokozó játékokat és kerti játékcsomagokat. Ezenkívül a védőbeépítés befogadja a horgászfelszereléseket, mint a horgászbotok, yorszerelésű tekerek vagy horgász táskák, valamint szezonális kerti dekorációkat, például lámpásokat, napelemes fényeket vagy kisebb kerti bútorokat. Ha kertjét pihenésre használja, itt helyet talál a grillkellékeknek is.",
+      "p3": "Funkcionalitása és tágas méretei révén védőbeépítésünk kényelmes megoldást kínál a mindennapi életben hasznos széles körű tárgyak tárolására, maximálisan kihasználva a rendelkezésre álló teret."
+    },
+    "showcase1": {
+      "top": "Tartós",
+      "glow": "zongorpánt",
+      "bottom": "acélból.",
+      "description": "Kerékpár-védőbeépítésünkben zongorpántot alkalmaztunk, amely növeli a napi használat színvonalát. Ez a láthatatlan, mégis rendkívül tartós elem nemcsak a zárófedél tökéletes merevségét biztosítja, hanem annak sima, szinte zajtalan működését is. Kompakt szerkezete és nagy érintkezési felülete miatt ez a pánt nemcsak a megbízhatóságot, hanem az évekig tartó élettartamot is garantálja. Ez egy olyan megoldás, amelyet minden olyan felhasználó értékelni fog, aki a precizitást, a funkcionalitást és a modern dizájnt kedveli."
+    },
+    "showcase2": {
+      "top": "Fém küszöb",
+      "glow": "könnyű alumíniumból",
+      "description": "A védőbeépítés alsó részét a maximális funkcionalitás és felhasználói kényelem szem előtt tervezték. Az elegáns anyagú fogantyúval ellátott acél küszöb szilárd zárást biztosít, a neodímium mágnesek pedig precízen tartják a pozícióját, megakadályozva a véletlen nyitást. A speciálisan illeszkedő pántok és az elem további hajlítása nyitás után egy sima rampát hoz létre, amely megkönnyíti a kerékpár bevezetését. Ez a jól átgondolt megoldás ötvözi a tartósságot a kényelemmel, megfelelve az igényes felhasználók elvárásainak."
+    }
+  },
+  "footer": {
+    "unicorn": {
+      "tagline": "Ne kövesd a sablonokat.",
+      "prefix": "Fogd meg az iparág",
+      "cta": "Unikornsát."
+    },
+    "location": {
+      "title": "Nyitvatartás és Helyszín",
+      "address1": "Irodai egység I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Lengyelország",
+      "workingDays": "Hétfő - Péntek",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Gyors elérhetőség"
+    },
+    "career": {
+      "title": "GMS Karrier",
+      "description": "Kezdje pályáját a GMS Corporationban",
+      "cta": "Csatlakozzon közösségünkhöz"
+    },
+    "bottom": {
+      "rights": "Minden jog fenntartva",
+      "author": "Mateusz Sromek készítette",
+      "rodo": "GDPR",
+      "cookies": "Sütik"
+    }
+  },
+  "chat": {
+    "welcome": "Miben segíthetek ma?",
+    "placeholder": "Kérdezzen a GMS Corporationtól...",
+    "assistant": "AI Asszisztens",
+    "processing": "Adatok feldolgozása...",
+    "clearHistory": "Beszélgetés törlése",
+    "clearConfirm": "Biztosan törölni szeretné a beszélgetés előzményeit?",
+    "close": "Bezárás",
+    "chips": {
+      "summary": "Összegezés az oldalról",
+      "specs": "Technikai specifikáció"
+    }
   }
 }

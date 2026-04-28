@@ -1,31 +1,201 @@
 {
   "common": {
-    "buy": "Kup teraz",
-    "close": "Zamknij",
-    "back": "Wstecz",
-    "next": "Dalej",
-    "seeMore": "Zobacz więcej"
+    "buy": "Nu kopen",
+    "close": "Sluiten",
+    "back": "Terug",
+    "next": "Volgende",
+    "seeMore": "Bekijk meer",
+    "readMore": "Lees artikel",
+    "configure": "Configureer product",
+    "checkAlso": "Bekijk ook",
+    "blogArticles": "Blogartikelen",
+    "fromBlog": "Artikel uit de blog",
+    "shop": "Shop",
+    "goToShop": "Ga naar de shop"
   },
-  "hero": {
-    "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouler przechowywania.",
-    "cta": "Zobacz z bliska"
-  },
-  "features": {
-    "title": "Innowacyjne rozwiązania",
-    "floor": {
-      "title": "Aluminiowa podłoga",
-      "description": "Skutecznie zapobiega wzrostowi niechcianej roślinności."
+  "navigation": {
+    "header": {
+      "domSystem": "Woonsysteem",
+      "osiedleSystem": "Residentiesysteem",
+      "shop": "Shop",
+      "partnerZone": "Partnerzone",
+      "contact": "Contact",
+      "more": "Meer"
     },
-    "threshold": {
-      "title": "Metalowy próg",
-      "description": "Wykonany z lekkiego i wytrzymałego aluminium."
+    "megaMenu": {
+      "superstrongDesc": "Supersterke garages, voor montage direct op de grond.",
+      "shelterWoodDesc": "Overkappingen voor de tuin, gereedschap, hout of motorfietsen.",
+      "shelterRamps": "met de mogelijkheid voor montage van een instaprail",
+      "tabs": {
+        "garages": "Stalen garages",
+        "superstrong": "Superstrong garages",
+        "bikeShelter": "Fietsenoverkapping",
+        "steelShelters": "Stalen overkappingen",
+        "gates": "Garagedeuren en aandrijvingen",
+        "greenShelters": "Groene overkappingen",
+        "trashShelters": "Afvaloverkappingen",
+        "compactShelters": "Compacte afvaloverkappingen",
+        "basementDoors": "Kelderdeuren",
+        "collectiveGarages": "Collectieve garages",
+        "partitionWalls": "Scheidingswanden",
+        "bikeCages": "Fietsenboxen"
+      },
+      "moreLinks": {
+        "about": "Over ons",
+        "career": "Carrière",
+        "blog": "Blog",
+        "distributors": "Distributeurs",
+        "projects": "Projecten",
+        "privacy": "Privacybeleid",
+        "downloads": "Downloads"
+      },
+      "titles": {
+        "garaze_stalowe": "Stalen garages",
+        "garaze_superstrong": "Superstrong garages",
+        "wiata": "Fietsenoverkapping",
+        "wiaty_stalowe": "Stalen overkappingen",
+        "bramy": "Garagedeuren en aandrijvingen",
+        "altany_zielone": "Groene overkappingen",
+        "altany_smietnikowe": "Afvaloverkappingen",
+        "kompaktowe": "Compacte overkappingen",
+        "drzwi": "Kelderdeuren",
+        "garaze_zbiorcze": "Collectieve garages",
+        "scianki": "Scheidingswanden",
+        "wygrodzenia": "Industriële omheiningen"
+      },
+      "gatesTitles": {
+        "tilt": "Kanteldeuren",
+        "hinged": "Draaideuren",
+        "hingedPanel": "Panel-draaideuren",
+        "sectional": "Sectionaaldeuren"
+      }
     }
   },
-  "colors": {
-    "title": "Poznaj kolorystykę",
-    "ocynk": "Ocynk",
-    "burgund": "RAL 3005 - Burgundowy",
-    "antracyt": "RAL 7016 - Antracyt"
+  "hero": {
+    "title": "Stalen fietsenoverkapping",
+    "subtitle": "Onze Rouleur voor opslag.",
+    "newCategory": "Een geheel nieuwe categorie",
+    "cinematicDesc": "Lichter, sterker, tot in elke millimeter geperfectioneerd. Echt staal dat bestand is tegen elke wind."
+  },
+  "features": {
+    "title": "De belangrijkste informatie."
+  },
+  "configuratorPromo": {
+    "title": "Configureer uw overkapping",
+    "description": "Onze configurator biedt de mogelijkheid om producten te personaliseren, zodat ze voldoen aan de meest veeleisende klanten. Tijdens het configureren heeft u een real-time weergave van het product."
+  },
+  "lifestyle": {
+    "title": "Meer dan een fietsenoverkapping",
+    "description": "Hoewel onze overkapping voornamelijk is ontworpen voor de opslag van fietsen, maakt de veelzijdigheid het ook een ideale oplossing voor vele andere behoeften."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "De stalen overkapping is voornamelijk ontworpen voor de opslag van fietsen, maar kan ook worden gebruikt voor tuingereedschap, kinderwagens, scooters, steps en andere accessoires en gebruiksvoorwerpen. De helling van het klepdak naar voren zorgt voor een goede waterafvoer, en dankzij de handige handgreep is het openen eenvoudig."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Pianoscharnier in de klep van de overkapping"
+      },
+      "stopPoints": {
+        "title": "Innovatief openingssysteem met STOP-punten"
+      },
+      "fabricHandle": {
+        "title": "Stoffen handgreep voor eenvoudig openen en sluiten van de drempel"
+      },
+      "steelRods": {
+        "title": "Sluiten van de overkapping met aluminium-stalen trekstangen."
+      },
+      "packing": {
+        "title": "Handige verpakking in een palletbox"
+      },
+      "reinforcedCorners": {
+        "title": "Versterkte hoeken"
+      },
+      "steelTriangles": {
+        "title": "Verstevigende stalen driehoeken in de hoeken"
+      },
+      "lidReinforcement": {
+        "title": "Stalen klepversterkingen verbonden met U-profielen"
+      }
+    },
+    "colorSection": {
+      "title": "Ontdek de kleuren.",
+      "aesthetic": "Tijdloze esthetiek in elke kleur",
+      "match": "Pas de overkapping aan bij de gevel van uw huis",
+      "protection": "Bescherming tegen alle weersomstandigheden",
+      "quality": "Hoogste kwaliteit laklaag"
+    },
+    "dimensions": {
+      "title": "Afmetingen van de fietsenoverkapping",
+      "height": "Hoogte",
+      "width": "Breedte",
+      "depth": "Diepte"
+    },
+    "nav": {
+      "priceFrom": "Vanaf 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Aluminium vloer",
+      "subtitle": "bevestigd aan de grond met roestvrijstalen ankers.",
+      "description": "In de fietsenoverkapping is het mogelijk om een aluminium vloer te installeren, die effectief de groei van ongewenste vegetatie voorkomt, vooral bij montage op klinkers. De vloer is zo ontworpen dat de verankering van de overkapping via dezelfde gaten verloopt als bij de versie zonder vloer. Hierdoor kan de overkapping op elk gewenst moment eenvoudig worden uitgebreid met deze optie."
+    },
+    "lifestyle": {
+      "p1": "Hoewel onze overkapping voornamelijk is ontworpen voor de opslag van fietsen, maakt de veelzijdigheid het ook een ideale oplossing voor vele andere behoeften. Naast fietsen biedt het gemakkelijk plaats aan tuingereedschap zoals schoppen, harken of snoeischaren, en kleine tuinaccessoires zoals potten, zaden of meststoffen. Dankzij de royale afmetingen — 1950 mm breed, 900 mm diep en 1290 mm hoog — kan de overkapping ook dienen als praktische berging voor accessoires rond het huis, zoals grasmaaiers, tuinslangen, enz.",
+      "p2": "Het is ook ideaal voor het opbergen van kinderspeelgoed, waaronder elektrische autootjes of trappers, zandbakspeelgoed en tuinsets. Daarnaast kan de overkapping visartikelen herbergen, zoals hengels, molens of vistassen, evenals seizoensgebonden tuindecoraties zoals lantaarns, solar lampjes of klein tuinmeubilair. Als u uw tuin gebruikt om te ontspannen, vindt u hier ook ruimte voor barbecue-accessoires.",
+      "p3": "Dankzij de functionaliteit en ruimtelijkheid biedt onze overkapping een handige oplossing voor de opslag van een breed scala aan voorwerpen die nuttig zijn in het dagelijks leven, waarbij de beschikbare ruimte optimaal wordt benut."
+    },
+    "showcase1": {
+      "top": "Robuust",
+      "glow": "pianoscharnier",
+      "bottom": "van staal.",
+      "description": "In onze fietsenoverkapping hebben we een pianoscharnier toegepast, wat de standaard voor dagelijks gebruik verhoogt. Dit subtiele en toch uitzonderlijk sterke element zorgt niet alleen voor een ideale stijfheid van de sluitklep, maar ook voor een soepele, bijna geluidloze werking. Dankzij de compacte constructie en het grote contactoppervlak garandeert dit scharnier niet alleen betrouwbaarheid, maar ook duurzaamheid voor jaren. Een oplossing die gewaardeerd zal worden door alle gebruikers die waarde hechten aan precisie, functionaliteit en modern design."
+    },
+    "showcase2": {
+      "top": "Metalen drempel",
+      "glow": "van licht aluminium",
+      "description": "Het onderste gedeelte van de overkapping is ontworpen voor maximale functionaliteit en gebruiksgemak. De stalen drempel met een elegante stoffen handgreep zorgt voor een stevige sluiting, en neodymium magneten houden deze nauwkeurig op zijn plaats om onbedoeld openen te voorkomen. Speciaal passende scharnieren en een extra buiging van het element creëren na opening een vloeiend geprofileerde oprit, waardoor het inbrengen van de fiets wordt vergemakkelijkt. Deze doordachte oplossing combineert duurzaamheid met gemak en voldoet aan de behoeften van veeleisende gebruikers."
+    }
+  },
+  "footer": {
+    "unicorn": {
+      "tagline": "Doorbreek de patronen.",
+      "prefix": "Vang de branche-",
+      "cta": "Eenhoorn."
+    },
+    "location": {
+      "title": "Openingstijden & Locatie",
+      "address1": "Kantoor I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Polen",
+      "workingDays": "Maandag - Vrijdag",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Snelkoppelingen"
+    },
+    "career": {
+      "title": "GMS Carrière",
+      "description": "Begin uw carrière bij GMS Corporation",
+      "cta": "Sluit je aan bij onze community"
+    },
+    "bottom": {
+      "rights": "Alle rechten voorbehouden",
+      "author": "door Mateusz Sromek",
+      "rodo": "AVG",
+      "cookies": "Cookies"
+    }
+  },
+  "chat": {
+    "welcome": "Hoe kan ik u vandaag helpen?",
+    "placeholder": "Stel een vraag aan GMS Corporation...",
+    "assistant": "AI Assistent",
+    "processing": "Gegevens worden verwerkt...",
+    "clearHistory": "Gespreksgeschiedenis wissen",
+    "clearConfirm": "Wilt u zeker dat u de gespreksgeschiedenis wilt wissen?",
+    "close": "Sluiten",
+    "chips": {
+      "summary": "Pagina samenvatten",
+      "specs": "Technische specificaties"
+    }
   }
 }

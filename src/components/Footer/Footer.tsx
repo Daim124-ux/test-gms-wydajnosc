@@ -2,7 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Footer.css';
 
@@ -23,6 +24,12 @@ interface FooterProps {
 }
 
 export default function Footer({ variant }: FooterProps) {
+  const t = useTranslations('footer');
+  const tn = useTranslations('navigation.header');
+  const tmt = useTranslations('navigation.megaMenu.tabs');
+  const tmg = useTranslations('navigation.megaMenu.gatesTitles');
+  const tml = useTranslations('navigation.megaMenu.moreLinks');
+
   const [icons, setIcons] = useState<{ id: number; src: string; delay: number; x: string; size: number; startY: number; color: string }[]>([]);
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
@@ -112,8 +119,8 @@ export default function Footer({ variant }: FooterProps) {
               transition={{ duration: 1.5, ease: "easeOut" }}
               className="unicorn-text-main"
             >
-              Nie goń schematów.<br />
-              Złap <span className="unicorn-text-gradient">Jednorożca.</span>
+              {t('unicorn.tagline')}<br />
+              {t('unicorn.prefix')} <span className="unicorn-text-gradient">{t('unicorn.cta')}</span>
             </motion.div>
           </div>
           <video
@@ -134,7 +141,7 @@ export default function Footer({ variant }: FooterProps) {
               {/* Kolumna 1: Dom system */}
               <div className="footer-column-accordion">
                 <button onClick={() => toggleSection('dom')} className="footer-column-header">
-                  <h4 className="footer-column-title">Dom system</h4>
+                  <h4 className="footer-column-title">{tn('domSystem')}</h4>
                   <motion.span animate={{ rotate: expandedSection === 'dom' ? 180 : 0 }} className="lg:hidden text-[#86868b]">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </motion.span>
@@ -142,14 +149,14 @@ export default function Footer({ variant }: FooterProps) {
                 <AnimatePresence>
                   {(expandedSection === 'dom' || (isMounted && window.innerWidth >= 1024)) && (
                     <motion.ul initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="footer-link-list">
-                      <li><Link href="/system-dom/wiata-stalowa-na-rowery/" className="footer-link">Wiata na rowery</Link></li>
-                      <li><Link href="/system-dom/garaze-blaszane/" className="footer-link">Garaże SuperStrong</Link></li>
-                      <li><Link href="/system-dom/bramy-garazowe/" className="footer-link">Bramy garażowe</Link></li>
-                      <li><Link href="/system-dom/bramy-rozwierne/" className="footer-link">Bramy rozwierne</Link></li>
-                      <li><Link href="/system-dom/bramy-uchylne/" className="footer-link">Bramy uchylne</Link></li>
-                      <li><Link href="/system-dom/bramy-rozwierne-panelowe/" className="footer-link">Bramy rozwierne panelowe</Link></li>
-                      <li><Link href="/system-dom/wiaty-stalowe/" className="footer-link">Wiaty stalowe</Link></li>
-                      <li><Link href="/system-dom/garaze-stalowe/" className="footer-link">Garaże stalowe</Link></li>
+                      <li><Link href="/system-dom/wiata-stalowa-na-rowery/" className="footer-link">{tmt('bikeShelter')}</Link></li>
+                      <li><Link href="/system-dom/garaze-blaszane/" className="footer-link">{tmt('superstrong')}</Link></li>
+                      <li><Link href="/system-dom/bramy-garazowe/" className="footer-link">{tmt('gates')}</Link></li>
+                      <li><Link href="/system-dom/bramy-rozwierne/" className="footer-link">{tmg('hinged')}</Link></li>
+                      <li><Link href="/system-dom/bramy-uchylne/" className="footer-link">{tmg('tilt')}</Link></li>
+                      <li><Link href="/system-dom/bramy-rozwierne-panelowe/" className="footer-link">{tmg('hingedPanel')}</Link></li>
+                      <li><Link href="/system-dom/wiaty-stalowe/" className="footer-link">{tmt('steelShelters')}</Link></li>
+                      <li><Link href="/system-dom/garaze-stalowe/" className="footer-link">{tmt('garages')}</Link></li>
                     </motion.ul>
                   )}
                 </AnimatePresence>
@@ -158,7 +165,7 @@ export default function Footer({ variant }: FooterProps) {
               {/* Kolumna 2: Osiedle system */}
               <div className="footer-column-accordion">
                 <button onClick={() => toggleSection('osiedle')} className="footer-column-header">
-                  <h4 className="footer-column-title">Osiedle system</h4>
+                  <h4 className="footer-column-title">{tn('osiedleSystem')}</h4>
                   <motion.span animate={{ rotate: expandedSection === 'osiedle' ? 180 : 0 }} className="lg:hidden text-[#86868b]">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </motion.span>
@@ -166,13 +173,13 @@ export default function Footer({ variant }: FooterProps) {
                 <AnimatePresence>
                   {(expandedSection === 'osiedle' || (isMounted && window.innerWidth >= 1024)) && (
                     <motion.ul initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="footer-link-list">
-                      <li><Link href="/system-osiedle/altany-smietnikowe/" className="footer-link">Altany i wiaty śmietnikowe</Link></li>
-                      <li><Link href="/system-osiedle/altany-z-zielonym-dachem/" className="footer-link">Altany z zielonym dachem</Link></li>
-                      <li><Link href="/system-osiedle/boksy-garazowe/" className="footer-link">Boksy garażowe</Link></li>
-                      <li><Link href="/system-osiedle/drzwi-do-piwnic/" className="footer-link">Drzwi do piwnic</Link></li>
-                      <li><Link href="/system-osiedle/garaze-zbiorcze-i-wiaty-garażowe/" className="footer-link">Garaże zbiorcze</Link></li>
-                      <li><Link href="/system-osiedle/komorki-lokatorskie-i-boks-rowerowy/" className="footer-link">Komórki lokatorskie</Link></li>
-                      <li><Link href="/system-osiedle/wygrodzenia-systemowe/" className="footer-link">Wygrodzenia systemowe</Link></li>
+                      <li><Link href="/system-osiedle/altany-smietnikowe/" className="footer-link">{tmt('trashShelters')}</Link></li>
+                      <li><Link href="/system-osiedle/altany-z-zielonym-dachem/" className="footer-link">{tmt('greenShelters')}</Link></li>
+                      <li><Link href="/system-osiedle/boksy-garazowe/" className="footer-link">{tmt('collectiveGarages')}</Link></li>
+                      <li><Link href="/system-osiedle/drzwi-do-piwnic/" className="footer-link">{tmt('basementDoors')}</Link></li>
+                      <li><Link href="/system-osiedle/garaze-zbiorcze-i-wiaty-garażowe/" className="footer-link">{tmt('collectiveGarages')}</Link></li>
+                      <li><Link href="/system-osiedle/komorki-lokatorskie-i-boks-rowerowy/" className="footer-link">{tmt('partitionWalls')}</Link></li>
+                      <li><Link href="/system-osiedle/wygrodzenia-systemowe/" className="footer-link">{tmt('bikeCages')}</Link></li>
                     </motion.ul>
                   )}
                 </AnimatePresence>
@@ -180,45 +187,44 @@ export default function Footer({ variant }: FooterProps) {
 
               {/* Kolumna 3: Lokalizacja */}
               <div className="pb-4 lg:pb-0">
-                <h4 className="footer-column-title">Godziny pracy & Lokalizacja</h4>
+                <h4 className="footer-column-title">{t('location.title')}</h4>
                 <div className="flex flex-col gap-6 mt-8 lg:mt-0">
                   <p className="footer-text-info">
-                    Biuro I, II, Nawojowa 33-335<br />
-                    Krynicka 55, Nawojowa<br />
-                    Polska
+                    {t('location.address1')}<br />
+                    {t('location.address2')}<br />
+                    {t('location.country')}
                   </p>
                   <p className="footer-text-info">
-                    Poniedziałek - Piątek<br />
-                    07:00 - 15:00
+                    {t('location.workingDays')}<br />
+                    {t('location.workingHours')}
                   </p>
                 </div>
               </div>
 
               {/* Kolumna 4: Szybki dostęp */}
               <div className="pb-4 lg:pb-0">
-                <h4 className="footer-column-title">Szybki dostęp</h4>
+                <h4 className="footer-column-title">{t('quickAccess.title')}</h4>
                 <ul className="footer-link-list">
-                  <li><Link href="/sklep/" className="footer-link">Sklep</Link></li>
-                  <li><Link href="/o-nas/" className="footer-link">O nas</Link></li>
-                  <li><Link href="/blog/" className="footer-link">Blog | GMS Press</Link></li>
-                  <li><Link href="/dystrybutorzy/" className="footer-link">Dystrybutorzy</Link></li>
-                  <li><Link href="/kariera/" className="footer-link">Kariera</Link></li>
-                  <li><Link href="/kontakt/" className="footer-link">Kontakt</Link></li>
-                  <li><Link href="/realizacje/" className="footer-link">Realizacje</Link></li>
-                  <li><Link href="/do-pobrania/" className="footer-link">Do pobrania</Link></li>
+                  <li><Link href="/sklep/" className="footer-link">{tn('shop')}</Link></li>
+                  <li><Link href="/o-nas/" className="footer-link">{tml('about')}</Link></li>
+                  <li><Link href="/blog/" className="footer-link">{tml('blog')}</Link></li>
+                  <li><Link href="/dystrybutorzy/" className="footer-link">{tml('distributors')}</Link></li>
+                  <li><Link href="/kariera/" className="footer-link">{tml('career')}</Link></li>
+                  <li><Link href="/kontakt/" className="footer-link">{tn('contact')}</Link></li>
+                  <li><Link href="/realizacje/" className="footer-link">{tml('projects')}</Link></li>
+                  <li><Link href="/do-pobrania/" className="footer-link">{tml('downloads')}</Link></li>
                 </ul>
               </div>
 
               {/* Kolumna 5: Kariera */}
               <div className="pb-4 lg:pb-0">
-                <h4 className="footer-column-title">GMS Kariera</h4>
+                <h4 className="footer-column-title">{t('career.title')}</h4>
                 <div className="flex flex-col gap-6 mt-8 lg:mt-0">
-                  <p className="footer-text-info">
-                    Zacznij pracę w GMS<br />
-                    Corporation
+                  <p className="footer-text-info whitespace-pre-line">
+                    {t('career.description')}
                   </p>
                   <Link href="/kariera/" className="footer-career-link">
-                    Dołącz do naszej społeczności
+                    {t('career.cta')}
                   </Link>
                 </div>
               </div>
@@ -228,12 +234,12 @@ export default function Footer({ variant }: FooterProps) {
             {/* BOTTOM BAR */}
             <div className="footer-bottom-bar">
               <div className="footer-copyright">
-                © 2026 GMS System® Corporation sp. z.o.o. | All Rights Reserved | by Mateusz Sromek | <a href="mailto:biuro@gms-system.com" className="hover:text-[#0066cc] transition-colors">biuro@gms-system.com</a>
+                © 2026 GMS System® Corporation sp. z.o.o. | {t('bottom.rights')} | {t('bottom.author')} | <a href="mailto:biuro@gms-system.com" className="hover:text-[#0066cc] transition-colors">biuro@gms-system.com</a>
               </div>
               <div className="footer-legal-links">
-                <Link href="/polityka-prywatnosci/" className="footer-legal-link">Polityka prywatności</Link>
-                <Link href="/rodo/" className="footer-legal-link">RODO</Link>
-                <Link href="/cookies/" className="footer-legal-link">Pliki cookies</Link>
+                <Link href="/polityka-prywatnosci/" className="footer-legal-link">{tml('privacy')}</Link>
+                <Link href="/rodo/" className="footer-legal-link">{t('bottom.rodo')}</Link>
+                <Link href="/cookies/" className="footer-legal-link">{t('bottom.cookies')}</Link>
               </div>
             </div>
 

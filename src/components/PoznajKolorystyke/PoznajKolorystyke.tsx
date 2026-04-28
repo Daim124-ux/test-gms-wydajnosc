@@ -26,7 +26,11 @@ interface PoznajKolorystykeProps {
   elementy: ElementKolorystyki[];
 }
 
+import { useTranslations } from 'next-intl';
+
 export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystykeProps) {
+  const t = useTranslations('productLayout.colorSection');
+
   const [wybranyKolor, setWybranyKolor] = useState<KolorWiaty>(kolory[0]);
   const [poprzedniKolor, setPoprzedniKolor] = useState<KolorWiaty | null>(null);
   const [aktywnyId, setAktywnyId] = useState<string | null>(elementy[0]?.id || null);
@@ -182,7 +186,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
         {/* NAGŁÓWEK */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <h2 className="section-headline">
-            Poznaj kolorystykę.
+            {t('title')}
           </h2>
         </div>
 

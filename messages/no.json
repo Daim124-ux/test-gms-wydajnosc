@@ -1,31 +1,203 @@
 {
   "common": {
-    "buy": "Kup teraz",
-    "close": "Zamknij",
-    "back": "Wstecz",
-    "next": "Dalej",
-    "seeMore": "Zobacz więcej"
+    "buy": "Kjøp nå",
+    "close": "Lukk",
+    "back": "Tilbake",
+    "next": "Neste",
+    "seeMore": "Se mer",
+    "readMore": "Les artikkelen",
+    "configure": "Konfigurer produkt",
+    "checkAlso": "Sjekk også",
+    "blogArticles": "Bloggartikler",
+    "fromBlog": "Artikkel fra bloggen",
+    "shop": "Butikk",
+    "goToShop": "Gå til butikken"
   },
-  "hero": {
-    "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouler przechowywania.",
-    "cta": "Zobacz z bliska"
-  },
-  "features": {
-    "title": "Innowacyjne rozwiązania",
-    "floor": {
-      "title": "Aluminiowa podłoga",
-      "description": "Skutecznie zapobiega wzrostowi niechcianej roślinności."
+  "navigation": {
+    "header": {
+      "domSystem": "Hussystem",
+      "osiedleSystem": "Boligområdesystem",
+      "shop": "Butikk",
+      "partnerZone": "Partnersone",
+      "contact": "Kontakt",
+      "more": "Mer"
     },
-    "threshold": {
-      "title": "Metalowy próg",
-      "description": "Wykonany z lekkiego i wytrzymałego aluminium."
+    "megaMenu": {
+      "superstrongDesc": "Supersterke garasjer, for montering direkte på bakken.",
+      "shelterWoodDesc": "Hageskjul, verktøyskur, vedskjul eller motorsykkelgarasje.",
+      "shelterRamps": "med mulighet for montering av innkjørskskinne",
+      "tabs": {
+        "garages": "Stålgarasjer",
+        "superstrong": "Superstrong-garasjer",
+        "bikeShelter": "Sykkelbod",
+        "steelShelters": "Stålskjul",
+        "gates": "Garasjeporter og motorer",
+        "greenShelters": "Grønne paviljonger",
+        "trashShelters": "Avfallsskur",
+        "compactShelters": "Kompakte avfallsskjermer",
+        "basementDoors": "Kjellerdører",
+        "collectiveGarages": "Fellesgarasjer",
+        "partitionWalls": "Skillevegger",
+        "bikeCages": "Sykkelbur"
+      },
+      "moreLinks": {
+        "about": "Om oss",
+        "career": "Karriere",
+        "blog": "Blogg",
+        "distributors": "Distributører",
+        "projects": "Prosjekter",
+        "privacy": "Personvernpolicy",
+        "downloads": "Nedlastinger"
+      },
+      "titles": {
+        "garaze_stalowe": "Stålgarasjer",
+        "garaze_superstrong": "Superstrong-garasjer",
+        "wiata": "Sykkelbod",
+        "wiaty_stalowe": "Stålskjul",
+        "bramy": "Garasjeporter og motorer",
+        "altany_zielone": "Grønne paviljonger",
+        "altany_smietnikowe": "Avfallsskur",
+        "kompaktowe": "Kompakte skjermer",
+        "drzwi": "Kjellerdører",
+        "garaze_zbiorcze": "Fellesgarasjer",
+        "scianki": "Skillevegger",
+        "wygrodzenia": "Industrielle innhegninger"
+      },
+      "gatesTitles": {
+        "tilt": "Vippedorter",
+        "hinged": "Svingporter",
+        "hingedPanel": "Panel-svingporter",
+        "sectional": "Seksjonsport"
+      }
     }
   },
-  "colors": {
-    "title": "Poznaj kolorystykę",
-    "ocynk": "Ocynk",
-    "burgund": "RAL 3005 - Burgundowy",
-    "antracyt": "RAL 7016 - Antracyt"
+  "hero": {
+    "title": "Stålskjul for sykler",
+    "subtitle": "Vår Rouleur for oppbevaring.",
+    "newCategory": "En helt ny kategori",
+    "cinematicDesc": "Lettere, sterkere, perfeksjonert i hver millimeter. Ekte stål som tåler all slags vind."
+  },
+  "features": {
+    "title": "Viktig informasjon."
+  },
+  "configuratorPromo": {
+    "title": "Konfigurer ditt skjul",
+    "description": "Vår konfigurator gir deg muligheten til å tilpasse produktene slik at de oppfyller kravene til selv de mest krevende kundene. Du får en sanntidsvisning av produktet mens du konfigurerer."
+  },
+  "lifestyle": {
+    "title": "Mer enn bare en sykkelbod",
+    "description": "Selv om vårt skjul hovedsakelig er designet for oppbevaring av sykler, gjør allsidigheten det til en ideell løsning for mange andre behov."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Stålskjulet er primært designet for sykkeloppbevaring, men kan også brukes til hageredskaper, barnevogner, scootere, sparkesykler og annet tilbehør. Lokkets helling forover sørger for god vannavrenning, og det praktiske håndtaket gjør åpningen enkel."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Pianohengsel i skjul-lokket"
+      },
+      "stopPoints": {
+        "title": "Innovativt åpningssystem med STOP-punkter"
+      },
+      "fabricHandle": {
+        "title": "Tekstilhåndtak som forenkler åpning og lukking av terskelen"
+      },
+      "steelRods": {
+        "title": "Lukking av skjulet ved hjelp av aluminium-stålstag."
+      },
+      "packing": {
+        "title": "Praktisk pakking i pallboks"
+      },
+      "reinforcedCorners": {
+        "title": "Forsterkede hjørner"
+      },
+      "steelTriangles": {
+        "title": "Stivende ståltrekanter i hjørnene"
+      },
+      "lidReinforcement": {
+        "title": "Stålforsterkninger i lokket kombinert med U-profiler"
+      }
+    },
+    "colorSection": {
+      "title": "Utforsk fargevalgene.",
+      "aesthetic": "Tidløs estetikk i alle farger",
+      "match": "Tilpass skjulet til husets fasade",
+      "protection": "Beskyttelse under alle forhold",
+      "quality": "Høyeste kvalitet på lakkoverflaten"
+    },
+    "dimensions": {
+      "title": "Dimensjoner for sykkelboden",
+      "height": "Høyde",
+      "width": "Bredde",
+      "depth": "Dybde"
+    },
+    "nav": {
+      "priceFrom": "Fra 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Aluminiumgulv",
+      "subtitle": "festet til bakken med rustfrie ankere.",
+      "description": "Det er mulig å installere et aluminiumgulv i sykkelboden, som effektivt forhindrer uønsket plantevekst, spesielt ved montering på belegningsstein. Gulvet er designet slik at forankringen av skjulet skjer gjennom de samme hullene som i versjonen uten gulv. Dette gjør det enkelt å legge til dette alternativet når det blir nødvendig."
+    },
+    "lifestyle": {
+      "p1": "Selv om vårt skjul hovedsakelig er designet for oppbevaring av sykler, gjør allsidigheten det til en ideell løsning for mange andre behov. I tillegg til sykler, rommer det enkelt hageredskaper som spader, raker eller beskjæringssaks, samt små hageutstyr som potter, frø eller gjødsel. Med romslige dimensjoner — 1950 mm bredde, 900 mm dybde og 1290 mm høyde — kan skjulet også fungere som et praktisk lager for utendørsutstyr som gressklippere, hageslanger osv.",
+      "p2": "Det egner seg også perfekt til oppbevaring av barneleker, inkludert elektriske biler eller tråbiler, sandkasseleker og hagesett. I tillegg kan skjulet romme fiskeutstyr som fiskestenger, sneller eller fiskebager, samt sesongbasert hagedekorasjon som lykter, solcellelamper eller små hagemøbler. Hvis du bruker hagen til avslapning, vil du også finne plass til grilltilbehør.",
+      "p3": "Takket være sin funksjonalitet og romslighet, tilbyr vårt skjul en praktisk løsning for oppbevaring av et bredt spekter av gjenstander som er nyttige i hverdagen, samtidig som den tilgjengelige plassen utnyttes maksimalt."
+    },
+    "showcase1": {
+      "top": "Slitesterk",
+      "glow": "pianohengsel",
+      "bottom": "av stål.",
+      "description": "I vår sykkelbod har vi brukt et pianohengsel som hever standarden for daglig bruk. Dette diskré, men samtidig eksepsjonelt sterke elementet sikrer ikke bare perfekt stivhet i lokket, men også en smidig og nesten lydløs drift. Takket være den kompakte konstruksjonen og den store kontaktflaten, garanterer dette hengselet både pålitelighet og holdbarhet i mange år. Dette er en løsning som vil bli satt pris på av alle brukere som verdsetter presisjon, funksjonalitet og moderne design."
+    },
+    "showcase2": {
+      "top": "Metallterskel",
+      "glow": "av lett aluminium",
+      "description": "Den nedre delen av skjulet er designet for maksimal funksjonalitet og brukervennlighet. Stålterskelen med et elegant tekstilhåndtak sikrer en solid lukking, mens neodymmagneter holder den presist på plass for å forhindre utilsiktet åpning. Spesialtilpassede hengsler og ekstra bøying av elementet skaper en smidig profilert rampe ved åpning, noe som gjør det enkelt å rulle inn sykkelen. Denne gjennomtenkte løsningen kombinerer holdbarhet med komfort, og møter behovene til krevende brukere."
+    }
+  },
+  "footer": {
+    "unicorn": {
+      "tagline": "Bryt med det vante.",
+      "prefix": "Fang bransjens",
+      "cta": "Enhjørning."
+    },
+    "location": {
+      "title": "Åpningstider & Lokasjon",
+      "address1": "Kontor I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Polen",
+      "workingDays": "Mandag - Fredag",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Hurtigtilgang"
+    },
+    "career": {
+      "title": "GMS Karriere",
+      "description": "Start din karriere i GMS Corporation",
+      "cta": "Bli en del av vårt fellesskap"
+    },
+    "bottom": {
+      "rights": "Alle rettigheter reservert",
+      "author": "av Mateusz Sromek",
+      "rodo": "GDPR",
+      "cookies": "Informasjonskapsler"
+    }
+  },
+  "chat": {
+    "welcome": "Hvordan kan jeg hjelpe deg i dag?",
+    "placeholder": "Spør GMS Corporation...",
+    "assistant": "AI-assistent",
+    "processing": "Behandler data...",
+    "clearHistory": "Slett chathistorikk",
+    "clearConfirm": "Er du sikker på at du vil slette chathistorikken?",
+    "close": "Lukk",
+    "chips": {
+      "summary": "Oppsummer siden",
+      "summaryPrompt": "Lag et kort sammendrag (3-5 punkter) av det som finnes på denne undersiden",
+      "specs": "Tekniske spesifikasjoner",
+      "specsPrompt": "Hent ut tekniske spesifikasjoner fra innholdet på denne siden, eller fortell om de viktigste tekniske detaljene"
+    }
   }
 }

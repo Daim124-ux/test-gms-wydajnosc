@@ -1,31 +1,201 @@
 {
   "common": {
-    "buy": "Kup teraz",
-    "close": "Zamknij",
-    "back": "Wstecz",
-    "next": "Dalej",
-    "seeMore": "Zobacz więcej"
+    "buy": "Køb nu",
+    "close": "Luk",
+    "back": "Tilbage",
+    "next": "Næste",
+    "seeMore": "Se mere",
+    "readMore": "Læs artiklen",
+    "configure": "Konfigurer produkt",
+    "checkAlso": "Se også",
+    "blogArticles": "Blogartikler",
+    "fromBlog": "Artikel fra bloggen",
+    "shop": "Butik",
+    "goToShop": "Gå til butikken"
   },
-  "hero": {
-    "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouler przechowywania.",
-    "cta": "Zobacz z bliska"
-  },
-  "features": {
-    "title": "Innowacyjne rozwiązania",
-    "floor": {
-      "title": "Aluminiowa podłoga",
-      "description": "Skutecznie zapobiega wzrostowi niechcianej roślinności."
+  "navigation": {
+    "header": {
+      "domSystem": "Hussystem",
+      "osiedleSystem": "Beboelsessystem",
+      "shop": "Butik",
+      "partnerZone": "Partnerzone",
+      "contact": "Kontakt",
+      "more": "Mere"
     },
-    "threshold": {
-      "title": "Metalowy próg",
-      "description": "Wykonany z lekkiego i wytrzymałego aluminium."
+    "megaMenu": {
+      "superstrongDesc": "Superstærke garager, til montering direkte på jorden.",
+      "shelterWoodDesc": "Havepavilloner, redskabsskure, brændsheltere eller til motorcykler.",
+      "shelterRamps": "med mulighed for montering af indkørselskinne",
+      "tabs": {
+        "garages": "Stålgarager",
+        "superstrong": "Superstrong garager",
+        "bikeShelter": "Cykelhus",
+        "steelShelters": "Stålskure",
+        "gates": "Garageporte og motorer",
+        "greenShelters": "Grønne pavilloner",
+        "trashShelters": "Affaldsskure",
+        "compactShelters": "Kompakte affaldsskærme",
+        "basementDoors": "Kælderdøre",
+        "collectiveGarages": "Fællesgarager",
+        "partitionWalls": "Skillevægge",
+        "bikeCages": "Cykelboks-afskærmning"
+      },
+      "moreLinks": {
+        "about": "Om os",
+        "career": "Karriere",
+        "blog": "Blog",
+        "distributors": "Distributører",
+        "projects": "Projekter",
+        "privacy": "Privatlivspolitik",
+        "downloads": "Downloads"
+      },
+      "titles": {
+        "garaze_stalowe": "Stålgarager",
+        "garaze_superstrong": "Superstrong garager",
+        "wiata": "Cykelhus",
+        "wiaty_stalowe": "Stålskure",
+        "bramy": "Garageporte og motorer",
+        "altany_zielone": "Grønne pavilloner",
+        "altany_smietnikowe": "Affaldsskure",
+        "kompaktowe": "Kompakte skærme",
+        "drzwi": "Kælderdøre",
+        "garaze_zbiorcze": "Fællesgarager",
+        "scianki": "Skillevægge",
+        "wygrodzenia": "Industrielle afskærmninger"
+      },
+      "gatesTitles": {
+        "tilt": "Opvippelige garageporte",
+        "hinged": "Svingporte",
+        "hingedPanel": "Panel-svingporte",
+        "sectional": "Sektionsporte"
+      }
     }
   },
-  "colors": {
-    "title": "Poznaj kolorystykę",
-    "ocynk": "Ocynk",
-    "burgund": "RAL 3005 - Burgundowy",
-    "antracyt": "RAL 7016 - Antracyt"
+  "hero": {
+    "title": "Stålcykelhus",
+    "subtitle": "Vores opbevarings-Rouleur.",
+    "newCategory": "Helt ny kategori",
+    "cinematicDesc": "Lettere, stærkere, gennemarbejdet i hver eneste millimeter. Ægte stål, som ingen vind kan modstå."
+  },
+  "features": {
+    "title": "Vigtigste informationer."
+  },
+  "configuratorPromo": {
+    "title": "Konfigurer dit cykelhus",
+    "description": "Vores konfigurator giver mulighed for at personalisere produkterne, så de opfylder de mest krævende kunders behov. Under konfigurationen kan vi se produktet i realtid."
+  },
+  "lifestyle": {
+    "title": "Mere end blot et cykelhus",
+    "description": "Selvom vores cykelhus primært er designet til opbevaring af cykler, gør dets alsidighed det til en ideel løsning til mange andre behov."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Stålhuset er primært designet til opbevaring af cykler, men det kan også bruges til haveværktøj, barnevogne, scootere, løbehjul og andet tilbehør og brugsgenstande. Tagets hældning forover sikrer god vandafledning, og takket være det praktiske håndtag er åbningen enkel."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Klaverhængsel i husets klap"
+      },
+      "stopPoints": {
+        "title": "Innovativt åbningssystem med STOP-punkter"
+      },
+      "fabricHandle": {
+        "title": "Tekstil håndtag, der letter åbning og lukning af tærsklen"
+      },
+      "steelRods": {
+        "title": "Lukning af huset ved hjælp af aluminium-ståltræk."
+      },
+      "packing": {
+        "title": "Praktisk pakning i palleskasse"
+      },
+      "reinforcedCorners": {
+        "title": "Forstærkede hjørner"
+      },
+      "steelTriangles": {
+        "title": "Forstærkende ståltrekanter i hjørnerne"
+      },
+      "lidReinforcement": {
+        "title": "Stålforstærkninger af klappen forbundet med U-profiler"
+      }
+    },
+    "colorSection": {
+      "title": "Se farvemulighederne.",
+      "aesthetic": "Tidløs æstetik i enhver farve",
+      "match": "Tilpas huset til dit hjems facade",
+      "protection": "Beskyttelse under alle forhold",
+      "quality": "Højeste kvalitet af lakbelægning"
+    },
+    "dimensions": {
+      "title": "Dimensioner for cykelhus",
+      "height": "Højde",
+      "width": "Bredde",
+      "depth": "Dybde"
+    },
+    "nav": {
+      "priceFrom": "Fra 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Aluminiumgulv",
+      "subtitle": "fastgjort til jorden med rustfri ankre.",
+      "description": "I cykelhuset er det muligt at installere et aluminiumgulv, som effektivt forhindrer vækst af uønsket vegetation, især ved montering på belægningssten. Gulvet er designet således, at forankringen af huset sker gennem de samme huller som i versionen uden gulv. Dette gør det nemt at tilføje denne option på et hvilket som helst tidspunkt, hvis det ønskes."
+    },
+    "lifestyle": {
+      "p1": "Selvom vores cykelhus primært er designet til opbevaring af cykler, gør dets alsidighed det til en ideel løsning til mange andre behov. Udover cykler kan det nemt rumme haveværktøj som skovle, river eller beskæresakse, samt små haveartikler som potter, frø eller gødning. Takket være de rummelige dimensioner — 1950 mm i bredden, 900 mm i dybden og 1290 mm i højden — kan huset også fungere som et praktisk opbevaringsrum til udstyr omkring hjemmet, såsom plæneklippere, haveslanger osv.",
+      "p2": "Det er også ideelt til opbevaring af børnelegetøj, herunder elbiler eller cykler, sandkasselegetøj og havesæt. Derudover kan huset rumme fiskeudstyr som fiskestænger, hjul og fisketasker, samt sæsonbetonede havedekorationer som lanterner, solcellelamper eller små havemøbler. Hvis du bruger haven til afslapning, finder du også plads til grilltilbehør her.",
+      "p3": "Takket være sin funktionalitet og rummelighed tilbyder vores hus en praktisk løsning til opbevaring af et bredt udvalg af genstande, der kan være nyttige i hverdagen, mens den tilgængelige plads udnyttes maksimalt."
+    },
+    "showcase1": {
+      "top": "Holdbar",
+      "glow": "klaverhængsel",
+      "bottom": "af stål.",
+      "description": "I vores cykelhus har vi anvendt et klaverhængsel, der hæver standarden for daglig brug. Dette diskrete, men ekstremt holdbare element sikrer ikke kun perfekt stivhed af lukke-klappen, men også en jævn og næsten lydløs drift. Takket være den kompakte konstruktion og den store kontaktflade garanterer dette hængsel ikke kun pålidelighed, men også holdbarhed i årevis. Dette er en løsning, som alle brugere, der værdsætter præcision, funktionalitet og moderne design, vil sætte pris på."
+    },
+    "showcase2": {
+      "top": "Metaltærskel",
+      "glow": "af let aluminium",
+      "description": "Den nederste del af huset er designet med henblik på maksimal funktionalitet og brugerkomfort. Ståltærsklen med et elegant tekstilhåndtag sikrer en solid lukning, og neodym-magneter holder den præcist på plads for at forhindre utilsigtet åbning. Specielt tilpassede hængsler og en ekstra bukning af elementet skaber en jævnt profileret rampe ved åbning, hvilket gør det lettere at køre cyklen ind. Denne gennemtænkte løsning kombinerer holdbarhed med bekvemmelighed og imødekommer behovene hos krævende brugere."
+    }
+  },
+  "footer": {
+    "unicorn": {
+      "tagline": "Bryd rammerne.",
+      "prefix": "Fang branchens",
+      "cta": "Enhjørning."
+    },
+    "location": {
+      "title": "Arbejdstider & Lokation",
+      "address1": "Kontor I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Polen",
+      "workingDays": "Mandag - Fredag",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Hurtig adgang"
+    },
+    "career": {
+      "title": "GMS Karriere",
+      "description": "Start din karriere hos GMS Corporation",
+      "cta": "Bliv en del af vores fællesskab"
+    },
+    "bottom": {
+      "rights": "Alle rettigheder forbeholdes",
+      "author": "af Mateusz Sromek",
+      "rodo": "GDPR",
+      "cookies": "Cookies"
+    }
+  },
+  "chat": {
+    "welcome": "Hvordan kan jeg hjælpe dig i dag?",
+    "placeholder": "Spørg GMS Corporation...",
+    "assistant": "AI-assistent",
+    "processing": "Behandler data...",
+    "clearHistory": "Ryd chathistorik",
+    "clearConfirm": "Er du sikker på, at du vil rydde chathistorikken?",
+    "close": "Luk",
+    "chips": {
+      "summary": "Opsummer siden",
+      "specs": "Tekniske specifikationer"
+    }
   }
 }

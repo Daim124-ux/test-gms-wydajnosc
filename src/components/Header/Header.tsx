@@ -3,9 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import MegaMenu from './MegaMenu';
-import Link from 'next/link';
-import { usePathname, useRouter } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
+import { Link, usePathname, useRouter } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import './Header.css';
 
 interface Translation {
@@ -18,6 +17,8 @@ interface HeaderProps {
 }
 
 export default function Header({ translations = [] }: HeaderProps) {
+  const t = useTranslations('navigation.header');
+  const tm = useTranslations('navigation.megaMenu.moreLinks');
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();
@@ -117,22 +118,22 @@ export default function Header({ translations = [] }: HeaderProps) {
               className="nav-item" 
               onMouseEnter={() => handleMouseEnter('dom')}
             >
-              Dom system
+              {t('domSystem')}
             </div>
             <div 
               className="nav-item" 
               onMouseEnter={() => handleMouseEnter('osiedle')}
             >
-              Osiedle system
+              {t('osiedleSystem')}
             </div>
-            <Link href="/sklep/" className="nav-item">Sklep</Link>
-            <Link href="/strefa-partnera/" className="nav-item">Strefa Partnera</Link>
-            <Link href="/kontakt/" className="nav-item">Kontakt</Link>
+            <Link href="/sklep/" className="nav-item">{t('shop')}</Link>
+            <Link href="/strefa-partnera/" className="nav-item">{t('partnerZone')}</Link>
+            <Link href="/kontakt/" className="nav-item">{t('contact')}</Link>
             <div 
               className="nav-item" 
               onMouseEnter={() => handleMouseEnter('wiecej')}
             >
-              Więcej
+              {t('more')}
             </div>
           </nav>
 
@@ -165,12 +166,12 @@ export default function Header({ translations = [] }: HeaderProps) {
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
             className="mobile-nav-overlay"
           >
-            <Link href="/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>Główna</Link>
-            <Link href="/system-dom/wiata-stalowa-na-rowery/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>Dom system</Link>
-            <Link href="/system-osiedle/altany-smietnikowe/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>Osiedle system</Link>
-            <Link href="/sklep/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>Sklep</Link>
-            <Link href="/strefa-partnera/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>Strefa Partnera</Link>
-            <Link href="/kontakt/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>Kontakt</Link>
+            <Link href="/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>{t('more')}</Link>
+            <Link href="/system-dom/wiata-stalowa-na-rowery/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>{t('domSystem')}</Link>
+            <Link href="/system-osiedle/altany-smietnikowe/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>{t('osiedleSystem')}</Link>
+            <Link href="/sklep/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>{t('shop')}</Link>
+            <Link href="/strefa-partnera/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>{t('partnerZone')}</Link>
+            <Link href="/kontakt/" className="mobile-nav-link" onClick={() => setIsMobileOpen(false)}>{t('contact')}</Link>
           </motion.div>
         )}
       </AnimatePresence>

@@ -1,31 +1,201 @@
 {
   "common": {
-    "buy": "Kup teraz",
-    "close": "Zamknij",
-    "back": "Wstecz",
-    "next": "Dalej",
-    "seeMore": "Zobacz więcej"
+    "buy": "Acquista ora",
+    "close": "Chiudi",
+    "back": "Indietro",
+    "next": "Avanti",
+    "seeMore": "Vedi di più",
+    "readMore": "Leggi l'articolo",
+    "configure": "Configura il prodotto",
+    "checkAlso": "Scopri anche",
+    "blogArticles": "Articoli del blog",
+    "fromBlog": "Articolo dal blog",
+    "shop": "Negozio",
+    "goToShop": "Vai al negozio"
   },
-  "hero": {
-    "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouler przechowywania.",
-    "cta": "Zobacz z bliska"
-  },
-  "features": {
-    "title": "Innowacyjne rozwiązania",
-    "floor": {
-      "title": "Aluminiowa podłoga",
-      "description": "Skutecznie zapobiega wzrostowi niechcianej roślinności."
+  "navigation": {
+    "header": {
+      "domSystem": "Dom system",
+      "osiedleSystem": "Osiedle system",
+      "shop": "Negozio",
+      "partnerZone": "Area Partner",
+      "contact": "Contatti",
+      "more": "Altro"
     },
-    "threshold": {
-      "title": "Metalowy próg",
-      "description": "Wykonany z lekkiego i wytrzymałego aluminium."
+    "megaMenu": {
+      "superstrongDesc": "Garage super resistenti, per il montaggio direttamente a terra.",
+      "shelterWoodDesc": "Pensiline da giardino, per attrezzi, legna o motociclette.",
+      "shelterRamps": "con possibilità di montaggio della guida d'ingresso",
+      "tabs": {
+        "garages": "Garage in acciaio",
+        "superstrong": "Garage Superstrong",
+        "bikeShelter": "Pensilina per biciclette",
+        "steelShelters": "Pensiline in acciaio",
+        "gates": "Cancelli per garage e motorizzazioni",
+        "greenShelters": "Gazebo verdi",
+        "trashShelters": "Recinti per rifiuti",
+        "compactShelters": "Coperture per rifiuti compatte",
+        "basementDoors": "Porte per locali tecnici",
+        "collectiveGarages": "Garage collettivi",
+        "partitionWalls": "Pareti divisorie",
+        "bikeCages": "Recinzioni per box biciclette"
+      },
+      "moreLinks": {
+        "about": "Chi siamo",
+        "career": "Carriera",
+        "blog": "Blog",
+        "distributors": "Rivenditori",
+        "projects": "Realizzazioni",
+        "privacy": "Informativa sulla privacy",
+        "downloads": "Download"
+      },
+      "titles": {
+        "garaze_stalowe": "Garage in acciaio",
+        "garaze_superstrong": "Garage Superstrong",
+        "wiata": "Pensilina per biciclette",
+        "wiaty_stalowe": "Pensiline in acciaio",
+        "bramy": "Cancelli per garage e motorizzazioni",
+        "altany_zielone": "Gazebo verdi",
+        "altany_smietnikowe": "Recinti per rifiuti",
+        "kompaktowe": "Coperture compatte",
+        "drzwi": "Porte per cantine",
+        "garaze_zbiorcze": "Garage collettivi",
+        "scianki": "Pareti divisorie",
+        "wygrodzenia": "Recinzioni industriali"
+      },
+      "gatesTitles": {
+        "tilt": "Serrande basculanti",
+        "hinged": "Cancelli a battente",
+        "hingedPanel": "Cancelli a battente a pannelli",
+        "sectional": "Cancelli sezionali"
+      }
     }
   },
-  "colors": {
-    "title": "Poznaj kolorystykę",
-    "ocynk": "Ocynk",
-    "burgund": "RAL 3005 - Burgundowy",
-    "antracyt": "RAL 7016 - Antracyt"
+  "hero": {
+    "title": "Pensilina in acciaio per biciclette",
+    "subtitle": "Il nostro 'rouleur' dello stoccaggio.",
+    "newCategory": "Una categoria completamente nuova",
+    "cinematicDesc": "Più leggera, più resistente, curata in ogni millimetro. Vero acciaio che sfida ogni vento."
+  },
+  "features": {
+    "title": "Informazioni principali."
+  },
+  "configuratorPromo": {
+    "title": "Configura la tua pensilina",
+    "description": "Il nostro configuratore permette di personalizzare i prodotti per soddisfare i clienti più esigenti. Durante la configurazione, è possibile visualizzare il prodotto in tempo reale."
+  },
+  "lifestyle": {
+    "title": "Più di una semplice pensilina per biciclette",
+    "description": "Sebbene la nostra pensilina sia stata progettata principalmente per riporre le biciclette, la sua versatilità la rende la soluzione ideale anche per molte altre esigenze."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "La pensilina in acciaio è stata progettata principalmente per riporre le biciclette, ma può essere utilizzata anche per attrezzi da giardino, passeggini, scooter, monopattini e altri accessori e oggetti d'uso quotidiano. La pendenza del tetto rivolta in avanti assicura un ottimo deflusso dell'acqua, mentre la pratica maniglia rende l'apertura semplice."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Cerniera a pianoforte nel coperchio della pensilina"
+      },
+      "stopPoints": {
+        "title": "Innovativo sistema di apertura con punti STOP"
+      },
+      "fabricHandle": {
+        "title": "Maniglia in tessuto per facilitare l'apertura e la chiusura della soglia"
+      },
+      "steelRods": {
+        "title": "Chiusura della pensilina tramite tiranti in alluminio e acciaio."
+      },
+      "packing": {
+        "title": "Imballaggio comodo in box pallettizzato"
+      },
+      "reinforcedCorners": {
+        "title": "Angoli rinforzati"
+      },
+      "steelTriangles": {
+        "title": "Triangoli di rinforzo in acciaio negli angoli"
+      },
+      "lidReinforcement": {
+        "title": "Rinforzi in acciaio del coperchio collegati a profili a C"
+      }
+    },
+    "colorSection": {
+      "title": "Scopri i colori.",
+      "aesthetic": "Estetica senza tempo in ogni colore",
+      "match": "Abbina la pensilina alla facciata della tua casa",
+      "protection": "Protezione in ogni condizione",
+      "quality": "Massima qualità della verniciatura"
+    },
+    "dimensions": {
+      "title": "Dimensioni della pensilina per biciclette",
+      "height": "Altezza",
+      "width": "Larghezza",
+      "depth": "Profondità"
+    },
+    "nav": {
+      "priceFrom": "Da 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Pavimento in alluminio",
+      "subtitle": "fissato al suolo mediante ancoraggi in acciaio inossidabile.",
+      "description": "Nella pensilina per biciclette è possibile installare un pavimento in alluminio, che previene efficacemente la crescita di vegetazione indesiderata, specialmente in caso di montaggio su pavimentazione in masselli. Il pavimento è progettato in modo che l'ancoraggio della pensilina avvenga attraverso gli stessi fori della versione senza pavimento. Ciò consente di aggiungere facilmente questa opzione in qualsiasi momento, se ritenuto necessario."
+    },
+    "lifestyle": {
+      "p1": "Sebbene la nostra pensilina sia stata progettata principalmente per riporre le biciclette, la sua versatilità la rende la soluzione ideale anche per molte altre esigenze. Oltre alle bici, può ospitare facilmente attrezzi da giardino come pale, rastrelli o cesoie, e piccoli accessori come vasi, semi o fertilizzanti. Grazie alle dimensioni generose — 1950 mm di larghezza, 900 mm di profondità e 1290 mm di altezza — la pensilina può servire anche come pratico ripostiglio per accessori domestici come tosaerba, tubi per l'irrigazione, ecc.",
+      "p2": "È ideale anche per riporre i giocattoli dei bambini, comprese le macchinine elettriche o a pedali, i giochi per la sabbia e i set per giocare in giardino. Inoltre, la pensilina può ospitare attrezzatura da pesca, come canne, mulinelli o borse da pesca, nonché decorazioni stagionali da giardino, come lanterne, luci solari o piccoli mobili da esterno. Se utilizzi il giardino per rilassarti, troverai spazio anche per gli accessori per il barbecue.",
+      "p3": "Grazie alla sua funzionalità e spaziosità, la nostra pensilina offre una soluzione comoda per riporre un'ampia gamma di oggetti utili nella vita quotidiana, massimizzando l'utilizzo dello spazio disponibile."
+    },
+    "showcase1": {
+      "top": "Resistente",
+      "glow": "cerniera a pianoforte",
+      "bottom": "in acciaio.",
+      "description": "Nella nostra pensilina per biciclette abbiamo utilizzato una cerniera a pianoforte, che eleva lo standard dell'uso quotidiano. Questo elemento discreto ma estremamente resistente garantisce non solo l'ideale rigidità del coperchio di chiusura, ma anche un funzionamento fluido e quasi silenzioso. Grazie alla struttura compatta e all'ampia superficie di contatto, questa cerniera garantisce non solo l'affidabilità, ma anche la durata negli anni. Una soluzione che sarà apprezzata da tutti gli utenti che valorizzano precisione, funzionalità e design moderno."
+    },
+    "showcase2": {
+      "top": "Soglia metallica",
+      "glow": "in alluminio leggero",
+      "description": "La parte inferiore della pensilina è stata progettata per la massima funzionalità e comfort d'uso. La soglia in acciaio con un'elegante maniglia in tessuto assicura una chiusura solida, mentre i magneti al neodimio la mantengono saldamente in posizione, prevenendo aperture accidentali. Le cerniere appositamente adattate e la piegatura supplementare dell'elemento creano, una volta aperta, una rampa profilata che facilita l'ingresso della bicicletta. Questa soluzione ponderata unisce durata e comodità, rispondendo alle esigenze degli utenti più esigenti."
+    }
+  },
+  "footer": {
+    "unicorn": {
+      "tagline": "Non seguire gli schemi.",
+      "prefix": "Acchiappa l'unicorno",
+      "cta": "del settore."
+    },
+    "location": {
+      "title": "Orari di lavoro e Posizione",
+      "address1": "Ufficio I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Polonia",
+      "workingDays": "Lunedì - Venerdì",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Accesso rapido"
+    },
+    "career": {
+      "title": "Carriera GMS",
+      "description": "Inizia a lavorare in GMS Corporation",
+      "cta": "Unisciti alla nostra community"
+    },
+    "bottom": {
+      "rights": "Tutti i diritti riservati",
+      "author": "di Mateusz Sromek",
+      "rodo": "GDPR",
+      "cookies": "Cookie"
+    }
+  },
+  "chat": {
+    "welcome": "Come posso aiutarti oggi?",
+    "placeholder": "Chiedi a GMS Corporation...",
+    "assistant": "Assistente AI",
+    "processing": "Elaborazione dati...",
+    "clearHistory": "Cancella la cronologia della conversazione",
+    "clearConfirm": "Sei sicuro di voler cancellare la cronologia della conversazione?",
+    "close": "Chiudi",
+    "chips": {
+      "summary": "Riassumi la pagina",
+      "specs": "Specifiche tecniche"
+    }
   }
 }

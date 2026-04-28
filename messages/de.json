@@ -4,28 +4,200 @@
     "close": "Schließen",
     "back": "Zurück",
     "next": "Weiter",
-    "seeMore": "Mehr sehen"
+    "seeMore": "Mehr sehen",
+    "readMore": "Artikel lesen",
+    "configure": "Produkt konfigurieren",
+    "checkAlso": "Siehe auch",
+    "blogArticles": "Blogartikel",
+    "fromBlog": "Artikel aus dem Blog",
+    "shop": "Shop",
+    "goToShop": "Zum Shop"
   },
-  "hero": {
-    "title": "Fahrradunterstand aus Stahl",
-    "subtitle": "Ihre Aufbewahrungslösung.",
-    "cta": "Details ansehen"
-  },
-  "features": {
-    "title": "Innovative Lösungen",
-    "floor": {
-      "title": "Aluminiumboden",
-      "description": "Verhindert effektiv das Wachstum unerwünschter Vegetation."
+  "navigation": {
+    "header": {
+      "domSystem": "Haus-System",
+      "osiedleSystem": "Siedlungs-System",
+      "shop": "Shop",
+      "partnerZone": "Partnerbereich",
+      "contact": "Kontakt",
+      "more": "Mehr"
     },
-    "threshold": {
-      "title": "Metallschwelle",
-      "description": "Aus leichtem und langlebigem Aluminium gefertigt."
+    "megaMenu": {
+      "superstrongDesc": "Superstarke Garagen, zur Montage direkt im Boden.",
+      "shelterWoodDesc": "Gartenunterstände, Gerätehäuser, für Holz oder Motorräder.",
+      "shelterRamps": "mit der Möglichkeit zur Montage einer Einfahrtsschiene",
+      "tabs": {
+        "garages": "Stahlgaragen",
+        "superstrong": "Superstrong Garagen",
+        "bikeShelter": "Fahrradunterstand",
+        "steelShelters": "Stahlunterstände",
+        "gates": "Garagentore und Antriebe",
+        "greenShelters": "Grüne Gartenlauben",
+        "trashShelters": "Mülltonnengehege",
+        "compactShelters": "Kompakte Mülltonnenabdeckungen",
+        "basementDoors": "Keller- bzw. Treppenhaustüren",
+        "collectiveGarages": "Sammelgaragen",
+        "partitionWalls": "Trennwände",
+        "bikeCages": "Fahrradbox-Einzäunungen"
+      },
+      "moreLinks": {
+        "about": "Über uns",
+        "career": "Karriere",
+        "blog": "Blog",
+        "distributors": "Händler",
+        "projects": "Referenzen",
+        "privacy": "Datenschutzrichtlinie",
+        "downloads": "Downloads"
+      },
+      "titles": {
+        "garaze_stalowe": "Stahlgaragen",
+        "garaze_superstrong": "Superstrong Garagen",
+        "wiata": "Fahrradunterstand",
+        "wiaty_stalowe": "Stahlunterstände",
+        "bramy": "Garagentore und Antriebe",
+        "altany_zielone": "Grüne Gartenlauben",
+        "altany_smietnikowe": "Mülltonnengehege",
+        "kompaktowe": "Kompakte Abdeckungen",
+        "drzwi": "Kellertüren",
+        "garaze_zbiorcze": "Sammelgaragen",
+        "scianki": "Trennwände",
+        "wygrodzenia": "Industrieeinzäunungen"
+      },
+      "gatesTitles": {
+        "tilt": "Garagentore zum Schwingen",
+        "hinged": "Flügeltore",
+        "hingedPanel": "Panel-Flügeltore",
+        "sectional": "Segmenttore"
+      }
     }
   },
-  "colors": {
-    "title": "Entdecken Sie die Farben",
-    "ocynk": "Verzinkt",
-    "burgund": "RAL 3005 - Weinrot",
-    "antracyt": "RAL 7016 - Anthrazit"
+  "hero": {
+    "title": "Stahlunterstand für Fahrräder",
+    "subtitle": "Unser Rouleur der Aufbewahrung.",
+    "newCategory": "Eine völlig neue Kategorie",
+    "cinematicDesc": "Leichter, stärker, in jedem Millimeter perfektioniert. Echter Stahl, dem kein Wind etwas anhaben kann."
+  },
+  "features": {
+    "title": "Die wichtigsten Informationen."
+  },
+  "configuratorPromo": {
+    "title": "Konfigurieren Sie Ihren Unterstand",
+    "description": "Unser Konfigurator bietet die Möglichkeit zur Personalisierung der Produkte, sodass sie den anspruchsvollsten Kunden entsprechen. Bei der Konfiguration haben wir eine Echtzeit-Vorschau unseres Produkts."
+  },
+  "lifestyle": {
+    "title": "Mehr als nur ein Fahrradunterstand",
+    "description": "Obwohl unser Unterstand hauptsächlich für die Aufbewahrung von Fahrrädern konzipiert wurde, macht ihn seine Vielseitigkeit zur idealen Lösung für viele andere Bedürfnisse."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Der Stahlunterstand wurde hauptsächlich für die Aufbewahrung von Fahrrädern konzipiert, kann jedoch auch für Gartengeräte, Kinderwagen, Roller, E-Scooter und andere Zubehörteile sowie Gebrauchsgegenstände genutzt werden. Die Neigung der Klappe nach vorne sorgt für einen guten Wasserabfluss, und dank des praktischen Griffs ist das Öffnen einfach."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Klavierband im Unterstanddeckel"
+      },
+      "stopPoints": {
+        "title": "Innovatives Öffnungssystem mit STOP-Punkten"
+      },
+      "fabricHandle": {
+        "title": "Stoffgriff zur Erleichterung des Öffnens und Schließens der Schwelle"
+      },
+      "steelRods": {
+        "title": "Verschluss des Unterstands mittels Aluminium-Stahl-Zügen."
+      },
+      "packing": {
+        "title": "Bequeme Verpackung in einer Palettenbox"
+      },
+      "reinforcedCorners": {
+        "title": "Verstärkte Ecken"
+      },
+      "steelTriangles": {
+        "title": "Versteifende Stahldreiecke in den Ecken"
+      },
+      "lidReinforcement": {
+        "title": "Stahlverstärkungen des Deckels in Verbindung mit U-Profilen"
+      }
+    },
+    "colorSection": {
+      "title": "Lernen Sie die Farbpalette kennen.",
+      "aesthetic": "Zeitlose Ästhetik in jeder Farbe",
+      "match": "Passen Sie den Unterstand an die Fassade Ihres Hauses an",
+      "protection": "Schutz unter allen Bedingungen",
+      "quality": "Höchste Qualität der Lackbeschichtung"
+    },
+    "dimensions": {
+      "title": "Maße des Fahrradunterstands",
+      "height": "Höhe",
+      "width": "Breite",
+      "depth": "Tiefe"
+    },
+    "nav": {
+      "priceFrom": "Ab 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Aluminiumboden",
+      "subtitle": "mit rostfreien Ankern im Boden befestigt.",
+      "description": "Im Fahrradunterstand besteht die Möglichkeit, einen Aluminiumboden zu montieren, der effektiv das Wachstum unerwünschter Vegetation verhindert, insbesondere bei der Montage auf Pflastersteinen. Der Boden wurde so konzipiert, dass die Verankerung des Unterstands durch dieselben Öffnungen erfolgt wie in der Version ohne Boden. Dadurch kann der Unterstand jederzeit einfach mit dieser Option nachgerüstet werden, wenn dies als notwendig erachtet wird."
+    },
+    "lifestyle": {
+      "p1": "Obwohl unser Unterstand hauptsächlich für die Aufbewahrung von Fahrrädern konzipiert wurde, macht ihn seine Vielseitigkeit zur idealen Lösung für viele andere Bedürfnisse. Neben Fahrrädern bietet er problemlos Platz für Gartengeräte wie Schaufeln, Rechen oder Heckenscheren sowie für kleine Gartenaccessoires wie Töpfe, Samen oder Düngemittel. Dank der großzügigen Maße – 1950 mm Breite, 900 mm Tiefe und 1290 mm Höhe – kann der Unterstand auch als praktischer Lagerraum für Haus- und Gartenaccessoires wie Rasenmäher, Gartenschläuche usw. dienen.",
+      "p2": "Er eignet sich auch ideal für die Aufbewahrung von Kinderspielzeug, einschließlich Elektroautos oder Tretautos, Sandkastenbesteck und Gartenspielsets. Zusätzlich bietet der Unterstand Platz für Angelzubehör wie Angelruten, Rollen oder Angeltaschen sowie für saisonale Gartendekorationen wie Laternen, Solarleuchten oder kleine Gartenmöbel. Wenn Sie Ihren Garten zur Entspannung nutzen, finden Sie hier auch Platz für Grillzubehör.",
+      "p3": "Dank seiner Funktionalität und Geräumigkeit bietet unser Unterstand eine komfortable Lösung zur Aufbewahrung einer breiten Palette von Gegenständen, die im täglichen Leben nützlich sein können, wobei der verfügbare Platz maximal ausgenutzt wird."
+    },
+    "showcase1": {
+      "top": "Widerstandsfähig",
+      "glow": "Klavierband",
+      "bottom": "aus Stahl.",
+      "description": "In unserem Fahrradunterstand haben wir ein Klavierband eingesetzt, das den Standard der täglichen Nutzung erhöht. Dieses dezente und zugleich extrem belastbare Element sorgt nicht nur für die perfekte Steifigkeit des Verschlussdeckels, sondern auch für dessen flüssige, nahezu geräuschlose Funktion. Dank der kompakten Konstruktion und der großen Kontaktfläche garantiert dieses Band nicht nur Zuverlässigkeit, sondern auch jahrelange Haltbarkeit. Eine Lösung, die alle Nutzer schätzen, die Präzision, Funktionalität und modernes Design suchen."
+    },
+    "showcase2": {
+      "top": "Metallschwelle",
+      "glow": "aus leichtem Aluminium",
+      "description": "Der untere Teil des Unterstands wurde im Hinblick auf maximale Funktionalität und Bedienkomfort konzipiert. Die Stahlschwelle mit einem eleganten Stoffgriff sorgt für einen soliden Verschluss, während Neodym-Magnete sie präzise in Position halten und ein versehentliches Öffnen verhindern. Speziell angepasste Scharniere sowie eine zusätzliche Biegung des Elements schaffen nach dem Öffnen eine fließend profilierte Auffahrt, die das Einfahren des Fahrrads erleichtert. Diese durchdachte Lösung verbindet Langlebigkeit mit Komfort und entspricht den Anforderungen anspruchsvoller Nutzer."
+    }
+  },
+  "footer": {
+    "unicorn": {
+      "tagline": "Folgen Sie keinen Schemata.",
+      "prefix": "Fangen Sie den branchenüblichen",
+      "cta": "Einhorn."
+    },
+    "location": {
+      "title": "Öffnungszeiten & Standort",
+      "address1": "Büro I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Polen",
+      "workingDays": "Montag - Freitag",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Schnellzugriff"
+    },
+    "career": {
+      "title": "GMS Karriere",
+      "description": "Starten Sie Ihre Karriere bei der GMS Corporation",
+      "cta": "Werden Sie Teil unserer Community"
+    },
+    "bottom": {
+      "rights": "Alle Rechte vorbehalten",
+      "author": "von Mateusz Sromek",
+      "rodo": "DSGVO",
+      "cookies": "Cookies"
+    }
+  },
+  "chat": {
+    "welcome": "Wie kann ich Ihnen heute helfen?",
+    "placeholder": "Fragen Sie die GMS Corporation...",
+    "assistant": "KI-Assistent",
+    "processing": "Daten werden verarbeitet...",
+    "clearHistory": "Chatverlauf löschen",
+    "clearConfirm": "Möchten Sie den Chatverlauf wirklich löschen?",
+    "close": "Schließen",
+    "chips": {
+      "summary": "Seite zusammenfassen",
+      "summaryPrompt": "Erstelle eine kurze Zusammenfassung (3-5 Punkte) der Inhalte auf dieser Unterseite",
+      "specs": "Technische Spezifikationen",
+      "specsPrompt": "Extrahiere die technischen Spezifikationen aus dem Inhalt dieser Seite oder beschreibe die wichtigsten technischen Details"
+    }
   }
 }

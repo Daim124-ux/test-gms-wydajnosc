@@ -1,31 +1,203 @@
 {
   "common": {
-    "buy": "Kup teraz",
-    "close": "Zamknij",
-    "back": "Wstecz",
-    "next": "Dalej",
-    "seeMore": "Zobacz więcej"
+    "buy": "Köp nu",
+    "close": "Stäng",
+    "back": "Bakåt",
+    "next": "Nästa",
+    "seeMore": "Se mer",
+    "readMore": "Läs artikeln",
+    "configure": "Konfigurera produkt",
+    "checkAlso": "Se även",
+    "blogArticles": "Bloggartiklar",
+    "fromBlog": "Artikel från bloggen",
+    "shop": "Butik",
+    "goToShop": "Gå till butiken"
   },
-  "hero": {
-    "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouler przechowywania.",
-    "cta": "Zobacz z bliska"
-  },
-  "features": {
-    "title": "Innowacyjne rozwiązania",
-    "floor": {
-      "title": "Aluminiowa podłoga",
-      "description": "Skutecznie zapobiega wzrostowi niechcianej roślinności."
+  "navigation": {
+    "header": {
+      "domSystem": "Hussystem",
+      "osiedleSystem": "Bostadsområdessystem",
+      "shop": "Butik",
+      "partnerZone": "Partnerzon",
+      "contact": "Kontakt",
+      "more": "Mer"
     },
-    "threshold": {
-      "title": "Metalowy próg",
-      "description": "Wykonany z lekkiego i wytrzymałego aluminium."
+    "megaMenu": {
+      "superstrongDesc": "Superstarka garage, för montering direkt på marken.",
+      "shelterWoodDesc": "Trädgårdsskydd, verktygsbodar, för ved eller motorcykel.",
+      "shelterRamps": "med möjlighet att montera infartsskena",
+      "tabs": {
+        "garages": "Stålgarage",
+        "superstrong": "Superstrong-garage",
+        "bikeShelter": "Cykelöverbyggnad",
+        "steelShelters": "Stålöverbyggnader",
+        "gates": "Garageportar och operatörer",
+        "greenShelters": "Gröna paviljonger",
+        "trashShelters": "Sopskydd",
+        "compactShelters": "Kompakta sopskydd",
+        "basementDoors": "Källardörrar",
+        "collectiveGarages": "Gemensamma garage",
+        "partitionWalls": "Avskiljningsväggar",
+        "bikeCages": "Cykelboxar"
+      },
+      "moreLinks": {
+        "about": "Om oss",
+        "career": "Karriär",
+        "blog": "Blogg",
+        "distributors": "Distributörer",
+        "projects": "Referenser",
+        "privacy": "Integritetspolicy",
+        "downloads": "Nedladdningar"
+      },
+      "titles": {
+        "garaze_stalowe": "Stålgarage",
+        "garaze_superstrong": "Superstrong-garage",
+        "wiata": "Cykelöverbyggnad",
+        "wiaty_stalowe": "Stålöverbyggnader",
+        "bramy": "Garageportar och operatörer",
+        "altany_zielone": "Gröna paviljonger",
+        "altany_smietnikowe": "Sopskydd",
+        "kompaktowe": "Kompakta skydd",
+        "drzwi": "Källardörrar",
+        "garaze_zbiorcze": "Gemensamma garage",
+        "scianki": "Avskiljningsväggar",
+        "wygrodzenia": "Industriavspärrningar"
+      },
+      "gatesTitles": {
+        "tilt": "Uppfällbara garageportar",
+        "hinged": "Slagportar",
+        "hingedPanel": "Panel-slagportar",
+        "sectional": "Sektionsportar"
+      }
     }
   },
-  "colors": {
-    "title": "Poznaj kolorystykę",
-    "ocynk": "Ocynk",
-    "burgund": "RAL 3005 - Burgundowy",
-    "antracyt": "RAL 7016 - Antracyt"
+  "hero": {
+    "title": "Stålöverbyggnad för cyklar",
+    "subtitle": "Vår förvarings-rouleur.",
+    "newCategory": "Helt ny kategori",
+    "cinematicDesc": "Lättare, starkare, perfekt i varje millimeter. Riktigt stål som inget vindmotstånd kan besegra."
+  },
+  "features": {
+    "title": "Viktigaste informationen."
+  },
+  "configuratorPromo": {
+    "title": "Konfigurera din överbyggnad",
+    "description": "Vår konfigurator ger möjlighet att anpassa produkterna så att de tillgodoser även de mest krävande kundernas behov. Vid konfigurering får du en förhandsvisning av produkten i realtid."
+  },
+  "lifestyle": {
+    "title": "Mer än bara en cykelöverbyggnad",
+    "description": "Även om vår överbyggnad främst är utformad för förvaring av cyklar, gör dess mångsidighet den till en idealisk lösning för många andra behov."
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Stålöverbyggnaden är främst utformad för cykelförvaring, men den kan även användas för trädgårdsredskap, barnvagnar, scootrar, sparkcyklar och andra tillbehör och bruksföremål. Takluckans lutning framåt säkerställer god vattenavrinning, och tack vare det bekväma handtaget är öppningen enkel."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Pianogångjärn i överbyggnadens lucka"
+      },
+      "stopPoints": {
+        "title": "Innovativt öppningssystem med STOPP-punkter"
+      },
+      "fabricHandle": {
+        "title": "Tyghandtag som underlättar öppning och stängning av tröskeln"
+      },
+      "steelRods": {
+        "title": "Stängning av överbyggnaden med aluminium-stålstag."
+      },
+      "packing": {
+        "title": "Bekväm packning i pallbox"
+      },
+      "reinforcedCorners": {
+        "title": "Förstärkta hörn"
+      },
+      "steelTriangles": {
+        "title": "Stärkande ståltrianglar i hörnen"
+      },
+      "lidReinforcement": {
+        "title": "Stålförstärkningar av luckan kombinerade med U-profiler"
+      }
+    },
+    "colorSection": {
+      "title": "Utforska färgerna.",
+      "aesthetic": "Tidlös estetik i varje färg",
+      "match": "Anpassa överbyggnaden till ditt hus fasad",
+      "protection": "Skydd under alla förhållanden",
+      "quality": "Högsta kvalitet på lackskiktet"
+    },
+    "dimensions": {
+      "title": "Mått för cykelöverbyggnad",
+      "height": "Höjd",
+      "width": "Bredd",
+      "depth": "Djup"
+    },
+    "nav": {
+      "priceFrom": "Från 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Aluminiumgolv",
+      "subtitle": "fästs i marken med rostfria ankare.",
+      "description": "Det finns möjlighet att installera ett aluminiumgolv i cykelöverbyggnaden, vilket effektivt förhindrar oönskad växtlighet, särskilt vid montering på marksten. Golvet är utformat så att förankringen av överbyggnaden sker genom samma hål som i versionen utan golv. Detta gör det enkelt att komplettera överbyggnaden med detta tillval när det anses nödvändigt."
+    },
+    "lifestyle": {
+      "p1": "Även om vår överbyggnad främst är utformad för förvaring av cyklar, gör dess mångsidighet den till en idealisk lösning för många andra behov. Förutom cyklar rymmer den enkelt trädgårdsredskap som spadar, rakor eller sekatörer, samt små trädgårdstillbehör som krukor, frön eller gödsel. Tack vare sina rymliga mått — 1950 mm bredd, 900 mm djup och 1290 mm höjd — kan överbyggnaden även fungera som ett praktiskt förråd för husgeråd som gräsklippare, trädgårdsslangar m.m.",
+      "p2": "Den är även idealisk för förvaring av leksaker, inklusive elektriska bilar eller trampbilar, sandlådeleksaker och utrustning för lek i trädgården. Dessutom kan överbyggnaden rymma fiskeutrustning som spön, rullar eller fiskväskor, samt säsongsbetonade trädgårdsdekorationer som lyktor, sollampor eller små trädgårdsmöbler. Om du använder trädgården för avkoppling finns det även plats för grilltillbehör här.",
+      "p3": "Tack vare sin funktionalitet och rymlighet erbjuder vår överbyggnad en bekväm lösning för förvaring av ett brett utbud av föremål som kan vara användbara i vardagen, genom att maximera det tillgängliga utrymmet."
+    },
+    "showcase1": {
+      "top": "Hållbart",
+      "glow": "pianogångjärn",
+      "bottom": "av stål.",
+      "description": "I vår cykelöverbyggnad har vi använt ett pianogångjärn som höjer standarden för daglig användning. Detta subtila men extremt hållbara element säkerställer inte bara perfekt styvhet i stängningsluckan, utan också en mjuk, nästan ljudlös drift. Tack vare den kompakta konstruktionen och den stora kontaktytan garanterar gångjärnet inte bara tillförlitlighet utan även lång hållbarhet. Det är en lösning som kommer att uppskattas av alla användare som värdesätter precision, funktionalitet och modern design."
+    },
+    "showcase2": {
+      "top": "Metalltröskel",
+      "glow": "av lätt aluminium",
+      "description": "Den nedre delen av överbyggnaden är utformad för maximal funktionalitet och användarkomfort. Ståltröskeln med ett elegant tyghandtag säkerställer en stabil stängning, och neodymmagneter håller den exakt på plats för att förhindra oavsiktlig öppning. Specialanpassade gångjärn och en extra böjning av elementet skapar en mjukt profilerad ramp vid öppning, vilket underlättar infarten för cykeln. Denna genomtänkta lösning kombinerar hållbarhet med bekvämlighet och svarar mot krävande användares behov."
+    }
+  },
+  "footer": {
+    "unicorn": {
+      "tagline": "Följ inte mallarna.",
+      "prefix": "Fånga branschens",
+      "cta": "Enhörning."
+    },
+    "location": {
+      "title": "Öppettider & Plats",
+      "address1": "Kontor I, II, Nawojowa 33-335",
+      "address2": "Krynicka 55, Nawojowa",
+      "country": "Polen",
+      "workingDays": "Måndag - Fredag",
+      "workingHours": "07:00 - 15:00"
+    },
+    "quickAccess": {
+      "title": "Snabbåtkomst"
+    },
+    "career": {
+      "title": "GMS Karriär",
+      "description": "Börja arbeta på GMS Corporation",
+      "cta": "Gå med i vår community"
+    },
+    "bottom": {
+      "rights": "Alla rättigheter förbehållna",
+      "author": "av Mateusz Sromek",
+      "rodo": "GDPR",
+      "cookies": "Cookies"
+    }
+  },
+  "chat": {
+    "welcome": "Hur kan jag hjälpa dig idag?",
+    "placeholder": "Fråga GMS Corporation...",
+    "assistant": "AI-assistent",
+    "processing": "Bearbetar data...",
+    "clearHistory": "Rensa konversationshistorik",
+    "clearConfirm": "Är du säker på att du vill rensa konversationshistoriken?",
+    "close": "Stäng",
+    "chips": {
+      "summary": "Sammanfatta sidan",
+      "summaryPrompt": "Skapa en kort sammanfattning (3–5 punkter) av innehållet på den här undersidan",
+      "specs": "Teknisk specifikation",
+      "specsPrompt": "Extrahera den tekniska specifikationen från innehållet på den här sidan eller berätta om de viktigaste tekniska detaljerna"
+    }
   }
 }

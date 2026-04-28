@@ -8,10 +8,11 @@ import { type Message } from 'ai';
 import { getCurrentPageContext, type PageContext } from '@/lib/page-context';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { useTranslations } from 'next-intl';
 
-const QUICK_CHIPS = [
-  { id: 'summary', label: 'Podsumuj stronę', prompt: 'Przygotuj krótkie podsumowanie (3-5 punktów) tego, co znajduje się na tej podstronie' },
-  { id: 'specs', label: 'Specyfikacja techniczna', prompt: 'Wyciągnij specyfikację techniczną z treści tej strony lub opowiedz o najważniejszych szczegółach technicznych' },
+const QUICK_CHIPS = (t: any) => [
+  { id: 'summary', label: t('chips.summary'), prompt: t('chips.summaryPrompt') },
+  { id: 'specs', label: t('chips.specs'), prompt: t('chips.specsPrompt') },
 ];
 
 const STORAGE_KEY = 'gms_chat_history';
@@ -27,15 +28,20 @@ const AIIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
   </svg>
 );
 
+import { useLocale } from 'next-intl';
+
 export default function ChatWidget() {
+  const t = useTranslations('chat');
+  const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [pageContext, setPageContext] = useState<PageContext | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const contextBody = useMemo(() => ({
-    currentPageContent: pageContext ? JSON.stringify(pageContext) : ''
-  }), [pageContext]);
+    currentPageContent: pageContext ? JSON.stringify(pageContext) : '',
+    locale: locale
+  }), [pageContext, locale]);
 
   const { messages, input, handleInputChange, handleSubmit, isLoading, append, setMessages } = useChat({
     api: '/api/chat',
@@ -87,11 +93,11 @@ export default function ChatWidget() {
   };
 
   const clearChat = useCallback(() => {
-    if (window.confirm('Czy na pewno chcesz wyczyścić historię rozmowy?')) {
+    if (window.confirm(t('clearConfirm'))) {
       localStorage.removeItem(STORAGE_KEY);
       setMessages([]);
     }
-  }, [setMessages]);
+  }, [setMessages, t]);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -126,7 +132,7 @@ export default function ChatWidget() {
                   <h3 className="font-bold text-xl leading-none mb-1.5 text-zinc-100 tracking-tight">GMS Corporation</h3>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
-                    <span className="text-[10px] uppercase font-bold tracking-[0.15em] text-zinc-400">Asystent AI</span>
+                    <span className="text-[10px] uppercase font-bold tracking-[0.15em] text-zinc-400">{t('assistant')}</span>
                   </div>
                 </div>
               </div>
@@ -134,7 +140,7 @@ export default function ChatWidget() {
                 <button
                   onClick={() => { setIsOpen(false); setIsMinimized(false); }}
                   className="hover:bg-red-500/20 hover:text-red-500 p-2.5 rounded-full transition-all active:scale-90"
-                  title="Zamknij"
+                  title={t('close')}
                 >
                   <X size={22} className="text-zinc-600 dark:text-zinc-400" />
                 </button>
@@ -153,7 +159,7 @@ export default function ChatWidget() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="text-white font-bold text-3xl tracking-tighter text-center px-12 leading-tight"
                   >
-                    Jak mogę Ci dzisiaj pomóc?
+                    {t('welcome')}
                   </motion.p>
                 </div>
               )}
@@ -234,7 +240,7 @@ export default function ChatWidget() {
                 <div className="flex justify-start">
                   <div className="bg-white/10 dark:bg-white/5 p-5 rounded-[24px] rounded-tl-none border border-white/20 flex items-center gap-3">
                     <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }} transition={{ repeat: Infinity, duration: 1.5 }} className="w-2 h-2 bg-blue-500 rounded-full" />
-                    <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-500">Przetwarzanie danych...</span>
+                    <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-500">{t('processing')}</span>
                   </div>
                 </div>
               )}
@@ -243,7 +249,7 @@ export default function ChatWidget() {
             {/* Quick Actions (Conditional) */}
             <div className="px-8 py-4 flex items-center border-t border-white/10 bg-black/5 shrink-0">
               <div className="flex-1 flex gap-3 overflow-x-auto custom-scrollbar py-2">
-                {QUICK_CHIPS.filter(chip => {
+                {QUICK_CHIPS(t).filter(chip => {
                   if (chip.id === 'summary') return true;
                   const isProductDepth = pageContext?.url &&
                     (pageContext.url.includes('/system-dom/') || pageContext.url.includes('/osiedle-system/')) &&
@@ -263,7 +269,7 @@ export default function ChatWidget() {
                 <button
                   onClick={clearChat}
                   className="p-3 text-zinc-400 hover:text-red-500 hover:bg-red-500/10 rounded-xl transition-all active:scale-90"
-                  title="Wyczyść historię rozmowy"
+                  title={t('clearHistory')}
                 >
                   <Trash2 size={20} />
                 </button>
@@ -280,7 +286,7 @@ export default function ChatWidget() {
                   <input
                     value={input}
                     onChange={handleInputChange}
-                    placeholder="Zapytaj GMS Corporation..."
+                    placeholder={t('placeholder')}
                     className="w-full bg-black/40 border-none py-5 pl-7 pr-16 text-sm outline-none text-white placeholder-zinc-500 transition-all"
                   />
                 </div>

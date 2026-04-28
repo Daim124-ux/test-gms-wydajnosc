@@ -20,11 +20,15 @@ const LifestyleShowcase = dynamic(() => import('@/components/LifestyleShowcase/L
 const LifestyleDescription = dynamic(() => import('@/components/LifestyleShowcase/LifestyleDescription'), { ssr: false });
 const ConfiguratorPromo = dynamic(() => import('@/components/LifestyleShowcase/ConfiguratorPromo'), { ssr: false });
 
+import { useTranslations } from 'next-intl';
+
 interface ProductLayoutProps {
   node: any;
 }
 
 export default function ProductLayout({ node }: ProductLayoutProps) {
+  const t = useTranslations('productLayout');
+
   // Wymuszamy tryb ciemny dla całej strony produktu
   React.useEffect(() => {
     document.documentElement.classList.add('dark');
@@ -35,33 +39,33 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
   const mockFunkcje: ElementKaruzeli[] = [
     {
       id: '1',
-      tytul: 'Zawias fortepianowy w klapie wiaty',
+      tytul: t('features.pianoHinge.title'),
       pozycjaTekstu: 'prawa-srodek' as const,
       obrazUrl: '/assets/images/wiaty-stalowe-na-rowery/Animacja_klapy_dark-91.jpg'
     },
     {
       id: '2',
-      tytul: 'Innowacyjny system otwierania z punktami STOP',
+      tytul: t('features.stopPoints.title'),
       pozycjaTekstu: 'dol' as const,
       obrazUrl: '/assets/images/wiaty-stalowe-na-rowery/Zamykanie.png',
       pozycjaObrazu: '15vw 0'
     },
     {
       id: '3',
-      tytul: 'Szmaciany pochwyt ułatwiający otwieranie oraz zamykanie progu',
+      tytul: t('features.fabricHandle.title'),
       pozycjaTekstu: 'dol' as const,
       obrazUrl: '/assets/images/wiaty-stalowe-na-rowery/Pochwyt_szmaciany-web.png'
     },
     {
       id: '4',
-      tytul: 'Zamykanie wiaty za pomocą aluminiowo-stalowych cięgien.',
+      tytul: t('features.steelRods.title'),
       pozycjaTekstu: 'prawa-dol' as const,
       obrazUrl: '/assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030.jpg',
       videoUrl: '/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna.mp4'
     },
     {
       id: '5',
-      tytul: 'Wygodne pakowanie w boxie paletowym',
+      tytul: t('features.packing.title'),
       pozycjaTekstu: 'prawa-dol' as const,
       obrazUrl: '/assets/images/wiaty-stalowe-na-rowery/Pakowanie-na-palecie-min_test-01-min-1-scaled.jpg',
       rozmiarObrazu: 'contain' as const,
@@ -72,7 +76,7 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
   const mockFunkcjeTechniczne: ElementKaruzeli[] = [
     {
       id: 't1',
-      tytul: 'Wzmocnione narożniki',
+      tytul: t('features.reinforcedCorners.title'),
       pozycjaTekstu: 'dol-srodek' as const,
       obrazUrl: '/assets/images/wiaty-stalowe-na-rowery/Animacja_zamka0030.jpg',
       videoUrl: '/assets/videos/wiaty-stalowe-na-rowery/Animacjanaronika-wiatarowerowa-web.webm',
@@ -80,13 +84,13 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
     },
     {
       id: 't2',
-      tytul: 'Usztywniające stalowe trójkąty w narożnikach',
+      tytul: t('features.steelTriangles.title'),
       pozycjaTekstu: 'dol-srodek' as const,
       obrazUrl: '/assets/images/wiaty-stalowe-na-rowery/Naroznik-trojkatny-wiata-na-rowery.jpg'
     },
     {
       id: 't3',
-      tytul: 'Stalowe wzmocnienia klapy połączone z ceownikami',
+      tytul: t('features.lidReinforcement.title'),
       pozycjaTekstu: 'dol-srodek' as const,
       obrazUrl: '/assets/images/wiaty-stalowe-na-rowery/Klapa-rednery-wzmocnien-2.jpg'
     }
@@ -107,10 +111,10 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
   ];
 
   const elementyKolorystyki = [
-    { id: '45deg', tytul: 'Ponadczasowa estetyka w każdym kolorze', pozycjaTekstu: 'dol' as const, szerokosc: 'pelna' as const },
-    { id: 'top', tytul: 'Dopasuj wiatę do elewacji Twojego domu', pozycjaTekstu: 'prawa-srodek' as const, szerokosc: 'pelna' as const },
-    { id: 'bok', tytul: 'Ochrona przed każdymi warunkami', pozycjaTekstu: 'dol' as const, szerokosc: '45' as const },
-    { id: 'klapa', tytul: 'Najwyższa jakość powłoki lakierniczej', pozycjaTekstu: 'dol' as const, szerokosc: '55' as const, rozmiarObrazu: 'cover' as const }
+    { id: '45deg', tytul: t('colorSection.aesthetic'), pozycjaTekstu: 'dol' as const, szerokosc: 'pelna' as const },
+    { id: 'top', tytul: t('colorSection.match'), pozycjaTekstu: 'prawa-srodek' as const, szerokosc: 'pelna' as const },
+    { id: 'bok', tytul: t('colorSection.protection'), pozycjaTekstu: 'dol' as const, szerokosc: '45' as const },
+    { id: 'klapa', tytul: t('colorSection.quality'), pozycjaTekstu: 'dol' as const, szerokosc: '55' as const, rozmiarObrazu: 'cover' as const }
   ];
 
   return (
@@ -126,11 +130,7 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
       >
         <div className="max-w-7xl mx-auto text-center px-4 md:px-[100px]">
           <p className="text-[20px] md:text-[32px] font-[500] tracking-normal text-[#86868B] leading-[1.2]">
-            Wiata stalowa została zaprojektowana głównie z myślą o przechowywaniu rowerów,
-            jednak można w niej składować również narzędzia ogrodowe, wózki dziecięce,
-            skutery, hulajnogi i inne akcesoria oraz przedmioty użytkowe.
-            Spad dachu klapy skierowany do przodu zapewnia dobre odprowadzenie wody,
-            a dzięki wygodnemu pochwytowi otwieranie jest proste.
+            {t('intro.text')}
           </p>
         </div>
       </section>
@@ -141,19 +141,19 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
 
       {/* Sekcja 1: Zawias Fortepianowy */}
       <FeatureShowcase
-        titleTop="Wytrzymały"
-        titleGlow="zawias fortepianowy"
-        titleBottom="ze stali."
+        titleTop={t('showcase1.top')}
+        titleGlow={t('showcase1.glow')}
+        titleBottom={t('showcase1.bottom')}
         videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja_klapy_dark_maskvideo-1.mov"
         videoTranslateX="-50px"
         loop={false}
-        description="W naszej wiacie na rowery zastosowaliśmy zawias fortepianowy, który podnosi standard codziennego użytkowania. Ten subtelny, a jednocześnie wyjątkowo wytrzymały element zapewnia nie tylko idealną sztywność klapy zamykającej, ale także jej płynną, niemal bezszelestną pracę. Dzięki kompaktowej konstrukcji i dużej powierzchni styku, zawias ten nie tylko gwarantuje niezawodność, ale również trwałość na lata. To rozwiązanie, które docenią wszyscy użytkownicy ceniący sobie precyzję, funkcjonalność i nowoczesny design."
+        description={t('showcase1.description')}
       />
 
       {/* Sekcja 2: Metalowy Próg */}
       <FeatureShowcase
-        titleTop="Metalowy próg"
-        titleGlow="z lekkiego aluminium"
+        titleTop={t('showcase2.top')}
+        titleGlow={t('showcase2.glow')}
         videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja_progu_dark_reverse.mp4"
         gradientFrom="black"
         fullWidth={true}
@@ -161,7 +161,7 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
         videoTranslateY="-70vh"
         contentTranslateY="-70vh"
         videoClassName="mt-[-250px] md:mt-0"
-        description="Dolna część wiaty została zaprojektowana z myślą o maksymalnej funkcjonalności i komforcie użytkowania. Stalowy próg z eleganckim materiałowym pochwytem zapewnia solidne zamknięcie, a neodymowe magnesy precyzyjnie utrzymują go w pozycji, zapobiegając przypadkowemu otwarciu. Specjalnie dopasowane zawiasy oraz dodatkowe gięcie elementu tworzą po otwarciu płynnie wyprofilowany podjazd, ułatwiający wprowadzenie roweru. To przemyślane rozwiązanie łączy trwałość z wygodą, odpowiadając na potrzeby wymagających użytkowników."
+        description={t('showcase2.description')}
       />
 
       <div className="relative z-20 md:mt-[-70vh] mt-0">

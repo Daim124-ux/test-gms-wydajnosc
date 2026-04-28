@@ -23,12 +23,15 @@ interface KaruzelaFunkcjiProps {
   offsetClass?: string;
 }
 
+import { useTranslations } from 'next-intl';
+
 export default function KaruzelaFunkcji({
   elementy,
   showTitle = true,
   bgClass = 'bg-[#161617]',
   offsetClass = '-mt-[110px]'
 }: KaruzelaFunkcjiProps) {
+  const t = useTranslations('features');
   const kontenerScrollRef = useRef<HTMLDivElement>(null);
   const [aktywnyId, setAktywnyId] = useState<string>(elementy[0]?.id || '');
 
@@ -73,7 +76,7 @@ export default function KaruzelaFunkcji({
       {showTitle && (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <h2 className="section-headline">
-            Najważniejsze informacje.
+            {t('title')}
           </h2>
         </div>
       )}

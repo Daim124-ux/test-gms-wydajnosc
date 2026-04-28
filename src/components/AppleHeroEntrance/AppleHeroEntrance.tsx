@@ -2,12 +2,14 @@
 
 import React, { useRef, useEffect } from 'react';
 import { motion, useTransform, useMotionValue } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 interface AppleHeroEntranceProps {
   videoUrl?: string;
 }
 
 export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) {
+  const t = useTranslations('hero');
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const scrollValue = useMotionValue(0);
@@ -120,10 +122,10 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
             className="flex flex-col items-center"
           >
             <span className="text-[28px] font-semibold tracking-tight text-center inner-shine-text" style={{ animationDelay: '2.9s' }}>
-              Wiata stalowa
+              {t('title').split(' ').slice(0, 2).join(' ')}
             </span>
             <h1 className="text-[52px] font-semibold tracking-tight leading-none text-center font-sans mt-[250px] inner-shine-text" style={{ animationDelay: '2.9s' }}>
-              na rowery
+              {t('title').split(' ').slice(2).join(' ')}
             </h1>
           </motion.div>
         </div>
@@ -158,10 +160,10 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
             >
               <div className="absolute top-[80px] flex flex-col items-center px-4 w-full h-fit">
                 <span className="text-[32px] md:text-[40px] font-semibold tracking-tight text-[#2779c2] scale-[1.15] text-center drop-shadow-[0_0_10px_rgba(22,96,177,0.3)]">
-                  Wiata stalowa
+                  {t('title').split(' ').slice(0, 2).join(' ')}
                 </span>
                 <h1 className="text-[64px] md:text-[110px] font-semibold tracking-tight leading-none text-[#2779c2] drop-shadow-[0_0_60px_rgba(39,121,194,0.4)] text-center font-sans -mt-4">
-                  na rowery
+                  {t('title').split(' ').slice(2).join(' ')}
                 </h1>
               </div>
 
@@ -173,7 +175,7 @@ export default function AppleHeroEntrance({ videoUrl }: AppleHeroEntranceProps) 
                   style={glowTextStyle}
                   className="relative z-10 text-[32px] font-[600] tracking-[2px] text-[#2779c2] text-center whitespace-nowrap"
                 >
-                  Nasz rouler przechowywania.
+                  {t('subtitle')}
                 </span>
               </motion.div>
             </motion.div>

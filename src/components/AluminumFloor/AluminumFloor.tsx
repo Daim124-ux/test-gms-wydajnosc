@@ -4,7 +4,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
+import { useTranslations } from 'next-intl';
+
 export default function AluminumFloor() {
+  const t = useTranslations('productLayout.aluminumFloor');
+
   return (
     <section className="relative w-full bg-black flex flex-col">
       {/* Title moved OUTSIDE the background container to avoid clipping */}
@@ -16,9 +20,10 @@ export default function AluminumFloor() {
           viewport={{ once: true }}
           className="pointer-events-auto"
         >
-          <h2 className="text-[48px] md:text-[80px] font-[600] text-white leading-[1.1] tracking-tighter mt-[-200px] md:mt-0 relative z-[999]">
-            Aluminiowa<br />podłoga
-          </h2>
+          <h2 
+            className="text-[48px] md:text-[80px] font-[600] text-white leading-[1.1] tracking-tighter mt-[-200px] md:mt-0 relative z-[999]"
+            dangerouslySetInnerHTML={{ __html: t.raw('title').replace(' ', '<br />') }}
+          />
         </motion.div>
       </div>
 
@@ -32,7 +37,7 @@ export default function AluminumFloor() {
       >
         <ResponsiveAsset
           src="/assets/images/wiaty-stalowe-na-rowery/Reka-z-kotwa-fade-min.jpg"
-          alt="Aluminiowa podłoga - montaż"
+          alt={t('title')}
           type="image"
           priority
           className="w-full h-full object-cover object-[center_115px] md:object-top block"
@@ -52,15 +57,10 @@ export default function AluminumFloor() {
           >
             <div className="max-w-[320px] sm:max-w-xl md:max-w-3xl">
               <h3 className="text-white text-[18px] md:text-[21px] font-[600] mb-2 md:mb-6 tracking-tight leading-snug">
-                mocowana do gruntu za pomocą nierdzewnych kotew.
+                {t('subtitle')}
               </h3>
               <p className="text-[#86868b] text-[16px] md:text-[21px] font-[600] leading-[1.6] tracking-tight">
-                W wiacie rowerowej istnieje możliwość zamontowania aluminiowej podłogi,
-                która skutecznie zapobiega wzrostowi niechcianej roślinności,
-                szczególnie w przypadku montażu na kostce brukowej. Podłoga została
-                zaprojektowana w taki sposób, aby kotwienie wiaty odbywało się przez
-                te same otwory, co w wersji bez podłogi. Dzięki temu można łatwo
-                doposażyć wiatę w tę opcję w dowolnym momencie, gdy uznamy, że jest to potrzebne.
+                {t('description')}
               </p>
             </div>
           </motion.div>

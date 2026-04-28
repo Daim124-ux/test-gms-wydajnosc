@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 interface CinematicHeroProps {
   title: string;
@@ -11,6 +12,7 @@ interface CinematicHeroProps {
 }
 
 export default function CinematicHero({ title, imageUrl }: CinematicHeroProps) {
+  const t = useTranslations('hero');
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Parallax dla sekcji Hero
@@ -64,7 +66,7 @@ export default function CinematicHero({ title, imageUrl }: CinematicHeroProps) {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-orange-500 font-semibold mb-2 sm:mb-4 tracking-widest text-xs sm:text-sm uppercase"
         >
-          Całkowicie nowa kategoria
+          {t('newCategory')}
         </motion.p>
 
         <motion.h1
@@ -82,7 +84,7 @@ export default function CinematicHero({ title, imageUrl }: CinematicHeroProps) {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-6 text-gray-300 text-lg sm:text-2xl max-w-2xl font-light"
         >
-          Lżejsze, mocniejsze, dopracowane w każdym milimetrze. Prawdziwa stal, której nie oprze się żaden wiatr.
+          {t('cinematicDesc')}
         </motion.p>
       </div>
 

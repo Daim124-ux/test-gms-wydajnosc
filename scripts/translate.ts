@@ -8,7 +8,7 @@ dotenv.config({ path: ".env.local" });
 
 const API_KEY = process.env.GEMINI_API_KEY;
 const SRC_LANG = "pl";
-const TARGET_LANGS = ["en", "de", "fr"];
+const TARGET_LANGS = ['en', 'de', 'fr', 'ua', 'sk', 'cs', 'hu', 'da', 'it', 'nl', 'no', 'sv'];
 const MESSAGES_DIR = path.join(process.cwd(), "messages");
 
 if (!API_KEY) {
@@ -18,7 +18,7 @@ if (!API_KEY) {
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({
-  model: "gemini-flash-latest",
+  model: "gemma-4-31b-it",
   generationConfig: { responseMimeType: "application/json" }
 });
 
@@ -81,46 +81,87 @@ async function translate(targetLang: string) {
     return;
   }
 
-  console.log(`🌐 [${targetLang}] Tłumaczenie ${keysCount} nowych kluczy...`);
+  console.log(`🌐 [${targetLang}] Tłumaczenie ${keysCount} nowych kluczy (podzielone na części)...`);
 
-  const prompt = `Jesteś profesjonalnym tłumaczem stron www. 
-Przetłumacz poniższe wartości JSON na język ${targetLang}, zachowując strukturę kluczy i nie tłumacząc parametrów w nawiasach klamrowych (np. {name}). 
-Zwróć tylko czysty kod JSON zawierający te same klucze co wejście.
+  const chunks: Record<string, string>[] = [];
+  const entries = Object.entries(missingKeys);
+  const CHUNK_SIZE = 30;
 
-JSON do przetłumaczenia:
-${JSON.stringify(missingKeys, null, 2)}`;
-
-  try {
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
-
-    // Parsowanie odpowiedzi (Gemini w trybie JSON mode zwraca czysty JSON)
-    const translatedKeys = JSON.parse(text);
-
-    // 4. Scalanie i zapis
-    for (const [key, value] of Object.entries(translatedKeys)) {
-      setNestedValue(targetContent, key, value);
-    }
-
-    await fs.writeJson(targetPath, targetContent, { spaces: 2 });
-    console.log(`✨ [${targetLang}] Tłumaczenie zakończone sukcesem.`);
-  } catch (error) {
-    console.error(`❌ [${targetLang}] Błąd podczas tłumaczenia:`, error);
+  for (let i = 0; i < entries.length; i += CHUNK_SIZE) {
+    chunks.push(Object.fromEntries(entries.slice(i, i + CHUNK_SIZE)));
   }
+
+  const allTranslatedKeys: Record<string, string> = {};
+
+  for (let i = 0; i < chunks.length; i++) {
+    console.log(`   ➔ Część ${i + 1}/${chunks.length}...`);
+    const prompt = `Task: Translate the following JSON values from Polish to ${targetLang}.
+Rules:
+1. Maintain the exact same keys.
+2. Do not translate parameters in curly braces (e.g., {name}).
+3. Do not translate the word 'Rouleur'. Keep it exactly as 'Rouleur' in all languages.
+4. Return ONLY valid JSON. No explanations, no markdown blocks.
+5. If there are technical terms, use the industry standard in ${targetLang}.
+
+JSON to translate:
+${JSON.stringify(chunks[i], null, 2)}`;
+
+    try {
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      let text = response.text();
+      
+      const codeBlockMatch = text.match(/```(?:json)?\s*(\{[\s\S]*?\})\s*```/);
+      const simpleJsonMatch = text.match(/(\{[\s\S]*\})/);
+      
+      if (codeBlockMatch) {
+        text = codeBlockMatch[1];
+      } else if (simpleJsonMatch) {
+        text = simpleJsonMatch[1];
+      }
+      
+      const translatedChunk = JSON.parse(text);
+      Object.assign(allTranslatedKeys, translatedChunk);
+      
+      // Delay between chunks
+      if (chunks.length > 1) await new Promise(r => setTimeout(r, 1000));
+    } catch (err) {
+      console.error(`   ❌ Błąd w części ${i + 1}:`, err);
+    }
+  }
+
+  // 4. Budujemy nowy obiekt docelowy na podstawie struktury źródłowej
+  const newTargetContent = {};
+  for (const [key, sourceValue] of Object.entries(flatSrc)) {
+    const value = allTranslatedKeys[key] || flatTarget[key] || sourceValue;
+    setNestedValue(newTargetContent, key, value);
+  }
+
+  await fs.writeJson(targetPath, newTargetContent, { spaces: 2 });
+  console.log(`✨ [${targetLang}] Tłumaczenie i synchronizacja zakończone sukcesem.`);
 }
 
 async function main() {
   console.log("🚀 Start automatycznego tłumaczenia...");
 
+  const argLang = process.argv[2];
+  const languagesToTranslate = argLang ? [argLang] : TARGET_LANGS;
+
+  if (argLang && !TARGET_LANGS.includes(argLang)) {
+    console.error(`❌ Błąd: Język "${argLang}" nie jest obsługiwany. Dostępne: ${TARGET_LANGS.join(', ')}`);
+    process.exit(1);
+  }
+
   if (!(await fs.pathExists(MESSAGES_DIR))) {
     await fs.ensureDir(MESSAGES_DIR);
   }
 
-  for (const lang of TARGET_LANGS) {
+  for (const lang of languagesToTranslate) {
     await translate(lang);
     // Krótkie opóźnienie, aby uniknąć limitów API
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    if (languagesToTranslate.length > 1) {
+      await new Promise(resolve => setTimeout(resolve, 2000));
+    }
   }
 
   console.log("🏁 Proces zakończony.");

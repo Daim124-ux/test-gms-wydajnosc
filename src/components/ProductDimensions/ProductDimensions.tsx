@@ -4,11 +4,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
+import { useTranslations } from 'next-intl';
+
 const ProductDimensions = () => {
+  const t = useTranslations('productLayout.dimensions');
+  
   const dimensions = [
-    { label: 'Wysokość', value: '1230 mm' },
-    { label: 'Szerokość', value: '1950 mm' },
-    { label: 'Głębokość', value: '900 mm' },
+    { label: t('height'), value: '1230 mm' },
+    { label: t('width'), value: '1950 mm' },
+    { label: t('depth'), value: '900 mm' },
   ];
 
   return (
@@ -23,7 +27,7 @@ const ProductDimensions = () => {
             transition={{ duration: 0.8 }}
             className="section-headline mb-12"
           >
-            Wymiary wiaty na rowery
+            {t('title')}
           </motion.h2>
 
           {/* STATS GRID */}
