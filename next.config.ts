@@ -21,6 +21,25 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        // Pasuje do wszystkich plików w folderach z modelami
+        source: '/assets/makieta_3d/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET, OPTIONS' },
+        ],
+      },
+      {
+        source: '/apps/verge-model/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET, OPTIONS' },
+        ],
+      }
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
