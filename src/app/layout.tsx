@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 
 import ChatWidget from "@/components/Chat/ChatWidget";
 import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 
 export default function RootLayout({
   children,
@@ -28,6 +29,7 @@ export default function RootLayout({
       className={`${poppins.variable} font-sans h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Header />
         {children}
         <ChatWidget />
       </body>

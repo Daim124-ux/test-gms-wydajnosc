@@ -26,6 +26,11 @@ export default function Footer({ variant }: FooterProps) {
   const [icons, setIcons] = useState<{ id: number; src: string; delay: number; x: string; size: number; startY: number; color: string }[]>([]);
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const toggleSection = (section: string) => {
     if (typeof window !== 'undefined' && window.innerWidth < 1024) {
@@ -135,7 +140,7 @@ export default function Footer({ variant }: FooterProps) {
                   </motion.span>
                 </button>
                 <AnimatePresence>
-                  {(expandedSection === 'dom' || (typeof window !== 'undefined' && window.innerWidth >= 1024)) && (
+                  {(expandedSection === 'dom' || (isMounted && window.innerWidth >= 1024)) && (
                     <motion.ul initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="footer-link-list">
                       <li><Link href="/system-dom/wiata-stalowa-na-rowery/" className="footer-link">Wiata na rowery</Link></li>
                       <li><Link href="/system-dom/garaze-blaszane/" className="footer-link">Garaże SuperStrong</Link></li>
@@ -159,7 +164,7 @@ export default function Footer({ variant }: FooterProps) {
                   </motion.span>
                 </button>
                 <AnimatePresence>
-                  {(expandedSection === 'osiedle' || (typeof window !== 'undefined' && window.innerWidth >= 1024)) && (
+                  {(expandedSection === 'osiedle' || (isMounted && window.innerWidth >= 1024)) && (
                     <motion.ul initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="footer-link-list">
                       <li><Link href="/system-osiedle/altany-smietnikowe/" className="footer-link">Altany i wiaty śmietnikowe</Link></li>
                       <li><Link href="/system-osiedle/altany-z-zielonym-dachem/" className="footer-link">Altany z zielonym dachem</Link></li>
