@@ -11,7 +11,9 @@
     "blogArticles": "Blogartikelen",
     "fromBlog": "Artikel uit de blog",
     "shop": "Shop",
-    "goToShop": "Ga naar de shop"
+    "goToShop": "Ga naar de shop",
+    "productPage": "Productpagina",
+    "watchVideo": "Bekijk video"
   },
   "navigation": {
     "header": {
@@ -40,6 +42,45 @@
         "partitionWalls": "Scheidingswanden",
         "bikeCages": "Fietsenboxen"
       },
+      "promos": {
+        "checkAlso": "Bekijk ook:",
+        "trashSheltersTitle": "Afvalcontainerhuisjes en overkappingen",
+        "trashSheltersDesc": "Bewaar uw afval ook met klasse.",
+        "greenSheltersTitle": "Huisjes met groendak",
+        "greenSheltersDesc": "Een groen accent in de betonnen jungle.",
+        "ecoMoves": "Onze eco-stappen",
+        "configureShelter": "Configureer uw huisje",
+        "configureGarage": "Configureer uw garage",
+        "configureInShop": "Configureer in de winkel",
+        "collectiveGaragesTitle": "Collectieve garages - boxen",
+        "collectiveGaragesDesc": "Betrouwbare kwaliteit in uw box.",
+        "partitionWallsTitle": "Tussenschotten en afscheidingen",
+        "watchTest": "Bekijk de SuperStrong-test",
+        "nanoCover": "NANO-{num} afdekking",
+        "sectionInPrep": "Sectie {name} is momenteel in voorbereiding."
+      },
+      "configuratorPromo": {
+        "title": "Configureer uw overkapping"
+      },
+      "blog": {
+        "articles": "Blogartikelen",
+        "fromBlog": "Artikel uit de blog",
+        "readMore": "Lees artikel",
+        "titles": {
+          "ecoTrash": "Kan een afvalcontainerhuisje milieuvriendelijk zijn?",
+          "trashDistance": "Regels voor de afstand van de afvalcontainer tot het gebouw",
+          "investInDoors": "Is het de investering waard om kelderdeuren te plaatsen en welke te kiezen?",
+          "garageOrganization": "Hoe optimaal gebruik te maken van een garagebox in een appartementencomplex?",
+          "partitionPlanning": "Principes voor het plannen van afscheidingen in de moderne bouw",
+          "warehouseSafety": "Veiligheid en ruimteorganisatie in magazijnen",
+          "beforeBuying": "6 dingen die u moet weten voordat u een stalen garage koopt",
+          "howToArrange": "Hoe richt u een garage in: van eenvoudige opslag naar een stijlvolle werkplaats",
+          "superstrongInvestment": "Waarom is een SuperStrong-garage een investering voor jaren?",
+          "superstrongInstall": "SuperStrong garage installatie stap voor stap",
+          "motoGarage": "Creëer de ideale garage voor je motor: Stapsgewijze gids",
+          "bikeSecurity": "Hoe beveilig je fietsen tegen diefstal en weersomstandigheden?"
+        }
+      },
       "moreLinks": {
         "about": "Over ons",
         "career": "Carrière",
@@ -67,7 +108,11 @@
         "tilt": "Kanteldeuren",
         "hinged": "Draaideuren",
         "hingedPanel": "Panel-draaideuren",
-        "sectional": "Sectionaaldeuren"
+        "sectional": "Sectionaaldeuren",
+        "singleLeafSteel": "Enkelvoudig - stalen",
+        "doubleLeafSteel": "Dubbelvoudig - stalen",
+        "singleLeafPanel": "Enkelvoudig - paneel",
+        "doubleLeafPanel": "Dubbelvoudig - paneel"
       }
     }
   },
@@ -76,6 +121,13 @@
     "subtitle": "Onze Rouleur voor opslag.",
     "newCategory": "Een geheel nieuwe categorie",
     "cinematicDesc": "Lichter, sterker, tot in elke millimeter geperfectioneerd. Echt staal dat bestand is tegen elke wind."
+  },
+  "productHero": {
+    "new": "Nieuw",
+    "requestQuote": "Vraag een offerte aan",
+    "downloadCatalog": "Download catalogus (PDF)",
+    "productImage": "Productafbeelding",
+    "noImage": "Geen afbeelding"
   },
   "features": {
     "title": "De belangrijkste informatie."
@@ -129,7 +181,8 @@
       "title": "Afmetingen van de fietsenoverkapping",
       "height": "Hoogte",
       "width": "Breedte",
-      "depth": "Diepte"
+      "depth": "Diepte",
+      "drawingAlt": "Afmetingen fietsenstal - technische tekening"
     },
     "nav": {
       "priceFrom": "Vanaf 12 999 zł"
@@ -195,9 +248,85 @@
     "close": "Sluiten",
     "chips": {
       "summary": "Pagina samenvatten",
-      "summaryPrompt": "Przygotuj krótkie podsumowanie (3-5 punktów) tego, co znajduje się na tej podstronie",
+      "summaryPrompt": "Maak een korte samenvatting (3-5 punten) van wat er op deze pagina staat",
       "specs": "Technische specificaties",
-      "specsPrompt": "Wyciągnij specyfikację techniczną z treści tej strony lub opowiedz o najważniejszych szczegółach technicznych"
+      "specsPrompt": "Haal de technische specificaties uit de inhoud van deze pagina of vertel over de belangrijkste technische details"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymium magneten",
+        "desc": "gemonteerd aan de zijkanten van de klep"
+      },
+      "handle": {
+        "title": "Stoffen handgreep",
+        "desc": "voor gemakkelijker openen"
+      },
+      "tin": {
+        "title": "Verzinkt",
+        "desc": "klep"
+      },
+      "hinges": {
+        "title": "Vastgeschroefde scharnieren",
+        "desc": "die duurzaamheid garanderen"
+      },
+      "bends": {
+        "title": "Versterkende buigingen",
+        "desc": "die de drempel verstevigen"
+      },
+      "angle": {
+        "title": "Gevormde hoek",
+        "desc": "voor een gemakkelijker inrijden"
+      }
+    },
+    "headline": "Fietsbestendige duurzaamheid.",
+    "description": "De constructie van de fietsenoverkapping is ontworpen voor maximale sterkte en duurzaamheid. Een cruciaal versterkend element zijn de eigen ontwikkelde driehoeken in combinatie met C-profielen, die in eigen beheer zijn ontwikkeld en geproduceerd. Deze oplossing zorgt voor een uitzonderlijke stijfheid en stabiliteit van de afzonderlijke componenten van de klep. De wanden van de overkapping zijn op hun beurt verbonden via verstelbare driehoeken, wat een nauwkeurige afstelling en montage mogelijk maakt. Extra versteviging wordt geboden door stalen hoeken, uitgesneden met CNC-machines, die niet alleen de stijfheid van de wanden vergroten, maar ook alle verbindingen permanent beveiligen. Dit is een innovatieve aanpak die jarenlang betrouwbaarheid garandeert."
+  },
+  "threeDShowcase": {
+    "title": "Bekijk enkele highlights in 3D",
+    "button": "Van dichtbij bekijken",
+    "resetTooltip": "Weergave resetten",
+    "modelAlt": "Overkapping in 3D",
+    "arButton": "Toon in je tuin (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Pianoschanier",
+        "description": "Bevestigd aan de klep met kleine, dicht op elkaar geplaatste schroeven, garandeert dit element een stille en betrouwbare werking en een lange levensduur van de klep. Dankzij de zorgvuldige plaatsing van de schroeven werkt de klep soepel en geluidloos, terwijl de duurzaamheid en stabiliteit gedurende vele jaren van gebruik worden gewaarborgd."
+      },
+      "reinforcedCorners": {
+        "label": "Versterkte hoeken",
+        "description": "Extra verstevigingen in de hoeken van de constructie zorgen voor uitzonderlijke stijfheid en weerstand tegen vervorming. Dit is een cruciaal element bij intensief gebruik van de overkapping, dat voorkomt dat het materiaal \"werkt\" en de geometrie decennialang behoudt."
+      },
+      "locking": {
+        "label": "Afsluitbaar met sleutel",
+        "description": "We hebben gebruikgemaakt van een cilinderslot met meerpuntsvergrendeling, dat de hoogste graad van veiligheid voor uw fiets biedt. Dit systeem is bestand tegen weersomstandigheden en inbraakpogingen, waardoor u volledige gemoedsrust heeft."
+      },
+      "stopPoints": {
+        "label": "Innovatief systeem met STOP-punten",
+        "description": "Speciale stootbuffers en een hydraulisch remsysteem voor de klep voorkomen plotselinge klappen bij het sluiten. De STOP-punten maken het mogelijk om de klep veilig te bedienen zonder risico op beknelde vingers of schade aan de behuizing."
+      },
+      "thresholdHandle": {
+        "label": "Drempel met stoffen handgreep",
+        "description": "De ergonomische drempel, uitgerust met een stoffen handgreep, vergemakkelijkt het plaatsen van de fiets in de overkapping. De handgreep zorgt voor een stevige grip, zelfs met handschoenen aan, en het ontwerp van de drempel minimaliseert de hindernis voor de fietswielen."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Niet alleen voor fietsen",
+    "items": {
+      "item1": {
+        "title": "Stalen fietsenberging",
+        "description": "Bewaar uw fietsen veilig in een stalen overkapping van een Poolse fabrikant."
+      },
+      "item2": {
+        "title": "Stalen overkapping voor tuinaccessoires",
+        "description": "Stalen overkapping voor tuinaccessoires."
+      },
+      "item3": {
+        "title": "Stalen overkapping voor SPA-benodigdheden",
+        "description": "Bewaar handdoeken, badjassen en apparatuur voor het reinigen van de jacuzzi."
+      }
     }
   }
 }

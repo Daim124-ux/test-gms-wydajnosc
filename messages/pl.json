@@ -284,6 +284,7 @@
     "description": "Konstrukcja wiaty na rowery została zaprojektowana z myślą o maksymalnej wytrzymałości i trwałości. Kluczowym elementem wzmacniającym są autorskie trójkąty połączone z ceownikami, które zostały opracowane i wyprodukowane we własnym zakresie. To rozwiązanie zapewnia niezwykłą sztywność i stabilność poszczególnych komponentów klapy. Ściany wiaty są z kolei połączone za pomocą regulowanych trójkątów, co umożliwia precyzyjne dopasowanie i montaż. Dodatkowe wzmocnienie zapewniają stalowe narożniki, wycinane na maszynach CNC, które nie tylko zwiększają sztywność ścian, ale także trwale zabezpieczają wszystkie połączenia. To innowacyjne podejście, które gwarantuje niezawodność na lata."
   },
   "threeDShowcase": {
+    "close": "Zamknij",
     "title": "Zobacz parę wyróżników w 3D",
     "button": "Zobacz z bliska",
     "resetTooltip": "Resetuj widok",

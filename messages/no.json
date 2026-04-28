@@ -11,7 +11,9 @@
     "blogArticles": "Bloggartikler",
     "fromBlog": "Artikkel fra bloggen",
     "shop": "Butikk",
-    "goToShop": "Gå til butikken"
+    "goToShop": "Gå til butikken",
+    "productPage": "Produktside",
+    "watchVideo": "Se video"
   },
   "navigation": {
     "header": {
@@ -40,6 +42,45 @@
         "partitionWalls": "Skillevegger",
         "bikeCages": "Sykkelbur"
       },
+      "promos": {
+        "checkAlso": "Sjekk også:",
+        "trashSheltersTitle": "Søppelhus og skjerming",
+        "trashSheltersDesc": "Oppbevar også avfall med stil.",
+        "greenSheltersTitle": "Søppelhus med grønt tak",
+        "greenSheltersDesc": "Et grønt innslag i betongjungelen.",
+        "ecoMoves": "Våre øko-tiltak",
+        "configureShelter": "Konfigurer ditt søppelhus",
+        "configureGarage": "Konfigurer din garasje",
+        "configureInShop": "Konfigurer i butikken",
+        "collectiveGaragesTitle": "Fellesgarasjer - garasjebokser",
+        "collectiveGaragesDesc": "Pålitelig kvalitet i din boks.",
+        "partitionWallsTitle": "Skillevegger og avskjerming",
+        "watchTest": "Se SuperStrong-testen",
+        "nanoCover": "NANO-deksel {num}",
+        "sectionInPrep": "Seksjonen {name} er for øyeblikket under forberedelse."
+      },
+      "configuratorPromo": {
+        "title": "Konfigurer ditt overbygg"
+      },
+      "blog": {
+        "articles": "Bloggartikler",
+        "fromBlog": "Artikkel fra bloggen",
+        "readMore": "Les artikkelen",
+        "titles": {
+          "ecoTrash": "Kan et søppelhus være miljøvennlig?",
+          "trashDistance": "Regler for avstand mellom søppelstasjon og bygning",
+          "investInDoors": "Lønner det seg å investere i kjellerdører, og hvilke bør man velge?",
+          "garageOrganization": "Hvordan optimalisere bruken av en garasjeboks i et leilighetskompleks?",
+          "partitionPlanning": "Prinsipper for planlegging av avskjerming i moderne bygg",
+          "warehouseSafety": "Sikkerhet og plassorganisering i lagerhaller",
+          "beforeBuying": "6 ting du bør vite før du kjøper en stålgarasje",
+          "howToArrange": "Hvordan innrede garasjen: fra et enkelt lager til et stilig verksted",
+          "superstrongInvestment": "Hvorfor er SuperStrong-garasjen en investering for mange år?",
+          "superstrongInstall": "Montering av SuperStrong-garasje trinn for trinn",
+          "motoGarage": "Lag den perfekte motorsykkelgarasjen: Trinn-for-trinn guide",
+          "bikeSecurity": "Hvordan sikre sykler mot tyveri og vær?"
+        }
+      },
       "moreLinks": {
         "about": "Om oss",
         "career": "Karriere",
@@ -67,7 +108,11 @@
         "tilt": "Vippedorter",
         "hinged": "Svingporter",
         "hingedPanel": "Panel-svingporter",
-        "sectional": "Seksjonsport"
+        "sectional": "Seksjonsport",
+        "singleLeafSteel": "Enfløyet - stål",
+        "doubleLeafSteel": "Tofløyet - stål",
+        "singleLeafPanel": "Enfløyet - panel",
+        "doubleLeafPanel": "Tofløyet - panel"
       }
     }
   },
@@ -76,6 +121,13 @@
     "subtitle": "Vår Rouleur for oppbevaring.",
     "newCategory": "En helt ny kategori",
     "cinematicDesc": "Lettere, sterkere, perfeksjonert i hver millimeter. Ekte stål som tåler all slags vind."
+  },
+  "productHero": {
+    "new": "Nyhet",
+    "requestQuote": "Be om tilbud",
+    "downloadCatalog": "Last ned katalog (PDF)",
+    "productImage": "Produktbilde",
+    "noImage": "Ikke noe bilde"
   },
   "features": {
     "title": "Viktig informasjon."
@@ -129,7 +181,8 @@
       "title": "Dimensjoner for sykkelboden",
       "height": "Høyde",
       "width": "Bredde",
-      "depth": "Dybde"
+      "depth": "Dybde",
+      "drawingAlt": "Dimensjoner for sykkelbod - teknisk tegning"
     },
     "nav": {
       "priceFrom": "Fra 12 999 zł"
@@ -198,6 +251,82 @@
       "summaryPrompt": "Lag et kort sammendrag (3-5 punkter) av det som finnes på denne undersiden",
       "specs": "Tekniske spesifikasjoner",
       "specsPrompt": "Hent ut tekniske spesifikasjoner fra innholdet på denne siden, eller fortell om de viktigste tekniske detaljene"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymmagneter",
+        "desc": "montert på sidene av klaffen"
+      },
+      "handle": {
+        "title": "Tekstilgrep",
+        "desc": "som gjør åpning enklere"
+      },
+      "tin": {
+        "title": "Galvanisert",
+        "desc": "klaff"
+      },
+      "hinges": {
+        "title": "Skrubare hengsler",
+        "desc": "som garanterer holdbarhet"
+      },
+      "bends": {
+        "title": "Forsterkende bøyer",
+        "desc": "som stiver av terskelen"
+      },
+      "angle": {
+        "title": "Profilert vinkel",
+        "desc": "for enklere innkjøring"
+      }
+    },
+    "headline": "Sykkelstyrke.",
+    "description": "Konstruksjonen av sykkelboden er designet med tanke på maksimal styrke og holdbarhet. Det viktigste forsterkende elementet er proprietære trekanter kombinert med C-profiler, som er utviklet og produsert internt. Denne løsningen sikrer eksepsjonell stivhet og stabilitet for de enkelte komponentene i klaffen. Veggene i boden er koblet sammen ved hjelp av justerbare trekanter, noe som muliggjør presis tilpasning og montering. Ytterligere forsterkning gis av stålhjørner, CNC-skåret, som ikke bare øker stivheten i veggene, men også sikrer alle koblinger permanent. Dette er en innovativ tilnærming som garanterer pålitelighet i årevis."
+  },
+  "threeDShowcase": {
+    "title": "Se noen høydepunkter i 3D",
+    "button": "Se nærmere",
+    "resetTooltip": "Nullstill visning",
+    "modelAlt": "Sykkelbod i 3D",
+    "arButton": "Vis i din hage (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Pianohengsel",
+        "description": "Montert på lokket med små, tettplasserte skruer, garanterer denne komponenten stillegående og pålitelig drift samt lang levetid for lokket. Takket være den nøyaktige plasseringen av skruene fungerer lokket smidig og lydløst, samtidig som det sikrer holdbarhet og stabilitet i mange års bruk."
+      },
+      "reinforcedCorners": {
+        "label": "Forsterkede hjørner",
+        "description": "Ekstra forsterkninger i hjørnene av konstruksjonen gir eksepsjonell stivhet og motstand mot deformasjon. Dette er et avgjørende element ved intensiv bruk av boden, som forhindrer at materialet \"slår seg\" og opprettholder geometrien i flere tiår."
+      },
+      "locking": {
+        "label": "Låses med nøkkel",
+        "description": "Vi har brukt en sylinderlås med flerpunktslåsing, som gir det høyeste sikkerhetsnivået for sykkelen din. Dette systemet er motstandsdyktig mot vær og forsøk på innbrudd, noe som gir deg full trygghet."
+      },
+      "stopPoints": {
+        "label": "Innovativt system med STOPP-punkter",
+        "description": "Spesielle stoppere og et hydraulisk bremsesystem for lokket forhindrer harde støt ved lukking. STOPP-punktene gjør det mulig å operere lokket trygt uten risiko for å klemme fingrene eller skade huset."
+      },
+      "thresholdHandle": {
+        "label": "Terskel med stoffgrep",
+        "description": "En ergonomisk terskel utstyrt med et stoffgrep gjør det lettere å trille sykkelen inn i boden. Grepet gir et sikkert tak selv med hansker, og terskelens konstruksjon minimerer hindringen for sykkelhjulene."
+      }
+    }
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Ikke bare for sykler",
+    "items": {
+      "item1": {
+        "title": "Stålskap for sykler",
+        "description": "Oppbevar syklene dine trygt i en stålbod fra en polsk produsent."
+      },
+      "item2": {
+        "title": "Stålbod for hageutstyr",
+        "description": "Stålbod for hageutstyr."
+      },
+      "item3": {
+        "title": "Stålbod for SPA-utstyr",
+        "description": "Oppbevar håndklær, morgenkåper og utstyr for rengjøring av jacuzzi."
+      }
     }
   }
 }
