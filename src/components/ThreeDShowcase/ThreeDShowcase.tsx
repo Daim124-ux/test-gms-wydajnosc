@@ -7,40 +7,43 @@ import { X, BoxIcon, Move3d, RotateCcw } from 'lucide-react';
 import dynamic from 'next/dynamic';
 import { useRef } from 'react';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
+import { useTranslations } from 'next-intl';
 
 const VergeViewer = dynamic(() => import('./VergeViewer'), {
   ssr: false,
 });
 
-const tabs = [
-  { 
-    id: 'ha-tab-title-9972', 
-    label: 'Zawias fortepianowy', 
-    description: 'Zamocowany na klapie za pomocą niewielkich, gęsto rozmieszczonych wkrętów, element ten gwarantuje cichą i niezawodną pracę oraz długowieczność klapy. Dzięki starannemu rozmieszczeniu wkrętów, klapa działa płynnie i bezszelestnie, zapewniając jednocześnie trwałość i stabilność przez wiele lat użytkowania.' 
-  },
-  { 
-    id: 'ha-tab-title-9973', 
-    label: 'Wzmocnione naroża', 
-    description: 'Dodatkowe wzmocnienia w narożnikach konstrukcji zapewniają wyjątkową sztywność i odporność na odkształcenia. Jest to kluczowy element przy intensywnym użytkowaniu wiaty, zapobiegający "pracowaniu" materiału i utrzymujący geometrię przez dekady.' 
-  },
-  { 
-    id: 'ha-tab-title-9974', 
-    label: 'Zamykanie na klucz', 
-    description: 'Zastosowaliśmy zamek bębenkowy z wielopunktowym ryglowaniem, który zapewnia najwyższy stopień bezpieczeństwa Twojego roweru. System ten jest odporny na warunki atmosferyczne i próby sforsowania, dając Ci pełny spokój ducha.' 
-  },
-  { 
-    id: 'ha-tab-title-9975', 
-    label: 'Innowacyjny system z punktami STOP', 
-    description: 'Specjalne odbojniki i hydrauliczny system hamowania klapy zapobiegają gwałtownym uderzeniom przy zamykaniu. Punkty STOP pozwalają na bezpieczne operowanie klapą bez ryzyka przytrzaśnięcia palców czy uszkodzenia obudowy.' 
-  },
-  { 
-    id: 'ha-tab-title-9976', 
-    label: 'Próg z materiałowym uchwytem', 
-    description: 'Ergonomiczny próg wyposażony w materiałowy uchwyt ułatwia wprowadzanie roweru do wnętrza wiaty. Uchwyt zapewnia pewny chwyt nawet w rękawiczkach, a konstrukcja progu niweluje przeszkodę dla kół roweru.' 
-  },
-];
-
 export default function ThreeDShowcase() {
+  const t = useTranslations('threeDShowcase');
+
+  const tabs = [
+    { 
+      id: 'ha-tab-title-9972', 
+      label: t('tabs.pianoHinge.label'), 
+      description: t('tabs.pianoHinge.description') 
+    },
+    { 
+      id: 'ha-tab-title-9973', 
+      label: t('tabs.reinforcedCorners.label'), 
+      description: t('tabs.reinforcedCorners.description') 
+    },
+    { 
+      id: 'ha-tab-title-9974', 
+      label: t('tabs.locking.label'), 
+      description: t('tabs.locking.description') 
+    },
+    { 
+      id: 'ha-tab-title-9975', 
+      label: t('tabs.stopPoints.label'), 
+      description: t('tabs.stopPoints.description') 
+    },
+    { 
+      id: 'ha-tab-title-9976', 
+      label: t('tabs.thresholdHandle.label'), 
+      description: t('tabs.thresholdHandle.description') 
+    },
+  ];
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const [isClosing, setIsClosing] = useState(false);
@@ -159,7 +162,7 @@ export default function ThreeDShowcase() {
                   <button 
                     onClick={handleReset}
                     className="p-2 text-white/30 hover:text-white transition-colors flex-shrink-0"
-                    title="Resetuj widok"
+                    title={t('resetTooltip')}
                   >
                     <RotateCcw size={18} />
                   </button>
@@ -227,7 +230,7 @@ export default function ThreeDShowcase() {
         className="relative z-10 text-center mb-16 px-4"
       >
         <h2 className="text-3xl md:text-5xl font-semibold text-[#86868b] tracking-tight text-glow-blue-vibrant/20">
-          Zobacz parę wyróżników w 3D
+          {t('title')}
         </h2>
       </motion.div>
 
@@ -260,7 +263,7 @@ export default function ThreeDShowcase() {
         >
           <div className="absolute inset-0 bg-[#1660b1]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
           <span className="text-xl">+</span>
-          <span className="tracking-wide">Zobacz z bliska</span>
+          <span className="tracking-wide">{t('button')}</span>
         </button>
       </motion.div>
 
@@ -279,4 +282,3 @@ export default function ThreeDShowcase() {
     </section>
   );
 }
-

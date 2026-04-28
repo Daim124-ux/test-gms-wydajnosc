@@ -18,8 +18,7 @@ if (!API_KEY) {
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({
-  model: "gemma-4-31b-it",
-  generationConfig: { responseMimeType: "application/json" }
+  model: "gemma-4-31b-it"
 });
 
 /**
@@ -67,10 +66,12 @@ async function translate(targetLang: string) {
   }
   const flatTarget = getFlattenedKeys(targetContent);
 
-  // 3. Znajdź brakujące klucze
+  // 3. Znajdź brakujące klucze (brak w celu LUB wartość identyczna z źródłem)
   const missingKeys: Record<string, string> = {};
   for (const [key, value] of Object.entries(flatSrc)) {
-    if (!flatTarget[key]) {
+    const targetValue = flatTarget[key];
+    // Jeśli klucza nie ma, lub jest identyczny z źródłem (i nie jest pusty)
+    if (!targetValue || (targetValue === value && value.trim() !== "")) {
       missingKeys[key] = value;
     }
   }
@@ -95,36 +96,50 @@ async function translate(targetLang: string) {
 
   for (let i = 0; i < chunks.length; i++) {
     console.log(`   ➔ Część ${i + 1}/${chunks.length}...`);
-    const prompt = `Task: Translate the following JSON values from Polish to ${targetLang}.
-Rules:
-1. Maintain the exact same keys.
-2. Do not translate parameters in curly braces (e.g., {name}).
-3. Do not translate the word 'Rouleur'. Keep it exactly as 'Rouleur' in all languages.
-4. Return ONLY valid JSON. No explanations, no markdown blocks.
-5. If there are technical terms, use the industry standard in ${targetLang}.
+    const prompt = `Translate this JSON from Polish to ${targetLang}. 
+Keep keys exactly. Don't translate {param}. Keep 'Rouleur'.
+Return ONLY JSON. No explanations.
 
-JSON to translate:
-${JSON.stringify(chunks[i], null, 2)}`;
+JSON:
+${JSON.stringify(chunks[i])}`;
 
     try {
       const result = await model.generateContent(prompt);
       const response = await result.response;
-      let text = response.text();
+      let text = response.text().trim();
       
+      // Improved extraction: 
+      // 1. Try markdown code blocks first
       const codeBlockMatch = text.match(/```(?:json)?\s*(\{[\s\S]*?\})\s*```/);
-      const simpleJsonMatch = text.match(/(\{[\s\S]*\})/);
-      
-      if (codeBlockMatch) {
-        text = codeBlockMatch[1];
-      } else if (simpleJsonMatch) {
-        text = simpleJsonMatch[1];
+      let jsonFound = codeBlockMatch ? codeBlockMatch[1] : null;
+
+      if (!jsonFound) {
+        // 2. Try to find all blocks starting with { and ending with }
+        const allBlocks = text.match(/\{[\s\S]*?\}/g) || [];
+        // Sort by length (descending) to find the most substantial one first
+        const substantialBlocks = allBlocks
+          .filter(b => b.includes('"') && b.length > 5)
+          .sort((a, b) => b.length - a.length);
+        
+        if (substantialBlocks.length > 0) {
+          jsonFound = substantialBlocks[0];
+        }
+      }
+
+      if (jsonFound) {
+        try {
+          const translatedChunk = JSON.parse(jsonFound);
+          Object.assign(allTranslatedKeys, translatedChunk);
+        } catch (parseErr) {
+          console.error(`   ❌ Błąd parsowania w części ${i + 1}. Wyciągnięto:`, jsonFound.slice(0, 100) + "...");
+          throw parseErr;
+        }
+      } else {
+        console.error(`   ❌ Nie znaleziono poprawnego JSON w odpowiedzi AI dla części ${i + 1}.`);
       }
       
-      const translatedChunk = JSON.parse(text);
-      Object.assign(allTranslatedKeys, translatedChunk);
-      
-      // Delay between chunks
-      if (chunks.length > 1) await new Promise(r => setTimeout(r, 1000));
+      // Delay between chunks to respect rate limits
+      if (chunks.length > 1) await new Promise(r => setTimeout(r, 1500));
     } catch (err) {
       console.error(`   ❌ Błąd w części ${i + 1}:`, err);
     }

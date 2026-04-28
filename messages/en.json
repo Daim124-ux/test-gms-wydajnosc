@@ -73,9 +73,9 @@
   },
   "hero": {
     "title": "Steel bicycle shed",
+    "subtitle": "Our storage Rouleur.",
     "newCategory": "A completely new category",
-    "cinematicDesc": "Lighter, stronger, refined in every millimeter. True steel that no wind can resist.",
-    "subtitle": "Our storage Rouleur."
+    "cinematicDesc": "Lighter, stronger, refined in every millimeter. True steel that no wind can resist."
   },
   "features": {
     "title": "Innovative solutions"
@@ -198,6 +198,63 @@
       "summaryPrompt": "Prepare a short summary (3-5 points) of what is on this subpage",
       "specs": "Technical specification",
       "specsPrompt": "Extract the technical specification from the content of this page or tell about the most important technical details"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymium magnets",
+        "desc": "mounted on the sides of the flap"
+      },
+      "handle": {
+        "title": "Fabric handle",
+        "desc": "making opening easier"
+      },
+      "tin": {
+        "title": "Galvanized",
+        "desc": "flap"
+      },
+      "hinges": {
+        "title": "Screw-on hinges",
+        "desc": "ensuring durability"
+      },
+      "bends": {
+        "title": "Reinforcing bends",
+        "desc": "stiffening the threshold"
+      },
+      "angle": {
+        "title": "Profiled angle",
+        "desc": "for easier entry"
+      }
+    },
+    "headline": "Cycling durability.",
+    "description": "The design of the bike shelter was created for maximum strength and durability. The key reinforcing elements are proprietary triangles combined with C-channels, which were developed and manufactured in-house. This solution ensures extraordinary stiffness and stability of the individual flap components. The shelter walls are connected using adjustable triangles, allowing for precise fitting and assembly. Additional reinforcement is provided by CNC-cut steel corners, which not only increase wall stiffness but also permanently secure all connections. This is an innovative approach that guarantees reliability for years to come."
+  },
+  "threeDShowcase": {
+    "title": "See some highlights in 3D",
+    "button": "View up close",
+    "resetTooltip": "Reset view",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Piano hinge",
+        "description": "Mounted on the flap using small, closely spaced screws, this element guarantees quiet and reliable operation and longevity of the flap. Thanks to the careful placement of the screws, the flap operates smoothly and silently, while ensuring durability and stability over many years of use."
+      },
+      "reinforcedCorners": {
+        "label": "Reinforced corners",
+        "description": "Additional reinforcements in the corners of the structure provide exceptional stiffness and resistance to deformation. This is a key element for intensive shelter use, preventing the material from 'shifting' and maintaining the geometry for decades."
+      },
+      "locking": {
+        "label": "Key lock",
+        "description": "We have implemented a cylinder lock with multi-point locking, which provides the highest level of security for your bike. This system is resistant to weather conditions and tampering attempts, giving you complete peace of mind."
+      },
+      "stopPoints": {
+        "label": "Innovative system with STOP points",
+        "description": "Special buffers and a hydraulic flap braking system prevent sudden impacts when closing. STOP points allow for safe operation of the flap without the risk of pinching fingers or damaging the casing."
+      },
+      "thresholdHandle": {
+        "label": "Threshold with a fabric handle",
+        "description": "An ergonomic threshold equipped with a fabric handle makes it easier to move the bike into the shelter. The handle ensures a firm grip even when wearing gloves, and the threshold design eliminates the obstacle for the bicycle wheels."
+      }
     }
   }
 }

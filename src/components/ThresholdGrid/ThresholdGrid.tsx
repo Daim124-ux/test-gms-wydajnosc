@@ -1,18 +1,19 @@
-'use client';
-
 import React from 'react';
 import { motion } from 'framer-motion';
-
-const features = [
-  { title: 'Neodymowe magnesy', desc: 'zamontowane na bokach klapy' },
-  { title: 'Materiałowy pochwyt', desc: 'ułatwiający otwieranie' },
-  { title: 'Ocynowana', desc: 'klapa' },
-  { title: 'Przykręcane zawiasy', desc: 'gwarantujące trwałość' },
-  { title: 'Wzmacniające gięcia', desc: 'usztywniające próg' },
-  { title: 'Wyprofilowany kąt', desc: 'dla prostszego wjazdu' },
-];
+import { useTranslations } from 'next-intl';
 
 export default function ThresholdGrid() {
+  const t = useTranslations('thresholdGrid');
+
+  const features = [
+    { title: t('features.magnets.title'), desc: t('features.magnets.desc') },
+    { title: t('features.handle.title'), desc: t('features.handle.desc') },
+    { title: t('features.tin.title'), desc: t('features.tin.desc') },
+    { title: t('features.hinges.title'), desc: t('features.hinges.desc') },
+    { title: t('features.bends.title'), desc: t('features.bends.desc') },
+    { title: t('features.angle.title'), desc: t('features.angle.desc') },
+  ];
+
   return (
     <section className="relative bg-black pt-0 pb-0 flex flex-col items-center overflow-hidden">
       {/* TOP EDGE MASK - Seamless Transition */}
@@ -61,7 +62,7 @@ export default function ThresholdGrid() {
             textShadow: '0 -35px 50px rgba(22, 96, 177, 0.99), 0 -10px 30px rgba(22, 96, 177, 0.99), 0 -5px 20px rgba(22, 96, 177, 0.99), 0 10px 30px rgba(22, 96, 177, 0.8), 0 30px 50px rgba(22, 96, 177, 0.7), 0 50px 70px rgba(22, 96, 177, 0.6), 0 70px 90px rgba(22, 96, 177, 0.5), 0 90px 120px rgba(22, 96, 177, 0.4)'
           }}
         >
-          Kolarska wytrzymałość.
+          {t('headline')}
         </h3>
 
         <motion.p
@@ -71,16 +72,7 @@ export default function ThresholdGrid() {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto text-[#86868b] text-[18px] md:text-[21px] font-[600] leading-[1.5rem] text-left md:text-center tracking-tight"
         >
-          Konstrukcja wiaty na rowery została zaprojektowana z myślą o maksymalnej
-          wytrzymałości i trwałości. Kluczowym elementem wzmacniającym są autorskie
-          trójkąty połączone z ceownikami, które zostały opracowane i wyprodukowane we
-          własnym zakresie. To rozwiązanie zapewnia niezwykłą sztywność i stabilność
-          poszczególnych komponentów klapy. Ściany wiaty są z kolei połączone za
-          pomocą regulowanych trójkątów, co umożliwia precyzyjne dopasowanie i
-          montaż. Dodatkowe wzmocnienie zapewniają stalowe narożniki, wycinane na
-          maszynach CNC, które nie tylko zwiększają sztywność ścian, ale także trwale
-          zabezpieczają wszystkie połączenia. To innowacyjne podejście, które gwarantuje
-          niezawodność na lata.
+          {t('description')}
         </motion.p>
       </motion.div>
 

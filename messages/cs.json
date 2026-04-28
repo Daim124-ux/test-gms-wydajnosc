@@ -1,203 +1,260 @@
 {
   "common": {
-    "buy": "Kup teraz",
-    "close": "Zamknij",
-    "back": "Wstecz",
-    "next": "Dalej",
-    "seeMore": "Zobacz więcej",
-    "readMore": "Czytaj artykuł",
-    "configure": "Skonfiguruj produkt",
-    "checkAlso": "Sprawdź również",
-    "blogArticles": "Artykuły blogowe",
-    "fromBlog": "Artykuł z bloga",
-    "shop": "Sklep",
-    "goToShop": "Przejdź do sklepu"
+    "buy": "Koupit nyní",
+    "close": "Zavřít",
+    "back": "Zpět",
+    "next": "Další",
+    "seeMore": "Zobrazit více",
+    "readMore": "Číst článek",
+    "configure": "Konfigurovat produkt",
+    "checkAlso": "Podívejte se také na",
+    "blogArticles": "Články na blogu",
+    "fromBlog": "Článek z blogu",
+    "shop": "Obchod",
+    "goToShop": "Přejít do obchodu"
   },
   "navigation": {
     "header": {
-      "domSystem": "Dom system",
-      "osiedleSystem": "Osiedle system",
-      "shop": "Sklep",
-      "partnerZone": "Strefa Partnera",
+      "domSystem": "Domovní systém",
+      "osiedleSystem": "Sídelní systém",
+      "shop": "Obchod",
+      "partnerZone": "Partnerská zóna",
       "contact": "Kontakt",
-      "more": "Więcej"
+      "more": "Více"
     },
     "megaMenu": {
-      "superstrongDesc": "Supermocne garaże, do montażu bezpośrednio v gruncie.",
-      "shelterWoodDesc": "Wiaty ogrodowe, narzędziowe, na drewno czy motocykl.",
-      "shelterRamps": "z możliwością montażu szyny wjazdowej",
+      "superstrongDesc": "Extrémně pevné garáže pro montáž přímo do země.",
+      "shelterWoodDesc": "Zahradní přístřešky, na nářadí, na dřevo nebo motocykl.",
+      "shelterRamps": "s možností montáže nájezdové kolejnice",
       "tabs": {
-        "garages": "Garaże stalowe",
-        "superstrong": "Garaże Superstrong",
-        "bikeShelter": "Wiata na rowery",
-        "steelShelters": "Wiaty Stalowe",
-        "gates": "Bramy garażowe i napędy",
-        "greenShelters": "Altany Zielone",
-        "trashShelters": "Altany Śmietnikowe",
-        "compactShelters": "Kompaktowe Osłony Śmietnikowe",
-        "basementDoors": "Drzwi Wewnątrzklatkowe",
-        "collectiveGarages": "Garaże Zbiorcze",
-        "partitionWalls": "Ścianki Działowe",
-        "bikeCages": "Wygrodzenia Boksów Rowerowych"
+        "garages": "Ocelové garáže",
+        "superstrong": "Garáže Superstrong",
+        "bikeShelter": "Přístřešek na kola",
+        "steelShelters": "Ocelové přístřešky",
+        "gates": "Garážová vrata a pohony",
+        "greenShelters": "Zelené altány",
+        "trashShelters": "Přístřešky na popelnice",
+        "compactShelters": "Kompaktní kryty na popelnice",
+        "basementDoors": "Dveře do společných prostor",
+        "collectiveGarages": "Hromadné garáže",
+        "partitionWalls": "Dělicí stěny",
+        "bikeCages": "Oplocení boxů na kola"
       },
       "moreLinks": {
-        "about": "O nas",
-        "career": "Kariera",
+        "about": "O nás",
+        "career": "Kariéra",
         "blog": "Blog",
-        "distributors": "Dystrybutorzy",
-        "projects": "Realizacje",
-        "privacy": "Polityka prywatności",
-        "downloads": "Do pobrania"
+        "distributors": "Distributoři",
+        "projects": "Realizace",
+        "privacy": "Zásady ochrany osobních údajů",
+        "downloads": "Ke stažení"
       },
       "titles": {
-        "garaze_stalowe": "Garaże stalowe",
-        "garaze_superstrong": "Garaże Superstrong",
-        "wiata": "Wiata na rowery",
-        "wiaty_stalowe": "Wiaty stalowe",
-        "bramy": "Bramy garażowe i napędy",
-        "altany_zielone": "Altany zielone",
-        "altany_smietnikowe": "Altany śmietnikowe",
-        "kompaktowe": "Kompaktowe osłony",
-        "drzwi": "Drzwi piwniczne",
-        "garaze_zbiorcze": "Garaże zbiorcze",
-        "scianki": "Ścianki działowe",
-        "wygrodzenia": "Wygrodzenia przemysłowe"
+        "garaze_stalowe": "Ocelové garáže",
+        "garaze_superstrong": "Garáže Superstrong",
+        "wiata": "Přístřešek na kola",
+        "wiaty_stalowe": "Ocelové přístřešky",
+        "bramy": "Garážová vrata a pohony",
+        "altany_zielone": "Zelené altány",
+        "altany_smietnikowe": "Přístřešky na popelnice",
+        "kompaktowe": "Kompaktní kryty",
+        "drzwi": "Sklepní dveře",
+        "garaze_zbiorcze": "Hromadné garáže",
+        "scianki": "Dělicí stěny",
+        "wygrodzenia": "Průmyslové oplocení"
       },
       "gatesTitles": {
-        "tilt": "Bramy uchylne garażowe",
-        "hinged": "Bramy rozwierne",
-        "hingedPanel": "Bramy rozwierne panelowe",
-        "sectional": "Bramy segmentowe"
+        "tilt": "Výklopná garážová vrata",
+        "hinged": "Křídlová vrata",
+        "hingedPanel": "Křídlová panelová vrata",
+        "sectional": "Sekční vrata"
       }
     }
   },
   "hero": {
-    "title": "Wiata stalowa na rowery",
-    "subtitle": "Nasz rouleur przechowywania.",
-    "newCategory": "Całkowicie nowa kategoria",
-    "cinematicDesc": "Lżejsze, mocniejsze, dopracowane w każdym milimetrze. Prawdziwa stal, której nie oprze się żaden wiatr."
+    "title": "Ocelový přístřešek na kola",
+    "subtitle": "Náš univerzál pro skladování.",
+    "newCategory": "Zcela nová kategorie",
+    "cinematicDesc": "Lehčí, pevnější, propracované v každém milimetru. Skutečná ocel, která odolá každému větru."
   },
   "features": {
-    "title": "Najważniejsze informacje."
+    "title": "Nejdůležitější informace."
   },
   "configuratorPromo": {
-    "title": "Skonfiguruj swoją wiatę",
-    "description": "Nasz konfigurator daje możliwość personalizacji produktów, tak aby odpowiadały one najbardziej wymagającym klientom. Przy konfiguracji mamy podgląd naszego produktu w czasie rzeczywistym."
+    "title": "Nakonfigurujte si svůj přístřešek",
+    "description": "Náš konfigurátor dává možnost personalizace produktů tak, aby vyhovovaly i těm nejnáročnějším zákazníkům. Při konfiguraci máte k dispozici náhled produktu v reálném čase."
   },
   "lifestyle": {
-    "title": "Więcej niż wiata na rowery",
-    "description": "Mimo że nasza wiata została zaprojektowana głównie z myślą o przechowywaniu rowerów, jej wszechstronność sprawia, że jest idealnym rozwiązaniem również dla wielu innych potrzeb."
+    "title": "Více než jen přístřešek na kola",
+    "description": "Přestože byl náš přístřešek navržen především pro skladování kol, jeho všestrannost z něj činí ideální řešení i pro mnoho dalších potřeb."
   },
   "productLayout": {
     "intro": {
-      "text": "Wiata stalowa została zaprojektowana głównie z myślą o przechowywaniu rowerów, jednak można w niej składować również narzędzia ogrodowe, wózki dziecięce, skutery, hulajnogi i inne akcesoria oraz przedmioty użytkowe. Spad dachu klapy skierowany do przodu zapewnia dobre odprowadzenie wody, a dzięki wygodnemu pochwytowi otwieranie jest proste."
+      "text": "Ocelový přístřešek byl navržen především pro skladování kol, ale lze v něm uskladnit i zahradní nářadí, kočárky, skútry, koloběžky a další příslušenství či užitkové předměty. Sklon střechy směřující dopředu zajišťuje dobrý odvod vody a díky pohodlnému madlu je otevírání snadné."
     },
     "features": {
       "pianoHinge": {
-        "title": "Zawias fortepianowy w klapie wiaty"
+        "title": "Klavírový pant ve víku přístřešku"
       },
       "stopPoints": {
-        "title": "Innowacyjny system otwierania z punktami STOP"
+        "title": "Inovativní systém otevírání s body STOP"
       },
       "fabricHandle": {
-        "title": "Szmaciany pochwyt ułatwiający otwieranie oraz zamykanie progu"
+        "title": "Látkové madlo pro snadné otevírání a zavírání prahu"
       },
       "steelRods": {
-        "title": "Zamykanie wiaty za pomocą aluminiowo-stalowych cięgien."
+        "title": "Zavírání přístřešku pomocí hliníkovo-ocelových táhel."
       },
       "packing": {
-        "title": "Wygodne pakowanie v boxie paletowym"
+        "title": "Pohodlné balení v paletovém boxu"
       },
       "reinforcedCorners": {
-        "title": "Wzmocnione narożniki"
+        "title": "Zesílené rohy"
       },
       "steelTriangles": {
-        "title": "Usztywniające stalowe trójkąty w narożnikach"
+        "title": "Zpevňující ocelové trojúhelníky v rozích"
       },
       "lidReinforcement": {
-        "title": "Stalowe wzmocnienia klapy połączone z ceownikami"
+        "title": "Ocelové výztuhy víka spojené s U-profily"
       }
     },
     "colorSection": {
-      "title": "Poznaj kolorystykę.",
-      "aesthetic": "Ponadczasowa estetyka w każdym kolorze",
-      "match": "Dopasuj wiatę do elewacji Twojego domu",
-      "protection": "Ochrona przed każdymi warunkami",
-      "quality": "Najwyższa jakość powłoki lakierniczej"
+      "title": "Seznamte se s barevným provedením.",
+      "aesthetic": "Nadčasová estetika v každé barvě",
+      "match": "Přizpůsobte přístřešek fasádě vašeho domu",
+      "protection": "Ochrana za každého počasí",
+      "quality": "Nejvyšší kvalita laku"
     },
     "dimensions": {
-      "title": "Wymiary wiaty na rowery",
-      "height": "Wysokość",
-      "width": "Szerokość",
-      "depth": "Głębokość"
+      "title": "Rozměry přístřešku na kola",
+      "height": "Výška",
+      "width": "Šířka",
+      "depth": "Hloubka"
     },
     "nav": {
-      "priceFrom": "Od 12 999 zł"
+      "priceFrom": "Od 12 999 PLN"
     },
     "aluminumFloor": {
-      "title": "Aluminiowa podłoga",
-      "subtitle": "mocowana do gruntu za pomocą nierdzewnych kotew.",
-      "description": "W wiacie rowerowej istnieje możliwość zamontowania aluminiowej podłogi, która skutecznie zapobiega wzrostowi niechcianej roślinności, szczególnie v przypadku montażu na kostce brukowej. Podłoga została zaprojektowana w taki sposób, aby kotwienie wiaty odbywało się przez te same otwory, co w wersji bez podłogi. Dzięki temu można łatwo doposażyć wiatę w tę opcję w dowolnym momencie, gdy uznamy, że jest to potrzebne."
+      "title": "Hliníková podlaha",
+      "subtitle": "připevněná k zemi pomocí nerezových kotev.",
+      "description": "V přístřešku na kola je možné namontovat hliníkovou podlahu, která účinně zabraňuje růstu nežádoucí vegetace, zejména při montáži na zámkovou dlažbu. Podlaha byla navržena tak, aby ukotvení přístřešku probíhalo přes stejné otvory jako u verze bez podlahy. Díky tomu je možné přístřešek touto možností snadno dovybavit kdykoliv, když to uznáte za vhodné."
     },
     "lifestyle": {
-      "p1": "Mimo że nasza wiata została zaprojektowana głównie z myślą o przechowywaniu rowerów, jej wszechstronność sprawia, że jest idealnym rozwiązaniem również dla wielu innych potrzeb. Oprócz rowerów, z łatwością pomieści narzędzia ogrodowe, takie jak łopaty, grabie czy sekatory, oraz niewielkie akcesoria ogrodowe, takie jak doniczki, nasiona czy nawozy. Dzięki przestronnym wymiarom — 1950 mm szerokości, 900 mm głębokości i 1290 mm wysokości — wiata może również służyć jako praktyczny schowek na przydomowe akcesoria, takie jak kosiarki, węże ogrodowe itp.",
-      "p2": "Idealnie nadaje się również do przechowywania zabawek dziecięcych, w tym samochodzików elektrycznych czy na pedały, zabawek do piaskownicy oraz zestawów do zabawy v ogrodzie. Dodatkowo, wiata może pomieścić akcesoria wędkarskie, takie jak wędki, kołowrotki czy torby wędkarskie, a także sezonowe dekoracje ogrodowe, takie jak latarenki i lampki solarne czy drobne meble ogrodowe. Jeśli korzystasz z ogrodu do relaksu, znajdziesz tu również miejsce na akcesoria do grillowania.",
-      "p3": "Dzięki swojej funkcjonalności i przestronności, nasza wiata oferuje wygodne rozwiązanie do przechowywania szerokiej gamy przedmiotów, które mogą być przydatne w codziennym życiu, maksymalnie wykorzystując dostępną przestrzeń."
+      "p1": "Přestože byl náš přístřešek navržen především pro skladování kol, jeho všestrannost z něj činí ideální řešení i pro mnoho dalších potřeb. Kromě kol snadno pojme zahradní nářadí, jako jsou lopaty, hrábě nebo zahradní nůžky, a menší zahradní doplňky, jako jsou květináče, semena nebo hnojiva. Díky prostorným rozměrům — 1950 mm na šířku, 900 mm do hloubky a 1290 mm na výšku — může přístřešek sloužit také jako praktický úložný prostor pro domácí příslušenství, jako jsou sekačky na trávu, zahradní hadice atd.",
+      "p2": "Ideálně se hodí také pro skladování dětských hraček, včetně elektrických nebo šlapacích autíček, hraček na pískoviště a sad pro hraní na zahradě. Přístřešek navíc pojme rybářské vybavení, jako jsou pruty, navijáky nebo rybářské tašky, a také sezónní zahradní dekorace, jako jsou lucerny a solární světla nebo drobný zahradní nábytek. Pokud využíváte zahradu k relaxaci, najdete zde také místo pro grilovací příslušenství.",
+      "p3": "Díky své funkčnosti a prostornosti nabízí náš přístřešek pohodlné řešení pro uskladnění široké škály předmětů, které mohou být užitečné v každodenním životě, s maximálním využitím dostupného prostoru."
     },
     "showcase1": {
-      "top": "Wytrzymały",
-      "glow": "zawias fortepianowy",
-      "bottom": "ze stali.",
-      "description": "W naszej wiacie na rowery zastosowaliśmy zawias fortepianowy, który podnosi standard codziennego użytkowania. Ten subtelny, a jednocześnie wyjątkowo wytrzymały element zapewnia nie tylko idealną sztywność klapy zamykającej, ale także jej płynną, niemal bezszelestną pracę. Dzięki kompaktowej konstrukcji i dużej powierzchni styku, zawias ten nie tylko gwarantuje niezawodność, ale również trwałość na lata. To rozwiązanie, które docenią wszyscy użytkownicy ceniący sobie precyzję, funkcjonalność i nowoczesny design."
+      "top": "Odolný",
+      "glow": "klavírový pant",
+      "bottom": "z oceli.",
+      "description": "V našem přístřešku na kola jsme použili klavírový pant, který zvyšuje standard každodenního používání. Tento subtilní, a přesto mimořádně odolný prvek, zajišťuje nejen ideální tuhost uzavíracího víka, ale také jeho plynulý a téměř bezhlučný chod. Díky kompaktní konstrukci a velké kontaktní ploše tento pant zaručuje nejen spolehlivost, ale také dlouholetou životnost. Jedná se o řešení, které ocení všichni uživatelé ceníci si preciznosti, funkčnosti a moderního designu."
     },
     "showcase2": {
-      "top": "Metalowy próg",
-      "glow": "z lekkiego aluminium",
-      "description": "Dolna część wiaty została zaprojektowana z myślą o maksymalnej funkcjonalności i komforcie użytkowania. Stalowy próg z eleganckim materiałowym pochwytem zapewnia solidne zamknięcie, a neodymowe magnesy precyzyjnie utrzymują go w pozycji, zapobiegając przypadkowemu otwarciu. Specjalnie dopasowane zawiasy oraz dodatkowe gięcie elementu tworzą po otwarciu płynnie wyprofilowany podjazd, ułatwiający wprowadzenie roweru. To przemyślane rozwiązanie łączy trwałość z wygodą, odpowiadając na potrzeby wymagających użytkowników."
+      "top": "Kovový práh",
+      "glow": "z lehkého hliníku",
+      "description": "Spodní část přístřešku byla navržena s ohledem na maximální funkčnost a komfort používání. Ocelový práh s elegantním látkovým madlem zajišťuje pevné uzavření a neodymové magnety ho přesně udržují na svém místě, čímž zabraňují náhodnému otevření. Speciálně přizpůsobené panty a dodatečné ohyby prvku po otevření vytvářejí plynule profilovaný nájezd, který usnadňuje vložení kola. Toto promyšlené řešení spojuje odolnost s pohodlím a odpovídá na potřeby náročných uživatelů."
     }
   },
   "footer": {
     "unicorn": {
-      "tagline": "Nie goń schematów.",
-      "prefix": "Złap branżowego",
-      "cta": "Jednorożca."
+      "tagline": "Neřiďte se konvencemi.",
+      "prefix": "Chyťte oborového",
+      "cta": "Jednorožce."
     },
     "location": {
-      "title": "Godziny pracy & Lokalizacja",
-      "address1": "Biuro I, II, Nawojowa 33-335",
+      "title": "Pracovní doba a lokace",
+      "address1": "Kancelář I, II, Nawojowa 33-335",
       "address2": "Krynicka 55, Nawojowa",
-      "country": "Polska",
-      "workingDays": "Poniedziałek - Piątek",
+      "country": "Polsko",
+      "workingDays": "Pondělí - Pátek",
       "workingHours": "07:00 - 15:00"
     },
     "quickAccess": {
-      "title": "Szybki dostęp"
+      "title": "Rychlý přístup"
     },
     "career": {
-      "title": "GMS Kariera",
-      "description": "Zacznij pracę w GMS Corporation",
-      "cta": "Dołącz do naszej społeczności"
+      "title": "Kariéra v GMS",
+      "description": "Začněte pracovat v GMS Corporation",
+      "cta": "Připojte se k naší komunitě"
     },
     "bottom": {
-      "rights": "All Rights Reserved",
-      "author": "by Mateusz Sromek",
-      "rodo": "RODO",
-      "cookies": "Pliki cookies"
+      "rights": "Všechna práva vyhrazena",
+      "author": "autor Mateusz Sromek",
+      "rodo": "GDPR",
+      "cookies": "Soubory cookie"
     }
   },
   "chat": {
-    "welcome": "Jak mogę Ci dzisiaj pomóc?",
-    "placeholder": "Zapytaj GMS Corporation...",
-    "assistant": "Asystent AI",
-    "processing": "Przetwarzanie danych...",
-    "clearHistory": "Wyczyść historię rozmowy",
-    "clearConfirm": "Czy na pewno chcesz wyczyścić historię rozmowy?",
-    "close": "Zamknij",
+    "welcome": "Jak vám mohu dnes pomoci?",
+    "placeholder": "Zeptejte se GMS Corporation...",
+    "assistant": "AI asistent",
+    "processing": "Zpracování dat...",
+    "clearHistory": "Vymazat historii konverzace",
+    "clearConfirm": "Opravdu chcete vymazat historii konverzace?",
+    "close": "Zavřít",
     "chips": {
-      "summary": "Podsumuj stronę",
+      "summary": "Shrnout stránku",
       "summaryPrompt": "Připrav krátké shrnutí (3–5 bodů) toho, co se nachází na této podstránce",
-      "specs": "Specyfikacja techniczna",
+      "specs": "Technická specifikace",
       "specsPrompt": "Vytáhni technickou specifikaci z obsahu této stránky nebo mi řekni o nejdůležitějších technických detailech"
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymové magnety",
+        "desc": "namontované na bocích víka"
+      },
+      "handle": {
+        "title": "Textilní úchop",
+        "desc": "usnadňující otevírání"
+      },
+      "tin": {
+        "title": "Pozinkovaná",
+        "desc": "klapa"
+      },
+      "hinges": {
+        "title": "Přišroubované panty",
+        "desc": "zaručující dlouhou životnost"
+      },
+      "bends": {
+        "title": "Zpevňující ohýbání",
+        "desc": "ztuhující práh"
+      },
+      "angle": {
+        "title": "Profilovaný úhel",
+        "desc": "pro snazší vjezd"
+      }
+    },
+    "headline": "Cyklistická odolnost.",
+    "description": "Konstrukce přístřešku pro kola byla navržena s ohledem na maximální pevnost a trvanlivost. Klíčovým zpevňujícím prvkem jsou autorské trojúhelníky spojené s U-profilovými trámi, které byly vyvinuty a vyrobeny interně. Toto řešení zajišťuje mimořádnou tuhost a stabilitu jednotlivých komponentů víka. Stěny přístřešku jsou zase spojeny pomocí regulovatelných trojúhelníků, což umožňuje přesné přizpůsobení a montáž. Další zpevnění zajišťují ocelové rohy vyřezávané na CNC strojích, které nejen zvyšují tuhost stěn, ale také trvale zabezpiečují všechna spojení. Je to inovativní přístup, který zaručuje spolehlivost na dlouhá léta."
+  },
+  "threeDShowcase": {
+    "title": "Podívejte se na několik předností v 3D",
+    "button": "Podívat se zblízka",
+    "resetTooltip": "Resetovat zobrazení",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Klavírní pant",
+        "description": "Tento prvek, připevněný k víku pomocí malých, hustě rozmístěných šroubů, zaručuje tichý a spolehlivý chod i dlouhou životnost víka. Díky pečlivému rozmístění šroubů víko funguje plynule a bezhlučně, což zároveň zajišťuje trvanlivost a stabilitu po mnoho let používání."
+      },
+      "reinforcedCorners": {
+        "label": "Zpevněné rohy",
+        "description": "Další zpevnění v rozích konstrukce zajišťují výjimečnou tuhost a odolnost proti deformacím. Jedná se o klíčový prvek při intenzivním používání přístřešku, který zabraňuje „pracování“ materiálu a udržuje geometrii po celá desetiletí."
+      },
+      "locking": {
+        "label": "Uzamykání na klíč",
+        "description": "Použili jsme válečkový zámek s vícebodovým jištěním, který zajišťuje nejvyšší stupeň bezpečnosti vašeho kola. Tento systém je odolný vůči povětrnostním podmínkám a pokusům o vloupání, což vám přináší plný klid."
+      },
+      "stopPoints": {
+        "label": "Inovativní systém s STOP body",
+        "description": "Speciální dorazy a hydraulický brzdicí systém klopy zabraňují prudkým nárazům při zavírání. STOP body umožňují bezpečné ovládání klopy bez rizika přiskřípnutí prstů nebo poškození krytu."
+      },
+      "thresholdHandle": {
+        "label": "Práh s látkovou úchytkou",
+        "description": "Ergonomický práh vybavený látkovou úchytkou usnadňuje zasouvání kola do interiéru přístřešku. Úchytka zajišťuje pevný úchop i v rukavicích a konstrukce prahu eliminuje překážku pro kola jízdního kola."
+      }
     }
   }
 }

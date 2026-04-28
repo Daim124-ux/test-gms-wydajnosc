@@ -199,5 +199,44 @@
       "specs": "Specyfikacja techniczna",
       "specsPrompt": "Wyciągnij specyfikację techniczną z treści tej strony lub opowiedz o najważniejszych szczegółach technicznych"
     }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": { "title": "Neodymowe magnesy", "desc": "zamontowane na bokach klapy" },
+      "handle": { "title": "Materiałowy pochwyt", "desc": "ułatwiający otwieranie" },
+      "tin": { "title": "Ocynowana", "desc": "klapa" },
+      "hinges": { "title": "Przykręcane zawiasy", "desc": "gwarantujące trwałość" },
+      "bends": { "title": "Wzmacniające gięcia", "desc": "usztywniające próg" },
+      "angle": { "title": "Wyprofilowany kąt", "desc": "dla prostszego wjazdu" }
+    },
+    "headline": "Kolarska wytrzymałość.",
+    "description": "Konstrukcja wiaty na rowery została zaprojektowana z myślą o maksymalnej wytrzymałości i trwałości. Kluczowym elementem wzmacniającym są autorskie trójkąty połączone z ceownikami, które zostały opracowane i wyprodukowane we własnym zakresie. To rozwiązanie zapewnia niezwykłą sztywność i stabilność poszczególnych komponentów klapy. Ściany wiaty są z kolei połączone za pomocą regulowanych trójkątów, co umożliwia precyzyjne dopasowanie i montaż. Dodatkowe wzmocnienie zapewniają stalowe narożniki, wycinane na maszynach CNC, które nie tylko zwiększają sztywność ścian, ale także trwale zabezpieczają wszystkie połączenia. To innowacyjne podejście, które gwarantuje niezawodność na lata."
+  },
+  "threeDShowcase": {
+    "title": "Zobacz parę wyróżników w 3D",
+    "button": "Zobacz z bliska",
+    "resetTooltip": "Resetuj widok",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Zawias fortepianowy",
+        "description": "Zamocowany na klapie za pomocą niewielkich, gęsto rozmieszczonych wkrętów, element ten gwarantuje cichą i niezawodną pracę oraz długowieczność klapy. Dzięki starannemu rozmieszczeniu wkrętów, klapa działa płynnie i bezszelestnie, zapewniając jednocześnie trwałość i stabilność przez wiele lat użytkowania."
+      },
+      "reinforcedCorners": {
+        "label": "Wzmocnione naroża",
+        "description": "Dodatkowe wzmocnienia w narożnikach konstrukcji zapewniają wyjątkową sztywność i odporność na odkształcenia. Jest to kluczowy element przy intensywnym użytkowaniu wiaty, zapobiegający \"pracowaniu\" materiału i utrzymujący geometrię przez dekady."
+      },
+      "locking": {
+        "label": "Zamykanie na klucz",
+        "description": "Zastosowaliśmy zamek bębenkowy z wielopunktowym ryglowaniem, który zapewnia najwyższy stopień bezpieczeństwa Twojego roweru. System ten jest odporny na warunki atmosferyczne i próby sforsowania, dając Ci pełny spokój ducha."
+      },
+      "stopPoints": {
+        "label": "Innowacyjny system z punktami STOP",
+        "description": "Specjalne odbojniki i hydrauliczny system hamowania klapy zapobiegają gwałtownym uderzeniom przy zamykaniu. Punkty STOP pozwalają na bezpieczne operowanie klapą bez ryzyka przytrzaśnięcia palców czy uszkodzenia obudowy."
+      },
+      "thresholdHandle": {
+        "label": "Próg z materiałowym uchwytem",
+        "description": "Ergonomiczny próg wyposażony w materiałowy uchwyt ułatwia wprowadzanie roweru do wnętrza wiaty. Uchwyt zapewnia pewny chwyt nawet w rękawiczkach, a konstrukcja progu niweluje przeszkodę dla kół roweru."
+      }
+    }
   }
 }
