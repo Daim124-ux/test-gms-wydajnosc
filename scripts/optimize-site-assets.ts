@@ -222,6 +222,9 @@ async function walk(dir: string, relative: string = '') {
         await processImage(relPath);
       } else if (['.mp4', '.mov', '.webm'].includes(ext)) {
         await processVideo(relPath);
+      } else if (ext === '.glb') {
+        console.log(`[MODEL] Uploading 3D model: ${relPath}`);
+        await uploadToS3(fullPath, relPath, 'model/gltf-binary');
       }
     }
   }

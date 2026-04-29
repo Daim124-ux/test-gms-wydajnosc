@@ -20,6 +20,7 @@ import { notFound } from 'next/navigation';
 import { locales } from '@/i18n/request';
 import Header from "@/components/Header/Header";
 import ChatWidget from "@/components/Chat/ChatWidget";
+import Script from "next/script";
 import "./globals.css";
 
 export default async function RootLayout({
@@ -41,6 +42,13 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`${poppins.variable} font-sans h-full antialiased`}>
+      <head>
+        <Script 
+          type="module" 
+          src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" 
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Header />

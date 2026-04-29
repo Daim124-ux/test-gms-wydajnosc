@@ -487,7 +487,7 @@
       "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/Wiata_na_rowery_diff_ratio.jpg"
     },
     "assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min.jpg": {
-      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBwj/xAAgEAACAgICAgMAAAAAAAAAAAACAwEEAAUGERIxE0Lh/8QAFgEBAQEAAAAAAAAAAAAAAAAABAEC/8QAGhEAAgMBAQAAAAAAAAAAAAAAAAEDESECUf/aAAwDAQACEQMRAD8A5vTQX3HY9481tMUTDBGMoa6uG2RD4twxLJ9wyPzKjX8IqX9c2xrN5TsCA+Uh9sy7GROO9M0soQxxEShmZwxvbVra7yW62EHHuMMmiX3H4j//2Q==",
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBwj/xAAgEAACAgICAgMAAAAAAAAAAAACAwEEAAUGERIxE0Lh/8QAFgEBAQEAAAAAAAAAAAAAAAAABAEC/8QAGREAAwEBAQAAAAAAAAAAAAAAAAEDESEx/9oADAMBAAIRAxEAPwDm9NBfcdj3jzW0xRMMEYyhrq4bZEPi3DEsn3DI/MqNfwipf1zbGs3lOwID5SH26zL0ZJz3pmllCGOIpUMzOGN7adah5LdbCDj3GGTol0nviP/Z",
       "variants": {
         "small": [
           "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/Wiata_rowerowa_RAL3005_45deg-min_small.avif",
@@ -1583,6 +1583,42 @@
         ]
       },
       "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/kolorystyka/RAL7016/Wiata_rowerowa_RAL7016_top-min.jpg"
+    },
+    "assets/images/wiaty-stalowe-na-rowery/steptodown.com543925.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGgABAAMAAwAAAAAAAAAAAAAAAAECBQQGCP/EACIQAAEEAgEEAwAAAAAAAAAAAAIAAQMEBRESISJBcTEyUf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERMf/aAAwDAQACEQMRAD8A87Y6m9yVx5iAN1In8MtW5hqY13OneYzFu4S8+lw8AEM1g4Jz4cx0L+NrWt0ocXgClsSgd2YuIAL7036lyTU7cdW+EUIipbo+2fTqxkR/cnL2+0RBVERB/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/wiaty-stalowe-na-rowery/steptodown.com543925.jpg"
+    },
+    "assets/modele_ar/wiata_rowerowa/mat_normal.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEE/8QAFRABAQAAAAAAAAAAAAAAAAAAAAH/xAAXAQEAAwAAAAAAAAAAAAAAAAAAAQQG/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2gNsrAAAALAEj//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/mat_normal_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/mat_normal_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/mat_normal_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/mat_normal_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/mat_normal_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/mat_normal_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/modele_ar/wiata_rowerowa/mat_normal.jpg"
     }
   },
   "videos": {
@@ -1708,6 +1744,43 @@
         ]
       },
       "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/wiaty-stalowe-na-rowery/animacja-ciegna.webm"
+    },
+    "assets/videos/main/jednorozec_gms.webm": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/main/jednorozec_gms.webm"
+    },
+    "assets/videos/main/test.webm": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/test_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/test_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/test_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/test_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/main/test.webm"
+    },
+    "assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.webm": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.webm"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.webm"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.webm"
     }
   }
 }

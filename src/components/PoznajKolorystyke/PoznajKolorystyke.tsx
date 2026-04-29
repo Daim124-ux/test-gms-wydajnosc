@@ -13,7 +13,9 @@ const CarportViewer = dynamic(() => import('./CarportViewer'), { ssr: false });
 const ModelViewer = 'model-viewer' as any;
 
 const CLOUDFRONT_URL = '/cdn-assets';
+const FULL_CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
 const MODEL_URL = `${CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa.glb`;
+const AR_MODEL_URL = `${FULL_CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa.glb`;
 
 // Pomocnicza funkcja do konwersji HEX na RGBA dla model-viewer
 const hexToRgba = (hex: string) => {
@@ -388,7 +390,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       {/* SILNIK AR (UKRYTY) - potrzebny tylko do wyzwalania trybu AR na mobile */}
       <ModelViewer
         ref={modelViewerRef}
-        src={MODEL_URL}
+        src={AR_MODEL_URL}
         ar
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
