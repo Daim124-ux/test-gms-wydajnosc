@@ -12,7 +12,7 @@ const CarportViewer = dynamic(() => import('./CarportViewer'), { ssr: false });
 // Obejście dla TypeScript: traktujemy model-viewer jako komponent React
 const ModelViewer = 'model-viewer' as any;
 
-const CLOUDFRONT_URL = '/cdn-assets/_optimized/originals';
+const CLOUDFRONT_URL = '/cdn-assets';
 const MODEL_URL = `${CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa.glb`;
 
 // Pomocnicza funkcja do konwersji HEX na RGBA dla model-viewer
