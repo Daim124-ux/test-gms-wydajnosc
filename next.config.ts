@@ -40,6 +40,14 @@ const nextConfig: NextConfig = {
       }
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: '/cdn-assets/:path*',
+        destination: 'https://d1moyf5ccth9x8.cloudfront.net/:path*',
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
