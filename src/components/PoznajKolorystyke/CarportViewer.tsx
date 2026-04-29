@@ -27,7 +27,9 @@ function Model({ url, color, isMat, colorId }: { url: string; color: string; isM
     clonedScene.traverse((obj) => {
       if ((obj as THREE.Mesh).isMesh) {
         const mesh = obj as THREE.Mesh;
-        const currentMatName = mesh.material.name;
+        // TypeScript fix: material może być tablicą
+        const material = Array.isArray(mesh.material) ? mesh.material[0] : mesh.material;
+        const currentMatName = material?.name || "";
         
         const isColorable = 
           obj.name.toUpperCase().includes('KOLOR') || 
