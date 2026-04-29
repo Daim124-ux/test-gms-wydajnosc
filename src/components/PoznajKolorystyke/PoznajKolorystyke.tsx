@@ -14,8 +14,8 @@ const ModelViewer = 'model-viewer' as any;
 
 const CLOUDFRONT_URL = '/cdn-assets';
 const FULL_CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
-const MODEL_URL = `${CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_v06.glb`;
-const AR_MODEL_URL = `${FULL_CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_v06.glb`;
+const MODEL_URL = `${CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_v07.glb`;
+const AR_MODEL_URL = `${FULL_CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_v07.glb`;
 
 // Pomocnicza funkcja do konwersji HEX na RGBA dla model-viewer
 const hexToRgba = (hex: string) => {
