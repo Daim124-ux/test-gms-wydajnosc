@@ -129,15 +129,14 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     }
   };
 
+  const [modelLoaded, setModelLoaded] = useState(false);
+
   // Synchronizacja koloru z modelem AR (model-viewer)
   useEffect(() => {
     const mv = modelViewerRef.current as any;
     if (mv && mv.model && mv.model.materials) {
-      // Szukamy materiału do pomalowania (zazwyczaj pierwszy lub o konkretnej nazwie)
-      // W wersji "klapa" (v06) prawdopodobnie jest jeden główny materiał
       const materialy = mv.model.materials;
       materialy.forEach((mat: any) => {
-        // Próbujemy pomalować wszystkie materiały, które nie są przezroczyste/szklane
         if (!mat.name.toLowerCase().includes('glass')) {
           const rgb = hexToRgba(wybranyKolor.hex);
           mat.pbrMetallicRoughness.setBaseColorFactor(rgb);
@@ -425,6 +424,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
         loading="eager"
+        onLoad={() => setModelLoaded(true)}
         style={{ 
           opacity: 0, 
           width: '1px', 
