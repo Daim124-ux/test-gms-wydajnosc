@@ -122,11 +122,18 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
   };
 
   const handle3DClick = () => {
+    // Sprawdzamy czy jesteśmy na mobile (uproszczony check)
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     
     if (isMobile && modelViewerRef.current) {
-      // Na mobile uruchamiamy bezpośrednio tryb AR
-      modelViewerRef.current.activateAR();
+      // Bezpieczne wywołanie - sprawdzamy czy funkcja istnieje
+      const mv = modelViewerRef.current as any;
+      if (typeof mv.activateAR === 'function') {
+        mv.activateAR();
+      } else {
+        // Jeśli model-viewer nie jest jeszcze gotowy, otwieramy modal 3D jako fallback
+        setIsModalOpen(true);
+      }
     } else {
       // Na desktopie otwieramy modal 3D
       setIsModalOpen(true);
