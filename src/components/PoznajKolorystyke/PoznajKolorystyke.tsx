@@ -9,6 +9,15 @@ import dynamic from 'next/dynamic';
 
 const CarportViewer = dynamic(() => import('./CarportViewer'), { ssr: false });
 
+// Deklaracja dla TypeScript, aby rozpoznał tag model-viewer
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'model-viewer': any;
+    }
+  }
+}
+
 // Pomocnicza funkcja do konwersji HEX na RGBA dla model-viewer
 const hexToRgba = (hex: string) => {
   const r = parseInt(hex.slice(1, 3), 16) / 255;
