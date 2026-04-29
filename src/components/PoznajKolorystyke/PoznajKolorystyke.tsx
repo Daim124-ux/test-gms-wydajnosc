@@ -2,8 +2,20 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Box } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Box, X } from 'lucide-react';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
+import { createPortal } from 'react-dom';
+import dynamic from 'next/dynamic';
+
+const CarportViewer = dynamic(() => import('./CarportViewer'), { ssr: false });
+
+// Pomocnicza funkcja do konwersji HEX na RGBA dla model-viewer
+const hexToRgba = (hex: string) => {
+  const r = parseInt(hex.slice(1, 3), 16) / 255;
+  const g = parseInt(hex.slice(3, 5), 16) / 255;
+  const b = parseInt(hex.slice(5, 7), 16) / 255;
+  return [r, g, b, 1];
+};
 
 export interface KolorWiaty {
   id: string;
@@ -36,8 +48,10 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
   const [aktywnyId, setAktywnyId] = useState<string | null>(elementy[0]?.id || null);
   const [splashKey, setSplashKey] = useState(0);
   const [sekcjaWidoczna, setSekcjaWidoczna] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const kontenerScrollRef = useRef<HTMLDivElement>(null);
+  const modelViewerRef = useRef<any>(null);
 
   // Intersection Observer do śledzenia aktywnego slajdu (dla ramki)
   useEffect(() => {
@@ -83,6 +97,16 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     setPoprzedniKolor(wybranyKolor);
     setWybranyKolor(kolor);
     setSplashKey(prev => prev + 1);
+
+    // Aktualizujemy model-viewer dla AR (na wypadek gdyby użytkownik od razu kliknął AR)
+    if (modelViewerRef.current) {
+      const rgba = hexToRgba(kolor.hex);
+      modelViewerRef.current.model?.materials.forEach((material: any) => {
+        if (material.name.toUpperCase().includes('KOLOR')) {
+          material.pbrMetallicRoughness.setBaseColorFactor(rgba);
+        }
+      });
+    }
   };
 
   const przewinWLewo = () => {
@@ -94,6 +118,18 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
   const przewinWPrawo = () => {
     if (kontenerScrollRef.current) {
       kontenerScrollRef.current.scrollBy({ left: 450, behavior: 'smooth' });
+    }
+  };
+
+  const handle3DClick = () => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    if (isMobile && modelViewerRef.current) {
+      // Na mobile uruchamiamy bezpośrednio tryb AR
+      modelViewerRef.current.activateAR();
+    } else {
+      // Na desktopie otwieramy modal 3D
+      setIsModalOpen(true);
     }
   };
 
@@ -234,9 +270,10 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
 
                   <div className="absolute inset-0 bg-black/20" />
                   
-                  {/* PRZYCISK 3D / AR (PLACEHOLDER) */}
+                  {/* PRZYCISK 3D / AR */}
                   <button
-                    className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white/80 hover:text-white hover:bg-black/60 transition-all active:scale-90"
+                    onClick={handle3DClick}
+                    className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white/80 hover:text-white hover:bg-black/60 transition-all active:scale-90 shadow-lg"
                     title="Zobacz w 3D / AR"
                   >
                     <Box size={20} />
@@ -334,6 +371,43 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
           display: none;
         }
       `}</style>
+
+      {/* SILNIK AR (UKRYTY) - potrzebny tylko do wyzwalania trybu AR na mobile */}
+      <model-viewer
+        ref={modelViewerRef}
+        src="/assets/modele_ar/wiata_rowerowa/wiata_rowerowa.glb"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        style={{ visibility: 'hidden', width: '1px', height: '1px', position: 'absolute' }}
+      />
+
+      {/* MODAL 3D DLA DESKTOPA */}
+      {isModalOpen && createPortal(
+        <div className="fixed inset-0 z-[3000] flex items-center justify-center bg-black/90 backdrop-blur-xl">
+          <button 
+            onClick={() => setIsModalOpen(false)}
+            className="absolute top-8 right-8 z-[3010] p-4 text-white hover:bg-white/10 rounded-full transition-colors"
+          >
+            <X size={32} />
+          </button>
+          
+          <div className="w-full h-full max-w-6xl max-h-[85vh] flex flex-col items-center justify-center relative p-4">
+            <CarportViewer 
+              url="/assets/modele_ar/wiata_rowerowa/wiata_rowerowa.glb" 
+              color={wybranyKolor.hex} 
+              colorId={wybranyKolor.id}
+              isMat={wybranyKolor.nazwa.toLowerCase().includes('mat')}
+            />
+            
+            <div className="mt-6 text-center">
+              <p className="text-white/40 text-xs tracking-widest uppercase mb-1">Model 3D wiaty</p>
+              <h3 className="text-white text-xl font-medium tracking-wide">{wybranyKolor.nazwa}</h3>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
     </section>
   );
 }
