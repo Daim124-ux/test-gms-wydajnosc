@@ -9,14 +9,8 @@ import dynamic from 'next/dynamic';
 
 const CarportViewer = dynamic(() => import('./CarportViewer'), { ssr: false });
 
-// Deklaracja dla TypeScript, aby rozpoznał tag model-viewer
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'model-viewer': any;
-    }
-  }
-}
+// Obejście dla TypeScript: traktujemy model-viewer jako komponent React
+const ModelViewer = 'model-viewer' as any;
 
 // Pomocnicza funkcja do konwersji HEX na RGBA dla model-viewer
 const hexToRgba = (hex: string) => {
@@ -389,7 +383,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       `}</style>
 
       {/* SILNIK AR (UKRYTY) - potrzebny tylko do wyzwalania trybu AR na mobile */}
-      <model-viewer
+      <ModelViewer
         ref={modelViewerRef}
         src="/assets/modele_ar/wiata_rowerowa/wiata_rowerowa.glb"
         ar
