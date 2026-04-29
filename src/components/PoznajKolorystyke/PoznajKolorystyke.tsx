@@ -403,7 +403,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       {/* SILNIK AR (UKRYTY ALE AKTYWNY) */}
       <ModelViewer
         ref={modelViewerRef}
-        src={AR_MODEL_URL}
+        src={MODEL_URL}
         ar
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
