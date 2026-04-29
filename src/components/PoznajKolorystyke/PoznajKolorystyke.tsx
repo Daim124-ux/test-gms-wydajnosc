@@ -142,6 +142,11 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
         if (name.includes('ral') || name.includes('ocynk')) {
           const rgb = hexToRgba(wybranyKolor.hex);
           mat.pbrMetallicRoughness.setBaseColorFactor(rgb);
+          
+          // NOWOŚĆ: Synchronizacja matowości (Roughness)
+          // Używamy tych samych wartości co w CarportViewer.tsx
+          const roughness = wybranyKolor.isMat ? 0.9 : 0.25;
+          mat.pbrMetallicRoughness.setRoughnessFactor(roughness);
         }
       });
     }
