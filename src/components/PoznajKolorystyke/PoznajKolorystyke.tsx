@@ -129,19 +129,40 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     }
   };
 
+  // Synchronizacja koloru z modelem AR (model-viewer)
+  useEffect(() => {
+    const mv = modelViewerRef.current as any;
+    if (mv && mv.model && mv.model.materials) {
+      // Szukamy materiału do pomalowania (zazwyczaj pierwszy lub o konkretnej nazwie)
+      // W wersji "klapa" (v06) prawdopodobnie jest jeden główny materiał
+      const materialy = mv.model.materials;
+      materialy.forEach((mat: any) => {
+        // Próbujemy pomalować wszystkie materiały, które nie są przezroczyste/szklane
+        if (!mat.name.toLowerCase().includes('glass')) {
+          const rgb = hexToRgba(wybranyKolor.hex);
+          mat.pbrMetallicRoughness.setBaseColorFactor(rgb);
+        }
+      });
+    }
+  }, [wybranyKolor, modelLoaded]);
+
   const handle3DClick = () => {
     try {
       const isAndroid = /Android/i.test(navigator.userAgent);
       const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-      const isMobile = isAndroid || isIOS;
       
       if (isAndroid) {
-        // Używamy bezpośredniego linku do CloudFront dla Androida (najbardziej stabilne dla Scene Viewer)
-        // Musi być zakodowany (encodeURIComponent)
-        const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(AR_MODEL_URL)}&mode=3d_preferred&title=Wiata%20Rowerowa#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
-        window.location.href = intentUrl;
+        const mv = modelViewerRef.current as any;
+        // Na Androidzie, jeśli mamy model-viewer, używamy jego wbudowanej funkcji activateAR
+        // Działa to lepiej z WebXR (zachowuje kolory zmienione w locie)
+        if (mv && typeof mv.activateAR === 'function') {
+          mv.activateAR();
+        } else {
+          // Fallback do Scene Viewer (może nie mieć koloru, ale przynajmniej pokaże model)
+          const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(AR_MODEL_URL)}&mode=3d_preferred&title=Wiata%20Rowerowa#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
+          window.location.href = intentUrl;
+        }
       } else if (isIOS) {
-        // Na iOS próbujemy użyć model-viewer (wymaga pliku .usdz do działania w AR)
         const mv = modelViewerRef.current as any;
         if (mv && typeof mv.activateAR === 'function') {
           mv.activateAR();
@@ -150,7 +171,6 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
           setIsModalOpen(true);
         }
       } else {
-        // Desktop
         setIsModalOpen(true);
       }
     } catch (err: any) {
