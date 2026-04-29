@@ -136,11 +136,9 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       const isMobile = isAndroid || isIOS;
       
       if (isAndroid) {
-        // Generujemy absolutny URL do naszego proxy
-        const absoluteModelUrl = `${window.location.origin}${MODEL_URL}`;
-        // Na Androidzie wymuszamy tryb 3D z opcją przejścia do AR ("Wyświetl u siebie")
-        // Używamy zdekodowanego URL, żeby uniknąć błędów parsowania w Scene Viewer
-        const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(absoluteModelUrl)}&mode=3d_preferred&title=Wiata%20Rowerowa#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
+        // Używamy bezpośredniego linku do CloudFront dla Androida (najbardziej stabilne dla Scene Viewer)
+        // Musi być zakodowany (encodeURIComponent)
+        const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(AR_MODEL_URL)}&mode=3d_preferred&title=Wiata%20Rowerowa#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
         window.location.href = intentUrl;
       } else if (isIOS) {
         // Na iOS próbujemy użyć model-viewer (wymaga pliku .usdz do działania w AR)
