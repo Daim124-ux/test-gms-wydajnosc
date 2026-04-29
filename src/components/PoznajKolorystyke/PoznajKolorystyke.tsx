@@ -153,9 +153,15 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
       
       if (isAndroid) {
-        // Wymuszamy najpierw Scene Viewera od Google (tryb natywny)
-        const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(AR_MODEL_URL)}&mode=3d_preferred&title=Wiata%20Rowerowa#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
-        window.location.href = intentUrl;
+        const mv = modelViewerRef.current as any;
+        // Używamy activateAR, aby zachować kolory (WebXR)
+        if (mv && typeof mv.activateAR === 'function') {
+          mv.activateAR();
+        } else {
+          // Fallback do Scene Viewer (bez kolorów)
+          const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(AR_MODEL_URL)}&mode=3d_preferred&title=Wiata%20Rowerowa#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
+          window.location.href = intentUrl;
+        }
       } else if (isIOS) {
         const mv = modelViewerRef.current as any;
         if (mv && typeof mv.activateAR === 'function') {
