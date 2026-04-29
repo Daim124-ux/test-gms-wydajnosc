@@ -139,8 +139,9 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       if (typeof mv.activateAR === 'function') {
         mv.activateAR();
       } else {
-        // Jeśli model-viewer nie jest jeszcze gotowy, otwieramy modal 3D jako fallback
-        setIsModalOpen(true);
+        // Fallback: bezpośredni link do Scene Viewera dla Androida
+        const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${AR_MODEL_URL}&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
+        window.location.href = intentUrl;
       }
     } else {
       // Na desktopie otwieramy modal 3D
@@ -387,14 +388,22 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
         }
       `}</style>
 
-      {/* SILNIK AR (UKRYTY) - potrzebny tylko do wyzwalania trybu AR na mobile */}
+      {/* SILNIK AR (UKRYTY ALE AKTYWNY) */}
       <ModelViewer
         ref={modelViewerRef}
         src={AR_MODEL_URL}
         ar
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
-        style={{ visibility: 'hidden', width: '1px', height: '1px', position: 'absolute' }}
+        loading="eager"
+        style={{ 
+          opacity: 0, 
+          width: '1px', 
+          height: '1px', 
+          position: 'absolute', 
+          pointerEvents: 'none',
+          zIndex: -1 
+        }}
       />
 
       {/* MODAL 3D DLA DESKTOPA */}
