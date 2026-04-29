@@ -131,29 +131,26 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
 
   const handle3DClick = () => {
     try {
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      const isAndroid = /Android/i.test(navigator.userAgent);
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+      const isMobile = isAndroid || isIOS;
       
-      if (isMobile) {
+      if (isAndroid) {
+        // Na Androidzie wymuszamy tryb 3D z opcją przejścia do AR ("Wyświetl u siebie")
+        // Używamy pełnego adresu z HTTPS, aby Scene Viewer mógł go pobrać
+        const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${AR_MODEL_URL}&mode=3d_preferred&title=Wiata%20Rowerowa#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
+        window.location.href = intentUrl;
+      } else if (isIOS) {
+        // Na iOS próbujemy użyć model-viewer (wymaga pliku .usdz do działania w AR)
         const mv = modelViewerRef.current as any;
-        if (!mv) {
-          alert('Błąd: brak referencji do model-viewer');
-          setIsModalOpen(true);
-          return;
-        }
-
-        if (typeof mv.activateAR === 'function') {
+        if (mv && typeof mv.activateAR === 'function') {
           mv.activateAR();
         } else {
-          const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-          if (isIOS) {
-            alert('Tryb AR na iOS wymaga modelu w formacie .usdz. Obecnie dostępny jest tylko .glb dla Androida.');
-          } else {
-            alert('Fallback: uruchamiam bezpośredni intent dla Androida');
-            const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${AR_MODEL_URL}&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
-            window.location.href = intentUrl;
-          }
+          alert('Tryb AR na iOS wymaga modelu w formacie .usdz.');
+          setIsModalOpen(true);
         }
       } else {
+        // Desktop
         setIsModalOpen(true);
       }
     } catch (err: any) {
