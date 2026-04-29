@@ -138,8 +138,8 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       const materialy = mv.model.materials;
       materialy.forEach((mat: any) => {
         const name = mat.name.toLowerCase();
-        // Kolorujemy tylko to, co ma w nazwie kolor, paint lub color
-        if (name.includes('kolor') || name.includes('color') || name.includes('paint')) {
+        // Kolorujemy TYLKO materiały o nazwie zawierającej RAL lub OCYNK
+        if (name.includes('ral') || name.includes('ocynk')) {
           const rgb = hexToRgba(wybranyKolor.hex);
           mat.pbrMetallicRoughness.setBaseColorFactor(rgb);
         }

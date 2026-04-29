@@ -32,9 +32,8 @@ function Model({ url, color, isMat, colorId }: { url: string; color: string; isM
         const currentMatName = material?.name || "";
         
         const isColorable = 
-          obj.name.toUpperCase().includes('KOLOR') || 
-          currentMatName.toUpperCase().startsWith('RAL') || 
-          currentMatName.toUpperCase() === 'OCYNK';
+          currentMatName.toUpperCase().includes('RAL') || 
+          currentMatName.toUpperCase().includes('OCYNK');
 
         if (isColorable) {
           if (targetMaterial) {
