@@ -12,6 +12,9 @@ const CarportViewer = dynamic(() => import('./CarportViewer'), { ssr: false });
 // Obejście dla TypeScript: traktujemy model-viewer jako komponent React
 const ModelViewer = 'model-viewer' as any;
 
+const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals';
+const MODEL_URL = `${CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa.glb`;
+
 // Pomocnicza funkcja do konwersji HEX na RGBA dla model-viewer
 const hexToRgba = (hex: string) => {
   const r = parseInt(hex.slice(1, 3), 16) / 255;
@@ -385,7 +388,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       {/* SILNIK AR (UKRYTY) - potrzebny tylko do wyzwalania trybu AR na mobile */}
       <ModelViewer
         ref={modelViewerRef}
-        src="/assets/modele_ar/wiata_rowerowa/wiata_rowerowa.glb"
+        src={MODEL_URL}
         ar
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
@@ -404,7 +407,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
           
           <div className="w-full h-full max-w-6xl max-h-[85vh] flex flex-col items-center justify-center relative p-4">
             <CarportViewer 
-              url="/assets/modele_ar/wiata_rowerowa/wiata_rowerowa.glb" 
+              url={MODEL_URL} 
               color={wybranyKolor.hex} 
               colorId={wybranyKolor.id}
               isMat={wybranyKolor.nazwa.toLowerCase().includes('mat')}
