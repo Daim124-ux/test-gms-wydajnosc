@@ -1619,6 +1619,42 @@
         ]
       },
       "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/modele_ar/wiata_rowerowa/mat_normal.jpg"
+    },
+    "assets/modele_ar/wiata_rowerowa/M_11723_normal.jpg.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEE/8QAFRABAQAAAAAAAAAAAAAAAAAAAAH/xAAXAQEAAwAAAAAAAAAAAAAAAAAAAQQG/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2gNsrAAAALAEj//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/M_11723_normal.jpg_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/M_11723_normal.jpg_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/M_11723_normal.jpg_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/M_11723_normal.jpg_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/M_11723_normal.jpg_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/M_11723_normal.jpg_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/modele_ar/wiata_rowerowa/M_11723_normal.jpg.jpg"
+    },
+    "assets/modele_ar/wiata_rowerowa/Material__805basecolortexture.jpeg.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUHAf/EACUQAAEDBAECBwAAAAAAAAAAAAIAAQQDBQYREiIxEyFSYXGRsf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCcYZa8ek2Maty4PI31cu/4mkSw4nUrsZEPBu4/Xt8qThVMPIS0y3x6nqQM8miR495kU4BC8dn6dISlycn277dCD//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/Material__805basecolortexture.jpeg_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/Material__805basecolortexture.jpeg_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/Material__805basecolortexture.jpeg_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/Material__805basecolortexture.jpeg_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/Material__805basecolortexture.jpeg_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/modele_ar/wiata_rowerowa/Material__805basecolortexture.jpeg_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/modele_ar/wiata_rowerowa/Material__805basecolortexture.jpeg.jpg"
     }
   },
   "videos": {
