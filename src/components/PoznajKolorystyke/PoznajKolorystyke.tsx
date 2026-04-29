@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Box } from 'lucide-react';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 export interface KolorWiaty {
@@ -113,9 +113,9 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
         {/* Bazowe tło globalne dla koloru - tylko jako overlay */}
         <div
           className="absolute inset-0 transition-opacity duration-1000"
-          style={{ 
+          style={{
             backgroundColor: wybranyKolor.hex,
-            opacity: 0.08 
+            opacity: 0.08
           }}
         />
 
@@ -226,14 +226,21 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                         src={`/assets/images/wiaty-stalowe-na-rowery/kolorystyka/${wybranyKolor.folder}/Wiata_rowerowa_${wybranyKolor.folder}_${element.id}-min.jpg`}
                         type="image"
                         alt={`${wybranyKolor.nazwa} - ${element.tytul}`}
-                        className={`w-full h-full ${
-                          element.rozmiarObrazu === 'cover' ? 'object-cover' : 'object-contain'
-                        } ${element.id === 'klapa' ? 'md:[object-position:-30px_center]' : ''}`}
+                        className={`w-full h-full ${element.rozmiarObrazu === 'cover' ? 'object-cover' : 'object-contain'
+                          } ${element.id === 'klapa' ? 'md:[object-position:-30px_center]' : ''}`}
                       />
                     </motion.div>
                   </AnimatePresence>
 
                   <div className="absolute inset-0 bg-black/20" />
+                  
+                  {/* PRZYCISK 3D / AR (PLACEHOLDER) */}
+                  <button
+                    className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white/80 hover:text-white hover:bg-black/60 transition-all active:scale-90"
+                    title="Zobacz w 3D / AR"
+                  >
+                    <Box size={20} />
+                  </button>
                 </div>
               </div>
             ))}

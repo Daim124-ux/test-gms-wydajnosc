@@ -125,7 +125,7 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
         videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.frames.av1.hevc.webm"
       />
 
-      <section 
+      <section
         className="pt-[32px] md:pt-[56px] pb-24 px-6 overflow-hidden relative z-10 -mt-[200px] md:mt-0 mobile-legacy-gradient"
       >
         <div className="max-w-7xl mx-auto text-center px-4 md:px-[100px]">

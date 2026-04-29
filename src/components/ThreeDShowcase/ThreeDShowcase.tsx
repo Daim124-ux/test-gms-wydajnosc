@@ -17,30 +17,30 @@ export default function ThreeDShowcase() {
   const t = useTranslations('threeDShowcase');
 
   const tabs = [
-    { 
-      id: 'ha-tab-title-9972', 
-      label: t('tabs.pianoHinge.label'), 
-      description: t('tabs.pianoHinge.description') 
+    {
+      id: 'ha-tab-title-9972',
+      label: t('tabs.pianoHinge.label'),
+      description: t('tabs.pianoHinge.description')
     },
-    { 
-      id: 'ha-tab-title-9973', 
-      label: t('tabs.reinforcedCorners.label'), 
-      description: t('tabs.reinforcedCorners.description') 
+    {
+      id: 'ha-tab-title-9973',
+      label: t('tabs.reinforcedCorners.label'),
+      description: t('tabs.reinforcedCorners.description')
     },
-    { 
-      id: 'ha-tab-title-9974', 
-      label: t('tabs.locking.label'), 
-      description: t('tabs.locking.description') 
+    {
+      id: 'ha-tab-title-9974',
+      label: t('tabs.locking.label'),
+      description: t('tabs.locking.description')
     },
-    { 
-      id: 'ha-tab-title-9975', 
-      label: t('tabs.stopPoints.label'), 
-      description: t('tabs.stopPoints.description') 
+    {
+      id: 'ha-tab-title-9975',
+      label: t('tabs.stopPoints.label'),
+      description: t('tabs.stopPoints.description')
     },
-    { 
-      id: 'ha-tab-title-9976', 
-      label: t('tabs.thresholdHandle.label'), 
-      description: t('tabs.thresholdHandle.description') 
+    {
+      id: 'ha-tab-title-9976',
+      label: t('tabs.thresholdHandle.label'),
+      description: t('tabs.thresholdHandle.description')
     },
   ];
 
@@ -49,7 +49,7 @@ export default function ThreeDShowcase() {
   const [isClosing, setIsClosing] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [shouldLoad, setShouldLoad] = useState(false);
- 
+
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "600px" });
 
@@ -81,7 +81,7 @@ export default function ThreeDShowcase() {
     setIsClosing(true);
     // Wyzwalamy animację reverse w Verge3D
     (window as any).vergeViewer?.sendCommandToPuzzles('off_canvas_close');
-    
+
     // Czekamy na koniec animacji Verge3D i fade-outu przed zamknięciem modala Reactowego
     setTimeout(() => {
       setIsModalOpen(false);
@@ -92,17 +92,17 @@ export default function ThreeDShowcase() {
   const handleTabClick = (tab: typeof tabs[0]) => {
     setActiveTab(tab);
     (window as any).vergeViewer?.sendCommandToPuzzles(tab.id);
-    
+
     // Notify the AI assistant of the state change
-    const event = new CustomEvent('gms:3d-update', { 
-      detail: { 
+    const event = new CustomEvent('gms:3d-update', {
+      detail: {
         activeTab: tab.label,
         description: tab.description,
         timestamp: Date.now()
-      } 
+      }
     });
     window.dispatchEvent(event);
-    
+
     // Fallback for direct state access (Configurator-Ready architecture)
     if (!(window as any).__GMS_CONFIG__) (window as any).__GMS_CONFIG__ = {};
     (window as any).__GMS_CONFIG__.current3DView = tab.label;
@@ -111,18 +111,17 @@ export default function ThreeDShowcase() {
   const handleReset = () => {
     setActiveTab(tabs[0]);
     (window as any).vergeViewer?.sendCommandToPuzzles('ha-tab-title-9971');
-    
-    const event = new CustomEvent('gms:3d-update', { 
-      detail: { activeTab: 'Reset', timestamp: Date.now() } 
+
+    const event = new CustomEvent('gms:3d-update', {
+      detail: { activeTab: 'Reset', timestamp: Date.now() }
     });
     window.dispatchEvent(event);
   };
 
   const modalContent = (
-    <div 
-      className={`fixed inset-0 z-[2000] flex items-center justify-center bg-black overflow-hidden transition-all duration-1000 ${
-        isModalOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-      }`}
+    <div
+      className={`fixed inset-0 z-[2000] flex items-center justify-center bg-black overflow-hidden transition-all duration-1000 ${isModalOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
     >
       {/* CLOSE BUTTON */}
       <button
@@ -148,21 +147,21 @@ export default function ThreeDShowcase() {
 
       {/* MAIN CONTENT AREA */}
       <div className="relative w-full h-full flex flex-col">
-        
+
         {/* 3D VIEWPORT */}
         <div className="flex-1 relative">
-           <VergeViewer 
-             src="/apps/verge-model/index.html" 
-             className="w-full h-full"
-             onLoad={handleVergeLoad}
-             shouldLoad={shouldLoad}
-           />
+          <VergeViewer
+            src="/apps/verge-model/index.html"
+            className="w-full h-full"
+            onLoad={handleVergeLoad}
+            shouldLoad={shouldLoad}
+          />
         </div>
 
         {/* BOTTOM NAVIGATION BAR (APPLE STYLE) */}
         <AnimatePresence>
           {isModalOpen && (
-            <motion.div 
+            <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 50, opacity: 0 }}
@@ -173,7 +172,7 @@ export default function ThreeDShowcase() {
                 {/* TABS HEADER */}
                 <div className="flex items-center gap-6 mb-4">
                   {/* RESET BUTTON */}
-                  <button 
+                  <button
                     onClick={handleReset}
                     className="p-2 text-white/30 hover:text-white transition-colors flex-shrink-0"
                     title={t('resetTooltip')}
@@ -187,13 +186,12 @@ export default function ThreeDShowcase() {
                       <button
                         key={tab.id}
                         onClick={() => handleTabClick(tab)}
-                        className={`relative text-[10px] md:text-xs lg:text-sm font-medium transition-all duration-300 whitespace-nowrap pb-2 uppercase tracking-wider ${
-                          activeTab.id === tab.id ? 'text-blue-500' : 'text-zinc-500 hover:text-zinc-300'
-                        }`}
+                        className={`relative text-[10px] md:text-xs lg:text-sm font-medium transition-all duration-300 whitespace-nowrap pb-2 uppercase tracking-wider ${activeTab.id === tab.id ? 'text-blue-500' : 'text-zinc-500 hover:text-zinc-300'
+                          }`}
                       >
                         {tab.label}
                         {activeTab.id === tab.id && (
-                          <motion.div 
+                          <motion.div
                             layoutId="activeTab"
                             className="absolute bottom-0 left-0 right-0 h-[2px] bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]"
                             transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
