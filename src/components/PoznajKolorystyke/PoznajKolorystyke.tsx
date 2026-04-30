@@ -14,8 +14,8 @@ const ModelViewer = 'model-viewer' as any;
 
 const CLOUDFRONT_URL = '/cdn-assets';
 const FULL_CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
-const MODEL_URL = `${CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v11.glb`;
-const AR_MODEL_URL = `${FULL_CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v11.glb`;
+const MODEL_URL = `${CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v15.glb`;
+const AR_MODEL_URL = `${FULL_CLOUDFRONT_URL}/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v15.glb`;
 
 // Pomocnicza funkcja do konwersji HEX na RGBA dla model-viewer
 const hexToRgba = (hex: string) => {
@@ -135,7 +135,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     try {
       const isAndroid = /Android/i.test(navigator.userAgent);
       const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-      
+
       if (isAndroid) {
         // Czysty start - używamy natywnego Scene Viewera, który bierze materiały z pliku
         const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(AR_MODEL_URL)}&mode=3d_preferred&title=Wiata%20Rowerowa#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
@@ -292,7 +292,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                   </AnimatePresence>
 
                   <div className="absolute inset-0 bg-black/20" />
-                  
+
                   {/* PRZYCISK 3D / AR */}
                   <button
                     onClick={handle3DClick}
@@ -404,34 +404,34 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
         camera-controls
         loading="eager"
         onLoad={() => setModelLoaded(true)}
-        style={{ 
-          opacity: 0, 
-          width: '1px', 
-          height: '1px', 
-          position: 'absolute', 
+        style={{
+          opacity: 0,
+          width: '1px',
+          height: '1px',
+          position: 'absolute',
           pointerEvents: 'none',
-          zIndex: -1 
+          zIndex: -1
         }}
       />
 
       {/* MODAL 3D DLA DESKTOPA */}
       {isModalOpen && createPortal(
         <div className="fixed inset-0 z-[3000] flex items-center justify-center bg-black/90 backdrop-blur-xl">
-          <button 
+          <button
             onClick={() => setIsModalOpen(false)}
             className="absolute top-8 right-8 z-[3010] p-4 text-white hover:bg-white/10 rounded-full transition-colors"
           >
             <X size={32} />
           </button>
-          
+
           <div className="w-full h-full max-w-6xl max-h-[85vh] flex flex-col items-center justify-center relative p-4">
-            <CarportViewer 
-              url={MODEL_URL} 
-              color={wybranyKolor.hex} 
+            <CarportViewer
+              url={MODEL_URL}
+              color={wybranyKolor.hex}
               colorId={wybranyKolor.id}
               isMat={wybranyKolor.nazwa.toLowerCase().includes('mat')}
             />
-            
+
             <div className="mt-6 text-center">
               <p className="text-white/40 text-xs tracking-widest uppercase mb-1">Model 3D wiaty</p>
               <h3 className="text-white text-xl font-medium tracking-wide">{wybranyKolor.nazwa}</h3>

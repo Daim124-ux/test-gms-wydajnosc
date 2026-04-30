@@ -8,7 +8,7 @@ import * as THREE from 'three';
 function Model({ url, color, isMat, colorId }: { url: string; color: string; isMat: boolean; colorId: string }) {
   // useGLTF ładuje model i materiały
   const { scene, materials } = useGLTF(url);
-  
+
   // KLONOWANIE SCENY: Kluczowy krok, aby React/Three zauważył zmiany materiałów
   const clonedScene = React.useMemo(() => scene.clone(), [scene]);
 
@@ -30,9 +30,9 @@ function Model({ url, color, isMat, colorId }: { url: string; color: string; isM
         // TypeScript fix: material może być tablicą
         const material = Array.isArray(mesh.material) ? mesh.material[0] : mesh.material;
         const currentMatName = material?.name || "";
-        
-        const isColorable = 
-          currentMatName.toUpperCase().includes('RAL') || 
+
+        const isColorable =
+          currentMatName.toUpperCase().includes('RAL') ||
           currentMatName.toUpperCase().includes('OCYNK');
 
         if (isColorable) {
@@ -64,25 +64,25 @@ export default function CarportViewer({ url, color, isMat, colorId }: { url: str
     <div className="w-full h-full min-h-[500px]">
       <Canvas shadows dpr={[1, 2]}>
         <PerspectiveCamera makeDefault position={[10, 10, 10]} fov={35} />
-        
+
         {/* Dodatkowe światło otoczenia dla ogólnej jasności */}
         <ambientLight intensity={1.5} />
-        
+
         <Suspense fallback={null}>
-          <Stage 
-            intensity={1.5} 
-            preset="rembrandt" 
-            environment="apartment" 
-            shadows={{ type: 'contact', opacity: 0.2, blur: 3 }} 
+          <Stage
+            intensity={1.5}
+            preset="rembrandt"
+            environment="apartment"
+            shadows={{ type: 'contact', opacity: 0.2, blur: 3 }}
             adjustCamera={true}
           >
             <Model key={colorId} url={url} color={color} isMat={isMat} colorId={colorId} />
           </Stage>
         </Suspense>
 
-        <OrbitControls 
-          makeDefault 
-          minPolarAngle={Math.PI / 4} 
+        <OrbitControls
+          makeDefault
+          minPolarAngle={Math.PI / 4}
           maxPolarAngle={Math.PI / 1.75}
           enableZoom={true}
           enablePan={false}
@@ -92,4 +92,4 @@ export default function CarportViewer({ url, color, isMat, colorId }: { url: str
   );
 }
 
-useGLTF.preload('/cdn-assets/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v11.glb');
+useGLTF.preload('/cdn-assets/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v15.glb');
