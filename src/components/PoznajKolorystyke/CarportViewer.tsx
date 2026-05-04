@@ -12,35 +12,56 @@ function Model({ url, color, isMat, colorId }: { url: string; color: string; isM
   // KLONOWANIE SCENY: Kluczowy krok, aby React/Three zauważył zmiany materiałów
   const clonedScene = React.useMemo(() => scene.clone(), [scene]);
 
+  const baseMatNameRef = React.useRef<string | null>(null);
+
+  // Wzorujemy się na Twojej liście z Verge3D
+  const COLORABLE_MESHES = [
+    'Klapa góra',
+    'Klapa front',
+    'Sciana tyl',
+    'Sciana lewa',
+    'Sciana prawa',
+    'Ramka klapy',
+    'Ramka klapy1',
+    'Ramka klapy2',
+    'Ramka klapy3',
+    'Logo pokaza',
+    'Wiata_ar'
+  ];
+
   useEffect(() => {
     if (!clonedScene || !materials || !colorId) return;
 
+    // Funkcja normalizująca nazwy (usuwa wielkość liter i zamienia _ na spacje, by uniknąć literówek)
+    const normalize = (name: string) => name.toLowerCase().replace(/_/g, ' ').trim();
+    const normalizedColorableMeshes = COLORABLE_MESHES.map(normalize);
+
+    // Krok 1: Ustalenie nazwy docelowego materiału
     let targetMatName = colorId === 'ocynk' ? "Ocynk" : `RAL${colorId.toString().replace('m', '')}`;
     if (isMat) targetMatName += " mat";
 
-    const normalize = (name: string) => name.toLowerCase().replace(/_/g, ' ').trim();
-    const availableMaterials = Object.keys(materials);
     const targetNormalized = normalize(targetMatName);
+    const availableMaterials = Object.keys(materials);
     const foundName = availableMaterials.find(m => normalize(m) === targetNormalized);
     const targetMaterial = foundName ? materials[foundName] : null;
 
+    // Krok 2: Przechodzimy przez wszystkie obiekty i nakładamy CAŁE MATERIAŁY
     clonedScene.traverse((obj) => {
       if ((obj as THREE.Mesh).isMesh) {
         const mesh = obj as THREE.Mesh;
-        // TypeScript fix: material może być tablicą
-        const material = Array.isArray(mesh.material) ? mesh.material[0] : mesh.material;
-        const currentMatName = material?.name || "";
+        const meshName = normalize(mesh.name);
 
-        const isColorable =
-          currentMatName.toUpperCase().includes('RAL') ||
-          currentMatName.toUpperCase().includes('OCYNK');
+        // Czy ten obiekt jest na Twojej liście do pokolorowania?
+        const isColorable = normalizedColorableMeshes.includes(meshName);
 
         if (isColorable) {
           if (targetMaterial) {
+            // Podmieniamy cały materiał (razem z jego Normal Mapami itp.)
             mesh.material = targetMaterial;
             mesh.material.needsUpdate = true;
           } else {
-            // Fallback
+            // Fallback: jeśli GLB nie zawiera gotowego materiału np. "RAL3005",
+            // po prostu modyfikujemy jego kolor
             const materialsList = Array.isArray(mesh.material) ? mesh.material : [mesh.material];
             materialsList.forEach((mat) => {
               if ('color' in mat) {
@@ -92,4 +113,4 @@ export default function CarportViewer({ url, color, isMat, colorId }: { url: str
   );
 }
 
-useGLTF.preload('/cdn-assets/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v16.glb');
+useGLTF.preload('/cdn-assets/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v17.glb');

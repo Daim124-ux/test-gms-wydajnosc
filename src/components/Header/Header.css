@@ -867,7 +867,10 @@
 }
 
 .lang-flag {
-  font-size: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.8;
+  width: 20px;
 }
 
 .lang-check {

@@ -24,23 +24,23 @@ export default function Header({ translations = [] }: HeaderProps) {
   const locale = useLocale();
   
   const languages = [
-    { code: 'pl', name: 'Polska', flag: '🇵🇱' },
-    { code: 'en', name: 'English', flag: '🇬🇧' },
-    { code: 'de', name: 'Deutschland', flag: '🇩🇪' },
-    { code: 'fr', name: 'France', flag: '🇫🇷' },
-    { code: 'ua', name: 'Ukraine', flag: '🇺🇦' },
-    { code: 'sk', name: 'Slovensko', flag: '🇸🇰' },
-    { code: 'cs', name: 'Česko', flag: '🇨🇿' },
-    { code: 'hu', name: 'Magyarország', flag: '🇭🇺' },
-    { code: 'da', name: 'Danmark', flag: '🇩🇰' },
-    { code: 'it', name: 'Italia', flag: '🇮🇹' },
-    { code: 'nl', name: 'Nederland', flag: '🇳🇱' },
-    { code: 'no', name: 'Norge', flag: '🇳🇴' },
-    { code: 'sv', name: 'Sverige', flag: '🇸🇪' }
+    { code: 'pl', countryName: 'Polska', languageName: 'Polski', flag: 'PL' },
+    { code: 'en', countryName: 'UK', languageName: 'English', flag: 'GB' },
+    { code: 'de', countryName: 'Deutschland', languageName: 'Deutsch', flag: 'DE' },
+    { code: 'fr', countryName: 'France', languageName: 'Français', flag: 'FR' },
+    { code: 'ua', countryName: 'Україна', languageName: 'Українська', flag: 'UA' },
+    { code: 'sk', countryName: 'Slovensko', languageName: 'Slovenčina', flag: 'SK' },
+    { code: 'cs', countryName: 'Česko', languageName: 'Čeština', flag: 'CZ' },
+    { code: 'hu', countryName: 'Magyarország', languageName: 'Magyar', flag: 'HU' },
+    { code: 'da', countryName: 'Danmark', languageName: 'Dansk', flag: 'DK' },
+    { code: 'it', countryName: 'Italia', languageName: 'Italiano', flag: 'IT' },
+    { code: 'nl', countryName: 'Nederland', languageName: 'Nederlands', flag: 'NL' },
+    { code: 'no', countryName: 'Norge', languageName: 'Norsk', flag: 'NO' },
+    { code: 'sv', countryName: 'Sverige', languageName: 'Svenska', flag: 'SE' }
   ];
 
   const currentLangObj = languages.find(l => l.code === locale);
-  const currentLangDisplay = currentLangObj ? currentLangObj.name : 'Polska';
+  const currentLangDisplay = currentLangObj ? currentLangObj.countryName : 'Polska';
   
   const [activeMenu, setActiveMenu] = useState<'dom' | 'osiedle' | 'wiecej' | null>(null);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -102,7 +102,7 @@ export default function Header({ translations = [] }: HeaderProps) {
                         onClick={() => handleLangChange(lang.code)}
                       >
                         <span className="lang-flag">{lang.flag}</span>
-                        <span className="lang-name">{lang.name}</span>
+                        <span className="lang-name">{lang.languageName}</span>
                         {locale === lang.code && <span className="lang-check">✓</span>}
                       </div>
                     ))}
