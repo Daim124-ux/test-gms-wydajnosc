@@ -17,8 +17,8 @@ const s3Client = new S3Client({
 const BUCKET = process.env.AWS_S3_BUCKET!;
 
 async function main() {
-  const filePath = path.join(process.cwd(), 'public', 'assets', 'modele_ar', 'wiata_rowerowa', 'wiata_rowerowa_ar_v19.glb');
-  const s3Key = 'assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v19.glb';
+  const filePath = path.join(process.cwd(), 'public', 'assets', 'modele_ar', 'wiata_rowerowa', 'wiata_rowerowa_ar_v20.glb');
+  const s3Key = 'assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v20.glb';
 
   if (!fs.existsSync(filePath)) {
     console.error('File not found:', filePath);
