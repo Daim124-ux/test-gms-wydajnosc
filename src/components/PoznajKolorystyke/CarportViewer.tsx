@@ -113,4 +113,4 @@ export default function CarportViewer({ url, color, isMat, colorId }: { url: str
   );
 }
 
-useGLTF.preload('/cdn-assets/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v18.glb');
+useGLTF.preload('/cdn-assets/assets/modele_ar/wiata_rowerowa/wiata_rowerowa_ar_v19.glb');
