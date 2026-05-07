@@ -386,7 +386,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
         ref={modelViewerRef}
         src={MODEL_URL}
         ar
-        ar-modes="webxr scene-viewer quick-look"
+        ar-modes="webxr quick-look"
         camera-controls
         loading="eager"
         onLoad={() => setModelLoaded(true)}
