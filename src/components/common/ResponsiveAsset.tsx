@@ -79,15 +79,15 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
         }}
       >
         {/* Mobile Sources */}
-        <source src={mobileWebm} type="video/webm" media="(max-width: 768px)" />
-        <source src={mobileMp4} type="video/mp4" media="(max-width: 768px)" />
+        <source src={encodeURI(mobileWebm)} type="video/webm" media="(max-width: 768px)" />
+        <source src={encodeURI(mobileMp4)} type="video/mp4" media="(max-width: 768px)" />
         
         {/* Desktop Sources */}
-        <source src={desktopWebm} type="video/webm" />
-        <source src={desktopMp4} type="video/mp4" />
+        <source src={encodeURI(desktopWebm)} type="video/webm" />
+        <source src={encodeURI(desktopMp4)} type="video/mp4" />
         
         {/* Fallback do oryginału */}
-        <source src={src} />
+        <source src={encodeURI(src)} />
       </video>
     );
   }
@@ -97,13 +97,15 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
   const baseName = cleanSrc.replace(/\.[^/.]+$/, "");
 
   // Helpers do budowania srcset - fallback do CloudFront
-  const getUrl = (size: string, format: string) => 
-    imageData?.variants[size].find((v: string) => v.endsWith(format)) || `${CLOUDFRONT_URL}/_optimized/${baseName}_${size}.${format}`;
+  const getUrl = (size: string, format: string) => {
+    const url = imageData?.variants[size].find((v: string) => v.endsWith(format)) || `${CLOUDFRONT_URL}/_optimized/${baseName}_${size}.${format}`;
+    return encodeURI(url);
+  };
 
   const isContain = className.includes('object-contain');
 
   // Fallback URL w razie braku danych w manifeście
-  const fallbackS3Url = imageData?.original || `${CLOUDFRONT_URL}/_optimized/originals/${cleanSrc}`;
+  const fallbackS3Url = encodeURI(imageData?.original || `${CLOUDFRONT_URL}/_optimized/originals/${cleanSrc}`);
 
   return (
     <picture className={`block w-full h-full ${className}`}>
