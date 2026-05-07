@@ -105,9 +105,14 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
   useEffect(() => {
     if (modelLoaded && modelViewerRef.current?.model) {
       const rgba = hexToRgba(wybranyKolor.hex);
+      const isMat = wybranyKolor.nazwa.toLowerCase().includes('mat');
+      
       modelViewerRef.current.model.materials.forEach((material: any) => {
-        if (material.name.toUpperCase().includes('KOLOR')) {
+        const name = material.name.toUpperCase();
+        // Szukamy materiałów, które powinny być kolorowalne (KOLOR, RAL, OCYNK)
+        if (name.includes('KOLOR') || name.includes('RAL') || name.includes('OCYNK')) {
           material.pbrMetallicRoughness.setBaseColorFactor(rgba);
+          material.pbrMetallicRoughness.setRoughnessFactor(isMat ? 0.8 : 0.2);
         }
       });
     }
@@ -133,24 +138,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
   };
 
   const handle3DClick = () => {
-    try {
-      const isAndroid = /Android/i.test(navigator.userAgent);
-      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-
-      if (isAndroid || isIOS) {
-        const mv = modelViewerRef.current as any;
-        if (mv && typeof mv.activateAR === 'function') {
-          mv.activateAR();
-        } else {
-          alert('Przeglądarka nie wspiera funkcji AR lub model się jeszcze nie załadował.');
-          setIsModalOpen(true);
-        }
-      } else {
-        setIsModalOpen(true);
-      }
-    } catch (err: any) {
-      alert('Wystąpił błąd: ' + err.message);
-    }
+    setIsModalOpen(true);
   };
 
   return (
@@ -421,17 +409,49 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
             <X size={32} />
           </button>
 
-          <div className="w-full h-full max-w-6xl max-h-[85vh] flex flex-col items-center justify-center relative p-4">
-            <CarportViewer
-              url={MODEL_URL}
-              color={wybranyKolor.hex}
-              colorId={wybranyKolor.id}
-              isMat={wybranyKolor.nazwa.toLowerCase().includes('mat')}
-            />
+          <div className="w-full h-full max-w-6xl max-h-[90vh] flex flex-col items-center justify-center relative p-4">
+            <div className="w-full flex-1 min-h-0">
+              <CarportViewer
+                url={MODEL_URL}
+                color={wybranyKolor.hex}
+                colorId={wybranyKolor.id}
+                isMat={wybranyKolor.nazwa.toLowerCase().includes('mat')}
+              />
+            </div>
 
-            <div className="mt-6 text-center">
-              <p className="text-white/40 text-xs tracking-widest uppercase mb-1">Model 3D wiaty</p>
-              <h3 className="text-white text-xl font-medium tracking-wide">{wybranyKolor.nazwa}</h3>
+            {/* Panel sterowania wewnątrz modalu */}
+            <div className="mt-4 flex flex-col items-center gap-6 w-full max-w-md">
+              {/* Szybki wybór koloru w modalu */}
+              <div className="flex gap-2 p-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+                {kolory.map((kolor) => (
+                  <button
+                    key={kolor.id}
+                    onClick={() => zmienKolor(kolor)}
+                    className={`w-6 h-6 rounded-full transition-transform ${wybranyKolor.id === kolor.id ? 'scale-125 ring-2 ring-white shadow-lg' : 'scale-100 opacity-60 hover:opacity-100'}`}
+                    style={{ backgroundColor: kolor.hex }}
+                  />
+                ))}
+              </div>
+
+              <div className="text-center">
+                <p className="text-white/40 text-[10px] tracking-widest uppercase mb-1">Wybrany wariant</p>
+                <h3 className="text-white text-lg font-medium">{wybranyKolor.nazwa}</h3>
+              </div>
+
+              {/* Przycisk AR widoczny na mobile */}
+              {typeof navigator !== 'undefined' && (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) && (
+                <button
+                  onClick={() => {
+                    if (modelViewerRef.current) {
+                      modelViewerRef.current.activateAR();
+                    }
+                  }}
+                  className="flex items-center gap-3 bg-white text-black px-10 py-4 rounded-full font-bold text-base hover:bg-zinc-200 transition-all active:scale-95 shadow-2xl"
+                >
+                  <Box size={22} />
+                  ZOBACZ U SIEBIE (AR)
+                </button>
+              )}
             </div>
           </div>
         </div>,
