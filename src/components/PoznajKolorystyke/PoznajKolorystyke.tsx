@@ -144,26 +144,9 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
       if (isAndroid) {
-        if (isExporting) return;
-        setIsExporting(true);
-        const mv = modelViewerRef.current as any;
-        if (mv) {
-          try {
-            // Eksportujemy model ze zmodyfikowanymi kolorami, aby Scene Viewer mógł go wyświetlić
-            const blob = await mv.exportScene({binary: true});
-            const blobUrl = URL.createObjectURL(blob);
-            
-            // Używamy natywnego Scene Viewera od Google (mode=3d_preferred)
-            const intentUrl = `intent://arvr.google.com/scene-viewer/1.2?file=${encodeURIComponent(blobUrl)}&mode=3d_preferred&title=${encodeURIComponent('Wiata - ' + wybranyKolor.nazwa)}#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
-            window.location.href = intentUrl;
-          } catch (e) {
-            console.error("Błąd eksportu AR:", e);
-            // Fallback do oryginalnego pliku, jeśli blob zawiedzie
-            const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(AR_MODEL_URL)}&mode=3d_preferred&title=${encodeURIComponent('Wiata')}#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
-            window.location.href = intentUrl;
-          }
-        }
-        setIsExporting(false);
+        // Czysty start - używamy natywnego Scene Viewera, który zawsze pobiera oryginalny plik z CloudFront
+        const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(AR_MODEL_URL)}&mode=3d_preferred&title=${encodeURIComponent('Wiata rowerowa')}#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
+        window.location.href = intentUrl;
       } else if (isIOS) {
         const mv = modelViewerRef.current as any;
         if (mv && typeof mv.activateAR === 'function') {
@@ -177,7 +160,6 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       }
     } catch (err: any) {
       alert('Wystąpił błąd: ' + err.message);
-      setIsExporting(false);
     }
   };
 
