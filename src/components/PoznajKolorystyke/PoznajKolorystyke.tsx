@@ -57,6 +57,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
   const [splashKey, setSplashKey] = useState(0);
   const [sekcjaWidoczna, setSekcjaWidoczna] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modelLoaded, setModelLoaded] = useState(false);
 
   const kontenerScrollRef = useRef<HTMLDivElement>(null);
   const modelViewerRef = useRef<any>(null);
@@ -100,21 +101,23 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     // Usunięto manipulację document.body, która mogła powodować dziwne kolory na mobile
   }, [sekcjaWidoczna, wybranyKolor]);
 
-  const zmienKolor = (kolor: KolorWiaty) => {
-    if (kolor.id === wybranyKolor.id) return;
-    setPoprzedniKolor(wybranyKolor);
-    setWybranyKolor(kolor);
-    setSplashKey(prev => prev + 1);
-
-    // Aktualizujemy model-viewer dla AR (na wypadek gdyby użytkownik od razu kliknął AR)
-    if (modelViewerRef.current) {
-      const rgba = hexToRgba(kolor.hex);
-      modelViewerRef.current.model?.materials.forEach((material: any) => {
+  // Synchronizacja koloru w komponencie model-viewer dla trybu AR
+  useEffect(() => {
+    if (modelLoaded && modelViewerRef.current?.model) {
+      const rgba = hexToRgba(wybranyKolor.hex);
+      modelViewerRef.current.model.materials.forEach((material: any) => {
         if (material.name.toUpperCase().includes('KOLOR')) {
           material.pbrMetallicRoughness.setBaseColorFactor(rgba);
         }
       });
     }
+  }, [wybranyKolor, modelLoaded]);
+
+  const zmienKolor = (kolor: KolorWiaty) => {
+    if (kolor.id === wybranyKolor.id) return;
+    setPoprzedniKolor(wybranyKolor);
+    setWybranyKolor(kolor);
+    setSplashKey(prev => prev + 1);
   };
 
   const przewinWLewo = () => {
@@ -129,23 +132,17 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     }
   };
 
-  const [modelLoaded, setModelLoaded] = useState(false);
-
   const handle3DClick = () => {
     try {
       const isAndroid = /Android/i.test(navigator.userAgent);
       const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-      if (isAndroid) {
-        // Czysty start - używamy natywnego Scene Viewera, który bierze materiały z pliku
-        const intentUrl = `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(AR_MODEL_URL)}&mode=3d_preferred&title=Wiata%20Rowerowa#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;`;
-        window.location.href = intentUrl;
-      } else if (isIOS) {
+      if (isAndroid || isIOS) {
         const mv = modelViewerRef.current as any;
         if (mv && typeof mv.activateAR === 'function') {
           mv.activateAR();
         } else {
-          alert('Tryb AR na iOS wymaga modelu w formacie .usdz.');
+          alert('Przeglądarka nie wspiera funkcji AR lub model się jeszcze nie załadował.');
           setIsModalOpen(true);
         }
       } else {
