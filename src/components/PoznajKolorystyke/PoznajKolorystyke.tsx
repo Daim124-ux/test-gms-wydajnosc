@@ -449,6 +449,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                   src={MODEL_URL}
                   ar
                   ar-modes="webxr quick-look"
+                  ar-scale="fixed"
                   camera-controls
                   loading="eager"
                   style={{ width: '100%', height: '100%' }}
@@ -482,11 +483,16 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                     modelViewerRef.current.activateAR();
                   }
                 }}
-                className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 px-8 py-4 rounded-full font-bold text-base transition-all active:scale-95 z-50 border-none shadow-[0_10px_40px_rgba(255,255,255,0.3)] ${modelLoaded ? 'bg-white text-black hover:bg-zinc-200' : 'bg-gray-400 text-gray-700 cursor-not-allowed opacity-80'}`}
+                className={`absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-4 px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 active:scale-95 z-50 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+                  ${modelLoaded 
+                    ? 'bg-white text-black hover:bg-zinc-100 hover:-translate-y-1 hover:shadow-white/10' 
+                    : 'bg-zinc-900 text-zinc-600 cursor-not-allowed'}`}
                 disabled={!modelLoaded}
               >
-                <Smartphone size={22} />
-                {modelLoaded ? 'ZOBACZ U SIEBIE (AR)' : 'ŁADOWANIE AR...'}
+                <Smartphone size={24} className={modelLoaded ? 'text-blue-600' : ''} />
+                <span className="tracking-tight uppercase">
+                  {modelLoaded ? 'ZOBACZ U SIEBIE' : 'PRZYGOTOWYWANIE...'}
+                </span>
               </button>
             )}
           </div>
