@@ -40,9 +40,16 @@ function Model({ url, color, isMat, colorId }: { url: string; color: string; isM
 
         if (isColorable) {
           if (targetMaterial) {
-            // Podmieniamy cały materiał (razem z jego Normal Mapami itp.)
-            mesh.material = targetMaterial;
-            mesh.material.needsUpdate = true;
+            // Klonujemy materiał, aby móc go bezpiecznie zmodyfikować
+            const clonedMat = targetMaterial.clone() as THREE.MeshStandardMaterial;
+            
+            // Zmniejszamy intensywność mapy normalnych i zwiększamy lekko roughness, aby zlikwidować efekt "glitter" (iskrzenie) zachowując fakturę
+            if (clonedMat.normalMap) {
+              clonedMat.normalScale = new THREE.Vector2(0.4, 0.4);
+            }
+            clonedMat.roughness = Math.max(0.4, clonedMat.roughness);
+            clonedMat.needsUpdate = true;
+            mesh.material = clonedMat;
           } else {
             // Fallback: jeśli GLB nie zawiera gotowego materiału np. "RAL3005",
             // po prostu modyfikujemy jego kolor

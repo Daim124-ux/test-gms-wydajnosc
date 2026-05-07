@@ -101,21 +101,44 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     // Usunięto manipulację document.body, która mogła powodować dziwne kolory na mobile
   }, [sekcjaWidoczna, wybranyKolor]);
 
-  // Synchronizacja koloru w komponencie model-viewer dla trybu AR
-  useEffect(() => {
-    if (modelLoaded && modelViewerRef.current?.model) {
-      const rgba = hexToRgba(wybranyKolor.hex);
-      const isMat = wybranyKolor.nazwa.toLowerCase().includes('mat');
-      
-      modelViewerRef.current.model.materials.forEach((material: any) => {
-        const name = material.name.toUpperCase();
-        if (name.includes('KOLOR') || name.includes('RAL') || name.includes('OCYNK')) {
+  // Funkcja synchronizująca materiały w model-viewer tuż przed startem AR
+  const prepareARMaterials = async () => {
+    const mv = modelViewerRef.current;
+    if (!mv || !mv.model) return;
+
+    // Szukamy materiału docelowego w modelu
+    const normalize = (name: string) => name.toLowerCase().replace(/_/g, ' ').trim();
+    let targetMatName = wybranyKolor.id === 'ocynk' ? "Ocynk" : `RAL${wybranyKolor.id.toString().replace('m', '')}`;
+    const isMat = wybranyKolor.nazwa.toLowerCase().includes('mat');
+    if (isMat) targetMatName += " mat";
+    
+    const materials = mv.model.materials;
+    const targetNormalized = normalize(targetMatName);
+    const targetMaterial = materials.find((m: any) => normalize(m.name) === targetNormalized);
+
+    // Domyślnie wiata używa m.in. RAL6020_mat dla głównego mesha (kolor)
+    // Zaktualizujmy wszystkie materiały kolorowalne na wzór targetMaterial, 
+    // lub jeśli targetMaterial nie istnieje (fallback), ustawmy ręcznie
+    materials.forEach((material: any) => {
+      const name = material.name.toUpperCase();
+      if (name.includes('RAL') || name.includes('OCYNK') || name.includes('KOLOR')) {
+        if (targetMaterial) {
+          // Kopiujemy z oryginalnego materiału PBR, co zachowa wygląd
+          material.pbrMetallicRoughness.setBaseColorFactor(targetMaterial.pbrMetallicRoughness.baseColorFactor);
+          material.pbrMetallicRoughness.setRoughnessFactor(targetMaterial.pbrMetallicRoughness.roughnessFactor);
+          material.pbrMetallicRoughness.setMetallicFactor(targetMaterial.pbrMetallicRoughness.metallicFactor);
+        } else {
+          // Fallback - ręczny kolor
+          const rgba = hexToRgba(wybranyKolor.hex);
           material.pbrMetallicRoughness.setBaseColorFactor(rgba);
           material.pbrMetallicRoughness.setRoughnessFactor(isMat ? 0.8 : 0.2);
         }
-      });
-    }
-  }, [wybranyKolor, modelLoaded]);
+      }
+    });
+
+    // Wymuszamy chwile opóźnienia, aby model-viewer zdążył wyrenderować zmiany przed uruchomieniem WebXR/QuickLook
+    await new Promise(resolve => setTimeout(resolve, 50));
+  };
 
   const zmienKolor = (kolor: KolorWiaty) => {
     if (kolor.id === wybranyKolor.id) return;
@@ -443,8 +466,9 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
             {/* Przycisk uruchamiający AR (korzysta z ukrytego głównego model-viewer) */}
             {typeof navigator !== 'undefined' && (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) && (
               <button
-                onClick={() => {
+                onClick={async () => {
                   if (modelViewerRef.current && typeof modelViewerRef.current.activateAR === 'function') {
+                    await prepareARMaterials();
                     modelViewerRef.current.activateAR();
                   }
                 }}
