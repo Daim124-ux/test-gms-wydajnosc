@@ -45,7 +45,7 @@ function Model({ url, color, isMat, colorId }: { url: string; color: string; isM
             
             // Zmniejszamy intensywność mapy normalnych i zwiększamy lekko roughness, aby zlikwidować efekt "glitter" (iskrzenie) zachowując fakturę
             if (clonedMat.normalMap) {
-              clonedMat.normalScale = new THREE.Vector2(0.4, 0.4);
+              clonedMat.normalScale = new THREE.Vector2(1, 1);
             }
             clonedMat.roughness = Math.max(0.4, clonedMat.roughness);
             clonedMat.needsUpdate = true;

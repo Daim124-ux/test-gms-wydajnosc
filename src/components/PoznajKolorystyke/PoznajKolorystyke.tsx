@@ -101,44 +101,35 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     // Usunięto manipulację document.body, która mogła powodować dziwne kolory na mobile
   }, [sekcjaWidoczna, wybranyKolor]);
 
-  // Funkcja synchronizująca materiały w model-viewer tuż przed startem AR
-  const prepareARMaterials = async () => {
-    const mv = modelViewerRef.current;
-    if (!mv || !mv.model) return;
+  // Synchronizacja materiałów w ukrytym model-viewer dla AR
+  useEffect(() => {
+    if (isViewerOpen && modelLoaded && modelViewerRef.current?.model) {
+      const mv = modelViewerRef.current;
+      const normalize = (name: string) => name.toLowerCase().replace(/_/g, ' ').trim();
+      let targetMatName = wybranyKolor.id === 'ocynk' ? "Ocynk" : `RAL${wybranyKolor.id.toString().replace('m', '')}`;
+      const isMat = wybranyKolor.nazwa.toLowerCase().includes('mat');
+      if (isMat) targetMatName += " mat";
+      
+      const materials = mv.model.materials;
+      const targetNormalized = normalize(targetMatName);
+      const targetMaterial = materials.find((m: any) => normalize(m.name) === targetNormalized);
 
-    // Szukamy materiału docelowego w modelu
-    const normalize = (name: string) => name.toLowerCase().replace(/_/g, ' ').trim();
-    let targetMatName = wybranyKolor.id === 'ocynk' ? "Ocynk" : `RAL${wybranyKolor.id.toString().replace('m', '')}`;
-    const isMat = wybranyKolor.nazwa.toLowerCase().includes('mat');
-    if (isMat) targetMatName += " mat";
-    
-    const materials = mv.model.materials;
-    const targetNormalized = normalize(targetMatName);
-    const targetMaterial = materials.find((m: any) => normalize(m.name) === targetNormalized);
-
-    // Domyślnie wiata używa m.in. RAL6020_mat dla głównego mesha (kolor)
-    // Zaktualizujmy wszystkie materiały kolorowalne na wzór targetMaterial, 
-    // lub jeśli targetMaterial nie istnieje (fallback), ustawmy ręcznie
-    materials.forEach((material: any) => {
-      const name = material.name.toUpperCase();
-      if (name.includes('RAL') || name.includes('OCYNK') || name.includes('KOLOR')) {
-        if (targetMaterial) {
-          // Kopiujemy z oryginalnego materiału PBR, co zachowa wygląd
-          material.pbrMetallicRoughness.setBaseColorFactor(targetMaterial.pbrMetallicRoughness.baseColorFactor);
-          material.pbrMetallicRoughness.setRoughnessFactor(targetMaterial.pbrMetallicRoughness.roughnessFactor);
-          material.pbrMetallicRoughness.setMetallicFactor(targetMaterial.pbrMetallicRoughness.metallicFactor);
-        } else {
-          // Fallback - ręczny kolor
-          const rgba = hexToRgba(wybranyKolor.hex);
-          material.pbrMetallicRoughness.setBaseColorFactor(rgba);
-          material.pbrMetallicRoughness.setRoughnessFactor(isMat ? 0.8 : 0.2);
+      materials.forEach((material: any) => {
+        const name = material.name.toUpperCase();
+        if (name.includes('RAL') || name.includes('OCYNK') || name.includes('KOLOR')) {
+          if (targetMaterial) {
+            material.pbrMetallicRoughness.setBaseColorFactor(targetMaterial.pbrMetallicRoughness.baseColorFactor);
+            material.pbrMetallicRoughness.setRoughnessFactor(targetMaterial.pbrMetallicRoughness.roughnessFactor);
+            material.pbrMetallicRoughness.setMetallicFactor(targetMaterial.pbrMetallicRoughness.metallicFactor);
+          } else {
+            const rgba = hexToRgba(wybranyKolor.hex);
+            material.pbrMetallicRoughness.setBaseColorFactor(rgba);
+            material.pbrMetallicRoughness.setRoughnessFactor(isMat ? 0.8 : 0.2);
+          }
         }
-      }
-    });
-
-    // Wymuszamy chwile opóźnienia, aby model-viewer zdążył wyrenderować zmiany przed uruchomieniem WebXR/QuickLook
-    await new Promise(resolve => setTimeout(resolve, 50));
-  };
+      });
+    }
+  }, [wybranyKolor, modelLoaded, isViewerOpen]);
 
   const zmienKolor = (kolor: KolorWiaty) => {
     if (kolor.id === wybranyKolor.id) return;
@@ -404,25 +395,6 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
         }
       `}</style>
 
-      {/* SILNIK AR (UKRYTY ALE AKTYWNY) */}
-      <ModelViewer
-        ref={modelViewerRef}
-        src={MODEL_URL}
-        ar
-        ar-modes="webxr quick-look"
-        camera-controls
-        loading="eager"
-        onLoad={() => setModelLoaded(true)}
-        style={{
-          opacity: 0,
-          width: '1px',
-          height: '1px',
-          position: 'absolute',
-          pointerEvents: 'none',
-          zIndex: -1
-        }}
-      />
-
       {/* WSPÓLNY MODAL (NASZ VIEWER 3D + AR) */}
       {isViewerOpen && createPortal(
         <div className="fixed inset-0 z-[4000] bg-black flex flex-col items-center justify-center">
@@ -435,13 +407,29 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
 
           <div className="w-full h-full relative flex flex-col">
             <div className="flex-1 w-full relative">
-              {/* Tutaj używamy naszego idealnego CarportViewer (R3F) z perfekcyjnymi materiałami */}
-              <CarportViewer
-                url={MODEL_URL}
-                color={wybranyKolor.hex}
-                colorId={wybranyKolor.id}
-                isMat={wybranyKolor.nazwa.toLowerCase().includes('mat')}
-              />
+              {/* Pełnowymiarowy, niewidoczny model-viewer do obsługi AR, renderowany tylko w modalu */}
+              <div className="absolute inset-0 z-0 opacity-0 pointer-events-none">
+                <ModelViewer
+                  ref={modelViewerRef}
+                  src={MODEL_URL}
+                  ar
+                  ar-modes="webxr quick-look"
+                  camera-controls
+                  loading="eager"
+                  onLoad={() => setModelLoaded(true)}
+                  style={{ width: '100%', height: '100%' }}
+                />
+              </div>
+
+              {/* Główny widok wizualny na wierzchu */}
+              <div className="absolute inset-0 z-10 pointer-events-auto">
+                <CarportViewer
+                  url={MODEL_URL}
+                  color={wybranyKolor.hex}
+                  colorId={wybranyKolor.id}
+                  isMat={wybranyKolor.nazwa.toLowerCase().includes('mat')}
+                />
+              </div>
             </div>
 
             {/* Picker kolorów wewnątrz własnego viewera */}
@@ -466,16 +454,16 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
             {/* Przycisk uruchamiający AR (korzysta z ukrytego głównego model-viewer) */}
             {typeof navigator !== 'undefined' && (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) && (
               <button
-                onClick={async () => {
+                onClick={() => {
                   if (modelViewerRef.current && typeof modelViewerRef.current.activateAR === 'function') {
-                    await prepareARMaterials();
                     modelViewerRef.current.activateAR();
                   }
                 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-base hover:bg-zinc-200 transition-all active:scale-95 shadow-[0_10px_40px_rgba(255,255,255,0.3)] z-50 border-none"
+                className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 px-8 py-4 rounded-full font-bold text-base transition-all active:scale-95 z-50 border-none shadow-[0_10px_40px_rgba(255,255,255,0.3)] ${modelLoaded ? 'bg-white text-black hover:bg-zinc-200' : 'bg-gray-400 text-gray-700 cursor-not-allowed opacity-80'}`}
+                disabled={!modelLoaded}
               >
                 <Smartphone size={22} />
-                ZOBACZ U SIEBIE (AR)
+                {modelLoaded ? 'ZOBACZ U SIEBIE (AR)' : 'ŁADOWANIE AR...'}
               </button>
             )}
           </div>
