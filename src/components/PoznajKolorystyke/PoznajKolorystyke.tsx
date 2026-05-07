@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Box, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Box, X, Smartphone } from 'lucide-react';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 import { createPortal } from 'react-dom';
 import dynamic from 'next/dynamic';
@@ -57,11 +57,13 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
   const [splashKey, setSplashKey] = useState(0);
   const [sekcjaWidoczna, setSekcjaWidoczna] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isOurViewerOpen, setIsOurViewerOpen] = useState(false);
   const [modelLoaded, setModelLoaded] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
 
   const kontenerScrollRef = useRef<HTMLDivElement>(null);
   const modelViewerRef = useRef<any>(null);
+  const modalModelViewerRef = useRef<any>(null);
 
   // Intersection Observer do śledzenia aktywnego slajdu (dla ramki)
   useEffect(() => {
@@ -104,20 +106,24 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
 
   // Synchronizacja koloru w komponencie model-viewer dla trybu AR
   useEffect(() => {
-    if (modelLoaded && modelViewerRef.current?.model) {
-      const rgba = hexToRgba(wybranyKolor.hex);
-      const isMat = wybranyKolor.nazwa.toLowerCase().includes('mat');
-      
-      modelViewerRef.current.model.materials.forEach((material: any) => {
-        const name = material.name.toUpperCase();
-        // Szukamy materiałów, które powinny być kolorowalne (KOLOR, RAL, OCYNK)
-        if (name.includes('KOLOR') || name.includes('RAL') || name.includes('OCYNK')) {
-          material.pbrMetallicRoughness.setBaseColorFactor(rgba);
-          material.pbrMetallicRoughness.setRoughnessFactor(isMat ? 0.8 : 0.2);
-        }
-      });
-    }
-  }, [wybranyKolor, modelLoaded]);
+    const applyColor = (mvRef: any) => {
+      if (mvRef.current?.model) {
+        const rgba = hexToRgba(wybranyKolor.hex);
+        const isMat = wybranyKolor.nazwa.toLowerCase().includes('mat');
+        
+        mvRef.current.model.materials.forEach((material: any) => {
+          const name = material.name.toUpperCase();
+          if (name.includes('KOLOR') || name.includes('RAL') || name.includes('OCYNK')) {
+            material.pbrMetallicRoughness.setBaseColorFactor(rgba);
+            material.pbrMetallicRoughness.setRoughnessFactor(isMat ? 0.8 : 0.2);
+          }
+        });
+      }
+    };
+
+    if (modelLoaded) applyColor(modelViewerRef);
+    if (isOurViewerOpen) applyColor(modalModelViewerRef);
+  }, [wybranyKolor, modelLoaded, isOurViewerOpen]);
 
   const zmienKolor = (kolor: KolorWiaty) => {
     if (kolor.id === wybranyKolor.id) return;
@@ -300,14 +306,23 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
 
                   <div className="absolute inset-0 bg-black/20" />
 
-                  {/* PRZYCISK 3D / AR */}
-                  <button
-                    onClick={handle3DClick}
-                    className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white/80 hover:text-white hover:bg-black/60 transition-all active:scale-90 shadow-lg"
-                    title="Zobacz w 3D / AR"
-                  >
-                    <Box size={20} />
-                  </button>
+                  {/* PRZYCISKI 3D / AR */}
+                  <div className="absolute top-4 right-4 z-20 flex gap-2">
+                    <button
+                      onClick={handle3DClick}
+                      className="w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white/80 hover:text-white hover:bg-black/60 transition-all active:scale-90 shadow-lg"
+                      title="Natywny AR (oryginalny kolor)"
+                    >
+                      <Box size={20} />
+                    </button>
+                    <button
+                      onClick={() => setIsOurViewerOpen(true)}
+                      className="w-10 h-10 rounded-full bg-blue-600/60 backdrop-blur-md border border-blue-400/40 flex items-center justify-center text-white/90 hover:text-white hover:bg-blue-600 transition-all active:scale-90 shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+                      title="Nasz Viewer 3D (wybrany kolor)"
+                    >
+                      <Smartphone size={20} />
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -442,6 +457,76 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
             <div className="mt-6 text-center">
               <p className="text-white/40 text-xs tracking-widest uppercase mb-1">Model 3D wiaty</p>
               <h3 className="text-white text-xl font-medium tracking-wide">{wybranyKolor.nazwa}</h3>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
+
+      {/* NASZ WŁASNY VIEWER AR (Z DYNAMICZNYMI KOLORAMI) */}
+      {isOurViewerOpen && createPortal(
+        <div className="fixed inset-0 z-[4000] bg-black flex flex-col items-center justify-center">
+          <button
+            onClick={() => setIsOurViewerOpen(false)}
+            className="absolute top-8 right-8 z-[4010] p-4 text-white bg-black/50 hover:bg-white/20 rounded-full transition-colors backdrop-blur-md"
+          >
+            <X size={32} />
+          </button>
+
+          <div className="w-full h-full relative">
+            <ModelViewer
+              ref={modalModelViewerRef}
+              src={MODEL_URL}
+              ar
+              ar-modes="webxr quick-look scene-viewer"
+              camera-controls
+              auto-rotate
+              shadow-intensity="1"
+              environment-image="neutral"
+              style={{ width: '100%', height: '100%', outline: 'none', backgroundColor: '#1a1a1a' }}
+              onLoad={(e: any) => {
+                // Initial kolor na starcie modalu
+                const mv = e.target;
+                if (mv && mv.model) {
+                  const rgba = hexToRgba(wybranyKolor.hex);
+                  const isMat = wybranyKolor.nazwa.toLowerCase().includes('mat');
+                  mv.model.materials.forEach((material: any) => {
+                    const name = material.name.toUpperCase();
+                    if (name.includes('KOLOR') || name.includes('RAL') || name.includes('OCYNK')) {
+                      material.pbrMetallicRoughness.setBaseColorFactor(rgba);
+                      material.pbrMetallicRoughness.setRoughnessFactor(isMat ? 0.8 : 0.2);
+                    }
+                  });
+                }
+              }}
+            >
+              {/* Własny wygląd przycisku AR wbudowanego w model-viewer */}
+              <button
+                slot="ar-button"
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-base hover:bg-zinc-200 transition-all active:scale-95 shadow-[0_10px_40px_rgba(255,255,255,0.3)] z-50 border-none"
+              >
+                <Smartphone size={22} />
+                ZOBACZ U SIEBIE
+              </button>
+            </ModelViewer>
+
+            {/* Picker kolorów wewnątrz własnego viewera */}
+            <div className="absolute bottom-[100px] left-0 w-full flex justify-center z-[4010] pointer-events-none">
+              <div className="bg-black/60 backdrop-blur-xl p-2 md:p-3 rounded-full flex gap-2 md:gap-3 border border-white/20 pointer-events-auto overflow-x-auto max-w-[95vw] shadow-2xl">
+                {kolory.map((kolor) => (
+                  <button
+                    key={kolor.id}
+                    onClick={() => zmienKolor(kolor)}
+                    className={`w-10 h-10 shrink-0 rounded-full transition-transform ${wybranyKolor.id === kolor.id ? 'scale-110 ring-2 ring-white shadow-[0_0_15px_rgba(255,255,255,0.5)]' : 'scale-90 opacity-60 hover:opacity-100 hover:scale-100'}`}
+                    style={{ backgroundColor: kolor.hex }}
+                  />
+                ))}
+              </div>
+            </div>
+            
+            <div className="absolute top-8 left-8 z-[4010] pointer-events-none text-left hidden md:block">
+              <p className="text-white/50 text-xs tracking-[0.2em] uppercase font-semibold mb-1">Nasz Viewer 3D</p>
+              <h3 className="text-white text-2xl font-bold tracking-wide">{wybranyKolor.nazwa}</h3>
             </div>
           </div>
         </div>,
