@@ -122,7 +122,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     }
   }, [isViewerOpen]);
 
-  // Synchronizacja materiałów w ukrytym model-viewer dla AR
+  // Synchronizacja pełnego materiału w ukrytym model-viewer dla AR
   useEffect(() => {
     if (isViewerOpen && modelLoaded && modelViewerRef.current?.model) {
       const mv = modelViewerRef.current;
@@ -139,10 +139,24 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
         const name = material.name.toUpperCase();
         if (name.includes('RAL') || name.includes('OCYNK') || name.includes('KOLOR')) {
           if (targetMaterial) {
-            material.pbrMetallicRoughness.setBaseColorFactor(targetMaterial.pbrMetallicRoughness.baseColorFactor);
-            material.pbrMetallicRoughness.setRoughnessFactor(targetMaterial.pbrMetallicRoughness.roughnessFactor);
-            material.pbrMetallicRoughness.setMetallicFactor(targetMaterial.pbrMetallicRoughness.metallicFactor);
+            const pbr = material.pbrMetallicRoughness;
+            const targetPbr = targetMaterial.pbrMetallicRoughness;
+
+            // Kopiujemy parametry bazowe
+            pbr.setBaseColorFactor(targetPbr.baseColorFactor);
+            pbr.setRoughnessFactor(targetPbr.roughnessFactor);
+            pbr.setMetallicFactor(targetPbr.metallicFactor);
+            material.setEmissiveFactor(targetMaterial.emissiveFactor);
+
+            // Kopiujemy wszystkie tekstury (base, normal, roughness, occlusion, emissive) aby materiał był identyczny
+            if (pbr.baseColorTexture) pbr.baseColorTexture.setTexture(targetPbr.baseColorTexture?.texture || null);
+            if (pbr.metallicRoughnessTexture) pbr.metallicRoughnessTexture.setTexture(targetPbr.metallicRoughnessTexture?.texture || null);
+            if (material.normalTexture) material.normalTexture.setTexture(targetMaterial.normalTexture?.texture || null);
+            if (material.occlusionTexture) material.occlusionTexture.setTexture(targetMaterial.occlusionTexture?.texture || null);
+            if (material.emissiveTexture) material.emissiveTexture.setTexture(targetMaterial.emissiveTexture?.texture || null);
+
           } else {
+            // Fallback
             const rgba = hexToRgba(wybranyKolor.hex);
             material.pbrMetallicRoughness.setBaseColorFactor(rgba);
             material.pbrMetallicRoughness.setRoughnessFactor(isMat ? 0.8 : 0.2);
@@ -455,20 +469,6 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
               </div>
             </div>
 
-            {/* Picker kolorów wewnątrz własnego viewera */}
-            <div className="absolute bottom-[100px] left-0 w-full flex justify-center z-[4010] pointer-events-none">
-              <div className="bg-black/60 backdrop-blur-xl p-2 md:p-3 rounded-full flex gap-2 md:gap-3 border border-white/20 pointer-events-auto overflow-x-auto max-w-[95vw] shadow-2xl">
-                {kolory.map((kolor) => (
-                  <button
-                    key={kolor.id}
-                    onClick={() => zmienKolor(kolor)}
-                    className={`w-10 h-10 shrink-0 rounded-full transition-transform ${wybranyKolor.id === kolor.id ? 'scale-110 ring-2 ring-white shadow-[0_0_15px_rgba(255,255,255,0.5)]' : 'scale-90 opacity-60 hover:opacity-100 hover:scale-100'}`}
-                    style={{ backgroundColor: kolor.hex }}
-                  />
-                ))}
-              </div>
-            </div>
-            
             <div className="absolute top-8 left-8 z-[4010] pointer-events-none text-left hidden md:block">
               <p className="text-white/50 text-xs tracking-[0.2em] uppercase font-semibold mb-1">Model 3D Wiaty</p>
               <h3 className="text-white text-2xl font-bold tracking-wide">{wybranyKolor.nazwa}</h3>
