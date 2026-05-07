@@ -101,6 +101,27 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
     // Usunięto manipulację document.body, która mogła powodować dziwne kolory na mobile
   }, [sekcjaWidoczna, wybranyKolor]);
 
+  // Zabezpieczenie przed "wiecznym ładowaniem" - natywny event listener i fallback
+  useEffect(() => {
+    if (isViewerOpen && modelViewerRef.current) {
+      const mv = modelViewerRef.current;
+      
+      const handleLoad = () => setModelLoaded(true);
+      mv.addEventListener('load', handleLoad);
+      
+      // Jeżeli model jest zakeszowany, load mógł wystrzelić zanim React go podpiął
+      if (mv.model) {
+        setModelLoaded(true);
+      }
+
+      return () => {
+        mv.removeEventListener('load', handleLoad);
+      };
+    } else if (!isViewerOpen) {
+      setModelLoaded(false);
+    }
+  }, [isViewerOpen]);
+
   // Synchronizacja materiałów w ukrytym model-viewer dla AR
   useEffect(() => {
     if (isViewerOpen && modelLoaded && modelViewerRef.current?.model) {
@@ -407,8 +428,8 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
 
           <div className="w-full h-full relative flex flex-col">
             <div className="flex-1 w-full relative">
-              {/* Pełnowymiarowy, niewidoczny model-viewer do obsługi AR, renderowany tylko w modalu */}
-              <div className="absolute inset-0 z-0 opacity-0 pointer-events-none">
+              {/* Pełnowymiarowy model-viewer do obsługi AR, renderowany tylko w modalu (widoczny dla przeglądarki) */}
+              <div className="absolute inset-0 z-0 pointer-events-none bg-black">
                 <ModelViewer
                   ref={modelViewerRef}
                   src={MODEL_URL}
@@ -416,10 +437,12 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                   ar-modes="webxr quick-look"
                   camera-controls
                   loading="eager"
-                  onLoad={() => setModelLoaded(true)}
                   style={{ width: '100%', height: '100%' }}
                 />
               </div>
+
+              {/* Tło przykrywające surowy model-viewer, by nie prześwitywał pod CarportViewerem */}
+              <div className="absolute inset-0 z-5 bg-gradient-to-b from-[#111] to-black pointer-events-none" />
 
               {/* Główny widok wizualny na wierzchu */}
               <div className="absolute inset-0 z-10 pointer-events-auto">
