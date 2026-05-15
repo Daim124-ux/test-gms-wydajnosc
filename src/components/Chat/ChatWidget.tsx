@@ -120,32 +120,37 @@ export default function ChatWidget() {
             }}
             exit={{ opacity: 0, scale: 0.8, y: 100, filter: 'blur(20px)' }}
             transition={{ type: 'spring', damping: 30, stiffness: 200 }}
-            className="w-[380px] md:w-[600px] h-[750px] bg-[#333333] rounded-[40px] shadow-[0_32px_80px_rgba(0,0,0,0.5)] border border-white/10 overflow-hidden flex flex-col pointer-events-auto origin-bottom-right google-ai-border"
+            className="w-[380px] md:w-[600px] h-[750px] rounded-[40px] shadow-[0_32px_80px_rgba(0,0,0,0.5)] flex flex-col pointer-events-auto origin-bottom-right google-ai-border relative"
           >
-            {/* Header (Liquid Glass) */}
-            <div className="p-8 pb-6 flex items-center justify-between shrink-0">
-              <div className="flex items-center gap-5">
-                <div className="w-14 h-14 bg-white/5 rounded-full flex items-center justify-center border border-white/10 text-zinc-100">
-                  <AIIcon className="w-8 h-8" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl leading-none mb-1.5 text-zinc-100 tracking-tight">GMS Corporation</h3>
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
-                    <span className="text-[10px] uppercase font-bold tracking-[0.15em] text-zinc-400">{t('assistant')}</span>
+            {/* Dark background overlay to cover the gradient bleed */}
+            <div className="absolute inset-0.5 bg-zinc-950/95 backdrop-blur-3xl rounded-[39px] z-0" />
+
+            {/* Content (Must be relative and have higher z-index) */}
+            <div className="relative z-10 flex flex-col h-full overflow-hidden">
+              {/* Header (Liquid Glass) */}
+              <div className="p-8 pb-6 flex items-center justify-between shrink-0">
+                <div className="flex items-center gap-5">
+                  <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center border border-white/20 text-zinc-100 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                    <AIIcon className="w-8 h-8 drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl leading-none mb-1.5 text-zinc-100 tracking-tight">GMS Corporation</h3>
+                    <div className="flex items-center gap-2">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
+                      <span className="text-[10px] uppercase font-bold tracking-[0.15em] text-zinc-400">{t('assistant')}</span>
+                    </div>
                   </div>
                 </div>
+                <div className="flex items-center gap-4">
+                  <button
+                    onClick={() => { setIsOpen(false); setIsMinimized(false); }}
+                    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-400 hover:text-white transition-all active:scale-95 group"
+                    title={t('close')}
+                  >
+                    <X size={20} className="group-hover:rotate-90 transition-transform duration-300" />
+                  </button>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => { setIsOpen(false); setIsMinimized(false); }}
-                  className="hover:bg-red-500/20 hover:text-red-500 p-2.5 rounded-full transition-all active:scale-90"
-                  title={t('close')}
-                >
-                  <X size={22} className="text-zinc-600 dark:text-zinc-400" />
-                </button>
-              </div>
-            </div>
 
             {/* Chat Messages */}
             <div
@@ -298,6 +303,7 @@ export default function ChatWidget() {
                   <Send size={22} />
                 </button>
               </form>
+            </div>
             </div>
           </motion.div>
         )}

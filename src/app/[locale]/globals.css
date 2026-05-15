@@ -105,6 +105,8 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
+
+
 /* Google AI Premium Border Effect */
 @property --glow-angle {
   syntax: "<angle>";
