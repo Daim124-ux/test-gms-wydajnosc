@@ -2,7 +2,6 @@
 
 import React from 'react';
 import dynamic from 'next/dynamic';
-import AppleStickyNav from '@/components/AppleStickyNav/AppleStickyNav';
 import AppleHeroEntrance from '@/components/AppleHeroEntrance/AppleHeroEntrance';
 import KaruzelaFunkcji from '@/components/KaruzelaFunkcji/KaruzelaFunkcji';
 import PoznajKolorystyke from '@/components/PoznajKolorystyke/PoznajKolorystyke';
@@ -119,8 +118,6 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
 
   return (
     <main className="flex flex-col min-h-screen bg-white dark:bg-black w-full">
-      <AppleStickyNav title={node.title} />
-
       <AppleHeroEntrance
         videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.frames.av1.hevc.webm"
       />
