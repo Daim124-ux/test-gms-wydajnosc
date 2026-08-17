@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Paleta kolorów RAL dla garaży stalowych</title>
+  <desc id="desc">Plansza z próbkami kolorów RAL i ocynku stosowanych w wariancie GS Standard.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef1ea"/>
+    </linearGradient>
+    <linearGradient id="zinc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1f2f0"/>
+      <stop offset="0.33" stop-color="#a7abae"/>
+      <stop offset="0.66" stop-color="#d6d7d2"/>
+      <stop offset="1" stop-color="#8f9497"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#1d1d1f" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="94" y="112" font-size="44" font-weight="800" fill="#1d1d1f">Kolory RAL - GS Standard</text>
+    <text x="96" y="158" font-size="23" font-weight="500" fill="#5f6368">Blacha ocynkowana lub fabrycznie malowana. Kolory można łączyć z bramą i detalami.</text>
+  </g>
+
+  <g transform="translate(96 245)" filter="url(#shadow)" font-family="Inter, Arial, sans-serif">
+    <g transform="translate(0 0)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="url(#zinc)"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">Ocynk</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">powłoka metaliczna</text>
+    </g>
+    <g transform="translate(285 0)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="#5e1f26"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">RAL 3005</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">burgundowy</text>
+    </g>
+    <g transform="translate(570 0)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="#114232"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">RAL 6005</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">ciemna zieleń</text>
+    </g>
+    <g transform="translate(855 0)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="#3f474b"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">RAL 7016</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">antracyt</text>
+    </g>
+    <g transform="translate(1140 0)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="#8e4b2b"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">RAL 8004</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">ceglasty</text>
+    </g>
+    <g transform="translate(0 305)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="#4a332d"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">RAL 8017</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">brązowy</text>
+    </g>
+    <g transform="translate(285 305)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="#b8bab8"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">RAL 9006</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">srebrny</text>
+    </g>
+    <g transform="translate(570 305)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="#f4f4ee" stroke="#d7d9d2"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">RAL 9010</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">biały</text>
+    </g>
+    <g transform="translate(855 305)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="#303b35"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">RAL 6020 mat</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">chromowa zieleń</text>
+    </g>
+    <g transform="translate(1140 305)">
+      <rect width="245" height="250" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="197" height="130" rx="20" fill="#343a3d"/>
+      <text x="24" y="198" font-size="25" font-weight="800" fill="#1d1d1f">RAL 7016 mat</text>
+      <text x="24" y="228" font-size="16" font-weight="600" fill="#6e7f63">matowy antracyt</text>
+    </g>
+  </g>
+
+  <text x="96" y="925" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#6f7478">
+    Próbki są poglądowe - rzeczywisty odcień zależy od światła, faktury i ustawień ekranu.
+  </text>
+</svg>

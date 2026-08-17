@@ -46,8 +46,19 @@ next-env.d.ts
 /public/assets/*
 !/public/assets/logo/
 !/public/assets/piktogramy/
+!/public/assets/images/
+/public/assets/images/*
+!/public/assets/images/garaze-stalowe/
+!/public/assets/images/garaze-stalowe/garage-*.svg
 !/public/assets/videos/
 /public/assets/videos/*
 !/public/assets/videos/main/
 /public/assets/videos/main/*
 !/public/assets/videos/main/jednorozec_gms.mkv
+
+# Temporary workspace items
+temp_liquid_glass/
+temp2_liquid_glass/
+liquid-glass-studio-main/
+garages_text.txt
+.vscode/

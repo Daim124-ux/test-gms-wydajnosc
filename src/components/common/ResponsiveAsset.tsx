@@ -39,8 +39,19 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
 
   useEffect(() => {
     fetch('/_optimized/manifest.json')
-      .then(res => res.json())
-      .then(data => setManifest(data))
+      .then(async (res) => {
+        if (!res.ok) return null;
+        const text = await res.text();
+        if (!text || !text.trim()) return null;
+        try {
+          return JSON.parse(text);
+        } catch {
+          return null;
+        }
+      })
+      .then(data => {
+        if (data) setManifest(data);
+      })
       .catch(() => console.warn('Media manifest not found. Using fallbacks.'));
   }, []);
 

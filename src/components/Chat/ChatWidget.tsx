@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { useChat } from 'ai/react';
-import { Minus, X, Send, Sparkles, User, Loader2, Info, Terminal, ChevronRight, ExternalLink, Trash2, Globe, Settings } from 'lucide-react';
+import { Minus, X, Send, Sparkles, User, Loader2, Info, Terminal, ChevronRight, ExternalLink, Trash2, Globe, Settings, Maximize2, Minimize2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { type Message } from 'ai';
 import { getCurrentPageContext, type PageContext } from '@/lib/page-context';
@@ -35,6 +35,7 @@ export default function ChatWidget() {
   const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const [pageContext, setPageContext] = useState<PageContext | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -106,24 +107,29 @@ export default function ChatWidget() {
   }, [messages, isMinimized]);
 
   return (
-    <div className="fixed bottom-6 right-6 z-[9999] font-sans pointer-events-none">
+    <div className="fixed inset-0 z-[9999] font-sans pointer-events-none p-5 md:p-6 flex flex-col justify-end items-end">
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, y: 100, filter: 'blur(20px)' }}
+            layout
+            initial={{ opacity: 0, scale: 0.92, y: 40 }}
             animate={{
               opacity: 1,
               scale: isMinimized ? 0 : 1,
               y: isMinimized ? 500 : 0,
-              filter: isMinimized ? 'blur(20px)' : 'blur(0px)',
               pointerEvents: isMinimized ? 'none' : 'auto'
             }}
-            exit={{ opacity: 0, scale: 0.8, y: 100, filter: 'blur(20px)' }}
-            transition={{ type: 'spring', damping: 30, stiffness: 200 }}
-            className="w-[380px] md:w-[600px] h-[750px] rounded-[40px] shadow-[0_32px_80px_rgba(0,0,0,0.5)] flex flex-col pointer-events-auto origin-bottom-right google-ai-border relative"
+            exit={{ opacity: 0, scale: 0.92, y: 40 }}
+            transition={{
+              layout: { type: 'spring', damping: 30, stiffness: 300 },
+              opacity: { duration: 0.2 },
+              scale: { duration: 0.2 },
+              y: { type: 'spring', damping: 28, stiffness: 260 }
+            }}
+            className={`shadow-[0_32px_80px_rgba(0,0,0,0.5)] flex flex-col pointer-events-auto google-ai-border overflow-hidden origin-bottom-right ${isFullscreen ? 'w-full h-full rounded-[20px]' : 'w-[380px] md:w-[600px] h-[750px] max-h-full rounded-[40px]'}`}
           >
             {/* Dark background overlay to cover the gradient bleed */}
-            <div className="absolute inset-0.5 bg-zinc-950/95 backdrop-blur-3xl rounded-[39px] z-0" />
+            <div className={`absolute inset-0.5 bg-zinc-950/95 backdrop-blur-3xl z-0 transition-[border-radius] duration-300 ${isFullscreen ? 'rounded-[19px]' : 'rounded-[39px]'}`} />
 
             {/* Content (Must be relative and have higher z-index) */}
             <div className="relative z-10 flex flex-col h-full overflow-hidden">
@@ -141,9 +147,20 @@ export default function ChatWidget() {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 md:gap-4">
                   <button
-                    onClick={() => { setIsOpen(false); setIsMinimized(false); }}
+                    onClick={() => setIsFullscreen(!isFullscreen)}
+                    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-400 hover:text-white transition-all active:scale-95 group"
+                    title={isFullscreen ? 'Zwiń do okna' : 'Pełny ekran'}
+                  >
+                    {isFullscreen ? (
+                      <Minimize2 size={18} className="group-hover:scale-110 transition-transform duration-300" />
+                    ) : (
+                      <Maximize2 size={18} className="group-hover:scale-110 transition-transform duration-300" />
+                    )}
+                  </button>
+                  <button
+                    onClick={() => { setIsOpen(false); setIsMinimized(false); setIsFullscreen(false); }}
                     className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-400 hover:text-white transition-all active:scale-95 group"
                     title={t('close')}
                   >
@@ -152,165 +169,165 @@ export default function ChatWidget() {
                 </div>
               </div>
 
-            {/* Chat Messages */}
-            <div
-              ref={scrollRef}
-              className="flex-1 overflow-y-auto px-8 space-y-8 custom-scrollbar flex flex-col"
-            >
-              {messages.length === 0 && (
-                <div className="flex-1 flex items-center justify-center py-20">
-                  <motion.p
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    className="text-white font-bold text-3xl tracking-tighter text-center px-12 leading-tight"
-                  >
-                    {t('welcome')}
-                  </motion.p>
-                </div>
-              )}
+              {/* Chat Messages */}
+              <div
+                ref={scrollRef}
+                className="flex-1 overflow-y-auto px-8 space-y-8 custom-scrollbar flex flex-col"
+              >
+                {messages.length === 0 && (
+                  <div className="flex-1 flex items-center justify-center py-20">
+                    <motion.p
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      className="text-white font-bold text-3xl tracking-tighter text-center px-12 leading-tight"
+                    >
+                      {t('welcome')}
+                    </motion.p>
+                  </div>
+                )}
 
-              {messages.map((m: Message) => (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  key={m.id}
-                  className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}
-                >
-                  <div className={`flex gap-4 max-w-[95%] ${m.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
-                    {m.role !== 'user' && (
-                      <div className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 mt-1 text-zinc-100">
-                        <AIIcon className="w-5 h-5" />
-                      </div>
-                    )}
-                    <div className={`p-5 rounded-[24px] text-sm leading-relaxed shadow-sm ${m.role === 'user'
+                {messages.map((m: Message) => (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    key={m.id}
+                    className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                  >
+                    <div className={`flex gap-4 max-w-[95%] ${m.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
+                      {m.role !== 'user' && (
+                        <div className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 mt-1 text-zinc-100">
+                          <AIIcon className="w-5 h-5" />
+                        </div>
+                      )}
+                      <div className={`p-5 rounded-[24px] text-sm leading-relaxed shadow-sm ${m.role === 'user'
                         ? 'bg-zinc-100 text-zinc-900 rounded-tr-none'
                         : 'bg-white/5 text-zinc-100 border border-white/10 rounded-tl-none prose prose-zinc dark:prose-invert prose-sm max-w-none'
-                      }`}>
-                      {m.role === 'user' ? (
-                        m.content
-                      ) : (
-                        <ReactMarkdown
-                          remarkPlugins={[remarkGfm]}
-                          components={{
-                            table: ({ node, ...props }) => (
-                              <div className="overflow-x-auto my-6 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md custom-scrollbar">
-                                <table className="min-w-full divide-y divide-white/10" {...props} />
-                              </div>
-                            ),
-                            th: ({ node, ...props }) => <th className="px-5 py-3 bg-white/10 font-bold text-left text-[11px] uppercase tracking-wider" {...props} />,
-                            td: ({ node, ...props }) => <td className="px-5 py-3 border-t border-white/5 text-[12px]" {...props} />,
-                            p: ({ node, ...props }) => <p className="mb-3 last:mb-0" {...props} />,
-                            strong: ({ node, ...props }) => <strong className="font-bold text-blue-500" {...props} />,
-                            a: ({ node, href, children, ...props }) => {
-                              const text = String(children).toLowerCase();
-                              const isProduct = href?.includes('/system-dom') && text.includes('strona produktu');
-                              const isConfigurator = href?.includes('/konfigurator') && text.includes('skonfiguruj');
-                              const isPersonalization = href?.includes('/personalizacja') && text.includes('kolorystyka');
-                              const isLinkButton = isProduct || isConfigurator || isPersonalization;
+                        }`}>
+                        {m.role === 'user' ? (
+                          m.content
+                        ) : (
+                          <ReactMarkdown
+                            remarkPlugins={[remarkGfm]}
+                            components={{
+                              table: ({ node, ...props }) => (
+                                <div className="overflow-x-auto my-6 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md custom-scrollbar">
+                                  <table className="min-w-full divide-y divide-white/10" {...props} />
+                                </div>
+                              ),
+                              th: ({ node, ...props }) => <th className="px-5 py-3 bg-white/10 font-bold text-left text-[11px] uppercase tracking-wider" {...props} />,
+                              td: ({ node, ...props }) => <td className="px-5 py-3 border-t border-white/5 text-[12px]" {...props} />,
+                              p: ({ node, ...props }) => <p className="mb-3 last:mb-0" {...props} />,
+                              strong: ({ node, ...props }) => <strong className="font-bold text-blue-500" {...props} />,
+                              a: ({ node, href, children, ...props }) => {
+                                const text = String(children).toLowerCase();
+                                const isProduct = href?.includes('/system-dom') && text.includes('strona produktu');
+                                const isConfigurator = href?.includes('/konfigurator') && text.includes('skonfiguruj');
+                                const isPersonalization = href?.includes('/personalizacja') && text.includes('kolorystyka');
+                                const isLinkButton = isProduct || isConfigurator || isPersonalization;
 
-                              if (isLinkButton) {
-                                const displayedText = isConfigurator ? 'Skonfiguruj' : children;
+                                if (isLinkButton) {
+                                  const displayedText = isConfigurator ? 'Skonfiguruj' : children;
 
-                                return (
-                                  <motion.a
-                                    href={href}
-                                    whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.1)' }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="inline-flex items-center gap-2 px-3.5 py-2 bg-white/10 border border-white/20 rounded-full mt-4 mb-2 no-underline text-zinc-900 dark:text-white font-bold transition-all hover:border-blue-500/50 group w-auto mr-2 last:mr-0 shrink-0"
-                                  >
-                                    <span className="text-[10px] uppercase tracking-wide whitespace-nowrap">{displayedText}</span>
-                                    {isConfigurator ? (
-                                      <Settings size={12} className="text-zinc-400 group-hover:text-blue-500 transition-colors shrink-0" />
-                                    ) : isProduct ? (
-                                      <Globe size={12} className="text-zinc-400 group-hover:text-white transition-colors shrink-0" />
-                                    ) : (
-                                      <ChevronRight size={12} className="text-zinc-400 group-hover:text-blue-500 translate-x-0 group-hover:translate-x-1 transition-all shrink-0" />
-                                    )}
-                                  </motion.a>
-                                );
+                                  return (
+                                    <motion.a
+                                      href={href}
+                                      whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.1)' }}
+                                      whileTap={{ scale: 0.95 }}
+                                      className="inline-flex items-center gap-2 px-3.5 py-2 bg-white/10 border border-white/20 rounded-full mt-4 mb-2 no-underline text-zinc-900 dark:text-white font-bold transition-all hover:border-blue-500/50 group w-auto mr-2 last:mr-0 shrink-0"
+                                    >
+                                      <span className="text-[10px] uppercase tracking-wide whitespace-nowrap">{displayedText}</span>
+                                      {isConfigurator ? (
+                                        <Settings size={12} className="text-zinc-400 group-hover:text-blue-500 transition-colors shrink-0" />
+                                      ) : isProduct ? (
+                                        <Globe size={12} className="text-zinc-400 group-hover:text-white transition-colors shrink-0" />
+                                      ) : (
+                                        <ChevronRight size={12} className="text-zinc-400 group-hover:text-blue-500 translate-x-0 group-hover:translate-x-1 transition-all shrink-0" />
+                                      )}
+                                    </motion.a>
+                                  );
+                                }
+                                return <a href={href} className="text-blue-400 font-bold underline decoration-blue-500/30 hover:decoration-blue-500 transition-all mx-1" {...props}>{children}</a>;
                               }
-                              return <a href={href} className="text-blue-400 font-bold underline decoration-blue-500/30 hover:decoration-blue-500 transition-all mx-1" {...props}>{children}</a>;
-                            }
-                          }}
-                        >
-                          {m.content}
-                        </ReactMarkdown>
-                      )}
+                            }}
+                          >
+                            {m.content}
+                          </ReactMarkdown>
+                        )}
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+
+                {isLoading && messages[messages.length - 1]?.role !== 'assistant' && (
+                  <div className="flex justify-start">
+                    <div className="bg-white/10 dark:bg-white/5 p-5 rounded-[24px] rounded-tl-none border border-white/20 flex items-center gap-3">
+                      <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }} transition={{ repeat: Infinity, duration: 1.5 }} className="w-2 h-2 bg-blue-500 rounded-full" />
+                      <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-500">{t('processing')}</span>
                     </div>
                   </div>
-                </motion.div>
-              ))}
+                )}
+              </div>
 
-              {isLoading && messages[messages.length - 1]?.role !== 'assistant' && (
-                <div className="flex justify-start">
-                  <div className="bg-white/10 dark:bg-white/5 p-5 rounded-[24px] rounded-tl-none border border-white/20 flex items-center gap-3">
-                    <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }} transition={{ repeat: Infinity, duration: 1.5 }} className="w-2 h-2 bg-blue-500 rounded-full" />
-                    <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-500">{t('processing')}</span>
-                  </div>
+              {/* Quick Actions (Conditional) */}
+              <div className="px-8 py-4 flex items-center border-t border-white/10 bg-black/5 shrink-0">
+                <div className="flex-1 flex gap-3 overflow-x-auto custom-scrollbar py-2">
+                  {QUICK_CHIPS(t).filter(chip => {
+                    if (chip.id === 'summary') return true;
+                    const isProductDepth = pageContext?.url &&
+                      (pageContext.url.includes('/system-dom/') || pageContext.url.includes('/osiedle-system/')) &&
+                      pageContext.url.split('/').filter(Boolean).length >= 2;
+                    return isProductDepth;
+                  }).map((chip) => (
+                    <button
+                      key={chip.id}
+                      onClick={() => handleChipClick(chip.prompt)}
+                      className="px-5 py-2.5 bg-white/10 dark:bg-white/5 border border-white/20 dark:border-white/10 rounded-full text-[12px] font-bold text-zinc-700 dark:text-zinc-300 hover:bg-white/20 transition-all whitespace-nowrap"
+                    >
+                      {chip.label}
+                    </button>
+                  ))}
                 </div>
-              )}
-            </div>
-
-            {/* Quick Actions (Conditional) */}
-            <div className="px-8 py-4 flex items-center border-t border-white/10 bg-black/5 shrink-0">
-              <div className="flex-1 flex gap-3 overflow-x-auto custom-scrollbar py-2">
-                {QUICK_CHIPS(t).filter(chip => {
-                  if (chip.id === 'summary') return true;
-                  const isProductDepth = pageContext?.url &&
-                    (pageContext.url.includes('/system-dom/') || pageContext.url.includes('/osiedle-system/')) &&
-                    pageContext.url.split('/').filter(Boolean).length >= 2;
-                  return isProductDepth;
-                }).map((chip) => (
+                <div className="pl-4 border-l border-white/10 ml-2">
                   <button
-                    key={chip.id}
-                    onClick={() => handleChipClick(chip.prompt)}
-                    className="px-5 py-2.5 bg-white/10 dark:bg-white/5 border border-white/20 dark:border-white/10 rounded-full text-[12px] font-bold text-zinc-700 dark:text-zinc-300 hover:bg-white/20 transition-all whitespace-nowrap"
+                    onClick={clearChat}
+                    className="p-3 text-zinc-400 hover:text-red-500 hover:bg-red-500/10 rounded-xl transition-all active:scale-90"
+                    title={t('clearHistory')}
                   >
-                    {chip.label}
+                    <Trash2 size={20} />
                   </button>
-                ))}
-              </div>
-              <div className="pl-4 border-l border-white/10 ml-2">
-                <button
-                  onClick={clearChat}
-                  className="p-3 text-zinc-400 hover:text-red-500 hover:bg-red-500/10 rounded-xl transition-all active:scale-90"
-                  title={t('clearHistory')}
-                >
-                  <Trash2 size={20} />
-                </button>
-              </div>
-            </div>
-
-            {/* Input Area */}
-            <div className="p-8 pt-4 pb-8 shrink-0">
-              <form
-                onSubmit={handleSubmit}
-                className="relative flex items-center"
-              >
-                <div className="w-full google-ai-border rounded-3xl overflow-hidden">
-                  <input
-                    value={input}
-                    onChange={handleInputChange}
-                    placeholder={t('placeholder')}
-                    className="w-full bg-black/40 border-none py-5 pl-7 pr-16 text-sm outline-none text-white placeholder-zinc-500 transition-all"
-                  />
                 </div>
-                <button
-                  type="submit"
-                  disabled={!input.trim() || isLoading}
-                  className="absolute right-6 text-zinc-400 hover:text-white transition-all disabled:opacity-20 active:scale-90"
+              </div>
+
+              {/* Input Area */}
+              <div className="p-8 pt-4 pb-8 shrink-0">
+                <form
+                  onSubmit={handleSubmit}
+                  className="relative flex items-center"
                 >
-                  <Send size={22} />
-                </button>
-              </form>
-            </div>
+                  <div className="w-full google-ai-border rounded-3xl overflow-hidden">
+                    <input
+                      value={input}
+                      onChange={handleInputChange}
+                      placeholder={t('placeholder')}
+                      className="w-full bg-black/40 border-none py-5 pl-7 pr-16 text-sm outline-none text-white placeholder-zinc-500 transition-all"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    disabled={!input.trim() || isLoading}
+                    className="absolute right-6 text-zinc-400 hover:text-white transition-all disabled:opacity-20 active:scale-90"
+                  >
+                    <Send size={22} />
+                  </button>
+                </form>
+              </div>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
       {/* Floating Toggle Button (Liquid Glass Round Ball) */}
-      <div className="absolute bottom-0 right-0 pointer-events-auto">
+      <div className="absolute bottom-5 right-5 md:bottom-6 md:right-6 pointer-events-auto">
         <AnimatePresence>
           {(!isOpen || isMinimized) && (
             <motion.button

@@ -6,12 +6,33 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
-const LifestyleShowcase = () => {
+interface LifestyleShowcaseProps {
+  glowRgb?: string;
+  btnBgClass?: string;
+  items?: Array<{
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+  }>;
+  mainTitle?: string;
+  bgClass?: string;
+  titleColor?: string;
+}
+
+const LifestyleShowcase = ({
+  glowRgb = "22, 96, 177",
+  btnBgClass = "bg-blue-600/30 hover:bg-blue-600/50",
+  items: customItems,
+  mainTitle: customMainTitle,
+  bgClass = "bg-black",
+  titleColor = "text-white"
+}: LifestyleShowcaseProps) => {
   const t = useTranslations('lifestyleShowcase');
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  const items = [
+  const defaultItems = [
     {
       id: '1',
       title: t('items.item1.title'),
@@ -31,6 +52,8 @@ const LifestyleShowcase = () => {
       image: '/assets/images/wiaty-stalowe-na-rowery/Wiata-dla-hoteli_smaller.jpg',
     },
   ];
+
+  const items = customItems || defaultItems;
 
   const scrollToIndex = (index: number) => {
     if (scrollContainerRef.current) {
@@ -63,7 +86,7 @@ const LifestyleShowcase = () => {
   }, [nextSlide]);
 
   return (
-    <section className="bg-black py-24 px-4 overflow-hidden relative">
+    <section className={`${bgClass} py-24 px-4 overflow-hidden relative`}>
       <div className="max-w-7xl mx-auto relative z-10">
         {/* NEON TITLE - Slightly overlapping the slider, moved 10px up */}
         <div className="text-center mb-[-5px] md:mb-[-15px] relative z-20">
@@ -72,12 +95,12 @@ const LifestyleShowcase = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[48px] md:text-[80px] font-semibold text-white tracking-tighter leading-[0.9em]"
+            className={`text-[48px] md:text-[80px] font-semibold ${titleColor} tracking-tighter leading-[0.9em]`}
             style={{
-              textShadow: '0 -35px 50px rgba(22, 96, 177, 0.99), 0 -10px 30px rgba(22, 96, 177, 0.99), 0 -5px 20px rgba(22, 96, 177, 0.99), 0 10px 30px rgba(22, 96, 177, 0.8), 0 30px 50px rgba(22, 96, 177, 0.7), 0 50px 70px rgba(22, 96, 177, 0.6), 0 70px 90px rgba(22, 96, 177, 0.5), 0 90px 120px rgba(22, 96, 177, 0.4)'
+              textShadow: `0 -35px 50px rgba(${glowRgb}, 0.99), 0 -10px 30px rgba(${glowRgb}, 0.99), 0 -5px 20px rgba(${glowRgb}, 0.99), 0 10px 30px rgba(${glowRgb}, 0.8), 0 30px 50px rgba(${glowRgb}, 0.7), 0 50px 70px rgba(${glowRgb}, 0.6), 0 70px 90px rgba(${glowRgb}, 0.5), 0 90px 120px rgba(${glowRgb}, 0.4)`
             }}
           >
-            {t('mainTitle')}
+            {customMainTitle || t('mainTitle')}
           </motion.h2>
         </div>
 
@@ -85,7 +108,7 @@ const LifestyleShowcase = () => {
         <div className="relative group max-w-6xl mx-auto z-10">
           <div 
             ref={scrollContainerRef}
-            className="flex overflow-x-hidden snap-x snap-mandatory rounded-[20px] shadow-[0_0_100px_rgba(22,96,177,0.2)] border border-white/10"
+            className={`flex overflow-x-hidden snap-x snap-mandatory rounded-[20px] shadow-[0_0_100px_rgba(${glowRgb},0.2)] border border-white/10`}
           >
             {items.map((item, index) => (
               <div 
@@ -128,13 +151,13 @@ const LifestyleShowcase = () => {
           <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-4 md:px-8 pointer-events-none">
             <button 
               onClick={prevSlide}
-              className="w-10 h-10 md:w-14 md:h-14 bg-blue-600/30 backdrop-blur-xl border border-white/20 rounded-full flex items-center justify-center text-white shadow-2xl hover:bg-blue-600/50 active:scale-90 transition-all pointer-events-auto"
+              className={`w-10 h-10 md:w-14 md:h-14 ${btnBgClass} backdrop-blur-xl border border-white/20 rounded-full flex items-center justify-center text-white shadow-2xl active:scale-90 transition-all pointer-events-auto`}
             >
               <ChevronLeft size={28} strokeWidth={2.5} />
             </button>
             <button 
               onClick={nextSlide}
-              className="w-10 h-10 md:w-14 md:h-14 bg-blue-600/30 backdrop-blur-xl border border-white/20 rounded-full flex items-center justify-center text-white shadow-2xl hover:bg-blue-600/50 active:scale-90 transition-all pointer-events-auto"
+              className={`w-10 h-10 md:w-14 md:h-14 ${btnBgClass} backdrop-blur-xl border border-white/20 rounded-full flex items-center justify-center text-white shadow-2xl active:scale-90 transition-all pointer-events-auto`}
             >
               <ChevronRight size={28} strokeWidth={2.5} />
             </button>

@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { getNodeByUri, getAllSlugs } from '@/lib/wp-api';
 import ProductLayout from '@/components/ProductLayout/ProductLayout';
+import GarageLayout from '@/components/GarageLayout/GarageLayout';
 import Footer from '@/components/Footer/Footer';
 
 interface CatchAllPageProps {
@@ -84,7 +85,16 @@ export default async function CatchAllPage({ params }: CatchAllPageProps) {
   ) : null;
 
   // LOGIKA WYBORU LAYOUTU
-  if (node.__typename === 'Product' || uriPath.includes('wiata') || uriPath.includes('garaz')) {
+  if (uriPath.includes('garaz')) {
+    return (
+      <>
+        {schemaScript}
+        <GarageLayout node={node} />
+      </>
+    );
+  }
+
+  if (node.__typename === 'Product' || uriPath.includes('wiata')) {
     return (
       <>
         {schemaScript}

@@ -1,7 +1,6 @@
 import { createOpenAI } from '@ai-sdk/openai';
 import { streamText } from 'ai';
 import { findRelevantContext } from '@/lib/knowledge';
-
 import glossary from '@/config/glossary.json';
 
 // Skonfiguruj Groq jako klienta kompatybilnego z OpenAI
@@ -10,10 +9,8 @@ const groq = createOpenAI({
   baseURL: 'https://api.groq.com/openai/v1',
 });
 
-// Wybierz model o wysokich limitach (8b is perfect for high-speed chat)
-const model = groq('llama-3.1-8b-instant');
-
-// export const runtime = 'edge';
+// Tymczasowo zmieniony model na dostępny na Twoim kluczu API
+const model = groq('openai/gpt-oss-120b');
 
 export async function POST(req: Request) {
   try {
@@ -21,7 +18,14 @@ export async function POST(req: Request) {
       throw new Error('API Key configuration missing (GROQ_API_KEY). Please add it to Vercel environment variables.');
     }
 
-    const { messages, currentPageContent, locale } = await req.json();
+    let body;
+    try {
+      body = await req.json();
+    } catch {
+      return new Response('Invalid JSON payload', { status: 400 });
+    }
+
+    const { messages, currentPageContent, locale } = body || {};
     if (!messages) {
       return new Response('Missing messages', { status: 400 });
     }

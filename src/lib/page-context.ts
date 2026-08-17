@@ -7,6 +7,7 @@ export interface PageContext {
   description: string;
   url: string;
   mainContent: string;
+  structuredData?: any;
   configuratorState?: any;
 }
 
@@ -48,7 +49,18 @@ export function getCurrentPageContext(): PageContext | null {
     // Limit text length to avoid Rate Limits (TPD) on free tiers
     const truncatedText = resultText.length > 4000 ? resultText.substring(0, 4000) + '...' : resultText;
 
-    // 3. Configurator State (Placeholder for future feature)
+    // 3. Structured AI Context (if available)
+    const aiContextScript = document.getElementById('gms-ai-context');
+    let structuredData = null;
+    if (aiContextScript) {
+      try {
+        structuredData = JSON.parse(aiContextScript.textContent || '{}');
+      } catch (e) {
+        console.error('[PageContext] Failed to parse AI structured data', e);
+      }
+    }
+
+    // 4. Configurator State (Placeholder for future feature)
     // We look for a global object that the future configurator will set
     const configuratorState = (window as any).__GMS_CONFIG__ || null;
 
@@ -57,6 +69,7 @@ export function getCurrentPageContext(): PageContext | null {
       description,
       url,
       mainContent: truncatedText,
+      structuredData, // Injected via AIContext component
       configuratorState
     };
   } catch (error) {

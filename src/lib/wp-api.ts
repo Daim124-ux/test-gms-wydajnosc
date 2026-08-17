@@ -57,6 +57,31 @@ export async function getNodeByUri(uri: string) {
     };
   }
 
+  // Specyficzny mock dla garaży stalowych
+  if (uri.includes('garaz') || uri.includes('garaż')) {
+    return {
+      __typename: 'Product',
+      id: 'garaze-stalowe-mock',
+      title: 'Garaże stalowe',
+      slug: 'garaze-stalowe',
+      uri: '/system-dom/garaze-stalowe/',
+      content: '',
+      description: '<p>Nowoczesne i trwałe garaże stalowe - bezpieczna przestrzeń dla Twojego samochodu i sprzętu.</p>',
+      image: {
+        sourceUrl: '/assets/images/garaze-stalowe/Garaz_wizualizacja.jpeg',
+        altText: 'Garaże stalowe GMS System'
+      },
+      seo: {
+        title: 'Garaże stalowe | GMS System',
+        metaDesc: 'Poznaj nowoczesne garaże stalowe GMS System. Wytrzymałość, bezpieczeństwo i unikalny design dopasowany do Twoich potrzeb.',
+        canonical: 'https://gms-system.com/system-dom/garaze-stalowe/',
+        opengraphTitle: 'Garaże stalowe | GMS System',
+        opengraphDescription: 'Poznaj nowoczesne garaże stalowe GMS System. Wytrzymałość, bezpieczeństwo i unikalny design dopasowany do Twoich potrzeb.',
+        schema: { raw: '' }
+      }
+    };
+  }
+
   // Generyczny mock dla pozostałych stron
   return {
     __typename: 'Page',
@@ -85,6 +110,7 @@ export async function getAllSlugs() {
   return [
     { slug: 'home', uri: '/' },
     { slug: 'wiata-stalowa-na-rowery', uri: '/system-dom/wiata-stalowa-na-rowery/' },
+    { slug: 'garaze-stalowe', uri: '/system-dom/garaze-stalowe/' },
     { slug: 'o-nas', uri: '/o-nas/' },
     { slug: 'kontakt', uri: '/kontakt/' }
   ];

@@ -209,6 +209,84 @@
       "description": "Dolna część wiaty została zaprojektowana z myślą o maksymalnej funkcjonalności i komforcie użytkowania. Stalowy próg z eleganckim materiałowym pochwytem zapewnia solidne zamknięcie, a neodymowe magnesy precyzyjnie utrzymują go w pozycji, zapobiegając przypadkowemu otwarciu. Specjalnie dopasowane zawiasy oraz dodatkowe gięcie elementu tworzą po otwarciu płynnie wyprofilowany podjazd, ułatwiający wprowadzenie roweru. To przemyślane rozwiązanie łączy trwałość z wygodą, odpowiadając na potrzeby wymagających użytkowników."
     }
   },
+  "garageLayout": {
+    "hero": {
+      "title": "Garaże stalowe",
+      "subtitle": "Jedno i dwustanowiskowe garaże z blachy"
+    },
+    "intro": {
+      "title": "Garaże stalowe",
+      "subtitle": "Jedno i dwustanowiskowe garaże z blachy",
+      "p1": "Szukasz niezawodnego schronienia dla swojego samochodu? Nasze garaże wykonane z blachy ocynkowanej to doskonałe rozwiązanie dla Ciebie! Ich solidna konstrukcja zapewnia trwałość oraz odporność na uszkodzenia, a szeroka gama dostępnych kolorów pozwala na dopasowanie garażu do indywidualnych preferencji estetycznych.",
+      "p2": "Garaże blaszane z GMS System pozwalają na przechowanie auta w bezpiecznych warunkach. Są nie tylko trwałe, ale estetycznie wykonane, a ich konstrukcja pozwala na szybki montaż. Wybierz odpowiadający Ci model i złóż zamówienie już dziś!",
+      "p3": "Nasze garaże oferowane są w wersjach na jeden lub dwa samochody, a drzwi wjazdowe umożliwiają wygodne i bezpieczne parkowanie pojazdów. Dodatkowo, wiele modeli garaży posiada okna, które zapewniają dodatkowe źródło światła naturalnego wewnątrz budynku.",
+      "p4": "Z naszymi garażami nie musisz się martwić o warunki atmosferyczne ani bezpieczeństwo Twojego pojazdu - zadbaj o niego w najlepszy możliwy sposób!"
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Wytrzymałe zawiasy konstrukcyjne"
+      },
+      "stopPoints": {
+        "title": "Innowacyjny system pozycjonowania bramy"
+      },
+      "fabricHandle": {
+        "title": "Pochwyt ułatwiający komfortowe zamykanie"
+      },
+      "steelRods": {
+        "title": "Ryglowanie za pomocą aluminiowo-stalowych cięgien"
+      },
+      "packing": {
+        "title": "Bezpieczny transport w dedykowanych boxach"
+      },
+      "reinforcedCorners": {
+        "title": "Wzmocnione narożniki"
+      },
+      "steelTriangles": {
+        "title": "Usztywniające stalowe trójkąty w narożnikach"
+      },
+      "lidReinforcement": {
+        "title": "Stalowe wzmocnienia konstrukcji nośnej"
+      }
+    },
+    "colorSection": {
+      "title": "Poznaj kolorystykę.",
+      "aesthetic": "Ponadczasowa estetyka w każdym kolorze",
+      "match": "Dopasuj garaż do otoczenia i elewacji",
+      "protection": "Ochrona przed trudnymi warunkami",
+      "quality": "Najwyższa jakość powłoki lakierniczej"
+    },
+    "dimensions": {
+      "title": "Wymiary garażu",
+      "height": "Wysokość",
+      "width": "Szerokość",
+      "depth": "Głębokość",
+      "drawingAlt": "Wymiary garażu - rysunek techniczny"
+    },
+    "nav": {
+      "priceFrom": "Zapytaj o wycenę"
+    },
+    "aluminumFloor": {
+      "title": "Aluminiowa podłoga",
+      "subtitle": "stabilność i ochrona przed wilgocią z gruntu.",
+      "description": "Istnieje możliwość doposażenia garażu w wytrzymałą aluminiową podłogę antypoślizgową. Rozwiązanie to zapobiega przedostawaniu się wilgoci oraz ułatwia utrzymanie czystości wewnątrz garażu."
+    },
+    "lifestyle": {
+      "p1": "Nasze garaże stalowe to nie tylko bezpieczne miejsce na Twój samochód czy motocykl. Dzięki przemyślanej i przestronnej konstrukcji, garaż idealnie sprawdza się jako przydomowy warsztat, składzik na narzędzia ogrodnicze, kosiarki, a także jako bezpieczne miejsce do przechowywania rowerów czy sprzętu sportowego całego gospodarstwa domowego.",
+      "p2": "Wysoka jakość materiałów i precyzyjne spasowanie elementów gwarantują optymalną ochronę przed kradzieżą oraz trudnymi warunkami atmosferycznymi takimi jak silny wiatr, śnieg czy deszcz.",
+      "p3": "Dzięki modularnej budowie możesz elastycznie zagospodarować wnętrze garażu półkami, uchwytami i hakami, dopasowując przestrzeń dokładnie do swoich indywidualnych potrzeb."
+    },
+    "showcase1": {
+      "top": "Niezawodne",
+      "glow": "bezpieczeństwo ryglowania",
+      "bottom": "stalowych elementów.",
+      "description": "Zastosowaliśmy precyzyjnie zaprojektowany system ryglowania, który gwarantuje pełną sztywność i stabilność bramy garażowej w każdej pozycji. To nowoczesne i bezpieczne rozwiązanie gwarantujące długie lata bezawaryjnej pracy."
+    },
+    "showcase2": {
+      "top": "Komfortowy wjazd",
+      "glow": "z niskim aluminiowym progiem",
+      "description": "Profilowany próg z lekkiego aluminium zapewnia płynny i bezproblemowy wjazd pojazdu lub wprowadzenie cięższego sprzętu bez ryzyka uszkodzenia kół czy zawieszenia."
+    }
+  },
   "footer": {
     "unicorn": {
       "tagline": "Nie goń schematów.",

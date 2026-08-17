@@ -21,6 +21,8 @@ interface KaruzelaFunkcjiProps {
   showTitle?: boolean;
   bgClass?: string;
   offsetClass?: string;
+  glowColor?: string;
+  glowAccent?: string;
 }
 
 import { useTranslations } from 'next-intl';
@@ -29,7 +31,9 @@ export default function KaruzelaFunkcji({
   elementy,
   showTitle = true,
   bgClass = 'bg-[#161617]',
-  offsetClass = '-mt-[110px]'
+  offsetClass = '-mt-[110px]',
+  glowColor = '#1660b1',
+  glowAccent = '#C3F2FF',
 }: KaruzelaFunkcjiProps) {
   const t = useTranslations('features');
   const kontenerScrollRef = useRef<HTMLDivElement>(null);
@@ -91,12 +95,20 @@ export default function KaruzelaFunkcji({
           {/* LEWY SPACER - Wypycha pierwszy element, by zrównał się z gridem 1280px (nagłówkiem) na start */}
           <div className="shrink-0 pointer-events-none w-0 sm:w-2 lg:w-4 xl:w-[calc((100vw_-_1280px)_/_2_+_8px)]" />
 
-          {elementy.map((element) => (
-            <div
-              key={element.id}
-              data-id={element.id}
-              className={`snap-start snap-always shrink-0 w-[85vw] md:w-[60vw] h-[50vh] md:h-[70vh] relative rounded-[20px] karta-karuzeli animowana-ramka ${aktywnyId === element.id ? 'aktywna' : ''}`}
-            >
+          {elementy.map((element) => {
+            const isCustomGlow = glowColor !== '#1660b1';
+            return (
+              <div
+                key={element.id}
+                data-id={element.id}
+                className={`snap-start snap-always shrink-0 w-[85vw] md:w-[60vw] h-[50vh] md:h-[70vh] relative rounded-[20px] karta-karuzeli animowana-ramka ${
+                  aktywnyId === element.id ? (isCustomGlow ? 'aktywna aktywna-intensywna' : 'aktywna') : ''
+                }`}
+                style={{
+                  '--glow-color': glowColor,
+                  '--glow-accent': glowAccent,
+                } as React.CSSProperties}
+              >
               <div className={`w-full h-full relative rounded-[20px] overflow-hidden group bg-black transition-all duration-500 border ${aktywnyId === element.id ? 'border-white/5' : 'border-[#86868B]'}`}>
                 {/* OBRAZ / TŁO / VIDEO */}
                 {element.videoUrl && aktywnyId === element.id ? (
@@ -141,7 +153,8 @@ export default function KaruzelaFunkcji({
                 </div>
               </div>
             </div>
-          ))}
+          );
+        })}
 
           {/* PRAWY SPACER - Zabezpiecza margines dla ostatniego elementu */}
           <div className="shrink-0 pointer-events-none w-0 sm:w-2 lg:w-4 xl:w-[calc((100vw_-_1280px)_/_2_+_8px)]" />
@@ -169,6 +182,15 @@ export default function KaruzelaFunkcji({
       <style jsx global>{`
         .hide-scrollbar::-webkit-scrollbar {
           display: none;
+        }
+        .animowana-ramka.aktywna-intensywna::before {
+          opacity: 1 !important;
+          inset: -3px !important;
+        }
+        .animowana-ramka.aktywna-intensywna::after {
+          filter: blur(20px) !important;
+          opacity: 0.95 !important;
+          inset: -3px !important;
         }
       `}</style>
     </section>

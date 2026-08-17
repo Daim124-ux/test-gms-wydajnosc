@@ -12,6 +12,7 @@ import ProductDimensions from '@/components/ProductDimensions/ProductDimensions'
 import Footer from '@/components/Footer/Footer';
 import { ElementKaruzeli } from '@/components/KaruzelaFunkcji/KaruzelaFunkcji';
 import { KolorWiaty } from '@/components/PoznajKolorystyke/PoznajKolorystyke';
+import AIContext from '@/components/Chat/AIContext';
 
 // Dynamiczne ładowanie ciężkich komponentów (Performance Optimization)
 const ThreeDShowcase = dynamic(() => import('@/components/ThreeDShowcase/ThreeDShowcase'), { ssr: false });
@@ -117,7 +118,23 @@ export default function ProductLayout({ node }: ProductLayoutProps) {
   ];
 
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-black w-full">
+    <main className="flex flex-col min-h-screen bg-black text-white w-full">
+      <AIContext 
+        data={{
+          productName: 'Wiaty Rowerowe GMS Rouler',
+          category: 'Wiaty',
+          technicalSpecs: {
+            'Konstrukcja': 'Stalowa, profil zamknięty',
+            'Klapa': 'Wyposażona w amortyzatory gazowe, cichy domyk',
+            'Podłoga': 'Aluminiowa z wyżłobieniami antypoślizgowymi',
+            'Próg': 'Metalowy, ułatwiający wprowadzanie rowerów',
+          },
+          pricing: 'Od 4500 PLN netto, sprawdź w konfiguratorze',
+          availableColors: ['RAL 7016 Mat', 'RAL 9005', 'RAL 8017 Mat'],
+          additionalInfo: 'Idealne rozwiązanie dla osiedli mieszkaniowych. Zawias taśmowy na całej długości.'
+        }}
+      />
+      {/* Hero Section (Apple Style) */}
       <AppleHeroEntrance
         videoUrl="/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark.frames.av1.hevc.webm"
       />

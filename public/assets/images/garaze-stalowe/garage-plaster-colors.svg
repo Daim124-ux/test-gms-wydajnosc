@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Kolory tynków strukturalnych dla garaży GS Premium</title>
+  <desc id="desc">Plansza z próbkami tynków strukturalnych stosowanych w wariancie GS Premium.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ecefe8"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#1d1d1f" flood-opacity="0.12"/>
+    </filter>
+    <filter id="texture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="8" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0.18 0.34"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="94" y="112" font-size="44" font-weight="800" fill="#1d1d1f">Tynki strukturalne - GS Premium</text>
+    <text x="96" y="158" font-size="23" font-weight="500" fill="#5f6368">Elewacyjne wykończenie ścian z attyką. Brama i dodatki pozostają w wybranym kolorze RAL.</text>
+  </g>
+
+  <g transform="translate(96 245)" filter="url(#shadow)" font-family="Inter, Arial, sans-serif">
+    <g transform="translate(0 0)">
+      <rect width="305" height="235" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="257" height="118" rx="20" fill="#f3f0e7" filter="url(#texture)"/>
+      <text x="24" y="188" font-size="25" font-weight="800" fill="#1d1d1f">Biały</text>
+      <text x="24" y="216" font-size="16" font-weight="600" fill="#6e7f63">jasny tynk elewacyjny</text>
+    </g>
+    <g transform="translate(345 0)">
+      <rect width="305" height="235" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="257" height="118" rx="20" fill="#d8c7ac" filter="url(#texture)"/>
+      <text x="24" y="188" font-size="25" font-weight="800" fill="#1d1d1f">Beżowy</text>
+      <text x="24" y="216" font-size="16" font-weight="600" fill="#6e7f63">ciepła elewacja</text>
+    </g>
+    <g transform="translate(690 0)">
+      <rect width="305" height="235" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="257" height="118" rx="20" fill="#cfc3a1" filter="url(#texture)"/>
+      <text x="24" y="188" font-size="25" font-weight="800" fill="#1d1d1f">Piaskowy</text>
+      <text x="24" y="216" font-size="16" font-weight="600" fill="#6e7f63">neutralny i spokojny</text>
+    </g>
+    <g transform="translate(1035 0)">
+      <rect width="305" height="235" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="257" height="118" rx="20" fill="#d8d9d2" filter="url(#texture)"/>
+      <text x="24" y="188" font-size="25" font-weight="800" fill="#1d1d1f">Jasny szary</text>
+      <text x="24" y="216" font-size="16" font-weight="600" fill="#6e7f63">nowoczesny minimalizm</text>
+    </g>
+    <g transform="translate(0 285)">
+      <rect width="305" height="235" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="257" height="118" rx="20" fill="#626763" filter="url(#texture)"/>
+      <text x="24" y="188" font-size="25" font-weight="800" fill="#1d1d1f">Ciemny szary</text>
+      <text x="24" y="216" font-size="16" font-weight="600" fill="#6e7f63">mocny akcent</text>
+    </g>
+    <g transform="translate(345 285)">
+      <rect width="305" height="235" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="257" height="118" rx="20" fill="#b96342" filter="url(#texture)"/>
+      <text x="24" y="188" font-size="25" font-weight="800" fill="#1d1d1f">Ceglasty</text>
+      <text x="24" y="216" font-size="16" font-weight="600" fill="#6e7f63">ciepły charakter</text>
+    </g>
+    <g transform="translate(690 285)">
+      <rect width="305" height="235" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="257" height="118" rx="20" fill="#e7d06a" filter="url(#texture)"/>
+      <text x="24" y="188" font-size="25" font-weight="800" fill="#1d1d1f">Cytrynowy</text>
+      <text x="24" y="216" font-size="16" font-weight="600" fill="#6e7f63">jaśniejszy akcent</text>
+    </g>
+    <g transform="translate(1035 285)">
+      <rect width="305" height="235" rx="28" fill="#fff"/>
+      <rect x="24" y="24" width="257" height="118" rx="20" fill="#637b55" filter="url(#texture)"/>
+      <text x="24" y="188" font-size="25" font-weight="800" fill="#1d1d1f">Zielony</text>
+      <text x="24" y="216" font-size="16" font-weight="600" fill="#6e7f63">naturalne otoczenie</text>
+    </g>
+  </g>
+
+  <g transform="translate(96 835)" font-family="Inter, Arial, sans-serif">
+    <rect width="1408" height="72" rx="36" fill="#fff"/>
+    <text x="36" y="45" font-size="19" font-weight="700" fill="#5f6368">
+      Uwaga: w GS Premium tynk dotyczy ścian. Brama, blendy dachowe, drzwi, okno i rynna nie są pokryte tynkiem.
+    </text>
+  </g>
+</svg>

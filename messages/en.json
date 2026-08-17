@@ -209,6 +209,84 @@
       "description": "The lower part of the shelter is designed for maximum functionality and user comfort. The steel threshold with an elegant fabric handle ensures a secure closure, and neodymium magnets precisely hold it in position, preventing accidental opening. Specially fitted hinges and an additional bend in the element create a smoothly profiled ramp when opened, making it easier to bring in a bicycle. This thoughtful solution combines durability with convenience, meeting the needs of demanding users."
     }
   },
+  "garageLayout": {
+    "hero": {
+      "title": "Steel garages",
+      "subtitle": "Single and double-car sheet metal garages"
+    },
+    "intro": {
+      "title": "Steel garages",
+      "subtitle": "Single and double-car sheet metal garages",
+      "p1": "Looking for a reliable shelter for your car? Our garages made of galvanized sheet metal are the perfect solution for you! Their solid structure ensures durability and resistance to damage, and a wide range of available colors allows you to match the garage to your individual aesthetic preferences.",
+      "p2": "Sheet metal garages from GMS System allow you to store your car in safe conditions. They are not only durable but also aesthetically made, and their structure allows for quick assembly. Choose the model that suits you and place your order today!",
+      "p3": "Our garages are offered in versions for one or two cars, and the entrance doors enable convenient and safe parking of vehicles. Additionally, many garage models have windows that provide an additional source of natural light inside the building.",
+      "p4": "With our garages, you don't have to worry about weather conditions or the safety of your vehicle - take care of it in the best possible way!"
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Durable structural hinges"
+      },
+      "stopPoints": {
+        "title": "Innovative gate positioning system"
+      },
+      "fabricHandle": {
+        "title": "Handle for comfortable closing"
+      },
+      "steelRods": {
+        "title": "Locking with aluminum-steel rods"
+      },
+      "packing": {
+        "title": "Safe transport in dedicated boxes"
+      },
+      "reinforcedCorners": {
+        "title": "Reinforced corners"
+      },
+      "steelTriangles": {
+        "title": "Stiffening steel triangles in corners"
+      },
+      "lidReinforcement": {
+        "title": "Steel reinforcements of the supporting structure"
+      }
+    },
+    "colorSection": {
+      "title": "Explore the colors.",
+      "aesthetic": "Timeless aesthetics in every color",
+      "match": "Match the garage to the surroundings and facade",
+      "protection": "Protection against harsh conditions",
+      "quality": "Highest quality coating"
+    },
+    "dimensions": {
+      "title": "Garage dimensions",
+      "height": "Height",
+      "width": "Width",
+      "depth": "Depth",
+      "drawingAlt": "Garage dimensions - technical drawing"
+    },
+    "nav": {
+      "priceFrom": "Request a quote"
+    },
+    "aluminumFloor": {
+      "title": "Aluminum floor",
+      "subtitle": "stability and protection against ground moisture.",
+      "description": "It is possible to equip the garage with a durable anti-slip aluminum floor. This solution prevents moisture penetration and makes it easier to keep the inside of the garage clean."
+    },
+    "lifestyle": {
+      "p1": "Our steel garages are not just a safe space for your car or motorcycle. Thanks to a well-thought-out and spacious design, the garage is ideal as a backyard workshop, storage for garden tools, lawnmowers, as well as a safe place to store bicycles or sports equipment for the entire household.",
+      "p2": "High-quality materials and precise assembly of elements guarantee optimal protection against theft and difficult weather conditions such as strong wind, snow, or rain.",
+      "p3": "Thanks to the modular design, you can flexibly arrange the interior of the garage with shelves, brackets, and hooks, adapting the space exactly to your individual needs."
+    },
+    "showcase1": {
+      "top": "Reliable",
+      "glow": "locking security",
+      "bottom": "of steel elements.",
+      "description": "We used a precisely designed locking system that guarantees full rigidity and stability of the garage door in every position. This is a modern and safe solution ensuring many years of trouble-free operation."
+    },
+    "showcase2": {
+      "top": "Comfortable entry",
+      "glow": "with a low aluminum threshold",
+      "description": "The profiled threshold made of lightweight aluminum ensures a smooth and trouble-free entry of the vehicle or bringing in heavier equipment without the risk of damaging wheels or suspension."
+    }
+  },
   "footer": {
     "unicorn": {
       "tagline": "Break the mold.",

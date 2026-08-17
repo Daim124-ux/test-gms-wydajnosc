@@ -30,6 +30,7 @@ export interface KolorWiaty {
   nazwa: string;
   hex: string;
   folder: string; // nazwa folderu ze zdjęciami
+  isTynk?: boolean; // Tynk strukturalny z szumem
 }
 
 export interface ElementKolorystyki {
@@ -44,16 +45,34 @@ export interface ElementKolorystyki {
 interface PoznajKolorystykeProps {
   kolory: KolorWiaty[];
   elementy: ElementKolorystyki[];
+  modelUrl?: string;
+  arModelUrl?: string;
+  imagePathPattern?: (colorFolder: string, elementId: string) => string;
+  modelLabel?: string;
+  show3D?: boolean;
+  darkTheme?: boolean;
 }
 
 import { useTranslations } from 'next-intl';
 
-export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystykeProps) {
+export default function PoznajKolorystyke({
+  kolory,
+  elementy,
+  modelUrl = MODEL_URL,
+  arModelUrl = AR_MODEL_URL,
+  imagePathPattern = (colorFolder, elementId) => `/assets/images/wiaty-stalowe-na-rowery/kolorystyka/${colorFolder}/Wiata_rowerowa_${colorFolder}_${elementId}-min.jpg`,
+  modelLabel = 'Model 3D Wiaty',
+  show3D = true,
+  darkTheme = true
+}: PoznajKolorystykeProps) {
   const t = useTranslations('productLayout.colorSection');
 
   const [wybranyKolor, setWybranyKolor] = useState<KolorWiaty>(kolory[0]);
   const [poprzedniKolor, setPoprzedniKolor] = useState<KolorWiaty | null>(null);
   const [aktywnyId, setAktywnyId] = useState<string | null>(elementy[0]?.id || null);
+
+  const ralColors = kolory.filter((k) => !k.isTynk);
+  const tynkColors = kolory.filter((k) => k.isTynk);
   const [splashKey, setSplashKey] = useState(0);
   const [sekcjaWidoczna, setSekcjaWidoczna] = useState(false);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
@@ -105,10 +124,10 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
   useEffect(() => {
     if (isViewerOpen && modelViewerRef.current) {
       const mv = modelViewerRef.current;
-      
+
       const handleLoad = () => setModelLoaded(true);
       mv.addEventListener('load', handleLoad);
-      
+
       // Jeżeli model jest zakeszowany, load mógł wystrzelić zanim React go podpiął
       if (mv.model) {
         setModelLoaded(true);
@@ -130,7 +149,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
       let targetMatName = wybranyKolor.id === 'ocynk' ? "Ocynk" : `RAL${wybranyKolor.id.toString().replace('m', '')}`;
       const isMat = wybranyKolor.nazwa.toLowerCase().includes('mat');
       if (isMat) targetMatName += " mat";
-      
+
       const materials = mv.model.materials;
       const targetNormalized = normalize(targetMatName);
       const targetMaterial = materials.find((m: any) => normalize(m.name) === targetNormalized);
@@ -192,57 +211,106 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
   return (
     <section
       id="sekcja-kolorystyka"
-      className="w-full bg-[#161617] py-24 sm:py-32 relative min-h-[100vh] flex flex-col justify-center snap-center transition-colors duration-1000"
+      className="w-full py-36 sm:py-48 relative min-h-[100vh] flex flex-col justify-center snap-center transition-colors duration-1000 overflow-hidden"
+      style={{
+        backgroundColor: darkTheme ? '#161617' : '#ffffff'
+      }}
     >
-      {/* GLOBALNY EFEKT SPLASH DLA CAŁEJ STRONY */}
+      {/* EFEKT SPLASH DLA TEJ SEKCJI - INTENSYWNE PRZEJŚCIA KOLORÓW */}
       <div
-        className="fixed inset-0 pointer-events-none overflow-hidden transition-opacity duration-1000"
+        className="absolute inset-0 pointer-events-none overflow-hidden transition-opacity duration-1000"
         style={{
           opacity: sekcjaWidoczna ? 1 : 0,
-          zIndex: 5 // Nad bazowym tłem, pod main contentem
+          zIndex: 0
         }}
       >
-        {/* Bazowe tło globalne dla koloru - tylko jako overlay */}
+        {/* Bazowe intensywne tło dla koloru */}
         <div
-          className="absolute inset-0 transition-opacity duration-1000"
+          className="absolute inset-0 transition-all duration-700 ease-out"
           style={{
             backgroundColor: wybranyKolor.hex,
-            opacity: 0.08
+            opacity: sekcjaWidoczna ? (darkTheme ? 0.45 : 0.28) : 0
           }}
         />
 
         <AnimatePresence mode="popLayout">
-          {/* Główna wielka plama Splash */}
+          {/* Główna wielka plama Splash - Intensywna */}
           <motion.div
             key={`main-splash-${splashKey}`}
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 2.5, opacity: 1 }}
+            initial={{ scale: 0.1, opacity: 0 }}
+            animate={{ scale: 2.8, opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute inset-0 flex items-center justify-center"
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute inset-0 flex items-center justify-center pointer-events-none"
           >
             <div
-              className="w-[100vw] h-[100vw] rounded-full blur-[120px]"
-              style={{ backgroundColor: wybranyKolor.hex + '1a' }}
+              className="w-[90vw] h-[90vw] rounded-full blur-[80px]"
+              style={{ backgroundColor: wybranyKolor.hex + (sekcjaWidoczna ? 'B0' : '00') }}
             />
           </motion.div>
 
-          {/* Szybszy impuls Splasha */}
+          {/* Szybszy mocny impuls / fala koloru przy kliknięciu */}
           <motion.div
             key={`impuls-${splashKey}`}
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 3, opacity: 0.6 }}
+            initial={{ scale: 0.2, opacity: 0.9 }}
+            animate={{ scale: 3.5, opacity: 0 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="absolute inset-x-0 bottom-0 flex items-center justify-center"
+            transition={{ duration: 1.1, ease: "easeOut" }}
+            className="absolute inset-0 flex items-center justify-center pointer-events-none"
           >
             <div
-              className="w-[120vw] h-[80vh] rounded-t-full blur-[150px]"
-              style={{ backgroundColor: wybranyKolor.hex + '15' }}
+              className="w-[100vw] h-[100vw] rounded-full blur-[60px]"
+              style={{ backgroundColor: wybranyKolor.hex }}
+            />
+          </motion.div>
+
+          {/* Dolny poświata gradientowa */}
+          <motion.div
+            key={`bottom-glow-${splashKey}`}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 0.85, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            className="absolute inset-x-0 bottom-0 flex items-center justify-center pointer-events-none"
+          >
+            <div
+              className="w-[140vw] h-[60vh] rounded-t-full blur-[100px]"
+              style={{ backgroundColor: wybranyKolor.hex + (sekcjaWidoczna ? '77' : '00') }}
             />
           </motion.div>
         </AnimatePresence>
+
+        {/* STRUKTURALNY TYNK - DROBNOZIARNISTY SUBTELNY TYNK BARANEK */}
+        {wybranyKolor.isTynk && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.35 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="absolute inset-0 pointer-events-none z-[1] mix-blend-overlay"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='plasterBgFilterFine'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='1.6' intercept='-0.3'/%3E%3CfeFuncG type='linear' slope='1.6' intercept='-0.3'/%3E%3CfeFuncB type='linear' slope='1.6' intercept='-0.3'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23plasterBgFilterFine)'/%3E%3C/svg%3E")`,
+              backgroundRepeat: 'repeat',
+            }}
+          />
+        )}
       </div>
+
+      {/* GÓRNA DELIKATNA NAKŁADKA / ROZMYCIE KRAWĘDZI SEKCJI W KOLORZE TŁA STRONY */}
+      <div
+        className={`absolute top-0 inset-x-0 h-28 md:h-40 pointer-events-none z-[5] bg-gradient-to-b ${darkTheme
+            ? 'from-[#161617] via-[#161617]/75 to-transparent'
+            : 'from-white via-white/75 to-transparent'
+          }`}
+      />
+
+      {/* DOLNA DELIKATNA NAKŁADKA / ROZMYCIE KRAWĘDZI SEKCJI W KOLORZE TŁA STRONY */}
+      <div
+        className={`absolute bottom-0 inset-x-0 h-28 md:h-40 pointer-events-none z-[5] bg-gradient-to-t ${darkTheme
+            ? 'from-[#161617] via-[#161617]/75 to-transparent'
+            : 'from-white via-white/75 to-transparent'
+          }`}
+      />
 
       <div className="relative z-10">
         {/* PIONOWY TEKST RAL - Tło po lewej (Mockup style) */}
@@ -260,14 +328,20 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
               }}
               exit={{ opacity: 0, x: 20, scale: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }}
-              style={{ writingMode: 'vertical-rl', WebkitTextStroke: '3px white' }}
+              style={{ writingMode: 'vertical-rl', WebkitTextStroke: darkTheme ? '3px white' : '3px black' }}
               className="select-none flex flex-col items-center"
             >
-              <span className="text-[120px] 2xl:text-[150px] font-black text-transparent tracking-tighter leading-none">
-                {wybranyKolor.nazwa.split(' - ')[0].replace(' Mat', '').replace(' ', '')}
+              <span className="text-[120px] 2xl:text-[150px] font-black text-transparent tracking-tighter leading-none whitespace-nowrap">
+                {(() => {
+                  const czysty = wybranyKolor.nazwa.split(' - ')[0].replace(' Mat', '');
+                  if (czysty.toLowerCase() === 'ciemny szary') return 'C. Szary';
+                  if (czysty.toLowerCase() === 'jasny szary') return 'J. Szary';
+                  return czysty.replace(' ', '');
+                })()}
               </span>
               {wybranyKolor.nazwa.toLowerCase().includes('mat') && (
-                <span className="text-[32px] 2xl:text-[40px] font-bold text-white mt-4 tracking-[0.2em] uppercase opacity-60">
+                <span className={`text-[32px] 2xl:text-[40px] font-bold mt-4 tracking-[0.2em] uppercase opacity-60 ${darkTheme ? 'text-white' : 'text-slate-950'
+                  }`}>
                   MAT
                 </span>
               )}
@@ -315,7 +389,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                       className={`absolute ${element.rozmiarObrazu === 'cover' ? 'inset-0' : 'inset-[30px]'} brightness-[1.15]`}
                     >
                       <ResponsiveAsset
-                        src={`/assets/images/wiaty-stalowe-na-rowery/kolorystyka/${wybranyKolor.folder}/Wiata_rowerowa_${wybranyKolor.folder}_${element.id}-min.jpg`}
+                        src={imagePathPattern(wybranyKolor.folder, element.id)}
                         type="image"
                         alt={`${wybranyKolor.nazwa} - ${element.tytul}`}
                         className={`w-full h-full ${element.rozmiarObrazu === 'cover' ? 'object-cover' : 'object-contain'
@@ -324,18 +398,52 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                     </motion.div>
                   </AnimatePresence>
 
-                  <div className="absolute inset-0 bg-black/20" />
+                  <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+
+                  {/* EFEKT DROBNEGO TYNKU STRUKTURALNEGO NA KAFELKU (DROBNE ZIARNO) */}
+                  <div
+                    className={`absolute inset-0 pointer-events-none z-10 mix-blend-overlay transition-opacity duration-700 ease-out ${wybranyKolor.isTynk ? 'opacity-40' : 'opacity-0'
+                      }`}
+                    style={{
+                      backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='plasterCardFine'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='1.8' intercept='-0.4'/%3E%3CfeFuncG type='linear' slope='1.8' intercept='-0.4'/%3E%3CfeFuncB type='linear' slope='1.8' intercept='-0.4'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23plasterCardFine)'/%3E%3C/svg%3E")`,
+                      backgroundRepeat: 'repeat',
+                      filter: 'contrast(125%)',
+                    }}
+                  />
+
+                  {/* PIGUŁKA Z NAZWĄ KOLORU - W prawym dolnym rogu kafelka, 10px od rogu */}
+                  <div className="absolute right-[10px] bottom-[10px] z-20 pointer-events-none">
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={wybranyKolor.id}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.9 }}
+                        transition={{ duration: 0.2 }}
+                        className={`h-9 px-4 flex items-center justify-center rounded-full shadow-xl backdrop-blur-xl border whitespace-nowrap ${darkTheme
+                          ? 'bg-white/10 border-white/20 text-white'
+                          : 'bg-black/60 border-white/20 text-white shadow-2xl'
+                          }`}
+                      >
+                        <span className="text-[11px] font-bold tracking-[0.16em] uppercase whitespace-nowrap">
+                          {wybranyKolor.nazwa.split(' - ')[0]}
+                        </span>
+                      </motion.div>
+                    </AnimatePresence>
+                  </div>
 
                   {/* GŁÓWNY PRZYCISK 3D/AR */}
-                  <div className="absolute top-4 right-4 z-20 flex gap-2">
-                    <button
-                      onClick={handle3DClick}
-                      className="w-10 h-10 rounded-full bg-blue-600/60 backdrop-blur-md border border-blue-400/40 flex items-center justify-center text-white/90 hover:text-white hover:bg-blue-600 transition-all active:scale-90 shadow-[0_0_15px_rgba(59,130,246,0.5)]"
-                      title="Zobacz w 3D / AR"
-                    >
-                      <Box size={20} />
-                    </button>
-                  </div>
+                  {show3D && (
+                    <div className="absolute top-4 right-4 z-20 flex gap-2">
+                      <button
+                        onClick={handle3DClick}
+                        className="w-10 h-10 rounded-full bg-blue-600/60 backdrop-blur-md border border-blue-400/40 flex items-center justify-center text-white/90 hover:text-white hover:bg-blue-600 transition-all active:scale-90 shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+                        title="Zobacz w 3D / AR"
+                      >
+                        <Box size={20} />
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -343,81 +451,91 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
             <div className="shrink-0 pointer-events-none w-0 sm:w-2 lg:w-4 xl:w-[calc((100vw_-_1280px)_/_2_+_8px)]" />
           </div>
 
-          {/* NAWIGACJA + PICKER - Wspólna linia na gridzie 1280px */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative flex flex-col items-center justify-center pb-8 gap-6">
-            {/* Liquid Glass Label + Picker Container */}
-            <div className="relative flex items-center justify-center w-full">
-              {/* Liquid Glass Picker - Stable Center */}
-              <div className="backdrop-blur-3xl bg-white/5 border border-white/10 rounded-[24px] md:rounded-full p-1.5 md:p-1 flex flex-wrap md:flex-nowrap justify-center gap-1 md:gap-1.5 shadow-2xl ring-1 ring-white/5 z-10 max-w-[calc(100vw-32px)] md:max-w-none">
-                {kolory.map((kolor) => (
-                  <button
-                    key={kolor.id}
-                    onClick={() => zmienKolor(kolor)}
-                    className={`w-[30px] h-[30px] md:w-8 md:h-8 rounded-full flex-shrink-0 transition-all duration-500 relative flex items-center justify-center
-                      ${wybranyKolor.id === kolor.id ? 'scale-100' : 'scale-75 hover:scale-95 opacity-60 hover:opacity-100'}`}
-                    style={{ backgroundColor: kolor.hex }}
-                  >
-                    {wybranyKolor.id === kolor.id && (
-                      <>
-                        <motion.div
-                          layoutId="activeColorRingRefined"
-                          className="absolute inset-[-5px] border-[2px] border-white/60 rounded-full shadow-[0_0_10px_rgba(255,255,255,0.2)]"
-                          transition={{ type: 'spring', bounce: 0.3, duration: 0.7 }}
-                        />
-                        <div className="w-1 h-1 bg-white rounded-full" />
-                      </>
-                    )}
-                  </button>
-                ))}
-              </div>
+          {/* NAWIGACJA + PICKER - Pigułki kolorów w jednej linii z wysokością h-10 */}
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative flex flex-col items-center justify-center pb-8 gap-4">
+            {/* Single Horizontal Row containing color pills: RAL & TYNK */}
+            <div className="relative flex flex-row flex-wrap items-center justify-center gap-3 md:gap-4 z-10 w-full">
+              {/* PIGUŁKA 1: POWŁOKI RAL (DOKŁADNIE TEJ SAMEJ WYSOKOŚCI H-10 / 40px) */}
+              {ralColors.length > 0 && (
+                <div className="h-10 backdrop-blur-3xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-full px-3 flex items-center gap-1.5 shadow-xl ring-1 ring-black/5 dark:ring-white/5">
+                  <span className={`text-[9px] md:text-[10px] font-bold tracking-[0.15em] uppercase px-1 select-none ${darkTheme ? 'text-zinc-400' : 'text-zinc-500'}`}>
+                    RAL
+                  </span>
+                  {ralColors.map((kolor) => (
+                    <button
+                      key={kolor.id}
+                      onClick={() => zmienKolor(kolor)}
+                      title={kolor.nazwa.split(' - ')[0]}
+                      className={`w-[26px] h-[26px] md:w-[28px] md:h-[28px] rounded-full flex-shrink-0 transition-all duration-300 relative flex items-center justify-center overflow-hidden border border-black/20 dark:border-white/30 shadow-sm
+                        ${wybranyKolor.id === kolor.id ? 'scale-100 ring-2 ring-offset-1 ring-zinc-700 dark:ring-white border-transparent' : 'scale-90 hover:scale-100 opacity-80 hover:opacity-100'}`}
+                      style={{ backgroundColor: kolor.hex }}
+                    >
+                      {wybranyKolor.id === kolor.id && (
+                        <>
+                          <motion.div
+                            layoutId="activeColorRingRefined"
+                            className="absolute inset-[-4px] border-[2px] border-white/60 rounded-full shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                            transition={{ type: 'spring', bounce: 0.3, duration: 0.7 }}
+                          />
+                          <div className="w-1.5 h-1.5 bg-white rounded-full z-10 relative shadow-sm" />
+                        </>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              )}
 
-              {/* Pill - Integrated to the right, stabilized */}
-              <div className="absolute left-[calc(50%+220px)] hidden lg:block">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={wybranyKolor.id}
-                    initial={{ opacity: 0, x: -10, filter: 'blur(10px)' }}
-                    animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
-                    exit={{ opacity: 0, x: 10, filter: 'blur(10px)' }}
-                    className="backdrop-blur-2xl bg-white/10 border border-white/20 px-5 py-2 rounded-full shadow-2xl ring-1 ring-white/10"
-                  >
-                    <span className="text-white text-[11px] font-bold tracking-[0.2em] uppercase whitespace-nowrap">
-                      {wybranyKolor.nazwa.split(' - ')[0]}
-                    </span>
-                  </motion.div>
-                </AnimatePresence>
-              </div>
-
-              {/* Mobile Pill - below on mobile */}
-              <div className="absolute top-[calc(100%+12px)] lg:hidden">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={wybranyKolor.id + '-mobile'}
-                    initial={{ opacity: 0, y: -5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="backdrop-blur-xl bg-white/10 border border-white/20 px-4 py-1.5 rounded-full"
-                  >
-                    <span className="text-white text-[10px] font-bold tracking-[0.1em] uppercase">
-                      {wybranyKolor.nazwa.split(' - ')[0]}
-                    </span>
-                  </motion.div>
-                </AnimatePresence>
-              </div>
+              {/* PIGUŁKA 2: TYNK STRUKTURALNY (DOKŁADNIE TEJ SAMEJ WYSOKOŚCI H-10 / 40px) */}
+              {tynkColors.length > 0 && (
+                <div className="h-10 backdrop-blur-3xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-full px-3 flex items-center gap-1.5 shadow-xl ring-1 ring-black/5 dark:ring-white/5">
+                  <span className={`text-[9px] md:text-[10px] font-bold tracking-[0.15em] uppercase px-1 select-none ${darkTheme ? 'text-zinc-400' : 'text-zinc-500'}`}>
+                    TYNK
+                  </span>
+                  {tynkColors.map((kolor) => (
+                    <button
+                      key={kolor.id}
+                      onClick={() => zmienKolor(kolor)}
+                      title={kolor.nazwa}
+                      className={`w-[26px] h-[26px] md:w-[28px] md:h-[28px] rounded-full flex-shrink-0 transition-all duration-300 relative flex items-center justify-center overflow-hidden border border-black/20 dark:border-white/30 shadow-sm
+                        ${wybranyKolor.id === kolor.id ? 'scale-100 ring-2 ring-offset-1 ring-zinc-700 dark:ring-white border-transparent' : 'scale-90 hover:scale-100 opacity-80 hover:opacity-100'}`}
+                      style={{ backgroundColor: kolor.hex }}
+                    >
+                      <div
+                        className="absolute inset-0 rounded-full opacity-50 mix-blend-overlay pointer-events-none"
+                        style={{
+                          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilterSwatchFine'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilterSwatchFine)'/%3E%3C/svg%3E")`,
+                          backgroundRepeat: 'repeat',
+                        }}
+                      />
+                      {wybranyKolor.id === kolor.id && (
+                        <>
+                          <motion.div
+                            layoutId="activeColorRingRefined"
+                            className="absolute inset-[-4px] border-[2px] border-white/60 rounded-full shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                            transition={{ type: 'spring', bounce: 0.3, duration: 0.7 }}
+                          />
+                          <div className="w-1.5 h-1.5 bg-white rounded-full z-10 relative shadow-sm" />
+                        </>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Strzałki - Prawa (+90px shift per user manual edit) */}
-            <div className="hidden md:flex gap-2 absolute right-0 -translate-x-[90px]">
+            <div className="hidden md:flex gap-2 absolute right-0 -translate-x-[90px] z-40">
               <button
                 onClick={przewinWLewo}
-                className="w-10 h-10 rounded-full bg-zinc-800/80 border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-black transition-all active:scale-95"
+                className="w-10 h-10 rounded-full bg-black/8 dark:bg-zinc-800/80 border border-black/10 dark:border-white/10 flex items-center justify-center text-[#1d1d1f] dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all active:scale-95 shadow-md"
               >
-                <ChevronLeft size={20} />
+                <ChevronLeft size={18} />
               </button>
               <button
                 onClick={przewinWPrawo}
-                className="w-10 h-10 rounded-full bg-zinc-800/80 border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-black transition-all active:scale-95"
+                className="w-10 h-10 rounded-full bg-black/8 dark:bg-zinc-800/80 border border-black/10 dark:border-white/10 flex items-center justify-center text-[#1d1d1f] dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all active:scale-95 shadow-md"
               >
-                <ChevronRight size={20} />
+                <ChevronRight size={18} />
               </button>
             </div>
           </div>
@@ -446,7 +564,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
               <div className="absolute inset-0 z-0 pointer-events-none bg-black">
                 <ModelViewer
                   ref={modelViewerRef}
-                  src={MODEL_URL}
+                  src={modelUrl}
                   ar
                   ar-modes="webxr quick-look"
                   ar-scale="fixed"
@@ -462,7 +580,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
               {/* Główny widok wizualny na wierzchu */}
               <div className="absolute inset-0 z-10 pointer-events-auto">
                 <CarportViewer
-                  url={MODEL_URL}
+                  url={modelUrl}
                   color={wybranyKolor.hex}
                   colorId={wybranyKolor.id}
                   isMat={wybranyKolor.nazwa.toLowerCase().includes('mat')}
@@ -471,7 +589,7 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
             </div>
 
             <div className="absolute top-8 left-8 z-[4010] pointer-events-none text-left hidden md:block">
-              <p className="text-white/50 text-xs tracking-[0.2em] uppercase font-semibold mb-1">Model 3D Wiaty</p>
+              <p className="text-white/50 text-xs tracking-[0.2em] uppercase font-semibold mb-1">{modelLabel}</p>
               <h3 className="text-white text-2xl font-bold tracking-wide">{wybranyKolor.nazwa}</h3>
             </div>
 
@@ -484,8 +602,8 @@ export default function PoznajKolorystyke({ kolory, elementy }: PoznajKolorystyk
                   }
                 }}
                 className={`absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-4 px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 active:scale-95 z-50 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
-                  ${modelLoaded 
-                    ? 'bg-white text-black hover:bg-zinc-100 hover:-translate-y-1 hover:shadow-white/10' 
+                  ${modelLoaded
+                    ? 'bg-white text-black hover:bg-zinc-100 hover:-translate-y-1 hover:shadow-white/10'
                     : 'bg-zinc-900 text-zinc-600 cursor-not-allowed'}`}
                 disabled={!modelLoaded}
               >
