@@ -29,8 +29,16 @@ export default function AppleHeroEntrance({ videoUrl, imageUrl, title, subtitle,
   const resolveS3Url = (url?: string) => {
     if (!url) return undefined;
     if (url.startsWith('http')) return url;
-    // Lokalne pliki wideo serwujemy bezpośrednio z serwera Next.js (błyskawiczny seeking/scrubbing po klatkach)
-    return url;
+    
+    // Na Vercelu (w produkcji) pliki multimedialne pobieramy z szybkiego CDN CloudFront
+    const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
+    const cleanSrc = url.startsWith('/') ? url.slice(1) : url;
+
+    if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+      return url;
+    }
+
+    return `${CLOUDFRONT_URL}/_optimized/${cleanSrc}`;
   };
 
   const resolvedVideoUrl = resolveS3Url(videoUrl);
