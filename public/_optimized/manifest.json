@@ -1655,6 +1655,222 @@
         ]
       },
       "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/modele_ar/wiata_rowerowa/Material__805basecolortexture.jpeg.jpg"
+    },
+    "assets/images/apple-widget/colors.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAgf/xAAiEAABAwMDBQAAAAAAAAAAAAABAAIDBAURITEyEhMicfD/xAAVAQEBAAAAAAAAAAAAAAAAAAAEA//EABYRAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEQMRAD8AZ3kx9DnCpjJA2+K5peXxNpZe2eR19qguD3HOSVEVriYZsk80fKLaUpGg3QssPihNDf/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/colors_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/colors_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/colors_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/colors_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/colors_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/colors_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/apple-widget/colors.jpg"
+    },
+    "assets/images/apple-widget/durability.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYDBQf/xAAeEAACAgIDAQEAAAAAAAAAAAABAgMEAAUREjFBUf/EABcBAAMBAAAAAAAAAAAAAAAAAAECBAX/xAAbEQACAQUAAAAAAAAAAAAAAAAAAQIREiFBQv/aAAwDAQACEQMRAD8AQIXs67VLK1dnJ+8eZPQmlt1y8teQsfOqnjGHSO0sRjkPZD8OXasYYGSIKq/gUZoTUuWRQt2jNLmtvGdilVup85wxnvWJRZYCRuMMbIKI/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/durability_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/durability_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/durability_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/durability_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/durability_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/durability_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/apple-widget/durability.jpg"
+    },
+    "assets/images/apple-widget/facade.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAf/xAAhEAABAwQCAwEAAAAAAAAAAAABAgMEAAUREhMxBiFBIv/EABYBAQEBAAAAAAAAAAAAAAAAAAEAA//EABoRAAIDAQEAAAAAAAAAAAAAAAECAAMSESH/2gAMAwEAAhEDEQA/AIHxG8IjwFxIiVqlOp9Enqni5F5jQDxrOupyXPprnfj5LS+Rs6rHRFNnrlMdaQ25IcUjfomq221WAVuCFddZU6HZL3CSt2W4p3PJn9YH2ist+dWm5uhKsCisdMfY5UeT/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/facade_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/facade_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/facade_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/facade_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/facade_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/facade_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/apple-widget/facade.jpg"
+    },
+    "assets/images/apple-widget/gates.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAgf/xAAjEAACAgEDBQADAAAAAAAAAAACAwEEAAURMQYSExQhQVGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwL/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgASEf/aAAwDAQACEQMRAD8A5h0qFWwU+dLGH2/CDmMfWNUdprh9SyyPH+CnjIypYdXp9yGEsp+TIztmQcxsGTDIpnmZnfBiap6HzL1JIJ7qy5r/AE618nqGnexZmI7mcb/3DENSslyBNqxIv3thinJoYXf/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/gates_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/gates_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/gates_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/gates_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/gates_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/gates_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/apple-widget/gates.jpg"
+    },
+    "assets/images/apple-widget/roof.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGB//EACMQAAIBAwQBBQAAAAAAAAAAAAECAwAEBQYREiFREzJBcYH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAYEQEBAQEBAAAAAAAAAAAAAAABABIhAv/aAAwDAQACEQMRAD8AhcDqhsHIl7s0frDceDTm413LmCIpL525HYR/FS+v4kix+OSNQqhB0PylOl1Av3YAcghIPjo0vDzkECrJckscjLcZe3hkB9h26orF807PlblnJZi57P3RVptzf//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/roof_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/roof_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/roof_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/roof_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/roof_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/roof_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/apple-widget/roof.jpg"
+    },
+    "assets/images/apple-widget/sizes.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQHBQb/xAAjEAACAgEDAwUAAAAAAAAAAAABAgMEAAUREgYhQRMiMTKh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGhEAAwEAAwAAAAAAAAAAAAAAAAEREgIhUf/aAAwDAQACEQMRAD8An/QDz1nmsIeMgG3u+DndTdfXaVc1544m4j7jz+ZK6tmYQhRIQN8YkkeSNi7Fio7b4WYtM2nFENa5qVizqLzeq559+3jDMFZXZQSxJwyZ5Puh1eH/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/sizes_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/sizes_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/sizes_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/sizes_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/sizes_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/sizes_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/apple-widget/sizes.jpg"
+    },
+    "assets/images/apple-widget/structure.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcEBQb/xAAgEAACAQQDAAMAAAAAAAAAAAABAgMABAUREiExQVFS/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABgRAQADAQAAAAAAAAAAAAAAAAABEhMC/9oADAMBAAIRAxEAPwBhZLLS3EwZZ4UXfQVxUZ7264sVmDdfLCsbZxIYjvfn6NUkVxMMk6CV+PfXKnaQqb2LycUlmpuGIkBIOjRSnW4mG9SN790U9Ohzh//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/structure_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/structure_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/structure_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/structure_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/structure_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/apple-widget/structure_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/apple-widget/structure.jpg"
+    },
+    "assets/images/garaze-stalowe/Garaz_wizualizacja.jpeg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHAwb/xAAiEAACAgIBAwUAAAAAAAAAAAABAgMEAAURBiExEhMUUmH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgQF/8QAHxEAAQMDBQAAAAAAAAAAAAAAAAECEQMEEhMUITEy/9oADAMBAAIRAxEAPwDtund5X2lYyKso9scu4HK5j1XvNZV1kifKBeZCEI78H9xnThjoUpoaaLFEVPKr4xHR1dKWlZMtdHPJPfk4y3VTzJPoMjojtfYW6itGiyTKWLBwPPOGVCKpXRfSsMYAP1wzN3bk4Dgh/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/garaze-stalowe/Garaz_wizualizacja.jpeg"
+    },
+    "assets/images/garaze-stalowe/Garaz_wizualizacja_testowa.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGA//EACUQAAEDBAECBwAAAAAAAAAAAAECAwQABQYRMRITFCEjJDJBUf/EABYBAQEBAAAAAAAAAAAAAAAAAAQCA//EAB0RAAEEAgMAAAAAAAAAAAAAAAABAgMSEWETISL/2gAMAwEAAhEDEQA/AICBdbli0qJ4RxIdkDn8p4M9uzrqluS3O8k9Ohwansb95DQuV6qkfEq+qZ3FptmE440gJWDyKKkeW+RNqu7NLjmVxfklb8jS9Aa1RUFdHnHJilLUSdDzorBYdl82j//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_testowa_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_testowa_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_testowa_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_testowa_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_testowa_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/garaze-stalowe/Garaz_wizualizacja_testowa_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/garaze-stalowe/Garaz_wizualizacja_testowa.jpg"
+    },
+    "assets/images/store/garage-steel.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAQFBgf/xAAmEAACAgIBAwIHAAAAAAAAAAABAgADBAURBzFBBiMSITJCcYGS/8QAGAEAAgMAAAAAAAAAAAAAAAAAAwQAAQL/xAAdEQADAAEFAQAAAAAAAAAAAAAAAQIEAxIUFSFR/9oADAMBAAIRAxEAPwDpaZ2nvyDSmUrWj7RJuLrsW1bbL71oVOwPf9zB9PfTeO965VltouZeVDA/Iyx6gUZOl1z5RyXyRa4+OsA+DC1larQvGPC9ZsDq2TgcFgRyGHYiJjtb1WNeDTW+C4KKF+nwBEnYNGuFLLNM+6pvbFa/hZG2FjbFQuXw6jxwIiK36gpHXU4fA9lP5EREBsn4Uf/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/garage-steel_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/garage-steel_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/garage-steel_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/garage-steel_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/garage-steel_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/garage-steel_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/store/garage-steel.jpg"
+    },
+    "assets/images/store/green-roof.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAUCBAP/xAAkEAACAgIBAwQDAAAAAAAAAAABAgADBBEFEiExBhMUIzJBYf/EABcBAAMBAAAAAAAAAAAAAAAAAAECAwD/xAAaEQEAAgMBAAAAAAAAAAAAAAAAARESISJB/9oADAMBAAIRAxEAPwCMl16Xlskqu/5+5YXmlr4/20sDWD8jIfqi/wCK9BxyNMO4IlBONduMx8gugFi7Oh3izd6Wx9YTPquHXYm28bETkaihCQhOoh6LbozMeq8gWr1Tdl9gxasYN9S9gIiVlnkEXXiIiEH/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/green-roof_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/green-roof_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/green-roof_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/green-roof_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/green-roof_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/green-roof_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/store/green-roof.jpg"
+    },
+    "assets/images/store/nano-enclosure.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUGA//EACQQAAEEAgICAQUAAAAAAAAAAAEAAgMEBREGIRIUMiIxcYGR/8QAFwEBAQEBAAAAAAAAAAAAAAAAAwECBP/EABkRAQEBAAMAAAAAAAAAAAAAAAEAAhESIv/aAAwDAQACEQMRAD8Ax+FsV6lwZiK0RkpGeRj10StNi+T5KfDvqvpiQWD3saVrDcUw9Sj7ADDCD9LpD2B/VE4pZcOWXYXMdLTHw8WjX6Q7QPN1ANwqZ+bGxerG9kQYfgT9kWmyHFql20+c03OL+9gFEXVrxmq8Ix1e/VfWtBz4R347W2xGEx9Nr3V67GuJ1vXaImYmqsijY3xbGwD8IiKWb//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/nano-enclosure_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/nano-enclosure_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/nano-enclosure_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/nano-enclosure_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/nano-enclosure_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/store/nano-enclosure_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/store/nano-enclosure.jpg"
     }
   },
   "videos": {
@@ -1817,6 +2033,39 @@
         ]
       },
       "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.webm"
+    },
+    "assets/videos/garaze-stalowe/Garaz_hero_video.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_video.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_video.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_video.mp4"
+    },
+    "assets/videos/garaze-stalowe/Garaz_hero_video_edit.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_video_edit.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_video_edit.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_video_edit.mp4"
+    },
+    "assets/videos/garaze-stalowe/Garaz_hero_videoo.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_videoo.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_videoo.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_videoo.mp4"
     }
   }
 }
