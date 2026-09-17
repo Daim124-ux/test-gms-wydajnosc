@@ -9,9 +9,6 @@ const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
 const resolveMediaUrl = (url?: string) => {
   if (!url) return '';
   if (url.startsWith('http')) return url;
-  if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
-    return url;
-  }
   const cleanSrc = url.startsWith('/') ? url.slice(1) : url;
   return `${CLOUDFRONT_URL}/_optimized/${cleanSrc}`;
 };
