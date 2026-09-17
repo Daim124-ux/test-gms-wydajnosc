@@ -4,13 +4,25 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
+
+const resolveMediaUrl = (url?: string) => {
+  if (!url) return '';
+  if (url.startsWith('http')) return url;
+  if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+    return url;
+  }
+  const cleanSrc = url.startsWith('/') ? url.slice(1) : url;
+  return `${CLOUDFRONT_URL}/_optimized/${cleanSrc}`;
+};
+
 // Kategorie dostępne w hero
 const CATEGORIES = [
-  { id: 'garaze', label: 'garaże', image: '/assets/images/hero_bg_garaze.jpg', callout: 'GARAŻE MODUŁOWE', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg> },
-  { id: 'altany', label: 'altany', image: '/assets/images/hero_bg_altany.jpg', callout: 'ALTANA ŚMIETNIKOWA', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg> },
-  { id: 'wiaty', label: 'wiaty', image: '/assets/images/hero_bg_wiaty.jpg', callout: 'WIATA ROWEROWA', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> },
-  { id: 'scianki', label: 'ścianki', image: '/assets/images/hero_bg_scianki.jpg', callout: 'ŚCIANKI DZIAŁOWE', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg> },
-  { id: 'zielony-dach', label: 'garaże z zielonym dachem', image: '/assets/images/hero_bg_zielony_dach.jpg', callout: 'GARAŻ Z ZIELONYM DACHEM', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg> }
+  { id: 'garaze', label: 'garaże', image: '/assets/images/hero_bg_garaze.jpg', video: '/assets/videos/garaze-stalowe/Garaz_hero_video.mp4', callout: 'GARAŻE MODUŁOWE', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg> },
+  { id: 'altany', label: 'altany', image: '/assets/images/hero_bg_altany.jpg', video: null, callout: 'ALTANA ŚMIETNIKOWA', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg> },
+  { id: 'wiaty', label: 'wiaty', image: '/assets/images/hero_bg_wiaty.jpg', video: '/assets/videos/wiaty-stalowe-na-rowery/Animacja-hero-wiata-na-rowery-dark_frames.av1.hevc.mp4', callout: 'WIATA ROWEROWA', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> },
+  { id: 'scianki', label: 'ścianki', image: '/assets/images/hero_bg_scianki.jpg', video: null, callout: 'ŚCIANKI DZIAŁOWE', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg> },
+  { id: 'zielony-dach', label: 'garaże z zielonym dachem', image: '/assets/images/hero_bg_zielony_dach.jpg', video: null, callout: 'GARAŻ Z ZIELONYM DACHEM', icon: <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg> }
 ];
 
 export default function HomeHero() {
@@ -27,21 +39,43 @@ export default function HomeHero() {
   return (
     <div className="relative w-full h-[100vh] min-h-[800px] flex flex-col justify-between overflow-hidden font-sans bg-[#111]">
       
-      {/* Background Image ze smooth transistion */}
+      {/* Background Image / Video ze smooth transition */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="wait">
-          <motion.img 
+          <motion.div
             key={activeCategory.id}
-            src={activeCategory.image} 
-            alt={activeCategory.label}
             initial={{ opacity: 0, scale: 1.05 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.2, ease: "easeInOut" }}
-            className="w-full h-full object-cover"
-          />
+            className="w-full h-full relative"
+          >
+            {activeCategory.video ? (
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                poster={resolveMediaUrl(activeCategory.image)}
+                className="w-full h-full object-cover"
+              >
+                <source src={resolveMediaUrl(activeCategory.video)} type="video/mp4" />
+                <img
+                  src={resolveMediaUrl(activeCategory.image)}
+                  alt={activeCategory.label}
+                  className="w-full h-full object-cover"
+                />
+              </video>
+            ) : (
+              <img 
+                src={resolveMediaUrl(activeCategory.image)} 
+                alt={activeCategory.label}
+                className="w-full h-full object-cover"
+              />
+            )}
+          </motion.div>
         </AnimatePresence>
-        {/* Lekki gradient tylko z lewej i dołu, żeby nie psuć ładnego zdjęcia */}
+        {/* Lekki gradient tylko z lewej i dołu */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
       </div>
