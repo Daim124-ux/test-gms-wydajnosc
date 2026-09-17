@@ -117,9 +117,11 @@ export default function Header() {
     return null;
   }
 
+  const isHomeTop = pathname === '/' && !isScrolled;
+
   return (
     <>
-      <header className={`site-header ${isScrolled ? 'is-scrolled' : ''} ${isMobileOpen ? 'is-mobile-open' : ''}`}>
+      <header className={`site-header ${isScrolled ? 'is-scrolled' : ''} ${isMobileOpen ? 'is-mobile-open' : ''} ${isHomeTop ? 'is-home-top' : ''} ${pathname === '/' ? 'dark' : ''}`}>
         <div className="site-header__bar">
           <div className="site-brand">
             <Link href="/" className="site-brand__logo" aria-label="GMS System — strona główna">

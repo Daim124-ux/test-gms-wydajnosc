@@ -67,6 +67,9 @@ export default function Footer({ variant }: FooterProps) {
   return (
     <div className={variant === 'dark' ? 'dark-variant' : variant === 'light' ? 'light-variant' : ''}>
       <footer className={`footer-main ${variant === 'dark' ? 'dark-variant' : 'light-variant'}`}>
+        
+        {/* WARSTWA PRZEJŚCIA (GRADIENT BLUR) NAD STOPKĄ */}
+        <div className="footer-transition-top" />
 
         {/* WARSTWA 1: PIKTOGRAMY */}
         <div className="footer-piktogramy-layer">

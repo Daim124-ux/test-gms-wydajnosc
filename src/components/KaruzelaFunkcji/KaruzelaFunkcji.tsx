@@ -101,60 +101,58 @@ export default function KaruzelaFunkcji({
               <div
                 key={element.id}
                 data-id={element.id}
-                className={`snap-start snap-always shrink-0 w-[85vw] md:w-[60vw] h-[50vh] md:h-[70vh] relative rounded-[20px] karta-karuzeli animowana-ramka ${
-                  aktywnyId === element.id ? (isCustomGlow ? 'aktywna aktywna-intensywna' : 'aktywna') : ''
-                }`}
+                className={`snap-start snap-always shrink-0 w-[85vw] md:w-[60vw] h-[50vh] md:h-[70vh] relative rounded-[20px] karta-karuzeli animowana-ramka ${aktywnyId === element.id ? (isCustomGlow ? 'aktywna aktywna-intensywna' : 'aktywna') : ''
+                  }`}
                 style={{
                   '--glow-color': glowColor,
                   '--glow-accent': glowAccent,
                 } as React.CSSProperties}
               >
-              <div className={`w-full h-full relative rounded-[20px] overflow-hidden group bg-black transition-all duration-500 border ${aktywnyId === element.id ? 'border-white/5' : 'border-[#86868B]'}`}>
-                {/* OBRAZ / TŁO / VIDEO */}
-                {element.videoUrl && aktywnyId === element.id ? (
-                  <ResponsiveAsset
-                    src={element.videoUrl}
-                    type="video"
-                    autoPlay
-                    muted
-                    loop={element.loop !== false}
-                    playsInline
-                    className="absolute inset-0 w-full h-full object-cover brightness-[1.15]"
-                  />
-                ) : element.obrazUrl ? (
-                  <ResponsiveAsset
-                    src={element.obrazUrl}
-                    type="image"
-                    alt={element.tytul}
-                    className={`absolute inset-0 w-full h-full brightness-[1.15] ${
-                      element.rozmiarObrazu === 'contain' ? 'object-contain' : 'object-cover'
-                    }`}
-                  />
-                ) : (
-                  <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
-                    <span className="text-zinc-700 font-bold text-6xl opacity-20">GMS</span>
-                  </div>
-                )}
+                <div className={`w-full h-full relative rounded-[20px] overflow-hidden group bg-black transition-all duration-500 border ${aktywnyId === element.id ? 'border-white/5' : 'border-[#86868B]'}`}>
+                  {/* OBRAZ / TŁO / VIDEO */}
+                  {element.videoUrl && aktywnyId === element.id ? (
+                    <ResponsiveAsset
+                      src={element.videoUrl}
+                      type="video"
+                      autoPlay
+                      muted
+                      loop={element.loop !== false}
+                      playsInline
+                      className="absolute inset-0 w-full h-full object-cover brightness-[1.15]"
+                    />
+                  ) : element.obrazUrl ? (
+                    <ResponsiveAsset
+                      src={element.obrazUrl}
+                      type="image"
+                      alt={element.tytul}
+                      className={`absolute inset-0 w-full h-full brightness-[1.15] ${element.rozmiarObrazu === 'contain' ? 'object-contain' : 'object-cover'
+                        }`}
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
+                      <span className="text-zinc-700 font-bold text-6xl opacity-20">GMS</span>
+                    </div>
+                  )}
 
-                {/* OVERLAY CIEMNIEJSZY DLA CZYTELNOŚCI */}
-                <div className="absolute inset-0 bg-black/20" />
+                  {/* OVERLAY CIEMNIEJSZY DLA CZYTELNOŚCI */}
+                  <div className="absolute inset-0 bg-black/20" />
 
-                {/* TEKST NA KARCIE */}
-                <div className={`absolute inset-0 p-8 md:p-12 flex flex-col pointer-events-none
+                  {/* TEKST NA KARCIE */}
+                  <div className={`absolute inset-0 p-8 md:p-12 flex flex-col pointer-events-none
                   ${element.pozycjaTekstu === 'prawa-srodek' ? 'justify-center items-end text-right' :
-                    element.pozycjaTekstu === 'prawa-dol' ? 'justify-end items-end text-right' :
-                      element.pozycjaTekstu === 'dol' ? 'justify-end items-start text-left' :
-                        element.pozycjaTekstu === 'dol-srodek' ? 'justify-end items-center text-center' :
-                          'justify-start items-start text-left'}`}
-                >
-                  <h3 className={`text-[28px] font-semibold text-white tracking-tight leading-[1.14em] drop-shadow-lg max-w-[280px] md:max-w-[520px] ${element.pozycjaTekstu === 'dol-srodek' ? 'mx-auto' : ''}`}>
-                    {element.tytul}
-                  </h3>
+                      element.pozycjaTekstu === 'prawa-dol' ? 'justify-end items-end text-right' :
+                        element.pozycjaTekstu === 'dol' ? 'justify-end items-start text-left' :
+                          element.pozycjaTekstu === 'dol-srodek' ? 'justify-end items-center text-center' :
+                            'justify-start items-start text-left'}`}
+                  >
+                    <h3 className={`text-[28px] font-semibold text-white tracking-tight leading-[1.14em] drop-shadow-lg max-w-[280px] md:max-w-[520px] ${element.pozycjaTekstu === 'dol-srodek' ? 'mx-auto' : ''}`}>
+                      {element.tytul}
+                    </h3>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
 
           {/* PRAWY SPACER - Zabezpiecza margines dla ostatniego elementu */}
           <div className="shrink-0 pointer-events-none w-0 sm:w-2 lg:w-4 xl:w-[calc((100vw_-_1280px)_/_2_+_8px)]" />

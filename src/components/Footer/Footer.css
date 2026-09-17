@@ -13,6 +13,25 @@
   background-color: black;
 }
 
+/* GRADIENT BLUR TRANSITION NAD STOPKĄ */
+.footer-transition-top {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  right: 0;
+  height: 150px;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.light-variant .footer-transition-top {
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.dark-variant .footer-transition-top {
+  background: linear-gradient(to bottom, transparent, black);
+}
+
 @media (min-width: 768px) {
   .footer-main {
     padding-top: 650px;

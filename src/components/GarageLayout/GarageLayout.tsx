@@ -227,7 +227,7 @@ export default function GarageLayout({ node }: GarageLayoutProps) {
 
   return (
     <main className="flex flex-col min-h-screen bg-white text-[#1d1d1f] w-full overflow-x-clip">
-      <AIContext 
+      <AIContext
         data={{
           productName: 'Garaże Stalowe SuperStrong',
           category: 'Garaże',
@@ -246,7 +246,7 @@ export default function GarageLayout({ node }: GarageLayoutProps) {
         imageUrl={garageLifestyleImage}
         title="Garaże stalowe"
         subtitle="Jedno i dwustanowiskowe garaże z blachy"
-        textColor="#ffffff"
+        textColor="#6E7F63"
         glowColor="rgba(110, 127, 99, 0.85)"
         layoutVariant="top-right"
         bottomGradientMode="light"

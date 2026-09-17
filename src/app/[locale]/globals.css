@@ -29,7 +29,9 @@ body {
 }
 
 @media (max-width: 767px) {
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden;
   }
 }
@@ -51,12 +53,13 @@ body {
 .animowana-ramka::after {
   content: "";
   position: absolute;
-  inset: -2px; /* Grubość ramki */
+  inset: -2px;
+  /* Grubość ramki */
   z-index: -1;
-  background: linear-gradient(var(--angle), 
-    var(--glow-color, #032146), 
-    var(--glow-accent, #C3F2FF), 
-    var(--glow-color, #1660b1));
+  background: linear-gradient(var(--angle),
+      var(--glow-color, #032146),
+      var(--glow-accent, #C3F2FF),
+      var(--glow-color, #1660b1));
   animation: rotate 6s linear infinite;
   border-radius: inherit;
   opacity: 0;
@@ -73,8 +76,13 @@ body {
 }
 
 @keyframes rotate {
-  0%     { --angle: 0deg; }
-  100%   { --angle: 360deg; }
+  0% {
+    --angle: 0deg;
+  }
+
+  100% {
+    --angle: 360deg;
+  }
 }
 
 /* Custom Premium Scrollbar for Chat */
@@ -115,15 +123,19 @@ body {
 }
 
 .google-ai-border {
-  --clr-1: #4285F4; /* Google Blue */
-  --clr-2: #34A853; /* Google Green */
-  --clr-3: #FBBC05; /* Google Yellow */
-  --clr-4: #EA4335; /* Google Red */
+  --clr-1: #4285F4;
+  /* Google Blue */
+  --clr-2: #34A853;
+  /* Google Green */
+  --clr-3: #FBBC05;
+  /* Google Yellow */
+  --clr-4: #EA4335;
+  /* Google Red */
   --clr-5: #4285F4;
-  
+
   position: relative;
   background: linear-gradient(var(--background, #000) 0 0) padding-box,
-              conic-gradient(from var(--glow-angle), var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4), var(--clr-5)) border-box !important;
+    conic-gradient(from var(--glow-angle), var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4), var(--clr-5)) border-box !important;
   border: 2px solid transparent !important;
   isolation: isolate;
   animation: google-glow 8s linear infinite;
@@ -150,26 +162,30 @@ body {
 
 /* Premium Inner Shine / Shimmer Effect - Full Sweep */
 @keyframes shimmer {
-  0% { background-position: 150% 0; }
-  100% { background-position: -50% 0; }
+  0% {
+    background-position: 150% 0;
+  }
+
+  100% {
+    background-position: -50% 0;
+  }
 }
 
 .inner-shine-text {
-  background: linear-gradient(
-    90deg, 
-    #2779c2 0%, 
-    #2779c2 45%, 
-    #ffffff 50%, 
-    #2779c2 55%, 
-    #2779c2 100%
-  );
+  background: linear-gradient(90deg,
+      var(--shine-color, #2779c2) 0%,
+      var(--shine-color, #2779c2) 45%,
+      #ffffff 50%,
+      var(--shine-color, #2779c2) 55%,
+      var(--shine-color, #2779c2) 100%);
   background-size: 250% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   animation: shimmer 3s ease-in-out 1 forwards;
-  text-shadow: none !important; /* Usuwamy shadow bo psuje background-clip */
+  text-shadow: none !important;
+  /* Usuwamy shadow bo psuje background-clip */
 }
 
 /* ==========================================================================
@@ -187,7 +203,7 @@ body {
   font-family: inherit;
   font-weight: 600;
   color: #86868b;
-  
+
   /* Mobile Style */
   font-size: 28px;
   line-height: 1.1428571429;
@@ -203,7 +219,7 @@ body {
 
 /* Legacy Mobile Gradient Transition */
 .mobile-legacy-gradient {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #161617 27%, #161617 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #161617 27%, #161617 100%);
 }
 
 @media (min-width: 768px) {

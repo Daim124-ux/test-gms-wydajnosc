@@ -1242,3 +1242,31 @@ body.nav-lock {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Hero Liquid Glass & Transitions */
+.site-header__bar,
+.site-brand__logo img,
+.desktop-nav > a,
+.desktop-nav > button,
+.header-icon-button {
+  transition-property: height, margin, box-shadow, background-color, border-color, color, filter;
+  transition-duration: 0.32s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-header.is-home-top .site-header__bar {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.site-header.is-home-top .site-brand__logo img {
+  filter: invert(1) brightness(2);
+}
+.site-header.is-home-top .desktop-nav > a,
+.site-header.is-home-top .desktop-nav > button {
+  color: #fff;
+}
+.site-header.is-home-top .header-icon-button {
+  color: #fff;
+}

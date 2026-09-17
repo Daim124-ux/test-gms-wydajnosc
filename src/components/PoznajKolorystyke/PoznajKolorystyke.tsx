@@ -299,16 +299,16 @@ export default function PoznajKolorystyke({
       {/* GÓRNA DELIKATNA NAKŁADKA / ROZMYCIE KRAWĘDZI SEKCJI W KOLORZE TŁA STRONY */}
       <div
         className={`absolute top-0 inset-x-0 h-28 md:h-40 pointer-events-none z-[5] bg-gradient-to-b ${darkTheme
-            ? 'from-[#161617] via-[#161617]/75 to-transparent'
-            : 'from-white via-white/75 to-transparent'
+          ? 'from-[#161617] via-[#161617]/75 to-transparent'
+          : 'from-white via-white/75 to-transparent'
           }`}
       />
 
       {/* DOLNA DELIKATNA NAKŁADKA / ROZMYCIE KRAWĘDZI SEKCJI W KOLORZE TŁA STRONY */}
       <div
         className={`absolute bottom-0 inset-x-0 h-28 md:h-40 pointer-events-none z-[5] bg-gradient-to-t ${darkTheme
-            ? 'from-[#161617] via-[#161617]/75 to-transparent'
-            : 'from-white via-white/75 to-transparent'
+          ? 'from-[#161617] via-[#161617]/75 to-transparent'
+          : 'from-white via-white/75 to-transparent'
           }`}
       />
 

@@ -4,6 +4,27 @@ import { getNodeByUri, getAllSlugs } from '@/lib/wp-api';
 import ProductLayout from '@/components/ProductLayout/ProductLayout';
 import GarageLayout from '@/components/GarageLayout/GarageLayout';
 import Footer from '@/components/Footer/Footer';
+import HomeHero from '@/components/HomeHero/HomeHero';
+import HomeAboutAndStats from '@/components/HomeAboutAndStats/HomeAboutAndStats';
+import HomeCategories from '@/components/HomeCategories/HomeCategories';
+import HomeConfiguratorPromo from '@/components/HomeConfiguratorPromo/HomeConfiguratorPromo';
+import HomeStorePromo from '@/components/HomeStorePromo/HomeStorePromo';
+import PoznajKolorystyke from '@/components/PoznajKolorystyke/PoznajKolorystyke';
+import HomeB2BAndDocs from '@/components/HomeB2BAndDocs/HomeB2BAndDocs';
+import HomeBlogPreview from '@/components/HomeBlogPreview/HomeBlogPreview';
+import HomeGallery from '@/components/HomeGallery/HomeGallery';
+import HomeCTA from '@/components/HomeCTA/HomeCTA';
+
+const koloryGaraży = [
+  { id: 'ocynk', nazwa: 'Ocynk', hex: '#A8A9AD', folder: 'ocynk' },
+  { id: '7016', nazwa: 'RAL 7016', hex: '#383E42', folder: 'RAL7016' },
+  { id: '9006', nazwa: 'RAL 9006', hex: '#A5A5A5', folder: 'RAL9006' }
+];
+
+const elementyKolorystyki = [
+  { id: '45deg', tytul: 'Estetyczne wykończenie', pozycjaTekstu: 'dol' as const, szerokosc: 'pelna' as const },
+  { id: 'bok', tytul: 'Trwała ochrona przed korozją', pozycjaTekstu: 'dol' as const, szerokosc: 'pelna' as const },
+];
 
 interface CatchAllPageProps {
   params: Promise<{
@@ -104,6 +125,27 @@ export default async function CatchAllPage({ params }: CatchAllPageProps) {
   }
 
   // Domyślny layout dla zwykłych stron (np. O nas)
+  
+  // Jeśli to strona główna
+  if (uriPath === '/') {
+    return (
+      <>
+        {schemaScript}
+        <HomeHero />
+        <HomeAboutAndStats />
+        <HomeCategories />
+        <HomeConfiguratorPromo />
+        <HomeStorePromo />
+        <PoznajKolorystyke kolory={koloryGaraży} elementy={elementyKolorystyki} darkTheme={true} />
+        <HomeB2BAndDocs />
+        <HomeBlogPreview />
+        <HomeGallery />
+        <HomeCTA />
+        <Footer variant="dark" />
+      </>
+    );
+  }
+
   return (
     <>
       {schemaScript}
