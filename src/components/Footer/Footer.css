@@ -1,5 +1,6 @@
 .footer-main {
   position: relative;
+  z-index: 998;
   width: 100%;
   padding-top: 500px;
   padding-bottom: 0;
@@ -45,7 +46,7 @@
   left: 0;
   right: 0;
   height: 550px;
-  z-index: 0;
+  z-index: 996;
   overflow: visible;
   pointer-events: none;
 }

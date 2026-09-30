@@ -95,7 +95,7 @@ export default function Header() {
   };
 
   const closePanelSoon = () => {
-    closeTimerRef.current = setTimeout(() => setActivePanel(null), 150);
+    closeTimerRef.current = setTimeout(() => setActivePanel(null), 400);
   };
 
   const closeEverything = () => {

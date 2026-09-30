@@ -9,6 +9,7 @@ import PoznajKolorystyke, { KolorWiaty } from '@/components/PoznajKolorystyke/Po
 import AppleCloserLook from '@/components/AppleCloserLook/AppleCloserLook';
 import FeatureShowcase from '@/components/FeatureShowcase/FeatureShowcase';
 import ThresholdGrid from '@/components/ThresholdGrid/ThresholdGrid';
+import AppleCompareSection from '@/components/AppleCompareSection/AppleCompareSection';
 import Footer from '@/components/Footer/Footer';
 import { Link } from '@/i18n/navigation';
 import {
@@ -246,8 +247,8 @@ export default function GarageLayout({ node }: GarageLayoutProps) {
         imageUrl={garageLifestyleImage}
         title="Garaże stalowe"
         subtitle="Jedno i dwustanowiskowe garaże z blachy"
-        textColor="#6E7F63"
-        glowColor="rgba(110, 127, 99, 0.85)"
+        textColor="#1d1d1f"
+        glowColor="rgba(255, 255, 255, 0.99)"
         layoutVariant="top-right"
         bottomGradientMode="light"
       />
@@ -272,6 +273,9 @@ export default function GarageLayout({ node }: GarageLayoutProps) {
 
       {/* Karuzela funkcji - ujednolicone białe tło (bg-white) */}
       <KaruzelaFunkcji elementy={mockFunkcjeGaraży} bgClass="bg-white" offsetClass="mt-0" glowColor="#6e7f63" glowAccent="#c5d8ba" />
+
+      {/* APPLE COMPARE SECTION */}
+      <AppleCompareSection />
 
       {/* Kolorystyka - ujednolicone tło z tynkami i szumem */}
       <PoznajKolorystyke kolory={koloryGaraży} elementy={elementyKolorystyki} darkTheme={false} />
@@ -307,8 +311,66 @@ export default function GarageLayout({ node }: GarageLayoutProps) {
         descColor="text-[#5f6368]"
       />
 
+      {/* Sekcja Opcje Dodatkowe - Apple Bento Grid */}
+      <section className="bg-white px-4 md:px-6 py-12 md:py-24 relative z-20">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-[40px] md:text-[56px] font-semibold text-[#1d1d1f] tracking-tight mb-4">
+              Praktyczne dodatki
+            </h2>
+            <p className="text-[#5f6368] text-[18px] md:text-[21px] font-medium tracking-tight max-w-2xl mx-auto">
+              Dostosuj garaż do swoich potrzeb za pomocą sprawdzonych opcji, które ułatwiają codzienne korzystanie.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            {/* Przeszklenie */}
+            <div className="relative overflow-hidden rounded-[28px] md:rounded-[40px] md:col-span-1 h-[450px] md:h-[500px] group bg-black">
+              <img src="https://picsum.photos/seed/przeszklenie/800/800" alt="Przeszklenie" className="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-1000 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+              <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                <h3 className="text-2xl md:text-[32px] font-semibold text-white mb-3 tracking-tight">Przeszklenie</h3>
+                <p className="text-white/80 leading-relaxed text-[17px] font-medium max-w-sm">Naturalne światło wewnątrz garażu. Mniejsze zużycie prądu i wyższy komfort każdego dnia, bez konieczności włączania oświetlenia.</p>
+              </div>
+            </div>
+            
+            {/* Furtka przejściowa */}
+            <div className="relative overflow-hidden rounded-[28px] md:rounded-[40px] md:col-span-1 h-[450px] md:h-[500px] group bg-black">
+              <img src="https://picsum.photos/seed/furtka/800/800" alt="Furtka przejściowa" className="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-1000 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+              <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                <h3 className="text-2xl md:text-[32px] font-semibold text-white mb-3 tracking-tight">Furtka przejściowa</h3>
+                <p className="text-white/80 leading-relaxed text-[17px] font-medium max-w-sm">Błyskawiczny dostęp do środka bez konieczności podnoszenia głównej bramy wjazdowej. Wygoda, gdy chcesz po prostu zabrać rower lub narzędzia.</p>
+              </div>
+            </div>
+            
+            {/* Powłoka antykondensacyjna - FULL WIDTH CINEMATIC */}
+            <div className="relative overflow-hidden rounded-[28px] md:rounded-[40px] md:col-span-2 h-[450px] md:h-[600px] group bg-[#0a0a0a]">
+              <img src="https://picsum.photos/seed/powloka/1600/900" alt="Powłoka antykondensacyjna" className="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-1000 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
+              <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end md:justify-center max-w-3xl">
+                <h3 className="text-3xl md:text-[56px] font-semibold text-white mb-4 tracking-tight leading-[1.1]">Powłoka antykondensacyjna</h3>
+                <p className="text-white/80 leading-relaxed text-[18px] md:text-[21px] font-medium">Zatrzymuje skraplanie pary wodnej pod dachem. Twój samochód i sprzęty pozostają całkowicie suche, bez względu na zmiany temperatur i wilgotności na zewnątrz.</p>
+              </div>
+            </div>
+            
+            {/* Orynnowanie - FULL WIDTH LIGHT */}
+            <div className="relative overflow-hidden rounded-[28px] md:rounded-[40px] md:col-span-2 h-[450px] md:h-[500px] group bg-[#f5f5f7]">
+              <div className="absolute top-0 right-0 w-full md:w-[60%] h-full">
+                <img src="https://picsum.photos/seed/rynny/1000/800" alt="Orynnowanie" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#f5f5f7] via-[#f5f5f7]/95 to-transparent md:to-transparent" />
+              <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end md:justify-center max-w-xl">
+                <h3 className="text-3xl md:text-[46px] font-semibold text-[#1d1d1f] mb-4 tracking-tight leading-[1.1]">Orynnowanie</h3>
+                <p className="text-[#5f6368] leading-relaxed text-[18px] md:text-[20px] font-medium">Skuteczne odprowadzanie wody deszczowej chroniące elewację i fundamenty przed uciążliwą wilgocią. Dyskretnie zintegrowane, aby nie zaburzać minimalistycznej bryły garażu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ThresholdGrid - Dark Moss Green poświata na ujednoliconym białym tle */}
-      <div className="relative z-20 md:mt-[-50px] mt-0">
+      <div className="relative z-20 md:mt-[-20px] mt-0">
         <ThresholdGrid highlightColor="#6e7f63" bgClass="bg-white" textColor="text-[#1d1d1f]" />
       </div>
 

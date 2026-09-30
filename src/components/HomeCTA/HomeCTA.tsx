@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function HomeCTA() {
   return (
     <section className="relative py-32 bg-[#050505] text-white overflow-hidden flex items-center justify-center border-t border-white/5">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#ff6b00]/10 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#ffcc33]/10 pointer-events-none"></div>
       
       <div className="relative z-10 w-full max-w-4xl mx-auto px-4 text-center">
         <motion.h2 
@@ -16,7 +16,7 @@ export default function HomeCTA() {
           viewport={{ once: true }}
           className="text-5xl md:text-7xl font-semibold tracking-tighter mb-8"
         >
-          Gotowy na <span className="text-[#ff6b00]">zmianę?</span>
+          Gotowy na <span className="text-[#ffcc33]">zmianę?</span>
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export default function HomeCTA() {
         >
           <Link 
             href="/konfigurator"
-            className="w-full sm:w-auto px-10 py-4 bg-[#ff6b00] hover:bg-[#e56000] text-white font-bold rounded-full transition-colors text-lg text-center"
+            className="w-full sm:w-auto px-10 py-4 bg-[#ffcc33] hover:bg-[#e6b800] text-white font-bold rounded-full transition-colors text-lg text-center"
           >
             Skonfiguruj w 3D
           </Link>

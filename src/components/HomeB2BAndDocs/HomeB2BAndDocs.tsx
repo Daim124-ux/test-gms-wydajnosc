@@ -39,7 +39,7 @@ export default function HomeB2BAndDocs() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-widest text-[#ff6b00] uppercase mb-8"
+          className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-widest text-[#ffcc33] uppercase mb-8"
         >
           Partnerzy B2B
         </motion.div>
@@ -74,7 +74,7 @@ export default function HomeB2BAndDocs() {
               transition={{ delay: 0.3 + idx * 0.1, duration: 0.6 }}
             >
               <div className="bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 rounded-3xl p-10 h-full flex flex-col items-center text-center">
-                <div className="bg-[#ff6b00]/10 border border-[#ff6b00]/20 w-16 h-16 rounded-2xl flex items-center justify-center text-[#ff6b00] mb-8">
+                <div className="bg-[#ffcc33]/10 border border-[#ffcc33]/20 w-16 h-16 rounded-2xl flex items-center justify-center text-[#ffcc33] mb-8">
                   {card.icon}
                 </div>
                 <h3 className="text-2xl font-semibold mb-4 text-white tracking-tight">{card.title}</h3>
@@ -83,7 +83,7 @@ export default function HomeB2BAndDocs() {
                 </p>
                 <Link 
                   href={card.link}
-                  className="inline-flex items-center text-[#ff6b00] hover:text-[#ff8533] font-semibold group"
+                  className="inline-flex items-center text-[#ffcc33] hover:text-[#ffe066] font-semibold group"
                 >
                   {card.linkText}
                   <ChevronRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -103,9 +103,8 @@ export default function HomeB2BAndDocs() {
         >
           <p className="text-gray-500 uppercase tracking-widest text-xs font-semibold mb-8 text-center">Certyfikowana jakość produktów</p>
           <div className="flex flex-wrap justify-center gap-12 opacity-40 hover:opacity-100 transition-opacity duration-500">
-            <div className="flex items-center gap-2 font-bold text-2xl text-white"><ShieldCheck className="w-8 h-8 text-[#ff6b00]" /> CE</div>
-            <div className="flex items-center gap-2 font-bold text-2xl text-white"><ShieldCheck className="w-8 h-8 text-[#ff6b00]" /> ISO 9001</div>
-            <div className="flex items-center gap-2 font-bold text-2xl text-white"><ShieldCheck className="w-8 h-8 text-[#ff6b00]" /> PZH</div>
+            <div className="flex items-center gap-2 font-bold text-2xl text-white"><ShieldCheck className="w-8 h-8 text-[#ffcc33]" /> CE</div>
+            <div className="flex items-center gap-2 font-bold text-2xl text-white"><ShieldCheck className="w-8 h-8 text-[#ffcc33]" /> ITB</div>
           </div>
         </motion.div>
 

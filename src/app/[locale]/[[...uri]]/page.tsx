@@ -7,6 +7,7 @@ import Footer from '@/components/Footer/Footer';
 import HomeHero from '@/components/HomeHero/HomeHero';
 import HomeAboutAndStats from '@/components/HomeAboutAndStats/HomeAboutAndStats';
 import HomeCategories from '@/components/HomeCategories/HomeCategories';
+import HomeWhereToBuy from '@/components/HomeWhereToBuy/HomeWhereToBuy';
 import HomeConfiguratorPromo from '@/components/HomeConfiguratorPromo/HomeConfiguratorPromo';
 import HomeStorePromo from '@/components/HomeStorePromo/HomeStorePromo';
 import PoznajKolorystyke from '@/components/PoznajKolorystyke/PoznajKolorystyke';
@@ -126,7 +127,6 @@ export default async function CatchAllPage({ params }: CatchAllPageProps) {
 
   // Domyślny layout dla zwykłych stron (np. O nas)
   
-  // Jeśli to strona główna
   if (uriPath === '/') {
     return (
       <>
@@ -134,9 +134,9 @@ export default async function CatchAllPage({ params }: CatchAllPageProps) {
         <HomeHero />
         <HomeAboutAndStats />
         <HomeCategories />
+        <HomeWhereToBuy />
         <HomeConfiguratorPromo />
         <HomeStorePromo />
-        <PoznajKolorystyke kolory={koloryGaraży} elementy={elementyKolorystyki} darkTheme={true} />
         <HomeB2BAndDocs />
         <HomeBlogPreview />
         <HomeGallery />

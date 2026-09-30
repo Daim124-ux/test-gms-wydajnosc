@@ -16,7 +16,7 @@ export default function HomeStorePromo() {
   return (
     <section className="relative w-full py-32 bg-[#050505] overflow-hidden flex flex-col items-center justify-center text-center border-t border-white/5">
       {/* Background glow effects */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/4 w-[600px] h-[600px] bg-[#ff6b00]/5 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/4 w-[600px] h-[600px] bg-[#ffcc33]/5 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="relative z-10 w-full max-w-[1200px] mx-auto px-4 flex flex-col items-center">
         
@@ -24,7 +24,7 @@ export default function HomeStorePromo() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-widest text-[#ff6b00] uppercase mb-8"
+          className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-widest text-[#ffcc33] uppercase mb-8"
         >
           <ShoppingBag className="w-3 h-3 mr-2" />
           Sklep Online
@@ -62,7 +62,7 @@ export default function HomeStorePromo() {
             <ul className="space-y-4 mb-10">
               {benefits.map((benefit, idx) => (
                 <li key={idx} className="flex items-center gap-3 text-gray-300 font-light text-lg">
-                  <CheckCircle2 className="w-5 h-5 text-[#ff6b00] flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-[#ffcc33] flex-shrink-0" />
                   <span>{benefit}</span>
                 </li>
               ))}
@@ -80,9 +80,9 @@ export default function HomeStorePromo() {
           <div className="relative z-10 md:w-[45%] flex justify-center">
             {/* Abstract shop representation */}
             <div className="relative w-full max-w-sm group">
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#ff6b00]/20 to-transparent rounded-3xl transform rotate-3 scale-105 opacity-50 group-hover:rotate-6 transition-transform duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#ffcc33]/20 to-transparent rounded-3xl transform rotate-3 scale-105 opacity-50 group-hover:rotate-6 transition-transform duration-700" />
               <div className="bg-[#0f0f0f] border border-white/10 rounded-3xl shadow-2xl p-6 relative flex flex-col items-center justify-center min-h-[300px]">
-                <ShoppingBag className="w-20 h-20 text-[#ff6b00] mb-6 opacity-80" />
+                <ShoppingBag className="w-20 h-20 text-[#ffcc33] mb-6 opacity-80" />
                 <div className="h-4 w-3/4 bg-white/10 rounded-full mb-4" />
                 <div className="h-4 w-1/2 bg-white/5 rounded-full" />
               </div>

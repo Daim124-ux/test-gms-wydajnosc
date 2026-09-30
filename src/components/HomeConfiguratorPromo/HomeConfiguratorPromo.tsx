@@ -3,19 +3,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import InteractivePointCloud from '../InteractivePointCloud/InteractivePointCloud';
 
 export default function HomeConfiguratorPromo() {
   return (
-    <section className="relative w-full py-32 bg-[#050505] overflow-hidden flex flex-col items-center justify-center text-center">
-      {/* Background glow effects */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#ff6b00]/10 blur-[120px] rounded-full pointer-events-none"></div>
+    <section className="relative w-full min-h-[1000px] pt-24 pb-32 bg-[#050505] overflow-hidden flex flex-col items-center justify-start text-center">
+      {/* Interactive Background */}
+      <InteractivePointCloud imageUrl="/assets/images/home/garaz_pointcloud.png" />
       
-      <div className="relative z-10 w-full max-w-[1200px] mx-auto px-4 flex flex-col items-center">
+      {/* Background glow effects - moved below point cloud so it doesn't block clicks but adds to ambiance */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#ffcc33]/10 blur-[120px] rounded-full pointer-events-none"></div>
+      
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto px-4 flex flex-col items-center pointer-events-none mt-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-widest text-[#ff6b00] uppercase mb-8"
+          className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-widest text-[#ffcc33] uppercase mb-8"
         >
           Konfigurator 3D
         </motion.div>
@@ -35,32 +40,33 @@ export default function HomeConfiguratorPromo() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-xl text-gray-400 max-w-2xl font-light mb-12"
+          className="text-xl text-gray-400 max-w-2xl font-light mb-16"
         >
           Zbuduj idealną przestrzeń. Zmieniaj wymiary, kolory i warianty w czasie rzeczywistym używając naszego narzędzia 3D.
         </motion.p>
-        
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 0.7 }}
-          className="relative w-full max-w-[1000px] aspect-[16/9] rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] group"
-        >
-          <img 
-            src="https://picsum.photos/seed/configurator/1600/900" 
-            alt="Konfigurator 3D GMS System" 
-            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-          
-          <div className="absolute inset-0 flex items-center justify-center">
-            <Link href="/konfigurator" className="flex items-center justify-center w-24 h-24 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition-all hover:scale-110 shadow-[0_0_30px_rgba(255,107,0,0.3)]">
-              <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-            </Link>
-          </div>
-        </motion.div>
       </div>
+      
+      {/* Przycisk na samym dole sekcji */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3 }}
+        className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20"
+      >
+        <Link 
+          href="/konfigurator" 
+          className="pointer-events-auto relative group overflow-hidden inline-flex items-center justify-center px-10 py-4 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white text-sm md:text-base font-bold tracking-widest uppercase transition-all duration-300 hover:scale-105 hover:border-[#ffcc33]/50 hover:bg-[#ffcc33]/10 hover:shadow-[0_0_40px_rgba(255,204,51,0.2)]"
+        >
+          {/* Liquid glass reflection */}
+          <div className="absolute inset-0 w-full h-full bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1/3 bg-white/10 blur-md rounded-full"></div>
+          
+          <span className="relative z-10 drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)] group-hover:text-[#ffcc33] transition-colors duration-300">
+            Przejdź do konfiguratora
+          </span>
+        </Link>
+      </motion.div>
     </section>
   );
 }
