@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Hussystem",
+    "osiedleSystem": "Beboelsessystem",
+    "shop": "Butik",
+    "partnerZone": "Partnerzone",
+    "contact": "Kontakt",
+    "more": "Mere"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Superstærke garager, til montering direkte på jorden.",
+    "shelterWoodDesc": "Havepavilloner, redskabsskure, brændsheltere eller til motorcykler.",
+    "shelterRamps": "med mulighed for montering af indkørselskinne",
+    "tabs": {
+      "garages": "Stålgarager",
+      "superstrong": "Superstrong garager",
+      "bikeShelter": "Cykelhus",
+      "steelShelters": "Stålskure",
+      "gates": "Garageporte og motorer",
+      "greenShelters": "Grønne pavilloner",
+      "trashShelters": "Affaldsskure",
+      "compactShelters": "Kompakte affaldsskærme",
+      "basementDoors": "Kælderdøre",
+      "collectiveGarages": "Fællesgarager",
+      "partitionWalls": "Skillevægge",
+      "bikeCages": "Cykelboks-afskærmning"
+    },
+    "promos": {
+      "checkAlso": "Tjek også:",
+      "trashSheltersTitle": "Affaldsskure og overdækninger",
+      "trashSheltersDesc": "Opbevar også affald med stil.",
+      "greenSheltersTitle": "Skure med grønt tag",
+      "greenSheltersDesc": "Et grønt touch i betonjunglen.",
+      "ecoMoves": "Vores øko-tiltag",
+      "configureShelter": "Konfigurer dit skur",
+      "configureGarage": "Konfigurer din garage",
+      "configureInShop": "Konfigurer i shoppen",
+      "collectiveGaragesTitle": "Fællesgarage - bokse",
+      "collectiveGaragesDesc": "Pålidelig kvalitet i din boks.",
+      "partitionWallsTitle": "Skillevægge og afspærringer",
+      "watchTest": "Se SuperStrong-testen",
+      "nanoCover": "NANO-{num} beskyttelse",
+      "sectionInPrep": "Sektionen {name} er i øjeblikket under forberedelse."
+    },
+    "configuratorPromo": {
+      "title": "Konfigurer dit skur"
+    },
+    "blog": {
+      "articles": "Blogindlæg",
+      "fromBlog": "Artikel fra bloggen",
+      "readMore": "Læs artiklen",
+      "titles": {
+        "ecoTrash": "Kan et affaldsskur være miljøvenligt?",
+        "trashDistance": "Regler for afstand mellem affaldscontainer og bygning",
+        "investInDoors": "Er det værd at investere i kælderdøre, og hvilke skal man vælge?",
+        "garageOrganization": "Hvordan optimerer man pladsen i en garageboks i en etageejendom?",
+        "partitionPlanning": "Principper for planlægning af afspærringer i moderne byggeri",
+        "warehouseSafety": "Sikkerhed og pladsoptimering i lagerhaller",
+        "beforeBuying": "6 ting, du bør vide, før du køber en stålgarage",
+        "howToArrange": "Sådan indretter du din garage: fra et simpelt lager til et stilfuldt værksted",
+        "superstrongInvestment": "Hvorfor er en SuperStrong-garage en investering for fremtiden?",
+        "superstrongInstall": "Montering af SuperStrong-garage trin for trin",
+        "motoGarage": "Skab den perfekte motorcykelgarage: Trin-for-trin guide",
+        "bikeSecurity": "Hvordan sikrer man cykler mod tyveri og vejr?"
+      }
+    },
+    "moreLinks": {
+      "about": "Om os",
+      "career": "Karriere",
+      "blog": "Blog",
+      "distributors": "Distributører",
+      "projects": "Projekter",
+      "privacy": "Privatlivspolitik",
+      "downloads": "Downloads"
+    },
+    "titles": {
+      "garaze_stalowe": "Stålgarager",
+      "garaze_superstrong": "Superstrong garager",
+      "wiata": "Cykelhus",
+      "wiaty_stalowe": "Stålskure",
+      "bramy": "Garageporte og motorer",
+      "altany_zielone": "Grønne pavilloner",
+      "altany_smietnikowe": "Affaldsskure",
+      "kompaktowe": "Kompakte skærme",
+      "drzwi": "Kælderdøre",
+      "garaze_zbiorcze": "Fællesgarager",
+      "scianki": "Skillevægge",
+      "wygrodzenia": "Industrielle afskærmninger"
+    },
+    "gatesTitles": {
+      "tilt": "Opvippelige garageporte",
+      "hinged": "Svingporte",
+      "hingedPanel": "Panel-svingporte",
+      "sectional": "Sektionsporte",
+      "singleLeafSteel": "Enfløjede - stål",
+      "doubleLeafSteel": "Tofløjede - stål",
+      "singleLeafPanel": "Enfløjede - panel",
+      "doubleLeafPanel": "Tofløjede - panel"
+    }
+  }
+}

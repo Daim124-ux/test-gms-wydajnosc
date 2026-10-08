@@ -16,7 +16,7 @@ interface AppleHeroEntranceProps {
 }
 
 export default function AppleHeroEntrance({ videoUrl, imageUrl, title, subtitle, textColor, glowColor, layoutVariant = 'center-split', bottomGradientMode = 'dark' }: AppleHeroEntranceProps) {
-  const t = useTranslations('hero');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.hero');
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const scrollValue = useMotionValue(0);

@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Home system",
+    "osiedleSystem": "Estate system",
+    "shop": "Shop",
+    "partnerZone": "Partner Zone",
+    "contact": "Contact",
+    "more": "More"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Super-strong garages, for direct ground installation.",
+    "shelterWoodDesc": "Garden, tool, wood, or motorcycle shelters.",
+    "shelterRamps": "with the possibility of installing an entry rail",
+    "tabs": {
+      "garages": "Steel garages",
+      "superstrong": "Superstrong garages",
+      "bikeShelter": "Bicycle shelter / Furniture",
+      "steelShelters": "Steel Shelters",
+      "gates": "Garage doors and drives",
+      "greenShelters": "Green Shelters",
+      "trashShelters": "Trash Shelters",
+      "compactShelters": "Compact Trash Enclosures",
+      "basementDoors": "Interior Building Doors",
+      "collectiveGarages": "Collective Garages",
+      "partitionWalls": "Partition Walls",
+      "bikeCages": "Bicycle Cage Enclosures"
+    },
+    "promos": {
+      "checkAlso": "Also check:",
+      "trashSheltersTitle": "Trash shelters and canopies",
+      "trashSheltersDesc": "Store waste with class too.",
+      "greenSheltersTitle": "Shelters with green roofs",
+      "greenSheltersDesc": "A green accent in the concrete jungle.",
+      "ecoMoves": "Our eco moves",
+      "configureShelter": "Configure your shelter",
+      "configureGarage": "Configure your garage",
+      "configureInShop": "Configure in store",
+      "collectiveGaragesTitle": "Collective garages - boxes",
+      "collectiveGaragesDesc": "Reliable quality in your box.",
+      "partitionWallsTitle": "Partition walls and enclosures",
+      "watchTest": "Watch the SuperStrong test",
+      "nanoCover": "NANO-{num} cover",
+      "sectionInPrep": "Section {name} is currently under preparation."
+    },
+    "configuratorPromo": {
+      "title": "Configure your carport"
+    },
+    "blog": {
+      "articles": "Blog articles",
+      "fromBlog": "Article from the blog",
+      "readMore": "Read article",
+      "titles": {
+        "ecoTrash": "Can a waste container shelter be environmentally friendly?",
+        "trashDistance": "Rules regarding the distance of the waste container from the building",
+        "investInDoors": "Is it worth investing in cellar doors and which one to choose?",
+        "garageOrganization": "How to optimally organize a garage box in an apartment building?",
+        "partitionPlanning": "Principles of planning enclosures in modern construction",
+        "warehouseSafety": "Safety and space organization in warehouse halls",
+        "beforeBuying": "6 things worth knowing before buying a steel garage",
+        "howToArrange": "How to arrange a garage: from a simple storage room to a stylish workshop",
+        "superstrongInvestment": "Why is a SuperStrong garage an investment for years?",
+        "superstrongInstall": "SuperStrong garage installation step by step",
+        "motoGarage": "Create the perfect motorcycle garage: A step-by-step guide",
+        "bikeSecurity": "How to protect bikes from theft and weather?"
+      }
+    },
+    "moreLinks": {
+      "about": "About Us",
+      "career": "Careers",
+      "blog": "Blog",
+      "distributors": "Distributors",
+      "projects": "Projects",
+      "privacy": "Privacy Policy",
+      "downloads": "Downloads"
+    },
+    "titles": {
+      "garaze_stalowe": "Steel garages",
+      "garaze_superstrong": "Superstrong garages",
+      "wiata": "Bike shelter",
+      "wiaty_stalowe": "Steel shelters",
+      "bramy": "Garage doors and operators",
+      "altany_zielone": "Garden gazebos",
+      "altany_smietnikowe": "Waste container shelters",
+      "kompaktowe": "Compact enclosures",
+      "drzwi": "Basement doors",
+      "garaze_zbiorcze": "Collective garages",
+      "scianki": "Partition walls",
+      "wygrodzenia": "Industrial enclosures"
+    },
+    "gatesTitles": {
+      "tilt": "Up-and-over garage doors",
+      "hinged": "Side-hinged doors",
+      "hingedPanel": "Panel side-hinged doors",
+      "sectional": "Sectional doors",
+      "singleLeafSteel": "Single-leaf - steel",
+      "doubleLeafSteel": "Double-leaf - steel",
+      "singleLeafPanel": "Single-leaf - panel",
+      "doubleLeafPanel": "Double-leaf - panel"
+    }
+  }
+}

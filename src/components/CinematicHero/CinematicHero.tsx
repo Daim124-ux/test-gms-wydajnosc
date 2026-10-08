@@ -12,7 +12,7 @@ interface CinematicHeroProps {
 }
 
 export default function CinematicHero({ title, imageUrl }: CinematicHeroProps) {
-  const t = useTranslations('hero');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.hero');
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Parallax dla sekcji Hero

@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Woonsysteem",
+    "osiedleSystem": "Residentiesysteem",
+    "shop": "Shop",
+    "partnerZone": "Partnerzone",
+    "contact": "Contact",
+    "more": "Meer"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Supersterke garages, voor montage direct op de grond.",
+    "shelterWoodDesc": "Overkappingen voor de tuin, gereedschap, hout of motorfietsen.",
+    "shelterRamps": "met de mogelijkheid voor montage van een instaprail",
+    "tabs": {
+      "garages": "Stalen garages",
+      "superstrong": "Superstrong garages",
+      "bikeShelter": "Fietsenoverkapping",
+      "steelShelters": "Stalen overkappingen",
+      "gates": "Garagedeuren en aandrijvingen",
+      "greenShelters": "Groene overkappingen",
+      "trashShelters": "Afvaloverkappingen",
+      "compactShelters": "Compacte afvaloverkappingen",
+      "basementDoors": "Kelderdeuren",
+      "collectiveGarages": "Collectieve garages",
+      "partitionWalls": "Scheidingswanden",
+      "bikeCages": "Fietsenboxen"
+    },
+    "promos": {
+      "checkAlso": "Bekijk ook:",
+      "trashSheltersTitle": "Afvalcontainerhuisjes en overkappingen",
+      "trashSheltersDesc": "Bewaar uw afval ook met klasse.",
+      "greenSheltersTitle": "Huisjes met groendak",
+      "greenSheltersDesc": "Een groen accent in de betonnen jungle.",
+      "ecoMoves": "Onze eco-stappen",
+      "configureShelter": "Configureer uw huisje",
+      "configureGarage": "Configureer uw garage",
+      "configureInShop": "Configureer in de winkel",
+      "collectiveGaragesTitle": "Collectieve garages - boxen",
+      "collectiveGaragesDesc": "Betrouwbare kwaliteit in uw box.",
+      "partitionWallsTitle": "Tussenschotten en afscheidingen",
+      "watchTest": "Bekijk de SuperStrong-test",
+      "nanoCover": "NANO-{num} afdekking",
+      "sectionInPrep": "Sectie {name} is momenteel in voorbereiding."
+    },
+    "configuratorPromo": {
+      "title": "Configureer uw overkapping"
+    },
+    "blog": {
+      "articles": "Blogartikelen",
+      "fromBlog": "Artikel uit de blog",
+      "readMore": "Lees artikel",
+      "titles": {
+        "ecoTrash": "Kan een afvalcontainerhuisje milieuvriendelijk zijn?",
+        "trashDistance": "Regels voor de afstand van de afvalcontainer tot het gebouw",
+        "investInDoors": "Is het de investering waard om kelderdeuren te plaatsen en welke te kiezen?",
+        "garageOrganization": "Hoe optimaal gebruik te maken van een garagebox in een appartementencomplex?",
+        "partitionPlanning": "Principes voor het plannen van afscheidingen in de moderne bouw",
+        "warehouseSafety": "Veiligheid en ruimteorganisatie in magazijnen",
+        "beforeBuying": "6 dingen die u moet weten voordat u een stalen garage koopt",
+        "howToArrange": "Hoe richt u een garage in: van eenvoudige opslag naar een stijlvolle werkplaats",
+        "superstrongInvestment": "Waarom is een SuperStrong-garage een investering voor jaren?",
+        "superstrongInstall": "SuperStrong garage installatie stap voor stap",
+        "motoGarage": "Creëer de ideale garage voor je motor: Stapsgewijze gids",
+        "bikeSecurity": "Hoe beveilig je fietsen tegen diefstal en weersomstandigheden?"
+      }
+    },
+    "moreLinks": {
+      "about": "Over ons",
+      "career": "Carrière",
+      "blog": "Blog",
+      "distributors": "Distributeurs",
+      "projects": "Projecten",
+      "privacy": "Privacybeleid",
+      "downloads": "Downloads"
+    },
+    "titles": {
+      "garaze_stalowe": "Stalen garages",
+      "garaze_superstrong": "Superstrong garages",
+      "wiata": "Fietsenoverkapping",
+      "wiaty_stalowe": "Stalen overkappingen",
+      "bramy": "Garagedeuren en aandrijvingen",
+      "altany_zielone": "Groene overkappingen",
+      "altany_smietnikowe": "Afvaloverkappingen",
+      "kompaktowe": "Compacte overkappingen",
+      "drzwi": "Kelderdeuren",
+      "garaze_zbiorcze": "Collectieve garages",
+      "scianki": "Scheidingswanden",
+      "wygrodzenia": "Industriële omheiningen"
+    },
+    "gatesTitles": {
+      "tilt": "Kanteldeuren",
+      "hinged": "Draaideuren",
+      "hingedPanel": "Panel-draaideuren",
+      "sectional": "Sectionaaldeuren",
+      "singleLeafSteel": "Enkelvoudig - stalen",
+      "doubleLeafSteel": "Dubbelvoudig - stalen",
+      "singleLeafPanel": "Enkelvoudig - paneel",
+      "doubleLeafPanel": "Dubbelvoudig - paneel"
+    }
+  }
+}

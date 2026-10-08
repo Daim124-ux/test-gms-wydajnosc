@@ -1,0 +1,15 @@
+{
+  "welcome": "Come posso aiutarti oggi?",
+  "placeholder": "Chiedi a GMS Corporation...",
+  "assistant": "Assistente AI",
+  "processing": "Elaborazione dati...",
+  "clearHistory": "Cancella la cronologia della conversazione",
+  "clearConfirm": "Sei sicuro di voler cancellare la cronologia della conversazione?",
+  "close": "Chiudi",
+  "chips": {
+    "summary": "Riassumi la pagina",
+    "summaryPrompt": "Prepara un breve riassunto (3-5 punti) di ciò che si trova in questa sottopagina",
+    "specs": "Specifiche tecniche",
+    "specsPrompt": "Estrai le specifiche tecniche dal contenuto di questa pagina o descrivi i dettagli tecnici più importanti"
+  }
+}

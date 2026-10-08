@@ -17,8 +17,8 @@ const ConfiguratorPromo = ({
   bgClass = 'bg-black',
   textColor = 'text-zinc-300'
 }: ConfiguratorPromoProps) => {
-  const t = useTranslations('configuratorPromo');
-  const tc = useTranslations('common');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.configuratorPromo');
+  const tc = useTranslations('global.common');
 
   return (
     <section className={`${bgClass} pb-16 px-6 relative overflow-hidden`}>

@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Bryd rammerne.",
+    "prefix": "Fang branchens",
+    "cta": "Enhjørning."
+  },
+  "location": {
+    "title": "Arbejdstider & Lokation",
+    "address1": "Kontor I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Polen",
+    "workingDays": "Mandag - Fredag",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Hurtig adgang"
+  },
+  "career": {
+    "title": "GMS Karriere",
+    "description": "Start din karriere hos GMS Corporation",
+    "cta": "Bliv en del af vores fællesskab"
+  },
+  "bottom": {
+    "rights": "Alle rettigheder forbeholdes",
+    "author": "af Mateusz Sromek",
+    "rodo": "GDPR",
+    "cookies": "Cookies"
+  }
+}

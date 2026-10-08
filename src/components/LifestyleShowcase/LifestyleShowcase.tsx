@@ -28,7 +28,7 @@ const LifestyleShowcase = ({
   bgClass = "bg-black",
   titleColor = "text-white"
 }: LifestyleShowcaseProps) => {
-  const t = useTranslations('lifestyleShowcase');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.lifestyleShowcase');
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 

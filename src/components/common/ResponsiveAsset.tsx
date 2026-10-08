@@ -60,7 +60,7 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
     const baseName = cleanSrc.replace(/\.[^/.]+$/, "");
     
     // Sprawdź czy to plik pominięty w optymalizacji (np. frames)
-    const isSkipped = cleanSrc.toLowerCase().includes('frames') || cleanSrc.toLowerCase().includes('hero') || cleanSrc.toLowerCase().includes('raw');
+    const isSkipped = cleanSrc.toLowerCase().includes('frames') || cleanSrc.toLowerCase().includes('pages.system-dom.wiata-rowerowa.hero') || cleanSrc.toLowerCase().includes('raw');
     const mobileWebm = videoData?.variants.mobile.find((v: string) => v.endsWith('.webm')) || 
       (isSkipped ? `${CLOUDFRONT_URL}/_optimized/${cleanSrc}` : `${CLOUDFRONT_URL}/_optimized/${baseName}_mobile.webm`);
       

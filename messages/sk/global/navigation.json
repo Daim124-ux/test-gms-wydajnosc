@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Systém pre domy",
+    "osiedleSystem": "Systém pre sídliska",
+    "shop": "Obchod",
+    "partnerZone": "Zóna partnera",
+    "contact": "Kontakt",
+    "more": "Viac"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Superpevné garáže, na montáž priamo do zeme.",
+    "shelterWoodDesc": "Zahradné prístrešky, nástrojové, na drevo alebo motocykel.",
+    "shelterRamps": "s možnosťou montáže vjazdovej lišty",
+    "tabs": {
+      "garages": "Oceľové garáže",
+      "superstrong": "Garáže Superstrong",
+      "bikeShelter": "Prístrešok na bicykle",
+      "steelShelters": "Oceľové prístrešky",
+      "gates": "Garážové brány a pohony",
+      "greenShelters": "Zelené altánky",
+      "trashShelters": "Prístrešky na odpad",
+      "compactShelters": "Kompaktné prístrešky na odpad",
+      "basementDoors": "Vnútroblokové dvere",
+      "collectiveGarages": "Kolektívne garáže",
+      "partitionWalls": "Prehrádkové steny",
+      "bikeCages": "Zabezpečenia bicyklových boxov"
+    },
+    "promos": {
+      "checkAlso": "Pozrite si tiež:",
+      "trashSheltersTitle": "Kontejnerové prístrešky",
+      "trashSheltersDesc": "Skladujte odpady s gráciou.",
+      "greenSheltersTitle": "Prístrešky so zelenou strechou",
+      "greenSheltersDesc": "Zelený akcent v betónovom lese.",
+      "ecoMoves": "Naše eko kroky",
+      "configureShelter": "Konfigurujte svoj prístrešok",
+      "configureGarage": "Konfigurujte svoju garáž",
+      "configureInShop": "Konfigurujte v obchode",
+      "collectiveGaragesTitle": "Kolektívne garáže - boxy",
+      "collectiveGaragesDesc": "Spoľahlivá kvalita vo vašom boxe.",
+      "partitionWallsTitle": "Prepážky a ohradenia",
+      "watchTest": "Pozrite si test SuperStronga",
+      "nanoCover": "Ochrana NANO-{num}",
+      "sectionInPrep": "Sekcia {name} sa momentálne pripravuje."
+    },
+    "configuratorPromo": {
+      "title": "Konfigurujte si svoju prístrešnicu"
+    },
+    "blog": {
+      "articles": "Blogové články",
+      "fromBlog": "Článok z blogu",
+      "readMore": "Čítať článok",
+      "titles": {
+        "ecoTrash": "Môže byť prístrešok na odpadkové kontajnery šetrný k životnému prostrediu?",
+        "trashDistance": "Pravidlá týkajúce sa vzdialenosti kontajnera od budovy",
+        "investInDoors": "Oplatí sa investovať do pivničných dverí a ktoré vybrať?",
+        "garageOrganization": "Ako optimálne využiť garážový box v bloku?",
+        "partitionPlanning": "Pravidlá plánovania ohradení v modernom stavebníctve",
+        "warehouseSafety": "Bezpečnosť a organizácia priestoru v skladových halách",
+        "beforeBuying": "6 vecí, ktoré je dobré vedieť pred kúpou oceľovej garáže",
+        "howToArrange": "Ako zariadiť garáž: od jednoduchého skladu po štýlovú dielňu",
+        "superstrongInvestment": "Prečo je garáž SuperStrong investíciou na roky?",
+        "superstrongInstall": "Montáž garáže SuperStrong krok za krokom",
+        "motoGarage": "Vytvorte si ideálnu garáž na motocykel: Príručka krok za krokom",
+        "bikeSecurity": "Ako zabezpečiť bicykle pred krádežou a počasím?"
+      }
+    },
+    "moreLinks": {
+      "about": "O nás",
+      "career": "Kariéra",
+      "blog": "Blog",
+      "distributors": "Distribútori",
+      "projects": "Realizácie",
+      "privacy": "Zásady ochrany osobných údajov",
+      "downloads": "Na stiahnutie"
+    },
+    "titles": {
+      "garaze_stalowe": "Oceľové garáže",
+      "garaze_superstrong": "Garáže Superstrong",
+      "wiata": "Prístrešok pre bicykle",
+      "wiaty_stalowe": "Oceľové prístrešky",
+      "bramy": "Garážové brány a pohony",
+      "altany_zielone": "Zelené altány",
+      "altany_smietnikowe": "Kontajnerové prístrešky",
+      "kompaktowe": "Kompaktné kryty",
+      "drzwi": "Pivničné dvere",
+      "garaze_zbiorcze": "Kolektívne garáže",
+      "scianki": "Prehrádkové steny",
+      "wygrodzenia": "Premyslené priehrádky"
+    },
+    "gatesTitles": {
+      "tilt": "Vyklápacie garážové brány",
+      "hinged": "Krídlové brány",
+      "hingedPanel": "Panelové krídlové brány",
+      "sectional": "Segmentové brány",
+      "singleLeafSteel": "Jednokrýdlové - plechové",
+      "doubleLeafSteel": "Dvojkrýdlové - plechové",
+      "singleLeafPanel": "Jednokrýdlové - panelové",
+      "doubleLeafPanel": "Dvojkrýdlové - panelové"
+    }
+  }
+}

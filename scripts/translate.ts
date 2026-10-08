@@ -51,26 +51,39 @@ function setNestedValue(obj: any, keyPath: string, value: any) {
   current[keys[keys.length - 1]] = value;
 }
 
-async function translate(targetLang: string) {
-  const srcPath = path.join(MESSAGES_DIR, `${SRC_LANG}.json`);
-  const targetPath = path.join(MESSAGES_DIR, `${targetLang}.json`);
+async function walkDir(dir: string): Promise<string[]> {
+  const files = await fs.readdir(dir);
+  const result: string[] = [];
+  for (const file of files) {
+    const fullPath = path.join(dir, file);
+    const stat = await fs.stat(fullPath);
+    if (stat.isDirectory()) {
+      result.push(...(await walkDir(fullPath)));
+    } else if (file.endsWith('.json')) {
+      result.push(fullPath);
+    }
+  }
+  return result;
+}
 
-  // 1. Odczytaj źródło
+async function translateFile(targetLang: string, relativePath: string) {
+  const srcPath = path.join(MESSAGES_DIR, SRC_LANG, relativePath);
+  const targetPath = path.join(MESSAGES_DIR, targetLang, relativePath);
+  
+  await fs.ensureDir(path.dirname(targetPath));
+
   const srcContent = await fs.readJson(srcPath);
   const flatSrc = getFlattenedKeys(srcContent);
 
-  // 2. Odczytaj cel (jeśli istnieje)
   let targetContent = {};
   if (await fs.pathExists(targetPath)) {
     targetContent = await fs.readJson(targetPath);
   }
   const flatTarget = getFlattenedKeys(targetContent);
 
-  // 3. Znajdź brakujące klucze (brak w celu LUB wartość identyczna z źródłem)
   const missingKeys: Record<string, string> = {};
   for (const [key, value] of Object.entries(flatSrc)) {
     const targetValue = flatTarget[key];
-    // Jeśli klucza nie ma, lub jest identyczny z źródłem (i nie jest pusty)
     if (!targetValue || (targetValue === value && value.trim() !== "")) {
       missingKeys[key] = value;
     }
@@ -78,11 +91,11 @@ async function translate(targetLang: string) {
 
   const keysCount = Object.keys(missingKeys).length;
   if (keysCount === 0) {
-    console.log(`✅ [${targetLang}] Brak nowych kluczy do tłumaczenia.`);
+    console.log(`✅ [${targetLang}] [${relativePath}] Brak nowych kluczy do tłumaczenia.`);
     return;
   }
 
-  console.log(`🌐 [${targetLang}] Tłumaczenie ${keysCount} nowych kluczy (podzielone na części)...`);
+  console.log(`🌐 [${targetLang}] [${relativePath}] Tłumaczenie ${keysCount} nowych kluczy (podzielone na części)...`);
 
   const chunks: Record<string, string>[] = [];
   const entries = Object.entries(missingKeys);
@@ -110,15 +123,11 @@ ${JSON.stringify(chunks[i])}`;
       const response = await result.response;
       let text = response.text().trim();
       
-      // Improved extraction: 
-      // 1. Try markdown code blocks first
       const codeBlockMatch = text.match(/```(?:json)?\s*(\{[\s\S]*?\})\s*```/);
       let jsonFound = codeBlockMatch ? codeBlockMatch[1] : null;
 
       if (!jsonFound) {
-        // 2. Try to find all blocks starting with { and ending with }
         const allBlocks = text.match(/\{[\s\S]*?\}/g) || [];
-        // Sort by length (descending) to find the most substantial one first
         const substantialBlocks = allBlocks
           .filter(b => b.includes('"') && b.length > 5)
           .sort((a, b) => b.length - a.length);
@@ -140,14 +149,12 @@ ${JSON.stringify(chunks[i])}`;
         console.error(`   ❌ Nie znaleziono poprawnego JSON w odpowiedzi AI dla części ${i + 1}.`);
       }
       
-      // Delay between chunks to respect rate limits
       if (chunks.length > 1) await new Promise(r => setTimeout(r, 1500));
     } catch (err) {
       console.error(`   ❌ Błąd w części ${i + 1}:`, err);
     }
   }
 
-  // 4. Budujemy nowy obiekt docelowy na podstawie struktury źródłowej
   const newTargetContent = {};
   for (const [key, sourceValue] of Object.entries(flatSrc)) {
     const value = allTranslatedKeys[key] || flatTarget[key] || sourceValue;
@@ -155,7 +162,21 @@ ${JSON.stringify(chunks[i])}`;
   }
 
   await fs.writeJson(targetPath, newTargetContent, { spaces: 2 });
-  console.log(`✨ [${targetLang}] Tłumaczenie i synchronizacja zakończone sukcesem.`);
+  console.log(`✨ [${targetLang}] [${relativePath}] Tłumaczenie i synchronizacja zakończone sukcesem.`);
+}
+
+async function translate(targetLang: string) {
+  const srcDir = path.join(MESSAGES_DIR, SRC_LANG);
+  if (!(await fs.pathExists(srcDir))) {
+    console.error(`Katalog źródłowy nie istnieje: ${srcDir}`);
+    return;
+  }
+  
+  const allJsonFiles = await walkDir(srcDir);
+  for (const fullPath of allJsonFiles) {
+    const relativePath = path.relative(srcDir, fullPath);
+    await translateFile(targetLang, relativePath);
+  }
 }
 
 async function main() {

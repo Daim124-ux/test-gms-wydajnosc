@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Bryt med det vante.",
+    "prefix": "Fang bransjens",
+    "cta": "Enhjørning."
+  },
+  "location": {
+    "title": "Åpningstider & Lokasjon",
+    "address1": "Kontor I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Polen",
+    "workingDays": "Mandag - Fredag",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Hurtigtilgang"
+  },
+  "career": {
+    "title": "GMS Karriere",
+    "description": "Start din karriere i GMS Corporation",
+    "cta": "Bli en del av vårt fellesskap"
+  },
+  "bottom": {
+    "rights": "Alle rettigheter reservert",
+    "author": "av Mateusz Sromek",
+    "rodo": "GDPR",
+    "cookies": "Informasjonskapsler"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Hussystem",
+    "osiedleSystem": "Boligområdesystem",
+    "shop": "Butikk",
+    "partnerZone": "Partnersone",
+    "contact": "Kontakt",
+    "more": "Mer"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Supersterke garasjer, for montering direkte på bakken.",
+    "shelterWoodDesc": "Hageskjul, verktøyskur, vedskjul eller motorsykkelgarasje.",
+    "shelterRamps": "med mulighet for montering av innkjørskskinne",
+    "tabs": {
+      "garages": "Stålgarasjer",
+      "superstrong": "Superstrong-garasjer",
+      "bikeShelter": "Sykkelbod",
+      "steelShelters": "Stålskjul",
+      "gates": "Garasjeporter og motorer",
+      "greenShelters": "Grønne paviljonger",
+      "trashShelters": "Avfallsskur",
+      "compactShelters": "Kompakte avfallsskjermer",
+      "basementDoors": "Kjellerdører",
+      "collectiveGarages": "Fellesgarasjer",
+      "partitionWalls": "Skillevegger",
+      "bikeCages": "Sykkelbur"
+    },
+    "promos": {
+      "checkAlso": "Sjekk også:",
+      "trashSheltersTitle": "Søppelhus og søppelskur",
+      "trashSheltersDesc": "Oppbevar avfall med stil.",
+      "greenSheltersTitle": "Søppelhus med grønt tak",
+      "greenSheltersDesc": "Et grønt innslag i betongskogen.",
+      "ecoMoves": "Våre øko-tiltak",
+      "configureShelter": "Konfigurer ditt søppelhus",
+      "configureGarage": "Konfigurer din garasje",
+      "configureInShop": "Konfigurer i butikken",
+      "collectiveGaragesTitle": "Fellesgarasjer - garasjebokser",
+      "collectiveGaragesDesc": "Pålitelig kvalitet i din garasjeboks.",
+      "partitionWallsTitle": "Skillevegger og inngjerdinger",
+      "watchTest": "Se testen av SuperStrong",
+      "nanoCover": "NANO-beskyttelse {num}",
+      "sectionInPrep": "Seksjonen {name} er for øyeblikket under forberedelse."
+    },
+    "configuratorPromo": {
+      "title": "Konfigurer ditt skur"
+    },
+    "blog": {
+      "articles": "Bloggartikler",
+      "fromBlog": "Artikkel fra bloggen",
+      "readMore": "Les artikkelen",
+      "titles": {
+        "ecoTrash": "Kan et søppelhus for avfallsbeholdere være miljøvennlig?",
+        "trashDistance": "Regler for avstand mellom søppelplass og bygning",
+        "investInDoors": "Er det verdt å investere i kjellerdører, og hvilke bør man velge?",
+        "garageOrganization": "Hvordan organisere en garasjeboks i et leilighetskompleks optimalt?",
+        "partitionPlanning": "Prinsipper for planlegging av inngjerdinger i moderne bygg",
+        "warehouseSafety": "Sikkerhet og organisering av plass i lagerhaller",
+        "beforeBuying": "6 ting du bør vite før du kjøper en stålgarasje",
+        "howToArrange": "Hvordan innrede garasjen: fra et enkelt lager til et stilig verksted",
+        "superstrongInvestment": "Hvorfor er SuperStrong-garasjen en investering for mange år?",
+        "superstrongInstall": "Montering av SuperStrong-garasje steg for steg",
+        "motoGarage": "Lag den perfekte motorsykkelgarasjen: En steg-for-steg guide",
+        "bikeSecurity": "Hvordan sikre sykler mot tyveri og vær?"
+      }
+    },
+    "moreLinks": {
+      "about": "Om oss",
+      "career": "Karriere",
+      "blog": "Blogg",
+      "distributors": "Distributører",
+      "projects": "Prosjekter",
+      "privacy": "Personvernpolicy",
+      "downloads": "Nedlastinger"
+    },
+    "titles": {
+      "garaze_stalowe": "Stålgarasjer",
+      "garaze_superstrong": "Superstrong-garasjer",
+      "wiata": "Sykkelbod",
+      "wiaty_stalowe": "Stålskjul",
+      "bramy": "Garasjeporter og motorer",
+      "altany_zielone": "Grønne paviljonger",
+      "altany_smietnikowe": "Avfallsskur",
+      "kompaktowe": "Kompakte skjermer",
+      "drzwi": "Kjellerdører",
+      "garaze_zbiorcze": "Fellesgarasjer",
+      "scianki": "Skillevegger",
+      "wygrodzenia": "Industrielle innhegninger"
+    },
+    "gatesTitles": {
+      "tilt": "Vippedorter",
+      "hinged": "Svingporter",
+      "hingedPanel": "Panel-svingporter",
+      "sectional": "Seksjonsport",
+      "singleLeafSteel": "Enfløyete - stål",
+      "doubleLeafSteel": "Tofløyete - stål",
+      "singleLeafPanel": "Enfløyete - panel",
+      "doubleLeafPanel": "Tofløyete - panel"
+    }
+  }
+}

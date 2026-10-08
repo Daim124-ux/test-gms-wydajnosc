@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Nie goń schematów.",
+    "prefix": "Złap branżowego",
+    "cta": "Jednorożca."
+  },
+  "location": {
+    "title": "Godziny pracy & Lokalizacja",
+    "address1": "Biuro I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Polska",
+    "workingDays": "Poniedziałek - Piątek",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Szybki dostęp"
+  },
+  "career": {
+    "title": "GMS Kariera",
+    "description": "Zacznij pracę w GMS Corporation",
+    "cta": "Dołącz do naszej społeczności"
+  },
+  "bottom": {
+    "rights": "All Rights Reserved",
+    "author": "by Mateusz Sromek",
+    "rodo": "RODO",
+    "cookies": "Pliki cookies"
+  }
+}

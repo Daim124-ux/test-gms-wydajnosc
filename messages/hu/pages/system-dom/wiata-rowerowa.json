@@ -1,0 +1,172 @@
+{
+  "hero": {
+    "title": "Acél kerékpár-védőbeépítés",
+    "subtitle": "Tárolás Rouleur-ja.",
+    "newCategory": "Teljesen új kategória",
+    "cinematicDesc": "Könnyebb, erősebb, minden milliméterében átgondolt. Valódi acél, amelyet egyetlen szél sem tud legyőzni."
+  },
+  "productHero": {
+    "new": "Új",
+    "requestQuote": "Kérjen ajánlatot",
+    "downloadCatalog": "Katalógus letöltése (PDF)",
+    "productImage": "Termékfotó",
+    "noImage": "Nincs kép"
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Az acél védőbeépítést elsősorban kerékpárok tárolására tervezték, azonban benne kerti szerszámok, babesikerek, robogók, rollerek és egyéb kiegészítők is tárolhatók. A fedél előre dőlő tetőszerkezete biztosítja a megfelelő vízelvezetést, a kényelmes fogantyú pedig egyszerűvé teszi a nyitást."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Zongorpánt a védőbeépítés fedelében"
+      },
+      "stopPoints": {
+        "title": "Innovatív nyitási rendszer STOP-pontokkal"
+      },
+      "fabricHandle": {
+        "title": "Szövet fogantyú a küszöb egyszerűbb nyitásához és zárásához"
+      },
+      "steelRods": {
+        "title": "A védőbeépítés zárása alumínium-acél vonórudakkal."
+      },
+      "packing": {
+        "title": "Kényelmes csomagolás raklapdobozban"
+      },
+      "reinforcedCorners": {
+        "title": "Erősített sarkok"
+      },
+      "steelTriangles": {
+        "title": "Merevítő acél háromszögök a sarkokban"
+      },
+      "lidReinforcement": {
+        "title": "Acél fedelméregetők U-profilokkal kombinálva"
+      }
+    },
+    "colorSection": {
+      "title": "Ismerje meg a színek világát.",
+      "aesthetic": "Időtlen esztétika minden színben",
+      "match": "Időzzön össze a védőbeépítést házának homlokzatával",
+      "protection": "Védelem minden körülmény között",
+      "quality": "Legmagasabb minőségű festés"
+    },
+    "dimensions": {
+      "title": "Kerékpár-védőbeépítés méretei",
+      "height": "Magasság",
+      "width": "Szélesség",
+      "depth": "Mélység",
+      "drawingAlt": "Biciklis tároló méretei - műszaki rajz"
+    },
+    "nav": {
+      "priceFrom": "12 999 zł-től"
+    },
+    "aluminumFloor": {
+      "title": "Alumínium padló",
+      "subtitle": "rozsdament csavaros rögzítőkkel a talajhoz rögzítve.",
+      "description": "A kerékpár-védőbeépítésbe alumínium padló szerelhető, amely hatékonyan megakadályozza a nemkívánt növényzet növekedését, különösen tavakockázott felületeken. A padló úgy lett tervezve, hogy a rögzítés ugyanazokon a lyukakon történjen, mint a padló nélküli változatnál. Így a védőbeépítés bármikor egyszerűen kiegészíthető ezzel az opcióval."
+    },
+    "lifestyle": {
+      "p1": "Bár védőbeépítésünket elsősorban kerékpárok tárolására tervezték, sokoldalúsága miatt számos egyéb igényre is ideális megoldást nyújt. A kerékpárok mellett könnyen befogad kerti szerszámokat, például lapátokat, rake-eket vagy metszőollókat, valamint kisebb kerti kiegészítőket, mint a cserepeket, magokat vagy műtrágyákat. A tágas méreteknek köszönben — 1950 mm szélesség, 900 mm mélység és 1290 mm magasság — a védőbeépítés praktikus tárolóként is szolgálhat olyan háztartási eszközöknek, mint a fűnyírók, kerti tömlők stb.",
+      "p2": "Kiválóan alkalmas gyerekjátékok tárolására is, beleértve az elektromos vagy pedálos autózokat, homokozó játékokat és kerti játékcsomagokat. Ezenkívül a védőbeépítés befogadja a horgászfelszereléseket, mint a horgászbotok, yorszerelésű tekerek vagy horgász táskák, valamint szezonális kerti dekorációkat, például lámpásokat, napelemes fényeket vagy kisebb kerti bútorokat. Ha kertjét pihenésre használja, itt helyet talál a grillkellékeknek is.",
+      "p3": "Funkcionalitása és tágas méretei révén védőbeépítésünk kényelmes megoldást kínál a mindennapi életben hasznos széles körű tárgyak tárolására, maximálisan kihasználva a rendelkezésre álló teret."
+    },
+    "showcase1": {
+      "top": "Tartós",
+      "glow": "zongorpánt",
+      "bottom": "acélból.",
+      "description": "Kerékpár-védőbeépítésünkben zongorpántot alkalmaztunk, amely növeli a napi használat színvonalát. Ez a láthatatlan, mégis rendkívül tartós elem nemcsak a zárófedél tökéletes merevségét biztosítja, hanem annak sima, szinte zajtalan működését is. Kompakt szerkezete és nagy érintkezési felülete miatt ez a pánt nemcsak a megbízhatóságot, hanem az évekig tartó élettartamot is garantálja. Ez egy olyan megoldás, amelyet minden olyan felhasználó értékelni fog, aki a precizitást, a funkcionalitást és a modern dizájnt kedveli."
+    },
+    "showcase2": {
+      "top": "Fém küszöb",
+      "glow": "könnyű alumíniumból",
+      "description": "A védőbeépítés alsó részét a maximális funkcionalitás és felhasználói kényelem szem előtt tervezték. Az elegáns anyagú fogantyúval ellátott acél küszöb szilárd zárást biztosít, a neodímium mágnesek pedig precízen tartják a pozícióját, megakadályozva a véletlen nyitást. A speciálisan illeszkedő pántok és az elem további hajlítása nyitás után egy sima rampát hoz létre, amely megkönnyíti a kerékpár bevezetését. Ez a jól átgondolt megoldás ötvözi a tartósságot a kényelemmel, megfelelve az igényes felhasználók elvárásainak."
+    }
+  },
+  "features": {
+    "title": "A legfontosabb információk."
+  },
+  "configuratorPromo": {
+    "title": "Konfigurálja a védőbeépítést",
+    "description": "Konfigurátorunk lehetővé teszi a termékek személyre szabását, hogy azok megfeleljenek a legigényesebb ügyfeleknek is. A konfigurálás során valós időben láthatjuk a terméket."
+  },
+  "lifestyle": {
+    "title": "Több, mint egy kerékpár-védőbeépítés",
+    "description": "Bár védőbeépítésünket elsősorban kerékpárok tárolására tervezték, sokoldalúsága miatt számos egyéb igényre is ideális megoldást nyújt."
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Nem csak bicikliknek",
+    "items": {
+      "item1": {
+        "title": "Acél biciklitároló",
+        "description": "Tárolja biztonságosan biciklijeit egy lengyel gyártó által készített acél lakolatban."
+      },
+      "item2": {
+        "title": "Acél lakolat kerti eszközöknek",
+        "description": "Acél lakolat kerti eszközöknek."
+      },
+      "item3": {
+        "title": "Acél lakolat SPA eszközöknek",
+        "description": "Tárolja itt a törölközőket, fürdőköntöket és a jakuzzi tisztításához szükséges eszközöket."
+      }
+    }
+  },
+  "threeDShowcase": {
+    "close": "Bezárás",
+    "title": "Nézze meg a kiemelkedő jellemzőket 3D-ben",
+    "button": "Nézze közelből",
+    "resetTooltip": "Nézet visszaállítása",
+    "modelAlt": "Bicikli tároló 3D-ben",
+    "arButton": "Mutasd a saját kertedben (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Zongora pálya",
+        "description": "Kisebb, sűrűn elhelyezett csavarokkal a fedélhez rögzítve, ez az elem a fedél halk és megbízható működését, valamint hosszú élettartamát garantálja. A csavarok gondos elrendezése révén a fedél simán és csendben működik, miközben hosszú évekig tartó stabilitást és tartósságot biztosít."
+      },
+      "reinforcedCorners": {
+        "label": "Erősített sarkok",
+        "description": "A szerkezet sarkainál alkalmazott további erősítések kivételes merevességet és deformációs ellenállást biztosítanak. Ez kulcsfontosságú elem a lakolat intenzív használata során, amely megakadályozza az anyag „mozgását” és évtizedekig megőrzi a geometriát."
+      },
+      "locking": {
+        "label": "Kulcsos zárás",
+        "description": "Többpontos zárással ellátott hengeres zárat alkalmaztunk, amely a lehető legmagasabb biztonságot nyújt biciklijének. Ez a rendszer ellenáll az időjárási körülményeknek és a feltörési kísérleteknek, így Ön teljes nyugalmat érzelhet."
+      },
+      "stopPoints": {
+        "label": "Innovatív STOP-pontos rendszer",
+        "description": "Különleges ütékesstopperszárak és a fedél hidraulikus fékezési rendszere megakadályozzák a hirtelen csapódást záráskor. A STOP-pontok lehetővé teszik a fedél biztonságos kezelését, kizárva az ujjak becsapódásának vagy a ház sérülésének kockázatát."
+      },
+      "thresholdHandle": {
+        "label": "Küszöb anyagfogantyúval",
+        "description": "Az anyagfogantyúval ellátott ergonómiai küszöb megkönnyíti a bicikli bevitele a lakolatba. A fogantyú biztos fogást biztosít akár kesztyűben is, a küszöb kialakítása pedig minimalizálja a kerék önütszközöt."
+      }
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodímium mágnesek",
+        "desc": "a fedél oldalán elhelyezve"
+      },
+      "handle": {
+        "title": "Szövetfogantyú",
+        "desc": "megkönnyíti a nyitást"
+      },
+      "tin": {
+        "title": "Horganyzott",
+        "desc": "fedél"
+      },
+      "hinges": {
+        "title": "Csavarozható pántok",
+        "desc": "garantálják a tartósságot"
+      },
+      "bends": {
+        "title": "Erősítő hajlítások",
+        "desc": "megmerevíti a küszöböt"
+      },
+      "angle": {
+        "title": "Profilált szög",
+        "desc": "a könnyebb bejutáshoz"
+      }
+    },
+    "headline": "Kerékpáros strapabíróság.",
+    "description": "A biciklis tároló szerkezete a maximális szívósság és tartósságra lett tervezve. A kulcsfontosságú erősítő elem a saját fejlesztésű, U-profilokkal kombinált háromszögek, amelyeket házon belül fejlesztettünk és gyártottunk. Ez a megoldás rendkívüli merevséget és stabilitást biztosít a fedél egyes összetevői számára. A tároló falaiMeanwhile állítható háromszögekkel vannak összekötve, ami lehetővé teszi a pontos illeszkedést és összeszerelést. További erősítést nyújtanak a CNC gépekkel kivágott acél sarokvasak, amelyek nemcsak növelik a falak merevségét, hanem tartósan rögzítik az összes kapcsolódási pontot. Ez egy innovatív megközelítés, amely hosszú évekig garantálja a megbízhatóságot."
+  }
+}

@@ -26,7 +26,7 @@ interface ProductFamily {
 }
 
 export default function MegaMenu({ onClose, onEnter }: MegaMenuProps) {
-  const t = useTranslations('navigation.megaMenu');
+  const t = useTranslations('global.navigation.megaMenu');
   const locale = useLocale();
   const isPolish = locale === 'pl';
   const previewTimer = useRef<ReturnType<typeof setTimeout> | null>(null);

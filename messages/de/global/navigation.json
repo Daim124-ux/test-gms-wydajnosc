@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Haus-System",
+    "osiedleSystem": "Siedlungs-System",
+    "shop": "Shop",
+    "partnerZone": "Partnerbereich",
+    "contact": "Kontakt",
+    "more": "Mehr"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Superstarke Garagen, zur Montage direkt im Boden.",
+    "shelterWoodDesc": "Gartenunterstände, Gerätehäuser, für Holz oder Motorräder.",
+    "shelterRamps": "mit der Möglichkeit zur Montage einer Einfahrtsschiene",
+    "tabs": {
+      "garages": "Stahlgaragen",
+      "superstrong": "Superstrong Garagen",
+      "bikeShelter": "Fahrradunterstand",
+      "steelShelters": "Stahlunterstände",
+      "gates": "Garagentore und Antriebe",
+      "greenShelters": "Grüne Gartenlauben",
+      "trashShelters": "Mülltonnengehege",
+      "compactShelters": "Kompakte Mülltonnenabdeckungen",
+      "basementDoors": "Keller- bzw. Treppenhaustüren",
+      "collectiveGarages": "Sammelgaragen",
+      "partitionWalls": "Trennwände",
+      "bikeCages": "Fahrradbox-Einzäunungen"
+    },
+    "promos": {
+      "checkAlso": "Auch interessant:",
+      "trashSheltersTitle": "Mülltonnenunterstände und Überdachungen",
+      "trashSheltersDesc": "Abfälle stilvoll lagern.",
+      "greenSheltersTitle": "Unterstände mit Gründach",
+      "greenSheltersDesc": "Ein grüner Akzent im Betonwald.",
+      "ecoMoves": "Unsere Öko-Maßnahmen",
+      "configureShelter": "Konfigurieren Sie Ihren Unterstand",
+      "configureGarage": "Konfigurieren Sie Ihre Garage",
+      "configureInShop": "Im Shop konfigurieren",
+      "collectiveGaragesTitle": "Sammelgaragen - Boxen",
+      "collectiveGaragesDesc": "Zuverlässige Qualität in Ihrer Box.",
+      "partitionWallsTitle": "Trennwände und Einfassungen",
+      "watchTest": "SuperStrong-Test ansehen",
+      "nanoCover": "NANO-Abdeckung {num}",
+      "sectionInPrep": "Der Bereich {name} befindet sich derzeit in Vorbereitung."
+    },
+    "configuratorPromo": {
+      "title": "Konfigurieren Sie Ihren Unterstand"
+    },
+    "blog": {
+      "articles": "Blog-Artikel",
+      "fromBlog": "Artikel aus dem Blog",
+      "readMore": "Artikel lesen",
+      "titles": {
+        "ecoTrash": "Kann ein Mülltonnenunterstand umweltfreundlich sein?",
+        "trashDistance": "Regeln zum Abstand des Müllplatzes vom Gebäude",
+        "investInDoors": "Lohnt sich die Investition in Kellertüren und welche sollte man wählen?",
+        "garageOrganization": "Wie optimiert man die Nutzung einer Garagenbox im Mehrfamilienhaus?",
+        "partitionPlanning": "Grundsätze der Planung von Einfassungen im modernen Bauwesen",
+        "warehouseSafety": "Sicherheit und Raumorganisation in Lagerhallen",
+        "beforeBuying": "6 Dinge, die man vor dem Kauf einer Stahlgarage wissen sollte",
+        "howToArrange": "Wie man eine Garage einrichtet: vom einfachen Lager zum stilvollen Workshop",
+        "superstrongInvestment": "Warum ist eine SuperStrong-Garage eine Investition für Jahre?",
+        "superstrongInstall": "SuperStrong-Garagenmontage Schritt für Schritt",
+        "motoGarage": "Erstellen Sie die perfekte Motorradgarage: Schritt-für-Schritt-Anleitung",
+        "bikeSecurity": "Wie schützt man Fahrräder vor Diebstahl und Wetter?"
+      }
+    },
+    "moreLinks": {
+      "about": "Über uns",
+      "career": "Karriere",
+      "blog": "Blog",
+      "distributors": "Händler",
+      "projects": "Referenzen",
+      "privacy": "Datenschutzrichtlinie",
+      "downloads": "Downloads"
+    },
+    "titles": {
+      "garaze_stalowe": "Stahlgaragen",
+      "garaze_superstrong": "Superstrong Garagen",
+      "wiata": "Fahrradunterstand",
+      "wiaty_stalowe": "Stahlunterstände",
+      "bramy": "Garagentore und Antriebe",
+      "altany_zielone": "Grüne Gartenlauben",
+      "altany_smietnikowe": "Mülltonnengehege",
+      "kompaktowe": "Kompakte Abdeckungen",
+      "drzwi": "Kellertüren",
+      "garaze_zbiorcze": "Sammelgaragen",
+      "scianki": "Trennwände",
+      "wygrodzenia": "Industrieeinzäunungen"
+    },
+    "gatesTitles": {
+      "tilt": "Garagentore zum Schwingen",
+      "hinged": "Flügeltore",
+      "hingedPanel": "Panel-Flügeltore",
+      "sectional": "Segmenttore",
+      "singleLeafSteel": "Einflügelig - Stahl",
+      "doubleLeafSteel": "Zweiflügelig - Stahl",
+      "singleLeafPanel": "Einflügelig - Panel",
+      "doubleLeafPanel": "Zweiflügelig - Panel"
+    }
+  }
+}

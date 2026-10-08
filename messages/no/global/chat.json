@@ -1,0 +1,15 @@
+{
+  "welcome": "Hvordan kan jeg hjelpe deg i dag?",
+  "placeholder": "Spør GMS Corporation...",
+  "assistant": "AI-assistent",
+  "processing": "Behandler data...",
+  "clearHistory": "Slett chathistorikk",
+  "clearConfirm": "Er du sikker på at du vil slette chathistorikken?",
+  "close": "Lukk",
+  "chips": {
+    "summary": "Oppsummer siden",
+    "summaryPrompt": "Lag et kort sammendrag (3-5 punkter) av det som finnes på denne undersiden",
+    "specs": "Tekniske spesifikasjoner",
+    "specsPrompt": "Hent ut tekniske spesifikasjoner fra innholdet på denne siden, eller fortell om de viktigste tekniske detaljene"
+  }
+}

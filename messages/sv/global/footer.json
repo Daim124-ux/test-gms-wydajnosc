@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Följ inte mallarna.",
+    "prefix": "Fånga branschens",
+    "cta": "Enhörning."
+  },
+  "location": {
+    "title": "Öppettider & Plats",
+    "address1": "Kontor I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Polen",
+    "workingDays": "Måndag - Fredag",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Snabbåtkomst"
+  },
+  "career": {
+    "title": "GMS Karriär",
+    "description": "Börja arbeta på GMS Corporation",
+    "cta": "Gå med i vår community"
+  },
+  "bottom": {
+    "rights": "Alla rättigheter förbehållna",
+    "author": "av Mateusz Sromek",
+    "rodo": "GDPR",
+    "cookies": "Cookies"
+  }
+}

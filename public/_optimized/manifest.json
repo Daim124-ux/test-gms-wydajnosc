@@ -2033,6 +2033,330 @@
         ]
       },
       "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/hero_main_bg_1789645236902.jpg"
+    },
+    "assets/images/hero_v2/Drzwi_piwniczne_baner-2.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAgf/xAAhEAABBAICAgMAAAAAAAAAAAABAAIEBQMRBiESQSJCgf/EABYBAQEBAAAAAAAAAAAAAAAAAAMCBP/EAB4RAAEEAQUAAAAAAAAAAAAAAAABAgMSERMUMVFS/9oADAMBAAIRAxEAPwCWg2cWvsmS24Q52vi301JuayJXILITMeIBuvHTUyucbGyi1rQAFqm6xEetqFSyYUWKR0TrN5I4Vc0fVw/ELo4AI7AQj029GjeTej//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner-2_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner-2_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner-2_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner-2_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner-2_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner-2_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Drzwi_piwniczne_baner-2.jpg"
+    },
+    "assets/images/hero_v2/Drzwi_piwniczne_baner.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYBBAX/xAAiEAABBAIABwEAAAAAAAAAAAABAAIEBQMRBhIhIjEyQYH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EAB4RAAICAAcAAAAAAAAAAAAAAAACAQMREhMUMVFS/9oADAMBAAIRAxEAPwBPh2MeDYNktwgu12t+BZXF8mTe2Al48QDdcumq9aY2iQQGgAKarpiI+bSZYaMJFVY1TZl5FYV0sD1I/EJ7AB8gIU9Jei+9u9H/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Drzwi_piwniczne_baner_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Drzwi_piwniczne_baner.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_45no145no145no14.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMEBf/EACEQAAEDBAEFAAAAAAAAAAAAAAMAAQIEBRESEwYHFCEx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgME/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECERIhYf/aAAwDAQACEQMRAD8AnN3Dogm8WNLyhf7s2FhXiuswKohHtA35o7PlEWfGmyt6KFf1Bbolgw7SJo6Nj2iIi49FZ//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_45no145no145no14_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_45no145no145no14_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_45no145no145no14_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_45no145no145no14_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_45no145no145no14_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_45no145no145no14_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_45no145no145no14.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_5w4kbg5w4kbg5w4k.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUHA//EACMQAAEEAgEDBQAAAAAAAAAAAAIBAwQFABEhBhIxEyIjQYH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwX/xAAbEQACAwADAAAAAAAAAAAAAAABAgAREgNRYf/aAAwDAQACEQMRAD8Ao9z1XUyYLrFVIAJq8CpeEyZ2fVTqx51XcEL/ABr1W02n5k0rpslBX5i5XnHFY84brvcW/b95npyspyxu4zliCBMTraUlRW3DRNeF3hjwIkcwEjaBSVOV1hlcL2Y9eT//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_5w4kbg5w4kbg5w4k_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_5w4kbg5w4kbg5w4k_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_5w4kbg5w4kbg5w4k_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_5w4kbg5w4kbg5w4k_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_5w4kbg5w4kbg5w4k_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_5w4kbg5w4kbg5w4k_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_5w4kbg5w4kbg5w4k.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_cg4zgacg4zgacg4z.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EACEQAAIBBAICAwAAAAAAAAAAAAECAwAEBRESIQYTFDFR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/EABoRAAIDAQEAAAAAAAAAAAAAAAECAAQRIQP/2gAMAwEAAhEDEQA/AEvGhjruMsY3AUdsB0aqZi9w2MxM8UxaOeZCEOqWgPw8eyW2o1HehWfZjdKxuD7CD1ypPcsE4WgtbxUcHZnMVfPaWpiCPKOZPLX3uiq4VV2FUAb/ACisku2ygZk//9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_cg4zgacg4zgacg4z_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_cg4zgacg4zgacg4z_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_cg4zgacg4zgacg4z_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_cg4zgacg4zgacg4z_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_cg4zgacg4zgacg4z_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_cg4zgacg4zgacg4z_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_cg4zgacg4zgacg4z.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_dz6mmddz6mmddz6m.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAIEBv/EACAQAAEDBAIDAAAAAAAAAAAAAAEAAgUDBAYREhQhMmH/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABoRAAICAwAAAAAAAAAAAAAAAAABERIDITH/2gAMAwEAAhEDEQA/AMpDYdD34rvaHt874/FMYjF9g21Ck4ch7EoiK6gZKsjhMfaXJpFpedb2iIpvHL6xsf/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_dz6mmddz6mmddz6m_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_dz6mmddz6mmddz6m_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_dz6mmddz6mmddz6m_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_dz6mmddz6mmddz6m_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_dz6mmddz6mmddz6m_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_dz6mmddz6mmddz6m_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_dz6mmddz6mmddz6m.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_h1ap0uh1ap0uh1ap.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcEBgj/xAAiEAABBAIBBAMAAAAAAAAAAAABAgMEBQARIQYSEzEHYfD/xAAWAQEBAQAAAAAAAAAAAAAAAAAFAgP/xAAbEQADAAIDAAAAAAAAAAAAAAAAAQIDERMUUf/aAAwDAQACEQMRAD8ArPxZZA2SYcJPiipBUpY98Y6Ka9Q+wpwlsoQooPPO/wAMUVXQM1XmXFdWlR43kSVYPV6nAyT2k9xGyNnDKwtvaYlNqVpjsm9VV8F8syUEOaB4+8MzfZ9UzZEtS3NE6A9nDM+tfpXKj//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_h1ap0uh1ap0uh1ap_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_h1ap0uh1ap0uh1ap_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_h1ap0uh1ap0uh1ap_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_h1ap0uh1ap0uh1ap_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_h1ap0uh1ap0uh1ap_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_h1ap0uh1ap0uh1ap_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_h1ap0uh1ap0uh1ap.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_hlah0bhlah0bhlah.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMGBAf/xAAmEAACAgEBBgcAAAAAAAAAAAABAgMEAAUGERMhIjEUFSRBUWHR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwX/xAAaEQACAwEBAAAAAAAAAAAAAAAAAQITIRES/9oADAMBAAIRAxEAPwDk167at3I2hVjK/wBd8U0VqvdCshMq9W4Zs0uVzxGLdSjkfjLPZqvFZKPOgdyOZOR3yCxCWemP0y/s94GLzTTrM9vd1uAfzDKF6FUEenj7D2ww75LBz//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_hlah0bhlah0bhlah_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_hlah0bhlah0bhlah_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_hlah0bhlah0bhlah_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_hlah0bhlah0bhlah_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_hlah0bhlah0bhlah_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_hlah0bhlah0bhlah_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_hlah0bhlah0bhlah.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_i0gmgti0gmgti0gm.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMHBf/EACMQAAEEAgEDBQAAAAAAAAAAAAECAwQFABEhBjFBEhMiM4H/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwX/xAAbEQACAgMBAAAAAAAAAAAAAAABAgARAxJRIf/aAAwDAQACEQMRAD8Aol11ZUSYLrFVISiaeElXYZM7Lqp5TE6quFB/Y17qBx+ZNK6bICfuVyc2K95xTjnqVv4+cz0ysh1Y3cZ1YggRS6unUQW3FAa7E+cMe5DjrIUpoFRGycMfnTKWOT//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_i0gmgti0gmgti0gm_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_i0gmgti0gmgti0gm_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_i0gmgti0gmgti0gm_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_i0gmgti0gmgti0gm_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_i0gmgti0gmgti0gm_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_i0gmgti0gmgti0gm_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_i0gmgti0gmgti0gm.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_kpnzxlkpnzxlkpnz.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcDBQb/xAAgEAABAwQDAQEAAAAAAAAAAAACAQMEAAUREgYhMQdB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEBf/EABsRAQACAgMAAAAAAAAAAAAAAAEAAhMyQVFh/9oADAMBAAIRAxEAPwC3u/KWI7IBb3xFttE2x7U1g+n2mVObgmLikuEIkpS8cuMGemr8Qs/uCrSDa7RENJUaKYP+5z1WY2vY2l1MfUehcp4qyuhuopJ71RSWaQnR3XXtc+UUQeQivjP/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_kpnzxlkpnzxlkpnz_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_kpnzxlkpnzxlkpnz_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_kpnzxlkpnzxlkpnz_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_kpnzxlkpnzxlkpnz_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_kpnzxlkpnzxlkpnz_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_kpnzxlkpnzxlkpnz_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_kpnzxlkpnzxlkpnz.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_m6asbvm6asbvm6as.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQGB//EACEQAAEEAQUAAwAAAAAAAAAAAAEAAgMEBREUISIxBkFR/8QAFgEBAQEAAAAAAAAAAAAAAAAABAEC/8QAGhEAAgMBAQAAAAAAAAAAAAAAAAIBA1ESMf/aAAwDAQACEQMRAD8AzKi7KUJpMm8Oaz1z9eSFRVLuXybhcpyuLnjgn8SNAmxjYopiXxmTQtPi03DVK9THM20TI9B9BBuWJ9GoxHF/y5nAsQge9vUJvKzSb6Tu5CxFKYXttP/Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_m6asbvm6asbvm6as_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_m6asbvm6asbvm6as_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_m6asbvm6asbvm6as_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_m6asbvm6asbvm6as_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_m6asbvm6asbvm6as_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_m6asbvm6asbvm6as_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_m6asbvm6asbvm6as.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_pnn9j1pnn9j1pnn9.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcCAwUG/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQRBQYhBxITMUH/xAAVAQEBAAAAAAAAAAAAAAAAAAADAv/EABwRAAICAgMAAAAAAAAAAAAAAAABAhEDExQhUf/aAAwDAQACEQMRAD8A1tQ6wXN3oRW4YwXTcAJ9qMXVRo7KGEW3llAx3kZJpC6ZI80yCViwz9pzbcs7cWkTeFO7HvFFbxK7KUVk6oq3Fu7c6ajm1nCROgcKFPGaK69IYnUF40J9ciig3z9F48D/2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_pnn9j1pnn9j1pnn9_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_pnn9j1pnn9j1pnn9_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_pnn9j1pnn9j1pnn9_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_pnn9j1pnn9j1pnn9_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_pnn9j1pnn9j1pnn9_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_pnn9j1pnn9j1pnn9_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_pnn9j1pnn9j1pnn9.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_t8n4tgt8n4tgt8n4.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYHA//EAB8QAAIBBAMBAQAAAAAAAAAAAAEDAgAEBiEFERMSQf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREBAAMBAQAAAAAAAAAAAAAAAQACAxEh/9oADAMBAAIRAxEAPwBJZC7k9UEy9PLeqaMcx295RRvIyaliT2BI6JpBwu8uHqUGtlIE77q32MpJx2fkTDod6qVwCp7GLqvZMcoPLW/MNW9o++gdUVpyDmOupzbMzmf00VSY15Bb2n//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_t8n4tgt8n4tgt8n4_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_t8n4tgt8n4tgt8n4_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_t8n4tgt8n4tgt8n4_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_t8n4tgt8n4tgt8n4_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_t8n4tgt8n4tgt8n4_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_t8n4tgt8n4tgt8n4_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_t8n4tgt8n4tgt8n4.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_vdvk9cvdvk9cvdvk.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGAgf/xAAiEAACAQQCAQUAAAAAAAAAAAABAgADBAURBkESIjEzQoH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EAB8RAAEDAwUAAAAAAAAAAAAAAAIAAQMEERITFCFRUv/aAAwDAQACEQMRAD8AlbHJW2PySXS0Qza9K9LEnOKl1yLJi9p0gF146WNczTRboqqgAdTWF+EjrcIhyazp4ZShLIH5UQMJdj6sPyE6aAD7gQg6Y9Kzf1Hpf//Z",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_vdvk9cvdvk9cvdvk_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_vdvk9cvdvk9cvdvk_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_vdvk9cvdvk9cvdvk_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_vdvk9cvdvk9cvdvk_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_vdvk9cvdvk9cvdvk_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_vdvk9cvdvk9cvdvk_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_vdvk9cvdvk9cvdvk.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_xfvdj3xfvdj3xfvd.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAYFB//EACAQAAEDBQEBAQEAAAAAAAAAAAECAwQABQYRIRIxQWH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAAL/xAAbEQABBQEBAAAAAAAAAAAAAAACAAEDESExUf/aAAwDAQACEQMRAD8AYZBhWy+CfZXFPKI15H4edqtm57dEsvtlxAcbJSN/TUPh8pfoKACd84NVUpssV4lxQPveyd/aFDA8WG9pRmMmgy51dc4ySRNcWpR3/BSte/w2mLktCRwAUqcBvqzZeL//2Q==",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_xfvdj3xfvdj3xfvd_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_xfvdj3xfvdj3xfvd_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_xfvdj3xfvdj3xfvd_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_xfvdj3xfvdj3xfvd_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_xfvdj3xfvdj3xfvd_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_xfvdj3xfvdj3xfvd_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_xfvdj3xfvdj3xfvd.jpg"
+    },
+    "assets/images/hero_v2/Gemini_Generated_Image_yr27ufyr27ufyr27.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABwAFBv/EACYQAAIBAwIEBwAAAAAAAAAAAAECAwAEBQYxBxESIRQVIiNBUZH/xAAVAQEBAAAAAAAAAAAAAAAAAAACBf/EAB0RAAICAQUAAAAAAAAAAAAAAAACARESAxMxUVL/2gAMAwEAAhEDEQA/AMbROpr3H5cOOvy9BzZV2alPG8UMfO0wktnjSPdiCKBtJXEq3BUOen6ru3giZTzjT1Dv23qJpK2Mqk0UrXlosTYeIumZow5uSpPw29VCV5ZW3iG9lPyqnst6DnHR/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_yr27ufyr27ufyr27_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_yr27ufyr27ufyr27_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_yr27ufyr27ufyr27_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_yr27ufyr27ufyr27_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_yr27ufyr27ufyr27_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Gemini_Generated_Image_yr27ufyr27ufyr27_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Gemini_Generated_Image_yr27ufyr27ufyr27.jpg"
+    },
+    "assets/images/hero_v2/Komorki-Lokatorskie_GMS-K_VIS_v003pomniejszone.jpg": {
+      "blur": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAHRAAAQQDAQEAAAAAAAAAAAAAAwABAgUEBhIRB//EABUBAQEAAAAAAAAAAAAAAAAAAAEA/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAxYf/aAAwDAQACEQMRAD8Ar2H0nBEVsVsZygl511FQNvtqEeTGQ6xpMQbSfpEQGy2dsNhr4Ggw60bR4bxERCdq/9k=",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Komorki-Lokatorskie_GMS-K_VIS_v003pomniejszone_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Komorki-Lokatorskie_GMS-K_VIS_v003pomniejszone_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Komorki-Lokatorskie_GMS-K_VIS_v003pomniejszone_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Komorki-Lokatorskie_GMS-K_VIS_v003pomniejszone_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Komorki-Lokatorskie_GMS-K_VIS_v003pomniejszone_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/hero_v2/Komorki-Lokatorskie_GMS-K_VIS_v003pomniejszone_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/hero_v2/Komorki-Lokatorskie_GMS-K_VIS_v003pomniejszone.jpg"
+    },
+    "assets/images/home/garaz_pointcloud.png": {
+      "blur": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQklEQVR4nLWU224jRRCG//Ec7PF4fIjPztjxKbYTj+PYju2x4/MpZpMNSRbYsFmt2BvegjdguWFvEBdcISR4A16GxQgxIIR4gio0SZC4QiBCS193qVX1qaXuLuB/GD4AygO5BGcqANh6AJkKIOQELwGcAegCsAD07un/Q3r3dUsAl47wawCfA/gYwKt7PvmXvALwGYAvIQgu2+WSfhBF5TtRVN6Iovy9yyVt7hBvEUVpI0nKRpbcG1n2bCTpHtG9EUXZyX0jCK4fBcH1M0TJTYpbJ48aIlUNkUcNkscTuMd/i6oGyKsG71YtTJoWIU2LkuoJksetk6L4SJZVclxQ3H7y+mLkD6bJHzBI92+T7k+RT0+S5ouT5ouRrscp4E9SIJCkcDhH4UiBotEiBQMG+Z1cX5y83vDtIaD54hzcynM8aXIiZXLKqLGRrrOROeRMtsHZXJMr5Q6be102K22ulltcLtTZLNV5N2tyPrPPRrLM0XCOg/5tRjiaY2OnxXvVOdcOFtxqLLnVWHGjseaj9im326c8G53zevqY1+M1L3oDHjSavOy0eNzq8KhpcadqsZlvcC65z0ilTa6YM+4Pr3k6eZ9Xs2uejt/j0fApr+Y3fLK44evzF/z84oafnT3hq/mE170WP522+Woy4svpgtfWivu1MddybUY6W+dqfcmT2XM+Xb/ki0cf8Mn8GY8G7/J0+A7Ph1d8ubjky/kZn4/nvLIsHjcbfDG0+GI84bcnS15aJ9ytjtnMdRmxRIky+SOq1ZfUbr9Fx70z6ncfUae1Iqs5p6ODEQ0OBzRuHtOiM6CFdUzDVpdmbYv6hz1q1/pULfcon2mQkdgnaHqUAqFtisWLlE5XqJg/oPLuIZUKB1TMVim7XaL8doHKmSKZhTKZu3tUKVSolC1R1ihSKp6jSHjn7ra1ODnv8HdJVn+VFe0nxe2zvd6AvRWM2rFI3I6GY3ZAD9k+b8AO6SE7GYnZO6mUbSQSdiQUtjWvbiuKZju1suz9RZLU35yv9y2ArwC8/hNBwGuXS7hF+Mv+3/ApgC8AfOMIPwLwAsD4P/IEwIeO8DGA8gO0ryiAfSdw7NkHEDqNOuEETi8zHkAoAfD8AbHMOLByLUGWAAAAAElFTkSuQmCC",
+      "variants": {
+        "small": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/home/garaz_pointcloud_small.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/home/garaz_pointcloud_small.webp"
+        ],
+        "medium": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/home/garaz_pointcloud_medium.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/home/garaz_pointcloud_medium.webp"
+        ],
+        "large": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/home/garaz_pointcloud_large.avif",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/images/home/garaz_pointcloud_large.webp"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/images/home/garaz_pointcloud.png"
     }
   },
   "videos": {
@@ -2228,6 +2552,97 @@
         ]
       },
       "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Garaz_hero_videoo.mp4"
+    },
+    "assets/videos/altany-smietnikowe/Prompt_EN___Slow_and_smooth-ezgif.com-mute-video.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/altany-smietnikowe/Prompt_EN___Slow_and_smooth-ezgif.com-mute-video_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/altany-smietnikowe/Prompt_EN___Slow_and_smooth-ezgif.com-mute-video_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/altany-smietnikowe/Prompt_EN___Slow_and_smooth-ezgif.com-mute-video_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/altany-smietnikowe/Prompt_EN___Slow_and_smooth-ezgif.com-mute-video_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/altany-smietnikowe/Prompt_EN___Slow_and_smooth-ezgif.com-mute-video.mp4"
+    },
+    "assets/videos/altany-zielony-dach/Slow_smooth_camera_pan_aroun.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/altany-zielony-dach/Slow_smooth_camera_pan_aroun_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/altany-zielony-dach/Slow_smooth_camera_pan_aroun_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/altany-zielony-dach/Slow_smooth_camera_pan_aroun_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/altany-zielony-dach/Slow_smooth_camera_pan_aroun_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/altany-zielony-dach/Slow_smooth_camera_pan_aroun.mp4"
+    },
+    "assets/videos/bramy-garazowe/1234.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/bramy-garazowe/1234_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/bramy-garazowe/1234_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/bramy-garazowe/1234_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/bramy-garazowe/1234_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/bramy-garazowe/1234.mp4"
+    },
+    "assets/videos/bramy-garazowe/Subtle_slow_camera_pan_across-ezgif.com-mute-video.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/bramy-garazowe/Subtle_slow_camera_pan_across-ezgif.com-mute-video_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/bramy-garazowe/Subtle_slow_camera_pan_across-ezgif.com-mute-video_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/bramy-garazowe/Subtle_slow_camera_pan_across-ezgif.com-mute-video_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/bramy-garazowe/Subtle_slow_camera_pan_across-ezgif.com-mute-video_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/bramy-garazowe/Subtle_slow_camera_pan_across-ezgif.com-mute-video.mp4"
+    },
+    "assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion1-ezgif.com-video-speed.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion1-ezgif.com-video-speed_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion1-ezgif.com-video-speed_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion1-ezgif.com-video-speed_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion1-ezgif.com-video-speed_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion1-ezgif.com-video-speed.mp4"
+    },
+    "assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2 — kopia.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2 — kopia_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2 — kopia_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2 — kopia_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2 — kopia_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2 — kopia.mp4"
+    },
+    "assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2.mp4": {
+      "variants": {
+        "mobile": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2_mobile.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2_mobile.mp4"
+        ],
+        "desktop": [
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2_desktop.webm",
+          "https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2_desktop.mp4"
+        ]
+      },
+      "original": "https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/assets/videos/garaze-stalowe/Cinematic_subtle_camera_motion_2.mp4"
     }
   }
 }

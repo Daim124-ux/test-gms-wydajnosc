@@ -27,7 +27,7 @@ interface ProductLayoutProps {
 }
 
 export default function ProductLayout({ node }: ProductLayoutProps) {
-  const t = useTranslations('productLayout');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.productLayout');
 
   // Wymuszamy tryb ciemny dla całej strony produktu
   React.useEffect(() => {

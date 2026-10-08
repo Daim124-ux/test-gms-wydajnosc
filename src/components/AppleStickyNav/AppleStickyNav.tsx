@@ -10,8 +10,8 @@ interface AppleStickyNavProps {
 import { useTranslations } from 'next-intl';
 
 export default function AppleStickyNav({ title }: AppleStickyNavProps) {
-  const t = useTranslations('productLayout.nav');
-  const tc = useTranslations('common');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.productLayout.nav');
+  const tc = useTranslations('global.common');
 
   return (
     <div className="sticky top-0 z-50 w-full bg-white/70 dark:bg-[#161617]/70 backdrop-blur-xl border-b-[0.5px] border-black/10 dark:border-white/10 transition-colors duration-300">

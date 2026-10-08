@@ -65,7 +65,7 @@ export default function PoznajKolorystyke({
   show3D = true,
   darkTheme = true
 }: PoznajKolorystykeProps) {
-  const t = useTranslations('productLayout.colorSection');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.productLayout.colorSection');
 
   const [wybranyKolor, setWybranyKolor] = useState<KolorWiaty>(kolory[0]);
   const [poprzedniKolor, setPoprzedniKolor] = useState<KolorWiaty | null>(null);

@@ -1,0 +1,172 @@
+{
+  "hero": {
+    "title": "Stålskjul for sykler",
+    "subtitle": "Vår Rouleur for oppbevaring.",
+    "newCategory": "En helt ny kategori",
+    "cinematicDesc": "Lettere, sterkere, perfeksjonert i hver millimeter. Ekte stål som tåler all slags vind."
+  },
+  "productHero": {
+    "new": "Nyhet",
+    "requestQuote": "Be om tilbud",
+    "downloadCatalog": "Last ned katalog (PDF)",
+    "productImage": "Produktbilde",
+    "noImage": "Ikke noe bilde"
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Stålskjulet er primært designet for sykkeloppbevaring, men kan også brukes til hageredskaper, barnevogner, scootere, sparkesykler og annet tilbehør. Lokkets helling forover sørger for god vannavrenning, og det praktiske håndtaket gjør åpningen enkel."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Pianohengsel i skjul-lokket"
+      },
+      "stopPoints": {
+        "title": "Innovativt åpningssystem med STOP-punkter"
+      },
+      "fabricHandle": {
+        "title": "Tekstilhåndtak som forenkler åpning og lukking av terskelen"
+      },
+      "steelRods": {
+        "title": "Lukking av skjulet ved hjelp av aluminium-stålstag."
+      },
+      "packing": {
+        "title": "Praktisk pakking i pallboks"
+      },
+      "reinforcedCorners": {
+        "title": "Forsterkede hjørner"
+      },
+      "steelTriangles": {
+        "title": "Stivende ståltrekanter i hjørnene"
+      },
+      "lidReinforcement": {
+        "title": "Stålforsterkninger i lokket kombinert med U-profiler"
+      }
+    },
+    "colorSection": {
+      "title": "Utforsk fargevalgene.",
+      "aesthetic": "Tidløs estetikk i alle farger",
+      "match": "Tilpass skjulet til husets fasade",
+      "protection": "Beskyttelse under alle forhold",
+      "quality": "Høyeste kvalitet på lakkoverflaten"
+    },
+    "dimensions": {
+      "title": "Dimensjoner for sykkelboden",
+      "height": "Høyde",
+      "width": "Bredde",
+      "depth": "Dybde",
+      "drawingAlt": "Dimensjoner for sykkelbod - teknisk tegning"
+    },
+    "nav": {
+      "priceFrom": "Fra 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Aluminiumgulv",
+      "subtitle": "festet til bakken med rustfrie ankere.",
+      "description": "Det er mulig å installere et aluminiumgulv i sykkelboden, som effektivt forhindrer uønsket plantevekst, spesielt ved montering på belegningsstein. Gulvet er designet slik at forankringen av skjulet skjer gjennom de samme hullene som i versjonen uten gulv. Dette gjør det enkelt å legge til dette alternativet når det blir nødvendig."
+    },
+    "lifestyle": {
+      "p1": "Selv om vårt skjul hovedsakelig er designet for oppbevaring av sykler, gjør allsidigheten det til en ideell løsning for mange andre behov. I tillegg til sykler, rommer det enkelt hageredskaper som spader, raker eller beskjæringssaks, samt små hageutstyr som potter, frø eller gjødsel. Med romslige dimensjoner — 1950 mm bredde, 900 mm dybde og 1290 mm høyde — kan skjulet også fungere som et praktisk lager for utendørsutstyr som gressklippere, hageslanger osv.",
+      "p2": "Det egner seg også perfekt til oppbevaring av barneleker, inkludert elektriske biler eller tråbiler, sandkasseleker og hagesett. I tillegg kan skjulet romme fiskeutstyr som fiskestenger, sneller eller fiskebager, samt sesongbasert hagedekorasjon som lykter, solcellelamper eller små hagemøbler. Hvis du bruker hagen til avslapning, vil du også finne plass til grilltilbehør.",
+      "p3": "Takket være sin funksjonalitet og romslighet, tilbyr vårt skjul en praktisk løsning for oppbevaring av et bredt spekter av gjenstander som er nyttige i hverdagen, samtidig som den tilgjengelige plassen utnyttes maksimalt."
+    },
+    "showcase1": {
+      "top": "Slitesterk",
+      "glow": "pianohengsel",
+      "bottom": "av stål.",
+      "description": "I vår sykkelbod har vi brukt et pianohengsel som hever standarden for daglig bruk. Dette diskré, men samtidig eksepsjonelt sterke elementet sikrer ikke bare perfekt stivhet i lokket, men også en smidig og nesten lydløs drift. Takket være den kompakte konstruksjonen og den store kontaktflaten, garanterer dette hengselet både pålitelighet og holdbarhet i mange år. Dette er en løsning som vil bli satt pris på av alle brukere som verdsetter presisjon, funksjonalitet og moderne design."
+    },
+    "showcase2": {
+      "top": "Metallterskel",
+      "glow": "av lett aluminium",
+      "description": "Den nedre delen av skjulet er designet for maksimal funksjonalitet og brukervennlighet. Stålterskelen med et elegant tekstilhåndtak sikrer en solid lukking, mens neodymmagneter holder den presist på plass for å forhindre utilsiktet åpning. Spesialtilpassede hengsler og ekstra bøying av elementet skaper en smidig profilert rampe ved åpning, noe som gjør det enkelt å rulle inn sykkelen. Denne gjennomtenkte løsningen kombinerer holdbarhet med komfort, og møter behovene til krevende brukere."
+    }
+  },
+  "features": {
+    "title": "Viktig informasjon."
+  },
+  "configuratorPromo": {
+    "title": "Konfigurer ditt skjul",
+    "description": "Vår konfigurator gir deg muligheten til å tilpasse produktene slik at de oppfyller kravene til selv de mest krevende kundene. Du får en sanntidsvisning av produktet mens du konfigurerer."
+  },
+  "lifestyle": {
+    "title": "Mer enn bare en sykkelbod",
+    "description": "Selv om vårt skjul hovedsakelig er designet for oppbevaring av sykler, gjør allsidigheten det til en ideell løsning for mange andre behov."
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Ikke bare for sykler",
+    "items": {
+      "item1": {
+        "title": "Stålskap for sykler",
+        "description": "Oppbevar syklene dine trygt i en stålbod fra en polsk produsent."
+      },
+      "item2": {
+        "title": "Stålbod for hageutstyr",
+        "description": "Stålbod for hageutstyr."
+      },
+      "item3": {
+        "title": "Stålbod for SPA-utstyr",
+        "description": "Oppbevar håndklær, morgenkåper og utstyr til rengjøring av jacuzzi."
+      }
+    }
+  },
+  "threeDShowcase": {
+    "close": "Lukk",
+    "title": "Se noen høydepunkter i 3D",
+    "button": "Se nærmere",
+    "resetTooltip": "Nullstill visning",
+    "modelAlt": "Sykkelbod i 3D",
+    "arButton": "Vis i hagen din (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Pianomenthengle",
+        "description": "Festet til lokket med små, tett plasserte skruer, garanterer denne komponenten stille og pålitelig drift samt lang levetid for lokket. Takket være den nøye plasseringen av skruene fungerer lokket smidig og lydløst, samtidig som det sikrer holdbarhet og stabilitet over mange års bruk."
+      },
+      "reinforcedCorners": {
+        "label": "Forsterkede hjørner",
+        "description": "Ekstra forsterkninger i konstruksjonens hjørner gir eksepsjonell stivhet og motstand mot deformasjon. Dette er et nøkkelelement ved intensiv bruk av boden, som forhindrer at materialet 'slår seg' og opprettholder geometrien i tiår."
+      },
+      "locking": {
+        "label": "Låsing med nøkkel",
+        "description": "Vi har brukt en sylinderlås med flerpunktslåsing som gir det høyeste sikkerhetsnivået for sykkelen din. Dette systemet er motstandsdyktig mot vær og vind samt forsøk på innbrudd, noe som gir deg full trygghet."
+      },
+      "stopPoints": {
+        "label": "Innovativt system med STOPP-punkter",
+        "description": "Spesielle stoppere og et hydraulisk bremsesystem for lokket forhindrer brå støt ved lukking. STOPP-punktene gjør det mulig å betjene lokket trygt uten risiko for å klemme fingrene eller skade kabinettet."
+      },
+      "thresholdHandle": {
+        "label": "Terskel med stoffhåndtak",
+        "description": "En ergonomisk terskel utstyrt med et stoffhåndtak gjør det lettere å trille sykkelen inn i boden. Håndtaket gir et sikkert grep selv med hansker, og terskelens utforming minimerer hindringen for sykkelhjulene."
+      }
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymmagneter",
+        "desc": "montert på sidene av klaffen"
+      },
+      "handle": {
+        "title": "Tekstilgrep",
+        "desc": "som gjør åpning enklere"
+      },
+      "tin": {
+        "title": "Galvanisert",
+        "desc": "klaff"
+      },
+      "hinges": {
+        "title": "Skrubare hengsler",
+        "desc": "som garanterer holdbarhet"
+      },
+      "bends": {
+        "title": "Forsterkende bøyninger",
+        "desc": "som stiver av terskelen"
+      },
+      "angle": {
+        "title": "Profilert vinkel",
+        "desc": "for enklere innkjøring"
+      }
+    },
+    "headline": "Sykkelstyrke.",
+    "description": "Konstruksjonen av sykkelboden er designet for maksimal styrke og holdbarhet. Et sentralt forsterkende element er de proprietære trekantene kombinert med C-profiler, som er utviklet og produsert internt. Denne løsningen sikrer eksepsjonell stivhet og stabilitet for de enkelte komponentene i klaffen. Veggene i boden er koblet sammen med justerbare trekanter, noe som muliggjør presis tilpasning og montering. Ytterligere forsterkning gis av stålhjørner, utskåret med CNC-maskiner, som ikke bare øker stivheten i veggene, men også sikrer alle koblinger permanent. Dette er en innovativ tilnærming som garanterer pålitelighet i mange år."
+  }
+}

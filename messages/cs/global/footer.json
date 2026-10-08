@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Nechoďte podle šablon.",
+    "prefix": "Chyťte oborového",
+    "cta": "Jednorožce."
+  },
+  "location": {
+    "title": "Provozní doba a poloha",
+    "address1": "Kancelář I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Polsko",
+    "workingDays": "Pondělí - Pátek",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Rychlý přístup"
+  },
+  "career": {
+    "title": "Kariéra v GMS",
+    "description": "Začněte pracovat v GMS Corporation",
+    "cta": "Připojte se k naší komunitě"
+  },
+  "bottom": {
+    "rights": "Všechna práva vyhrazena",
+    "author": "autorem Mateusz Sromek",
+    "rodo": "GDPR",
+    "cookies": "Soubory cookie"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "welcome": "Ako vám môžem dnes pomôcť?",
+  "placeholder": "Opýtajte sa GMS Corporation...",
+  "assistant": "AI asistent",
+  "processing": "Spracovanie údajov...",
+  "clearHistory": "Vymazať históriu konverzácie",
+  "clearConfirm": "Naozaj chcete vymazať históriu konverzácie?",
+  "close": "Zatvoriť",
+  "chips": {
+    "summary": "Zhrnúť stránku",
+    "summaryPrompt": "Príprav krátky súhrn (3-5 bodov) toho, čo sa nachádza na tejto podstránke",
+    "specs": "Technická špecifikácia",
+    "specsPrompt": "Vyťaž technickú špecifikáciu z obsahu tejto stránky alebo povedz o najdôležitejších technických detailoch"
+  }
+}

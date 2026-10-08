@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Házrendszer",
+    "osiedleSystem": "Teleprendszer",
+    "shop": "Webshop",
+    "partnerZone": "Partnerzóna",
+    "contact": "Kapcsolat",
+    "more": "Több"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Szupererős garázsok, közvetlenül a talajra szerelhetővel.",
+    "shelterWoodDesc": "Kerti, szerszámtároló, tűzifa- vagy motorkerékpár-védőbeépítések.",
+    "shelterRamps": "bejárati sín beépítési lehetőséggel",
+    "tabs": {
+      "garages": "Acél garázsok",
+      "superstrong": "Superstrong garázsok",
+      "bikeShelter": "Kerékpár-védőbeépítés",
+      "steelShelters": "Acél védőbeépítések",
+      "gates": "Garázskapuk és hajtóművek",
+      "greenShelters": "Zöld pavilonok",
+      "trashShelters": "Szeméttárolók",
+      "compactShelters": "Kompakt szeméttárolók",
+      "basementDoors": "Belső lépcsőházi ajtók",
+      "collectiveGarages": "Közös garázsok",
+      "partitionWalls": "Válogatófalak",
+      "bikeCages": "Kerékpár-boxok lekerítései"
+    },
+    "promos": {
+      "checkAlso": "Nézze meg még:",
+      "trashSheltersTitle": "Szeméttartó pavilonok és fedélkezű szerkezetek",
+      "trashSheltersDesc": "A hulladék tárolása is lehet elegáns.",
+      "greenSheltersTitle": "Zöld tetős pavilonok",
+      "greenSheltersDesc": "Zöld kiegészítés a betonrengetegben.",
+      "ecoMoves": "Öko-lépéseink",
+      "configureShelter": "Konfigurálja a pavilonját",
+      "configureGarage": "Konfigurálja a garázsát",
+      "configureInShop": "Konfigurálás a webshopban",
+      "collectiveGaragesTitle": "Közös garázsok - boxok",
+      "collectiveGaragesDesc": "Megbízható minőség a boxjában.",
+      "partitionWallsTitle": "Válogatófalak és lekerítések",
+      "watchTest": "Nézze meg a SuperStrong tesztet",
+      "nanoCover": "NANO-{num} takaró",
+      "sectionInPrep": "A {name} szekció jelenleg készítés alatt áll."
+    },
+    "configuratorPromo": {
+      "title": "Konfigurálja a fedélkezű szerkezetét"
+    },
+    "blog": {
+      "articles": "Blogcikkek",
+      "fromBlog": "Cikk a blogról",
+      "readMore": "A cikk elolvasása",
+      "titles": {
+        "ecoTrash": "Lehet egy szeméttartó pavilon környezetbarát?",
+        "trashDistance": "Szabályok a szeméttartó és az épület közötti távolságról",
+        "investInDoors": "Megéri beruházni pincajtókba, és melyiket érdemes választani?",
+        "garageOrganization": "Hogyan használjuk ki optimálisan a garázsboxot egy lakóházban?",
+        "partitionPlanning": "A lekerítések tervezésének alapjai a modern építészetben",
+        "warehouseSafety": "Biztonság és térszervezés raktárhallokban",
+        "beforeBuying": "6 dolog, amit érdemes tudni acélgarázs vásárlása előtt",
+        "howToArrange": "Hogyan rendezzük be a garázst: az egyszerű raktártól a stílusos műhelyig",
+        "superstrongInvestment": "Miért hosszú távú befektetés egy SuperStrong garázs?",
+        "superstrongInstall": "SuperStrong garázs összeszerelése lépésről lépésre",
+        "motoGarage": "Készítsd elő az ideális motorkerékpár garázst: Lépésről lépésre útmutató",
+        "bikeSecurity": "Hogyan védjük meg a bicikliket a lopástól és az időjárástól?"
+      }
+    },
+    "moreLinks": {
+      "about": "Rólunk",
+      "career": "Karrier",
+      "blog": "Blog",
+      "distributors": "Forgalmazók",
+      "projects": "Referenciák",
+      "privacy": "Adatvédelmi irányelvek",
+      "downloads": "Letöltések"
+    },
+    "titles": {
+      "garaze_stalowe": "Acél garázsok",
+      "garaze_superstrong": "Superstrong garázsok",
+      "wiata": "Kerékpár-védőbeépítés",
+      "wiaty_stalowe": "Acél védőbeépítések",
+      "bramy": "Garázskapuk és hajtóművek",
+      "altany_zielone": "Zöld pavilonok",
+      "altany_smietnikowe": "Szeméttárolók",
+      "kompaktowe": "Kompakt védőbeépítések",
+      "drzwi": "Pinceajtók",
+      "garaze_zbiorcze": "Közös garázsok",
+      "scianki": "Válogatófalak",
+      "wygrodzenia": "Ipari lekerítések"
+    },
+    "gatesTitles": {
+      "tilt": "Felnyeregető garázskapuk",
+      "hinged": "Nyitható kapuk",
+      "hingedPanel": "Panelos nyitható kapuk",
+      "sectional": "Szekciós kapuk",
+      "singleLeafSteel": "Egybekarmos - lemez",
+      "doubleLeafSteel": "Kétbekarmos - lemez",
+      "singleLeafPanel": "Egybekarmos - paneles",
+      "doubleLeafPanel": "Kétbekarmos - paneles"
+    }
+  }
+}

@@ -31,7 +31,7 @@ const AIIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
 import { useLocale } from 'next-intl';
 
 export default function ChatWidget() {
-  const t = useTranslations('chat');
+  const t = useTranslations('global.chat');
   const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);

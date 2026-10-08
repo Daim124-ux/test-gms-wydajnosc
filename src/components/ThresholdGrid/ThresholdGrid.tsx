@@ -22,7 +22,7 @@ export default function ThresholdGrid({
   bgClass = 'bg-black',
   textColor = 'text-white'
 }: ThresholdGridProps) {
-  const t = useTranslations('thresholdGrid');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.thresholdGrid');
   const rgb = hexToRgb(highlightColor);
 
   const maskFromClass = bgClass.includes('white')

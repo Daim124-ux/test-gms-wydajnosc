@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Sortez des sentiers battus.",
+    "prefix": "Attrapez la",
+    "cta": "Licorne du secteur."
+  },
+  "location": {
+    "title": "Horaires d'ouverture & Localisation",
+    "address1": "Bureau I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Pologne",
+    "workingDays": "Lundi - Vendredi",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Accès rapide"
+  },
+  "career": {
+    "title": "Carrière GMS",
+    "description": "Commencez à travailler chez GMS Corporation",
+    "cta": "Rejoignez notre communauté"
+  },
+  "bottom": {
+    "rights": "Tous droits réservés",
+    "author": "par Mateusz Sromek",
+    "rodo": "RGPD",
+    "cookies": "Cookies"
+  }
+}

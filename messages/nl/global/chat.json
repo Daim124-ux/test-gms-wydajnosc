@@ -1,0 +1,15 @@
+{
+  "welcome": "Hoe kan ik u vandaag helpen?",
+  "placeholder": "Stel een vraag aan GMS Corporation...",
+  "assistant": "AI Assistent",
+  "processing": "Gegevens worden verwerkt...",
+  "clearHistory": "Gespreksgeschiedenis wissen",
+  "clearConfirm": "Wilt u zeker dat u de gespreksgeschiedenis wilt wissen?",
+  "close": "Sluiten",
+  "chips": {
+    "summary": "Pagina samenvatten",
+    "summaryPrompt": "Maak een korte samenvatting (3-5 punten) van wat er op deze pagina staat",
+    "specs": "Technische specificaties",
+    "specsPrompt": "Haal de technische specificaties uit de inhoud van deze pagina of vertel over de belangrijkste technische details"
+  }
+}

@@ -17,8 +17,8 @@ const LifestyleDescription = ({
   accentTextColor = 'text-white',
   borderColor = 'border-white/5',
 }: LifestyleDescriptionProps) => {
-  const t = useTranslations('productLayout.lifestyle');
-  const tc = useTranslations('configuratorPromo');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.productLayout.lifestyle');
+  const tc = useTranslations('pages.system-dom.wiata-rowerowa.configuratorPromo');
 
   return (
     <section className={`${bgClass} pt-2 pb-5 px-6 relative overflow-hidden`}>

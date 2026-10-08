@@ -24,11 +24,11 @@ interface FooterProps {
 }
 
 export default function Footer({ variant }: FooterProps) {
-  const t = useTranslations('footer');
-  const tn = useTranslations('navigation.header');
-  const tmt = useTranslations('navigation.megaMenu.tabs');
-  const tmg = useTranslations('navigation.megaMenu.gatesTitles');
-  const tml = useTranslations('navigation.megaMenu.moreLinks');
+  const t = useTranslations('global.footer');
+  const tn = useTranslations('global.navigation.header');
+  const tmt = useTranslations('global.navigation.megaMenu.tabs');
+  const tmg = useTranslations('global.navigation.megaMenu.gatesTitles');
+  const tml = useTranslations('global.navigation.megaMenu.moreLinks');
 
   const [icons, setIcons] = useState<{ id: number; src: string; delay: number; x: string; size: number; startY: number; color: string }[]>([]);
   const videoRef = React.useRef<HTMLVideoElement>(null);

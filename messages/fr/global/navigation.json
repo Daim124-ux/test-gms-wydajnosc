@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Système Maison",
+    "osiedleSystem": "Système Résidentiel",
+    "shop": "Boutique",
+    "partnerZone": "Zone Partenaire",
+    "contact": "Contact",
+    "more": "Plus"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Garages super résistants, pour montage direct au sol.",
+    "shelterWoodDesc": "Abris de jardin, abris à outils, abris pour bois ou motos.",
+    "shelterRamps": "avec possibilité de montage d'un rail d'accès",
+    "tabs": {
+      "garages": "Garages en acier",
+      "superstrong": "Garages Superstrong",
+      "bikeShelter": "Abri pour vélos",
+      "steelShelters": "Abris en acier",
+      "gates": "Portes de garage et motorisations",
+      "greenShelters": "Pavillons verts",
+      "trashShelters": "Abris pour poubelles",
+      "compactShelters": "Abris poubelles compacts",
+      "basementDoors": "Portes de cage d'escalier",
+      "collectiveGarages": "Garages collectifs",
+      "partitionWalls": "Cloisons",
+      "bikeCages": "Enclos pour vélos"
+    },
+    "promos": {
+      "checkAlso": "Consultez également :",
+      "trashSheltersTitle": "Abris pour poubelles",
+      "trashSheltersDesc": "Stockez vos déchets avec élégance.",
+      "greenSheltersTitle": "Abris à toit végétalisé",
+      "greenSheltersDesc": "Une touche de vert dans la forêt de béton.",
+      "ecoMoves": "Nos initiatives éco",
+      "configureShelter": "Configurez votre abri",
+      "configureGarage": "Configurez votre garage",
+      "configureInShop": "Configurez dans la boutique",
+      "collectiveGaragesTitle": "Garages collectifs - box",
+      "collectiveGaragesDesc": "Une qualité fiable pour votre box.",
+      "partitionWallsTitle": "Cloisons et enclos",
+      "watchTest": "Regardez le test SuperStrong",
+      "nanoCover": "Protection NANO-{num}",
+      "sectionInPrep": "La section {name} est actuellement en préparation."
+    },
+    "configuratorPromo": {
+      "title": "Configurez votre abri"
+    },
+    "blog": {
+      "articles": "Articles de blog",
+      "fromBlog": "Article du blog",
+      "readMore": "Lire l'article",
+      "titles": {
+        "ecoTrash": "Un abri pour poubelles peut-il être respectueux de l'environnement ?",
+        "trashDistance": "Règles concernant la distance entre les poubelles et le bâtiment",
+        "investInDoors": "Vaut-il la peine d'investir dans des portes de cave et lesquelles choisir ?",
+        "garageOrganization": "Comment optimiser l'aménagement d'un box de garage dans un immeuble ?",
+        "partitionPlanning": "Principes de planification des enclos dans la construction moderne",
+        "warehouseSafety": "Sécurité et organisation de l'espace dans les entrepôts",
+        "beforeBuying": "6 choses à savoir avant d'acheter un garage en acier",
+        "howToArrange": "Comment aménager son garage : d'un simple espace de stockage à un atelier stylé",
+        "superstrongInvestment": "Pourquoi le garage SuperStrong est-il un investissement pour des années ?",
+        "superstrongInstall": "Installation du garage SuperStrong étape par étape",
+        "motoGarage": "Créez le garage à moto idéal : guide étape par étape",
+        "bikeSecurity": "Comment protéger les vélos contre le vol et les intempéries ?"
+      }
+    },
+    "moreLinks": {
+      "about": "À propos",
+      "career": "Carrière",
+      "blog": "Blog",
+      "distributors": "Distributeurs",
+      "projects": "Réalisations",
+      "privacy": "Politique de confidentialité",
+      "downloads": "Téléchargements"
+    },
+    "titles": {
+      "garaze_stalowe": "Garages en acier",
+      "garaze_superstrong": "Garages Superstrong",
+      "wiata": "Abri pour vélos",
+      "wiaty_stalowe": "Abris en acier",
+      "bramy": "Portes de garage et motorisations",
+      "altany_zielone": "Abris de jardin",
+      "altany_smietnikowe": "Abris pour poubelles",
+      "kompaktowe": "Protections compactes",
+      "drzwi": "Portes de cave",
+      "garaze_zbiorcze": "Garages collectifs",
+      "scianki": "Cloisons",
+      "wygrodzenia": "Clôtures industrielles"
+    },
+    "gatesTitles": {
+      "tilt": "Portes de garage basculantes",
+      "hinged": "Portes battantes",
+      "hingedPanel": "Portes battantes à panneaux",
+      "sectional": "Portes sectionnelles",
+      "singleLeafSteel": "À un vantail - en tôle",
+      "doubleLeafSteel": "À deux vantaux - en tôle",
+      "singleLeafPanel": "À un vantail - panneaux",
+      "doubleLeafPanel": "À deux vantaux - panneaux"
+    }
+  }
+}

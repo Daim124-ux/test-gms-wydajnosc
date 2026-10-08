@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Break the mold.",
+    "prefix": "Catch the industry",
+    "cta": "Unicorn."
+  },
+  "location": {
+    "title": "Working Hours & Location",
+    "address1": "Office I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Poland",
+    "workingDays": "Monday - Friday",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Quick Access"
+  },
+  "career": {
+    "title": "GMS Careers",
+    "description": "Start your career at GMS Corporation",
+    "cta": "Join our community"
+  },
+  "bottom": {
+    "rights": "All Rights Reserved",
+    "author": "by Mateusz Sromek",
+    "rodo": "GDPR",
+    "cookies": "Cookies"
+  }
+}

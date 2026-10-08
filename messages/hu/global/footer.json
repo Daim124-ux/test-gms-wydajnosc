@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Ne kövesd a sablonokat.",
+    "prefix": "Fogd meg az iparág",
+    "cta": "Unikornsát."
+  },
+  "location": {
+    "title": "Nyitvatartás és Helyszín",
+    "address1": "Irodai egység I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Lengyelország",
+    "workingDays": "Hétfő - Péntek",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Gyors elérhetőség"
+  },
+  "career": {
+    "title": "GMS Karrier",
+    "description": "Kezdje pályáját a GMS Corporationban",
+    "cta": "Csatlakozzon közösségünkhöz"
+  },
+  "bottom": {
+    "rights": "Minden jog fenntartva",
+    "author": "Mateusz Sromek készítette",
+    "rodo": "GDPR",
+    "cookies": "Sütik"
+  }
+}

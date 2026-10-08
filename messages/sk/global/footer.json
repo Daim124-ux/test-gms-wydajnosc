@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Nechoď podľa schémat.",
+    "prefix": "Chyt branžového",
+    "cta": "Jednorožca."
+  },
+  "location": {
+    "title": "Otváracie hodiny a lokalita",
+    "address1": "Kancelária I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Poľsko",
+    "workingDays": "Pondelok - Piatok",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Rýchly prístup"
+  },
+  "career": {
+    "title": "Kariéra v GMS",
+    "description": "Začnite pracovať v GMS Corporation",
+    "cta": "Pridajte sa k našej komunite"
+  },
+  "bottom": {
+    "rights": "Všetky práva vyhradené",
+    "author": "autor Mateusz Sromek",
+    "rodo": "GDPR",
+    "cookies": "Cookies"
+  }
+}

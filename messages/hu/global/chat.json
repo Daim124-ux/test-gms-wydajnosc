@@ -1,0 +1,15 @@
+{
+  "welcome": "Miben segíthetek ma?",
+  "placeholder": "Kérdezzen a GMS Corporationtól...",
+  "assistant": "AI Asszisztens",
+  "processing": "Adatok feldolgozása...",
+  "clearHistory": "Beszélgetés törlése",
+  "clearConfirm": "Biztosan törölni szeretné a beszélgetés előzményeit?",
+  "close": "Bezárás",
+  "chips": {
+    "summary": "Összegezés az oldalról",
+    "summaryPrompt": "Készíts egy rövid összefoglalót (3-5 pontban) arról, hogy mi található ezen az aloldalon",
+    "specs": "Technikai specifikáció",
+    "specsPrompt": "Készítsd ki a műszaki specifikációkat az oldal tartalmából, vagy beszélj a legfontosabb műszaki részletekről"
+  }
+}

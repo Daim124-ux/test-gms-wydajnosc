@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Non seguire gli schemi.",
+    "prefix": "Acchiappa l'unicorno",
+    "cta": "del settore."
+  },
+  "location": {
+    "title": "Orari di lavoro e Posizione",
+    "address1": "Ufficio I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Polonia",
+    "workingDays": "Lunedì - Venerdì",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Accesso rapido"
+  },
+  "career": {
+    "title": "Carriera GMS",
+    "description": "Inizia a lavorare in GMS Corporation",
+    "cta": "Unisciti alla nostra community"
+  },
+  "bottom": {
+    "rights": "Tutti i diritti riservati",
+    "author": "di Mateusz Sromek",
+    "rodo": "GDPR",
+    "cookies": "Cookie"
+  }
+}

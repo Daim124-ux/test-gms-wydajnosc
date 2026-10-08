@@ -14,7 +14,7 @@ const VergeViewer = dynamic(() => import('./VergeViewer'), {
 });
 
 export default function ThreeDShowcase() {
-  const t = useTranslations('threeDShowcase');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.threeDShowcase');
 
   const tabs = [
     {

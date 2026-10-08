@@ -1,0 +1,15 @@
+{
+  "welcome": "Hur kan jag hjälpa dig idag?",
+  "placeholder": "Fråga GMS Corporation...",
+  "assistant": "AI-assistent",
+  "processing": "Bearbetar data...",
+  "clearHistory": "Rensa konversationshistorik",
+  "clearConfirm": "Är du säker på att du vill rensa konversationshistoriken?",
+  "close": "Stäng",
+  "chips": {
+    "summary": "Sammanfatta sidan",
+    "summaryPrompt": "Skapa en kort sammanfattning (3–5 punkter) av innehållet på den här undersidan",
+    "specs": "Teknisk specifikation",
+    "specsPrompt": "Extrahera den tekniska specifikationen från innehållet på den här sidan eller berätta om de viktigaste tekniska detaljerna"
+  }
+}

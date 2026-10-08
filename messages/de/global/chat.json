@@ -1,0 +1,15 @@
+{
+  "welcome": "Wie kann ich Ihnen heute helfen?",
+  "placeholder": "Fragen Sie die GMS Corporation...",
+  "assistant": "KI-Assistent",
+  "processing": "Daten werden verarbeitet...",
+  "clearHistory": "Chatverlauf löschen",
+  "clearConfirm": "Möchten Sie den Chatverlauf wirklich löschen?",
+  "close": "Schließen",
+  "chips": {
+    "summary": "Seite zusammenfassen",
+    "summaryPrompt": "Erstelle eine kurze Zusammenfassung (3-5 Punkte) der Inhalte auf dieser Unterseite",
+    "specs": "Technische Spezifikationen",
+    "specsPrompt": "Extrahiere die technischen Spezifikationen aus dem Inhalt dieser Seite oder beschreibe die wichtigsten technischen Details"
+  }
+}

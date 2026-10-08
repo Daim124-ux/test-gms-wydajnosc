@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Система для дому",
+    "osiedleSystem": "Система для житлових комплексів",
+    "shop": "Магазин",
+    "partnerZone": "Зона партнера",
+    "contact": "Контакти",
+    "more": "Більше"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Надміцні гаражі для монтажу безпосередньо в ґрунт.",
+    "shelterWoodDesc": "Садові навіси, навіси для інструментів, дров або мотоцикла.",
+    "shelterRamps": "з можливістю монтажу в’їзної рейки",
+    "tabs": {
+      "garages": "Сталеві гаражі",
+      "superstrong": "Гаражі Superstrong",
+      "bikeShelter": "Навіс для велосипедів",
+      "steelShelters": "Сталеві навіси",
+      "gates": "Гаражні ворота та приводи",
+      "greenShelters": "Зелені альтанки",
+      "trashShelters": "Сміттєві альтанки",
+      "compactShelters": "Компактні сміттєві укриття",
+      "basementDoors": "Внутрішньопід’їзні двері",
+      "collectiveGarages": "Колективні гаражі",
+      "partitionWalls": "Перегородки",
+      "bikeCages": "Огорожі для велосипедних боксів"
+    },
+    "promos": {
+      "checkAlso": "Також перевірте:",
+      "trashSheltersTitle": "Альтанки та навіси для сміття",
+      "trashSheltersDesc": "Зберігайте відходи зі смаком.",
+      "greenSheltersTitle": "Альтанки з зеленим дахом",
+      "greenSheltersDesc": "Зелений акцент у бетонних джунглях.",
+      "ecoMoves": "Наші еко-кроки",
+      "configureShelter": "Налаштуйте свою альтанку",
+      "configureGarage": "Налаштуйте свій гараж",
+      "configureInShop": "Налаштуйте в магазині",
+      "collectiveGaragesTitle": "Колективні гаражі - бокси",
+      "collectiveGaragesDesc": "Надійна якість у вашому боксі.",
+      "partitionWallsTitle": "Перегородки та огорожі",
+      "watchTest": "Подивіться тест SuperStrong",
+      "nanoCover": "Захист NANO-{num}",
+      "sectionInPrep": "Розділ {name} наразі знаходиться в підготовці."
+    },
+    "configuratorPromo": {
+      "title": "Налаштуйте свій навіс"
+    },
+    "blog": {
+      "articles": "Статті блогу",
+      "fromBlog": "Стаття з блогу",
+      "readMore": "Читати статтю",
+      "titles": {
+        "ecoTrash": "Чи може альтанка для контейнерів зі сміттям бути екологічною?",
+        "trashDistance": "Правила щодо відстані від сміттєзбірника до будівлі",
+        "investInDoors": "Чи варто інвестувати в підвальні двері та які обрати?",
+        "garageOrganization": "Як оптимально облаштувати гаражний бокс у багатоквартирному будинку?",
+        "partitionPlanning": "Принципи планування огорож у сучасному будівництві",
+        "warehouseSafety": "Безпека та організація простору в складських приміщеннях",
+        "beforeBuying": "6 речей, які варто знати перед покупкою сталевого гаража",
+        "howToArrange": "Як облаштувати гараж: від простого складу до стильної майстерні",
+        "superstrongInvestment": "Чому гараж SuperStrong — це інвестиція на роки?",
+        "superstrongInstall": "Монтаж гаража SuperStrong крок за кроком",
+        "motoGarage": "Створіть ідеальний гараж для мотоцикла: посібник крок за кроком",
+        "bikeSecurity": "Як захистити велосипеди від крадіжки та негоди?"
+      }
+    },
+    "moreLinks": {
+      "about": "Про нас",
+      "career": "Кар'єра",
+      "blog": "Блог",
+      "distributors": "Дистриб'ютори",
+      "projects": "Реалізації",
+      "privacy": "Політика конфіденційності",
+      "downloads": "Для завантаження"
+    },
+    "titles": {
+      "garaze_stalowe": "Сталеві гаражі",
+      "garaze_superstrong": "Гаражі Superstrong",
+      "wiata": "Навіс для велосипедів",
+      "wiaty_stalowe": "Сталеві навіси",
+      "bramy": "Гаражні ворота та приводи",
+      "altany_zielone": "Зелені альтанки",
+      "altany_smietnikowe": "Сміттєві альтанки",
+      "kompaktowe": "Компактні укриття",
+      "drzwi": "Підвальні двері",
+      "garaze_zbiorcze": "Колективні гаражі",
+      "scianki": "Перегородки",
+      "wygrodzenia": "Промислові огородження"
+    },
+    "gatesTitles": {
+      "tilt": "Підйомні гаражні ворота",
+      "hinged": "Розпашні ворота",
+      "hingedPanel": "Панельні розпашні ворота",
+      "sectional": "Секційні ворота",
+      "singleLeafSteel": "Одностулкові - металеві",
+      "doubleLeafSteel": "Двостулкові - металеві",
+      "singleLeafPanel": "Одностулкові - панельні",
+      "doubleLeafPanel": "Двостулкові - панельні"
+    }
+  }
+}

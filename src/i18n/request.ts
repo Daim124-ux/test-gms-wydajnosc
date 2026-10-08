@@ -12,11 +12,38 @@ export default getRequestConfig(async ({ requestLocale }) => {
   }
 
   try {
+    // Explicit static imports for Next.js bundler
+    const [
+      common, navigation, footer, chat,
+      wiata, garaze
+    ] = await Promise.all([
+      import(`../../messages/${locale}/global/common.json`),
+      import(`../../messages/${locale}/global/navigation.json`),
+      import(`../../messages/${locale}/global/footer.json`),
+      import(`../../messages/${locale}/global/chat.json`),
+      import(`../../messages/${locale}/pages/system-dom/wiata-rowerowa.json`),
+      import(`../../messages/${locale}/pages/system-dom/garaze-stalowe.json`).catch(() => ({ default: {} }))
+    ]);
+
     return {
       locale,
-      messages: (await import(`../../messages/${locale}.json`)).default
+      messages: {
+        global: {
+          common: common.default,
+          navigation: navigation.default,
+          footer: footer.default,
+          chat: chat.default
+        },
+        pages: {
+          'system-dom': {
+            'wiata-rowerowa': wiata.default,
+            'garaze-stalowe': garaze.default
+          }
+        }
+      }
     };
   } catch (error) {
+    console.error('Error loading translations:', error);
     notFound();
   }
 });

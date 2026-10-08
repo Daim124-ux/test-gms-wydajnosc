@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Не йди шаблонами.",
+    "prefix": "Спіймай галузевого",
+    "cta": "Єдинорога."
+  },
+  "location": {
+    "title": "Години роботи та розташування",
+    "address1": "Офіс I, II, Nawojowa 33-335",
+    "address2": "Криницька 55, Навоєва",
+    "country": "Польща",
+    "workingDays": "Понеділок - П'ятниця",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Швидкий доступ"
+  },
+  "career": {
+    "title": "GMS Кар'єра",
+    "description": "Почніть працювати в GMS Corporation",
+    "cta": "Приєднуйтесь до нашої спільноти"
+  },
+  "bottom": {
+    "rights": "Усі права захищені",
+    "author": "автор Mateusz Sromek",
+    "rodo": "GDPR",
+    "cookies": "Файли cookie"
+  }
+}

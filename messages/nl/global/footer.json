@@ -1,0 +1,29 @@
+{
+  "unicorn": {
+    "tagline": "Doorbreek de patronen.",
+    "prefix": "Vang de branche-",
+    "cta": "Eenhoorn."
+  },
+  "location": {
+    "title": "Openingstijden & Locatie",
+    "address1": "Kantoor I, II, Nawojowa 33-335",
+    "address2": "Krynicka 55, Nawojowa",
+    "country": "Polen",
+    "workingDays": "Maandag - Vrijdag",
+    "workingHours": "07:00 - 15:00"
+  },
+  "quickAccess": {
+    "title": "Snelkoppelingen"
+  },
+  "career": {
+    "title": "GMS Carrière",
+    "description": "Begin uw carrière bij GMS Corporation",
+    "cta": "Sluit je aan bij onze community"
+  },
+  "bottom": {
+    "rights": "Alle rechten voorbehouden",
+    "author": "door Mateusz Sromek",
+    "rodo": "AVG",
+    "cookies": "Cookies"
+  }
+}

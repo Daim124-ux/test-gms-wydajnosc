@@ -21,6 +21,8 @@ import { locales } from '@/i18n/request';
 import Header from "@/components/Header/Header";
 import ChatWidget from "@/components/Chat/ChatWidget";
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export default async function RootLayout({
@@ -55,6 +57,8 @@ export default async function RootLayout({
           {children}
           <ChatWidget />
         </NextIntlClientProvider>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

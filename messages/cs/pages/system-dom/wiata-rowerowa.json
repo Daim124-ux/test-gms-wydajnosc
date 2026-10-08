@@ -1,0 +1,172 @@
+{
+  "hero": {
+    "title": "Ocelový kolařský přístřešek",
+    "subtitle": "Náš Rouleur skladování.",
+    "newCategory": "Zcela nová kategorie",
+    "cinematicDesc": "Lehčí, silnější, dopracovaný do posledního milimetru. Skutečná ocel, kterou žádný vítr nepřemůže."
+  },
+  "productHero": {
+    "new": "Novinka",
+    "requestQuote": "Zadat poptávku",
+    "downloadCatalog": "Stáhnout katalog (PDF)",
+    "productImage": "Fotografie produktu",
+    "noImage": "Chybějící fotografie"
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Ocelový přístřešek byl navržen především pro skladování kol, lze v něm však uchovávat také zahradní nářadí, dětské kočárky, skútry, koloběžky a další příslušenství i užitečné předměty. Sklon střechy klopy směřující dopředu zajišťuje dobrý odtok vody a díky pohodlné madle je otevírání snadné."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Klavírný závěs v klopě přístřešku"
+      },
+      "stopPoints": {
+        "title": "Inovativní systém otevírání s body STOP"
+      },
+      "fabricHandle": {
+        "title": "Látková madla usnadňující otevírání a zavírání prahu"
+      },
+      "steelRods": {
+        "title": "Zavírání přístřešku pomocí hliníkovo-ocelových tahel."
+      },
+      "packing": {
+        "title": "Pohodlné balení v paletovém boxu"
+      },
+      "reinforcedCorners": {
+        "title": "Zpevněné rohy"
+      },
+      "steelTriangles": {
+        "title": "Zpevňující ocelové trojúhelníky v rozích"
+      },
+      "lidReinforcement": {
+        "title": "Ocelová zpevnění klopy spojená s U-profily"
+      }
+    },
+    "colorSection": {
+      "title": "Seznamte se s barevností.",
+      "aesthetic": "Nadčasová estetika v každé barvě",
+      "match": "Přizpůsobte přístřešek fasádě vašeho domu",
+      "protection": "Ochrana za všech podmínek",
+      "quality": "Nejvyšší kvalita lakovaného povrchu"
+    },
+    "dimensions": {
+      "title": "Rozměry přístřešku na kola",
+      "height": "Výška",
+      "width": "Šířka",
+      "depth": "Hloubka",
+      "drawingAlt": "Rozměry přístřešku pro kola - technický výkres"
+    },
+    "nav": {
+      "priceFrom": "Od 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Hliníková podlaha",
+      "subtitle": "ukotvená k zemi pomocí nerezových kotev.",
+      "description": "V cyklistickém přístřešku je možnost instalace hliníkové podlahy, která účinně zabraňuje růstu nežádané vegetace, zejména v případě montáže na zámkovou dlažbu. Podlaha byla navržena tak, aby ukotvování přístřešku probíhalo stejnými otvory jako u verze bez podlahy. Díky tomu lze přístřešek touto opcí snadno doplnit v kterýkoli okamžik, kdy bude uznáno za potřebné."
+    },
+    "lifestyle": {
+      "p1": "Ačkoliv byl náš přístřešek navržen především pro skladování kol, jeho všestrannost z něj činí ideální řešení i pro mnoho jiných potřeb. Kromě kol v něm snadno umístíte zahradní nářadí, jako jsou lopaty, hrábky nebo sekory, a malé zahradní doplňky, jako jsou květináče, semena nebo hnojiva. Díky prostorným rozměrům — 1950 mm šířky, 900 mm hloubky a 1290 mm výšky — může přístřešek sloužit také jako praktický úložný prostor pro domácí doplňky, jako jsou sekačky, zahradní hadice atd.",
+      "p2": "Ideálně se hodí také pro skladování dětských hraček, včetně elektrických autíček nebo autíček na pedály, hraček do pískoviště a sad pro hraní v zahradě. Navíc může přístřešek pojmout rybářské potřeby, jako jsou pruty, navijáky nebo rybářské tašky, a také sezónní zahradní dekorace, jako jsou lampiony, solární lampy nebo drobný zahradní nábytek. Pokud využíváte zahradu k relaxaci, najdete zde také místo pro grillingové příslušenství.",
+      "p3": "Díky své funkcionalitě a prostornosti nabízí náš přístřešek pohodlné řešení pro skladování široké škály předmětů, které mohou být užitečné v každodenním životě, a to při maximálním využití dostupného prostoru."
+    },
+    "showcase1": {
+      "top": "Odolný",
+      "glow": "klavírní pant",
+      "bottom": "z oceli.",
+      "description": "V našem přístřešku pro kola jsme použili klavírní pant, který zvyšuje standard každodenního používání. Tento nenápadný, a zároveň výjimečně odolný prvek zajišťuje nejen ideální tuhost uzavírací klapy, ale také její plynulý, téměř bezhlučný chod. Díky kompaktní konstrukci a velké kontaktní ploše zaručuje tento pant nejen spolehlivost, ale i dlouhou životnost. Je to řešení, které ocení všichni uživatelé, kteří si cení preciznosti, funkčnosti a moderního designu."
+    },
+    "showcase2": {
+      "top": "Kovový práh",
+      "glow": "z lehkého hliníku",
+      "description": "Spodní část přístřešku byla navržena s ohledem na maximální funkcionalitu a komfort používání. Ocelový práh s elegantní textilní úchytkou zajišťuje pevné uzavření a neodymové magnety jej přesně drží v pozici, čímž zabraňují náhodnému otevření. Speciálně přizpůsobené panty a dodatečné ohnutí prvku vytvářejí po otevření plynule profilovanou nájezdovou plochu, která usnadňuje vjezd kola. Toto promyšlené řešení spojuje odolnost s pohodlím a odpovídá potřebám náročných uživatelů."
+    }
+  },
+  "features": {
+    "title": "Nejdůležitější informace."
+  },
+  "configuratorPromo": {
+    "title": "Konfigurujte svůj přístřešek",
+    "description": "Náš konfigurátor umožňuje personalizaci produktů tak, aby vyhovovaly i těm nejnáročnějším zákazníkům. Během konfigurace máte k dispozici náhled produktu v reálném čase."
+  },
+  "lifestyle": {
+    "title": "Více než jen přístřešek na kola",
+    "description": "Ačkoliv byl náš přístřešek navržen především pro skladování kol, jeho všestrannost z něj činí ideální řešení i pro mnoho jiných potřeb."
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Nejen pro kola",
+    "items": {
+      "item1": {
+        "title": "Ocelový úschovný prostor pro kola",
+        "description": "Bezpečně uchovávejte svá kola v ocelovém přístřešku od polského výrobce."
+      },
+      "item2": {
+        "title": "Ocelový přístřešek na zahradní potřeby",
+        "description": "Ocelový přístřešek na zahradní potřeby."
+      },
+      "item3": {
+        "title": "Ocelový přístřešek na věci do SPA",
+        "description": "Uchovávejte ručníky, župany a vybavení pro čištění jacuzzi."
+      }
+    }
+  },
+  "threeDShowcase": {
+    "close": "Zavřít",
+    "title": "Podívejte se na několik předností v 3D",
+    "button": "Podívejte se zblízka",
+    "resetTooltip": "Resetovat zobrazení",
+    "modelAlt": "Přístřešek v 3D",
+    "arButton": "Zobrazit ve své zahradě (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Klavirní pant",
+        "description": "Tento prvek, připevněný ke klopě pomocí malých, hustě rozmístěných šroubů, zaručuje tichý a spolehlivý chod i dlouhou životnost klopy. Díky pečlivému rozmístění šroubů klopa funguje plynule a bezhlučně, přičemž zároveň zajišťuje trvanlivost a stabilitu po mnoho let používání."
+      },
+      "reinforcedCorners": {
+        "label": "Zpevněné rohy",
+        "description": "Další zpevnění v rozích konstrukce zajišťují výjimečnou tuhost a odolnost proti deformacím. Jedná se o klíčový prvek při intenzivním používání přístřešku, který zabraňuje „pracování“ materiálu a udržuje geometrii po desetiletí."
+      },
+      "locking": {
+        "label": "Zamykání na klíč",
+        "description": "Použili jsme válcový zámek s vícebodovým jištěním, který zajišťuje nejvyšší úroveň bezpečnosti vašeho kola. Tento systém je odolný vůči atmosférickým podmínkám i pokusům o vloupání, což vám přináší plný klid."
+      },
+      "stopPoints": {
+        "label": "Inovativní systém s STOP body",
+        "description": "Speciální dorazy a hydraulický brzdicí systém klopy zabraňují prudkým nárazům při zavírání. STOP body umožňují bezpečné ovládání klopy bez rizika přimáčknutí prstů nebo poškození krytu."
+      },
+      "thresholdHandle": {
+        "label": "Práh s textilním úchopem",
+        "description": "Ergonomický práh vybavený textilním úchopem usnadňuje vjezd kola do přístřešku. Úchop zajišťuje pevný stisk i v rukavicích a konstrukce prahu minimalizuje překážku pro kola jízdního kola."
+      }
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymové magnety",
+        "desc": "namontované na stranách klopy"
+      },
+      "handle": {
+        "title": "Textilní úchop",
+        "desc": "usnadňující otevírání"
+      },
+      "tin": {
+        "title": "Pozinkovaná",
+        "desc": "klopa"
+      },
+      "hinges": {
+        "title": "Přišroubované panty",
+        "desc": "zaručující dlouhou životnost"
+      },
+      "bends": {
+        "title": "Zpevňující ohyby",
+        "desc": "ztuhující práh"
+      },
+      "angle": {
+        "title": "Profilovaný úhel",
+        "desc": "pro snazší vjezd"
+      }
+    },
+    "headline": "Cyklistická odolnost.",
+    "description": "Konstrukce přístřešku pro kola byla navržena s ohledem na maximální pevnost a odolnost. Klíčovým zpevňujícím prvkem jsou autorské trojúhelníky spojené s U-profily, které byly vyvinuty a vyrobeny interně. Toto řešení zajišťuje mimořádnou tuhost a stabilitu jednotlivých komponentů klopy. Stěny přístřešku jsou následně spojeny pomocí regulovatelných trojúhelníků, což umožňuje precizní přizpůsobení a montáž. Další zpevnění zajišťují ocelové rohy vyřezávané na CNC strojích, které nejen zvyšují tuhost stěn, ale také trvale zabezpečují všechna spojení. Je to inovativní přístup, který zaručuje spolehlivost na dlouhá léta."
+  }
+}

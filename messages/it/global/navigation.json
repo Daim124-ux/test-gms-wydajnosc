@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Sistema casa",
+    "osiedleSystem": "Sistema residenziale",
+    "shop": "Negozio",
+    "partnerZone": "Area Partner",
+    "contact": "Contatti",
+    "more": "Altro"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Garage super resistenti, per il montaggio direttamente a terra.",
+    "shelterWoodDesc": "Pensiline da giardino, per attrezzi, legna o motociclette.",
+    "shelterRamps": "con possibilità di montaggio della guida d'ingresso",
+    "tabs": {
+      "garages": "Garage in acciaio",
+      "superstrong": "Garage Superstrong",
+      "bikeShelter": "Pensilina per biciclette",
+      "steelShelters": "Pensiline in acciaio",
+      "gates": "Cancelli per garage e motorizzazioni",
+      "greenShelters": "Gazebo verdi",
+      "trashShelters": "Recinti per rifiuti",
+      "compactShelters": "Coperture per rifiuti compatte",
+      "basementDoors": "Porte per locali tecnici",
+      "collectiveGarages": "Garage collettivi",
+      "partitionWalls": "Pareti divisorie",
+      "bikeCages": "Recinzioni per box biciclette"
+    },
+    "promos": {
+      "checkAlso": "Scopri anche:",
+      "trashSheltersTitle": "Pensiline e coperture per rifiuti",
+      "trashSheltersDesc": "Conserva i rifiuti con stile.",
+      "greenSheltersTitle": "Pensiline con tetto verde",
+      "greenSheltersDesc": "Un tocco di verde nella foresta di cemento.",
+      "ecoMoves": "Le nostre iniziative eco",
+      "configureShelter": "Configura la tua pensilina",
+      "configureGarage": "Configura il tuo garage",
+      "configureInShop": "Configura nel negozio",
+      "collectiveGaragesTitle": "Garage collettivi - box",
+      "collectiveGaragesDesc": "Qualità affidabile nel tuo box.",
+      "partitionWallsTitle": "Pareti divisorie e recinzioni",
+      "watchTest": "Guarda il test SuperStrong",
+      "nanoCover": "Copertura NANO-{num}",
+      "sectionInPrep": "La sezione {name} è attualmente in preparazione."
+    },
+    "configuratorPromo": {
+      "title": "Configura la tua pensilina"
+    },
+    "blog": {
+      "articles": "Articoli del blog",
+      "fromBlog": "Articolo dal blog",
+      "readMore": "Leggi l'articolo",
+      "titles": {
+        "ecoTrash": "Una pensilina per i contenitori dei rifiuti può essere ecologica?",
+        "trashDistance": "Regole riguardanti la distanza del contenitore dei rifiuti dall'edificio",
+        "investInDoors": "Vale la pena investire in porte per cantine e quali scegliere?",
+        "garageOrganization": "Come organizzare in modo ottimale un box garage in un condominio?",
+        "partitionPlanning": "Regole per la pianificazione delle recinzioni nell'edilizia moderna",
+        "warehouseSafety": "Sicurezza e organizzazione degli spazi nei magazzini",
+        "beforeBuying": "6 cose da sapere prima di acquistare un garage in acciaio",
+        "howToArrange": "Come arredare il garage: da un semplice deposito a un'officina di stile",
+        "superstrongInvestment": "Perché il garage SuperStrong è un investimento per anni?",
+        "superstrongInstall": "Montaggio del garage SuperStrong passo dopo passo",
+        "motoGarage": "Crea il garage ideale per la moto: Guida passo dopo passo",
+        "bikeSecurity": "Come proteggere le biciclette dal furto e dalle intemperie?"
+      }
+    },
+    "moreLinks": {
+      "about": "Chi siamo",
+      "career": "Carriera",
+      "blog": "Blog",
+      "distributors": "Rivenditori",
+      "projects": "Realizzazioni",
+      "privacy": "Informativa sulla privacy",
+      "downloads": "Download"
+    },
+    "titles": {
+      "garaze_stalowe": "Garage in acciaio",
+      "garaze_superstrong": "Garage Superstrong",
+      "wiata": "Pensilina per biciclette",
+      "wiaty_stalowe": "Pensiline in acciaio",
+      "bramy": "Cancelli per garage e motorizzazioni",
+      "altany_zielone": "Gazebo verdi",
+      "altany_smietnikowe": "Recinti per rifiuti",
+      "kompaktowe": "Coperture compatte",
+      "drzwi": "Porte per cantine",
+      "garaze_zbiorcze": "Garage collettivi",
+      "scianki": "Pareti divisorie",
+      "wygrodzenia": "Recinzioni industriali"
+    },
+    "gatesTitles": {
+      "tilt": "Serrande basculanti",
+      "hinged": "Cancelli a battente",
+      "hingedPanel": "Cancelli a battente a pannelli",
+      "sectional": "Cancelli sezionali",
+      "singleLeafSteel": "A un'anta - in lamiera",
+      "doubleLeafSteel": "A due ante - in lamiera",
+      "singleLeafPanel": "A un'anta - a pannelli",
+      "doubleLeafPanel": "A due ante - a pannelli"
+    }
+  }
+}

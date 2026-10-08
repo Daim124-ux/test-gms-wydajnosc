@@ -7,7 +7,7 @@ import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 import { useTranslations } from 'next-intl';
 
 export default function AluminumFloor() {
-  const t = useTranslations('productLayout.aluminumFloor');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.productLayout.aluminumFloor');
 
   return (
     <section className="relative w-full bg-black flex flex-col">

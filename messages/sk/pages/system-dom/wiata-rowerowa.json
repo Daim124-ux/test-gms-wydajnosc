@@ -1,0 +1,172 @@
+{
+  "hero": {
+    "title": "Oceľový prístrešok pre bicykle",
+    "subtitle": "Náš Rouleur skladovania.",
+    "newCategory": "Úplne nová kategória",
+    "cinematicDesc": "Ľahší, silnejší, dopracovaný do posledného milimetra. Pravá oceľ, ktorá odolá každému vetru."
+  },
+  "productHero": {
+    "new": "Novinka",
+    "requestQuote": "Požiadajte o cenovú ponuku",
+    "downloadCatalog": "Stiahnite si katalóg (PDF)",
+    "productImage": "Fotografia produktu",
+    "noImage": "Žiadna fotografia"
+  },
+  "productLayout": {
+    "intro": {
+      "text": "Ocelová prístrešnica bola navrhnutá primárne pre skladovanie bicyklov, možno v nej však skladovať aj záhradné náradie, detské kočíky, skútre, kolobežky a ďalšie doplnky a užitočné predmety. Sklop dopredu na kryte zabezpečuje dobrý odtok vody a vďaka pohodlnému úchvitu je otváranie jednoduché."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Klavírový závis v kryte prístrešnice"
+      },
+      "stopPoints": {
+        "title": "Inovatívny systém otvárania s STOP bodmi"
+      },
+      "fabricHandle": {
+        "title": "Látkový úchvat uľahčujúci otváranie a zatváranie prahu"
+      },
+      "steelRods": {
+        "title": "Zatváranie prístrešnice pomocou hliníkovo-ocelových sťahov."
+      },
+      "packing": {
+        "title": "Pohodlné balenie v paletovom boxe"
+      },
+      "reinforcedCorners": {
+        "title": "Posilnené rohy"
+      },
+      "steelTriangles": {
+        "title": "Vyztužujúce oceľové trojuholníky v rohoch"
+      },
+      "lidReinforcement": {
+        "title": "Oceľové posilnenia kryta spojené s U-profilmi"
+      }
+    },
+    "colorSection": {
+      "title": "Poznajte farebnú škálu.",
+      "aesthetic": "Nadčasová estetika v každej farbe",
+      "match": "Prispôsobte prístrešnicu fasáde vášho domu",
+      "protection": "Ochrana pred akýmkoľvek počasím",
+      "quality": "Najvyššia kvalita lakierovanej vrstvy"
+    },
+    "dimensions": {
+      "title": "Rozmery prístrešnice na bicykle",
+      "height": "Výška",
+      "width": "Šírka",
+      "depth": "Hĺbka",
+      "drawingAlt": "Rozmery prístrešku na bicykle - technický výkres"
+    },
+    "nav": {
+      "priceFrom": "Od 12 999 zł"
+    },
+    "aluminumFloor": {
+      "title": "Hliníková podlaha",
+      "subtitle": "ukotvená k zemi pomocou nerezových kotiev.",
+      "description": "V bicyklovej prístrešnici existuje možnosť montáže hliníkovej podlahy, ktorá účinne zabráni rastu unwanted vegetácie, najmä v prípade montáže na zámkovú dlažbu. Podlaha bola navrhnutá tak, aby ukotvenie prístrešnice prebiehalo cez rovnaké otvory ako vo verzii bez podlahy. Vďaka tomu môžete prístrešnicu jednoducho doplniť o túto možnosť kedykoľvek, keď to uznáte za potrebné."
+    },
+    "lifestyle": {
+      "p1": "Hociže naša prístrešnica bola navrhnutá primárne pre skladovanie bicyklov, jej všestrannosť z nej robí ideálne riešenie aj pre mnohé ďalšie potreby. Okrem bicyklov v nej ľahko umiestnite záhradné náradie, ako sú lopaty, hrabličky či nožnice, a malé záhradné doplnky, ako sú kvetináče, semená alebo hnojivá. Vďaka veľkým rozmerom — 1950 mm šírky, 900 mm hĺbky a 1290 mm výšky — môže prístrešnica slúžiť aj ako praktický úložný priestor na domáce doplnky, ako sú kosačky, záhradné hadice a pod.",
+      "p2": "Ideálne sa taktiež hodí na skladovanie detských hračiek, vrátane elektrických autíčok alebo autíčok na pedále, hračiek do piesknice a sád na hru v záhrade. Okrem toho môže prístrešnica pomestiť rybárske potreby, ako sú udice, navíjace stroje alebo rybárske tašky, ako aj sezónne záhradné dekorácie, napríklad lampáše a solárne lampy či malý záhradný nábytok. Ak využívate záhradu na relaxáciu, nájdete tu priestor aj pre grilovacie doplnky.",
+      "p3": "Vďaka svojej funkčnosti a priestranosti ponúka naša prístrešnica pohodlné riešenie na skladovanie širokej škály predmetov, ktoré môžu byť užitočné v každodennom živote, pričom maximálne využíva dostupný priestor."
+    },
+    "showcase1": {
+      "top": "Odolný",
+      "glow": "klavírový závis",
+      "bottom": "z ocele.",
+      "description": "V našej prístrešku na bicykle sme použili klavírový závis, ktorý zvyšuje štandard každodenného používania. Tento nenápadný a zároveň výnimočne odolný prvok zabezpečuje nielen ideálnu tuhosť uzatváracej klapy, ale aj jej plynulý, takmer bezhlučný chod. Vďaka kompaktnej konštrukcii a veľkej kontaktné plocho tento závis zaručuje nielen spoľahlivosť, ale aj trvanlivosť na roky. Je to riešenie, ktoré ocenia všetci používatelia ceniaci si precíznosť, funkcionalitu a moderný dizajn."
+    },
+    "showcase2": {
+      "top": "Kovový prah",
+      "glow": "z ľahkého hliníka",
+      "description": "Spodná časť prístrešku bola navrhnutá s ohľadom na maximálnu funkcionalitu a komfort používania. Oceľový prah s elegantnou textilnou úchytkou zabezpečuje pevné zatvorenie a neodymové magnety ho presne držia v pozícii, čím zabránia náhodnému otvoreniu. Špeciálne prispôsobené závisy a dodatočné ohnutie prvku vytvárajú po otvorení plynule tvarovanú nábehovú rampu, ktorá uľahčuje vjazd bicykla. Toto premyslené riešenie spája trvanlivosť s pohodlím a spĺňa potreby náročných používateľov."
+    }
+  },
+  "features": {
+    "title": "Najdôležitejšie informácie."
+  },
+  "configuratorPromo": {
+    "title": "Konfigurujte si svoju prístrešnicu",
+    "description": "Náš konfigurátor umožňuje prispôsobenie produktov tak, aby spĺňali požiadavky aj tých najnáročnejších zákazníkov. Počas konfigurácie máte v reálnom čase náhľad nášho produktu."
+  },
+  "lifestyle": {
+    "title": "Viac než len prístrešnica na bicykle",
+    "description": "Hociže naša prístrešnica bola navrhnutá primárne pre skladovanie bicyklov, jej všestrannosť z nej robí ideálne riešenie aj pre mnohé ďalšie potreby."
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Nielenko na bicykle",
+    "items": {
+      "item1": {
+        "title": "Ocelový úložný priestor na bicykle",
+        "description": "Bezpečne uskladnite svoje bicykle v ocelovej prístrešnici od poľského výrobcu."
+      },
+      "item2": {
+        "title": "Ocelová prístrešnica na záhradné doplnky",
+        "description": "Ocelová prístrešnica na záhradné doplnky."
+      },
+      "item3": {
+        "title": "Ocelová prístrešnica na veci do SPA",
+        "description": "Uskladnite uteráky, župany a vybavenie na čistenie jacuzzi."
+      }
+    }
+  },
+  "threeDShowcase": {
+    "close": "Zatvoriť",
+    "title": "Pozrite si niekoľko zaujatostí v 3D",
+    "button": "Pozrieť zblízka",
+    "resetTooltip": "Resetovať zobrazenie",
+    "modelAlt": "Prístrešok v 3D",
+    "arButton": "Zobraziť vo svojej záhrade (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Klavírny závis",
+        "description": "Tento prvok, upevnený na klope pomocou malých, husto rozmiestnených skrutiek, zaručuje tichú a spoľahlivú prevádzku ako aj dlhú životnosť klopy. Vďaka precíznemu rozmiestneniu skrutiek klopa funguje plynule a bezhlučne, pričom zároveň zabezpečuje trvácnosť a stabilitu počas mnohých rokov používania."
+      },
+      "reinforcedCorners": {
+        "label": "Posilnené rohy",
+        "description": "Dodatočné posilnenia v rohoch konštrukcie zabezpečujú výnimočnú tuhosť a odolnosť voči deformáciám. Ide o kľúčový prvok pri intenzívnom používaní prístrešku, ktorý zabráni „pracovaniu“ materiálu a udržuje geometriu po celé dekády."
+      },
+      "locking": {
+        "label": "Uzamykanie na kľúč",
+        "description": "Použili sme valcový zámok s viacbodovým uzamykaním, ktorý zabezpečuje najvyššiu úroveň bezpečnosti vášho bicykla. Tento systém je odolný voči poveterným vplyvom a pokusom o vniknutie, čo vám poskytuje úplný pokoj v duši."
+      },
+      "stopPoints": {
+        "label": "Inovatívny systém s bodmi STOP",
+        "description": "Špeciálne tlmiče a hydraulický brzdný systém klopy zabránia prudkým nárazom pri zatváraní. Body STOP umožňujú bezpečné ovládanie klopy bez rizika priprstrenia prstov alebo poškodenia krytu."
+      },
+      "thresholdHandle": {
+        "label": "Prah s textilným úchvatom",
+        "description": "Ergonomický prah vybavený textilným úchvatom uľahčuje vjazd bicykla do vnútra prístrešku. Úchvat zabezpečuje istý úchop aj v rukaviciach a konštrukcia prahu eliminuje prekážku pre kolá bicykla."
+      }
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymové magnety",
+        "desc": "namontované na bokoch klopy"
+      },
+      "handle": {
+        "title": "Textilný úchvat",
+        "desc": "uľahčujúci otváranie"
+      },
+      "tin": {
+        "title": "Pozinkovaná",
+        "desc": "klopa"
+      },
+      "hinges": {
+        "title": "Priskrutované závisy",
+        "desc": "zaručujúce trvácnosť"
+      },
+      "bends": {
+        "title": "Posilňujúce ohyny",
+        "desc": "stuhujúce prah"
+      },
+      "angle": {
+        "title": "Vyprofilovaný uhol",
+        "desc": "pre jednoduchší vjazd"
+      }
+    },
+    "headline": "Cyklistická odolnosť.",
+    "description": "Konštrukcia prístrešku na bicykle bola navrhnutá s ohľadom na maximálnu odolnosť a trvácnosť. Kľúčovým posilňujúcim prvkom sú autorské trojuholníky spojené s C-profilmi, ktoré boli vyvinuté a vyrobené interné. Toto riešenie zabezpečuje mimoriadnu tuhosť a stabilitu jednotlivých komponentov klopy. Steny prístrešku sú zase spojené pomocou nastaviteľných trojuholníkov, čo umožňuje presné prispôsobenie a montáž. Dodatočné posilnenie zabezpečujú oceľové rohy, vyrezané na CNC strojoch, ktoré nielen zvyšujú tuhosť stien, ale taktiež trvalo zabezpečujú všetky spojenia. Je to inovatívny prístup, ktorý zaručuje spoľahlivosť na roky."
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "hero": {
+    "title": "Steel bicycle shed",
+    "subtitle": "Our storage Rouleur.",
+    "newCategory": "A completely new category",
+    "cinematicDesc": "Lighter, stronger, refined in every millimeter. True steel that no wind can resist."
+  },
+  "productHero": {
+    "new": "New",
+    "requestQuote": "Request a quote",
+    "downloadCatalog": "Download catalog (PDF)",
+    "productImage": "Product image",
+    "noImage": "No image"
+  },
+  "productLayout": {
+    "intro": {
+      "text": "The steel shelter was designed primarily for storing bicycles, but it can also store garden tools, strollers, scooters, mopeds, and other accessories and utility items. The forward-sloping lid roof ensures efficient water drainage, and the convenient handle makes opening simple."
+    },
+    "features": {
+      "pianoHinge": {
+        "title": "Piano hinge in the shelter lid"
+      },
+      "stopPoints": {
+        "title": "Innovative opening system with STOP points"
+      },
+      "fabricHandle": {
+        "title": "Fabric handle for easy opening and closing of the threshold"
+      },
+      "steelRods": {
+        "title": "Closing the shelter with aluminum-steel rods."
+      },
+      "packing": {
+        "title": "Convenient packing in a pallet box"
+      },
+      "reinforcedCorners": {
+        "title": "Reinforced corners"
+      },
+      "steelTriangles": {
+        "title": "Stiffening steel triangles in corners"
+      },
+      "lidReinforcement": {
+        "title": "Steel lid reinforcements combined with C-channels"
+      }
+    },
+    "colorSection": {
+      "title": "Explore the colors.",
+      "aesthetic": "Timeless aesthetics in every color",
+      "match": "Match the shelter to your home's facade",
+      "protection": "Protection against all conditions",
+      "quality": "Highest quality coating"
+    },
+    "dimensions": {
+      "title": "Bike shelter dimensions",
+      "height": "Height",
+      "width": "Width",
+      "depth": "Depth",
+      "drawingAlt": "Bike shelter dimensions - technical drawing"
+    },
+    "nav": {
+      "priceFrom": "From 12,999 PLN"
+    },
+    "aluminumFloor": {
+      "title": "Aluminum floor",
+      "subtitle": "fixed to the ground with stainless anchors.",
+      "description": "In the bike shelter, there is a possibility of installing an aluminum floor, which effectively prevents the growth of unwanted vegetation, especially when mounted on paving stones. The floor has been designed so that the anchoring of the shelter takes place through the same holes as in the version without a floor. This makes it easy to retrofit the shelter with this option at any time when we decide it's needed."
+    },
+    "lifestyle": {
+      "p1": "Although our shelter was designed primarily for bike storage, its versatility makes it an ideal solution for many other needs as well. In addition to bicycles, it easily accommodates garden tools like shovels, rakes, or shears, as well as small garden accessories like pots, seeds, or fertilizers. With spacious dimensions — 1950 mm wide, 900 mm deep, and 1290 mm high — the shelter can also serve as a practical storage for backyard accessories like lawnmowers, garden hoses, etc.",
+      "p2": "It's also ideal for storing children's toys, including electric or pedal cars, sandbox toys, and garden play sets. Additionally, the shelter can hold fishing accessories such as rods, reels, or fishing bags, as well as seasonal garden decorations like lanterns and solar lights or small garden furniture. If you use your garden for relaxation, you'll also find space for grilling accessories here.",
+      "p3": "Thanks to its functionality and spaciousness, our shelter offers a convenient storage solution for a wide range of items that can be useful in everyday life, maximizing the available space."
+    },
+    "showcase1": {
+      "top": "Durable",
+      "glow": "piano hinge",
+      "bottom": "made of steel.",
+      "description": "In our bike shelter, we used a piano hinge that raises the standard of everyday use. This subtle yet exceptionally durable element ensures not only the ideal stiffness of the closing lid but also its smooth, nearly silent operation. Thanks to its compact design and large contact area, this hinge guarantees not only reliability but also durability for years. This is a solution that will be appreciated by all users who value precision, functionality, and modern design."
+    },
+    "showcase2": {
+      "top": "Metal threshold",
+      "glow": "made of lightweight aluminum",
+      "description": "The lower part of the shelter is designed for maximum functionality and user comfort. The steel threshold with an elegant fabric handle ensures a secure closure, and neodymium magnets precisely hold it in position, preventing accidental opening. Specially fitted hinges and an additional bend in the element create a smoothly profiled ramp when opened, making it easier to bring in a bicycle. This thoughtful solution combines durability with convenience, meeting the needs of demanding users."
+    }
+  },
+  "features": {
+    "title": "Innovative solutions"
+  },
+  "configuratorPromo": {
+    "title": "Configure your shelter",
+    "description": "Our configurator allows for product personalization to meet the needs of the most demanding customers. During configuration, you can view the product in real-time."
+  },
+  "lifestyle": {
+    "title": "More than just a bike shelter",
+    "description": "Although our shelter was designed primarily for bike storage, its versatility makes it an ideal solution for many other needs as well."
+  },
+  "lifestyleShowcase": {
+    "mainTitle": "Not just for bikes",
+    "items": {
+      "item1": {
+        "title": "Steel bike storage",
+        "description": "Store your bikes safely in a steel shelter from a Polish manufacturer."
+      },
+      "item2": {
+        "title": "Steel shelter for garden accessories",
+        "description": "Steel shelter for garden accessories."
+      },
+      "item3": {
+        "title": "Steel shelter for SPA items",
+        "description": "Store towels, bathrobes and jacuzzi cleaning equipment."
+      }
+    }
+  },
+  "threeDShowcase": {
+    "close": "Close",
+    "title": "See some highlights in 3D",
+    "button": "View up close",
+    "resetTooltip": "Reset view",
+    "modelAlt": "3D shelter",
+    "arButton": "Show in your garden (AR)",
+    "tabs": {
+      "pianoHinge": {
+        "label": "Piano hinge",
+        "description": "Mounted on the flap using small, closely spaced screws, this element guarantees quiet and reliable operation and longevity of the flap. Thanks to the careful placement of the screws, the flap operates smoothly and silently, while ensuring durability and stability over many years of use."
+      },
+      "reinforcedCorners": {
+        "label": "Reinforced corners",
+        "description": "Additional reinforcements in the corners of the structure provide exceptional stiffness and resistance to deformation. This is a key element for intensive shelter use, preventing the material from 'shifting' and maintaining the geometry for decades."
+      },
+      "locking": {
+        "label": "Key lock",
+        "description": "We have implemented a cylinder lock with multi-point locking, which provides the highest level of security for your bike. This system is resistant to weather conditions and tampering attempts, giving you complete peace of mind."
+      },
+      "stopPoints": {
+        "label": "Innovative system with STOP points",
+        "description": "Special buffers and a hydraulic flap braking system prevent sudden impacts when closing. STOP points allow for safe operation of the flap without the risk of pinching fingers or damaging the casing."
+      },
+      "thresholdHandle": {
+        "label": "Threshold with a fabric handle",
+        "description": "An ergonomic threshold equipped with a fabric handle makes it easier to move the bike into the shelter. The handle ensures a firm grip even when wearing gloves, and the threshold design eliminates the obstacle for the bicycle wheels."
+      }
+    }
+  },
+  "thresholdGrid": {
+    "features": {
+      "magnets": {
+        "title": "Neodymium magnets",
+        "desc": "mounted on the sides of the flap"
+      },
+      "handle": {
+        "title": "Fabric handle",
+        "desc": "making opening easier"
+      },
+      "tin": {
+        "title": "Galvanized",
+        "desc": "flap"
+      },
+      "hinges": {
+        "title": "Screw-on hinges",
+        "desc": "ensuring durability"
+      },
+      "bends": {
+        "title": "Reinforcing bends",
+        "desc": "stiffening the threshold"
+      },
+      "angle": {
+        "title": "Profiled angle",
+        "desc": "for easier entry"
+      }
+    },
+    "headline": "Cycling durability.",
+    "description": "The design of the bike shelter was created for maximum strength and durability. The key reinforcing elements are proprietary triangles combined with C-channels, which were developed and manufactured in-house. This solution ensures extraordinary stiffness and stability of the individual flap components. The shelter walls are connected using adjustable triangles, allowing for precise fitting and assembly. Additional reinforcement is provided by CNC-cut steel corners, which not only increase wall stiffness but also permanently secure all connections. This is an innovative approach that guarantees reliability for years to come."
+  }
+}

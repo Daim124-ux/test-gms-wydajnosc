@@ -33,8 +33,8 @@ const productButtonLabels: Record<string, string> = {
 };
 
 export default function Header() {
-  const headerT = useTranslations('navigation.header');
-  const megaT = useTranslations('navigation.megaMenu');
+  const headerT = useTranslations('global.navigation.header');
+  const megaT = useTranslations('global.navigation.megaMenu');
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
@@ -122,10 +122,12 @@ export default function Header() {
   return (
     <>
       <header className={`site-header ${isScrolled ? 'is-scrolled' : ''} ${isMobileOpen ? 'is-mobile-open' : ''} ${isHomeTop ? 'is-home-top' : ''} ${pathname === '/' ? 'dark' : ''}`}>
-        <div className="site-header__bar glass-container">
-          <div className="glass-filter"></div>
-          <div className="glass-overlay"></div>
-          <div className="glass-specular"></div>
+        <div className="site-header__bar relative">
+          <div className="glass-container absolute inset-0 z-0" style={{ borderRadius: 'inherit' }}>
+            <div className="glass-filter"></div>
+            <div className="glass-overlay"></div>
+            <div className="glass-specular"></div>
+          </div>
           
           <div className="site-brand relative z-10">
             <Link href="/" className="site-brand__logo" aria-label="GMS System — strona główna">

@@ -1,0 +1,15 @@
+{
+  "welcome": "How can I help you today?",
+  "placeholder": "Ask GMS Corporation...",
+  "assistant": "AI Assistant",
+  "processing": "Processing data...",
+  "clearHistory": "Clear chat history",
+  "clearConfirm": "Are you sure you want to clear the chat history?",
+  "close": "Close",
+  "chips": {
+    "summary": "Summarize page",
+    "summaryPrompt": "Prepare a short summary (3-5 points) of what is on this subpage",
+    "specs": "Technical specification",
+    "specsPrompt": "Extract the technical specification from the content of this page or tell about the most important technical details"
+  }
+}

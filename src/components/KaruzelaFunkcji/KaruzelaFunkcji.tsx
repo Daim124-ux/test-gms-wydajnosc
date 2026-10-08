@@ -35,7 +35,7 @@ export default function KaruzelaFunkcji({
   glowColor = '#1660b1',
   glowAccent = '#C3F2FF',
 }: KaruzelaFunkcjiProps) {
-  const t = useTranslations('features');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.features');
   const kontenerScrollRef = useRef<HTMLDivElement>(null);
   const [aktywnyId, setAktywnyId] = useState<string>(elementy[0]?.id || '');
 

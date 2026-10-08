@@ -1,0 +1,101 @@
+{
+  "header": {
+    "domSystem": "Dom system",
+    "osiedleSystem": "Osiedle system",
+    "shop": "Sklep",
+    "partnerZone": "Strefa Partnera",
+    "contact": "Kontakt",
+    "more": "Więcej"
+  },
+  "megaMenu": {
+    "superstrongDesc": "Supermocne garaże, do montażu bezpośrednio w gruncie.",
+    "shelterWoodDesc": "Wiaty ogrodowe, narzędziowe, na drewno czy motocykl.",
+    "shelterRamps": "z możliwością montażu szyny wjazdowej",
+    "tabs": {
+      "garages": "Garaże stalowe",
+      "superstrong": "Garaże Superstrong",
+      "bikeShelter": "Wiata na rowery",
+      "steelShelters": "Wiaty Stalowe",
+      "gates": "Bramy garażowe i napędy",
+      "greenShelters": "Altany Zielone",
+      "trashShelters": "Altany Śmietnikowe",
+      "compactShelters": "Kompaktowe Osłony Śmietnikowe",
+      "basementDoors": "Drzwi Wewnątrzklatkowe",
+      "collectiveGarages": "Garaże Zbiorcze",
+      "partitionWalls": "Ścianki Działowe",
+      "bikeCages": "Wygrodzenia Boksów Rowerowych"
+    },
+    "promos": {
+      "checkAlso": "Sprawdź również:",
+      "trashSheltersTitle": "Altany i wiaty śmietnikowe",
+      "trashSheltersDesc": "Odpady też przechowuj z klasą.",
+      "greenSheltersTitle": "Altany z zielonym dachem",
+      "greenSheltersDesc": "Zielony akcent w betonowym lesie.",
+      "ecoMoves": "Nasze eko ruchy",
+      "configureShelter": "Skonfiguruj swoją altanę",
+      "configureGarage": "Skonfiguruj swój garaż",
+      "configureInShop": "Skonfiguruj w sklepie",
+      "collectiveGaragesTitle": "Garaże zbiorcze - boksy",
+      "collectiveGaragesDesc": "Niezawodna jakość w Twoim boksie.",
+      "partitionWallsTitle": "Ścianki działowe i wygrodzenia",
+      "watchTest": "Obejrzyj test SuperStronga",
+      "nanoCover": "Osłona NANO-{num}",
+      "sectionInPrep": "Sekcja {name} jest aktualnie w przygotowaniu."
+    },
+    "configuratorPromo": {
+      "title": "Skonfiguruj swoją wiatę"
+    },
+    "blog": {
+      "articles": "Artykuły blogowe",
+      "fromBlog": "Artykuł z bloga",
+      "readMore": "Czytaj artykuł",
+      "titles": {
+        "ecoTrash": "Czy altana na pojemniki z odpadami może być przyjazna dla środowiska?",
+        "trashDistance": "Zasady dotyczące odległości śmietnika od budynku",
+        "investInDoors": "Czy warto zainwestować w drzwi piwniczne i jakie wybrać?",
+        "garageOrganization": "Jak optymalnie zagospodarować boks garażowy w bloku?",
+        "partitionPlanning": "Zasady planowania wygrodzeń w nowoczesnym budownictwie",
+        "warehouseSafety": "Bezpieczeństwo i organizacja przestrzeni w halach magazynowych",
+        "beforeBuying": "6 rzeczy, które warto wiedzieć przed zakupem garażu stalowego",
+        "howToArrange": "Jak urządzić garaż: od prostego magazynu do stylowego warsztatu",
+        "superstrongInvestment": "Dlaczego garaż SuperStrong to inwestycja na lata?",
+        "superstrongInstall": "Montaż garażu SuperStrong krok po kroku",
+        "motoGarage": "Stwórz idealny garaż na motocykl: Poradnik krok po kroku",
+        "bikeSecurity": "Jak zabezpieczyć rowery przed kradzieżą i pogodą?"
+      }
+    },
+    "moreLinks": {
+      "about": "O nas",
+      "career": "Kariera",
+      "blog": "Blog",
+      "distributors": "Dystrybutorzy",
+      "projects": "Realizacje",
+      "privacy": "Polityka prywatności",
+      "downloads": "Do pobrania"
+    },
+    "titles": {
+      "garaze_stalowe": "Garaże stalowe",
+      "garaze_superstrong": "Garaże Superstrong",
+      "wiata": "Wiata na rowery",
+      "wiaty_stalowe": "Wiaty stalowe",
+      "bramy": "Bramy garażowe i napędy",
+      "altany_zielone": "Altany zielone",
+      "altany_smietnikowe": "Altany śmietnikowe",
+      "kompaktowe": "Kompaktowe osłony",
+      "drzwi": "Drzwi piwniczne",
+      "garaze_zbiorcze": "Garaże zbiorcze",
+      "scianki": "Ścianki działowe",
+      "wygrodzenia": "Wygrodzenia przemysłowe"
+    },
+    "gatesTitles": {
+      "tilt": "Bramy uchylne garażowe",
+      "hinged": "Bramy rozwierne",
+      "hingedPanel": "Bramy rozwierne panelowe",
+      "sectional": "Bramy segmentowe",
+      "singleLeafSteel": "Jednoskrzydłowe - blaszane",
+      "doubleLeafSteel": "Dwuskrzydłowe - blaszane",
+      "singleLeafPanel": "Jednoskrzydłowe - panelowe",
+      "doubleLeafPanel": "Dwuskrzydłowe - panelowe"
+    }
+  }
+}

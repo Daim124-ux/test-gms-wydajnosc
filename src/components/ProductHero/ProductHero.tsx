@@ -10,8 +10,8 @@ interface ProductHeroProps {
 }
 
 export default function ProductHero({ title, description, imageUrl, imageAlt }: ProductHeroProps) {
-  const t = useTranslations('productHero');
-  const tc = useTranslations('common');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.productHero');
+  const tc = useTranslations('global.common');
 
   return (
     <section className="relative w-full overflow-hidden bg-white dark:bg-[#161617] pt-20 pb-16 lg:pt-32 lg:pb-24">

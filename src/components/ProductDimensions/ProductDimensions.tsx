@@ -7,7 +7,7 @@ import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 import { useTranslations } from 'next-intl';
 
 const ProductDimensions = () => {
-  const t = useTranslations('productLayout.dimensions');
+  const t = useTranslations('pages.system-dom.wiata-rowerowa.productLayout.dimensions');
   
   const dimensions = [
     { label: t('height'), value: '1230 mm' },
