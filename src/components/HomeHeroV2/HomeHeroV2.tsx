@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Trophy, FileCheck, Globe, Trash2, Fence, Warehouse, DoorClosed, CarFront, Home, ShieldCheck, Bike, Accessibility, Factory, Grip } from 'lucide-react';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
+import LiquidGlassWidget from '@/components/common/LiquidGlassWidget';
 
 const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
 
@@ -56,6 +57,8 @@ export default function HomeHeroV2() {
 
   return (
     <div className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden font-sans bg-[#0a0f12]">
+      <LiquidGlassWidget />
+      
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img

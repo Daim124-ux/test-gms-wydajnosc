@@ -308,7 +308,7 @@ export default function HomeCategories() {
           </button>
 
           {/* Ikonki - nawigacja / linki */}
-          <div className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-3 flex-nowrap w-full md:w-auto px-2 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] pb-2 md:pb-0">
+          <div className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-3 flex-nowrap w-full md:w-auto px-4 py-6 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {categories.map((cat, i) => (
               <Link
                 key={'icon-' + cat.id}

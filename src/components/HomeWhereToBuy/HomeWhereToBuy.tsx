@@ -224,10 +224,80 @@ export default function HomeWhereToBuy() {
     };
   }, [activeId, activeLocation]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [selectedInterests, setSelectedInterests] = useState<string[]>([]);
+  const [toastMsg, setToastMsg] = useState<string | null>(null);
+  const toastTimeout = useRef<NodeJS.Timeout | null>(null);
+
+  const showToast = (msg: string) => {
+    setToastMsg(msg);
+    if (toastTimeout.current) clearTimeout(toastTimeout.current);
+    toastTimeout.current = setTimeout(() => {
+      setToastMsg(null);
+    }, 3000);
+  };
+
+  const interestsList = [
+    'Ogólne informacje o produktach',
+    'Garaże Stalowe',
+    'Bramy Garażowe',
+    'Altany Śmietnikowe',
+    'Wiaty Stalowe',
+    'Wygrodzenia Przemysłowe',
+    'Osłony Śmietnikowe',
+    'Ścianki Działowe',
+  ];
+
+  const handleInterestToggle = (interest: string) => {
+    if (interest === 'Ogólne informacje o produktach') {
+      if (selectedInterests.includes(interest)) {
+        setSelectedInterests([]);
+      } else {
+        setSelectedInterests([interest]);
+      }
+    } else {
+      let newInterests = selectedInterests.filter((i) => i !== 'Ogólne informacje o produktach');
+      if (newInterests.includes(interest)) {
+        newInterests = newInterests.filter((i) => i !== interest);
+      } else {
+        newInterests.push(interest);
+      }
+      setSelectedInterests(newInterests);
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setTimeout(() => setSubmitted(true), 500);
+    if (!email || !activeLocation) return;
+    
+    setIsSubmitting(true);
+    
+    try {
+      const res = await fetch('/api/contact-distributor', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          country: activeLocation.name,
+          countryId: activeLocation.id,
+          interests: selectedInterests,
+        }),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        console.error('Wystąpił błąd podczas wysyłania.');
+        alert('Przepraszamy, wystąpił problem z wysłaniem formularza. Spróbuj ponownie później.');
+      }
+    } catch (error) {
+      console.error('Błąd połączenia:', error);
+      alert('Błąd sieci. Sprawdź swoje połączenie internetowe.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -235,6 +305,8 @@ export default function HomeWhereToBuy() {
     setActiveId(null);
     setSubmitted(false);
     setEmail('');
+    setName('');
+    setSelectedInterests([]);
   };
 
   return (
@@ -402,7 +474,7 @@ export default function HomeWhereToBuy() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-md bg-[#0a0a0a] border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden z-10"
+              className="relative w-full max-w-xl bg-[#0a0a0a] border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden z-10"
             >
               <div className="p-6 md:p-8">
                 <button 
@@ -506,16 +578,68 @@ export default function HomeWhereToBuy() {
                       </div>
                     </div>
 
+                    {/* Checkboxy Zainteresowań */}
+                    <div className="flex flex-col gap-2 mt-2">
+                      <label className="text-xs text-gray-400 font-medium uppercase tracking-wider pl-1">Co Cię interesuje?</label>
+                      <div className="flex flex-wrap gap-2">
+                        {interestsList.map((interest) => {
+                          const isGeneralSelected = selectedInterests.includes('Ogólne informacje o produktach');
+                          const isOther = interest !== 'Ogólne informacje o produktach';
+                          const isDisabled = isGeneralSelected && isOther;
+                          const isSelected = selectedInterests.includes(interest);
+                          
+                          const handleClick = () => {
+                            if (isDisabled) {
+                              showToast('Odznacz "Ogólne informacje o produktach", aby wybrać poszczególne kategorie.');
+                              return;
+                            }
+                            handleInterestToggle(interest);
+                          };
+
+                          return (
+                            <button
+                              key={interest}
+                              type="button"
+                              onClick={handleClick}
+                              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                                isSelected
+                                  ? 'bg-[#ffcc33] text-black shadow-[0_0_15px_rgba(255,204,51,0.5)] border border-[#ffcc33]'
+                                  : isDisabled
+                                    ? 'bg-white/5 border border-white/5 text-gray-600 cursor-not-allowed opacity-50'
+                                    : 'bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 hover:text-white'
+                              }`}
+                            >
+                              {interest}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
                     <button
                       type="submit"
-                      className="w-full bg-[#ffcc33] text-black font-bold py-3.5 rounded-xl hover:bg-white transition-colors mt-4 text-sm tracking-wide shadow-[0_0_20px_rgba(255,204,51,0.2)] hover:shadow-[0_0_25px_rgba(255,204,51,0.4)]"
+                      disabled={isSubmitting}
+                      className={`w-full font-bold py-3.5 rounded-xl transition-colors mt-4 text-sm tracking-wide shadow-[0_0_20px_rgba(255,204,51,0.2)] hover:shadow-[0_0_25px_rgba(255,204,51,0.4)] ${isSubmitting ? 'bg-[#ffcc33]/50 text-black/50 cursor-not-allowed' : 'bg-[#ffcc33] text-black hover:bg-white'}`}
                     >
-                      Wyślij prośbę o kontakt
+                      {isSubmitting ? 'Wysyłanie...' : 'Wyślij prośbę o kontakt'}
                     </button>
                     
                     <p className="text-gray-500 text-xs text-center mt-2 px-4">
                       Zostaw nam swój kontakt, a my przekażemy go partnerowi, który się do Ciebie odezwie.
                     </p>
+
+                    <AnimatePresence>
+                      {toastMsg && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 10 }}
+                          className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-red-500/90 text-white text-xs font-semibold px-4 py-2 rounded-full shadow-lg whitespace-nowrap z-50 pointer-events-none"
+                        >
+                          {toastMsg}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </form>
                 ) : (
                   <motion.div 

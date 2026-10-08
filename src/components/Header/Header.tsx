@@ -122,10 +122,14 @@ export default function Header() {
   return (
     <>
       <header className={`site-header ${isScrolled ? 'is-scrolled' : ''} ${isMobileOpen ? 'is-mobile-open' : ''} ${isHomeTop ? 'is-home-top' : ''} ${pathname === '/' ? 'dark' : ''}`}>
-        <div className="site-header__bar">
-          <div className="site-brand">
+        <div className="site-header__bar glass-container">
+          <div className="glass-filter"></div>
+          <div className="glass-overlay"></div>
+          <div className="glass-specular"></div>
+          
+          <div className="site-brand relative z-10">
             <Link href="/" className="site-brand__logo" aria-label="GMS System — strona główna">
-              <Image src="/assets/logo/gms_logo_achromat_r.svg" alt="GMS System" width={154} height={30} priority />
+              <Image src="/assets/logo/gms_logo_achromat_r.svg" alt="GMS System" width={154} height={30} priority className="logo-img" />
             </Link>
             <div className="language-switcher" ref={languageRef}>
               <button type="button" className="language-switcher__current" onClick={() => setIsLanguageOpen((open) => !open)} aria-expanded={isLanguageOpen} aria-haspopup="listbox">
@@ -145,7 +149,7 @@ export default function Header() {
             </div>
           </div>
 
-          <nav className="desktop-nav" aria-label="Główna nawigacja">
+          <nav className="desktop-nav relative z-10" aria-label="Główna nawigacja">
             <button type="button" className={activePanel === 'products' ? 'is-active' : ''} onMouseEnter={() => openPanel('products')} onFocus={() => openPanel('products')} onMouseLeave={closePanelSoon} onClick={() => togglePanel('products')} aria-expanded={activePanel === 'products'}>
               <span className="desktop-nav__grid-icon" aria-hidden="true"><i /><i /><i /><i /></span>{productButtonLabels[locale] ?? productButtonLabels.en}<span className="desktop-nav__chevron" aria-hidden="true" />
             </button>
@@ -157,7 +161,7 @@ export default function Header() {
             </button>
           </nav>
 
-          <div className="site-header__actions">
+          <div className="site-header__actions relative z-10">
             <Link href="/moje-konto" className="header-icon-button" aria-label={isPolish ? 'Zaloguj się' : 'Sign in'} title={isPolish ? 'Logowanie' : 'Sign in'}>
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.4" /><path d="M5.5 20c.5-4 2.8-6 6.5-6s6 2 6.5 6" /></svg>
             </Link>
@@ -206,6 +210,14 @@ export default function Header() {
           </motion.nav>
         )}
       </AnimatePresence>
+
+      <svg style={{ display: 'none' }}>
+        <filter id="lg-dist" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.008 0.008" numOctaves="2" seed="92" result="noise" />
+          <feGaussianBlur in="noise" stdDeviation="2" result="blurred" />
+          <feDisplacementMap in="SourceGraphic" in2="blurred" scale="70" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </svg>
     </>
   );
 }
