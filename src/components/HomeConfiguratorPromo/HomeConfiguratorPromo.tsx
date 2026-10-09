@@ -5,11 +5,22 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import InteractivePointCloud from '../InteractivePointCloud/InteractivePointCloud';
 
+const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
+
+const resolveMediaUrl = (url?: string) => {
+  if (!url) return '';
+  if (url.startsWith('http')) return url;
+  if (process.env.NODE_ENV === 'development') return url;
+  
+  const cleanSrc = url.startsWith('/') ? url.slice(1) : url;
+  return `${CLOUDFRONT_URL}/_optimized/originals/${cleanSrc}`;
+};
+
 export default function HomeConfiguratorPromo() {
   return (
     <section className="relative w-full min-h-[1000px] pt-24 pb-32 bg-[#050505] overflow-hidden flex flex-col items-center justify-start text-center">
       {/* Interactive Background */}
-      <InteractivePointCloud imageUrl="/assets/images/home/garaz_pointcloud.png" />
+      <InteractivePointCloud imageUrl={resolveMediaUrl("/assets/images/home/garaz_pointcloud.png")} />
       
       {/* Background glow effects - moved below point cloud so it doesn't block clicks but adds to ambiance */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#ffcc33]/10 blur-[120px] rounded-full pointer-events-none"></div>

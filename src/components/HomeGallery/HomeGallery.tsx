@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 const images = [
   {
@@ -98,9 +99,10 @@ export default function HomeGallery() {
       >
         {images.map((item, idx) => (
           <div key={idx} className="relative shrink-0 snap-center w-[85vw] md:w-[45vw] lg:w-[28vw] xl:w-[22vw] aspect-[3/4] rounded-2xl overflow-hidden bg-gray-900 group shadow-2xl border border-white/10 cursor-pointer">
-            <img 
+            <ResponsiveAsset 
               src={item.src} 
               alt={item.title} 
+              type="image"
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             />
             {/* Dark gradient overlay for text readability */}
