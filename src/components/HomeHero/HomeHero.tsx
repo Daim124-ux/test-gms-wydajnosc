@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence, useScroll, useTransform, MotionValue, useMotionValue, animate } from 'framer-motion';
 import { Trash2, Fence, Warehouse, DoorClosed, Home, Bike, Accessibility, Factory, Grip } from 'lucide-react';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
 
@@ -341,21 +342,16 @@ export default function HomeHero() {
             className="w-full h-full relative"
           >
             {activeCategory.video ? (
-              <video
+              <ResponsiveAsset
+                type="video"
+                src={activeCategory.video}
                 autoPlay
-                {...(activeCategory.loop ? { loop: true } : {})}
+                loop={activeCategory.loop}
                 muted
                 playsInline
                 poster={resolveMediaUrl(activeCategory.image)}
                 className="w-full h-full object-cover"
-              >
-                <source src={resolveMediaUrl(activeCategory.video)} type="video/mp4" />
-                <img
-                  src={resolveMediaUrl(activeCategory.image)}
-                  alt={activeCategory.label}
-                  className="w-full h-full object-cover"
-                />
-              </video>
+              />
             ) : (
               <img
                 src={resolveMediaUrl(activeCategory.image)}

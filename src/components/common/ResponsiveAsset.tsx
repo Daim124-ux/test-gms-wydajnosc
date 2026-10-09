@@ -14,6 +14,7 @@ interface ResponsiveAssetProps {
   muted?: boolean;
   playsInline?: boolean;
   onLoadedMetadata?: (e: React.SyntheticEvent<HTMLVideoElement, Event>) => void;
+  poster?: string;
 }
 
 const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, ResponsiveAssetProps>((
@@ -27,7 +28,8 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
     loop = true,
     muted = true,
     playsInline = true,
-    onLoadedMetadata
+    onLoadedMetadata,
+    poster
   },
   ref
 ) => {
@@ -97,6 +99,7 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
         muted={muted}
         playsInline={playsInline}
         preload={priority ? "auto" : "metadata"}
+        poster={poster}
         onLoadedMetadata={(e) => {
           if (!autoPlay) {
             e.currentTarget.pause();

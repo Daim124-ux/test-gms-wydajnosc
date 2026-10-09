@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import InteractivePointCloud from '../InteractivePointCloud/InteractivePointCloud';
 
-const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
+
 
 const resolveMediaUrl = (url?: string) => {
   if (!url) return '';
@@ -13,7 +13,8 @@ const resolveMediaUrl = (url?: string) => {
   if (process.env.NODE_ENV === 'development') return url;
   
   const cleanSrc = url.startsWith('/') ? url.slice(1) : url;
-  return `${CLOUDFRONT_URL}/_optimized/originals/${cleanSrc}`;
+  // Używamy przepisywania (rewrite) z Next.js, aby ominąć błąd CORS w WebGL/Three.js
+  return `/cdn-assets/_optimized/originals/${cleanSrc}`;
 };
 
 export default function HomeConfiguratorPromo() {

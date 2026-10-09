@@ -29,8 +29,10 @@ export default function AppleHeroEntrance({ videoUrl, imageUrl, title, subtitle,
   const resolveS3Url = (url?: string) => {
     if (!url) return undefined;
     if (url.startsWith('http')) return url;
-    // Lokalne pliki wideo serwujemy bezpośrednio z serwera Next.js (błyskawiczny seeking/scrubbing po klatkach)
-    return url;
+    if (process.env.NODE_ENV === 'development') return url;
+    
+    const cleanSrc = url.startsWith('/') ? url.slice(1) : url;
+    return `https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/${cleanSrc}`;
   };
 
   const resolvedVideoUrl = resolveS3Url(videoUrl);
