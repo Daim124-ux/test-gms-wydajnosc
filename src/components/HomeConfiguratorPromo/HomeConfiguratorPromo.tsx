@@ -1,7 +1,7 @@
 "use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
@@ -23,10 +23,13 @@ const resolveMediaUrl = (url?: string) => {
 };
 
 export default function HomeConfiguratorPromo() {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "200px" });
+
   return (
-    <section className="relative w-full min-h-[1000px] pt-24 pb-32 bg-[#050505] overflow-hidden flex flex-col items-center justify-start text-center">
+    <section ref={sectionRef} className="relative w-full min-h-[1000px] pt-24 pb-32 bg-[#050505] overflow-hidden flex flex-col items-center justify-start text-center">
       {/* Interactive Background */}
-      <InteractivePointCloud imageUrl={resolveMediaUrl("/assets/images/home/garaz_pointcloud.png")} />
+      {isInView && <InteractivePointCloud imageUrl={resolveMediaUrl("/assets/images/home/garaz_pointcloud.png")} />}
       
       {/* Background glow effects - moved below point cloud so it doesn't block clicks but adds to ambiance */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#ffcc33]/10 blur-[120px] rounded-full pointer-events-none"></div>
