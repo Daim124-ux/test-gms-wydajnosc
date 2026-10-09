@@ -140,7 +140,7 @@ export default function AppleHeroEntrance({ videoUrl, imageUrl, title, subtitle,
             {resolvedVideoUrl ? (
               <ResponsiveAsset
                 type="video"
-                src={videoUrl}
+                src={videoUrl || ''}
                 autoPlay
                 loop={false}
                 muted
@@ -193,7 +193,7 @@ export default function AppleHeroEntrance({ videoUrl, imageUrl, title, subtitle,
               <ResponsiveAsset
                 ref={videoRef}
                 type="video"
-                src={videoUrl}
+                src={videoUrl || ''}
                 muted 
                 playsInline 
                 priority
