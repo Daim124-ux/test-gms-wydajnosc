@@ -35,7 +35,7 @@ interface CatchAllPageProps {
 }
 
 export async function generateMetadata({ params }: CatchAllPageProps) {
-  const { uri } = await params;
+  const { uri, locale } = await params;
   const uriPath = uri && uri.length > 0 ? uri.join('/') : '/';
   const node = await getNodeByUri(uriPath);
 
@@ -47,11 +47,18 @@ export async function generateMetadata({ params }: CatchAllPageProps) {
 
   const seo = node.seo;
 
+  const canonicalPath = uriPath === '/' ? '' : `/${uriPath}`;
+  const languages: Record<string, string> = {};
+  ['pl', 'en', 'de', 'fr', 'ua', 'sk', 'cs', 'hu', 'da', 'it', 'nl', 'no', 'sv'].forEach(l => {
+    languages[l] = `https://gms-system.com/${l}${canonicalPath}`;
+  });
+
   return {
     title: seo.title,
     description: seo.metaDesc,
     alternates: {
-      canonical: seo.canonical || `https://gms-system.com${uriPath === '/' ? '/' : `/${uriPath}/`}`,
+      canonical: seo.canonical || `https://gms-system.com/${locale}${canonicalPath}`,
+      languages: languages,
     },
     openGraph: {
       title: seo.opengraphTitle || seo.title,
