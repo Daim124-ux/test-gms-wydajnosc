@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight, Box, X, Smartphone } from 'lucide-react';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 import { createPortal } from 'react-dom';
 import dynamic from 'next/dynamic';
+import Script from 'next/script';
 
 const CarportViewer = dynamic(() => import('./CarportViewer'), { ssr: false });
 
@@ -216,6 +217,12 @@ export default function PoznajKolorystyke({
         backgroundColor: darkTheme ? '#161617' : '#ffffff'
       }}
     >
+      <Script 
+        type="module" 
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" 
+        strategy="lazyOnload"
+      />
+      
       {/* EFEKT SPLASH DLA TEJ SEKCJI - INTENSYWNE PRZEJŚCIA KOLORÓW */}
       <div
         className="absolute inset-0 pointer-events-none overflow-hidden transition-opacity duration-1000"
