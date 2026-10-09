@@ -148,7 +148,8 @@ export default function AppleHeroEntrance({ videoUrl, imageUrl, title, subtitle,
                 className={isLight ? "w-full h-full object-cover opacity-100" : "w-[210vw] max-w-none h-auto aspect-video opacity-80"}
               />
             ) : imageUrl ? (
-              <img
+              <ResponsiveAsset
+                type="image"
                 src={imageUrl}
                 className={isLight ? "w-full h-full object-cover opacity-100" : "w-full h-full object-cover opacity-80"}
                 alt="Hero background image"
@@ -201,7 +202,8 @@ export default function AppleHeroEntrance({ videoUrl, imageUrl, title, subtitle,
                 className="w-full h-full object-cover opacity-80"
               />
             ) : imageUrl ? (
-              <img
+              <ResponsiveAsset
+                type="image"
                 src={imageUrl}
                 className="w-full h-full object-cover opacity-80"
                 alt="Hero background image"

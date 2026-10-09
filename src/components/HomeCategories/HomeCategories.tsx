@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from '@/i18n/navigation';
 import Link from 'next/link';
 import { ArrowRight, Warehouse, DoorClosed, Home, Bike, Factory, Trash2, Grip, ChevronLeft, ChevronRight } from 'lucide-react';
+import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
 const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
 
@@ -117,13 +118,13 @@ export default function HomeCategories() {
     const element = document.getElementById(`carousel-item-${index}`);
     if (element) {
       setTransitionState({
-        url: resolveMediaUrl(image),
+        url: image,
         rect: element.getBoundingClientRect()
       });
     } else {
       // Fallback awaryjny - rozszerzenie z małego punktu na srodku ekranu
       setTransitionState({
-        url: resolveMediaUrl(image),
+        url: image,
         rect: new DOMRect(window.innerWidth / 2, window.innerHeight / 2, 0, 0)
       });
     }
@@ -161,7 +162,8 @@ export default function HomeCategories() {
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="pointer-events-none overflow-hidden"
           >
-            <img 
+            <ResponsiveAsset 
+              type="image"
               src={transitionState.url} 
               alt="Transition" 
               className="w-full h-full object-cover"
@@ -254,8 +256,9 @@ export default function HomeCategories() {
                     
                     {/* Background Image */}
                     <div className="absolute inset-0 w-full h-full overflow-hidden">
-                      <img
-                        src={resolveMediaUrl(cat.image)}
+                      <ResponsiveAsset
+                        type="image"
+                        src={cat.image}
                         alt={cat.title}
                         className={`w-full h-full object-cover transition-transform duration-700 ease-out ${isCenter ? 'group-hover:scale-105 opacity-80 group-hover:opacity-100' : 'opacity-40'}`}
                       />

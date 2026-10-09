@@ -45,11 +45,6 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={`${poppins.variable} font-sans h-full antialiased`}>
       <head>
-        <Script 
-          type="module" 
-          src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" 
-          strategy="lazyOnload"
-        />
       </head>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages} locale={locale}>

@@ -110,11 +110,11 @@ const SamsungTabCard = ({ cat, idx, globalAngle, isActive, progress }: {
           : 'bottom-4 right-4 w-16 h-12 rounded-lg border border-white/20 shadow-lg'
           }`}
       >
-        <img
-          src={resolveMediaUrl(cat.image)}
+        <ResponsiveAsset
+          type="image"
+          src={cat.image}
           alt={cat.label}
           className="w-full h-full object-cover"
-          draggable={false}
         />
         {/* Dark overlay when active to ensure text readability */}
         <div
@@ -473,7 +473,7 @@ export default function HomeHero() {
               >
                 {/* Background img */}
                 <div className={`absolute z-0 inset-0 transition-all duration-500 ${isActive ? 'opacity-100' : 'opacity-40'}`}>
-                   <img src={resolveMediaUrl(cat.image)} className="w-full h-full object-cover" alt={cat.label} />
+                   <ResponsiveAsset type="image" src={cat.image} className="w-full h-full object-cover" alt={cat.label} />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 </div>
                 
