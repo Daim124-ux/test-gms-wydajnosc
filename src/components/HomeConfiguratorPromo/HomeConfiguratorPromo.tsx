@@ -3,7 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import InteractivePointCloud from '../InteractivePointCloud/InteractivePointCloud';
+import dynamic from 'next/dynamic';
+
+const InteractivePointCloud = dynamic(
+  () => import('../InteractivePointCloud/InteractivePointCloud'),
+  { ssr: false }
+);
 
 
 

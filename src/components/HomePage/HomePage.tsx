@@ -18,7 +18,11 @@ import {
 } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import Footer from '@/components/Footer/Footer';
-import Scene from './Scene';
+import dynamic from 'next/dynamic';
+
+const Scene = dynamic(() => import('./Scene'), {
+  ssr: false,
+});
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
