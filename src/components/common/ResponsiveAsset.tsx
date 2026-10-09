@@ -38,13 +38,26 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
   const cleanSrc = src.startsWith('/') ? src.slice(1) : src;
 
   useEffect(() => {
-    fetch('/_optimized/manifest.json')
+    fetch('/_optimized/manifest.json', { cache: 'no-store' })
       .then(async (res) => {
         if (!res.ok) return null;
         const text = await res.text();
         if (!text || !text.trim()) return null;
         try {
-          return JSON.parse(text);
+          const raw = JSON.parse(text);
+          // Konwersja kluczy na małe litery w celu wyeliminowania problemów z wielkością liter Windows vs Vercel (Linux)
+          const normalized = { images: {} as any, videos: {} as any };
+          if (raw.images) {
+            for (const [key, value] of Object.entries(raw.images)) {
+              normalized.images[key.toLowerCase()] = value;
+            }
+          }
+          if (raw.videos) {
+            for (const [key, value] of Object.entries(raw.videos)) {
+              normalized.videos[key.toLowerCase()] = value;
+            }
+          }
+          return normalized;
         } catch {
           return null;
         }
@@ -55,8 +68,10 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
       .catch(() => console.warn('Media manifest not found. Using fallbacks.'));
   }, []);
 
+  const searchSrc = cleanSrc.toLowerCase();
+
   if (isVideo) {
-    const videoData = manifest?.videos?.[cleanSrc];
+    const videoData = manifest?.videos?.[searchSrc];
     const baseName = cleanSrc.replace(/\.[^/.]+$/, "");
     
     // Sprawdź czy to plik pominięty w optymalizacji (np. frames)
@@ -104,7 +119,7 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
   }
 
   // IMAGE LOGIC
-  const imageData = manifest?.images?.[cleanSrc];
+  const imageData = manifest?.images?.[searchSrc];
   const baseName = cleanSrc.replace(/\.[^/.]+$/, "");
 
   // Helpers do budowania srcset - fallback do CloudFront
