@@ -32,7 +32,7 @@ export default function AppleHeroEntrance({ videoUrl, imageUrl, title, subtitle,
     if (process.env.NODE_ENV === 'development') return url;
     
     const cleanSrc = url.startsWith('/') ? url.slice(1) : url;
-    return `https://d1moyf5ccth9x8.cloudfront.net/_optimized/originals/${cleanSrc}`;
+    return `https://d1moyf5ccth9x8.cloudfront.net/_optimized/${cleanSrc}`;
   };
 
   const resolvedVideoUrl = resolveS3Url(videoUrl);
