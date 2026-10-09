@@ -49,7 +49,7 @@ const LEFT_LABELS = [
 const SLIDER_IDS = ['garaze', 'bramy-garazowe', 'altany', 'wiaty', 'wygrodzenia-przemyslowe', 'oslony-smietnikowe', 'drzwi-piwniczne', 'bramy-segmentowe', 'garaze-superstrong'];
 const SLIDER_CATEGORIES = CATEGORIES.filter(c => SLIDER_IDS.includes(c.id));
 
-const START_INDEX = 10 * CATEGORIES.length;
+const START_INDEX = 2 * CATEGORIES.length;
 
 const SamsungTabCard = ({ cat, idx, globalAngle, isActive, progress }: {
   cat: typeof CATEGORIES[0];
@@ -183,14 +183,13 @@ export default function HomeHero() {
   const PX_PER_ITEM = 120;
   const ANGLE_SPACING = 20;
 
-  // 20 loops of 8 categories = 160 items total
-  // This gives the user 10 full loops to scroll up, and 10 full loops to scroll down.
-  const slots = useMemo(() => Array.from({ length: 20 }).flatMap(() => CATEGORIES), []);
+  // 4 loops of 11 categories = 44 items total
+  // This gives the user 2 full loops to scroll up, and 2 full loops to scroll down.
+  const slots = useMemo(() => Array.from({ length: 4 }).flatMap(() => CATEGORIES), []);
   const NUM_SLOTS = slots.length;
 
-  // Start exactly in the middle loop (index 80 is 'garaze')
-  const START_INDEX = 10 * CATEGORIES.length;
-  const CENTER_SCROLL = START_INDEX * PX_PER_ITEM; // 80 * 120 = 9600px
+  // Start exactly in the middle loop (index 22 is 'garaze')
+  const CENTER_SCROLL = START_INDEX * PX_PER_ITEM; // 22 * 120 = 2640px
   const TOTAL_HEIGHT = NUM_SLOTS * PX_PER_ITEM; // 19200px
 
   const { scrollY } = useScroll({ container: sliderRef });
@@ -349,13 +348,16 @@ export default function HomeHero() {
                 loop={activeCategory.loop}
                 muted
                 playsInline
+                priority
                 poster={resolveMediaUrl(activeCategory.image)}
                 className="w-full h-full object-cover"
               />
             ) : (
-              <img
-                src={resolveMediaUrl(activeCategory.image)}
+              <ResponsiveAsset
+                type="image"
+                src={activeCategory.image}
                 alt={activeCategory.label}
+                priority
                 className="w-full h-full object-cover"
               />
             )}

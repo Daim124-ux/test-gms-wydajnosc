@@ -99,6 +99,7 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
         muted={muted}
         playsInline={playsInline}
         preload={priority ? "auto" : "metadata"}
+        fetchPriority={priority ? "high" : "auto"}
         poster={poster}
         onLoadedMetadata={(e) => {
           if (!autoPlay) {
