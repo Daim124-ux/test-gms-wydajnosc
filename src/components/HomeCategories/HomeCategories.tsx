@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { useRouter } from '@/i18n/navigation';
 import Link from 'next/link';
 import { ArrowRight, Warehouse, DoorClosed, Home, Bike, Factory, Trash2, Grip, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -82,17 +82,19 @@ const categories = [
 
 export default function HomeCategories() {
   const router = useRouter();
+  const sectionRef = useRef<HTMLElement>(null);
+  const isInView = useInView(sectionRef, { amount: 0.2 });
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [transitionState, setTransitionState] = useState<{ url: string, rect: DOMRect } | null>(null);
 
   useEffect(() => {
-    if (isHovered || transitionState) return;
+    if (!isInView || isHovered || transitionState) return;
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % categories.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
-  }, [isHovered, transitionState, currentIndex]);
+  }, [isInView, isHovered, transitionState, currentIndex]);
 
   const getOffset = (idx: number) => {
     const diff = idx - currentIndex;
@@ -137,7 +139,7 @@ export default function HomeCategories() {
   };
 
   return (
-    <section className="relative w-full py-24 md:py-32 bg-[#050505] overflow-hidden flex flex-col items-center">
+    <section ref={sectionRef} className="relative w-full py-24 md:py-32 bg-[#050505] overflow-hidden flex flex-col items-center">
       {/* FULLSCREEN ANIMATION OVERLAY */}
       <AnimatePresence>
         {transitionState && (
@@ -219,25 +221,27 @@ export default function HomeCategories() {
             const offset = getOffset(i);
             const isCenter = offset === 0;
             const absOffset = Math.abs(offset);
-            
-            // Render only up to 2 items on each side to keep DOM clean and animations smooth
-            if (absOffset > 2) return null;
+            const isHidden = absOffset > 2;
 
             return (
               <motion.div
                 key={cat.id}
                 id={`carousel-item-${i}`}
                 className="absolute w-[80%] max-w-[500px] md:max-w-[750px] aspect-[16/9] cursor-pointer"
+                style={{
+                  visibility: isHidden ? 'hidden' : 'visible',
+                  pointerEvents: isCenter ? 'auto' : (isHidden ? 'none' : 'auto'),
+                }}
                 animate={{
                   x: `${offset * 50}%`,
-                  scale: 1 - absOffset * 0.2,
-                  zIndex: 10 - absOffset,
-                  opacity: 1 - absOffset * 0.25,
+                  scale: Math.max(0.4, 1 - absOffset * 0.2),
+                  zIndex: Math.max(0, 10 - absOffset),
+                  opacity: isHidden ? 0 : 1 - absOffset * 0.25,
                   rotateY: offset * -18
                 }}
                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                 onClick={() => {
-                  if (!isCenter) setCurrentIndex(i);
+                  if (!isCenter && !isHidden) setCurrentIndex(i);
                 }}
               >
                 <div className={`w-full h-full relative rounded-[2rem] overflow-hidden group bg-[#0c0c0c] border transition-all duration-500 ${isCenter ? 'border-[#ffcc33]/30 shadow-[0_0_100px_rgba(255,204,51,0.1)]' : 'border-white/5 shadow-2xl'}`}>

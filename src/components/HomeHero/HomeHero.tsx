@@ -12,13 +12,10 @@ const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
 const resolveMediaUrl = (url?: string) => {
   if (!url) return '';
   if (url.startsWith('http')) return url;
-  if (process.env.NODE_ENV === 'development') return url;
 
   const cleanSrc = url.startsWith('/') ? url.slice(1) : url;
-  if (cleanSrc.includes('hero_v2')) {
-    return `${CLOUDFRONT_URL}/_optimized/originals/${cleanSrc}`;
-  }
-  return `${CLOUDFRONT_URL}/_optimized/${cleanSrc}`;
+  const baseName = cleanSrc.replace(/\.[^/.]+$/, "");
+  return `${CLOUDFRONT_URL}/_optimized/${baseName}_large.webp`;
 };
 
 const CATEGORIES = [
@@ -175,6 +172,14 @@ const SamsungTabCard = ({ cat, idx, globalAngle, isActive, progress }: {
 
 export default function HomeHero() {
   const [activeId, setActiveId] = useState<string>('garaze');
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const updateMedia = () => setIsDesktop(window.innerWidth >= 1024);
+    updateMedia();
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
+  }, []);
 
   const sliderRef = useRef<HTMLDivElement>(null);
   const mobileSliderRef = useRef<HTMLDivElement>(null);
@@ -236,33 +241,19 @@ export default function HomeHero() {
   };
 
   useEffect(() => {
+    if (!isDesktop) return;
     let animationFrameId: number;
     const loop = () => {
       const elapsed = Date.now() - lastInteractionTime.current;
       if (elapsed >= AUTO_SCROLL_INTERVAL) {
         // Desktop scroll
-        if (sliderRef.current && !isDown && window.innerWidth >= 1024) {
+        if (sliderRef.current && !isDown) {
           animate(sliderRef.current.scrollTop, sliderRef.current.scrollTop + PX_PER_ITEM, {
             duration: 1.2,
             ease: "easeInOut",
             onUpdate: (val) => {
               if (sliderRef.current) sliderRef.current.scrollTop = val;
             }
-          });
-        }
-        // Mobile scroll
-        if (mobileSliderRef.current && window.innerWidth < 1024) {
-          const container = mobileSliderRef.current;
-          const currentIdx = CATEGORIES.findIndex(c => c.id === activeId);
-          const nextIdx = (currentIdx + 1) % CATEGORIES.length;
-          
-          const childWidth = (container.children[0] as HTMLElement)?.offsetWidth || 300;
-          const gap = 16;
-          const itemWidth = childWidth + gap;
-          
-          container.scrollTo({
-             left: nextIdx * itemWidth,
-             behavior: 'smooth'
           });
         }
         lastInteractionTime.current = Date.now();
@@ -274,7 +265,7 @@ export default function HomeHero() {
     };
     loop();
     return () => cancelAnimationFrame(animationFrameId);
-  }, [isDown, PX_PER_ITEM, progress]);
+  }, [isDesktop, isDown, PX_PER_ITEM, progress]);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;
@@ -340,7 +331,7 @@ export default function HomeHero() {
             transition={{ duration: 1.2, ease: "easeInOut" }}
             className="w-full h-full relative"
           >
-            {activeCategory.video ? (
+            {activeCategory.video && isDesktop ? (
               <ResponsiveAsset
                 type="video"
                 src={activeCategory.video}
@@ -425,7 +416,7 @@ export default function HomeHero() {
               <div style={{ height: `${TOTAL_HEIGHT}px` }} className="relative w-full">
                 <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
                   <div className="sticky top-0 h-[600px] max-h-[80vh] flex items-center justify-end w-full pointer-events-none">
-                    {slots.map((cat, idx) => (
+                    {isDesktop && slots.map((cat, idx) => (
                       <Link
                         key={`${cat.id}-${idx}`}
                         href={cat.link}
@@ -447,7 +438,7 @@ export default function HomeHero() {
                   </div>
                 </div>
                 <div className="w-full flex flex-col pointer-events-none">
-                  {Array.from({ length: NUM_SLOTS }).map((_, i) => (
+                  {isDesktop && Array.from({ length: NUM_SLOTS }).map((_, i) => (
                     <div key={i} style={{ height: `${PX_PER_ITEM}px` }} className="w-full snap-start shrink-0" />
                   ))}
                 </div>

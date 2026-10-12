@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import './Footer.css';
 
 const PIKTOGRAMY = [
@@ -32,6 +32,8 @@ export default function Footer({ variant }: FooterProps) {
 
   const [icons, setIcons] = useState<{ id: number; src: string; delay: number; x: string; size: number; startY: number; color: string }[]>([]);
   const videoRef = React.useRef<HTMLVideoElement>(null);
+  const unicornRef = React.useRef<HTMLDivElement>(null);
+  const isUnicornInView = useInView(unicornRef, { once: true, amount: 0.1 });
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -114,7 +116,7 @@ export default function Footer({ variant }: FooterProps) {
         </div>
 
         {/* WARSTWA 2.5: JEDNOROŻEC */}
-        <div className="footer-unicorn-layer">
+        <div ref={unicornRef} className="footer-unicorn-layer">
           <div className="unicorn-text-wrapper">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -126,14 +128,22 @@ export default function Footer({ variant }: FooterProps) {
               {t('unicorn.prefix')} <span className="unicorn-text-gradient">{t('unicorn.cta')}</span>
             </motion.div>
           </div>
-          <video
-            src="/assets/videos/main/jednorozec_gms.mkv"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="unicorn-video"
-          />
+          {isUnicornInView && (
+            <video
+              ref={videoRef}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              className="unicorn-video"
+            >
+              <source src="https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_mobile.webm" type="video/webm" media="(max-width: 768px)" />
+              <source src="https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_mobile.mp4" type="video/mp4" media="(max-width: 768px)" />
+              <source src="https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_desktop.webm" type="video/webm" />
+              <source src="https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_desktop.mp4" type="video/mp4" />
+            </video>
+          )}
         </div>
 
         {/* WARSTWA 3: KARTA Z LINKAMI */}
