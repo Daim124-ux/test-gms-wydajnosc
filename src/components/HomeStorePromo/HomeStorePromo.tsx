@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { ShoppingBag, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const benefits = [
@@ -70,6 +70,7 @@ export default function HomeStorePromo() {
 
             <Link 
               href="/sklep" 
+              prefetch={false}
               className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-200 text-black font-semibold rounded-full transition-colors duration-300"
             >
               Przejdź do sklepu

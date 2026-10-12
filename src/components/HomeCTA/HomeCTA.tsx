@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 
 export default function HomeCTA() {
   return (
@@ -37,12 +37,14 @@ export default function HomeCTA() {
         >
           <Link 
             href="/konfigurator"
+            prefetch={false}
             className="w-full sm:w-auto px-10 py-4 bg-[#ffcc33] hover:bg-[#e6b800] text-white font-bold rounded-full transition-colors text-lg text-center"
           >
             Skonfiguruj w 3D
           </Link>
           <Link 
             href="/kontakt"
+            prefetch={false}
             className="w-full sm:w-auto px-10 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full border border-white/20 transition-colors text-lg text-center"
           >
             Skontaktuj się z nami

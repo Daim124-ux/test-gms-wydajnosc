@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { useRouter } from '@/i18n/navigation';
-import Link from 'next/link';
+import { useRouter, Link } from '@/i18n/navigation';
 import { ArrowRight, Warehouse, DoorClosed, Home, Bike, Factory, Trash2, Grip, ChevronLeft, ChevronRight } from 'lucide-react';
 import ResponsiveAsset from '@/components/common/ResponsiveAsset';
 
@@ -248,6 +247,7 @@ export default function HomeCategories() {
                   {/* We only wrap with Link if it's the center item so users don't accidentally navigate when trying to bring an item to center */}
                   <Link 
                     href={isCenter ? cat.link : '#'} 
+                    prefetch={false}
                     className={`block w-full h-full relative z-10 ${!isCenter && 'pointer-events-none'}`}
                     onClick={(e) => {
                       if(!isCenter) {
@@ -320,6 +320,7 @@ export default function HomeCategories() {
               <Link
                 key={'icon-' + cat.id}
                 href={cat.link}
+                prefetch={false}
                 onMouseEnter={() => setCurrentIndex(i)}
                 onClick={(e) => handleNavigate(e, cat.link, cat.image, i)}
                 className={`shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 border ${

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence, useScroll, useTransform, MotionValue, useMotionValue, animate } from 'framer-motion';
 import { Trash2, Fence, Warehouse, DoorClosed, Home, Bike, Accessibility, Factory, Grip } from 'lucide-react';
@@ -386,12 +386,14 @@ export default function HomeHero() {
           <div className="flex flex-row flex-wrap gap-3 sm:gap-5">
             <Link
               href="/konfigurator"
+              prefetch={false}
               className="inline-flex flex-1 justify-center items-center px-4 sm:px-10 py-3 sm:py-3.5 bg-[#ffcc33] hover:bg-[#e6b800] text-white text-[11px] sm:text-sm font-bold tracking-wide rounded-md transition-all text-center shadow-[0_0_20px_rgba(255,204,51,0.5)] whitespace-nowrap"
             >
               SKONFIGURUJ POD SIEBIE
             </Link>
             <Link
               href="/realizacje"
+              prefetch={false}
               className="inline-flex flex-1 justify-center items-center px-4 sm:px-10 py-3 sm:py-3.5 bg-white/10 backdrop-blur-md border border-white/30 text-white hover:bg-white/20 text-[11px] sm:text-sm font-bold tracking-wide rounded-md transition-all text-center whitespace-nowrap"
             >
               ZOBACZ REALIZACJE
@@ -420,6 +422,7 @@ export default function HomeHero() {
                       <Link
                         key={`${cat.id}-${idx}`}
                         href={cat.link}
+                        prefetch={false}
                         onClick={(e) => {
                           if (isDragging) e.preventDefault();
                         }}
@@ -461,6 +464,7 @@ export default function HomeHero() {
             return (
               <Link 
                 href={cat.link} 
+                prefetch={false}
                 key={cat.id} 
                 className={`w-[75vw] max-w-[320px] shrink-0 snap-center relative rounded-[1.5rem] overflow-hidden h-[160px] flex flex-col justify-between p-5 border transition-all duration-500 shadow-xl ${isActive ? 'bg-black/40 border-[#ffcc33]/60 scale-100 shadow-[0_0_30px_rgba(255,204,51,0.2)]' : 'bg-black/10 border-white/10 scale-95 opacity-70'}`}
               >

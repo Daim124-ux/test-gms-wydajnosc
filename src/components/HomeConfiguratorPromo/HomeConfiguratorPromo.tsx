@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import dynamic from 'next/dynamic';
 
 const InteractivePointCloud = dynamic(
@@ -76,6 +76,7 @@ export default function HomeConfiguratorPromo() {
       >
         <Link 
           href="/konfigurator" 
+          prefetch={false}
           className="pointer-events-auto relative group overflow-hidden inline-flex items-center justify-center px-10 py-4 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white text-sm md:text-base font-bold tracking-widest uppercase transition-all duration-300 hover:scale-105 hover:border-[#ffcc33]/50 hover:bg-[#ffcc33]/10 hover:shadow-[0_0_40px_rgba(255,204,51,0.2)]"
         >
           {/* Liquid glass reflection */}
