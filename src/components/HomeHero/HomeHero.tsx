@@ -320,6 +320,12 @@ export default function HomeHero() {
 
   const activeCategory = CATEGORIES.find(c => c.id === activeId) || CATEGORIES[4];
 
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsVideoLoaded(false);
+  }, [activeId]);
+
   return (
     <div className="relative w-full h-[70vh] lg:h-[100dvh] lg:min-h-[800px] bg-[#050505] flex flex-col justify-between overflow-visible lg:overflow-hidden font-sans">
 
@@ -334,7 +340,17 @@ export default function HomeHero() {
             transition={{ duration: 1.2, ease: "easeInOut" }}
             className="w-full h-full relative"
           >
-            {activeCategory.video && isDesktop ? (
+            {/* 1 klatka / zoptymalizowany obrazek bazowy */}
+            <ResponsiveAsset
+              type="image"
+              src={activeCategory.image}
+              alt={activeCategory.label}
+              priority
+              className="w-full h-full object-cover"
+            />
+
+            {/* Wideo - wczytuje się w tle i płynnie pojawia po załadowaniu */}
+            {activeCategory.video && (
               <ResponsiveAsset
                 type="video"
                 src={activeCategory.video}
@@ -342,17 +358,13 @@ export default function HomeHero() {
                 loop={activeCategory.loop}
                 muted
                 playsInline
-                priority
+                priority={isDesktop}
                 poster={resolveMediaUrl(activeCategory.image)}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <ResponsiveAsset
-                type="image"
-                src={activeCategory.image}
-                alt={activeCategory.label}
-                priority
-                className="w-full h-full object-cover"
+                onCanPlay={() => setIsVideoLoaded(true)}
+                onLoadedData={() => setIsVideoLoaded(true)}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                  isVideoLoaded ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}
               />
             )}
           </motion.div>

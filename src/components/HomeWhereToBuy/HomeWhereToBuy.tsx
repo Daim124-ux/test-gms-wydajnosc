@@ -66,21 +66,53 @@ export default function HomeWhereToBuy() {
   const svgContainerRef = useRef<HTMLDivElement>(null);
   const mobileListRef = useRef<HTMLDivElement>(null);
   const [waveComplete, setWaveComplete] = useState(false);
+  const [centerCountryId, setCenterCountryId] = useState<string | null>(null);
+  const isScrollingProgrammatically = useRef(false);
 
-  useEffect(() => {
-    if (activeId && mobileListRef.current) {
+  const scrollToCountry = (id: string) => {
+    setCenterCountryId(id);
+    if (mobileListRef.current) {
       const container = mobileListRef.current;
-      const el = container.querySelector(`#country-list-${activeId}`) as HTMLElement;
+      const el = container.querySelector(`#country-list-${id}`) as HTMLElement;
       if (el) {
         const containerCenter = container.offsetWidth / 2;
         const elCenter = el.offsetLeft + (el.offsetWidth / 2);
+        isScrollingProgrammatically.current = true;
         container.scrollTo({
           left: elCenter - containerCenter,
           behavior: 'smooth'
         });
+        setTimeout(() => {
+          isScrollingProgrammatically.current = false;
+        }, 400);
       }
     }
-  }, [activeId]);
+  };
+
+  const handleMobileListScroll = () => {
+    if (isScrollingProgrammatically.current || !mobileListRef.current) return;
+    const container = mobileListRef.current;
+    const containerCenter = container.scrollLeft + container.offsetWidth / 2;
+
+    let closestId: string | null = null;
+    let minDistance = Infinity;
+
+    locations.forEach((loc) => {
+      const el = container.querySelector(`#country-list-${loc.id}`) as HTMLElement;
+      if (el) {
+        const elCenter = el.offsetLeft + el.offsetWidth / 2;
+        const distance = Math.abs(elCenter - containerCenter);
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestId = loc.id;
+        }
+      }
+    });
+
+    if (closestId && closestId !== centerCountryId) {
+      setCenterCountryId(closestId);
+    }
+  };
 
   const locale = useLocale();
   const countryNames = new Intl.DisplayNames([locale], { type: 'region' });
@@ -208,7 +240,19 @@ export default function HomeWhereToBuy() {
 
     const uniqueDots = Array.from(new Map(finalDots.map(d => [d.name, d])).values());
     setLocations(uniqueDots);
+
+    // Domyślny środkowy punkt: Irlandia lub pierwszy z listy
+    const initialCenter = uniqueDots.find(d => d.name.toLowerCase().includes('irlandia') || d.id === 'Ireland') || uniqueDots[0];
+    if (initialCenter) {
+      setCenterCountryId(initialCenter.id);
+    }
   }, []);
+
+  useEffect(() => {
+    if (centerCountryId && mobileListRef.current) {
+      scrollToCountry(centerCountryId);
+    }
+  }, [locations]);
 
   const activeLocation = locations.find(loc => loc.id === activeId);
 
@@ -362,34 +406,38 @@ export default function HomeWhereToBuy() {
             />
 
             {/* Kropki - pojawiają się z opóźnieniem */}
-            {locations.map((loc, index) => (
+            {locations.map((loc, index) => {
+              const isCenterCountry = (centerCountryId === loc.id) || (hoveredId === loc.id) || (activeId === loc.id);
+
+              return (
               <motion.div
                 key={loc.id}
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 1.5 + (index * 0.05), type: 'spring', stiffness: 200 }}
-                className="absolute transform -translate-x-1/2 -translate-y-1/2 z-20"
+                className={`absolute transform -translate-x-1/2 -translate-y-1/2 ${isCenterCountry ? 'z-40' : 'z-20'}`}
                 style={{ top: loc.top, left: loc.left }}
               >
-                {/* Tooltip przy najeździe (tylko DESKTOP) */}
+                {/* Tooltip przy najeździe lub dla wybranego środkowego kraju */}
                 <AnimatePresence>
-                  {(hoveredId === loc.id || activeId === loc.id) && (
+                  {isCenterCountry && (
                     <motion.div
                       initial={{ opacity: 0, y: 5, scale: 0.9 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 5, scale: 0.9 }}
-                      className="hidden md:block absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-[#050505]/95 backdrop-blur-xl border border-[#ffcc33]/50 rounded-lg shadow-[0_0_20px_rgba(255,107,0,0.3)] pointer-events-none whitespace-nowrap z-30"
+                      className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 px-2.5 py-1 md:px-3 md:py-1.5 bg-[#050505]/95 backdrop-blur-xl border border-[#ffcc33]/60 rounded-lg shadow-[0_0_20px_rgba(255,204,51,0.4)] pointer-events-none whitespace-nowrap z-50"
                     >
-                      <span className="text-[#ffcc33] text-sm font-bold tracking-wide">{loc.name}</span>
+                      <span className="text-[#ffcc33] text-xs md:text-sm font-bold tracking-wide">{loc.name}</span>
                     </motion.div>
                   )}
                 </AnimatePresence>
 
-                {/* Kropka z pulsowaniem */}
+                {/* Kropka z pulsowaniem - środkowy kraj jest wyraźnie większy i mocno mruga */}
                 <button
                   onMouseEnter={() => {
                     setHoveredId(loc.id);
+                    setCenterCountryId(loc.id);
                     const el = svgContainerRef.current?.querySelector(`#${loc.id}`) as HTMLElement;
                     if (el) {
                       el.style.fill = 'rgba(255, 107, 0, 0.4)';
@@ -406,24 +454,37 @@ export default function HomeWhereToBuy() {
                       el.style.setProperty('stroke-width', '2px', 'important');
                     }
                   }}
-                  onClick={() => setActiveId(loc.id)}
+                  onClick={() => {
+                    scrollToCountry(loc.id);
+                    setActiveId(loc.id);
+                  }}
                   className={`relative flex items-center justify-center transition-all duration-300 group cursor-pointer ${
-                    activeId === loc.id ? 'w-6 h-6 md:w-8 md:h-8' : 'w-4 h-4 md:w-6 md:h-6 hover:scale-125'
+                    isCenterCountry ? 'w-8 h-8 md:w-10 md:h-10' : 'w-4 h-4 md:w-5 md:h-5 hover:scale-125'
                   }`}
                 >
                   {/* Zewnętrzna poświata kropki */}
-                  <div className="absolute inset-0 rounded-full bg-[#ffcc33]/20 blur-[2px] md:blur-sm" />
-                  
-                  {/* Wewnętrzny rdzeń */}
-                  <div className={`relative z-10 rounded-full transition-colors duration-300 shadow-[0_0_10px_rgba(255,107,0,0.8)] ${
-                    activeId === loc.id ? 'w-2.5 h-2.5 md:w-3.5 md:h-3.5 bg-[#ffcc33]' : 'w-1.5 h-1.5 md:w-2.5 md:h-2.5 bg-[#ffcc33] group-hover:bg-[#ffcc33]'
+                  <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
+                    isCenterCountry ? 'bg-[#ffcc33]/40 blur-md scale-125' : 'bg-[#ffcc33]/20 blur-[1px]'
                   }`} />
                   
-                  {/* Pierścień pulsujący */}
-                  <div className="absolute inset-0 rounded-full border border-[#ffcc33]/60 bg-[#ffcc33]/30 animate-ping" style={{ animationDuration: '2s' }} />
+                  {/* Wewnętrzny rdzeń */}
+                  <div className={`relative z-10 rounded-full transition-all duration-300 shadow-[0_0_12px_#ffcc33] ${
+                    isCenterCountry 
+                      ? 'w-3.5 h-3.5 md:w-4.5 md:h-4.5 bg-[#ffcc33] animate-pulse' 
+                      : 'w-1.5 h-1.5 md:w-2 md:h-2 bg-[#ffcc33]/80 group-hover:bg-[#ffcc33]'
+                  }`} />
+                  
+                  {/* Pierścienie pulsujące / mrugające radaru - TYLKO DLA ŚRODKOWEGO KRAJU */}
+                  {isCenterCountry && (
+                    <>
+                      <div className="absolute inset-0 rounded-full border-2 border-[#ffcc33] bg-[#ffcc33]/30 animate-ping" style={{ animationDuration: '1.4s' }} />
+                      <div className="absolute -inset-1.5 rounded-full border border-[#ffcc33]/60 animate-ping" style={{ animationDuration: '2.2s' }} />
+                    </>
+                  )}
                 </button>
               </motion.div>
-            ))}
+              );
+            })}
 
             {/* Removed inline desktop form */}
           </div>
@@ -433,18 +494,22 @@ export default function HomeWhereToBuy() {
         <div className="block md:hidden w-full max-w-[1200px] mx-auto">
           <div 
             ref={mobileListRef}
+            onScroll={handleMobileListScroll}
             className="flex w-full overflow-x-auto snap-x snap-mandatory gap-3 py-4 mt-2 px-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
           >
             {locations.map((loc) => {
-              const isActive = activeId === loc.id;
+              const isCenter = centerCountryId === loc.id;
               return (
                 <button
                   key={loc.id}
                   id={`country-list-${loc.id}`}
-                  onClick={() => setActiveId(loc.id)}
+                  onClick={() => {
+                    scrollToCountry(loc.id);
+                    setActiveId(loc.id);
+                  }}
                   className={`shrink-0 snap-center px-5 py-2.5 rounded-full border transition-all duration-300 text-sm font-semibold whitespace-nowrap ${
-                    isActive 
-                      ? 'bg-[#ffcc33] text-black border-[#ffcc33] shadow-[0_0_15px_rgba(255,204,51,0.4)]' 
+                    isCenter 
+                      ? 'bg-[#ffcc33] text-black border-[#ffcc33] shadow-[0_0_15px_rgba(255,204,51,0.4)] scale-105' 
                       : 'bg-white/5 border-white/10 text-gray-400 hover:bg-white/10 hover:text-white'
                   }`}
                 >

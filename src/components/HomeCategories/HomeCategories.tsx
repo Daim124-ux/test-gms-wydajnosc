@@ -107,6 +107,47 @@ export default function HomeCategories() {
   const nextSlide = () => setCurrentIndex((p) => (p + 1) % categories.length);
   const prevSlide = () => setCurrentIndex((p) => (p - 1 + categories.length) % categories.length);
 
+  const touchStartX = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
+  const isSwiping = useRef(false);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setIsHovered(true);
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+    isSwiping.current = false;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (touchStartX.current === null || touchStartY.current === null) return;
+    const diffX = e.touches[0].clientX - touchStartX.current;
+    const diffY = e.touches[0].clientY - touchStartY.current;
+    if (Math.abs(diffX) > 10 && Math.abs(diffX) > Math.abs(diffY)) {
+      isSwiping.current = true;
+    }
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    setIsHovered(false);
+    if (touchStartX.current === null || touchStartY.current === null) return;
+    const deltaX = e.changedTouches[0].clientX - touchStartX.current;
+    const deltaY = e.changedTouches[0].clientY - touchStartY.current;
+
+    // Przesunięcie poziome o min. 35px
+    if (Math.abs(deltaX) > 35 && Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (deltaX < 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+    }
+    touchStartX.current = null;
+    touchStartY.current = null;
+    setTimeout(() => {
+      isSwiping.current = false;
+    }, 60);
+  };
+
   const handleNavigate = (e: React.MouseEvent<HTMLAnchorElement>, link: string, image: string, index: number) => {
     e.preventDefault();
     if (transitionState) return; // Zapobiegaj wielokrotnym kliknięciom
@@ -204,12 +245,13 @@ export default function HomeCategories() {
 
         {/* 3D CAROUSEL */}
         <div 
-          className="relative w-full h-[300px] sm:h-[400px] md:h-[550px] flex justify-center items-center mt-8"
+          className="relative w-full h-[300px] sm:h-[400px] md:h-[550px] flex justify-center items-center mt-8 touch-pan-y"
           style={{ perspective: 1500 }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          onTouchStart={() => setIsHovered(true)}
-          onTouchEnd={() => setIsHovered(false)}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
           {/* FIXED CENTER GLOW */}
           <div className="absolute w-[80%] max-w-[500px] md:max-w-[750px] aspect-[16/9] -z-10 pointer-events-none">
@@ -239,7 +281,11 @@ export default function HomeCategories() {
                   rotateY: offset * -18
                 }}
                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                onClick={() => {
+                onClick={(e) => {
+                  if (isSwiping.current) {
+                    e.preventDefault();
+                    return;
+                  }
                   if (!isCenter && !isHidden) setCurrentIndex(i);
                 }}
               >
@@ -250,6 +296,10 @@ export default function HomeCategories() {
                     prefetch={false}
                     className={`block w-full h-full relative z-10 ${!isCenter && 'pointer-events-none'}`}
                     onClick={(e) => {
+                      if (isSwiping.current) {
+                        e.preventDefault();
+                        return;
+                      }
                       if(!isCenter) {
                         e.preventDefault();
                       } else {

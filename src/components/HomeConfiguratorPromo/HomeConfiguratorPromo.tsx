@@ -72,18 +72,18 @@ export default function HomeConfiguratorPromo() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.3 }}
-        className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20"
+        className="absolute bottom-20 sm:bottom-24 left-1/2 -translate-x-1/2 z-20 w-max max-w-[92vw]"
       >
         <Link 
           href="/konfigurator" 
           prefetch={false}
-          className="pointer-events-auto relative group overflow-hidden inline-flex items-center justify-center px-10 py-4 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white text-sm md:text-base font-bold tracking-widest uppercase transition-all duration-300 hover:scale-105 hover:border-[#ffcc33]/50 hover:bg-[#ffcc33]/10 hover:shadow-[0_0_40px_rgba(255,204,51,0.2)]"
+          className="pointer-events-auto relative group overflow-hidden inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 text-white text-xs sm:text-sm md:text-base font-bold tracking-wider sm:tracking-widest uppercase transition-all duration-300 hover:scale-105 hover:border-[#ffcc33]/50 hover:bg-[#ffcc33]/10 hover:shadow-[0_0_40px_rgba(255,204,51,0.2)] whitespace-nowrap"
         >
           {/* Liquid glass reflection */}
           <div className="absolute inset-0 w-full h-full bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1/3 bg-white/10 blur-md rounded-full"></div>
           
-          <span className="relative z-10 drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)] group-hover:text-[#ffcc33] transition-colors duration-300">
+          <span className="relative z-10 drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)] group-hover:text-[#ffcc33] transition-colors duration-300 whitespace-nowrap">
             Przejdź do konfiguratora
           </span>
         </Link>

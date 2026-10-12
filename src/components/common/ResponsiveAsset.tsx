@@ -14,6 +14,8 @@ interface ResponsiveAssetProps {
   muted?: boolean;
   playsInline?: boolean;
   onLoadedMetadata?: (e: React.SyntheticEvent<HTMLVideoElement, Event>) => void;
+  onLoadedData?: (e: React.SyntheticEvent<HTMLVideoElement, Event>) => void;
+  onCanPlay?: (e: React.SyntheticEvent<HTMLVideoElement, Event>) => void;
   poster?: string;
 }
 
@@ -76,6 +78,8 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
     muted = true,
     playsInline = true,
     onLoadedMetadata,
+    onLoadedData,
+    onCanPlay,
     poster
   },
   ref
@@ -140,6 +144,8 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
           }
           if (onLoadedMetadata) onLoadedMetadata(e);
         }}
+        onLoadedData={onLoadedData}
+        onCanPlay={onCanPlay}
       >
         {/* Mobile Sources */}
         <source src={encodeURI(mobileWebm)} type="video/webm" media="(max-width: 768px)" />
