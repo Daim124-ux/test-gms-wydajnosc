@@ -17,30 +17,18 @@ interface ResponsiveAssetProps {
   poster?: string;
 }
 
-const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, ResponsiveAssetProps>((
-  {
-    src,
-    alt = '',
-    className = '',
-    priority = false,
-    type,
-    autoPlay = false,
-    loop = true,
-    muted = true,
-    playsInline = true,
-    onLoadedMetadata,
-    poster
-  },
-  ref
-) => {
-  const [manifest, setManifest] = useState<any>(null);
-  const isVideo = type === 'video' || /\.(mp4|mov|webm)$/i.test(src);
+// Singleton cache manifestu w pamięci klienta (pobierany tylko RAZ dla całej sesji aplikacji)
+let cachedManifest: any = null;
+let manifestPromise: Promise<any> | null = null;
+const manifestListeners = new Set<(manifest: any) => void>();
 
-  const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
-  const cleanSrc = src.startsWith('/') ? src.slice(1) : src;
-
-  useEffect(() => {
-    fetch('/_optimized/manifest.json', { cache: 'no-store' })
+function fetchGlobalManifest(): Promise<any> {
+  if (typeof window === 'undefined') return Promise.resolve(null);
+  if (cachedManifest) {
+    return Promise.resolve(cachedManifest);
+  }
+  if (!manifestPromise) {
+    manifestPromise = fetch('/_optimized/manifest.json')
       .then(async (res) => {
         if (!res.ok) return null;
         const text = await res.text();
@@ -59,21 +47,66 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
               normalized.videos[key.toLowerCase()] = value;
             }
           }
+          cachedManifest = normalized;
+          manifestListeners.forEach((listener) => listener(normalized));
+          manifestListeners.clear();
           return normalized;
         } catch {
           return null;
         }
       })
-      .then(data => {
-        if (data) setManifest(data);
-      })
-      .catch(() => console.warn('Media manifest not found. Using fallbacks.'));
-  }, []);
+      .catch((err) => {
+        console.warn('Media manifest not found. Using fallbacks.', err);
+        manifestListeners.clear();
+        return null;
+      });
+  }
+  return manifestPromise;
+}
+
+const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, ResponsiveAssetProps>((
+  {
+    src,
+    alt = '',
+    className = '',
+    priority = false,
+    type,
+    autoPlay = false,
+    loop = true,
+    muted = true,
+    playsInline = true,
+    onLoadedMetadata,
+    poster
+  },
+  ref
+) => {
+  const [manifest, setManifest] = useState<any>(() => cachedManifest);
+  const activeManifest = manifest || cachedManifest;
+  const isVideo = type === 'video' || /\.(mp4|mov|webm)$/i.test(src);
+
+  const CLOUDFRONT_URL = 'https://d1moyf5ccth9x8.cloudfront.net';
+  const cleanSrc = src.startsWith('/') ? src.slice(1) : src;
+
+  useEffect(() => {
+    if (cachedManifest) {
+      if (!manifest) {
+        setManifest(cachedManifest);
+      }
+      return;
+    }
+
+    manifestListeners.add(setManifest);
+    fetchGlobalManifest();
+
+    return () => {
+      manifestListeners.delete(setManifest);
+    };
+  }, [manifest]);
 
   const searchSrc = cleanSrc.toLowerCase();
 
   if (isVideo) {
-    const videoData = manifest?.videos?.[searchSrc];
+    const videoData = activeManifest?.videos?.[searchSrc];
     const baseName = cleanSrc.replace(/\.[^/.]+$/, "");
     
     // Sprawdź czy to plik pominięty w optymalizacji (np. frames)
@@ -123,7 +156,7 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
   }
 
   // IMAGE LOGIC
-  const imageData = manifest?.images?.[searchSrc];
+  const imageData = activeManifest?.images?.[searchSrc];
   const baseName = cleanSrc.replace(/\.[^/.]+$/, "");
 
   // Helpers do budowania srcset - fallback do CloudFront
@@ -164,4 +197,4 @@ const ResponsiveAsset = React.forwardRef<HTMLVideoElement | HTMLImageElement, Re
 
 ResponsiveAsset.displayName = 'ResponsiveAsset';
 
-export default ResponsiveAsset;
+export default React.memo(ResponsiveAsset);
