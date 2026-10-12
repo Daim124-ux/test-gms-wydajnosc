@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { ArrowRight, Calendar, User } from 'lucide-react';
 
 const mockPosts = [
@@ -71,6 +71,7 @@ export default function HomeBlogPreview() {
           >
             <Link 
               href="/blog" 
+              prefetch={false}
               className="inline-flex items-center px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white font-semibold hover:bg-white/10 transition-colors group"
             >
               Wszystkie artykuły
@@ -90,7 +91,7 @@ export default function HomeBlogPreview() {
             >
               <article className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors duration-300 h-full flex flex-col group">
                 
-                <Link href={post.link} className="block h-56 bg-black relative overflow-hidden">
+                <Link href={post.link} prefetch={false} className="block h-56 bg-black relative overflow-hidden">
                    <div className="absolute inset-0 bg-gradient-to-br from-[#ffcc33]/20 to-transparent group-hover:scale-105 transition-transform duration-700" />
                    <div className="absolute top-4 left-4 z-20">
                      <span className="px-3 py-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-semibold uppercase tracking-widest rounded-full">
@@ -104,7 +105,7 @@ export default function HomeBlogPreview() {
                     <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> {post.date}</span>
                   </div>
 
-                  <Link href={post.link} className="group-hover:text-[#ffcc33] transition-colors">
+                  <Link href={post.link} prefetch={false} className="group-hover:text-[#ffcc33] transition-colors">
                     <h3 className="text-2xl font-semibold text-white mb-4 line-clamp-2 tracking-tight">
                       {post.title}
                     </h3>
@@ -116,6 +117,7 @@ export default function HomeBlogPreview() {
 
                   <Link 
                     href={post.link} 
+                    prefetch={false}
                     className="inline-flex items-center text-sm font-semibold text-[#ffcc33] uppercase tracking-wider group-hover:text-[#ffe066]"
                   >
                     Czytaj artykuł

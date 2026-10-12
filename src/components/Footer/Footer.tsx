@@ -162,14 +162,14 @@ export default function Footer({ variant }: FooterProps) {
                 <AnimatePresence>
                   {(expandedSection === 'dom' || (isMounted && window.innerWidth >= 1024)) && (
                     <motion.ul initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="footer-link-list">
-                      <li><Link href="/system-dom/wiata-stalowa-na-rowery/" className="footer-link">{tmt('bikeShelter')}</Link></li>
-                      <li><Link href="/system-dom/garaze-blaszane/" className="footer-link">{tmt('superstrong')}</Link></li>
-                      <li><Link href="/system-dom/bramy-garazowe/" className="footer-link">{tmt('gates')}</Link></li>
-                      <li><Link href="/system-dom/bramy-rozwierne/" className="footer-link">{tmg('hinged')}</Link></li>
-                      <li><Link href="/system-dom/bramy-uchylne/" className="footer-link">{tmg('tilt')}</Link></li>
-                      <li><Link href="/system-dom/bramy-rozwierne-panelowe/" className="footer-link">{tmg('hingedPanel')}</Link></li>
-                      <li><Link href="/system-dom/wiaty-stalowe/" className="footer-link">{tmt('steelShelters')}</Link></li>
-                      <li><Link href="/system-dom/garaze-stalowe/" className="footer-link">{tmt('garages')}</Link></li>
+                      <li><Link href="/system-dom/wiata-stalowa-na-rowery" prefetch={false} className="footer-link">{tmt('bikeShelter')}</Link></li>
+                      <li><Link href="/system-dom/garaze-blaszane" prefetch={false} className="footer-link">{tmt('superstrong')}</Link></li>
+                      <li><Link href="/system-dom/bramy-garazowe" prefetch={false} className="footer-link">{tmt('gates')}</Link></li>
+                      <li><Link href="/system-dom/bramy-rozwierne" prefetch={false} className="footer-link">{tmg('hinged')}</Link></li>
+                      <li><Link href="/system-dom/bramy-uchylne" prefetch={false} className="footer-link">{tmg('tilt')}</Link></li>
+                      <li><Link href="/system-dom/bramy-rozwierne-panelowe" prefetch={false} className="footer-link">{tmg('hingedPanel')}</Link></li>
+                      <li><Link href="/system-dom/wiaty-stalowe" prefetch={false} className="footer-link">{tmt('steelShelters')}</Link></li>
+                      <li><Link href="/system-dom/garaze-stalowe" prefetch={false} className="footer-link">{tmt('garages')}</Link></li>
                     </motion.ul>
                   )}
                 </AnimatePresence>
@@ -186,13 +186,13 @@ export default function Footer({ variant }: FooterProps) {
                 <AnimatePresence>
                   {(expandedSection === 'osiedle' || (isMounted && window.innerWidth >= 1024)) && (
                     <motion.ul initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="footer-link-list">
-                      <li><Link href="/system-osiedle/altany-smietnikowe/" className="footer-link">{tmt('trashShelters')}</Link></li>
-                      <li><Link href="/system-osiedle/altany-z-zielonym-dachem/" className="footer-link">{tmt('greenShelters')}</Link></li>
-                      <li><Link href="/system-osiedle/boksy-garazowe/" className="footer-link">{tmt('collectiveGarages')}</Link></li>
-                      <li><Link href="/system-osiedle/drzwi-do-piwnic/" className="footer-link">{tmt('basementDoors')}</Link></li>
-                      <li><Link href="/system-osiedle/garaze-zbiorcze-i-wiaty-garażowe/" className="footer-link">{tmt('collectiveGarages')}</Link></li>
-                      <li><Link href="/system-osiedle/komorki-lokatorskie-i-boks-rowerowy/" className="footer-link">{tmt('partitionWalls')}</Link></li>
-                      <li><Link href="/system-osiedle/wygrodzenia-systemowe/" className="footer-link">{tmt('bikeCages')}</Link></li>
+                      <li><Link href="/system-osiedle/altany-smietnikowe" prefetch={false} className="footer-link">{tmt('trashShelters')}</Link></li>
+                      <li><Link href="/system-osiedle/altany-z-zielonym-dachem" prefetch={false} className="footer-link">{tmt('greenShelters')}</Link></li>
+                      <li><Link href="/system-osiedle/boksy-garazowe" prefetch={false} className="footer-link">{tmt('collectiveGarages')}</Link></li>
+                      <li><Link href="/system-osiedle/drzwi-do-piwnic" prefetch={false} className="footer-link">{tmt('basementDoors')}</Link></li>
+                      <li><Link href="/system-osiedle/garaze-zbiorcze-i-wiaty-garażowe" prefetch={false} className="footer-link">{tmt('collectiveGarages')}</Link></li>
+                      <li><Link href="/system-osiedle/komorki-lokatorskie-i-boks-rowerowy" prefetch={false} className="footer-link">{tmt('partitionWalls')}</Link></li>
+                      <li><Link href="/system-osiedle/wygrodzenia-systemowe" prefetch={false} className="footer-link">{tmt('bikeCages')}</Link></li>
                     </motion.ul>
                   )}
                 </AnimatePresence>
@@ -218,14 +218,14 @@ export default function Footer({ variant }: FooterProps) {
               <div className="pb-4 lg:pb-0">
                 <h4 className="footer-column-title">{t('quickAccess.title')}</h4>
                 <ul className="footer-link-list">
-                  <li><Link href="/sklep/" className="footer-link">{tn('shop')}</Link></li>
-                  <li><Link href="/o-nas/" className="footer-link">{tml('about')}</Link></li>
-                  <li><Link href="/blog/" className="footer-link">{tml('blog')}</Link></li>
-                  <li><Link href="/dystrybutorzy/" className="footer-link">{tml('distributors')}</Link></li>
-                  <li><Link href="/kariera/" className="footer-link">{tml('career')}</Link></li>
-                  <li><Link href="/kontakt/" className="footer-link">{tn('contact')}</Link></li>
-                  <li><Link href="/realizacje/" className="footer-link">{tml('projects')}</Link></li>
-                  <li><Link href="/do-pobrania/" className="footer-link">{tml('downloads')}</Link></li>
+                  <li><Link href="/sklep" prefetch={false} className="footer-link">{tn('shop')}</Link></li>
+                  <li><Link href="/o-nas" prefetch={false} className="footer-link">{tml('about')}</Link></li>
+                  <li><Link href="/blog" prefetch={false} className="footer-link">{tml('blog')}</Link></li>
+                  <li><Link href="/dystrybutorzy" prefetch={false} className="footer-link">{tml('distributors')}</Link></li>
+                  <li><Link href="/kariera" prefetch={false} className="footer-link">{tml('career')}</Link></li>
+                  <li><Link href="/kontakt" prefetch={false} className="footer-link">{tn('contact')}</Link></li>
+                  <li><Link href="/realizacje" prefetch={false} className="footer-link">{tml('projects')}</Link></li>
+                  <li><Link href="/do-pobrania" prefetch={false} className="footer-link">{tml('downloads')}</Link></li>
                 </ul>
               </div>
 
@@ -236,7 +236,7 @@ export default function Footer({ variant }: FooterProps) {
                   <p className="footer-text-info whitespace-pre-line">
                     {t('career.description')}
                   </p>
-                  <Link href="/kariera/" className="footer-career-link">
+                  <Link href="/kariera" prefetch={false} className="footer-career-link">
                     {t('career.cta')}
                   </Link>
                 </div>

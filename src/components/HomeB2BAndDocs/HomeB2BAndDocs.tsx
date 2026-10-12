@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { FileText, Download, Briefcase, ChevronRight, ShieldCheck } from 'lucide-react';
 
 const b2bCards = [
@@ -83,6 +83,7 @@ export default function HomeB2BAndDocs() {
                 </p>
                 <Link 
                   href={card.link}
+                  prefetch={false}
                   className="inline-flex items-center text-[#ffcc33] hover:text-[#ffe066] font-semibold group"
                 >
                   {card.linkText}

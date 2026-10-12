@@ -32,11 +32,11 @@ export async function updateSession(request: NextRequest, response?: NextRespons
   // Do NOT add a logout or other redirects here.
   // This middleware is just to refresh the session.
 
-  // This will refresh session if expired - required for Server Components
-  // https://supabase.com/docs/guides/auth/server-side/nextjs
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
+  // Only refresh session if auth cookies actually exist to avoid unnecessary API roundtrips
+  const hasAuthCookie = request.cookies.getAll().some(c => c.name.startsWith('sb-'));
+  if (hasAuthCookie) {
+    await supabase.auth.getUser()
+  }
 
   return supabaseResponse
 }

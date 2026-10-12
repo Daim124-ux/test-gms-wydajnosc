@@ -173,8 +173,10 @@ const SamsungTabCard = ({ cat, idx, globalAngle, isActive, progress }: {
 export default function HomeHero() {
   const [activeId, setActiveId] = useState<string>('garaze');
   const [isDesktop, setIsDesktop] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
     const updateMedia = () => setIsDesktop(window.innerWidth >= 1024);
     updateMedia();
     window.addEventListener('resize', updateMedia);
@@ -197,7 +199,7 @@ export default function HomeHero() {
   const CENTER_SCROLL = START_INDEX * PX_PER_ITEM; // 22 * 120 = 2640px
   const TOTAL_HEIGHT = NUM_SLOTS * PX_PER_ITEM; // 19200px
 
-  const { scrollY } = useScroll({ container: sliderRef });
+  const { scrollY } = useScroll({ container: (isMounted && isDesktop) ? sliderRef : undefined });
 
   // Convert absolute scroll pixels to a continuous global angle
   const globalAngle = useTransform(scrollY, (y) => {
@@ -206,13 +208,14 @@ export default function HomeHero() {
 
   // Start in the exact middle to allow scrolling in both directions
   useEffect(() => {
-    if (sliderRef.current) {
+    if (isDesktop && sliderRef.current) {
       sliderRef.current.scrollTop = CENTER_SCROLL;
     }
-  }, []);
+  }, [isDesktop]);
 
   // Update active category based on scroll
   useEffect(() => {
+    if (!isMounted || !isDesktop) return;
     return globalAngle.on('change', (g) => {
       const exactIdx = g / ANGLE_SPACING;
       // We offset by START_INDEX so slotIdx maps correctly to our 160 items
@@ -224,7 +227,7 @@ export default function HomeHero() {
         setActiveId(currentId);
       }
     });
-  }, [globalAngle, activeId, slots, NUM_SLOTS]);
+  }, [isMounted, isDesktop, globalAngle, activeId, slots, NUM_SLOTS]);
 
   const [isDown, setIsDown] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
