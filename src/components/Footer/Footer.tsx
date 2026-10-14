@@ -131,6 +131,7 @@ export default function Footer({ variant }: FooterProps) {
           {isUnicornInView && (
             <video
               ref={videoRef}
+              src="/assets/videos/main/jednorozec_gms.mkv"
               autoPlay
               loop
               muted
@@ -138,10 +139,8 @@ export default function Footer({ variant }: FooterProps) {
               preload="metadata"
               className="unicorn-video"
             >
-              <source src="https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_mobile.webm" type="video/webm" media="(max-width: 768px)" />
-              <source src="https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_mobile.mp4" type="video/mp4" media="(max-width: 768px)" />
-              <source src="https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_desktop.webm" type="video/webm" />
-              <source src="https://d1moyf5ccth9x8.cloudfront.net/_optimized/assets/videos/main/jednorozec_gms_desktop.mp4" type="video/mp4" />
+              <source src="/assets/videos/main/jednorozec_gms.webm" type="video/webm" />
+              <source src="/assets/videos/main/jednorozec_gms.mkv" type="video/x-matroska" />
             </video>
           )}
         </div>
